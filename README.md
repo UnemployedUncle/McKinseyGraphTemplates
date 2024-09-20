@@ -1,11 +1,27 @@
-# McKinseyGraphTemplates
+# McKinsey Graph Templates
+AI created professional McKinsey style charts
 
-Create professional Mckinsey-style consulting graphs easily.
+## How to use
+1. 
+2. 
+3. 
 
-## Key Features
+## Internal Leaderboard
+
+src
+code
+GPT4o
+Gemini
+
+---
+## Tips
+
+1. True data visualization (?), Message, (Advanced) Data analytics, ...
+2. 
+
+---
 
 - **Premade Chart Templates** (Contents)
-    - True data visualization (?), Message, (Advanced) Data analytics, ...
     - Use case based templates (easy to use) - Front
         - [ ] 3. Generalized template - 최소한의 필요조건, Templates are designed for easy customization to fit your specific data and presentation needs.
             - [ ] Box 내용 채우기, 데이터 업로드
@@ -36,21 +52,33 @@ Create professional Mckinsey-style consulting graphs easily.
 
 
 ---
-## Dev
-git branch
-Figma
-Prompt Engeering
-GPT4o, Gemini
-LangChain, LLaMA Index
+## How does it work
+
+Level 1. Feasibility Check (MVP?)
+1. Download image
+2. Feed it to AI(GPT4o, Gemini)
+  - Prompt Engeering
+3. Customize the code
+
+Level 2. Automation (Git branch)
+1. Give the link
+2. AI creates the code
+  - LangChain, LLaMA Index
+3. AI evaluates the code
+4. AI customize the code base on the template
+  - input, output, text, color, title, ...
+5. 
+
+Level 3. Packing (MVP?)
 Streamlit, Gradio
 
-### Internal Leaderboard
-
+Figma
 
 ---
 ### Contributions
-Welcome contributions from the community. If you have improvements or new templates to share, please submit a pull request.
+Welcome contributions from the community.
+If you have improvements or new templates to share, please submit a pull request.
+For any questions or support, please open an issue in the repository.
 
 ### License
 This project is licensed under the MIT License.
-For any questions or support, please open an issue in the repository.
