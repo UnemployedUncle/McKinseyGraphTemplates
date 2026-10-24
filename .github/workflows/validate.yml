@@ -1,0 +1,30 @@
+name: Validate medallion
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/medallion.py validate
+      - run: python scripts/render_all.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chart-previews-and-smoke-tests
+          path: artifacts/
+          if-no-files-found: warn
+          retention-days: 30

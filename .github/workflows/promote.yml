@@ -1,0 +1,57 @@
+name: Promote reviewed template
+on:
+  workflow_dispatch:
+    inputs:
+      path:
+        description: 'Reviewed bundle path, e.g. bronze/2026-10-21/bain_ai_revenue_gap_fig2'
+        required: true
+        type: string
+      expected_sha256:
+        description: 'Exact payload_sha256 from the reviewed manifest.json'
+        required: true
+        type: string
+      target:
+        description: 'Promotion target'
+        required: true
+        type: choice
+        options: [silver, gold]
+      approved:
+        description: 'I personally read and reviewed this exact code and output'
+        required: true
+        default: false
+        type: boolean
+      notes:
+        description: 'Review notes and limitations'
+        required: false
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: medallion-promotion
+  cancel-in-progress: false
+jobs:
+  promote:
+    if: ${{ github.actor == 'UnemployedUncle' && github.ref == 'refs/heads/main' && inputs.approved }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Promote reviewed snapshot without executing chart code
+        env:
+          BUNDLE_PATH: ${{ inputs.path }}
+          TARGET_TIER: ${{ inputs.target }}
+          REVIEWED_HASH: ${{ inputs.expected_sha256 }}
+        run: python scripts/medallion.py promote --path "$BUNDLE_PATH" --target "$TARGET_TIER" --expected-sha256 "$REVIEWED_HASH"
+      - name: Commit promotion and catalog
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add silver gold catalog dataset
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Promote explicitly reviewed template snapshot'
+          git push origin HEAD:main

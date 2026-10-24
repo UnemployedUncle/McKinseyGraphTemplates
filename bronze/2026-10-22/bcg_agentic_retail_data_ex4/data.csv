@@ -1,0 +1,3 @@
+category,series,value,unit,period,source_url,figure_ref,provenance,denominator_base,estimate_method,uncertainty_low,uncertainty_high,notes
+Enrich product data,Reported metric,67,percent,Next two years from 2026 survey,https://www.bcg.com/publications/2026/retailers-win-ai-shopping-agents,Exhibit 4,reported,Retailer respondents; item-level valid n not disclosed,,,,Directly reported in source text
+Provide live product availability,Reported metric,58,percent,Next two years from 2026 survey,https://www.bcg.com/publications/2026/retailers-win-ai-shopping-agents,Exhibit 4,reported,Retailer respondents; item-level valid n not disclosed,,,,Directly reported in source text

@@ -1,0 +1,5 @@
+category,series,value,unit,period,source_url,figure_ref,provenance,denominator_base,estimate_method,uncertainty_low,uncertainty_high,notes
+Global,Baseline,2520,USD billion per year,2026 scenario,https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-value-curve-the-economics-of-applying-ai-to-existing-work,Exhibit 8,reported,,,,,
+Global,AI cost +30%,1670,USD billion per year,2026 scenario,https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-value-curve-the-economics-of-applying-ai-to-existing-work,Exhibit 8,reported,,,,,
+US,Baseline,960,USD billion per year,2026 scenario,https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-value-curve-the-economics-of-applying-ai-to-existing-work,Exhibit 8,reported,,,,,
+US,AI cost +30%,640,USD billion per year,2026 scenario,https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-value-curve-the-economics-of-applying-ai-to-existing-work,Exhibit 8,derived,,,,,Baseline 960 minus decline 320 reported in article; 640 is arithmetic result

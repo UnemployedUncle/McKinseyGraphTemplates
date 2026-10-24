@@ -1,0 +1,6 @@
+# Review routing. Enforced approval also requires repository protection settings.
+/.github/ @UnemployedUncle
+/scripts/ @UnemployedUncle
+/silver/ @UnemployedUncle
+/gold/ @UnemployedUncle
+/tests/ @UnemployedUncle
