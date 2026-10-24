@@ -1,0 +1,103 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        11.6,
+        6.4
+      ],
+      "background": "#ffffff",
+      "text": "#162B40",
+      "muted": "#667889",
+      "axes_rect": [
+        0.29,
+        0.2,
+        0.62,
+        0.51
+      ],
+      "highlight": "#116AAC",
+      "base_color": "#A7C9D8",
+      "grid": "#E9EFF2",
+      "bar_height": 0.56,
+      "category_label_size": 12,
+      "label_size": 15,
+      "label_offset": 2,
+      "exhibit_y": 0.955,
+      "title_y": 0.885,
+      "subtitle_y": 0.814,
+      "source_y": 0.044,
+      "note_y": 0.08,
+      "header_x": 0.05,
+      "exhibit_size": 9,
+      "title_size": 20,
+      "subtitle_size": 11,
+      "source_size": 9,
+      "title_family": "DejaVu Sans",
+      "title_weight": "bold"
+    },
+    "neutral": {
+      "figsize": [
+        11.6,
+        6.4
+      ],
+      "background": "#ffffff",
+      "text": "#1c2833",
+      "muted": "#5f6b70",
+      "axes_rect": [
+        0.29,
+        0.2,
+        0.62,
+        0.51
+      ],
+      "highlight": "#3F617E",
+      "base_color": "#CAD5DC",
+      "grid": "#E9EFF2",
+      "bar_height": 0.56,
+      "category_label_size": 12,
+      "label_size": 15,
+      "label_offset": 2,
+      "exhibit_y": 0.955,
+      "title_y": 0.885,
+      "subtitle_y": 0.814,
+      "source_y": 0.044,
+      "note_y": 0.08,
+      "header_x": 0.05,
+      "exhibit_size": 9,
+      "title_size": 20,
+      "subtitle_size": 11,
+      "source_size": 9,
+      "title_family": "DejaVu Sans",
+      "title_weight": "bold"
+    }
+  },
+  "CONTEXT": {
+    "chart_kind": "horizontal_comparison",
+    "exhibit": "EDITORIAL SUMMARY · Exhibit 2 figures",
+    "title": "Asia has an outsized share of global energy and emissions",
+    "subtitle": "Approximate regional shares from McKinsey analysis (percent of global totals)",
+    "source": "Source: McKinsey Global Energy Perspective 2026 (article, Oct 22, 2026)",
+    "note": "~50% is an approximate published figure; this is not a recreation of Exhibit 2 layout.",
+    "category_order": [
+      "GDP",
+      "Energy demand",
+      "GHG emissions"
+    ],
+    "category_labels": {
+      "GDP": "Global GDP",
+      "Energy demand": "Energy demand",
+      "GHG emissions": "GHG emissions"
+    },
+    "highlight_category": "GHG emissions",
+    "approximate_categories": [
+      "Energy demand"
+    ],
+    "x_ticks": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "xlabel": "Share of world total (%)"
+  }
+}

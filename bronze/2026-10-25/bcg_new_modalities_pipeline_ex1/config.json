@@ -1,0 +1,133 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        12.5,
+        6.9
+      ],
+      "background": "#ffffff",
+      "text": "#171717",
+      "muted": "#333333",
+      "axes_rect": [
+        0.055,
+        0.235,
+        0.91,
+        0.52
+      ],
+      "palette": {
+        "New modalities": "#13BF75",
+        "Conventional modalities": "#D3D1CB"
+      },
+      "label_color": {
+        "New modalities": "#0A2220",
+        "Conventional modalities": "#282828"
+      },
+      "bar_width": 0.64,
+      "bar_edge_width": 0,
+      "segment_label_size": 11,
+      "total_label_size": 11,
+      "category_label_size": 10,
+      "category_label_pad": 11,
+      "total_offset": 5,
+      "x_padding": 0.65,
+      "headroom": 1.12,
+      "exhibit_y": 0.963,
+      "title_y": 0.91,
+      "subtitle_y": 0.835,
+      "source_y": 0.02,
+      "note_y": 0.05,
+      "header_x": 0.035,
+      "exhibit_size": 11,
+      "title_size": 19,
+      "subtitle_size": 11,
+      "source_size": 8,
+      "title_family": "DejaVu Serif",
+      "title_weight": "normal",
+      "legend_anchor": [
+        0.52,
+        0.092
+      ],
+      "legend_size": 9
+    },
+    "neutral": {
+      "figsize": [
+        12.5,
+        6.9
+      ],
+      "background": "#ffffff",
+      "text": "#171717",
+      "muted": "#333333",
+      "axes_rect": [
+        0.055,
+        0.235,
+        0.91,
+        0.52
+      ],
+      "palette": {
+        "New modalities": "#2463a7",
+        "Conventional modalities": "#C5C9CF"
+      },
+      "label_color": {
+        "New modalities": "#FFFFFF",
+        "Conventional modalities": "#222222"
+      },
+      "bar_width": 0.64,
+      "bar_edge_width": 0,
+      "segment_label_size": 11,
+      "total_label_size": 11,
+      "category_label_size": 10,
+      "category_label_pad": 11,
+      "total_offset": 5,
+      "x_padding": 0.65,
+      "headroom": 1.12,
+      "exhibit_y": 0.963,
+      "title_y": 0.91,
+      "subtitle_y": 0.835,
+      "source_y": 0.02,
+      "note_y": 0.05,
+      "header_x": 0.035,
+      "exhibit_size": 11,
+      "title_size": 18,
+      "subtitle_size": 11,
+      "source_size": 8,
+      "title_family": "DejaVu Sans",
+      "title_weight": "bold",
+      "legend_anchor": [
+        0.52,
+        0.092
+      ],
+      "legend_size": 9
+    }
+  },
+  "CONTEXT": {
+    "chart_kind": "absolute_stacked_columns",
+    "exhibit": "EXHIBIT 1",
+    "title": "New modalities remain dominant as conventional drugs regain share",
+    "subtitle": "Five-year forward projected pipeline value ($ billion), by pipeline year",
+    "source": "Sources: Evaluate Pharma; BCG analysis (2026). Figure recreated independently.",
+    "note": "Shares are rounded published percentages; totals are rounded published forecasts. Not actual sales.",
+    "period_order": [
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "series_order": [
+      "New modalities",
+      "Conventional modalities"
+    ],
+    "legend_order": [
+      "Conventional modalities",
+      "New modalities"
+    ],
+    "legend_labels": {
+      "New modalities": "New modalities",
+      "Conventional modalities": "Conventional modalities"
+    },
+    "highlight_series": "New modalities"
+  }
+}

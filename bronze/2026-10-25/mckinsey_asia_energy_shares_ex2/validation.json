@@ -1,0 +1,37 @@
+{
+  "validated_at": "2026-10-24T22:22:04.888274+00:00",
+  "self_assessed": true,
+  "original_seen": false,
+  "render_success": true,
+  "commands": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-25/work/mckinsey_asia_energy_shares_ex2/chart.py --theme source --data /mnt/data/CGT_2026-10-25/work/mckinsey_asia_energy_shares_ex2/data.csv --output /mnt/data/CGT_2026-10-25/artifacts/bronze/20261025_mckinsey_asia_energy_shares_ex2/source.png",
+      "returncode": 0,
+      "stdout": "CREATED /mnt/data/CGT_2026-10-25/artifacts/bronze/20261025_mckinsey_asia_energy_shares_ex2/source.png",
+      "stderr": ""
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-25/work/mckinsey_asia_energy_shares_ex2/chart.py --theme neutral --data /mnt/data/CGT_2026-10-25/work/mckinsey_asia_energy_shares_ex2/data.csv --output /mnt/data/CGT_2026-10-25/artifacts/bronze/20261025_mckinsey_asia_energy_shares_ex2/neutral.png",
+      "returncode": 0,
+      "stdout": "CREATED /mnt/data/CGT_2026-10-25/artifacts/bronze/20261025_mckinsey_asia_energy_shares_ex2/neutral.png",
+      "stderr": ""
+    }
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "pandas_version": "2.2.3",
+  "iterations": 1,
+  "data_checks": {
+    "provenance_valid": true,
+    "units_defined": true,
+    "no_synthetic_source_values": true,
+    "percentage_bounds_passed": true,
+    "sums_to_100_by_year": null,
+    "source_figure_opened": false
+  },
+  "fidelity_criteria": null,
+  "scores": null,
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "diff_notes": "McKinsey SVGZ source image unsupported in available visual browser, cannot compare; editorial design only."
+}

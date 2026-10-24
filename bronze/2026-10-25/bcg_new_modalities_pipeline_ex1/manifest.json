@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261025_bcg_new_modalities_pipeline_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-24T22:25:44.328362+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/new-drug-modalities-pipeline-plateau",
+  "figure_ref": "Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "data.csv": "1f2b4846de97c6e597a0f5b88f137bc64f1706f16d7b85ef2a48ed91d78e7b1a",
+    "requirements.txt": "decaf84e71ecdd5e3492b6be604ae24a5af3c59edbdd3bd33f988ec65563fe67",
+    "chart.py": "dcecdd924542ed713ec2ecfc21db4e3b232d5482ff174bff2f956817c9098d78",
+    "config.json": "fc52e4fa0d50239b21d247288889fad1212cb62f3384a443a9ee3daf73679801",
+    "record.json": "fda64250e44ca74565eec73f01d47625ccd120786f1ab9ff747901538011c511",
+    "validation.json": "babb9f535f9766ec4fa3349942e4e235eeee4d2a5a290031b176b5d877787c9b",
+    "card.md": "e728255cb026240e8b8f7cea26129673dccd6e136e350bd42d7fa855a938e928"
+  },
+  "payload_sha256": "455ad7b029980acf07dbdf2b37082985365b6e9a3e4322bc9e81c7f51903e2df"
+}

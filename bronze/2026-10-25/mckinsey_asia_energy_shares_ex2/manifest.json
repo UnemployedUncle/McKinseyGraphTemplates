@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261025_mckinsey_asia_energy_shares_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-24T22:25:46.733670+00:00",
+  "source_url": "https://www.mckinsey.com/featured-insights/future-of-asia/asias-energy-reckoning-securing-the-energy-system-to-drive-growth",
+  "figure_ref": "Exhibit 2 summary (editorial)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "data.csv": "33631323e93ca1b8b2e9b7c01323e65406acc575a4b70ed45480d08f990b9d9e",
+    "requirements.txt": "decaf84e71ecdd5e3492b6be604ae24a5af3c59edbdd3bd33f988ec65563fe67",
+    "chart.py": "dcecdd924542ed713ec2ecfc21db4e3b232d5482ff174bff2f956817c9098d78",
+    "config.json": "a93a9aaa0d288c7c83e4af9f8d906433050a4f8abf4bfdb41459d74850add779",
+    "record.json": "aa3f487057c735dfa988abf8fe2ec612a6b18ae5ec4f32296a9ce8659323598e",
+    "validation.json": "b9f8fe59bb4009fa1a199b84f7067b417ff654211e05eb7204de5752c3390f6d",
+    "card.md": "f09c994f6b93efb21cf4b07e921f001b085438a1d04c5c5aa8d0bbf45538786d"
+  },
+  "payload_sha256": "aec3e783136a715afc88801d66d6a418f4a35657b805e64980e7deac193ee00c"
+}

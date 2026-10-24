@@ -1,0 +1,45 @@
+{
+  "validated_at": "2026-10-24T22:22:01.176139+00:00",
+  "self_assessed": true,
+  "original_seen": true,
+  "render_success": true,
+  "commands": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-25/work/bcg_new_modalities_pipeline_ex1/chart.py --theme source --data /mnt/data/CGT_2026-10-25/work/bcg_new_modalities_pipeline_ex1/data.csv --output /mnt/data/CGT_2026-10-25/artifacts/bronze/20261025_bcg_new_modalities_pipeline_ex1/source.png",
+      "returncode": 0,
+      "stdout": "CREATED /mnt/data/CGT_2026-10-25/artifacts/bronze/20261025_bcg_new_modalities_pipeline_ex1/source.png",
+      "stderr": ""
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-25/work/bcg_new_modalities_pipeline_ex1/chart.py --theme neutral --data /mnt/data/CGT_2026-10-25/work/bcg_new_modalities_pipeline_ex1/data.csv --output /mnt/data/CGT_2026-10-25/artifacts/bronze/20261025_bcg_new_modalities_pipeline_ex1/neutral.png",
+      "returncode": 0,
+      "stdout": "CREATED /mnt/data/CGT_2026-10-25/artifacts/bronze/20261025_bcg_new_modalities_pipeline_ex1/neutral.png",
+      "stderr": ""
+    }
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "pandas_version": "2.2.3",
+  "iterations": 1,
+  "data_checks": {
+    "provenance_valid": true,
+    "units_defined": true,
+    "no_synthetic_source_values": true,
+    "percentage_bounds_passed": true,
+    "sums_to_100_by_year": true,
+    "source_figure_opened": true
+  },
+  "fidelity_criteria": "chart type, data and order, axes, color, labels, title, proportions",
+  "scores": {
+    "chart_type": 5,
+    "data_and_order": 5,
+    "axes_and_ticks": 5,
+    "color_and_emphasis": 5,
+    "label_positions": 4,
+    "title_and_legend": 4,
+    "overall_proportions": 4
+  },
+  "fidelity_score": 4.57,
+  "validation_status": "verified",
+  "diff_notes": "BCG original opened via official image link; type, bar totals, percentages and order reproduced; serif/title spacing differ. This is self-scored."
+}
