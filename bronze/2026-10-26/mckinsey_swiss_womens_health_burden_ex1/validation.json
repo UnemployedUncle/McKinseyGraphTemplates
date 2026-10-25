@@ -1,0 +1,43 @@
+{
+  "run_at": "2026-10-26T07:24:33.606068+09:00",
+  "data_checks": {
+    "values_verified_from_official_text": true,
+    "category_count": 4,
+    "percentage_range_passed": true,
+    "sum_100_passed": true,
+    "denominator_explained": true,
+    "source_values_count": 4,
+    "all_provenance_reported": true,
+    "category_unique": true,
+    "source_value_unit_confirmed": true
+  },
+  "render_commands": [
+    {
+      "command": "python chart.py --theme source --data data.csv --output source.png",
+      "returncode": 0,
+      "stdout": "/mnt/data/CGT_2026-10-26/artifacts/bronze/20261026_mckinsey_swiss_womens_health_burden_ex1/source.png",
+      "stderr": "",
+      "size_bytes": 146966
+    },
+    {
+      "command": "python chart.py --theme neutral --data data.csv --output neutral.png",
+      "returncode": 0,
+      "stdout": "/mnt/data/CGT_2026-10-26/artifacts/bronze/20261026_mckinsey_swiss_womens_health_burden_ex1/neutral.png",
+      "stderr": "",
+      "size_bytes": 142437
+    }
+  ],
+  "execution_passed": true,
+  "original_directly_viewed": false,
+  "iterations": 1,
+  "score_details": {},
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "diff_notes": "Source article and all four percentage labels verified. Original source Exhibit 1 SVGZ not directly rendered/viewed; generated horizontal 100% stack is a separate data-faithful editorial design and cannot be scored for original image fidelity.",
+  "images_directly_reviewed": true,
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "platform": "Linux"
+  }
+}

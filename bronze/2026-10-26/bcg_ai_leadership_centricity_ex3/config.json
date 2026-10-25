@@ -1,0 +1,132 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        12,
+        5.65
+      ],
+      "background": "#ffffff",
+      "text": "#1f2427",
+      "muted": "#484c50",
+      "font": "DejaVu Sans",
+      "title_font": "DejaVu Serif",
+      "title_weight": "normal",
+      "axes_rect": [
+        0.055,
+        0.215,
+        0.91,
+        0.48
+      ],
+      "header_x": 0.03,
+      "exhibit_y": 0.966,
+      "title_y": 0.91,
+      "subtitle_y": 0.75,
+      "source_y": 0.024,
+      "note_y": 0.064,
+      "exhibit_size": 9,
+      "title_size": 19,
+      "subtitle_size": 11,
+      "source_size": 8,
+      "note_size": 8,
+      "tick_size": 10,
+      "tick_pad": 6,
+      "value_size": 11,
+      "bar_width": 0.54,
+      "edge_width": 1.5,
+      "baseline": "#e3e4e3",
+      "baseline_width": 0.8,
+      "value_offset": 1.0,
+      "x_padding": 0.6,
+      "y_max": 77,
+      "bar_color": "#21C267",
+      "palette": {},
+      "arrow_gap": 8,
+      "arrow_width": 1.25,
+      "arrow_color": "#a1d9bd",
+      "ratio_size": 9,
+      "ratio_badge": "#adf0c6",
+      "label_colors": {},
+      "legend_anchor": [
+        0.5,
+        0.2
+      ],
+      "legend_size": 9
+    },
+    "neutral": {
+      "figsize": [
+        12,
+        5.65
+      ],
+      "background": "#ffffff",
+      "text": "#1f2427",
+      "muted": "#484c50",
+      "font": "DejaVu Sans",
+      "title_font": "DejaVu Sans",
+      "title_weight": "bold",
+      "axes_rect": [
+        0.055,
+        0.215,
+        0.91,
+        0.48
+      ],
+      "header_x": 0.03,
+      "exhibit_y": 0.966,
+      "title_y": 0.91,
+      "subtitle_y": 0.75,
+      "source_y": 0.024,
+      "note_y": 0.064,
+      "exhibit_size": 9,
+      "title_size": 17,
+      "subtitle_size": 11,
+      "source_size": 8,
+      "note_size": 8,
+      "tick_size": 10,
+      "tick_pad": 6,
+      "value_size": 11,
+      "bar_width": 0.56,
+      "edge_width": 1.5,
+      "baseline": "#e3e4e3",
+      "baseline_width": 0.8,
+      "value_offset": 1.0,
+      "x_padding": 0.6,
+      "y_max": 77,
+      "bar_color": "#2863A4",
+      "palette": {},
+      "arrow_gap": 8,
+      "arrow_width": 1.25,
+      "arrow_color": "#95ADC6",
+      "ratio_size": 9,
+      "ratio_badge": "#d9e8f7",
+      "label_colors": {},
+      "legend_anchor": [
+        0.5,
+        0.2
+      ],
+      "legend_size": 9
+    }
+  },
+  "CONTEXT": {
+    "chart_kind": "vertical_four_bars",
+    "exhibit": "EXHIBIT 3",
+    "title": "People-centered AI transformations coincide with more AI-mature firms",
+    "subtitle": "Companies classified as AI mature, % of each employee-centricity group",
+    "source": "Source: BCG Global Leadership Survey 2026 (n=563); independent recreation.",
+    "note": "Within-group shares. Association is not evidence of causation.",
+    "category_order": [
+      "limited",
+      "moderate",
+      "strong",
+      "extensive"
+    ],
+    "category_labels": {
+      "limited": "Limited employee\ncentricity",
+      "moderate": "Moderate employee\ncentricity",
+      "strong": "Strong employee\ncentricity",
+      "extensive": "Extensive employee\ncentricity"
+    },
+    "show_y": false,
+    "y_ticks": [],
+    "show_ratio_arrow": true,
+    "ratio_label": "3×"
+  }
+}

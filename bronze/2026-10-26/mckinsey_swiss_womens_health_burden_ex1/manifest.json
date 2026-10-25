@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261026_mckinsey_swiss_womens_health_burden_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-25T22:28:33.871985+00:00",
+  "source_url": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
+  "figure_ref": "Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "requirements.txt": "48e1d792aa42dc067223fe311036f1388d0fea6b9deec4c84760db4c2f70d2a5",
+    "card.md": "7188cdc0ff3e3c65778a3cb0177c864fb297f3f5b0f25bd545535c23958a38d3",
+    "record.json": "e59903669cdadcac2519281e2dc3eadd2de1d0fbf726d1a8fda421a91b93e6c1",
+    "config.json": "2d727c97dec709ac6bbcd08415e5093f136ca2c32a1940b5d67551795d6bc4bf",
+    "data.csv": "d4df0eb30d0694a0bcb2d1615fce025a849a54c5a29ff5c670f69f0161c6ca49",
+    "chart.py": "cb3c51ac72d8f77034fdc0a5cbd948eb89436c9d12546ff19744cdc458c929ed",
+    "validation.json": "2c5daf98d650e0a2df919622765784cdba88173d591050c7032416f44ed02970"
+  },
+  "payload_sha256": "2e59146002cc7b50d2de989f7e2fff9f9dad73c935edaf72f9ace192246ed510"
+}

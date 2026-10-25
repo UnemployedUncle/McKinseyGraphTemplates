@@ -1,0 +1,310 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261026_mckinsey_swiss_womens_health_burden_ex1",
+  "chart_key": "9101c9b8c5bfa7b3a317e63ec74e200588d4778e4a526f1ae61d92b820471544",
+  "date": "2026-10-26",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
+  "source_title": "Closing the women's health gap: Switzerland's CHF 7 billion opportunity",
+  "published": "2026-10-19",
+  "updated": null,
+  "retrieved_at": "2026-10-26T07:24:33.606068+09:00",
+  "figure_ref": "Exhibit 1",
+  "original_image_url": "https://www.mckinsey.com/~/media/mckinsey/mckinsey%20health%20institute/our%20insights/closing%20the%20womens%20health%20gap%20switzerlands%20chf%207%20billion%20opportunity/exhibit%20svgz%20files/health-gap_exhibit%201_v2.svgz",
+  "business_context": "Swiss female disease burden composition, not the between-sex health gap",
+  "key_message": "스위스 여성의 전체 질병부담 중 여성만의 고유 질환은 8%이고, 양성 모두에 영향을 주지만 여성에서 더 빈번한 질환이 63%이므로 여성건강 투자는 생식건강을 넘어 공통 질환의 성차에 초점을 넓혀야 한다.",
+  "insight_type": "composition",
+  "chart_type": "horizontal_share_stack",
+  "encoding": {
+    "x": "share",
+    "y": "single_population",
+    "color": "category",
+    "size": "value",
+    "highlight": [
+      "single 100% stacked horizontal bar",
+      "four fixed mutually exclusive categories",
+      "direct segment percentages",
+      "legend maps all categories"
+    ]
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "denominator",
+      "base",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": [
+      "percent"
+    ],
+    "n_points": 4,
+    "provenance": [
+      "reported"
+    ],
+    "period": "Model based on GBD 2019; analysis published 2026",
+    "denominator": "total health burden among women in Switzerland (DALYs)"
+  },
+  "data_recipe": "Collect DALYs by disease, sex, location and age; classify conditions as sex-specific, more prevalent among women, affecting women differently, or neither; sum female DALYs by group; divide by all female DALYs; maintain consistent year, classification and standardization.",
+  "message_conditions": "63% is the largest component; 8% is sex-specific. These are shares of all female DALYs, not the women-versus-men excess DALY gap.",
+  "design_moves": [
+    "single 100% stacked horizontal bar",
+    "four fixed mutually exclusive categories",
+    "direct segment percentages",
+    "legend maps all categories"
+  ],
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "training_eligible": false,
+  "training_use": "none_rights_unconfirmed",
+  "rights_status": "third_party_permission_unconfirmed",
+  "exclusion_reasons": [
+    "no_human_review",
+    "third_party_training_permission_unconfirmed"
+  ],
+  "diff_notes": "Source article and all four percentage labels verified. Original source Exhibit 1 SVGZ not directly rendered/viewed; generated horizontal 100% stack is a separate data-faithful editorial design and cannot be scored for original image fidelity.",
+  "code_path": "chart.py",
+  "image_path": "artifacts/bronze/20261026_mckinsey_swiss_womens_health_burden_ex1/source.png",
+  "neutral_image_path": "artifacts/bronze/20261026_mckinsey_swiss_womens_health_burden_ex1/neutral.png",
+  "validation_path": "validation.json",
+  "split_group": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
+  "training_pair": {
+    "instruction": "Swiss female disease burden composition, not the between-sex health gap; 스위스 여성의 전체 질병부담 중 여성만의 고유 질환은 8%이고, 양성 모두에 영향을 주지만 여성에서 더 빈번한 질환이 63%이므로 여성건강 투자는 생식건강을 넘어 공통 질환의 성차에 초점을 넓혀야 한다.; require valid denominators and reusable code",
+    "response": {
+      "data_requirements": "total health burden among women in Switzerland (DALYs)",
+      "source_and_calculation": "Collect DALYs by disease, sex, location and age; classify conditions as sex-specific, more prevalent among women, affecting women differently, or neither; sum female DALYs by group; divide by all female DALYs; maintain consistent year, classification and standardization.",
+      "chart_design": [
+        "single 100% stacked horizontal bar",
+        "four fixed mutually exclusive categories",
+        "direct segment percentages",
+        "legend maps all categories"
+      ],
+      "input_data": [
+        {
+          "category": "female_specific",
+          "series": "",
+          "value": 8,
+          "unit": "percent",
+          "period": "Model based on GBD 2019; analysis published 2026",
+          "denominator": "total health burden among women in Switzerland (DALYs)",
+          "base": "",
+          "source_url": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
+          "figure_ref": "Exhibit 1",
+          "provenance": "reported",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": "Four category percentages sum to 100; use DALYs not count of illnesses or between-sex excess burden."
+        },
+        {
+          "category": "female_prevalent",
+          "series": "",
+          "value": 63,
+          "unit": "percent",
+          "period": "Model based on GBD 2019; analysis published 2026",
+          "denominator": "total health burden among women in Switzerland (DALYs)",
+          "base": "",
+          "source_url": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
+          "figure_ref": "Exhibit 1",
+          "provenance": "reported",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": "Four category percentages sum to 100; use DALYs not count of illnesses or between-sex excess burden."
+        },
+        {
+          "category": "female_different",
+          "series": "",
+          "value": 4,
+          "unit": "percent",
+          "period": "Model based on GBD 2019; analysis published 2026",
+          "denominator": "total health burden among women in Switzerland (DALYs)",
+          "base": "",
+          "source_url": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
+          "figure_ref": "Exhibit 1",
+          "provenance": "reported",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": "Four category percentages sum to 100; use DALYs not count of illnesses or between-sex excess burden."
+        },
+        {
+          "category": "no_known_difference",
+          "series": "",
+          "value": 25,
+          "unit": "percent",
+          "period": "Model based on GBD 2019; analysis published 2026",
+          "denominator": "total health burden among women in Switzerland (DALYs)",
+          "base": "",
+          "source_url": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
+          "figure_ref": "Exhibit 1",
+          "provenance": "reported",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": "Four category percentages sum to 100; use DALYs not count of illnesses or between-sex excess burden."
+        }
+      ],
+      "config": {
+        "THEME": {
+          "source": {
+            "figsize": [
+              12,
+              5.65
+            ],
+            "background": "#ffffff",
+            "text": "#1f2427",
+            "muted": "#484c50",
+            "font": "DejaVu Sans",
+            "title_font": "DejaVu Serif",
+            "title_weight": "normal",
+            "axes_rect": [
+              0.07,
+              0.39,
+              0.86,
+              0.23
+            ],
+            "header_x": 0.03,
+            "exhibit_y": 0.966,
+            "title_y": 0.91,
+            "subtitle_y": 0.766,
+            "source_y": 0.024,
+            "note_y": 0.064,
+            "exhibit_size": 9,
+            "title_size": 19,
+            "subtitle_size": 11,
+            "source_size": 8,
+            "note_size": 8,
+            "tick_size": 10,
+            "tick_pad": 6,
+            "value_size": 13,
+            "bar_width": 0.65,
+            "edge_width": 1.5,
+            "baseline": "#e3e4e3",
+            "baseline_width": 0.8,
+            "value_offset": 1.0,
+            "x_padding": 0.6,
+            "y_max": 77,
+            "bar_color": "#1bc16b",
+            "palette": {
+              "female_specific": "#0B579D",
+              "female_prevalent": "#21A4CE",
+              "female_different": "#9CCDE5",
+              "no_known_difference": "#C4C9CE"
+            },
+            "arrow_gap": 8,
+            "arrow_width": 1.25,
+            "arrow_color": "#a1ddbd",
+            "ratio_size": 9,
+            "ratio_badge": "#a9efc7",
+            "label_colors": {
+              "female_specific": "white",
+              "female_prevalent": "white",
+              "female_different": "#17202B",
+              "no_known_difference": "#17202B"
+            },
+            "legend_anchor": [
+              0.5,
+              0.18
+            ],
+            "legend_size": 9
+          },
+          "neutral": {
+            "figsize": [
+              12,
+              5.65
+            ],
+            "background": "#ffffff",
+            "text": "#1f2427",
+            "muted": "#484c50",
+            "font": "DejaVu Sans",
+            "title_font": "DejaVu Sans",
+            "title_weight": "bold",
+            "axes_rect": [
+              0.07,
+              0.39,
+              0.86,
+              0.23
+            ],
+            "header_x": 0.03,
+            "exhibit_y": 0.966,
+            "title_y": 0.91,
+            "subtitle_y": 0.766,
+            "source_y": 0.024,
+            "note_y": 0.064,
+            "exhibit_size": 9,
+            "title_size": 17,
+            "subtitle_size": 11,
+            "source_size": 8,
+            "note_size": 8,
+            "tick_size": 10,
+            "tick_pad": 6,
+            "value_size": 13,
+            "bar_width": 0.65,
+            "edge_width": 1.5,
+            "baseline": "#e3e4e3",
+            "baseline_width": 0.8,
+            "value_offset": 1.0,
+            "x_padding": 0.6,
+            "y_max": 77,
+            "bar_color": "#1bc16b",
+            "palette": {
+              "female_specific": "#244572",
+              "female_prevalent": "#3D709D",
+              "female_different": "#A2B8CC",
+              "no_known_difference": "#D7DBDE"
+            },
+            "arrow_gap": 8,
+            "arrow_width": 1.25,
+            "arrow_color": "#a1ddbd",
+            "ratio_size": 9,
+            "ratio_badge": "#a9efc7",
+            "label_colors": {
+              "female_specific": "white",
+              "female_prevalent": "white",
+              "female_different": "#17202B",
+              "no_known_difference": "#17202B"
+            },
+            "legend_anchor": [
+              0.5,
+              0.18
+            ],
+            "legend_size": 9
+          }
+        },
+        "CONTEXT": {
+          "chart_kind": "horizontal_share_stack",
+          "exhibit": "EXHIBIT 1 · DATA-BASED ALTERNATIVE",
+          "title": "Only 8% of the Swiss female disease burden comes from female-specific conditions",
+          "subtitle": "Share of total disease burden among women, modeled DALYs, Switzerland (%)",
+          "source": "Source: McKinsey Health Institute / IHME GBD 2019; independent chart.",
+          "note": "Data-accurate re-visualization; original Exhibit 1 design not visually verified.",
+          "category_order": [
+            "female_specific",
+            "female_prevalent",
+            "female_different",
+            "no_known_difference"
+          ],
+          "category_labels": {
+            "female_specific": "Conditions unique to women",
+            "female_prevalent": "More prevalent in women",
+            "female_different": "Affect women differently",
+            "no_known_difference": "No known sex difference"
+          },
+          "sum_tolerance": 0.1,
+          "min_direct_label": 6
+        }
+      },
+      "executable_python": "#!/usr/bin/env python3\n\"\"\"Editable analytical chart: data CSV + THEME and CONTEXT; no source images.\"\"\"\nfrom __future__ import annotations\nimport argparse,csv,json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import FancyArrowPatch\n\n\ndef render(data, theme, context):\n    kind=context[\"chart_kind\"]\n    fig=plt.figure(figsize=theme[\"figsize\"],facecolor=theme[\"background\"])\n    ax=fig.add_axes(theme[\"axes_rect\"],facecolor=theme[\"background\"])\n    plt.rcParams[\"font.family\"]=theme[\"font\"]\n    if kind==\"vertical_four_bars\":\n        order=context[\"category_order\"]\n        lookup={r[\"category\"]:r for r in data}\n        if any(name not in lookup for name in order):raise ValueError(\"Required category missing\")\n        values=[float(lookup[name][\"value\"]) for name in order]\n        if not all(0<=v<=100 for v in values):raise ValueError(\"Percentage out of range\")\n        xs=list(range(len(order)))\n        colors=[theme[\"palette\"].get(name,theme[\"bar_color\"]) for name in order]\n        ax.bar(xs,values,width=theme[\"bar_width\"],color=colors,zorder=3)\n        for x,v in zip(xs,values):\n            ax.text(x,v+theme[\"value_offset\"],f\"{v:g}\",ha=\"center\",va=\"bottom\",color=theme[\"text\"],fontsize=theme[\"value_size\"],fontweight=\"bold\")\n        ax.set_xticks(xs,[context[\"category_labels\"].get(k,k) for k in order],fontsize=theme[\"tick_size\"])\n        ax.set_xlim(-theme[\"x_padding\"],len(xs)-1+theme[\"x_padding\"])\n        ax.set_ylim(0,theme[\"y_max\"])\n        if context.get(\"show_y\",False):ax.set_yticks(context[\"y_ticks\"])\n        else:ax.set_yticks([])\n        ax.axhline(0,color=theme[\"baseline\"],lw=theme[\"baseline_width\"])\n        if context.get(\"show_ratio_arrow\",False):\n            # draw highlight as an independent data-coordinate overlay\n            arrow=FancyArrowPatch((xs[0],values[0]+theme[\"arrow_gap\"]),(xs[-1],values[-1]+theme[\"arrow_gap\"]),\n                 arrowstyle=\"-|>\",mutation_scale=12,linewidth=theme[\"arrow_width\"],\n                 color=theme[\"arrow_color\"],connectionstyle=\"arc3,rad=0\",zorder=2)\n            ax.add_patch(arrow)\n            x=(xs[0]+xs[-1])/2\n            y=(values[0]+values[-1])/2+theme[\"arrow_gap\"]\n            ax.text(x,y,context[\"ratio_label\"],ha=\"center\",va=\"center\",fontsize=theme[\"ratio_size\"],weight=\"bold\",\n                 bbox=dict(boxstyle=\"circle,pad=0.4\",facecolor=theme[\"ratio_badge\"],edgecolor=\"none\"),zorder=4)\n    elif kind==\"horizontal_share_stack\":\n        order=context[\"category_order\"]\n        lookup={r[\"category\"]:r for r in data}\n        if any(n not in lookup for n in order):raise ValueError(\"Required category missing\")\n        values=[float(lookup[n][\"value\"]) for n in order]\n        if not all(0<=v<=100 for v in values):raise ValueError(\"Percentage out of range\")\n        if abs(sum(values)-100)>context.get(\"sum_tolerance\",0.5):raise ValueError(\"Shares do not sum to 100\")\n        left=0.0\n        for k,v in zip(order,values):\n            ax.barh([0],[v],left=[left],height=theme[\"bar_width\"],color=theme[\"palette\"][k],edgecolor=theme[\"background\"],linewidth=theme[\"edge_width\"])\n            if v>=context[\"min_direct_label\"]:\n                ax.text(left+v/2,0,f\"{v:g}%\",ha=\"center\",va=\"center\",fontsize=theme[\"value_size\"],color=theme[\"label_colors\"].get(k,theme[\"text\"]),fontweight=\"bold\")\n            left+=v\n        ax.set_xlim(0,100);ax.set_ylim(-0.85,0.85)\n        ax.set_yticks([]);ax.set_xticks([])\n        # legend: human-readable direct mapping, below the horizontal share bar\n        import matplotlib.patches as patches\n        legend=[patches.Patch(color=theme[\"palette\"][k],label=context[\"category_labels\"].get(k,k)+\" (\"+f\"{lookup[k]['value']}%\"+\")\") for k in order]\n        fig.legend(handles=legend,loc=\"lower center\",bbox_to_anchor=theme[\"legend_anchor\"],ncol=2,fontsize=theme[\"legend_size\"],frameon=False)\n    else:raise ValueError(f\"Unsupported chart_kind {kind}\")\n    for spine in ax.spines.values():spine.set_visible(False)\n    ax.tick_params(axis=\"both\",length=0,pad=theme[\"tick_pad\"],colors=theme[\"text\"])\n    fig.text(theme[\"header_x\"],theme[\"exhibit_y\"],context[\"exhibit\"],fontsize=theme[\"exhibit_size\"],color=theme[\"text\"],weight=\"bold\")\n    fig.text(theme[\"header_x\"],theme[\"title_y\"],context[\"title\"],fontsize=theme[\"title_size\"],color=theme[\"text\"],family=theme[\"title_font\"],weight=theme[\"title_weight\"],va=\"top\")\n    fig.text(theme[\"header_x\"],theme[\"subtitle_y\"],context[\"subtitle\"],fontsize=theme[\"subtitle_size\"],color=theme[\"muted\"],va=\"top\")\n    fig.text(theme[\"header_x\"],theme[\"source_y\"],context[\"source\"],fontsize=theme[\"source_size\"],color=theme[\"muted\"])\n    if context.get(\"note\"):fig.text(theme[\"header_x\"],theme[\"note_y\"],context[\"note\"],fontsize=theme[\"note_size\"],color=theme[\"muted\"])\n    return fig\n\n\ndef main():\n    p=argparse.ArgumentParser()\n    p.add_argument(\"--theme\",choices=[\"source\",\"neutral\"],default=\"source\")\n    p.add_argument(\"--data\",default=\"data.csv\")\n    p.add_argument(\"--output\",default=\"output.png\")\n    p.add_argument(\"--config\",default=\"config.json\")\n    args=p.parse_args()\n    folder=Path(__file__).resolve().parent\n    cfg=json.loads((folder/args.config).read_text(encoding=\"utf-8\"))\n    inpath=Path(args.data);inpath=inpath if inpath.is_absolute() else folder/inpath\n    with inpath.open(encoding=\"utf-8-sig\",newline=\"\") as h:data=list(csv.DictReader(h))\n    fig=render(data,cfg[\"THEME\"][args.theme],cfg[\"CONTEXT\"])\n    out=Path(args.output);out=out if out.is_absolute() else folder/out\n    out.parent.mkdir(parents=True,exist_ok=True)\n    fig.savefig(out,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\n    print(out)\nif __name__==\"__main__\":main()\n"
+    }
+  }
+}

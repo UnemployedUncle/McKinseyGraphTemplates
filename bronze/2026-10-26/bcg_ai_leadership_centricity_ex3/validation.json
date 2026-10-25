@@ -1,0 +1,72 @@
+{
+  "run_at": "2026-10-26T07:24:33.606068+09:00",
+  "data_checks": {
+    "values_verified_from_official_text": true,
+    "category_count": 4,
+    "percentage_range_passed": true,
+    "sum_100_passed": null,
+    "denominator_explained": true,
+    "source_values_count": 4,
+    "all_provenance_reported": true,
+    "category_unique": true,
+    "source_value_unit_confirmed": true
+  },
+  "render_commands": [
+    {
+      "command": "python chart.py --theme source --data data.csv --output source.png",
+      "returncode": 0,
+      "stdout": "/mnt/data/CGT_2026-10-26/artifacts/bronze/20261026_bcg_ai_leadership_centricity_ex3/source.png",
+      "stderr": "",
+      "size_bytes": 134028
+    },
+    {
+      "command": "python chart.py --theme neutral --data data.csv --output neutral.png",
+      "returncode": 0,
+      "stdout": "/mnt/data/CGT_2026-10-26/artifacts/bronze/20261026_bcg_ai_leadership_centricity_ex3/neutral.png",
+      "stderr": "",
+      "size_bytes": 129351
+    }
+  ],
+  "execution_passed": true,
+  "original_directly_viewed": true,
+  "iterations": 1,
+  "score_details": {
+    "chart_type": {
+      "score": 5,
+      "evidence": "Original and recreation both use four ascending standalone vertical bars."
+    },
+    "data_values_and_order": {
+      "score": 5,
+      "evidence": "Four visible original labels 18,29,36,58 and original left-to-right order exactly match."
+    },
+    "axes_and_scale": {
+      "score": 5,
+      "evidence": "Percentages encoded from a shared zero baseline; no y tick labels in either."
+    },
+    "colors_and_highlight": {
+      "score": 5,
+      "evidence": "Solid green bars and pale diagonal green arrow with 3× annotation reproduced."
+    },
+    "labels_and_annotations": {
+      "score": 4,
+      "evidence": "Labels and ratio badge appear, but their offsets and icon sizing differ slightly."
+    },
+    "title_and_legend": {
+      "score": 4,
+      "evidence": "Headline meaning preserved, but text reworded and font/layout differ; no legend in either."
+    },
+    "aspect_ratio_and_margins": {
+      "score": 4,
+      "evidence": "Wide chart with top title and four separated bars; extra whitespace and title margin differences remain."
+    }
+  },
+  "fidelity_score": 4.57,
+  "validation_status": "verified",
+  "diff_notes": "BCG official Exhibit 3 directly viewed via official web image (499×233 preview); green bar and 3× trend structure replicated. Differences: title wording/typography, exact arrow/label positions, small layout and margins. Seven-part subjective comparison only, no pixel equivalence.",
+  "images_directly_reviewed": true,
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "platform": "Linux"
+  }
+}

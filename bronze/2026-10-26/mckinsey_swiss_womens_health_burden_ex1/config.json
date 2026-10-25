@@ -1,0 +1,150 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        12,
+        5.65
+      ],
+      "background": "#ffffff",
+      "text": "#1f2427",
+      "muted": "#484c50",
+      "font": "DejaVu Sans",
+      "title_font": "DejaVu Serif",
+      "title_weight": "normal",
+      "axes_rect": [
+        0.07,
+        0.39,
+        0.86,
+        0.23
+      ],
+      "header_x": 0.03,
+      "exhibit_y": 0.966,
+      "title_y": 0.91,
+      "subtitle_y": 0.766,
+      "source_y": 0.024,
+      "note_y": 0.064,
+      "exhibit_size": 9,
+      "title_size": 19,
+      "subtitle_size": 11,
+      "source_size": 8,
+      "note_size": 8,
+      "tick_size": 10,
+      "tick_pad": 6,
+      "value_size": 13,
+      "bar_width": 0.65,
+      "edge_width": 1.5,
+      "baseline": "#e3e4e3",
+      "baseline_width": 0.8,
+      "value_offset": 1.0,
+      "x_padding": 0.6,
+      "y_max": 77,
+      "bar_color": "#1bc16b",
+      "palette": {
+        "female_specific": "#0B579D",
+        "female_prevalent": "#21A4CE",
+        "female_different": "#9CCDE5",
+        "no_known_difference": "#C4C9CE"
+      },
+      "arrow_gap": 8,
+      "arrow_width": 1.25,
+      "arrow_color": "#a1ddbd",
+      "ratio_size": 9,
+      "ratio_badge": "#a9efc7",
+      "label_colors": {
+        "female_specific": "white",
+        "female_prevalent": "white",
+        "female_different": "#17202B",
+        "no_known_difference": "#17202B"
+      },
+      "legend_anchor": [
+        0.5,
+        0.18
+      ],
+      "legend_size": 9
+    },
+    "neutral": {
+      "figsize": [
+        12,
+        5.65
+      ],
+      "background": "#ffffff",
+      "text": "#1f2427",
+      "muted": "#484c50",
+      "font": "DejaVu Sans",
+      "title_font": "DejaVu Sans",
+      "title_weight": "bold",
+      "axes_rect": [
+        0.07,
+        0.39,
+        0.86,
+        0.23
+      ],
+      "header_x": 0.03,
+      "exhibit_y": 0.966,
+      "title_y": 0.91,
+      "subtitle_y": 0.766,
+      "source_y": 0.024,
+      "note_y": 0.064,
+      "exhibit_size": 9,
+      "title_size": 17,
+      "subtitle_size": 11,
+      "source_size": 8,
+      "note_size": 8,
+      "tick_size": 10,
+      "tick_pad": 6,
+      "value_size": 13,
+      "bar_width": 0.65,
+      "edge_width": 1.5,
+      "baseline": "#e3e4e3",
+      "baseline_width": 0.8,
+      "value_offset": 1.0,
+      "x_padding": 0.6,
+      "y_max": 77,
+      "bar_color": "#1bc16b",
+      "palette": {
+        "female_specific": "#244572",
+        "female_prevalent": "#3D709D",
+        "female_different": "#A2B8CC",
+        "no_known_difference": "#D7DBDE"
+      },
+      "arrow_gap": 8,
+      "arrow_width": 1.25,
+      "arrow_color": "#a1ddbd",
+      "ratio_size": 9,
+      "ratio_badge": "#a9efc7",
+      "label_colors": {
+        "female_specific": "white",
+        "female_prevalent": "white",
+        "female_different": "#17202B",
+        "no_known_difference": "#17202B"
+      },
+      "legend_anchor": [
+        0.5,
+        0.18
+      ],
+      "legend_size": 9
+    }
+  },
+  "CONTEXT": {
+    "chart_kind": "horizontal_share_stack",
+    "exhibit": "EXHIBIT 1 · DATA-BASED ALTERNATIVE",
+    "title": "Only 8% of the Swiss female disease burden comes from female-specific conditions",
+    "subtitle": "Share of total disease burden among women, modeled DALYs, Switzerland (%)",
+    "source": "Source: McKinsey Health Institute / IHME GBD 2019; independent chart.",
+    "note": "Data-accurate re-visualization; original Exhibit 1 design not visually verified.",
+    "category_order": [
+      "female_specific",
+      "female_prevalent",
+      "female_different",
+      "no_known_difference"
+    ],
+    "category_labels": {
+      "female_specific": "Conditions unique to women",
+      "female_prevalent": "More prevalent in women",
+      "female_different": "Affect women differently",
+      "no_known_difference": "No known sex difference"
+    },
+    "sum_tolerance": 0.1,
+    "min_direct_label": 6
+  }
+}

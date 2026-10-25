@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 11,
+    "bronze": 13,
     "silver": 0,
     "gold": 0
   },
@@ -156,6 +156,34 @@
       "source_url": "https://www.mckinsey.com/featured-insights/future-of-asia/asias-energy-reckoning-securing-the-energy-system-to-drive-growth",
       "figure_ref": "Exhibit 2 summary (editorial)",
       "key_message": "아시아는 GDP 38% 대비 에너지 수요 약 50%와 GHG 55%를 차지하므로 공급안보와 효율 투자가 중요하다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261026_bcg_ai_leadership_centricity_ex3",
+      "tier": "bronze",
+      "path": "bronze/2026-10-26/bcg_ai_leadership_centricity_ex3",
+      "contract": "render-v1",
+      "payload_sha256": "a9936b0b66008d24d111b533ca92cc82b2541fca1fb2421633a2a5abb28c8a64",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+      "figure_ref": "Exhibit 3",
+      "key_message": "AI 전환에서 직원을 적극 참여시키는 집단은 제한적으로 참여시키는 집단보다 AI 성숙 기업 비율이 58% 대 18%로 높으므로, 기술 투자와 함께 공동 설계 방식을 우선 검토해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261026_mckinsey_swiss_womens_health_burden_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-10-26/mckinsey_swiss_womens_health_burden_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "2e59146002cc7b50d2de989f7e2fff9f9dad73c935edaf72f9ace192246ed510",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
+      "figure_ref": "Exhibit 1",
+      "key_message": "스위스 여성의 전체 질병부담 중 여성만의 고유 질환은 8%이고, 양성 모두에 영향을 주지만 여성에서 더 빈번한 질환이 63%이므로 여성건강 투자는 생식건강을 넘어 공통 질환의 성차에 초점을 넓혀야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

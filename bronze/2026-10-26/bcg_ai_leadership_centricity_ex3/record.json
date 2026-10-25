@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261026_bcg_ai_leadership_centricity_ex3",
+  "chart_key": "16adf212219692d48c9d1010916e44c4d5b329f9227602472bbeb03c2c11574f",
+  "date": "2026-10-26",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+  "source_title": "The Three Dimensions of Leadership for the AI Era",
+  "published": "2026-09-29",
+  "updated": null,
+  "retrieved_at": "2026-10-26T07:24:33.606068+09:00",
+  "figure_ref": "Exhibit 3",
+  "original_image_url": "https://web-assets.bcg.com/dims4/default/e608136/2147483647/strip/true/crop/3600x1680%2B0%2B0/resize/499x233%21/format/webp/quality/80/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2F85%2F33%2F7f38d1fa4878b9ef82d7199a6c5e%2Fwhat-is-required-to-lead-in-an-ai-world-ex03.png",
+  "business_context": "Employee centricity and organization AI maturity (2026 survey)",
+  "key_message": "AI 전환에서 직원을 적극 참여시키는 집단은 제한적으로 참여시키는 집단보다 AI 성숙 기업 비율이 58% 대 18%로 높으므로, 기술 투자와 함께 공동 설계 방식을 우선 검토해야 한다.",
+  "insight_type": "comparison",
+  "chart_type": "vertical_four_bars",
+  "encoding": {
+    "x": "category",
+    "y": "percent",
+    "color": "bar_color",
+    "size": "value",
+    "highlight": [
+      "four ascending columns",
+      "one chart-wide green category color",
+      "direct values; y-axis suppressed",
+      "pale rising line with 3x ratio badge"
+    ]
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "denominator",
+      "base",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": [
+      "percent"
+    ],
+    "n_points": 4,
+    "provenance": [
+      "reported"
+    ],
+    "period": "2026 survey",
+    "denominator": "executives grouped by employee centricity; within-group AI mature percentage"
+  },
+  "data_recipe": "Survey executives on employee-centricity and an explicit AI-maturity definition; group respondents; denominator=valid respondents within each centricity group; rate=100*AI-mature/valid; inspect weights/confounding and confidence intervals before cross-group conclusions.",
+  "message_conditions": "58%>18%; the association is not evidence that employee-centricity caused AI maturity.",
+  "design_moves": [
+    "four ascending columns",
+    "one chart-wide green category color",
+    "direct values; y-axis suppressed",
+    "pale rising line with 3x ratio badge"
+  ],
+  "fidelity_score": 4.57,
+  "validation_status": "verified",
+  "training_eligible": false,
+  "training_use": "none_rights_unconfirmed",
+  "rights_status": "third_party_permission_unconfirmed",
+  "exclusion_reasons": [
+    "no_human_review",
+    "third_party_training_permission_unconfirmed"
+  ],
+  "diff_notes": "BCG official Exhibit 3 directly viewed via official web image (499×233 preview); green bar and 3× trend structure replicated. Differences: title wording/typography, exact arrow/label positions, small layout and margins. Seven-part subjective comparison only, no pixel equivalence.",
+  "code_path": "chart.py",
+  "image_path": "artifacts/bronze/20261026_bcg_ai_leadership_centricity_ex3/source.png",
+  "neutral_image_path": "artifacts/bronze/20261026_bcg_ai_leadership_centricity_ex3/neutral.png",
+  "validation_path": "validation.json",
+  "split_group": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+  "training_pair": {
+    "instruction": "Employee centricity and organization AI maturity (2026 survey); AI 전환에서 직원을 적극 참여시키는 집단은 제한적으로 참여시키는 집단보다 AI 성숙 기업 비율이 58% 대 18%로 높으므로, 기술 투자와 함께 공동 설계 방식을 우선 검토해야 한다.; require valid denominators and reusable code",
+    "response": {
+      "data_requirements": "executives grouped by employee centricity; within-group AI mature percentage",
+      "source_and_calculation": "Survey executives on employee-centricity and an explicit AI-maturity definition; group respondents; denominator=valid respondents within each centricity group; rate=100*AI-mature/valid; inspect weights/confounding and confidence intervals before cross-group conclusions.",
+      "chart_design": [
+        "four ascending columns",
+        "one chart-wide green category color",
+        "direct values; y-axis suppressed",
+        "pale rising line with 3x ratio badge"
+      ],
+      "input_data": [
+        {
+          "category": "limited",
+          "series": "",
+          "value": 18,
+          "unit": "percent",
+          "period": "2026 survey",
+          "denominator": "executives grouped by employee centricity; within-group AI mature percentage",
+          "base": "",
+          "source_url": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+          "figure_ref": "Exhibit 3",
+          "provenance": "reported",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": "Group-level responses and weighting are not disclosed in public chart."
+        },
+        {
+          "category": "moderate",
+          "series": "",
+          "value": 29,
+          "unit": "percent",
+          "period": "2026 survey",
+          "denominator": "executives grouped by employee centricity; within-group AI mature percentage",
+          "base": "",
+          "source_url": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+          "figure_ref": "Exhibit 3",
+          "provenance": "reported",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": "Group-level responses and weighting are not disclosed in public chart."
+        },
+        {
+          "category": "strong",
+          "series": "",
+          "value": 36,
+          "unit": "percent",
+          "period": "2026 survey",
+          "denominator": "executives grouped by employee centricity; within-group AI mature percentage",
+          "base": "",
+          "source_url": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+          "figure_ref": "Exhibit 3",
+          "provenance": "reported",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": "Group-level responses and weighting are not disclosed in public chart."
+        },
+        {
+          "category": "extensive",
+          "series": "",
+          "value": 58,
+          "unit": "percent",
+          "period": "2026 survey",
+          "denominator": "executives grouped by employee centricity; within-group AI mature percentage",
+          "base": "",
+          "source_url": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+          "figure_ref": "Exhibit 3",
+          "provenance": "reported",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": "Group-level responses and weighting are not disclosed in public chart."
+        }
+      ],
+      "config": {
+        "THEME": {
+          "source": {
+            "figsize": [
+              12,
+              5.65
+            ],
+            "background": "#ffffff",
+            "text": "#1f2427",
+            "muted": "#484c50",
+            "font": "DejaVu Sans",
+            "title_font": "DejaVu Serif",
+            "title_weight": "normal",
+            "axes_rect": [
+              0.055,
+              0.215,
+              0.91,
+              0.48
+            ],
+            "header_x": 0.03,
+            "exhibit_y": 0.966,
+            "title_y": 0.91,
+            "subtitle_y": 0.75,
+            "source_y": 0.024,
+            "note_y": 0.064,
+            "exhibit_size": 9,
+            "title_size": 19,
+            "subtitle_size": 11,
+            "source_size": 8,
+            "note_size": 8,
+            "tick_size": 10,
+            "tick_pad": 6,
+            "value_size": 11,
+            "bar_width": 0.54,
+            "edge_width": 1.5,
+            "baseline": "#e3e4e3",
+            "baseline_width": 0.8,
+            "value_offset": 1.0,
+            "x_padding": 0.6,
+            "y_max": 77,
+            "bar_color": "#21C267",
+            "palette": {},
+            "arrow_gap": 8,
+            "arrow_width": 1.25,
+            "arrow_color": "#a1d9bd",
+            "ratio_size": 9,
+            "ratio_badge": "#adf0c6",
+            "label_colors": {},
+            "legend_anchor": [
+              0.5,
+              0.2
+            ],
+            "legend_size": 9
+          },
+          "neutral": {
+            "figsize": [
+              12,
+              5.65
+            ],
+            "background": "#ffffff",
+            "text": "#1f2427",
+            "muted": "#484c50",
+            "font": "DejaVu Sans",
+            "title_font": "DejaVu Sans",
+            "title_weight": "bold",
+            "axes_rect": [
+              0.055,
+              0.215,
+              0.91,
+              0.48
+            ],
+            "header_x": 0.03,
+            "exhibit_y": 0.966,
+            "title_y": 0.91,
+            "subtitle_y": 0.75,
+            "source_y": 0.024,
+            "note_y": 0.064,
+            "exhibit_size": 9,
+            "title_size": 17,
+            "subtitle_size": 11,
+            "source_size": 8,
+            "note_size": 8,
+            "tick_size": 10,
+            "tick_pad": 6,
+            "value_size": 11,
+            "bar_width": 0.56,
+            "edge_width": 1.5,
+            "baseline": "#e3e4e3",
+            "baseline_width": 0.8,
+            "value_offset": 1.0,
+            "x_padding": 0.6,
+            "y_max": 77,
+            "bar_color": "#2863A4",
+            "palette": {},
+            "arrow_gap": 8,
+            "arrow_width": 1.25,
+            "arrow_color": "#95ADC6",
+            "ratio_size": 9,
+            "ratio_badge": "#d9e8f7",
+            "label_colors": {},
+            "legend_anchor": [
+              0.5,
+              0.2
+            ],
+            "legend_size": 9
+          }
+        },
+        "CONTEXT": {
+          "chart_kind": "vertical_four_bars",
+          "exhibit": "EXHIBIT 3",
+          "title": "People-centered AI transformations coincide with more AI-mature firms",
+          "subtitle": "Companies classified as AI mature, % of each employee-centricity group",
+          "source": "Source: BCG Global Leadership Survey 2026 (n=563); independent recreation.",
+          "note": "Within-group shares. Association is not evidence of causation.",
+          "category_order": [
+            "limited",
+            "moderate",
+            "strong",
+            "extensive"
+          ],
+          "category_labels": {
+            "limited": "Limited employee\ncentricity",
+            "moderate": "Moderate employee\ncentricity",
+            "strong": "Strong employee\ncentricity",
+            "extensive": "Extensive employee\ncentricity"
+          },
+          "show_y": false,
+          "y_ticks": [],
+          "show_ratio_arrow": true,
+          "ratio_label": "3×"
+        }
+      },
+      "executable_python": "#!/usr/bin/env python3\n\"\"\"Editable analytical chart: data CSV + THEME and CONTEXT; no source images.\"\"\"\nfrom __future__ import annotations\nimport argparse,csv,json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import FancyArrowPatch\n\n\ndef render(data, theme, context):\n    kind=context[\"chart_kind\"]\n    fig=plt.figure(figsize=theme[\"figsize\"],facecolor=theme[\"background\"])\n    ax=fig.add_axes(theme[\"axes_rect\"],facecolor=theme[\"background\"])\n    plt.rcParams[\"font.family\"]=theme[\"font\"]\n    if kind==\"vertical_four_bars\":\n        order=context[\"category_order\"]\n        lookup={r[\"category\"]:r for r in data}\n        if any(name not in lookup for name in order):raise ValueError(\"Required category missing\")\n        values=[float(lookup[name][\"value\"]) for name in order]\n        if not all(0<=v<=100 for v in values):raise ValueError(\"Percentage out of range\")\n        xs=list(range(len(order)))\n        colors=[theme[\"palette\"].get(name,theme[\"bar_color\"]) for name in order]\n        ax.bar(xs,values,width=theme[\"bar_width\"],color=colors,zorder=3)\n        for x,v in zip(xs,values):\n            ax.text(x,v+theme[\"value_offset\"],f\"{v:g}\",ha=\"center\",va=\"bottom\",color=theme[\"text\"],fontsize=theme[\"value_size\"],fontweight=\"bold\")\n        ax.set_xticks(xs,[context[\"category_labels\"].get(k,k) for k in order],fontsize=theme[\"tick_size\"])\n        ax.set_xlim(-theme[\"x_padding\"],len(xs)-1+theme[\"x_padding\"])\n        ax.set_ylim(0,theme[\"y_max\"])\n        if context.get(\"show_y\",False):ax.set_yticks(context[\"y_ticks\"])\n        else:ax.set_yticks([])\n        ax.axhline(0,color=theme[\"baseline\"],lw=theme[\"baseline_width\"])\n        if context.get(\"show_ratio_arrow\",False):\n            # draw highlight as an independent data-coordinate overlay\n            arrow=FancyArrowPatch((xs[0],values[0]+theme[\"arrow_gap\"]),(xs[-1],values[-1]+theme[\"arrow_gap\"]),\n                 arrowstyle=\"-|>\",mutation_scale=12,linewidth=theme[\"arrow_width\"],\n                 color=theme[\"arrow_color\"],connectionstyle=\"arc3,rad=0\",zorder=2)\n            ax.add_patch(arrow)\n            x=(xs[0]+xs[-1])/2\n            y=(values[0]+values[-1])/2+theme[\"arrow_gap\"]\n            ax.text(x,y,context[\"ratio_label\"],ha=\"center\",va=\"center\",fontsize=theme[\"ratio_size\"],weight=\"bold\",\n                 bbox=dict(boxstyle=\"circle,pad=0.4\",facecolor=theme[\"ratio_badge\"],edgecolor=\"none\"),zorder=4)\n    elif kind==\"horizontal_share_stack\":\n        order=context[\"category_order\"]\n        lookup={r[\"category\"]:r for r in data}\n        if any(n not in lookup for n in order):raise ValueError(\"Required category missing\")\n        values=[float(lookup[n][\"value\"]) for n in order]\n        if not all(0<=v<=100 for v in values):raise ValueError(\"Percentage out of range\")\n        if abs(sum(values)-100)>context.get(\"sum_tolerance\",0.5):raise ValueError(\"Shares do not sum to 100\")\n        left=0.0\n        for k,v in zip(order,values):\n            ax.barh([0],[v],left=[left],height=theme[\"bar_width\"],color=theme[\"palette\"][k],edgecolor=theme[\"background\"],linewidth=theme[\"edge_width\"])\n            if v>=context[\"min_direct_label\"]:\n                ax.text(left+v/2,0,f\"{v:g}%\",ha=\"center\",va=\"center\",fontsize=theme[\"value_size\"],color=theme[\"label_colors\"].get(k,theme[\"text\"]),fontweight=\"bold\")\n            left+=v\n        ax.set_xlim(0,100);ax.set_ylim(-0.85,0.85)\n        ax.set_yticks([]);ax.set_xticks([])\n        # legend: human-readable direct mapping, below the horizontal share bar\n        import matplotlib.patches as patches\n        legend=[patches.Patch(color=theme[\"palette\"][k],label=context[\"category_labels\"].get(k,k)+\" (\"+f\"{lookup[k]['value']}%\"+\")\") for k in order]\n        fig.legend(handles=legend,loc=\"lower center\",bbox_to_anchor=theme[\"legend_anchor\"],ncol=2,fontsize=theme[\"legend_size\"],frameon=False)\n    else:raise ValueError(f\"Unsupported chart_kind {kind}\")\n    for spine in ax.spines.values():spine.set_visible(False)\n    ax.tick_params(axis=\"both\",length=0,pad=theme[\"tick_pad\"],colors=theme[\"text\"])\n    fig.text(theme[\"header_x\"],theme[\"exhibit_y\"],context[\"exhibit\"],fontsize=theme[\"exhibit_size\"],color=theme[\"text\"],weight=\"bold\")\n    fig.text(theme[\"header_x\"],theme[\"title_y\"],context[\"title\"],fontsize=theme[\"title_size\"],color=theme[\"text\"],family=theme[\"title_font\"],weight=theme[\"title_weight\"],va=\"top\")\n    fig.text(theme[\"header_x\"],theme[\"subtitle_y\"],context[\"subtitle\"],fontsize=theme[\"subtitle_size\"],color=theme[\"muted\"],va=\"top\")\n    fig.text(theme[\"header_x\"],theme[\"source_y\"],context[\"source\"],fontsize=theme[\"source_size\"],color=theme[\"muted\"])\n    if context.get(\"note\"):fig.text(theme[\"header_x\"],theme[\"note_y\"],context[\"note\"],fontsize=theme[\"note_size\"],color=theme[\"muted\"])\n    return fig\n\n\ndef main():\n    p=argparse.ArgumentParser()\n    p.add_argument(\"--theme\",choices=[\"source\",\"neutral\"],default=\"source\")\n    p.add_argument(\"--data\",default=\"data.csv\")\n    p.add_argument(\"--output\",default=\"output.png\")\n    p.add_argument(\"--config\",default=\"config.json\")\n    args=p.parse_args()\n    folder=Path(__file__).resolve().parent\n    cfg=json.loads((folder/args.config).read_text(encoding=\"utf-8\"))\n    inpath=Path(args.data);inpath=inpath if inpath.is_absolute() else folder/inpath\n    with inpath.open(encoding=\"utf-8-sig\",newline=\"\") as h:data=list(csv.DictReader(h))\n    fig=render(data,cfg[\"THEME\"][args.theme],cfg[\"CONTEXT\"])\n    out=Path(args.output);out=out if out.is_absolute() else folder/out\n    out.parent.mkdir(parents=True,exist_ok=True)\n    fig.savefig(out,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\n    print(out)\nif __name__==\"__main__\":main()\n"
+    }
+  }
+}

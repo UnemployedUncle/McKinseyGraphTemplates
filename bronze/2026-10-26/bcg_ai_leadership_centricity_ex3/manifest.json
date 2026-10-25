@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261026_bcg_ai_leadership_centricity_ex3",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-25T22:28:31.518539+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/three-leadership-roles-ceos-ai",
+  "figure_ref": "Exhibit 3",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "requirements.txt": "48e1d792aa42dc067223fe311036f1388d0fea6b9deec4c84760db4c2f70d2a5",
+    "card.md": "1c871100ae6249714ef4f95d9bd7ccc05cbb48ddd393b7eeb8c581f5afb553ce",
+    "record.json": "7bbbd67df2bd1b25571ec4269685d38d4ec57f3e92e31b17fe421197c11d21f8",
+    "config.json": "b1e16a0afb58a370e1fbb07f394ee7c0df1a3eabc0ff6f27453697ba321cdba1",
+    "data.csv": "e6a6a374d3b7f3682fac1fadf9c2fd5cfbf4027c473b71edc5159a86b46266d0",
+    "chart.py": "cb3c51ac72d8f77034fdc0a5cbd948eb89436c9d12546ff19744cdc458c929ed",
+    "validation.json": "68a0e0aa44bc3368fbd94b221eb45a799cace1057eaab9ca7e6d3e61b42c9264"
+  },
+  "payload_sha256": "a9936b0b66008d24d111b533ca92cc82b2541fca1fb2421633a2a5abb28c8a64"
+}
