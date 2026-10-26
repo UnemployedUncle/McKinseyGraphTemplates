@@ -1,0 +1,87 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        11.2,
+        5.6
+      ],
+      "background": "#FFFFFF",
+      "series_colors": {
+        "Almost always": "#D90C12",
+        "Most of the time": "#FD666C"
+      },
+      "bar_height": 0.38,
+      "edgecolor": "white",
+      "legend_anchor": [
+        0,
+        1.13
+      ],
+      "legend_font_size": 10,
+      "title_x": 0.065,
+      "title_y": 0.96,
+      "subtitle_y": 0.855,
+      "footnote_y": 0.022,
+      "title_font_size": 17,
+      "subtitle_font_size": 10,
+      "footnote_font_size": 8,
+      "margins": {
+        "left": 0.07,
+        "right": 0.94,
+        "top": 0.67,
+        "bottom": 0.17
+      }
+    },
+    "neutral": {
+      "figsize": [
+        11.2,
+        5.6
+      ],
+      "background": "#FFFFFF",
+      "series_colors": {
+        "Almost always": "#264B78",
+        "Most of the time": "#90AFC8"
+      },
+      "bar_height": 0.38,
+      "edgecolor": "white",
+      "legend_anchor": [
+        0,
+        1.13
+      ],
+      "title_x": 0.065,
+      "title_y": 0.96,
+      "subtitle_y": 0.855,
+      "footnote_y": 0.022,
+      "title_font_size": 17,
+      "footnote_font_size": 8,
+      "margins": {
+        "left": 0.07,
+        "right": 0.94,
+        "top": 0.67,
+        "bottom": 0.17
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "stacked_horizontal_bar",
+    "title": "About half of software buyers rely heavily on AI",
+    "subtitle": "How often do you use GenAI in each step of evaluating and purchasing software?",
+    "order": [
+      "Researching vendor capabilities and customer feedback",
+      "Comparing shortlisted vendors",
+      "Building initial list of vendors to consider",
+      "Negotiating pricing and contract terms"
+    ],
+    "series_order": [
+      "Almost always",
+      "Most of the time"
+    ],
+    "x_max": 60,
+    "reported_totals": {
+      "Researching vendor capabilities and customer feedback": 54,
+      "Comparing shortlisted vendors": 51,
+      "Building initial list of vendors to consider": 46,
+      "Negotiating pricing and contract terms": 32
+    },
+    "footnote": "Source: Bain B2B IT Decision Maker Survey, July 2026 (n=207). Segment split is image-digitized estimate."
+  }
+}

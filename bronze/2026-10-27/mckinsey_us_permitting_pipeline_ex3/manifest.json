@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261027_mckinsey_us_permitting_pipeline_ex3",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-26T22:23:36.946705+00:00",
+  "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+  "figure_ref": "Exhibit 3 — All industries (interactive)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "109d56ed86a131c0b78098d9d12e07cc643eb14f9a17916a9963af3a51b3c8af",
+    "chart.py": "6d51bccbaa9c26c8263d1aaaf65235c725a85bbafe4091cccce853aad208c7de",
+    "config.json": "de2cf6763d6ec1bfdf8f21bc2d8684ba6ba99daeaab7441bb2e6ebc580467ee9",
+    "data.csv": "af63754bde4e274141a8ea7323793e776be89f9f3218f45ae2cf0709fa31fad1",
+    "record.json": "a2a6580f989521214d6dd47385aa372f8ede8ffc2953dfba9bdd5d7ccb887c47",
+    "requirements.txt": "357d81df90a811f7f0d49e2fc3da8d3655f3f80cbc84dfdd596fb405e3cdd93d",
+    "validation.json": "d2d20aa7c4ef3e8b6178865f2c68b931f65f422974390d2e5df41b199e6f6c14"
+  },
+  "payload_sha256": "82ab018d40acaf2fac3c51677236f4e4ac4e029a8793b50aedcd5c12ce7e4be5"
+}

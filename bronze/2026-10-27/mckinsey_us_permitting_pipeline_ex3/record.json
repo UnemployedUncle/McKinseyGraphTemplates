@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261027_mckinsey_us_permitting_pipeline_ex3",
+  "chart_key": "4ffc8afabc7f4f1871e68f202bbe6b830a08bcf36843b89e1a5135ab8e7f12fd",
+  "date": "2026-10-27",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+  "source_title": "Federal permitting’s uneven economic impact, and what companies can do about it",
+  "published": "2026-10-22",
+  "updated": null,
+  "retrieved_at": "2026-10-27T07:23:36.946016+09:00",
+  "figure_ref": "Exhibit 3 — All industries (interactive)",
+  "original_image_url": "",
+  "business_context": "미국 주별 연방 인허가 대기 투자액이 어디에 집중되는가",
+  "key_message": "미국 연방 인허가 대기 투자액은 텍사스가 3,733억 달러로 캘리포니아 1,008억 달러의 약 3.7배이므로, 대규모 인프라 투자 리스크는 사업 지역과 산업 구성을 기준으로 우선 점검해야 한다.",
+  "insight_type": "ranking",
+  "chart_type": "horizontal_bar",
+  "encoding": {
+    "x": "percent or USD billion",
+    "y": "category",
+    "color": "highlight group",
+    "size": "length",
+    "highlight": [
+      "Texas"
+    ]
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "denominator",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": "USD billion",
+    "n_points": 10,
+    "provenance": "reported",
+    "sample": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states"
+  },
+  "data_recipe": "See card.md (staged survey/project records, harmonize metric denominators, calculate same-unit group shares/ratio, then render)",
+  "message_conditions": "Must compare like for like with stable denominators and updated action title if data reverses.",
+  "design_moves": [
+    "shared baseline",
+    "source and neutral theme",
+    "direct value labels"
+  ],
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "training_eligible": false,
+  "training_use": "not_approved",
+  "exclusion_reasons": [
+    "human_review_pending",
+    "source_training_rights_unverified",
+    "original_fidelity_pending"
+  ],
+  "diff_notes": "No reliable independent display comparison conducted yet",
+  "code_path": "bronze/2026-10-27/mckinsey_us_permitting_pipeline_ex3/chart.py",
+  "image_path": "artifacts/bronze/20261027_mckinsey_us_permitting_pipeline_ex3/source.png",
+  "neutral_image_path": "artifacts/bronze/20261027_mckinsey_us_permitting_pipeline_ex3/neutral.png",
+  "validation_path": "bronze/2026-10-27/mckinsey_us_permitting_pipeline_ex3/validation.json",
+  "training_pair": {
+    "instruction": "아래 비즈니스 질문을 설명하라: 미국 주별 연방 인허가 대기 투자액이 어디에 집중되는가. 정량 근거의 분모와 출처가 분리되고, 컨텍스트·색·데이터를 바꿀 수 있는 차트를 코드로 만들어라. 원문 수치/추정을 구별하라.",
+    "response": {
+      "message": "미국 연방 인허가 대기 투자액은 텍사스가 3,733억 달러로 캘리포니아 1,008억 달러의 약 3.7배이므로, 대규모 인프라 투자 리스크는 사업 지역과 산업 구성을 기준으로 우선 점검해야 한다.",
+      "chart_type": "horizontal_bar",
+      "data_schema": [
+        "category",
+        "series",
+        "value",
+        "unit",
+        "period",
+        "source_url",
+        "figure_ref",
+        "provenance",
+        "denominator",
+        "estimate_method",
+        "uncertainty_low",
+        "uncertainty_high",
+        "notes"
+      ],
+      "data_rows": [
+        {
+          "category": "Texas",
+          "series": "All industries",
+          "value": 373.3,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "California",
+          "series": "All industries",
+          "value": 100.8,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "Florida",
+          "series": "All industries",
+          "value": 80.5,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "New York",
+          "series": "All industries",
+          "value": 61.3,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "Arizona",
+          "series": "All industries",
+          "value": 59.7,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "Michigan",
+          "series": "All industries",
+          "value": 56.1,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "Pennsylvania",
+          "series": "All industries",
+          "value": 54.3,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "North Carolina",
+          "series": "All industries",
+          "value": 50.6,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "Illinois",
+          "series": "All industries",
+          "value": 46.4,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        },
+        {
+          "category": "Ohio",
+          "series": "All industries",
+          "value": 45.1,
+          "unit": "USD billion",
+          "period": "2025",
+          "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+          "figure_ref": "Exhibit 3 — All industries (interactive)",
+          "provenance": "reported",
+          "denominator": "McKinsey state-level permitting exposure model based on announced projects and economic activity, updated to 2025; full coverage 50 states",
+          "estimate_method": "",
+          "uncertainty_low": "",
+          "uncertainty_high": "",
+          "notes": ""
+        }
+      ],
+      "data_recipe": "\n(1) `project_id, state, sector, investment_value, investment_currency, permitting_status, snapshot_date` 수집 → (2) 최신 공시·프로젝트 파이프라인의 중복 프로젝트·다중 주 프로젝트 중복 산입 방지 → (3) 동일 기준 연도와 통화로 맞추고 금액 추정 여부 표시 → (4) `state`별 `SUM(investment_value)` → (5) 동률 정렬 정의 후 상위 10개 추출 → (6) 필요 시 같은 기간 state_GDP를 결합해 GDP 대비 노출도 산출 → (7) 절대 투자액 순위와 상대 GDP 노출도 메시지를 구별한다.\n\n원문 방법론은 프로젝트 공표 내역과 관측 경제활동을 토대로 주별 노출도를 추정한 모델이다. 사업별 상세 원천 및 추정 오차·확률 분포는 확인 가능한 본문에서 공개되지 않아 재계산으로 원문 결과를 완전히 재현할 수 없다.\n\n",
+      "config": {
+        "THEME": {
+          "source": {
+            "figsize": [
+              10.3,
+              7.2
+            ],
+            "background": "#FFFFFF",
+            "default_color": "#2C84C6",
+            "highlight_color": "#0E3D66",
+            "bar_height": 0.65,
+            "show_grid": true,
+            "label_offset": 6,
+            "title_x": 0.08,
+            "title_y": 0.975,
+            "subtitle_y": 0.902,
+            "footnote_y": 0.016,
+            "title_font_size": 17,
+            "margins": {
+              "left": 0.24,
+              "right": 0.91,
+              "top": 0.81,
+              "bottom": 0.105
+            }
+          },
+          "neutral": {
+            "figsize": [
+              10.3,
+              7.2
+            ],
+            "background": "#FFFFFF",
+            "default_color": "#9EB7D1",
+            "highlight_color": "#23466B",
+            "bar_height": 0.65,
+            "show_grid": true,
+            "label_offset": 6,
+            "title_x": 0.08,
+            "title_y": 0.975,
+            "subtitle_y": 0.902,
+            "footnote_y": 0.016,
+            "title_font_size": 17,
+            "margins": {
+              "left": 0.24,
+              "right": 0.91,
+              "top": 0.81,
+              "bottom": 0.105
+            }
+          }
+        },
+        "CONTEXT": {
+          "chart_type": "horizontal_bar",
+          "title": "Texas leads the US federal permitting pipeline",
+          "subtitle": "Top 10 US states by all-industry project pipeline value ($ billion)",
+          "order": [
+            "Texas",
+            "California",
+            "Florida",
+            "New York",
+            "Arizona",
+            "Michigan",
+            "Pennsylvania",
+            "North Carolina",
+            "Illinois",
+            "Ohio"
+          ],
+          "highlight": [
+            "Texas"
+          ],
+          "axis_label": "Investment pipeline (USD billion)",
+          "x_lim": [
+            0,
+            445
+          ],
+          "footnote": "Source: McKinsey, October 22, 2026, Exhibit 3 (all industries). Values from interactive page; not full 50 states."
+        }
+      },
+      "python_source": "\"\"\"Editable matplotlib recreation: change config.json and data.csv only.\"\"\"\nfrom __future__ import annotations\nimport argparse\nimport json\nfrom pathlib import Path\nimport pandas as pd\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nROOT=Path(__file__).resolve().parent\n\ndef render(data: pd.DataFrame, theme: dict, context: dict):\n    plt.rcParams.update({\"font.family\":theme.get(\"font_family\",\"DejaVu Sans\"),\n        \"font.size\":theme.get(\"font_size\",11),\"axes.unicode_minus\":False})\n    fig,ax=plt.subplots(figsize=tuple(theme.get(\"figsize\",[11,5.5])))\n    fig.patch.set_facecolor(theme.get(\"background\",\"white\"))\n    ax.set_facecolor(theme.get(\"background\",\"white\"))\n    kind=context[\"chart_type\"]\n    label_color=theme.get(\"text_color\",\"#242424\")\n    ordered=context.get(\"order\") or list(dict.fromkeys(data[\"category\"].tolist()))\n    if kind==\"stacked_horizontal_bar\":\n        series=context.get(\"series_order\") or list(dict.fromkeys(data[\"series\"].tolist()))\n        xlabels=np.arange(len(ordered))\n        offset=np.zeros(len(ordered))\n        for s in series:\n            vals=[]\n            for cat in ordered:\n                v=data.loc[(data[\"category\"]==cat)&(data[\"series\"]==s),\"value\"]\n                vals.append(float(v.iloc[0]) if not v.empty else 0)\n            ax.barh(xlabels,vals,left=offset,height=theme.get(\"bar_height\",0.50),\n              color=theme[\"series_colors\"][s],edgecolor=theme.get(\"edgecolor\",\"white\"),linewidth=1.1,label=s)\n            offset+=np.array(vals)\n        totals=context.get(\"reported_totals\",{})\n        for i,cat in enumerate(ordered):\n            label=totals.get(cat)\n            if label is None: label=round(float(offset[i]),1)\n            ax.text(float(offset[i])+theme.get(\"label_offset\",1.0),i,str(label)+\"%\",va=\"center\",\n                    color=label_color,fontweight=\"bold\",fontsize=theme.get(\"value_font_size\",11))\n        ax.set_yticks([])\n        for i,cat in enumerate(ordered):\n            ax.text(0,i-.32,context.get(\"display_labels\",{}).get(cat,cat),\n                    ha=\"left\",va=\"center\",fontsize=theme.get(\"category_font_size\",9.8),color=label_color)\n        ax.set_ylim(len(ordered)-.45,-.58)\n        ax.set_xlim(0,context.get(\"x_max\",60))\n        ax.xaxis.set_visible(context.get(\"show_x_axis\",False))\n        ax.legend(loc=theme.get(\"legend_loc\",\"upper left\"),frameon=False,\n                  bbox_to_anchor=tuple(theme.get(\"legend_anchor\",[0,1.17])),ncol=len(series),fontsize=theme.get(\"legend_font_size\",10))\n    elif kind==\"vertical_bar\":\n        vals=[float(data.loc[data[\"category\"]==cat,\"value\"].iloc[0]) for cat in ordered]\n        colors=[theme.get(\"highlight_color\") if cat in context.get(\"highlight\",[]) else theme.get(\"default_color\") for cat in ordered]\n        ax.bar(np.arange(len(ordered)),vals,color=colors,width=theme.get(\"bar_width\",0.58))\n        ax.set_xticks(range(len(ordered)),labels=[context.get(\"display_labels\",{}).get(x,x) for x in ordered])\n        ax.set_ylim(*context.get(\"y_lim\",[0,max(vals)*1.25]));ax.set_ylabel(context.get(\"axis_label\",\"\"))\n        for i,v in enumerate(vals):ax.text(i,v+theme.get(\"label_offset\",.08),f\"{v:g}×\",ha=\"center\",fontweight=\"bold\",color=label_color)\n        if theme.get(\"show_grid\",False):ax.grid(axis=\"y\",alpha=.15);ax.set_axisbelow(True)\n    elif kind==\"horizontal_bar\":\n        vals=[float(data.loc[data[\"category\"]==cat,\"value\"].iloc[0]) for cat in ordered]\n        colors=[theme.get(\"highlight_color\") if cat in context.get(\"highlight\",[]) else theme.get(\"default_color\") for cat in ordered]\n        ys=np.arange(len(ordered))\n        ax.barh(ys,vals,color=colors,height=theme.get(\"bar_height\",0.64))\n        ax.set_yticks(ys,labels=ordered);ax.invert_yaxis()\n        ax.set_xlim(*context.get(\"x_lim\",[0,max(vals)*1.17]));ax.set_xlabel(context.get(\"axis_label\",\"\"))\n        for i,v in enumerate(vals):ax.text(v+theme.get(\"label_offset\",5),i,f\"{v:,.1f}\",va=\"center\",color=label_color,fontweight=\"bold\")\n        if theme.get(\"show_grid\",False):ax.grid(axis=\"x\",alpha=.13);ax.set_axisbelow(True)\n    else:raise ValueError(f\"Unknown chart_type: {kind}\")\n    ax.spines[['top','right','left']].set_visible(False)\n    if not context.get(\"show_bottom_spine\",False):ax.spines['bottom'].set_visible(False)\n    ax.tick_params(axis=\"both\",length=0,colors=label_color,pad=theme.get(\"tick_pad\",7))\n    fig.text(theme.get(\"title_x\",.08),theme.get(\"title_y\",.96),context[\"title\"],\n             ha=\"left\",va=\"top\",fontweight=\"bold\",color=label_color,fontsize=theme.get(\"title_font_size\",16))\n    fig.text(theme.get(\"title_x\",.08),theme.get(\"subtitle_y\",.885),context.get(\"subtitle\",\"\"),\n             ha=\"left\",va=\"top\",color=label_color,fontsize=theme.get(\"subtitle_font_size\",10))\n    fig.text(theme.get(\"title_x\",.08),theme.get(\"footnote_y\",.035),context.get(\"footnote\",\"\"),\n             ha=\"left\",va=\"bottom\",fontsize=theme.get(\"footnote_font_size\",8),color=theme.get(\"muted_color\",\"#666\"))\n    margins=theme.get(\"margins\",{\"left\":.10,\"right\":.91,\"bottom\":.19,\"top\":.73})\n    fig.subplots_adjust(**margins)\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser();p.add_argument(\"--theme\",choices=[\"source\",\"neutral\"],default=\"source\")\n    p.add_argument(\"--data\",default=\"data.csv\");p.add_argument(\"--output\",default=\"output.png\")\n    a=p.parse_args()\n    data=pd.read_csv(ROOT/a.data if not Path(a.data).is_absolute() else a.data)\n    c=json.loads((ROOT/'config.json').read_text(encoding='utf-8'))\n    f=render(data,c['THEME'][a.theme],c['CONTEXT'])\n    out=Path(a.output);out=(ROOT/out if not out.is_absolute() else out);out.parent.mkdir(parents=True,exist_ok=True)\n    f.savefig(out,dpi=200,facecolor=f.get_facecolor());plt.close(f)\n    print(f'Rendered {out}')\nif __name__=='__main__': main()\n",
+      "command": "python chart.py --theme source --data data.csv --output output.png"
+    }
+  },
+  "split_group": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it"
+}

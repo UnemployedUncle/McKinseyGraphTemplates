@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261027_bain_ai_software_vendor_selection_snap",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-26T22:23:32.034820+00:00",
+  "source_url": "https://www.bain.com/insights/survey-most-software-buyers-use-ai-to-find-vendors-snap-chart/",
+  "figure_ref": "Snap Chart (Flourish visualization 30504459)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "ea3a6ec6dd94a5db5b646b25a39a332f701efadf98c7c870086a67d553fa76c1",
+    "chart.py": "6d51bccbaa9c26c8263d1aaaf65235c725a85bbafe4091cccce853aad208c7de",
+    "config.json": "e6115f504fdad78df276f8aaa7e540c9b9d22a10623dedeccac5efc1cb0c1f14",
+    "data.csv": "ecbfda529df1f73b6c5bcc232d950f4b756ed42c8ff83417656c9b0e05b2430e",
+    "record.json": "61ffe2c0c59647da4dde489d74ee136c169dec3da7117fc681237cdca05bacfa",
+    "requirements.txt": "357d81df90a811f7f0d49e2fc3da8d3655f3f80cbc84dfdd596fb405e3cdd93d",
+    "validation.json": "21534054ceda8eaca6bd0629c196f7008b33b61400dcf7b36ce29d109ba2b3e8"
+  },
+  "payload_sha256": "6ef81811615d65f9cd2dea857cc09d43280952ae90a16ba7d235ae76978dec2e"
+}

@@ -1,0 +1,72 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        10,
+        6
+      ],
+      "background": "#FFFFFF",
+      "default_color": "#8FC3DD",
+      "highlight_color": "#0076A8",
+      "title_x": 0.085,
+      "title_y": 0.95,
+      "subtitle_y": 0.865,
+      "footnote_y": 0.025,
+      "title_font_size": 17,
+      "bar_width": 0.59,
+      "label_offset": 0.07,
+      "margins": {
+        "left": 0.11,
+        "right": 0.94,
+        "top": 0.73,
+        "bottom": 0.24
+      }
+    },
+    "neutral": {
+      "figsize": [
+        10,
+        6
+      ],
+      "background": "#FFFFFF",
+      "default_color": "#C9D6E6",
+      "highlight_color": "#1B365D",
+      "title_x": 0.085,
+      "title_y": 0.95,
+      "subtitle_y": 0.865,
+      "footnote_y": 0.025,
+      "title_font_size": 17,
+      "bar_width": 0.59,
+      "label_offset": 0.07,
+      "margins": {
+        "left": 0.11,
+        "right": 0.94,
+        "top": 0.73,
+        "bottom": 0.24
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "vertical_bar",
+    "title": "Scaling innovation alongside governance raises AI ROI",
+    "subtitle": "Relative AI ROI, normalized to the low-innovation group = 1.0 (not absolute returns)",
+    "order": [
+      "Low innovation",
+      "Scaled AI innovation",
+      "Scaled innovation + governance"
+    ],
+    "display_labels": {
+      "Low innovation": "Low innovation",
+      "Scaled AI innovation": "Scaled innovation",
+      "Scaled innovation + governance": "Innovation +\ngovernance"
+    },
+    "highlight": [
+      "Scaled innovation + governance"
+    ],
+    "axis_label": "Relative ROI (index)",
+    "y_lim": [
+      0,
+      3.65
+    ],
+    "footnote": "Source: BCG Applied AI Index 2026 (n=1,330). Ratios normalized from narrative; this is a redesign."
+  }
+}

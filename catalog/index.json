@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 13,
+    "bronze": 16,
     "silver": 0,
     "gold": 0
   },
@@ -184,6 +184,48 @@
       "source_url": "https://www.mckinsey.com/mhi/our-insights/closing-the-womens-health-gap-switzerlands-chf-7-billion-opportunity",
       "figure_ref": "Exhibit 1",
       "key_message": "스위스 여성의 전체 질병부담 중 여성만의 고유 질환은 8%이고, 양성 모두에 영향을 주지만 여성에서 더 빈번한 질환이 63%이므로 여성건강 투자는 생식건강을 넘어 공통 질환의 성차에 초점을 넓혀야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261027_bain_ai_software_vendor_selection_snap",
+      "tier": "bronze",
+      "path": "bronze/2026-10-27/bain_ai_software_vendor_selection_snap",
+      "contract": "render-v1",
+      "payload_sha256": "6ef81811615d65f9cd2dea857cc09d43280952ae90a16ba7d235ae76978dec2e",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/survey-most-software-buyers-use-ai-to-find-vendors-snap-chart/",
+      "figure_ref": "Snap Chart (Flourish visualization 30504459)",
+      "key_message": "B2B 소프트웨어 구매자의 AI 사용은 벤더 정보 조사 54%, 후보 비교 51%, 초기 후보 선정 46%에 달하지만 계약 협상은 32%이므로, 공급업체는 고객이 직접 연락하기 전 AI 탐색 단계에서 발견 가능성을 높여야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261027_bcg_ai_governance_roi_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-10-27/bcg_ai_governance_roi_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "b83dbaad49ee291271fa70b264d86e5447484c387254debfe2e743713ad16842",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/balance-ai-innovation-and-governance",
+      "figure_ref": "Exhibit 1",
+      "key_message": "혁신을 확장한 기업의 AI ROI는 혁신 수준이 낮은 집단 대비 약 2배, 거버넌스까지 동반한 집단은 약 3배로 보고되므로, 기업은 AI 확산과 책임성 설계를 함께 추진해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261027_mckinsey_us_permitting_pipeline_ex3",
+      "tier": "bronze",
+      "path": "bronze/2026-10-27/mckinsey_us_permitting_pipeline_ex3",
+      "contract": "render-v1",
+      "payload_sha256": "82ab018d40acaf2fac3c51677236f4e4ac4e029a8793b50aedcd5c12ce7e4be5",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
+      "figure_ref": "Exhibit 3 — All industries (interactive)",
+      "key_message": "미국 연방 인허가 대기 투자액은 텍사스가 3,733억 달러로 캘리포니아 1,008억 달러의 약 3.7배이므로, 대규모 인프라 투자 리스크는 사업 지역과 산업 구성을 기준으로 우선 점검해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

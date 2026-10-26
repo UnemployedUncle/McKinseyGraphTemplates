@@ -1,0 +1,73 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "source_image_viewed": true,
+  "reproduction_image_viewed": true,
+  "iterations": 2,
+  "visual_scores": {
+    "chart_type": 5,
+    "data_values_and_order": 4,
+    "axes_and_ticks": 5,
+    "color_and_highlight": 5,
+    "labels_and_annotations": 5,
+    "title_and_legend": 4,
+    "aspect_and_margins": 4
+  },
+  "visual_difference_notes": "Source stack layout replicated from public thumbnail; numeric split digitized, not officially reported.",
+  "data_checks": {
+    "units_consistent": true,
+    "values_nonnegative": true,
+    "source_and_figure_present": true,
+    "category_order_matches_reported": true,
+    "denominator_documented": true,
+    "per_category_total_matches_reported": true
+  },
+  "render_tests": [
+    {
+      "theme": "source",
+      "cmd": "python chart.py --theme source --data data.csv --output artifacts/bronze/20261027_bain_ai_software_vendor_selection_snap/source.png",
+      "returncode": 0,
+      "stdout": "Rendered /mnt/data/CGT_2026-10-27/artifacts/bronze/20261027_bain_ai_software_vendor_selection_snap/source.png",
+      "stderr": "",
+      "output_path": "artifacts/bronze/20261027_bain_ai_software_vendor_selection_snap/source.png",
+      "output_exists": true
+    },
+    {
+      "theme": "neutral",
+      "cmd": "python chart.py --theme neutral --data data.csv --output artifacts/bronze/20261027_bain_ai_software_vendor_selection_snap/neutral.png",
+      "returncode": 0,
+      "stdout": "Rendered /mnt/data/CGT_2026-10-27/artifacts/bronze/20261027_bain_ai_software_vendor_selection_snap/neutral.png",
+      "stderr": "",
+      "output_path": "artifacts/bronze/20261027_bain_ai_software_vendor_selection_snap/neutral.png",
+      "output_exists": true
+    }
+  ],
+  "render_dimensions": {
+    "source": [
+      2240,
+      1120
+    ],
+    "neutral": [
+      2240,
+      1120
+    ]
+  },
+  "dependencies": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3",
+    "numpy": "2.2.6"
+  },
+  "human_review": "pending",
+  "training_eligible": false,
+  "diff_notes": "Self-assessed structural similarity only. Two within-bar segment values are thumbnail-digitized estimates, not original reported numbers. Title/spacing differ.",
+  "visual_score_notes": {
+    "chart_type": "Same four-row stacked horizontal bar",
+    "data_values_and_order": "Published totals exactly reproduced; color components only estimated from image",
+    "axes_and_ticks": "Zero-aligned bar scale with no extraneous ticks",
+    "color_and_highlight": "Two red shades correspond to original",
+    "labels_and_annotations": "Category labels above bars and end-value labels match source design",
+    "title_and_legend": "Title paraphrased, legend wording preserved",
+    "aspect_and_margins": "Layout broadly similar with different typographic spacing"
+  }
+}

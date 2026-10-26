@@ -1,0 +1,76 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        10.3,
+        7.2
+      ],
+      "background": "#FFFFFF",
+      "default_color": "#2C84C6",
+      "highlight_color": "#0E3D66",
+      "bar_height": 0.65,
+      "show_grid": true,
+      "label_offset": 6,
+      "title_x": 0.08,
+      "title_y": 0.975,
+      "subtitle_y": 0.902,
+      "footnote_y": 0.016,
+      "title_font_size": 17,
+      "margins": {
+        "left": 0.24,
+        "right": 0.91,
+        "top": 0.81,
+        "bottom": 0.105
+      }
+    },
+    "neutral": {
+      "figsize": [
+        10.3,
+        7.2
+      ],
+      "background": "#FFFFFF",
+      "default_color": "#9EB7D1",
+      "highlight_color": "#23466B",
+      "bar_height": 0.65,
+      "show_grid": true,
+      "label_offset": 6,
+      "title_x": 0.08,
+      "title_y": 0.975,
+      "subtitle_y": 0.902,
+      "footnote_y": 0.016,
+      "title_font_size": 17,
+      "margins": {
+        "left": 0.24,
+        "right": 0.91,
+        "top": 0.81,
+        "bottom": 0.105
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "horizontal_bar",
+    "title": "Texas leads the US federal permitting pipeline",
+    "subtitle": "Top 10 US states by all-industry project pipeline value ($ billion)",
+    "order": [
+      "Texas",
+      "California",
+      "Florida",
+      "New York",
+      "Arizona",
+      "Michigan",
+      "Pennsylvania",
+      "North Carolina",
+      "Illinois",
+      "Ohio"
+    ],
+    "highlight": [
+      "Texas"
+    ],
+    "axis_label": "Investment pipeline (USD billion)",
+    "x_lim": [
+      0,
+      445
+    ],
+    "footnote": "Source: McKinsey, October 22, 2026, Exhibit 3 (all industries). Values from interactive page; not full 50 states."
+  }
+}

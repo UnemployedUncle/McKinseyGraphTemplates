@@ -1,0 +1,56 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "source_image_viewed": false,
+  "reproduction_image_viewed": true,
+  "iterations": 1,
+  "visual_scores": null,
+  "visual_difference_notes": "Visual alignment pending independent source comparison.",
+  "data_checks": {
+    "units_consistent": true,
+    "values_nonnegative": true,
+    "source_and_figure_present": true,
+    "category_order_matches_reported": true,
+    "denominator_documented": true,
+    "per_category_total_matches_reported": null
+  },
+  "render_tests": [
+    {
+      "theme": "source",
+      "cmd": "python chart.py --theme source --data data.csv --output artifacts/bronze/20261027_bcg_ai_governance_roi_ex1/source.png",
+      "returncode": 0,
+      "stdout": "Rendered /mnt/data/CGT_2026-10-27/artifacts/bronze/20261027_bcg_ai_governance_roi_ex1/source.png",
+      "stderr": "",
+      "output_path": "artifacts/bronze/20261027_bcg_ai_governance_roi_ex1/source.png",
+      "output_exists": true
+    },
+    {
+      "theme": "neutral",
+      "cmd": "python chart.py --theme neutral --data data.csv --output artifacts/bronze/20261027_bcg_ai_governance_roi_ex1/neutral.png",
+      "returncode": 0,
+      "stdout": "Rendered /mnt/data/CGT_2026-10-27/artifacts/bronze/20261027_bcg_ai_governance_roi_ex1/neutral.png",
+      "stderr": "",
+      "output_path": "artifacts/bronze/20261027_bcg_ai_governance_roi_ex1/neutral.png",
+      "output_exists": true
+    }
+  ],
+  "render_dimensions": {
+    "source": [
+      2000,
+      1200
+    ],
+    "neutral": [
+      2000,
+      1200
+    ]
+  },
+  "dependencies": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3",
+    "numpy": "2.2.6"
+  },
+  "human_review": "pending",
+  "training_eligible": false,
+  "diff_notes": "No reliable independent display comparison conducted yet"
+}

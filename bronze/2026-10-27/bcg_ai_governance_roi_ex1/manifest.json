@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261027_bcg_ai_governance_roi_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-26T22:23:34.482666+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/balance-ai-innovation-and-governance",
+  "figure_ref": "Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "a01d701fa10f53d09ab9b901efd7b29e5361d89be047e9750093838fa386a9c2",
+    "chart.py": "6d51bccbaa9c26c8263d1aaaf65235c725a85bbafe4091cccce853aad208c7de",
+    "config.json": "4cab58dd7baf77aee3c81d296ad5cf653358d3a268ae4cd4e3b73bbfc0db937f",
+    "data.csv": "33a76fbff14fe6c42cc7b986ff6f788951a314295ca1f21257bb8bd18ef06bdb",
+    "record.json": "2d56bbfb7be813ee612bc29a9d09bc075d7904033aca2daa15755a5284a6c286",
+    "requirements.txt": "357d81df90a811f7f0d49e2fc3da8d3655f3f80cbc84dfdd596fb405e3cdd93d",
+    "validation.json": "956988fe72643ce55581318578c7b597fd5a4707fcb62ce7719cb1322dfdbef5"
+  },
+  "payload_sha256": "b83dbaad49ee291271fa70b264d86e5447484c387254debfe2e743713ad16842"
+}
