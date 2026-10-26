@@ -29,6 +29,14 @@ def main():
                 env['MPLBACKEND'] = 'Agg'
                 try:
                     run = subprocess.run(command, cwd=folder, env=env, capture_output=True, text=True, timeout=60)
+                    # Older render-v1 templates accept --config, while newer ones
+                    # load config.json beside chart.py without a CLI flag.
+                    # Retry only for this specific argparse incompatibility.
+                    if run.returncode != 0 and 'unrecognized arguments: --config' in run.stderr:
+                        flag_index = command.index('--config')
+                        fallback_command = command[:flag_index] + command[flag_index + 2:]
+                        run = subprocess.run(fallback_command, cwd=folder, env=env,
+                                             capture_output=True, text=True, timeout=60)
                     success = run.returncode == 0 and dest.exists() and dest.stat().st_size > 0
                     report = {'template_id': m['template_id'], 'theme': theme, 'success': success,
                               'returncode': run.returncode, 'stdout': run.stdout, 'stderr': run.stderr,
