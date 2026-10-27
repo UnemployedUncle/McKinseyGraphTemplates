@@ -1,0 +1,92 @@
+{
+  "THEME": {
+    "source": {
+      "size": [
+        10.0,
+        5.3
+      ],
+      "background": "#FFFFFF",
+      "ink": "#252525",
+      "colors": {
+        "China": "#DC0605",
+        "North America": "#C6C6C6",
+        "Europe": "#A5A5A5",
+        "Southeast Asia": "#777777",
+        "Rest of world": "#363636"
+      },
+      "grid": "#DDDDDD",
+      "font_size": 11,
+      "title_size": 15,
+      "line_color": "#FFFFFF",
+      "title_x": 0.02,
+      "title_y": 0.975,
+      "plot_left": 0.13,
+      "plot_right": 0.95,
+      "plot_bottom": 0.1,
+      "plot_top": 0.85,
+      "label_color": "#FFFFFF",
+      "label_colors": {
+        "North America": "#292929",
+        "Europe": "#FFFFFF",
+        "Southeast Asia": "#FFFFFF"
+      }
+    },
+    "neutral": {
+      "size": [
+        10.0,
+        5.3
+      ],
+      "background": "#FFFFFF",
+      "ink": "#17312B",
+      "colors": {
+        "China": "#155A4B",
+        "North America": "#5F8878",
+        "Europe": "#8DB9AB",
+        "Southeast Asia": "#ADC7BB",
+        "Rest of world": "#C8D5CE"
+      },
+      "grid": "#CBD8D2",
+      "font_size": 11,
+      "title_size": 15,
+      "line_color": "#FFFFFF",
+      "title_x": 0.02,
+      "title_y": 0.975,
+      "plot_left": 0.13,
+      "plot_right": 0.95,
+      "plot_bottom": 0.1,
+      "plot_top": 0.85,
+      "label_color": "#FFFFFF",
+      "label_colors": {
+        "Europe": "#17312B",
+        "Southeast Asia": "#17312B",
+        "Rest of world": "#17312B"
+      }
+    }
+  },
+  "CONTEXT": {
+    "title": "Global specialty chemicals market by region, 2030E",
+    "subtitle": "Expected regional mix (% of $911B world market)",
+    "total_label": "$911B",
+    "series_order": [
+      "China",
+      "North America",
+      "Europe",
+      "Southeast Asia",
+      "Rest of world"
+    ],
+    "ylabel": "Share of 2030E global specialty chemicals market (%)",
+    "source_note": "Sources: Bain analysis; CEFIC; S&P Global Energy Platts. Shares rounded (sum = 101%).",
+    "ticks": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "start_zero": true,
+    "format_labels": true,
+    "show_grid": false,
+    "chart_type": "stacked_column"
+  }
+}

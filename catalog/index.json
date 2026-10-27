@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 16,
+    "bronze": 19,
     "silver": 0,
     "gold": 0
   },
@@ -226,6 +226,48 @@
       "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/federal-permittings-uneven-economic-impact-and-what-companies-can-do-about-it",
       "figure_ref": "Exhibit 3 — All industries (interactive)",
       "key_message": "미국 연방 인허가 대기 투자액은 텍사스가 3,733억 달러로 캘리포니아 1,008억 달러의 약 3.7배이므로, 대규모 인프라 투자 리스크는 사업 지역과 산업 구성을 기준으로 우선 점검해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261028_bain_specialty_chemicals_market_fig2",
+      "tier": "bronze",
+      "path": "bronze/2026-10-28/bain_specialty_chemicals_market_fig2",
+      "contract": "render-v1",
+      "payload_sha256": "e7bee177132bdb744cbcd3a2f146a904a73203e6bed9a62df5f6bef197a47787",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/chemical-companies-dont-have-to-settle-for-managed-decline/",
+      "figure_ref": "Figure 2",
+      "key_message": "2030년 글로벌 특수화학 시장 약 9,110억 달러 중 중국 비중은 31%로 북미 19%, 유럽 15%를 각각 앞서므로, 글로벌 특수화학 전략은 중국의 시장 지위를 전제로 재설계해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261028_bcg_critical_minerals_ex2_subset",
+      "tier": "bronze",
+      "path": "bronze/2026-10-28/bcg_critical_minerals_ex2_subset",
+      "contract": "render-v1",
+      "payload_sha256": "b0614c2f65188dabafd469496957d6e83c579ee154e0e04d6b376f31b7f8cc1e",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/critical-minerals-risk-blind-spots",
+      "figure_ref": "Exhibit 2 (reported numerical subset; not full source graphic)",
+      "key_message": "코발트 채굴의 약 3분의 2는 콩고민주공화국에, 니켈의 상류 생산능력은 약 70%가 인도네시아에 집중되어 있어, 광산 위치뿐 아니라 정련과 지분 소유 구조까지 추적해야 공급 리스크를 평가할 수 있다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261028_mckinsey_fincrime_agentic_time_ex2_range",
+      "tier": "bronze",
+      "path": "bronze/2026-10-28/mckinsey_fincrime_agentic_time_ex2_range",
+      "contract": "render-v1",
+      "payload_sha256": "daa2b0ed04af28f8340fdf244a819db9606a75514456192412079d7b4c23ec9b",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/agentic-ai-in-financial-crime-prevention-lessons-from-winners",
+      "figure_ref": "Exhibit 2 (numeric range from article; not original graphic)",
+      "key_message": "금융범죄 관련 자금출처 확인 업무에서 에이전틱 AI는 처리시간을 약 30~50% 줄일 수 있지만, 금융기관은 인간 검증 단계와 정확도·재현성 기준을 함께 설계해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261028_mckinsey_fincrime_agentic_time_ex2_range",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-27T22:24:19.527850+00:00",
+  "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/agentic-ai-in-financial-crime-prevention-lessons-from-winners",
+  "figure_ref": "Exhibit 2 (numeric range from article; not original graphic)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "080d979ebb38c7626c1eb1ced1006e3fe0c23738cd44f14e0bfa8167bf7deb01",
+    "record.json": "975fa8ccb28b7b855477ac1220c835c6422701e95e7cb1192b52ef873db21462",
+    "card.md": "ff51e19dff32d1929cf789fec16dede693f6b42c9f7d518f4888bd9ccfa90309",
+    "data.csv": "2746000b1b73b53e84a798a081ee62a33ad6e6d41fe4d54fd223968bfd0beea1",
+    "validation.json": "b2c3e35ade7cbe56985fab4014007fc8e9b784970758a5ca4d505a0d95463d87",
+    "config.json": "33648c350a58dfae88a63f5eca3828ca010b97ff4bf3b7590387206afc767418",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d"
+  },
+  "payload_sha256": "daa2b0ed04af28f8340fdf244a819db9606a75514456192412079d7b4c23ec9b"
+}

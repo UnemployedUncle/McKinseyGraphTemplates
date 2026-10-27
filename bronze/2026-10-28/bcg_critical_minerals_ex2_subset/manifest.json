@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261028_bcg_critical_minerals_ex2_subset",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-27T22:24:16.860867+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/critical-minerals-risk-blind-spots",
+  "figure_ref": "Exhibit 2 (reported numerical subset; not full source graphic)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "080d979ebb38c7626c1eb1ced1006e3fe0c23738cd44f14e0bfa8167bf7deb01",
+    "record.json": "b9a873df83f410572ba870bf9f0071875d5a4e4be9a30f8bcbd54a295b00c3f6",
+    "card.md": "38cca98cc93ec4742bd362f245cd680fc7ae399a41cc93076d7695a33e0b8b27",
+    "data.csv": "fb539c4ac15b1da0a286375de3413b79a93bba6cd2f411a06abb2d121a9deb7d",
+    "validation.json": "ff16d76fe3c77c8d9cfaa22752f98e0c6169960bd5ec34cf7570818c9c6851c4",
+    "config.json": "57ef41a82ecbdc4123dee3faea4ff2eb4e4733526e71a314a8c35c7ba7d8eafe",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d"
+  },
+  "payload_sha256": "b0614c2f65188dabafd469496957d6e83c579ee154e0e04d6b376f31b7f8cc1e"
+}

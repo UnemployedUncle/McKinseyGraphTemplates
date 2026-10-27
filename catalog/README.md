@@ -20,5 +20,8 @@
 | bronze | [20261027_bain_ai_software_vendor_selection_snap](../bronze/2026-10-27/bain_ai_software_vendor_selection_snap) | pending | verified |
 | bronze | [20261027_bcg_ai_governance_roi_ex1](../bronze/2026-10-27/bcg_ai_governance_roi_ex1) | pending | unverified |
 | bronze | [20261027_mckinsey_us_permitting_pipeline_ex3](../bronze/2026-10-27/mckinsey_us_permitting_pipeline_ex3) | pending | unverified |
+| bronze | [20261028_bain_specialty_chemicals_market_fig2](../bronze/2026-10-28/bain_specialty_chemicals_market_fig2) | pending | verified |
+| bronze | [20261028_bcg_critical_minerals_ex2_subset](../bronze/2026-10-28/bcg_critical_minerals_ex2_subset) | pending | unverified |
+| bronze | [20261028_mckinsey_fincrime_agentic_time_ex2_range](../bronze/2026-10-28/mckinsey_fincrime_agentic_time_ex2_range) | pending | unverified |
 
 검수할 정확한 payload_sha256은 각 manifest.json과 index.json에서 확인합니다.

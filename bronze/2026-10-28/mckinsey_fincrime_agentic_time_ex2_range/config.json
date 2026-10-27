@@ -1,0 +1,78 @@
+{
+  "THEME": {
+    "source": {
+      "size": [
+        10.0,
+        4.8
+      ],
+      "background": "#FFFFFF",
+      "ink": "#1A2431",
+      "colors": {
+        "range": "#14769C",
+        "start": "#365D76",
+        "end": "#126884",
+        "light": "#DCEAF0"
+      },
+      "grid": "#DBE2E8",
+      "font_size": 11,
+      "title_size": 15,
+      "title_x": 0.05,
+      "title_y": 0.97,
+      "plot_left": 0.17,
+      "plot_right": 0.92,
+      "plot_bottom": 0.25,
+      "plot_top": 0.69,
+      "line_width": 22,
+      "marker_size": 12
+    },
+    "neutral": {
+      "size": [
+        10.0,
+        4.8
+      ],
+      "background": "#FFFFFF",
+      "ink": "#21372D",
+      "colors": {
+        "range": "#2B785D",
+        "start": "#135940",
+        "end": "#104B38",
+        "light": "#D8E8DE"
+      },
+      "grid": "#C9D8D0",
+      "font_size": 11,
+      "title_size": 15,
+      "title_x": 0.05,
+      "title_y": 0.97,
+      "plot_left": 0.17,
+      "plot_right": 0.92,
+      "plot_bottom": 0.25,
+      "plot_top": 0.69,
+      "line_width": 22,
+      "marker_size": 12
+    }
+  },
+  "CONTEXT": {
+    "title": "Agentic AI can reduce source-of-wealth handling time",
+    "subtitle": "Reported interval: 30%–50% faster; human checkpoints remain necessary",
+    "x_label": "Reduction in handling time (%)",
+    "xlim": [
+      0,
+      60
+    ],
+    "ticks": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "range_labels": [
+      "30%",
+      "50%"
+    ],
+    "source_note": "Source: McKinsey (Oct 26, 2026), Exhibit 2 caption; interval visualization is editorial.",
+    "chart_type": "range"
+  }
+}

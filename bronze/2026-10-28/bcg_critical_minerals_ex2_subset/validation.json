@@ -1,0 +1,41 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "score_by_dimension": null,
+  "score_method": "not scored; original chart not visually inspected",
+  "original_image_viewed": false,
+  "generated_source_and_neutral_viewed": true,
+  "run_count": 2,
+  "comparison_iterations": 0,
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "commands": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-28/source/bcg_critical_minerals_ex2_subset/chart.py --theme source --data /mnt/data/CGT_2026-10-28/source/bcg_critical_minerals_ex2_subset/data.csv --config /mnt/data/CGT_2026-10-28/source/bcg_critical_minerals_ex2_subset/config.json --output /mnt/data/CGT_2026-10-28/artifacts/bronze/20261028_bcg_critical_minerals_ex2_subset/source.png",
+      "returncode": 0,
+      "stdout": "/mnt/data/CGT_2026-10-28/artifacts/bronze/20261028_bcg_critical_minerals_ex2_subset/source.png\n",
+      "stderr": "",
+      "bytes": 110302
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-28/source/bcg_critical_minerals_ex2_subset/chart.py --theme neutral --data /mnt/data/CGT_2026-10-28/source/bcg_critical_minerals_ex2_subset/data.csv --config /mnt/data/CGT_2026-10-28/source/bcg_critical_minerals_ex2_subset/config.json --output /mnt/data/CGT_2026-10-28/artifacts/bronze/20261028_bcg_critical_minerals_ex2_subset/neutral.png",
+      "returncode": 0,
+      "stdout": "/mnt/data/CGT_2026-10-28/artifacts/bronze/20261028_bcg_critical_minerals_ex2_subset/neutral.png\n",
+      "stderr": "",
+      "bytes": 110331
+    }
+  ],
+  "data_checks": {
+    "csv_parse": true,
+    "provenance_field_present": true,
+    "units_period_present": true,
+    "no_synthetic_as_observed": true,
+    "nonnegative_values": true,
+    "reported_total_rounded_101": null
+  },
+  "diff_notes": "Original exhibit image could not be visually inspected. The plot is an editorial comparison using selected reported article figures; not a faithful reconstruction of the original figure.",
+  "user_review": "pending",
+  "training_eligible": false
+}

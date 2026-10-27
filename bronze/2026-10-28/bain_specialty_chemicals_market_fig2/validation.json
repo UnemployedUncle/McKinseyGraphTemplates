@@ -1,0 +1,49 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "score_by_dimension": {
+    "chart_type": 5,
+    "data_values_order": 5,
+    "axis_range_ticks": 4,
+    "color_mapping_highlight": 5,
+    "label_annotation": 4,
+    "title_legend": 4,
+    "proportions_margins": 5
+  },
+  "score_method": "agent self assessment, visual comparison only",
+  "original_image_viewed": true,
+  "generated_source_and_neutral_viewed": true,
+  "run_count": 2,
+  "comparison_iterations": 1,
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "commands": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-28/source/bain_specialty_chemicals_market_fig2/chart.py --theme source --data /mnt/data/CGT_2026-10-28/source/bain_specialty_chemicals_market_fig2/data.csv --config /mnt/data/CGT_2026-10-28/source/bain_specialty_chemicals_market_fig2/config.json --output /mnt/data/CGT_2026-10-28/artifacts/bronze/20261028_bain_specialty_chemicals_market_fig2/source.png",
+      "returncode": 0,
+      "stdout": "/mnt/data/CGT_2026-10-28/artifacts/bronze/20261028_bain_specialty_chemicals_market_fig2/source.png\n",
+      "stderr": "",
+      "bytes": 106014
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-28/source/bain_specialty_chemicals_market_fig2/chart.py --theme neutral --data /mnt/data/CGT_2026-10-28/source/bain_specialty_chemicals_market_fig2/data.csv --config /mnt/data/CGT_2026-10-28/source/bain_specialty_chemicals_market_fig2/config.json --output /mnt/data/CGT_2026-10-28/artifacts/bronze/20261028_bain_specialty_chemicals_market_fig2/neutral.png",
+      "returncode": 0,
+      "stdout": "/mnt/data/CGT_2026-10-28/artifacts/bronze/20261028_bain_specialty_chemicals_market_fig2/neutral.png\n",
+      "stderr": "",
+      "bytes": 110289
+    }
+  ],
+  "data_checks": {
+    "csv_parse": true,
+    "provenance_field_present": true,
+    "units_period_present": true,
+    "no_synthetic_as_observed": true,
+    "nonnegative_values": true,
+    "reported_total_rounded_101": true
+  },
+  "diff_notes": "Original single stacked column inspected via official Flourish thumbnail. Reproduction differs in title, spacing and regional label placement; rounded shares 101% normalized to 100% drawing heights only.",
+  "user_review": "pending",
+  "training_eligible": false
+}

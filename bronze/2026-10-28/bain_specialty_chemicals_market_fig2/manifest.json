@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261028_bain_specialty_chemicals_market_fig2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-27T22:24:14.198679+00:00",
+  "source_url": "https://www.bain.com/insights/chemical-companies-dont-have-to-settle-for-managed-decline/",
+  "figure_ref": "Figure 2",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "080d979ebb38c7626c1eb1ced1006e3fe0c23738cd44f14e0bfa8167bf7deb01",
+    "record.json": "11d98ee792838726b2fcfd83b403f2346266fdba709d8cdad7ca11e7e8b9a4ee",
+    "card.md": "9ffc0f61339b026e54d72c5bb1578574599264f7a0699e82fb2839a889566ad3",
+    "data.csv": "bc5e9d6aa003f0b0159f480c5b58d84132af51264c4511a16558246b98b0ff3b",
+    "validation.json": "0fcc792d96256e513bfe03d3c8df68487d163f21d09d4a76b62239d01395fc5e",
+    "config.json": "6f035b8e2e208dcab2108afcd0eb6c37e85a66d11d355c5d7d506587b4da237e",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d"
+  },
+  "payload_sha256": "e7bee177132bdb744cbcd3a2f146a904a73203e6bed9a62df5f6bef197a47787"
+}
