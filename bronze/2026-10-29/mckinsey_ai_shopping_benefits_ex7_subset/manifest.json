@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261029_mckinsey_ai_shopping_benefits_ex7_subset",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-29T07:18:48.245871+09:00",
+  "source_url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/who-wins-when-ai-does-the-shopping-new-evidence-on-agentic-commerce",
+  "figure_ref": "Exhibit 7 (three reported benefit items)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "896a5428d2b59101beff7500c56537ad727c0b8341c5ca5bbf4d9b93ba060b8f",
+    "chart.py": "7175445d727d1b56d4310b3b6aad1960d59b718584cd0ff05efb56c32f10bf6d",
+    "config.json": "58530d3e80482f59c042243690b508a60ba73c6f3eb43cddb05a9781180766b6",
+    "data.csv": "728ef5e68621a34bed3d3398ed133f5f6bf6143f12a93f65ad0438e65c8db3db",
+    "record.json": "af93c831bb622537fbac9174e64daab800aeab313327b1275743c1d1649d9698",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "validation.json": "099350f91a9e192231fe8556fc052bd70b928b34043838e87ec876edd333d6d6"
+  },
+  "payload_sha256": "f1e469a3f103d2424f41bbfcdce9faa3281beeda4cb647211452ff19d31224a7"
+}

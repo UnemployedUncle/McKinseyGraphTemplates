@@ -1,0 +1,40 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_visual_seen": false,
+  "actual_render_success": true,
+  "iterations": 1,
+  "data_checks": {
+    "parse_csv": true,
+    "all_reported_values": true,
+    "no_missing_or_synthetic": true,
+    "percent_in_0_100": true,
+    "correct_population_note": true,
+    "units_consistent_within_series": true,
+    "original_figure_comparison": false
+  },
+  "score_components": null,
+  "diff_notes": "BCG 본문에 보고된 국가별 4쌍으로 새로 설계한 덤벨 그래프; 공식 Exhibit 재현 아님.",
+  "environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "runs": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/bcg_africa_alternatives_allocation_gap/chart.py --data /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/bcg_africa_alternatives_allocation_gap/data.csv --config /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/bcg_africa_alternatives_allocation_gap/config.json --theme source --output /mnt/data/CGT_2026-10-29/artifacts/bronze/20261029_bcg_africa_alternatives_allocation_gap/source.png",
+      "theme": "source",
+      "returncode": 0,
+      "image_bytes": 160284,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/bcg_africa_alternatives_allocation_gap/chart.py --data /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/bcg_africa_alternatives_allocation_gap/data.csv --config /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/bcg_africa_alternatives_allocation_gap/config.json --theme neutral --output /mnt/data/CGT_2026-10-29/artifacts/bronze/20261029_bcg_africa_alternatives_allocation_gap/neutral.png",
+      "theme": "neutral",
+      "returncode": 0,
+      "image_bytes": 160164,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

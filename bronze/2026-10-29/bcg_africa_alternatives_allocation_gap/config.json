@@ -1,0 +1,104 @@
+{
+  "THEME": {
+    "source": {
+      "size": [
+        11.6,
+        6.35
+      ],
+      "background": "#FFFFFF",
+      "text": "#20232B",
+      "muted": "#646C77",
+      "left": 0.27,
+      "right": 0.94,
+      "top": 0.74,
+      "bottom": 0.2,
+      "title_y": 0.975,
+      "subtitle_y": 0.885,
+      "source_y": 0.04,
+      "title_size": 17,
+      "subtitle_size": 10.5,
+      "label_size": 12,
+      "category_size": 11.0,
+      "tick_size": 9.5,
+      "source_size": 8,
+      "bar_height": 0.46,
+      "label_offset": 0.6,
+      "above_offset": 0.18,
+      "primary": "#27689B",
+      "highlight": "#C94851",
+      "connector": "#C3CCD4",
+      "line_width": 4.0,
+      "dot_size": 120,
+      "outline_width": 3.0,
+      "grid": "#E5E8ED",
+      "legend_size": 10
+    },
+    "neutral": {
+      "size": [
+        11.6,
+        6.35
+      ],
+      "background": "#FFFFFF",
+      "text": "#15382F",
+      "muted": "#65766E",
+      "left": 0.27,
+      "right": 0.94,
+      "top": 0.74,
+      "bottom": 0.2,
+      "title_y": 0.975,
+      "subtitle_y": 0.885,
+      "source_y": 0.04,
+      "title_size": 17,
+      "subtitle_size": 10.5,
+      "label_size": 12,
+      "category_size": 11.0,
+      "tick_size": 9.5,
+      "source_size": 8,
+      "bar_height": 0.46,
+      "label_offset": 0.6,
+      "above_offset": 0.18,
+      "primary": "#2F7964",
+      "highlight": "#D18A3A",
+      "connector": "#BBD0C4",
+      "line_width": 4.0,
+      "dot_size": 120,
+      "outline_width": 3.0,
+      "grid": "#E4ECE7",
+      "legend_size": 10
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "dumbbell",
+    "title": "Pension portfolios invest far below permitted alternative caps",
+    "subtitle": "Observed allocations versus regulatory ceilings, % of each national pension AUM",
+    "category_order": [
+      "South Africa (PE)",
+      "Nigeria (PE)",
+      "Kenya (PE & VC)",
+      "Ghana (alternatives)"
+    ],
+    "series_order": [
+      "actual_allocation",
+      "regulatory_ceiling"
+    ],
+    "series_labels": [
+      "Actual allocation",
+      "Regulatory ceiling"
+    ],
+    "highlight_categories": [],
+    "axis_min": 0,
+    "axis_max": 30,
+    "ticks": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "value_format": "{:.1f}%",
+    "axis_label": "Share of pension AUM (%)",
+    "source_note": "Source: BCG, Africa Unleashed (Oct 27, 2026). Categories/definitions differ by market."
+  }
+}

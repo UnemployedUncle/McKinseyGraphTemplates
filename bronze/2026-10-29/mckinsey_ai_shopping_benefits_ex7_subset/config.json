@@ -1,0 +1,102 @@
+{
+  "THEME": {
+    "source": {
+      "size": [
+        11.6,
+        6.35
+      ],
+      "background": "#FFFFFF",
+      "text": "#20232B",
+      "muted": "#646C77",
+      "left": 0.28,
+      "right": 0.94,
+      "top": 0.78,
+      "bottom": 0.2,
+      "title_y": 0.975,
+      "subtitle_y": 0.895,
+      "source_y": 0.04,
+      "title_size": 17,
+      "subtitle_size": 10.5,
+      "label_size": 12,
+      "category_size": 11.0,
+      "tick_size": 9.5,
+      "source_size": 8,
+      "bar_height": 0.46,
+      "label_offset": 0.5,
+      "above_offset": 0.18,
+      "primary": "#27689B",
+      "highlight": "#C94851",
+      "connector": "#C3CCD4",
+      "line_width": 4.0,
+      "dot_size": 120,
+      "outline_width": 3.0,
+      "grid": "#E5E8ED",
+      "legend_size": 10
+    },
+    "neutral": {
+      "size": [
+        11.6,
+        6.35
+      ],
+      "background": "#FFFFFF",
+      "text": "#15382F",
+      "muted": "#65766E",
+      "left": 0.28,
+      "right": 0.94,
+      "top": 0.78,
+      "bottom": 0.2,
+      "title_y": 0.975,
+      "subtitle_y": 0.895,
+      "source_y": 0.04,
+      "title_size": 17,
+      "subtitle_size": 10.5,
+      "label_size": 12,
+      "category_size": 11.0,
+      "tick_size": 9.5,
+      "source_size": 8,
+      "bar_height": 0.46,
+      "label_offset": 0.5,
+      "above_offset": 0.18,
+      "primary": "#2F7964",
+      "highlight": "#D18A3A",
+      "connector": "#BBD0C4",
+      "line_width": 4.0,
+      "dot_size": 120,
+      "outline_width": 3.0,
+      "grid": "#E4ECE7",
+      "legend_size": 10
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "horizontal_bar",
+    "title": "AI shoppers value less friction across product research",
+    "subtitle": "Top-two-box agreement with benefits of AI shopping tools, %",
+    "category_order": [
+      "Narrowing choices",
+      "Less scrolling / clicking",
+      "Time saved"
+    ],
+    "series_order": [
+      "agreement_top2"
+    ],
+    "series_labels": [
+      "Top-two agreement"
+    ],
+    "highlight_categories": [
+      "Less scrolling / clicking"
+    ],
+    "axis_min": 0,
+    "axis_max": 100,
+    "ticks": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "value_format": "{:.0f}%",
+    "axis_label": "Share of AI shoppers (%)",
+    "source_note": "Source: McKinsey Agentic Commerce Consumer Survey, June 2026 (weighted, n=9,645)."
+  }
+}

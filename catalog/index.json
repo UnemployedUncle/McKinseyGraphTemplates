@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 19,
+    "bronze": 21,
     "silver": 0,
     "gold": 0
   },
@@ -268,6 +268,34 @@
       "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/agentic-ai-in-financial-crime-prevention-lessons-from-winners",
       "figure_ref": "Exhibit 2 (numeric range from article; not original graphic)",
       "key_message": "금융범죄 관련 자금출처 확인 업무에서 에이전틱 AI는 처리시간을 약 30~50% 줄일 수 있지만, 금융기관은 인간 검증 단계와 정확도·재현성 기준을 함께 설계해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261029_bcg_africa_alternatives_allocation_gap",
+      "tier": "bronze",
+      "path": "bronze/2026-10-29/bcg_africa_alternatives_allocation_gap",
+      "contract": "render-v1",
+      "payload_sha256": "4ad85cc5e08c101eac222ef71171760c2bc59467751faea5e6afc61246838c63",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/putting-africas-capital-to-work",
+      "figure_ref": "Pension allocation vs regulatory ceilings (article quantitative discussion; not a direct exhibit reproduction)",
+      "key_message": "남아공·나이지리아·케냐·가나의 연기금 대체투자 실배분은 법정 상한에 현저히 못 미치므로, 투자 확대의 제약을 규제 상한만으로 설명하기 어렵다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261029_mckinsey_ai_shopping_benefits_ex7_subset",
+      "tier": "bronze",
+      "path": "bronze/2026-10-29/mckinsey_ai_shopping_benefits_ex7_subset",
+      "contract": "render-v1",
+      "payload_sha256": "f1e469a3f103d2424f41bbfcdce9faa3281beeda4cb647211452ff19d31224a7",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/who-wins-when-ai-does-the-shopping-new-evidence-on-agentic-commerce",
+      "figure_ref": "Exhibit 7 (three reported benefit items)",
+      "key_message": "AI 쇼핑 이용자의 79~81%가 선택지 축소·클릭 감소·시간 절약에 동의하므로, 상품검색 에이전트의 우선 KPI는 개인화보다 탐색 마찰 감소를 포함해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

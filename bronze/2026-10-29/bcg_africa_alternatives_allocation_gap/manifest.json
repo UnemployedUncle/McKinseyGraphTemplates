@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261029_bcg_africa_alternatives_allocation_gap",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-29T07:18:48.245871+09:00",
+  "source_url": "https://www.bcg.com/publications/2026/putting-africas-capital-to-work",
+  "figure_ref": "Pension allocation vs regulatory ceilings (article quantitative discussion; not a direct exhibit reproduction)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "a1bf6c477c5c3ddcadd2aca080906adb984974f0d5f21cf45ddf03c1e265df67",
+    "chart.py": "7175445d727d1b56d4310b3b6aad1960d59b718584cd0ff05efb56c32f10bf6d",
+    "config.json": "7c83347cc4c78a7da0690f1fda6e4cae7701913c69c8ecdb152f724899feeb2c",
+    "data.csv": "17d5a84fbdeb955988b10b4c71a5596df61eb3949bbc17112f09b96019dc0c38",
+    "record.json": "768064097b68196143b8df1f09415ce8702bfa2fcd798c958093032e370dce07",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "validation.json": "da6b9992e079ea331dee6d7634f83685381313018112e734ff40bc0c7a9a8813"
+  },
+  "payload_sha256": "4ad85cc5e08c101eac222ef71171760c2bc59467751faea5e6afc61246838c63"
+}

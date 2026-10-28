@@ -1,0 +1,40 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_visual_seen": false,
+  "actual_render_success": true,
+  "iterations": 1,
+  "data_checks": {
+    "parse_csv": true,
+    "all_reported_values": true,
+    "no_missing_or_synthetic": true,
+    "percent_in_0_100": true,
+    "correct_population_note": true,
+    "units_consistent_within_series": true,
+    "original_figure_comparison": false
+  },
+  "score_components": null,
+  "diff_notes": "원문 Exhibit 7의 일부 본문에 보고된 값을 사용한 편집형 비교 차트; 원본 그림 형태 미확인.",
+  "environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "runs": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/mckinsey_ai_shopping_benefits_ex7_subset/chart.py --data /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/mckinsey_ai_shopping_benefits_ex7_subset/data.csv --config /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/mckinsey_ai_shopping_benefits_ex7_subset/config.json --theme source --output /mnt/data/CGT_2026-10-29/artifacts/bronze/20261029_mckinsey_ai_shopping_benefits_ex7_subset/source.png",
+      "theme": "source",
+      "returncode": 0,
+      "image_bytes": 111615,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/mckinsey_ai_shopping_benefits_ex7_subset/chart.py --data /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/mckinsey_ai_shopping_benefits_ex7_subset/data.csv --config /mnt/data/CGT_2026-10-29/workspace/bronze/2026-10-29/mckinsey_ai_shopping_benefits_ex7_subset/config.json --theme neutral --output /mnt/data/CGT_2026-10-29/artifacts/bronze/20261029_mckinsey_ai_shopping_benefits_ex7_subset/neutral.png",
+      "theme": "neutral",
+      "returncode": 0,
+      "image_bytes": 111450,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}
