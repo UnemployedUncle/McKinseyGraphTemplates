@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261030_bain_retail_profit_mix_fig1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-29T22:27:17.143931+00:00",
+  "source_url": "https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/",
+  "figure_ref": "Figure 1: Retail profit by source",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "validation.json": "464ee7964044f8a436d2ee5e8cff80496f9cfdfee430523ee9b075306fe370a6",
+    "card.md": "a4e19e6881a4b913ac235e5383767978723c68a983f80b3f46e1f13ccbaddd96",
+    "config.json": "cfe0f042a01f55901402b9eb99638b2b571c75a2a1107f7cf31cca2cc2371aa5",
+    "data.csv": "dc61c2785991fe08c46cce92befe33c18cd2be64a58ac34856606b38d000ce48",
+    "record.json": "ea8630e3f44191303a75f0c96cf0b69e9bb5ae976f2b34e28a9e5582943dcbe7",
+    "chart.py": "f61e23903fc19cae271904a6af26cee5c48cf5168a52f7f06c14aadd9f91636a"
+  },
+  "payload_sha256": "e16944fbde467e1a4569cc1efda0c4c851a05b21fc7f3789c4b265473ad62820"
+}

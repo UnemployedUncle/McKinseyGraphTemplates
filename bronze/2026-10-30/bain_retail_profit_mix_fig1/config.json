@@ -1,0 +1,101 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        10,
+        5.1
+      ],
+      "background": "#FFFFFF",
+      "font": "DejaVu Sans",
+      "font_size": 11,
+      "title_size": 14,
+      "title_weight": "normal",
+      "subtitle_size": 10,
+      "label_size": 12,
+      "bar_width": 0.79,
+      "tick_size": 12,
+      "legend_size": 11,
+      "palette": {
+        "beyond_trade": "#ff6268",
+        "trading": "#d80000"
+      },
+      "edge": "#FFFFFF",
+      "edge_width": 1.5,
+      "inside_text": "white",
+      "text_color": "#282828",
+      "source_size": 8
+    },
+    "neutral": {
+      "figsize": [
+        10,
+        5.1
+      ],
+      "background": "#FFFFFF",
+      "font": "DejaVu Sans",
+      "font_size": 11,
+      "title_size": 14,
+      "title_weight": "bold",
+      "subtitle_size": 10,
+      "label_size": 12,
+      "bar_width": 0.79,
+      "tick_size": 12,
+      "legend_size": 11,
+      "palette": {
+        "beyond_trade": "#2c897d",
+        "trading": "#8cb3b0"
+      },
+      "accent": "#2c897d",
+      "muted": "#bdcfcb",
+      "grid_color": "#e0e9e7",
+      "show_grid": true,
+      "connector": "#8e9d99",
+      "connector_style": "--",
+      "inside_text": "white",
+      "edge": "white",
+      "edge_width": 1,
+      "label_offset": 0.8,
+      "text_color": "#253835",
+      "source_size": 8
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "stacked_100",
+    "title": "Retail profit by source",
+    "subtitle": "",
+    "category_order": [
+      "2021",
+      "2024",
+      "next_decade"
+    ],
+    "category_labels": {
+      "next_decade": "In the next decade"
+    },
+    "series_order": [
+      "beyond_trade",
+      "trading"
+    ],
+    "series_labels": {
+      "beyond_trade": "Beyond trading",
+      "trading": "Trading"
+    },
+    "ylim": [
+      0,
+      100
+    ],
+    "plot_area": [
+      0.025,
+      0.14,
+      0.95,
+      0.7
+    ],
+    "title_x": 0.025,
+    "title_y": 0.972,
+    "legend_anchor": [
+      0,
+      1.0
+    ],
+    "value_format": "{value:.0f}%",
+    "source": "Source: Bain (2026), Figure 1. Next decade is a projection.",
+    "source_y": 0.035
+  }
+}

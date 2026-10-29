@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261030_mckinsey_procurement_ai_adoption_stats",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-29T22:27:17.144483+00:00",
+  "source_url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-in-strategic-sourcing-hype-or-hero",
+  "figure_ref": "Opening paragraphs: CPO survey statistics; editorial chart, not Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "validation.json": "92e1439f647ca2aaf1a9520f676fe4ec409a34cc8f65d119e0695ee5dc36d3ec",
+    "card.md": "8bbf779bebd27301ef46bac075ba1eb59f888e8641e3fdfdee18b00584d2dcd7",
+    "config.json": "7edf6c248aca6f0791bfc2f1e455ebdcef4461f0b8804e295d229525604ec019",
+    "data.csv": "b9c771e51d8dec10ef92b13bd45a35de25bb4cb34b90dd08078fe3ba36560b9f",
+    "record.json": "acafbc835f37b161e00e3d5fe58a46e97145ed0db844fb792e4352901e67cbcd",
+    "chart.py": "f61e23903fc19cae271904a6af26cee5c48cf5168a52f7f06c14aadd9f91636a"
+  },
+  "payload_sha256": "cfd242e7b6a52050c66032a6bcf1b27b989c64ca0a8f7b2546313317d01ca5ca"
+}

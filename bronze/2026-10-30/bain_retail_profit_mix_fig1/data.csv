@@ -1,0 +1,7 @@
+category,series,value,unit,period,source_url,figure_ref,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,notes
+2021,beyond_trade,10,pct,2021,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation
+2021,trading,90,pct,2021,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation
+2024,beyond_trade,25,pct,2024,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation
+2024,trading,75,pct,2024,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation
+next_decade,beyond_trade,50,pct,next_decade,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Outlook: next decade
+next_decade,trading,50,pct,next_decade,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Outlook: next decade

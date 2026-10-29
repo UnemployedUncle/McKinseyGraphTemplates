@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 21,
+    "bronze": 24,
     "silver": 0,
     "gold": 0
   },
@@ -296,6 +296,48 @@
       "source_url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/who-wins-when-ai-does-the-shopping-new-evidence-on-agentic-commerce",
       "figure_ref": "Exhibit 7 (three reported benefit items)",
       "key_message": "AI 쇼핑 이용자의 79~81%가 선택지 축소·클릭 감소·시간 절약에 동의하므로, 상품검색 에이전트의 우선 KPI는 개인화보다 탐색 마찰 감소를 포함해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261030_bain_retail_profit_mix_fig1",
+      "tier": "bronze",
+      "path": "bronze/2026-10-30/bain_retail_profit_mix_fig1",
+      "contract": "render-v1",
+      "payload_sha256": "e16944fbde467e1a4569cc1efda0c4c851a05b21fc7f3789c4b265473ad62820",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/",
+      "figure_ref": "Figure 1: Retail profit by source",
+      "key_message": "리테일러 수익원 중 유통 외 사업의 비중이 2021년 10%에서 다음 10년 50%로 커질 전망이므로, 소비재 기업은 유통사와의 협력 의제를 가격·판촉에서 데이터·미디어·서비스로 확장할 필요가 있다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.714285714285714,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261030_bcg_compute_cost_waterfall_ex6",
+      "tier": "bronze",
+      "path": "bronze/2026-10-30/bcg_compute_cost_waterfall_ex6",
+      "contract": "render-v1",
+      "payload_sha256": "0abc4d8d1cd38b84e0edb14885e65cf8da8dca128bebb69a440b90f31acf0ad3",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure",
+      "figure_ref": "Exhibit 6: Cost to build 1 GW of AI compute in 2026",
+      "key_message": "AI 연산능력 1GW의 구축비용 약 421억 달러 중 Core IT가 288억 달러로 가장 크므로, 데이터센터 투자안의 경제성은 칩·서버 비용과 교체주기 가정에 특히 민감하게 검토해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.571428571428571,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261030_mckinsey_procurement_ai_adoption_stats",
+      "tier": "bronze",
+      "path": "bronze/2026-10-30/mckinsey_procurement_ai_adoption_stats",
+      "contract": "render-v1",
+      "payload_sha256": "cfd242e7b6a52050c66032a6bcf1b27b989c64ca0a8f7b2546313317d01ca5ca",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-in-strategic-sourcing-hype-or-hero",
+      "figure_ref": "Opening paragraphs: CPO survey statistics; editorial chart, not Exhibit 1",
+      "key_message": "구매 리더의 80%가 향후 12~18개월 AI·기술투자 확대를 계획하지만 AI를 대규모로 내재화한 응답은 2%에 그치므로, 구매조직은 개별 도구 도입보다 업무 단위 확산과 성과 검증을 우선 설계해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

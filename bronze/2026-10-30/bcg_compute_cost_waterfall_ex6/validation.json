@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-30",
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "source_opened_in_web_tool": true,
+  "generated_images_viewed_in_image_tool": true,
+  "execution": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-30/staging/bcg_compute_cost_waterfall_ex6/chart.py --theme source --data /mnt/data/CGT_2026-10-30/staging/bcg_compute_cost_waterfall_ex6/data.csv --config /mnt/data/CGT_2026-10-30/staging/bcg_compute_cost_waterfall_ex6/config.json --output /mnt/data/CGT_2026-10-30/artifacts/20261030_bcg_compute_cost_waterfall_ex6/source.png",
+      "returncode": 0,
+      "stderr": "",
+      "output_exists": true
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-30/staging/bcg_compute_cost_waterfall_ex6/chart.py --theme neutral --data /mnt/data/CGT_2026-10-30/staging/bcg_compute_cost_waterfall_ex6/data.csv --config /mnt/data/CGT_2026-10-30/staging/bcg_compute_cost_waterfall_ex6/config.json --output /mnt/data/CGT_2026-10-30/artifacts/20261030_bcg_compute_cost_waterfall_ex6/neutral.png",
+      "returncode": 0,
+      "stderr": "",
+      "output_exists": true
+    }
+  ],
+  "iterations": 1,
+  "score_breakdown": {
+    "chart_type": 5,
+    "values_order": 5,
+    "axes_ticks": 5,
+    "color_mapping": 5,
+    "labels_annotations": 4,
+    "title_legend": 4,
+    "layout_whitespace": 4
+  },
+  "score_reasons": {
+    "chart_type": "원본과 동일한 누적 구성/워터폴 구조",
+    "values_order": "공식 수치 라벨·순서 보존",
+    "axes_ticks": "공식 그래프와 같은 비율/원점 및 눈금 생략",
+    "color_mapping": "공식 계열별 색상 근사",
+    "labels_annotations": "값 직접 라벨 보존, 일부 위치 오차",
+    "title_legend": "원본 제목은 간단히 재서술, 로고는 의도적 제외",
+    "layout_whitespace": "동일 비율·여백의 일부 차이"
+  },
+  "fidelity_score": 4.571428571428571,
+  "validation_status": "verified",
+  "data_checks": {
+    "values_reported": true,
+    "units_consistent": true,
+    "sort_matches_source": true,
+    "negative_or_missing_values": false,
+    "rounding_note": "Component sum 42.0 versus reported total 42.1, not silently reconciled"
+  },
+  "diff_notes": "폰트·제목·간격을 일부 단순화하고 회사 로고 및 원문 주석 전문을 의도적으로 제외함.",
+  "limitations": "원문의 합계 42.1과 개별 반올림 비용 합계 42.0의 0.1 차이를 수정하지 않고 주석으로 기록한다. 외부 고객의 실제 구매금액 예측은 아니다.",
+  "third_party_training_rights_confirmed": false,
+  "user_review": "pending"
+}

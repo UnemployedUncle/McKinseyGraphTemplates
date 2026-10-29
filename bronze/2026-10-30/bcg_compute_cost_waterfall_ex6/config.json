@@ -1,0 +1,106 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        10.7,
+        6.02
+      ],
+      "background": "#FFFFFF",
+      "font": "DejaVu Sans",
+      "font_size": 10,
+      "title_size": 20,
+      "title_weight": "normal",
+      "subtitle_size": 11,
+      "label_size": 11,
+      "tick_size": 11,
+      "bar_width": 0.68,
+      "palette": {
+        "Core IT": "#00e000",
+        "Data center shell": "#00d6b3",
+        "Power infrastructure": "#4f43a9",
+        "Land": "#263b71",
+        "Total": "#068f93"
+      },
+      "accent": "#068f93",
+      "connector": "#777777",
+      "connector_style": "--",
+      "label_offset": 0.8,
+      "text_color": "#0e2923",
+      "source_size": 8
+    },
+    "neutral": {
+      "figsize": [
+        10.7,
+        6.02
+      ],
+      "background": "#FFFFFF",
+      "font": "DejaVu Sans",
+      "font_size": 11,
+      "title_size": 20,
+      "title_weight": "bold",
+      "subtitle_size": 11,
+      "label_size": 11,
+      "bar_width": 0.68,
+      "tick_size": 11,
+      "legend_size": 10,
+      "palette": {
+        "Core IT": "#2c897d",
+        "Data center shell": "#8cb3b0",
+        "Power infrastructure": "#486d76",
+        "Land": "#486d76",
+        "Total": "#486d76"
+      },
+      "accent": "#2c897d",
+      "muted": "#bdcfcb",
+      "grid_color": "#e0e9e7",
+      "show_grid": true,
+      "connector": "#8e9d99",
+      "connector_style": "--",
+      "inside_text": "white",
+      "edge": "white",
+      "edge_width": 1,
+      "label_offset": 0.8,
+      "text_color": "#253835",
+      "source_size": 8
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "waterfall",
+    "title": "It Costs $42 Billion to Build 1 GW of AI Compute in 2026 ($/GW)",
+    "subtitle": "Cost to build compute components ($billion/GW)",
+    "title_x": 0.05,
+    "title_y": 0.965,
+    "subtitle_y": 0.875,
+    "plot_area": [
+      0.095,
+      0.28,
+      0.82,
+      0.45
+    ],
+    "category_order": [
+      "Core IT",
+      "Data center shell",
+      "Power infrastructure",
+      "Land",
+      "Total"
+    ],
+    "category_labels": {
+      "Core IT": "Core IT",
+      "Data center shell": "Data center shell",
+      "Power infrastructure": "Power infrastructure",
+      "Land": "Land",
+      "Total": "Total"
+    },
+    "inside_labels": [
+      "Data center shell",
+      "Power infrastructure"
+    ],
+    "ylim": [
+      0,
+      51
+    ],
+    "value_format": "{value:.1f}",
+    "source": "Source: BCG Institute model, 2026. Reported components total 42.0; stated total 42.1 (rounding).",
+    "source_y": 0.047
+  }
+}

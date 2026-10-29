@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261030_bcg_compute_cost_waterfall_ex6",
+  "chart_key": "a6f984dd186c3d207fcfc5bb5c1a0a5228932897097662cccdfef899cd8a24d1",
+  "date": "2026-10-30",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure",
+  "source_title": "Who Will Pay the $2.6 Trillion AI Infrastructure Bill?",
+  "published": "2026-10-29",
+  "updated": null,
+  "retrieved_at": "2026-10-30T07:27:13.490261+09:00",
+  "figure_ref": "Exhibit 6: Cost to build 1 GW of AI compute in 2026",
+  "original_image_url": "https://web-assets.bcg.com/dims4/default/79b139f/2147483647/strip/true/crop/5760x3240%2B0%2B0/resize/768x432%21/format/webp/quality/80/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2F6b%2F0e%2F87f52210443d95c689f98d18bad5%2Fwho-will-pay-the-2-trillion-bill-exhibits-6.png",
+  "business_context": "AI 데이터센터의 1GW Critical IT load 구축비용을 비용 구성요소별로 분해한 BCG의 예시적인 2026년 원가모형",
+  "key_message": "AI 연산능력 1GW의 구축비용 약 421억 달러 중 Core IT가 288억 달러로 가장 크므로, 데이터센터 투자안의 경제성은 칩·서버 비용과 교체주기 가정에 특히 민감하게 검토해야 한다.",
+  "insight_type": "구성",
+  "chart_type": "waterfall",
+  "encoding": {
+    "x": "category",
+    "y": "value",
+    "color": "component",
+    "size": null,
+    "highlight": "AI 연산능력 1GW의 구축비용 약 421억 달러 중 Core IT가 288억 달러로 가장 크므로, 데이터센터 투자안의 경제성은 칩·서버 비용과 교체주기 가정에 특히 민감하게 검토해야 한다."
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "denominator",
+      "base",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": [
+      "USD_bn_per_GW"
+    ],
+    "n_points": 5,
+    "provenance": [
+      "reported"
+    ],
+    "csv_content": "category,series,value,unit,period,source_url,figure_ref,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,notes\nCore IT,component,28.8,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\nData center shell,component,11.2,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\nPower infrastructure,component,1.8,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\nLand,component,0.2,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\nTotal,total,42.1,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\n"
+  },
+  "data_recipe": "Observe data_center_build-component-year-model; obtain chips, shell, power, land costs per GW on one consistent IT-load basis; standardize capitalization and power cost inclusion; keep non-disclosed inputs missing; sum component costs and compare model total, document rounding difference; waterfall from component costs to reported total; test chip pricing sensitivity.",
+  "message_conditions": {
+    "support": "Reported pattern and consistent denominators remain the same",
+    "change_title": "If comparisons reverse or definitions differ, update action title",
+    "limitations": "원문의 합계 42.1과 개별 반올림 비용 합계 42.0의 0.1 차이를 수정하지 않고 주석으로 기록한다. 외부 고객의 실제 구매금액 예측은 아니다."
+  },
+  "design_moves": {
+    "original_chart_type": "waterfall",
+    "theme": "source",
+    "neutral_available": true,
+    "direct_labels": true
+  },
+  "fidelity_score": 4.571428571428571,
+  "validation_status": "verified",
+  "training_eligible": false,
+  "training_use": "not_approved_candidate; review license and human approval before training",
+  "exclusion_reasons": [
+    "human_review_pending",
+    "third_party_training_rights_not_confirmed"
+  ],
+  "diff_notes": "폰트·제목·간격을 일부 단순화하고 회사 로고 및 원문 주석 전문을 의도적으로 제외함.",
+  "code_path": "bronze/2026-10-30/bcg_compute_cost_waterfall_ex6/chart.py",
+  "image_path": "artifacts/bronze/20261030_bcg_compute_cost_waterfall_ex6/source.png",
+  "neutral_image_path": "artifacts/bronze/20261030_bcg_compute_cost_waterfall_ex6/neutral.png",
+  "validation_path": "bronze/2026-10-30/bcg_compute_cost_waterfall_ex6/validation.json",
+  "artifact_refs": {},
+  "training_pair": {
+    "instruction": "Design a reusable waterfall for a business decision: AI 데이터센터의 1GW Critical IT load 구축비용을 비용 구성요소별로 분해한 BCG의 예시적인 2026년 원가모형; convey AI 연산능력 1GW의 구축비용 약 421억 달러 중 Core IT가 288억 달러로 가장 크므로, 데이터센터 투자안의 경제성은 칩·서버 비용과 교체주기 가정에 특히 민감하게 검토해야 한다.; preserve denominators, provenance, and report exact observed values; output editable Python and CSV.",
+    "response": {
+      "data_spec": [
+        "category",
+        "series",
+        "value",
+        "unit",
+        "period",
+        "source_url",
+        "figure_ref",
+        "provenance",
+        "denominator",
+        "base",
+        "estimate_method",
+        "uncertainty_low",
+        "uncertainty_high",
+        "notes"
+      ],
+      "data_recipe": "Observe data_center_build-component-year-model; obtain chips, shell, power, land costs per GW on one consistent IT-load basis; standardize capitalization and power cost inclusion; keep non-disclosed inputs missing; sum component costs and compare model total, document rounding difference; waterfall from component costs to reported total; test chip pricing sensitivity.",
+      "input_csv": "category,series,value,unit,period,source_url,figure_ref,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,notes\nCore IT,component,28.8,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\nData center shell,component,11.2,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\nPower infrastructure,component,1.8,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\nLand,component,0.2,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\nTotal,total,42.1,USD_bn_per_GW,2026-model,https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure,Exhibit 6: Cost to build 1 GW of AI compute in 2026,reported,one GW of critical IT load,,,,,Model reported rounded components; sum 42.0 vs reported total 42.1\n",
+      "config_json": "{\n  \"THEME\": {\n    \"source\": {\n      \"figsize\": [\n        10.7,\n        6.02\n      ],\n      \"background\": \"#FFFFFF\",\n      \"font\": \"DejaVu Sans\",\n      \"font_size\": 10,\n      \"title_size\": 20,\n      \"title_weight\": \"normal\",\n      \"subtitle_size\": 11,\n      \"label_size\": 11,\n      \"tick_size\": 11,\n      \"bar_width\": 0.68,\n      \"palette\": {\n        \"Core IT\": \"#00e000\",\n        \"Data center shell\": \"#00d6b3\",\n        \"Power infrastructure\": \"#4f43a9\",\n        \"Land\": \"#263b71\",\n        \"Total\": \"#068f93\"\n      },\n      \"accent\": \"#068f93\",\n      \"connector\": \"#777777\",\n      \"connector_style\": \"--\",\n      \"label_offset\": 0.8,\n      \"text_color\": \"#0e2923\",\n      \"source_size\": 8\n    },\n    \"neutral\": {\n      \"figsize\": [\n        10.7,\n        6.02\n      ],\n      \"background\": \"#FFFFFF\",\n      \"font\": \"DejaVu Sans\",\n      \"font_size\": 11,\n      \"title_size\": 20,\n      \"title_weight\": \"bold\",\n      \"subtitle_size\": 11,\n      \"label_size\": 11,\n      \"bar_width\": 0.68,\n      \"tick_size\": 11,\n      \"legend_size\": 10,\n      \"palette\": {\n        \"Core IT\": \"#2c897d\",\n        \"Data center shell\": \"#8cb3b0\",\n        \"Power infrastructure\": \"#486d76\",\n        \"Land\": \"#486d76\",\n        \"Total\": \"#486d76\"\n      },\n      \"accent\": \"#2c897d\",\n      \"muted\": \"#bdcfcb\",\n      \"grid_color\": \"#e0e9e7\",\n      \"show_grid\": true,\n      \"connector\": \"#8e9d99\",\n      \"connector_style\": \"--\",\n      \"inside_text\": \"white\",\n      \"edge\": \"white\",\n      \"edge_width\": 1,\n      \"label_offset\": 0.8,\n      \"text_color\": \"#253835\",\n      \"source_size\": 8\n    }\n  },\n  \"CONTEXT\": {\n    \"chart_type\": \"waterfall\",\n    \"title\": \"It Costs $42 Billion to Build 1 GW of AI Compute in 2026 ($/GW)\",\n    \"subtitle\": \"Cost to build compute components ($billion/GW)\",\n    \"title_x\": 0.05,\n    \"title_y\": 0.965,\n    \"subtitle_y\": 0.875,\n    \"plot_area\": [\n      0.095,\n      0.28,\n      0.82,\n      0.45\n    ],\n    \"category_order\": [\n      \"Core IT\",\n      \"Data center shell\",\n      \"Power infrastructure\",\n      \"Land\",\n      \"Total\"\n    ],\n    \"category_labels\": {\n      \"Core IT\": \"Core IT\",\n      \"Data center shell\": \"Data center shell\",\n      \"Power infrastructure\": \"Power infrastructure\",\n      \"Land\": \"Land\",\n      \"Total\": \"Total\"\n    },\n    \"inside_labels\": [\n      \"Data center shell\",\n      \"Power infrastructure\"\n    ],\n    \"ylim\": [\n      0,\n      51\n    ],\n    \"value_format\": \"{value:.1f}\",\n    \"source\": \"Source: BCG Institute model, 2026. Reported components total 42.0; stated total 42.1 (rounding).\",\n    \"source_y\": 0.047\n  }\n}\n",
+      "executable_python": "#!/usr/bin/env python3\n\"\"\"Editable consulting chart types; source/neutral themes are in config.json.\"\"\"\nfrom __future__ import annotations\nimport argparse\nimport csv\nimport json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import PercentFormatter\nfrom matplotlib.patches import Patch\n\nHERE = Path(__file__).resolve().parent\n\ndef read_data(path):\n    with open(path, newline=\"\", encoding=\"utf-8-sig\") as file:\n        rows = list(csv.DictReader(file))\n    for row in rows:\n        row[\"value\"] = float(row[\"value\"]) if row.get(\"value\") else None\n    return rows\n\ndef render(data, theme, context):\n    \"\"\"Return a Matplotlib figure from CSV rows, a theme and a chart context.\"\"\"\n    settings = theme\n    plt.rcParams.update({\"font.family\": settings.get(\"font\", \"DejaVu Sans\"),\n                         \"font.size\": settings.get(\"font_size\", 11),\n                         \"axes.unicode_minus\": False})\n    fig = plt.figure(figsize=tuple(settings.get(\"figsize\", [11, 5.7])),\n                     facecolor=settings.get(\"background\", \"white\"))\n    box = context.get(\"plot_area\", [0.11, 0.15, 0.82, 0.65])\n    ax = fig.add_axes(box)\n    ax.set_facecolor(settings.get(\"background\", \"white\"))\n    kind = context[\"chart_type\"]\n    by_cat = {x[\"category\"]: x for x in data if x[\"value\"] is not None}\n    if kind == \"waterfall\":\n        categories = context[\"category_order\"]\n        cumulative = 0.0\n        bar_width = settings.get(\"bar_width\", 0.56)\n        colors = settings[\"palette\"]\n        for i, category in enumerate(categories):\n            row = by_cat[category]\n            total = row[\"series\"] == \"total\"\n            height = row[\"value\"]\n            bottom = 0.0 if total else cumulative\n            ax.bar(i, height, bottom=bottom, width=bar_width,\n                   color=colors.get(category, settings[\"accent\"]), linewidth=0)\n            label = context.get(\"value_format\", \"{value:.1f}\").format(value=height)\n            if category in context.get(\"inside_labels\", []):\n                ax.text(i, bottom + height * 0.52, label, ha=\"center\", va=\"center\",\n                        color=\"white\", fontweight=\"bold\", fontsize=settings.get(\"label_size\", 11))\n            else:\n                ax.text(i, bottom + height + settings.get(\"label_offset\", .7), label,\n                        ha=\"center\", va=\"bottom\", fontweight=\"bold\", fontsize=settings.get(\"label_size\", 11))\n            if not total:\n                cumulative += height\n                if i < len(categories) - 2:\n                    ax.plot([i + bar_width / 2, i + 1 - bar_width / 2],\n                            [cumulative, cumulative], color=settings.get(\"connector\", \"#777777\"),\n                            linestyle=settings.get(\"connector_style\", \"--\"), linewidth=.8)\n        ax.set_xticks(range(len(categories)), [context.get(\"category_labels\", {}).get(x, x) for x in categories])\n        ax.set_ylim(*context.get(\"ylim\", [0, 54]))\n        ax.set_xlim(-.5, len(categories) - .5)\n        ax.yaxis.set_visible(False)\n        ax.tick_params(axis=\"x\", length=0, labelsize=settings.get(\"tick_size\", 10), pad=6)\n        for spine in ax.spines.values(): spine.set_visible(False)\n    elif kind == \"stacked_100\":\n        categories = context[\"category_order\"]\n        series = context[\"series_order\"]\n        bar_width = settings.get(\"bar_width\", .76)\n        for idx, cat in enumerate(categories):\n            bottom = 0\n            rows = {r[\"series\"]:r for r in data if r[\"category\"]==cat}\n            for serie in series:\n                amount = rows[serie][\"value\"]\n                if amount is None: continue\n                ax.bar(idx, amount, width=bar_width, bottom=bottom,\n                       color=settings[\"palette\"][serie], edgecolor=settings.get(\"edge\", \"white\"),\n                       linewidth=settings.get(\"edge_width\", 1))\n                ax.text(idx, bottom + amount / 2, context.get(\"value_format\", \"{value:.0f}%\").format(value=amount),\n                        ha=\"center\", va=\"center\", color=settings.get(\"inside_text\", \"white\"),\n                        fontsize=settings.get(\"label_size\", 11))\n                bottom += amount\n            if abs(bottom - 100) > .2:\n                raise ValueError(f\"Stacked percentage does not total 100 for {cat}: {bottom}\")\n        ax.set_xticks(range(len(categories)),\n                      [context.get(\"category_labels\", {}).get(x,x) for x in categories])\n        ax.set_xlim(-.5, len(categories)-.5)\n        ax.set_ylim(*context.get(\"ylim\", [0, 100]))\n        ax.yaxis.set_visible(False)\n        ax.tick_params(axis=\"x\", length=0, labelsize=settings.get(\"tick_size\", 12))\n        for side in [\"top\", \"right\", \"left\"]: ax.spines[side].set_visible(False)\n        ax.spines[\"bottom\"].set_linewidth(.7)\n        ax.spines[\"bottom\"].set_color(\"#555555\")\n        handles = [Patch(facecolor=settings[\"palette\"][serie],\n                         label=context.get(\"series_labels\", {}).get(serie,serie)) for serie in series]\n        ax.legend(handles=handles, loc=\"lower left\", bbox_to_anchor=tuple(context.get(\"legend_anchor\",[0.0,1.04])),\n                  ncol=len(series), frameon=False, handlelength=.95, handletextpad=.3,\n                  columnspacing=1.0, fontsize=settings.get(\"legend_size\", 10))\n    elif kind == \"horizontal_bar\":\n        categories = context[\"category_order\"]\n        y = list(range(len(categories)))\n        vals = [by_cat[c][\"value\"] for c in categories]\n        colors = [settings[\"accent\"] if c in context.get(\"highlights\", []) else settings.get(\"muted\", \"#AAB7C1\") for c in categories]\n        ax.barh(y, vals, color=colors, height=settings.get(\"bar_width\",.56))\n        ax.set_yticks(y, [context.get(\"category_labels\",{}).get(c,c) for c in categories])\n        ax.invert_yaxis()\n        ax.set_xlim(*context.get(\"xlim\",[0,100]))\n        ax.tick_params(axis=\"y\",length=0,pad=10)\n        ax.set_xlabel(context.get(\"x_label\", \"\"),fontsize=settings.get(\"tick_size\",11),labelpad=8)\n        if settings.get(\"show_grid\",True):\n            ax.grid(axis=\"x\", color=settings.get(\"grid_color\",\"#E3E9EE\"),linewidth=.7)\n            ax.set_axisbelow(True)\n        for i, value in zip(y, vals):\n            ax.text(value + context.get(\"label_offset\",1.5),i,\n                    context.get(\"value_format\",\"{value:.0f}%\").format(value=value),\n                    va=\"center\",ha=\"left\",fontweight=\"bold\",fontsize=settings.get(\"label_size\",11))\n        for side in [\"top\",\"right\",\"left\"]:ax.spines[side].set_visible(False)\n        ax.spines[\"bottom\"].set_color(\"#A0A0A0\")\n    else:\n        raise ValueError(f\"Unsupported chart_type: {kind}\")\n    title_y = context.get(\"title_y\",.945)\n    fig.text(context.get(\"title_x\",.075),title_y,context[\"title\"].replace(\"$\", r\"\\$\"),\n             fontsize=settings.get(\"title_size\",18),fontweight=settings.get(\"title_weight\",\"normal\"),\n             color=settings.get(\"text_color\",\"#1E2625\"),va=\"top\")\n    subtitle = context.get(\"subtitle\",\"\")\n    if subtitle:\n        fig.text(context.get(\"title_x\",.075),context.get(\"subtitle_y\",.875),subtitle.replace(\"$\", r\"\\$\"),\n                 fontsize=settings.get(\"subtitle_size\",10),color=settings.get(\"text_color\",\"#1E2625\"),va=\"top\")\n    source = context.get(\"source\",\"\")\n    if source:\n        fig.text(context.get(\"title_x\",.075),context.get(\"source_y\",.045),source,\n                 color=settings.get(\"source_color\",\"#666666\"),fontsize=settings.get(\"source_size\",8),va=\"bottom\")\n    return fig\n\ndef main():\n    parser = argparse.ArgumentParser(description=\"Editable quantitative chart\")\n    parser.add_argument(\"--data\",default=\"data.csv\")\n    parser.add_argument(\"--config\",default=\"config.json\")\n    parser.add_argument(\"--theme\",choices=[\"source\",\"neutral\"],default=\"source\")\n    parser.add_argument(\"--output\",default=\"output.png\")\n    args=parser.parse_args()\n    cfg=json.loads(Path(args.config).read_text(encoding=\"utf-8\"))\n    fig=render(read_data(args.data),cfg[\"THEME\"][args.theme],cfg[\"CONTEXT\"])\n    fig.savefig(args.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\nif __name__ == \"__main__\":main()\n",
+      "design_rationale": "원문의 합계 42.1과 개별 반올림 비용 합계 42.0의 0.1 차이를 수정하지 않고 주석으로 기록한다. 외부 고객의 실제 구매금액 예측은 아니다.",
+      "how_to_run": "python chart.py --theme source --data data.csv --config config.json --output output.png"
+    }
+  },
+  "split_group": "https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261030_bain_retail_profit_mix_fig1",
+  "chart_key": "0aafc68b455c3132946c4e5626f6a43cae757cc038790b4d960531caf44c32d3",
+  "date": "2026-10-30",
+  "firm": "Bain",
+  "source_url": "https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/",
+  "source_title": "Want to Lead in Consumer Products? Adapt to Retailing’s New Reality",
+  "published": "2026-10-29",
+  "updated": null,
+  "retrieved_at": "2026-10-30T07:27:09.706536+09:00",
+  "figure_ref": "Figure 1: Retail profit by source",
+  "original_image_url": "https://public.flourish.studio/visualisation/30250905/thumbnail",
+  "business_context": "리테일러의 이익구조가 기존 상품 유통에서 광고·마켓플레이스·데이터 등 부가사업으로 이동할 가능성을 보여주는 전망",
+  "key_message": "리테일러 수익원 중 유통 외 사업의 비중이 2021년 10%에서 다음 10년 50%로 커질 전망이므로, 소비재 기업은 유통사와의 협력 의제를 가격·판촉에서 데이터·미디어·서비스로 확장할 필요가 있다.",
+  "insight_type": "구성",
+  "chart_type": "stacked_100",
+  "encoding": {
+    "x": "category",
+    "y": "value",
+    "color": "series",
+    "size": null,
+    "highlight": "리테일러 수익원 중 유통 외 사업의 비중이 2021년 10%에서 다음 10년 50%로 커질 전망이므로, 소비재 기업은 유통사와의 협력 의제를 가격·판촉에서 데이터·미디어·서비스로 확장할 필요가 있다."
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "denominator",
+      "base",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": [
+      "pct"
+    ],
+    "n_points": 6,
+    "provenance": [
+      "reported"
+    ],
+    "csv_content": "category,series,value,unit,period,source_url,figure_ref,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,notes\n2021,beyond_trade,10,pct,2021,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation\n2021,trading,90,pct,2021,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation\n2024,beyond_trade,25,pct,2024,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation\n2024,trading,75,pct,2024,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation\nnext_decade,beyond_trade,50,pct,next_decade,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Outlook: next decade\nnext_decade,trading,50,pct,next_decade,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Outlook: next decade\n"
+  },
+  "data_recipe": "Observe retailer-year-profit_source; gather profit by source; harmonize reporting periods and scopes, exclude overlapping profit, retain missing; sum category profit and divide each by total ×100; check 100% each period; plot beyond trade at bottom; interpret share shifts while separating historic and outlook.",
+  "message_conditions": {
+    "support": "Reported pattern and consistent denominators remain the same",
+    "change_title": "If comparisons reverse or definitions differ, update action title",
+    "limitations": "전망치를 실적 데이터처럼 사용하거나 비중 상승만으로 절대이익의 증가를 주장하면 안 된다."
+  },
+  "design_moves": {
+    "original_chart_type": "stacked_100",
+    "theme": "source",
+    "neutral_available": true,
+    "direct_labels": true
+  },
+  "fidelity_score": 4.714285714285714,
+  "validation_status": "verified",
+  "training_eligible": false,
+  "training_use": "not_approved_candidate; review license and human approval before training",
+  "exclusion_reasons": [
+    "human_review_pending",
+    "third_party_training_rights_not_confirmed"
+  ],
+  "diff_notes": "폰트·제목·간격을 일부 단순화하고 회사 로고 및 원문 주석 전문을 의도적으로 제외함.",
+  "code_path": "bronze/2026-10-30/bain_retail_profit_mix_fig1/chart.py",
+  "image_path": "artifacts/bronze/20261030_bain_retail_profit_mix_fig1/source.png",
+  "neutral_image_path": "artifacts/bronze/20261030_bain_retail_profit_mix_fig1/neutral.png",
+  "validation_path": "bronze/2026-10-30/bain_retail_profit_mix_fig1/validation.json",
+  "artifact_refs": {},
+  "training_pair": {
+    "instruction": "Design a reusable stacked_100 for a business decision: 리테일러의 이익구조가 기존 상품 유통에서 광고·마켓플레이스·데이터 등 부가사업으로 이동할 가능성을 보여주는 전망; convey 리테일러 수익원 중 유통 외 사업의 비중이 2021년 10%에서 다음 10년 50%로 커질 전망이므로, 소비재 기업은 유통사와의 협력 의제를 가격·판촉에서 데이터·미디어·서비스로 확장할 필요가 있다.; preserve denominators, provenance, and report exact observed values; output editable Python and CSV.",
+    "response": {
+      "data_spec": [
+        "category",
+        "series",
+        "value",
+        "unit",
+        "period",
+        "source_url",
+        "figure_ref",
+        "provenance",
+        "denominator",
+        "base",
+        "estimate_method",
+        "uncertainty_low",
+        "uncertainty_high",
+        "notes"
+      ],
+      "data_recipe": "Observe retailer-year-profit_source; gather profit by source; harmonize reporting periods and scopes, exclude overlapping profit, retain missing; sum category profit and divide each by total ×100; check 100% each period; plot beyond trade at bottom; interpret share shifts while separating historic and outlook.",
+      "input_csv": "category,series,value,unit,period,source_url,figure_ref,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,notes\n2021,beyond_trade,10,pct,2021,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation\n2021,trading,90,pct,2021,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation\n2024,beyond_trade,25,pct,2024,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation\n2024,trading,75,pct,2024,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Historical observation\nnext_decade,beyond_trade,50,pct,next_decade,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Outlook: next decade\nnext_decade,trading,50,pct,next_decade,https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/,Figure 1: Retail profit by source,reported,total retail profit of selected period,,,,,Outlook: next decade\n",
+      "config_json": "{\n  \"THEME\": {\n    \"source\": {\n      \"figsize\": [\n        10,\n        5.1\n      ],\n      \"background\": \"#FFFFFF\",\n      \"font\": \"DejaVu Sans\",\n      \"font_size\": 11,\n      \"title_size\": 14,\n      \"title_weight\": \"normal\",\n      \"subtitle_size\": 10,\n      \"label_size\": 12,\n      \"bar_width\": 0.79,\n      \"tick_size\": 12,\n      \"legend_size\": 11,\n      \"palette\": {\n        \"beyond_trade\": \"#ff6268\",\n        \"trading\": \"#d80000\"\n      },\n      \"edge\": \"#FFFFFF\",\n      \"edge_width\": 1.5,\n      \"inside_text\": \"white\",\n      \"text_color\": \"#282828\",\n      \"source_size\": 8\n    },\n    \"neutral\": {\n      \"figsize\": [\n        10,\n        5.1\n      ],\n      \"background\": \"#FFFFFF\",\n      \"font\": \"DejaVu Sans\",\n      \"font_size\": 11,\n      \"title_size\": 14,\n      \"title_weight\": \"bold\",\n      \"subtitle_size\": 10,\n      \"label_size\": 12,\n      \"bar_width\": 0.79,\n      \"tick_size\": 12,\n      \"legend_size\": 11,\n      \"palette\": {\n        \"beyond_trade\": \"#2c897d\",\n        \"trading\": \"#8cb3b0\"\n      },\n      \"accent\": \"#2c897d\",\n      \"muted\": \"#bdcfcb\",\n      \"grid_color\": \"#e0e9e7\",\n      \"show_grid\": true,\n      \"connector\": \"#8e9d99\",\n      \"connector_style\": \"--\",\n      \"inside_text\": \"white\",\n      \"edge\": \"white\",\n      \"edge_width\": 1,\n      \"label_offset\": 0.8,\n      \"text_color\": \"#253835\",\n      \"source_size\": 8\n    }\n  },\n  \"CONTEXT\": {\n    \"chart_type\": \"stacked_100\",\n    \"title\": \"Retail profit by source\",\n    \"subtitle\": \"\",\n    \"category_order\": [\n      \"2021\",\n      \"2024\",\n      \"next_decade\"\n    ],\n    \"category_labels\": {\n      \"next_decade\": \"In the next decade\"\n    },\n    \"series_order\": [\n      \"beyond_trade\",\n      \"trading\"\n    ],\n    \"series_labels\": {\n      \"beyond_trade\": \"Beyond trading\",\n      \"trading\": \"Trading\"\n    },\n    \"ylim\": [\n      0,\n      100\n    ],\n    \"plot_area\": [\n      0.025,\n      0.14,\n      0.95,\n      0.7\n    ],\n    \"title_x\": 0.025,\n    \"title_y\": 0.972,\n    \"legend_anchor\": [\n      0,\n      1.0\n    ],\n    \"value_format\": \"{value:.0f}%\",\n    \"source\": \"Source: Bain (2026), Figure 1. Next decade is a projection.\",\n    \"source_y\": 0.035\n  }\n}\n",
+      "executable_python": "#!/usr/bin/env python3\n\"\"\"Editable consulting chart types; source/neutral themes are in config.json.\"\"\"\nfrom __future__ import annotations\nimport argparse\nimport csv\nimport json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import PercentFormatter\nfrom matplotlib.patches import Patch\n\nHERE = Path(__file__).resolve().parent\n\ndef read_data(path):\n    with open(path, newline=\"\", encoding=\"utf-8-sig\") as file:\n        rows = list(csv.DictReader(file))\n    for row in rows:\n        row[\"value\"] = float(row[\"value\"]) if row.get(\"value\") else None\n    return rows\n\ndef render(data, theme, context):\n    \"\"\"Return a Matplotlib figure from CSV rows, a theme and a chart context.\"\"\"\n    settings = theme\n    plt.rcParams.update({\"font.family\": settings.get(\"font\", \"DejaVu Sans\"),\n                         \"font.size\": settings.get(\"font_size\", 11),\n                         \"axes.unicode_minus\": False})\n    fig = plt.figure(figsize=tuple(settings.get(\"figsize\", [11, 5.7])),\n                     facecolor=settings.get(\"background\", \"white\"))\n    box = context.get(\"plot_area\", [0.11, 0.15, 0.82, 0.65])\n    ax = fig.add_axes(box)\n    ax.set_facecolor(settings.get(\"background\", \"white\"))\n    kind = context[\"chart_type\"]\n    by_cat = {x[\"category\"]: x for x in data if x[\"value\"] is not None}\n    if kind == \"waterfall\":\n        categories = context[\"category_order\"]\n        cumulative = 0.0\n        bar_width = settings.get(\"bar_width\", 0.56)\n        colors = settings[\"palette\"]\n        for i, category in enumerate(categories):\n            row = by_cat[category]\n            total = row[\"series\"] == \"total\"\n            height = row[\"value\"]\n            bottom = 0.0 if total else cumulative\n            ax.bar(i, height, bottom=bottom, width=bar_width,\n                   color=colors.get(category, settings[\"accent\"]), linewidth=0)\n            label = context.get(\"value_format\", \"{value:.1f}\").format(value=height)\n            if category in context.get(\"inside_labels\", []):\n                ax.text(i, bottom + height * 0.52, label, ha=\"center\", va=\"center\",\n                        color=\"white\", fontweight=\"bold\", fontsize=settings.get(\"label_size\", 11))\n            else:\n                ax.text(i, bottom + height + settings.get(\"label_offset\", .7), label,\n                        ha=\"center\", va=\"bottom\", fontweight=\"bold\", fontsize=settings.get(\"label_size\", 11))\n            if not total:\n                cumulative += height\n                if i < len(categories) - 2:\n                    ax.plot([i + bar_width / 2, i + 1 - bar_width / 2],\n                            [cumulative, cumulative], color=settings.get(\"connector\", \"#777777\"),\n                            linestyle=settings.get(\"connector_style\", \"--\"), linewidth=.8)\n        ax.set_xticks(range(len(categories)), [context.get(\"category_labels\", {}).get(x, x) for x in categories])\n        ax.set_ylim(*context.get(\"ylim\", [0, 54]))\n        ax.set_xlim(-.5, len(categories) - .5)\n        ax.yaxis.set_visible(False)\n        ax.tick_params(axis=\"x\", length=0, labelsize=settings.get(\"tick_size\", 10), pad=6)\n        for spine in ax.spines.values(): spine.set_visible(False)\n    elif kind == \"stacked_100\":\n        categories = context[\"category_order\"]\n        series = context[\"series_order\"]\n        bar_width = settings.get(\"bar_width\", .76)\n        for idx, cat in enumerate(categories):\n            bottom = 0\n            rows = {r[\"series\"]:r for r in data if r[\"category\"]==cat}\n            for serie in series:\n                amount = rows[serie][\"value\"]\n                if amount is None: continue\n                ax.bar(idx, amount, width=bar_width, bottom=bottom,\n                       color=settings[\"palette\"][serie], edgecolor=settings.get(\"edge\", \"white\"),\n                       linewidth=settings.get(\"edge_width\", 1))\n                ax.text(idx, bottom + amount / 2, context.get(\"value_format\", \"{value:.0f}%\").format(value=amount),\n                        ha=\"center\", va=\"center\", color=settings.get(\"inside_text\", \"white\"),\n                        fontsize=settings.get(\"label_size\", 11))\n                bottom += amount\n            if abs(bottom - 100) > .2:\n                raise ValueError(f\"Stacked percentage does not total 100 for {cat}: {bottom}\")\n        ax.set_xticks(range(len(categories)),\n                      [context.get(\"category_labels\", {}).get(x,x) for x in categories])\n        ax.set_xlim(-.5, len(categories)-.5)\n        ax.set_ylim(*context.get(\"ylim\", [0, 100]))\n        ax.yaxis.set_visible(False)\n        ax.tick_params(axis=\"x\", length=0, labelsize=settings.get(\"tick_size\", 12))\n        for side in [\"top\", \"right\", \"left\"]: ax.spines[side].set_visible(False)\n        ax.spines[\"bottom\"].set_linewidth(.7)\n        ax.spines[\"bottom\"].set_color(\"#555555\")\n        handles = [Patch(facecolor=settings[\"palette\"][serie],\n                         label=context.get(\"series_labels\", {}).get(serie,serie)) for serie in series]\n        ax.legend(handles=handles, loc=\"lower left\", bbox_to_anchor=tuple(context.get(\"legend_anchor\",[0.0,1.04])),\n                  ncol=len(series), frameon=False, handlelength=.95, handletextpad=.3,\n                  columnspacing=1.0, fontsize=settings.get(\"legend_size\", 10))\n    elif kind == \"horizontal_bar\":\n        categories = context[\"category_order\"]\n        y = list(range(len(categories)))\n        vals = [by_cat[c][\"value\"] for c in categories]\n        colors = [settings[\"accent\"] if c in context.get(\"highlights\", []) else settings.get(\"muted\", \"#AAB7C1\") for c in categories]\n        ax.barh(y, vals, color=colors, height=settings.get(\"bar_width\",.56))\n        ax.set_yticks(y, [context.get(\"category_labels\",{}).get(c,c) for c in categories])\n        ax.invert_yaxis()\n        ax.set_xlim(*context.get(\"xlim\",[0,100]))\n        ax.tick_params(axis=\"y\",length=0,pad=10)\n        ax.set_xlabel(context.get(\"x_label\", \"\"),fontsize=settings.get(\"tick_size\",11),labelpad=8)\n        if settings.get(\"show_grid\",True):\n            ax.grid(axis=\"x\", color=settings.get(\"grid_color\",\"#E3E9EE\"),linewidth=.7)\n            ax.set_axisbelow(True)\n        for i, value in zip(y, vals):\n            ax.text(value + context.get(\"label_offset\",1.5),i,\n                    context.get(\"value_format\",\"{value:.0f}%\").format(value=value),\n                    va=\"center\",ha=\"left\",fontweight=\"bold\",fontsize=settings.get(\"label_size\",11))\n        for side in [\"top\",\"right\",\"left\"]:ax.spines[side].set_visible(False)\n        ax.spines[\"bottom\"].set_color(\"#A0A0A0\")\n    else:\n        raise ValueError(f\"Unsupported chart_type: {kind}\")\n    title_y = context.get(\"title_y\",.945)\n    fig.text(context.get(\"title_x\",.075),title_y,context[\"title\"].replace(\"$\", r\"\\$\"),\n             fontsize=settings.get(\"title_size\",18),fontweight=settings.get(\"title_weight\",\"normal\"),\n             color=settings.get(\"text_color\",\"#1E2625\"),va=\"top\")\n    subtitle = context.get(\"subtitle\",\"\")\n    if subtitle:\n        fig.text(context.get(\"title_x\",.075),context.get(\"subtitle_y\",.875),subtitle.replace(\"$\", r\"\\$\"),\n                 fontsize=settings.get(\"subtitle_size\",10),color=settings.get(\"text_color\",\"#1E2625\"),va=\"top\")\n    source = context.get(\"source\",\"\")\n    if source:\n        fig.text(context.get(\"title_x\",.075),context.get(\"source_y\",.045),source,\n                 color=settings.get(\"source_color\",\"#666666\"),fontsize=settings.get(\"source_size\",8),va=\"bottom\")\n    return fig\n\ndef main():\n    parser = argparse.ArgumentParser(description=\"Editable quantitative chart\")\n    parser.add_argument(\"--data\",default=\"data.csv\")\n    parser.add_argument(\"--config\",default=\"config.json\")\n    parser.add_argument(\"--theme\",choices=[\"source\",\"neutral\"],default=\"source\")\n    parser.add_argument(\"--output\",default=\"output.png\")\n    args=parser.parse_args()\n    cfg=json.loads(Path(args.config).read_text(encoding=\"utf-8\"))\n    fig=render(read_data(args.data),cfg[\"THEME\"][args.theme],cfg[\"CONTEXT\"])\n    fig.savefig(args.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\nif __name__ == \"__main__\":main()\n",
+      "design_rationale": "전망치를 실적 데이터처럼 사용하거나 비중 상승만으로 절대이익의 증가를 주장하면 안 된다.",
+      "how_to_run": "python chart.py --theme source --data data.csv --config config.json --output output.png"
+    }
+  },
+  "split_group": "https://www.bain.com/insights/want-to-lead-in-consumer-products-adapt-to-retailings-new-reality/"
+}

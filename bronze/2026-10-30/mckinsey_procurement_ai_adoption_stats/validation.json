@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-30",
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "source_opened_in_web_tool": false,
+  "generated_images_viewed_in_image_tool": true,
+  "execution": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-30/staging/mckinsey_procurement_ai_adoption_stats/chart.py --theme source --data /mnt/data/CGT_2026-10-30/staging/mckinsey_procurement_ai_adoption_stats/data.csv --config /mnt/data/CGT_2026-10-30/staging/mckinsey_procurement_ai_adoption_stats/config.json --output /mnt/data/CGT_2026-10-30/artifacts/20261030_mckinsey_procurement_ai_adoption_stats/source.png",
+      "returncode": 0,
+      "stderr": "",
+      "output_exists": true
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-30/staging/mckinsey_procurement_ai_adoption_stats/chart.py --theme neutral --data /mnt/data/CGT_2026-10-30/staging/mckinsey_procurement_ai_adoption_stats/data.csv --config /mnt/data/CGT_2026-10-30/staging/mckinsey_procurement_ai_adoption_stats/config.json --output /mnt/data/CGT_2026-10-30/artifacts/20261030_mckinsey_procurement_ai_adoption_stats/neutral.png",
+      "returncode": 0,
+      "stderr": "",
+      "output_exists": true
+    }
+  ],
+  "iterations": 1,
+  "score_breakdown": null,
+  "score_reasons": {
+    "chart_type": "원문 수치를 별도의 편집형 막대로 표현",
+    "values_order": "공식 수치 라벨·순서 보존",
+    "axes_ticks": "공식 그래프와 같은 비율/원점 및 눈금 생략",
+    "color_mapping": "공식 계열별 색상 근사",
+    "labels_annotations": "값 직접 라벨 보존, 일부 위치 오차",
+    "title_legend": "원본 제목은 간단히 재서술, 로고는 의도적 제외",
+    "layout_whitespace": "동일 비율·여백의 일부 차이"
+  },
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "data_checks": {
+    "values_reported": true,
+    "units_consistent": true,
+    "sort_matches_source": true,
+    "negative_or_missing_values": false,
+    "rounding_note": "Independent survey item denominators, no sum or conversion"
+  },
+  "diff_notes": "해당 설문 수치 자체의 원본 단일 도표가 없어 본문 수치를 편집형 차트로 제작; 원본 유사도 판단 불가.",
+  "limitations": "투자 의향과 실제 도입 단계는 서로 다른 질문/응답 유형이다. 80%→55%→2% 전환 퍼널로 계산하거나 인과 추론하는 것은 금물이다.",
+  "third_party_training_rights_confirmed": false,
+  "user_review": "pending"
+}

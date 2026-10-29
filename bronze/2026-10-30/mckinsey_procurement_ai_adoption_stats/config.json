@@ -1,0 +1,90 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        10.0,
+        5.7
+      ],
+      "background": "#FFFFFF",
+      "font": "DejaVu Sans",
+      "font_size": 11,
+      "title_size": 17,
+      "title_weight": "bold",
+      "subtitle_size": 11,
+      "label_size": 11,
+      "bar_width": 0.56,
+      "tick_size": 11,
+      "accent": "#0878a4",
+      "muted": "#9fc0ce",
+      "grid_color": "#dde4e9",
+      "show_grid": true,
+      "text_color": "#26323a",
+      "source_size": 8
+    },
+    "neutral": {
+      "figsize": [
+        10.0,
+        5.7
+      ],
+      "background": "#FFFFFF",
+      "font": "DejaVu Sans",
+      "font_size": 11,
+      "title_size": 17,
+      "title_weight": "bold",
+      "subtitle_size": 11,
+      "label_size": 11,
+      "bar_width": 0.56,
+      "tick_size": 11,
+      "legend_size": 10,
+      "palette": {},
+      "accent": "#2c897d",
+      "muted": "#bdcfcb",
+      "grid_color": "#e0e9e7",
+      "show_grid": true,
+      "connector": "#8e9d99",
+      "connector_style": "--",
+      "inside_text": "white",
+      "edge": "white",
+      "edge_width": 1,
+      "label_offset": 0.8,
+      "text_color": "#253835",
+      "source_size": 8
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "horizontal_bar",
+    "title": "80% plan more AI investment; only 2% report scale",
+    "subtitle": "Procurement leaders, share of respondents (%)",
+    "category_order": [
+      "increase_investment",
+      "in_pilot",
+      "at_scale"
+    ],
+    "category_labels": {
+      "increase_investment": "Plan to increase AI / tech spend",
+      "in_pilot": "AI still in pilot",
+      "at_scale": "AI embedded at scale"
+    },
+    "highlights": [
+      "at_scale"
+    ],
+    "plot_area": [
+      0.34,
+      0.24,
+      0.58,
+      0.5
+    ],
+    "title_x": 0.06,
+    "title_y": 0.945,
+    "subtitle_y": 0.855,
+    "x_label": "Share of respondents (%)",
+    "xlim": [
+      0,
+      100
+    ],
+    "label_offset": 1.5,
+    "value_format": "{value:.0f}%",
+    "source": "Source: McKinsey CPO survey (June 2026; n=200). Different questions; not a funnel.",
+    "source_y": 0.06
+  }
+}

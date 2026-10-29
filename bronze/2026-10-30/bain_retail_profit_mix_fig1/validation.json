@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-30",
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "source_opened_in_web_tool": true,
+  "generated_images_viewed_in_image_tool": true,
+  "execution": [
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-30/staging/bain_retail_profit_mix_fig1/chart.py --theme source --data /mnt/data/CGT_2026-10-30/staging/bain_retail_profit_mix_fig1/data.csv --config /mnt/data/CGT_2026-10-30/staging/bain_retail_profit_mix_fig1/config.json --output /mnt/data/CGT_2026-10-30/artifacts/20261030_bain_retail_profit_mix_fig1/source.png",
+      "returncode": 0,
+      "stderr": "",
+      "output_exists": true
+    },
+    {
+      "command": "/opt/pyvenv/bin/python /mnt/data/CGT_2026-10-30/staging/bain_retail_profit_mix_fig1/chart.py --theme neutral --data /mnt/data/CGT_2026-10-30/staging/bain_retail_profit_mix_fig1/data.csv --config /mnt/data/CGT_2026-10-30/staging/bain_retail_profit_mix_fig1/config.json --output /mnt/data/CGT_2026-10-30/artifacts/20261030_bain_retail_profit_mix_fig1/neutral.png",
+      "returncode": 0,
+      "stderr": "",
+      "output_exists": true
+    }
+  ],
+  "iterations": 1,
+  "score_breakdown": {
+    "chart_type": 5,
+    "values_order": 5,
+    "axes_ticks": 5,
+    "color_mapping": 5,
+    "labels_annotations": 5,
+    "title_legend": 4,
+    "layout_whitespace": 4
+  },
+  "score_reasons": {
+    "chart_type": "원본과 동일한 누적 구성/워터폴 구조",
+    "values_order": "공식 수치 라벨·순서 보존",
+    "axes_ticks": "공식 그래프와 같은 비율/원점 및 눈금 생략",
+    "color_mapping": "공식 계열별 색상 근사",
+    "labels_annotations": "값 직접 라벨 보존, 일부 위치 오차",
+    "title_legend": "원본 제목은 간단히 재서술, 로고는 의도적 제외",
+    "layout_whitespace": "동일 비율·여백의 일부 차이"
+  },
+  "fidelity_score": 4.714285714285714,
+  "validation_status": "verified",
+  "data_checks": {
+    "values_reported": true,
+    "units_consistent": true,
+    "sort_matches_source": true,
+    "negative_or_missing_values": false,
+    "rounding_note": "Shares sum to 100 for each period"
+  },
+  "diff_notes": "폰트·제목·간격을 일부 단순화하고 회사 로고 및 원문 주석 전문을 의도적으로 제외함.",
+  "limitations": "전망치를 실적 데이터처럼 사용하거나 비중 상승만으로 절대이익의 증가를 주장하면 안 된다.",
+  "third_party_training_rights_confirmed": false,
+  "user_review": "pending"
+}

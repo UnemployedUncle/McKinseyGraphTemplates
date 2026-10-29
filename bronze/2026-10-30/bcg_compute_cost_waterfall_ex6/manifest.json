@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261030_bcg_compute_cost_waterfall_ex6",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-29T22:27:17.144225+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/who-pays-for-ai-infrastructure",
+  "figure_ref": "Exhibit 6: Cost to build 1 GW of AI compute in 2026",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "validation.json": "819c7aec59803f39df8d8c67b673b9abe46fcaab13e7eb28f17cdac4ee8157de",
+    "card.md": "2f4f58dd787b418ba5dff13d7d303f830d4349ed576f4348c78571841dbe8a53",
+    "config.json": "fff7deedae3650026febe5c9cb69e68dc4010bd854d0a31fa6adf6183aaa857b",
+    "data.csv": "f56b5ca8a7e01c6626ceb4fe0e378d5a466708a8ed15316d5bd718058116a8ec",
+    "record.json": "446384ff02b96363ac5a47af8547848261fa3774eea54f9ca4d2b293c0ce57c1",
+    "chart.py": "f61e23903fc19cae271904a6af26cee5c48cf5168a52f7f06c14aadd9f91636a"
+  },
+  "payload_sha256": "0abc4d8d1cd38b84e0edb14885e65cf8da8dca128bebb69a440b90f31acf0ad3"
+}
