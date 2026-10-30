@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261031_mckinsey_investor_reallocation_butterfly_ex2",
+  "chart_key": "f2cb86ffe7d72f3b04a6b58a079b90bb5abeccd946fc8a812a458d0b83fad461",
+  "date": "2026-10-31",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth",
+  "source_title": "Rewiring securities services for a new era of competition and growth",
+  "published": "2026-10-28",
+  "updated": null,
+  "retrieved_at": "2026-10-31T07:12:19+09:00",
+  "figure_ref": "Exhibit 2",
+  "original_image_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/rewiring%20securities%20services%20for%20a%20new%20era%20of%20competition%20and%20growth/svgz_mck260709_rewiring-securities_v10_exh2.svgz?cpy=Center&cq=50",
+  "business_context": "기관투자자의 자산군별 익스포저 확대/축소 의향 비교로 어떤 증권서비스 수요가 늘어날지를 점검.",
+  "key_message": "기관투자자의 인프라 투자 의향은 확대 38%, 축소 3%로 순증가 의향 +35%p이므로 증권서비스 기업은 대체투자 지원 역량과 서비스 인프라를 우선 점검해야 한다.",
+  "insight_type": "격차",
+  "chart_type": "butterfly_horizontal",
+  "encoding": {
+    "x": "value (decrease mirrored to negative); percentage",
+    "y": "category (asset strategy)",
+    "color": "series (decrease / increase)",
+    "size": null,
+    "highlight": "Infrastructure +35 percentage points"
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "denominator",
+      "base",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": [
+      "percent of respondents"
+    ],
+    "n_points": 30,
+    "provenance": [
+      "reported"
+    ]
+  },
+  "data_recipe": "Observation: respondent_id × strategy. Extract survey intent (increase/decrease/unchanged) with eligibility; preserve question-level denominators and survey weights, remove duplicate responses, align asset labels, and compute P(increase)=count(increase)/eligible*100, P(decrease)=count(decrease)/eligible*100, net percentage points=P(increase)-P(decrease). Pivot to category/series/value CSV; left-transform decreases only for display, not in data.csv. Sort by source category order or configurable business order; inspect whether positive net is supported by both components.",
+  "message_conditions": "Infrastructure increase (38%) exceeds decrease (3%) by 35pp; if category net <= 0 the title needs revision. Intent is not realized fund flows, and these responses do not add to 100% because unchanged is omitted.",
+  "design_moves": [
+    "Split panels: traditional vs alternatives",
+    "Zero-center mirrored bars",
+    "Value labels at each endpoint",
+    "Same x range across panels"
+  ],
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "training_eligible": false,
+  "training_use": "excluded_pending_validation_and_rights",
+  "exclusion_reasons": [
+    "visual_fidelity_unverified",
+    "human_review_pending",
+    "training_use_rights_not_verified"
+  ],
+  "diff_notes": "Official McKinsey Exhibit 2 linked as SVGZ and described by accessible alt data, but the chart asset itself could not be opened in browser; no visual fidelity score is assigned.",
+  "code_path": "bronze/2026-10-31/mckinsey_investor_reallocation_butterfly_ex2/chart.py",
+  "image_path": "artifacts/bronze/20261031_mckinsey_investor_reallocation_butterfly_ex2/source.png",
+  "neutral_image_path": "artifacts/bronze/20261031_mckinsey_investor_reallocation_butterfly_ex2/neutral.png",
+  "validation_path": "bronze/2026-10-31/mckinsey_investor_reallocation_butterfly_ex2/validation.json",
+  "artifact_refs": [],
+  "training_pair": {
+    "instruction": "Given 기관투자자의 자산군별 익스포저 확대/축소 의향 비교로 어떤 증권서비스 수요가 늘어날지를 점검., define the required data, preservation of units and denominator, and create an executable reusable butterfly_horizontal chart with source/neutral themes, clear annotation of limitations. Message target: 기관투자자의 인프라 투자 의향은 확대 38%, 축소 3%로 순증가 의향 +35%p이므로 증권서비스 기업은 대체투자 지원 역량과 서비스 인프라를 우선 점검해야 한다.",
+    "response": {
+      "data_spec": {
+        "fields": [
+          "category",
+          "series",
+          "value",
+          "unit",
+          "period",
+          "source_url",
+          "figure_ref",
+          "provenance",
+          "denominator",
+          "base",
+          "estimate_method",
+          "uncertainty_low",
+          "uncertainty_high",
+          "notes"
+        ],
+        "units": [
+          "percent of respondents"
+        ],
+        "n_points": 30,
+        "provenance": [
+          "reported"
+        ]
+      },
+      "preprocessing": "Observation: respondent_id × strategy. Extract survey intent (increase/decrease/unchanged) with eligibility; preserve question-level denominators and survey weights, remove duplicate responses, align asset labels, and compute P(increase)=count(increase)/eligible*100, P(decrease)=count(decrease)/eligible*100, net percentage points=P(increase)-P(decrease). Pivot to category/series/value CSV; left-transform decreases only for display, not in data.csv. Sort by source category order or configurable business order; inspect whether positive net is supported by both components.",
+      "design_rationale": [
+        "Split panels: traditional vs alternatives",
+        "Zero-center mirrored bars",
+        "Value labels at each endpoint",
+        "Same x range across panels"
+      ],
+      "code": "#!/usr/bin/env python3\n\"\"\"Configurable mirrored allocation-intentions butterfly with 2 business panels.\"\"\"\nimport argparse,json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\n\ndef render(data,theme,context):\n    mapping=context.get('column_mapping',{'category':'category','series':'series','value':'value'})\n    category,series,value=[mapping[k] for k in ('category','series','value')]\n    source=data.copy();source[category]=source[category].astype(str)\n    fig,axes=plt.subplots(len(context['panel_order']),1,figsize=theme['figsize'])\n    fig.patch.set_facecolor(theme['background']); plt.rcParams['font.family']=theme['font']\n    for ax,panel in zip(np.atleast_1d(axes),context['panel_order']):\n        labels=context['categories'][panel]\n        d=source.pivot_table(index=category,columns=series,values=value,aggfunc='first').reindex(labels)\n        dec=d[context['decrease_series']].to_numpy(float); inc=d[context['increase_series']].to_numpy(float)\n        if np.isnan(dec).any() or np.isnan(inc).any() or (np.r_[dec,inc] < 0).any() or (np.r_[dec,inc] > 100).any():\n            raise ValueError('Invalid respondent percentages or missing categories')\n        y=np.arange(len(labels)); ax.set_facecolor(theme['background'])\n        ax.barh(y,-dec,height=theme['bar_height'],color=theme['decrease'],label=context['legend_labels']['Decrease'])\n        ax.barh(y,inc,height=theme['bar_height'],color=theme['increase'],label=context['legend_labels']['Increase'])\n        ax.axvline(0,color=theme['text'],lw=.9)\n        ax.set_yticks(y,labels);ax.invert_yaxis();ax.set_xlim(context['axis_min'],context['axis_max'])\n        ax.tick_params(axis='y',labelsize=9.2,length=0,pad=10,labelcolor=theme['text'])\n        ax.tick_params(axis='x',labelsize=9,length=0,labelcolor=theme['text'])\n        for k,(a,b) in enumerate(zip(dec,inc)):\n            ax.text(-a-1.0,k,f'{a:.0f}%',ha='right',va='center',fontsize=theme['label_fontsize'],color=theme['text'])\n            ax.text(b+1.0,k,f'{b:.0f}%',ha='left',va='center',fontsize=theme['label_fontsize'],color=theme['text'])\n        ax.set_xticks(np.arange(context['axis_min']//10*10,context['axis_max']+1,context['axis_step']))\n        ax.set_xticklabels([f'{abs(int(v))}%' for v in ax.get_xticks()])\n        ax.spines[:].set_visible(False)\n        ax.set_title(context['panel_labels'].get(panel,panel),fontsize=12,weight='bold',color=theme['text'],loc='left',pad=12)\n        ax.set_axisbelow(True);ax.grid(axis='x',alpha=.42,color=theme['grid'])\n    fig.subplots_adjust(**theme['margins'],hspace=theme['panel_spacing'])\n    fig.suptitle(context['title'],x=theme['margins']['left'],y=.985,ha='left',fontsize=theme['title_fontsize'],weight='bold',color=theme['text'])\n    fig.text(theme['margins']['left'],.918,context['subtitle'],ha='left',fontsize=10,color=theme['text'])\n    fig.legend(*axes[-1].get_legend_handles_labels(),loc='lower center',bbox_to_anchor=(0.55,.068),ncol=2,frameon=False,fontsize=9)\n    fig.text(theme['margins']['left'],.025,context['source_note'],fontsize=7,color=theme['text'])\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser();p.add_argument('--theme',choices=['source','neutral'],default='source');p.add_argument('--data',default='data.csv');p.add_argument('--config',default='config.json');p.add_argument('--output',default='output.png');a=p.parse_args()\n    base=Path(__file__).resolve().parent;cfg=json.loads((base/a.config).read_text(encoding='utf-8'))\n    fig=render(pd.read_csv(base/a.data),cfg['THEME'][a.theme],cfg['CONTEXT'])\n    out=Path(a.output);out.parent.mkdir(parents=True,exist_ok=True);fig.savefig(out,dpi=200,facecolor=fig.get_facecolor());plt.close(fig);print(out.resolve())\nif __name__=='__main__':main()\n",
+      "config": {
+        "THEME": {
+          "source": {
+            "background": "#FFFFFF",
+            "decrease": "#4F84A3",
+            "increase": "#11395C",
+            "text": "#183247",
+            "grid": "#D7E2EB",
+            "font": "DejaVu Sans",
+            "figsize": [
+              12,
+              9.3
+            ],
+            "bar_height": 0.61,
+            "title_fontsize": 17,
+            "label_fontsize": 9,
+            "margins": {
+              "left": 0.21,
+              "right": 0.97,
+              "bottom": 0.14,
+              "top": 0.82
+            },
+            "panel_spacing": 0.38
+          },
+          "neutral": {
+            "background": "#FCFAF5",
+            "decrease": "#C8BCA6",
+            "increase": "#497263",
+            "text": "#273D35",
+            "grid": "#E1E5DC",
+            "font": "DejaVu Sans",
+            "figsize": [
+              12,
+              9.3
+            ],
+            "bar_height": 0.61,
+            "title_fontsize": 17,
+            "label_fontsize": 9,
+            "margins": {
+              "left": 0.21,
+              "right": 0.97,
+              "bottom": 0.14,
+              "top": 0.82
+            },
+            "panel_spacing": 0.38
+          }
+        },
+        "CONTEXT": {
+          "title": "Investors favor infrastructure and private assets in reallocations",
+          "subtitle": "Expected allocation changes by strategy, % of surveyed respondents",
+          "panel_order": [
+            "Traditional strategies",
+            "Alternatives"
+          ],
+          "panel_labels": {
+            "Traditional strategies": "Traditional strategies",
+            "Alternatives": "Alternatives"
+          },
+          "categories": {
+            "Traditional strategies": [
+              "Money market",
+              "Rates and FX",
+              "Passive multi-asset",
+              "Active fixed income",
+              "Active multi-asset",
+              "Passive fixed income",
+              "Passive equity",
+              "Active equity"
+            ],
+            "Alternatives": [
+              "Infrastructure",
+              "Private equity",
+              "Private credit",
+              "Commodities",
+              "Hedge funds",
+              "Venture capital",
+              "Real estate"
+            ]
+          },
+          "decrease_series": "Decrease",
+          "increase_series": "Increase",
+          "axis_min": -25,
+          "axis_max": 45,
+          "axis_step": 10,
+          "unit": "%",
+          "value_fmt": "{:.0f}%",
+          "legend_labels": {
+            "Decrease": "Expect decrease",
+            "Increase": "Expect increase"
+          },
+          "source_note": "Source: McKinsey 2026 Corporate & Investment Banking Voice of Customer Survey (n=100).",
+          "data_warning": "Increase/decrease share are independent; not a composition. Net = increase - decrease.",
+          "column_mapping": {
+            "category": "category",
+            "series": "series",
+            "value": "value"
+          }
+        }
+      },
+      "data_csv": "category,series,value,unit,period,source_url,figure_ref,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,notes\nMoney market,Decrease,11,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nMoney market,Increase,22,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nRates and FX,Decrease,0,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nRates and FX,Increase,12,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nPassive multi-asset,Decrease,3,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nPassive multi-asset,Increase,14,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nActive fixed income,Decrease,13,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nActive fixed income,Increase,24,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nActive multi-asset,Decrease,7,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nActive multi-asset,Increase,16,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nPassive fixed income,Decrease,10,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nPassive fixed income,Increase,18,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nPassive equity,Decrease,12,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nPassive equity,Increase,18,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nActive equity,Decrease,19,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nActive equity,Increase,24,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Traditional strategies; original figure lists decrease and increase separately; category order retained\nInfrastructure,Decrease,3,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nInfrastructure,Increase,38,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nPrivate equity,Decrease,12,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nPrivate equity,Increase,37,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nPrivate credit,Decrease,13,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nPrivate credit,Increase,31,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nCommodities,Decrease,1,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nCommodities,Increase,18,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nHedge funds,Decrease,4,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nHedge funds,Increase,20,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nVenture capital,Decrease,7,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nVenture capital,Increase,23,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nReal estate,Decrease,15,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\nReal estate,Increase,17,percent of respondents,2026 survey,https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth,Exhibit 2,reported,valid respondents answering each exposure intention question; overall survey n=100,Net change = increase share - decrease share,,,,group=Alternatives; original figure lists decrease and increase separately; category order retained\n",
+      "execution": "python chart.py --theme source --data data.csv --config config.json --output output.png"
+    }
+  },
+  "split_group": "https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth"
+}

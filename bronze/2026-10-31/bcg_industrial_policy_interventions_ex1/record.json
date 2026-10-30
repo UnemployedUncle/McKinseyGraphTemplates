@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261031_bcg_industrial_policy_interventions_ex1",
+  "chart_key": "38834a407ddf2ed41fa3349bf874f6824bf7943304a96f9e74ad5b9d73365bda",
+  "date": "2026-10-31",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty",
+  "source_title": "How Leading Companies Can Stay Resilient in an Era of Policy Uncertainty",
+  "published": "2026-10-29",
+  "updated": null,
+  "retrieved_at": "2026-10-31T07:12:19+09:00",
+  "figure_ref": "Exhibit 1",
+  "original_image_url": "https://web-assets.bcg.com/dims4/default/a3e3e14/2147483647/strip/true/crop/3600x2245%2B0%2B0/resize/499x311%21/format/webp/quality/80/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2F44%2F1b%2Fa4be3de14dc4b901ee0a73122c00%2Fhow-energy-companies-can-gain-advantage-ex01.png",
+  "business_context": "전 세계(그림에 표시된 범위)의 산업정책 개입이 2015년 대비 2025년에 증가하는 추세를 보여 정부 정책 위험을 투자심사에 반영해야 하는지 검토.",
+  "key_message": "산업정책 개입 건수가 2015년 2,273건에서 2025년 6,651건으로 약 2.93배 늘었으므로 에너지·산업기업은 정책 노출도를 투자심사와 시나리오 관리에 통합해야 한다.",
+  "insight_type": "추세",
+  "chart_type": "stacked_column",
+  "encoding": {
+    "x": "category (year)",
+    "y": "value (interventions)",
+    "color": "series (Advanced / Other)",
+    "size": null,
+    "highlight": "2025 maximum"
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "denominator",
+      "base",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": [
+      "interventions"
+    ],
+    "n_points": 33,
+    "provenance": [
+      "reported",
+      "digitized_estimate"
+    ]
+  },
+  "data_recipe": "Unit of observation: intervention_id × announcement_year × location_group. Collect an official intervention ledger with country, announcement date, policy category, and affected industry. Deduplicate policy identifiers and check coverage changes by year; map jurisdictions to geography using a frozen crosswalk; count distinct interventions in each year/segment and sum across segments. Keep observed totals separate from digitized components; calculate growth ratio = end/start and absolute change = end - start. Plot yearly group totals, flag missing components, then interpret whether changes persist across definitions.",
+  "message_conditions": "Interventions in 2025 > 2015 with stable definition. If the rise disappears when counting comparable jurisdictions or reporting scopes, revise the action title. Counts do not demonstrate a policy causes losses or identify which laws affect any particular company.",
+  "design_moves": [
+    "Two-color annual stack",
+    "Top-of-bar labels for reported totals",
+    "0-based common axis",
+    "Explicit era annotations"
+  ],
+  "fidelity_score": 4.571,
+  "validation_status": "verified",
+  "training_eligible": false,
+  "training_use": "excluded_pending_validation_and_rights",
+  "exclusion_reasons": [
+    "digitized_components",
+    "human_review_pending",
+    "training_rights_not_verified"
+  ],
+  "diff_notes": "Official 499×311 Exhibit 1 transiently viewed. Type, x order, 0–7000 y-axis, total labels, two green stacks and legend align. Geographic segment heights were manually digitized and are estimates, not actual counts; font, arrows, figure margin differ.",
+  "code_path": "bronze/2026-10-31/bcg_industrial_policy_interventions_ex1/chart.py",
+  "image_path": "artifacts/bronze/20261031_bcg_industrial_policy_interventions_ex1/source.png",
+  "neutral_image_path": "artifacts/bronze/20261031_bcg_industrial_policy_interventions_ex1/neutral.png",
+  "validation_path": "bronze/2026-10-31/bcg_industrial_policy_interventions_ex1/validation.json",
+  "artifact_refs": [],
+  "training_pair": {
+    "instruction": "Given 전 세계(그림에 표시된 범위)의 산업정책 개입이 2015년 대비 2025년에 증가하는 추세를 보여 정부 정책 위험을 투자심사에 반영해야 하는지 검토., define the required data, preservation of units and denominator, and create an executable reusable stacked_column chart with source/neutral themes, clear annotation of limitations. Message target: 산업정책 개입 건수가 2015년 2,273건에서 2025년 6,651건으로 약 2.93배 늘었으므로 에너지·산업기업은 정책 노출도를 투자심사와 시나리오 관리에 통합해야 한다.",
+    "response": {
+      "data_spec": {
+        "fields": [
+          "category",
+          "series",
+          "value",
+          "unit",
+          "period",
+          "source_url",
+          "figure_ref",
+          "provenance",
+          "denominator",
+          "base",
+          "estimate_method",
+          "uncertainty_low",
+          "uncertainty_high",
+          "notes"
+        ],
+        "units": [
+          "interventions"
+        ],
+        "n_points": 33,
+        "provenance": [
+          "reported",
+          "digitized_estimate"
+        ]
+      },
+      "preprocessing": "Unit of observation: intervention_id × announcement_year × location_group. Collect an official intervention ledger with country, announcement date, policy category, and affected industry. Deduplicate policy identifiers and check coverage changes by year; map jurisdictions to geography using a frozen crosswalk; count distinct interventions in each year/segment and sum across segments. Keep observed totals separate from digitized components; calculate growth ratio = end/start and absolute change = end - start. Plot yearly group totals, flag missing components, then interpret whether changes persist across definitions.",
+      "design_rationale": [
+        "Two-color annual stack",
+        "Top-of-bar labels for reported totals",
+        "0-based common axis",
+        "Explicit era annotations"
+      ],
+      "code": "#!/usr/bin/env python3\n\"\"\"BCG-style annual policy-interventions stacked columns; editable via CSV + JSON.\"\"\"\nimport argparse, json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport pandas as pd\nimport numpy as np\n\ndef render(data, theme, context):\n    mapping = context.get(\"column_mapping\", {\"category\":\"category\",\"series\":\"series\",\"value\":\"value\"})\n    category, series, value = [mapping[k] for k in (\"category\",\"series\",\"value\")]\n    frame = data.copy()\n    frame[category] = frame[category].astype(str)\n    ordered = context.get(\"year_order\") or list(dict.fromkeys(frame[category]))\n    parts = context.get(\"series_order\", [\"Advanced economies\", \"Other economies\"])\n    pivot = frame.pivot_table(index=category, columns=series, values=value, aggfunc=\"first\").reindex(ordered)\n    if pivot[parts + [context[\"total_series\"]]].isna().any().any():\n        raise ValueError(\"Missing components/annual totals: source data cannot be rendered\")\n    values = [pivot[p].to_numpy(float) for p in parts]\n    totals = pivot[context[\"total_series\"]].to_numpy(float)\n    if not np.allclose(np.sum(values, axis=0), totals, atol=1.0):\n        raise ValueError(\"Stack segments do not sum to reported totals\")\n    x = np.arange(len(ordered))\n    plt.rcParams[\"font.family\"] = theme[\"font\"]\n    fig, ax = plt.subplots(figsize=theme[\"figsize\"])\n    fig.patch.set_facecolor(theme[\"background\"]); ax.set_facecolor(theme[\"background\"])\n    colors = [theme[\"primary\"], theme[\"secondary\"]]\n    bottom=np.zeros(len(ordered))\n    for p, h, color in zip(parts,values,colors):\n        ax.bar(x,h,bottom=bottom,color=color,width=theme[\"bar_width\"],label=p,edgecolor=\"none\")\n        bottom += h\n    for xi,total in zip(x, totals):\n        ax.annotate(f\"{total:,.0f}\",(xi,total),ha=\"center\",va=\"bottom\",fontsize=theme[\"label_fontsize\"],color=theme[\"text\"],weight=\"bold\",xytext=(0,4),textcoords=\"offset points\")\n    ax.set_xticks(x,ordered)\n    ax.tick_params(axis='both',labelsize=9,length=0,colors=theme['text'])\n    ax.set_ylim(context['axis_min'],context['axis_max'])\n    ax.set_yticks(np.arange(context['axis_min'],context['axis_max']+1,context['axis_step']))\n    ax.set_yticklabels([f'{i:,.0f}' for i in ax.get_yticks()])\n    ax.spines[['top','right','left']].set_visible(False)\n    ax.spines['bottom'].set_color(theme['grid']);ax.yaxis.grid(False)\n    for a in context.get('annotations',[]):\n        ix=ordered.index(str(a['category']))\n        ax.annotate(a['text'],xy=(ix,totals[ix]+80),xytext=(ix,a['at_y']),ha='center',va='bottom',fontsize=8,color=theme['text'],arrowprops={'arrowstyle':'-|>','color':theme['annotation_color'],'lw':theme['line_width']})\n    fig.suptitle(context['title'],x=theme['margins']['left'],y=.975,ha='left',fontsize=theme['title_fontsize'],weight='bold',color=theme['text'])\n    fig.text(theme['margins']['left'],theme.get('subtitle_y',.84),context['subtitle'],ha='left',fontsize=10,color=theme['text'])\n    ax.set_ylabel(context['y_label'],labelpad=11,color=theme['text'])\n    handles, labels = ax.get_legend_handles_labels()\n    legend_order = context.get('legend_order', parts)\n    legend_map = dict(zip(labels, handles))\n    fig.legend([legend_map[name] for name in legend_order], legend_order, loc='lower center',\n               bbox_to_anchor=(0.5,.095),ncol=2,frameon=False,\n               fontsize=theme.get('legend_fontsize',8))\n    fig.text(theme['margins']['left'],.04,context['source_note'],fontsize=7,color=theme['text'])\n    fig.subplots_adjust(**theme['margins'])\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser();p.add_argument('--theme',choices=['source','neutral'],default='source');p.add_argument('--data',default='data.csv');p.add_argument('--config',default='config.json');p.add_argument('--output',default='output.png');a=p.parse_args()\n    base=Path(__file__).resolve().parent\n    config=json.loads((base/a.config).read_text(encoding='utf-8'))\n    fig=render(pd.read_csv(base/a.data),config['THEME'][a.theme],config['CONTEXT'])\n    output=Path(a.output);output.parent.mkdir(parents=True,exist_ok=True)\n    fig.savefig(output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\n    print(output.resolve())\nif __name__=='__main__':main()\n",
+      "config": {
+        "THEME": {
+          "source": {
+            "background": "#FFFFFF",
+            "primary": "#07873F",
+            "secondary": "#12C565",
+            "text": "#1A2A21",
+            "grid": "#E5EDE8",
+            "font": "DejaVu Sans",
+            "figsize": [
+              10.8,
+              6.5
+            ],
+            "bar_width": 0.67,
+            "label_fontsize": 9,
+            "title_fontsize": 14,
+            "legend_fontsize": 8,
+            "margins": {
+              "left": 0.09,
+              "right": 0.985,
+              "bottom": 0.21,
+              "top": 0.72
+            },
+            "annotation_color": "#18AE5B",
+            "line_width": 1.0,
+            "subtitle_y": 0.84
+          },
+          "neutral": {
+            "background": "#FCFAF5",
+            "primary": "#355C55",
+            "secondary": "#B8D1C6",
+            "text": "#273D35",
+            "grid": "#E6E8DE",
+            "font": "DejaVu Sans",
+            "figsize": [
+              10.8,
+              6.5
+            ],
+            "bar_width": 0.67,
+            "label_fontsize": 9,
+            "title_fontsize": 14,
+            "legend_fontsize": 8,
+            "margins": {
+              "left": 0.09,
+              "right": 0.985,
+              "bottom": 0.21,
+              "top": 0.72
+            },
+            "annotation_color": "#5C8979",
+            "line_width": 1.0,
+            "subtitle_y": 0.84
+          }
+        },
+        "CONTEXT": {
+          "title": "Advanced economies stepped up industrial-policy interventions\nafter COVID-19 and the war in Ukraine",
+          "subtitle": "Global industrial-policy interventions by year announced, all sectors",
+          "x_label": "",
+          "y_label": "",
+          "unit": "interventions",
+          "series_order": [
+            "Advanced economies",
+            "Other economies"
+          ],
+          "year_order": [
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ],
+          "total_series": "Total",
+          "axis_min": 0,
+          "axis_max": 7000,
+          "axis_step": 1000,
+          "label_all_totals": true,
+          "annotations": [
+            {
+              "category": "2020",
+              "text": "COVID-19 surge",
+              "at_y": 4400
+            },
+            {
+              "category": "2022",
+              "text": "Post-Ukraine / IRA / CBAM",
+              "at_y": 5800
+            }
+          ],
+          "source_note": "Source: New Industrial Policy Observatory; IMF; BCG analysis. Segment heights visually estimated.",
+          "data_warning": "Dark/bright split is digitized estimate; displayed annual totals are reported.",
+          "number_format": ",.0f",
+          "column_mapping": {
+            "category": "category",
+            "series": "series",
+            "value": "value"
+          },
+          "legend_order": [
+            "Other economies",
+            "Advanced economies"
+          ]
+        }
+      },
+      "data_csv": "category,series,value,unit,period,source_url,figure_ref,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,notes\n2015,Total,2273,interventions,2015,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2015,Advanced economies,1300,interventions,2015,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,1140,1460,Approximate dark-green segment; not a reported source value\n2015,Other economies,973,interventions,2015,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,813,1133,Complement of estimate; not independently reported\n2016,Total,2491,interventions,2016,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2016,Advanced economies,1400,interventions,2016,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,1240,1560,Approximate dark-green segment; not a reported source value\n2016,Other economies,1091,interventions,2016,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,931,1251,Complement of estimate; not independently reported\n2017,Total,2451,interventions,2017,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2017,Advanced economies,1450,interventions,2017,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,1290,1610,Approximate dark-green segment; not a reported source value\n2017,Other economies,1001,interventions,2017,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,841,1161,Complement of estimate; not independently reported\n2018,Total,2431,interventions,2018,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2018,Advanced economies,1550,interventions,2018,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,1390,1710,Approximate dark-green segment; not a reported source value\n2018,Other economies,881,interventions,2018,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,721,1041,Complement of estimate; not independently reported\n2019,Total,1969,interventions,2019,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2019,Advanced economies,1200,interventions,2019,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,1040,1360,Approximate dark-green segment; not a reported source value\n2019,Other economies,769,interventions,2019,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,609,929,Complement of estimate; not independently reported\n2020,Total,3433,interventions,2020,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2020,Advanced economies,1800,interventions,2020,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,1640,1960,Approximate dark-green segment; not a reported source value\n2020,Other economies,1633,interventions,2020,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,1473,1793,Complement of estimate; not independently reported\n2021,Total,3221,interventions,2021,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2021,Advanced economies,1750,interventions,2021,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,1590,1910,Approximate dark-green segment; not a reported source value\n2021,Other economies,1471,interventions,2021,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,1311,1631,Complement of estimate; not independently reported\n2022,Total,4948,interventions,2022,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2022,Advanced economies,3100,interventions,2022,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,2940,3260,Approximate dark-green segment; not a reported source value\n2022,Other economies,1848,interventions,2022,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,1688,2008,Complement of estimate; not independently reported\n2023,Total,4672,interventions,2023,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2023,Advanced economies,2850,interventions,2023,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,2690,3010,Approximate dark-green segment; not a reported source value\n2023,Other economies,1822,interventions,2023,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,1662,1982,Complement of estimate; not independently reported\n2024,Total,4619,interventions,2024,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2024,Advanced economies,2880,interventions,2024,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,2720,3040,Approximate dark-green segment; not a reported source value\n2024,Other economies,1739,interventions,2024,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,1579,1899,Complement of estimate; not independently reported\n2025,Total,6651,interventions,2025,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,reported,all industrial policy interventions in shown geography,,,,,Displayed total count; original figure rounded/labelled\n2025,Advanced economies,4600,interventions,2025,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Visual height interpolation on web-displayed 499x311 figure; scale 0..7000 across ~143 px; ~3px read uncertainty,4440,4760,Approximate dark-green segment; not a reported source value\n2025,Other economies,2051,interventions,2025,https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty,Exhibit 1,digitized_estimate,Annual total,,Residual of reported annual total minus visually estimated advanced-economies segment; inherits its error,1891,2211,Complement of estimate; not independently reported\n",
+      "execution": "python chart.py --theme source --data data.csv --config config.json --output output.png"
+    }
+  },
+  "split_group": "https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty"
+}

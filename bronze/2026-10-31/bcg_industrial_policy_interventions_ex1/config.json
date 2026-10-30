@@ -1,0 +1,107 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "primary": "#07873F",
+      "secondary": "#12C565",
+      "text": "#1A2A21",
+      "grid": "#E5EDE8",
+      "font": "DejaVu Sans",
+      "figsize": [
+        10.8,
+        6.5
+      ],
+      "bar_width": 0.67,
+      "label_fontsize": 9,
+      "title_fontsize": 14,
+      "legend_fontsize": 8,
+      "margins": {
+        "left": 0.09,
+        "right": 0.985,
+        "bottom": 0.21,
+        "top": 0.72
+      },
+      "annotation_color": "#18AE5B",
+      "line_width": 1.0,
+      "subtitle_y": 0.84
+    },
+    "neutral": {
+      "background": "#FCFAF5",
+      "primary": "#355C55",
+      "secondary": "#B8D1C6",
+      "text": "#273D35",
+      "grid": "#E6E8DE",
+      "font": "DejaVu Sans",
+      "figsize": [
+        10.8,
+        6.5
+      ],
+      "bar_width": 0.67,
+      "label_fontsize": 9,
+      "title_fontsize": 14,
+      "legend_fontsize": 8,
+      "margins": {
+        "left": 0.09,
+        "right": 0.985,
+        "bottom": 0.21,
+        "top": 0.72
+      },
+      "annotation_color": "#5C8979",
+      "line_width": 1.0,
+      "subtitle_y": 0.84
+    }
+  },
+  "CONTEXT": {
+    "title": "Advanced economies stepped up industrial-policy interventions\nafter COVID-19 and the war in Ukraine",
+    "subtitle": "Global industrial-policy interventions by year announced, all sectors",
+    "x_label": "",
+    "y_label": "",
+    "unit": "interventions",
+    "series_order": [
+      "Advanced economies",
+      "Other economies"
+    ],
+    "year_order": [
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "total_series": "Total",
+    "axis_min": 0,
+    "axis_max": 7000,
+    "axis_step": 1000,
+    "label_all_totals": true,
+    "annotations": [
+      {
+        "category": "2020",
+        "text": "COVID-19 surge",
+        "at_y": 4400
+      },
+      {
+        "category": "2022",
+        "text": "Post-Ukraine / IRA / CBAM",
+        "at_y": 5800
+      }
+    ],
+    "source_note": "Source: New Industrial Policy Observatory; IMF; BCG analysis. Segment heights visually estimated.",
+    "data_warning": "Dark/bright split is digitized estimate; displayed annual totals are reported.",
+    "number_format": ",.0f",
+    "column_mapping": {
+      "category": "category",
+      "series": "series",
+      "value": "value"
+    },
+    "legend_order": [
+      "Other economies",
+      "Advanced economies"
+    ]
+  }
+}

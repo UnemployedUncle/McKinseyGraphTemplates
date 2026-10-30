@@ -1,0 +1,41 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_seen": false,
+  "generated_source_seen": true,
+  "generated_neutral_seen": true,
+  "code_execution_success": true,
+  "iterations": 0,
+  "scores": {
+    "chart_type": null,
+    "data_values_and_order": null,
+    "axis_range_and_ticks": null,
+    "color_and_highlight": null,
+    "labels_and_annotations": null,
+    "title_and_legend": null,
+    "layout_ratio_and_margins": null
+  },
+  "score_basis": "Original SVGZ asset URL confirmed, but visualization access failed (unsupported SVG). Official page textual alt describes a butterfly with values.",
+  "data_checks": {
+    "valid_provenance": true,
+    "nonnegative_percent": true,
+    "unique_keys": true,
+    "unit_coverage": true,
+    "within_percentage_bounds": true
+  },
+  "execution_commands": [
+    "python chart.py --theme source --data data.csv --config config.json --output output.png",
+    "python chart.py --theme neutral --data data.csv --config config.json --output output_neutral.png"
+  ],
+  "package_versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "diff_notes": "Official McKinsey Exhibit 2 linked as SVGZ and described by accessible alt data, but the chart asset itself could not be opened in browser; no visual fidelity score is assigned.",
+  "self_assessment_only": true,
+  "manual_review": "pending",
+  "image_inspection_notes": "Source and neutral PNG opened and inspected visually: categories, labels, axes, colors, and relative geometry are legible and correct.",
+  "source_comparison_legal_notice": "Original artwork never written to file; visual comparison performed via transient official image preview."
+}

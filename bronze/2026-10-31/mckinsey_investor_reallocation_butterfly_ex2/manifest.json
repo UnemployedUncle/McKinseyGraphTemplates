@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261031_mckinsey_investor_reallocation_butterfly_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-30T22:20:44.356620+00:00",
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth",
+  "figure_ref": "Exhibit 2",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "36753cc01d4bb57e75c993fee0ef0a4fc6e5644cae1b2a2898a2b367f9bc4e18",
+    "record.json": "2e7fc22deb1bd7342406e507fb2b4b7f01e9509132dcc0ac07116eb254408138",
+    "requirements.txt": "432389967a6db7a3fbab1b876619743b7746959a080a9265d323d04df2f30f3b",
+    "card.md": "fd1d19dfd52fb40cc2a53c071419a2ec95f36bd259deba4f0c0444c3e396877d",
+    "data.csv": "24b5afe626139c575459a973d5a3c0cff113d80202c0edb81c41ef790510fa63",
+    "validation.json": "3f2812a485bfcb241836012b4d2723020b3e1f10017a8d229c8f606991b1dff5",
+    "config.json": "2d3b695cd2ccad485e49688639753706cf946702323f987a729be3fc6c83b3da"
+  },
+  "payload_sha256": "832e6b2503a9eab7d4d77c2e0477b971551b53c367cee69b055348c17d5c31fe"
+}

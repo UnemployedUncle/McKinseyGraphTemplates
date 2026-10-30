@@ -1,0 +1,99 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "decrease": "#4F84A3",
+      "increase": "#11395C",
+      "text": "#183247",
+      "grid": "#D7E2EB",
+      "font": "DejaVu Sans",
+      "figsize": [
+        12,
+        9.3
+      ],
+      "bar_height": 0.61,
+      "title_fontsize": 17,
+      "label_fontsize": 9,
+      "margins": {
+        "left": 0.21,
+        "right": 0.97,
+        "bottom": 0.14,
+        "top": 0.82
+      },
+      "panel_spacing": 0.38
+    },
+    "neutral": {
+      "background": "#FCFAF5",
+      "decrease": "#C8BCA6",
+      "increase": "#497263",
+      "text": "#273D35",
+      "grid": "#E1E5DC",
+      "font": "DejaVu Sans",
+      "figsize": [
+        12,
+        9.3
+      ],
+      "bar_height": 0.61,
+      "title_fontsize": 17,
+      "label_fontsize": 9,
+      "margins": {
+        "left": 0.21,
+        "right": 0.97,
+        "bottom": 0.14,
+        "top": 0.82
+      },
+      "panel_spacing": 0.38
+    }
+  },
+  "CONTEXT": {
+    "title": "Investors favor infrastructure and private assets in reallocations",
+    "subtitle": "Expected allocation changes by strategy, % of surveyed respondents",
+    "panel_order": [
+      "Traditional strategies",
+      "Alternatives"
+    ],
+    "panel_labels": {
+      "Traditional strategies": "Traditional strategies",
+      "Alternatives": "Alternatives"
+    },
+    "categories": {
+      "Traditional strategies": [
+        "Money market",
+        "Rates and FX",
+        "Passive multi-asset",
+        "Active fixed income",
+        "Active multi-asset",
+        "Passive fixed income",
+        "Passive equity",
+        "Active equity"
+      ],
+      "Alternatives": [
+        "Infrastructure",
+        "Private equity",
+        "Private credit",
+        "Commodities",
+        "Hedge funds",
+        "Venture capital",
+        "Real estate"
+      ]
+    },
+    "decrease_series": "Decrease",
+    "increase_series": "Increase",
+    "axis_min": -25,
+    "axis_max": 45,
+    "axis_step": 10,
+    "unit": "%",
+    "value_fmt": "{:.0f}%",
+    "legend_labels": {
+      "Decrease": "Expect decrease",
+      "Increase": "Expect increase"
+    },
+    "source_note": "Source: McKinsey 2026 Corporate & Investment Banking Voice of Customer Survey (n=100).",
+    "data_warning": "Increase/decrease share are independent; not a composition. Net = increase - decrease.",
+    "column_mapping": {
+      "category": "category",
+      "series": "series",
+      "value": "value"
+    }
+  }
+}

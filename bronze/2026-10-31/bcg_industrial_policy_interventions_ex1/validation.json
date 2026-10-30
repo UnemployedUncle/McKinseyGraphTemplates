@@ -1,0 +1,60 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.571,
+  "original_seen": true,
+  "generated_source_seen": true,
+  "generated_neutral_seen": true,
+  "code_execution_success": true,
+  "iterations": 3,
+  "scores": {
+    "chart_type": 5,
+    "data_values_and_order": 4,
+    "axis_range_and_ticks": 5,
+    "color_and_highlight": 5,
+    "labels_and_annotations": 4,
+    "title_and_legend": 4,
+    "layout_ratio_and_margins": 5
+  },
+  "score_basis": "Self-evaluation only (not pixel-match): 5 type; 4 estimated component values; 5 axes; 5 approximate palette mapping; 4 annotation/labels; 4 paraphrased headline/legend; 5 aspect/layout. Numeric totals are reported and exact; estimated components retain uncertainty.",
+  "data_checks": {
+    "valid_provenance": true,
+    "nonnegative_percent": true,
+    "unique_keys": true,
+    "unit_coverage": true,
+    "totals_match": true
+  },
+  "execution_commands": [
+    "python chart.py --theme source --data data.csv --config config.json --output output.png",
+    "python chart.py --theme neutral --data data.csv --config config.json --output output_neutral.png"
+  ],
+  "package_versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "diff_notes": "Official 499×311 Exhibit 1 transiently viewed. Type, x order, 0–7000 y-axis, total labels, two green stacks and legend align. Geographic segment heights were manually digitized and are estimates, not actual counts; font, arrows, figure margin differ.",
+  "self_assessment_only": true,
+  "manual_review": "pending",
+  "image_inspection_notes": "Source and neutral PNG opened and inspected visually: categories, labels, axes, colors, and relative geometry are legible and correct.",
+  "source_comparison_legal_notice": "Original artwork never written to file; visual comparison performed via transient official image preview.",
+  "iteration_history": [
+    {
+      "iteration": 1,
+      "observation": "Top totals and two-component annual stacked bars matched; original legend order and header treatment differed. Estimated components lack exact official values.",
+      "score": 4.286,
+      "change": "Reordered legend and rephrased title to a two-line action headline."
+    },
+    {
+      "iteration": 2,
+      "observation": "Legend order and headline hierarchy improved; original lacked vertical y axis title.",
+      "change": "Removed vertical y-axis title, aligned subtitle with official chart."
+    },
+    {
+      "iteration": 3,
+      "observation": "Seven-category self-assessment 4.57/5; all reported annual totals preserved and segment digitization uncertainty labelled.",
+      "score": 4.571,
+      "change": "No further revision; iteration 3 final."
+    }
+  ]
+}

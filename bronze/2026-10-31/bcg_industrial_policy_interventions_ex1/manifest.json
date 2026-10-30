@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261031_bcg_industrial_policy_interventions_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-10-30T22:20:38.191746+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty",
+  "figure_ref": "Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "3c575f4d04de4529cf2c4f1a4f644b39e5bd86eec40863114dd459d2529259a7",
+    "record.json": "1652d98818fa38b65565b73054f33f1a2106260279711bfff9545f3e2cf456ef",
+    "requirements.txt": "432389967a6db7a3fbab1b876619743b7746959a080a9265d323d04df2f30f3b",
+    "card.md": "80f71f5f6fec526c627032935351f1f908b6f3009c946ca129067c1f8ed9a5e1",
+    "data.csv": "c774c0cf1aad247f422d6b95eb6133944e8b612cac1f03b1ab9a9a7a95658ee0",
+    "validation.json": "a15b3ec9eb03fa27676fb6249fa428260e201812147edc029e6c14aa4b1cb47a",
+    "config.json": "6209ce087dfd6a07b22698235254d15808c8d0c70f8b8015d50e939e1490cd60"
+  },
+  "payload_sha256": "cb0f2176fd265591e3621f5e91140ec192a8efe21e253013722548b75f7d0370"
+}

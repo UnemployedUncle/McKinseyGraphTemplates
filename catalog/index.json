@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 24,
+    "bronze": 26,
     "silver": 0,
     "gold": 0
   },
@@ -338,6 +338,34 @@
       "source_url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-in-strategic-sourcing-hype-or-hero",
       "figure_ref": "Opening paragraphs: CPO survey statistics; editorial chart, not Exhibit 1",
       "key_message": "구매 리더의 80%가 향후 12~18개월 AI·기술투자 확대를 계획하지만 AI를 대규모로 내재화한 응답은 2%에 그치므로, 구매조직은 개별 도구 도입보다 업무 단위 확산과 성과 검증을 우선 설계해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261031_bcg_industrial_policy_interventions_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-10-31/bcg_industrial_policy_interventions_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "cb0f2176fd265591e3621f5e91140ec192a8efe21e253013722548b75f7d0370",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/navigate-energy-policy-uncertainty",
+      "figure_ref": "Exhibit 1",
+      "key_message": "산업정책 개입 건수가 2015년 2,273건에서 2025년 6,651건으로 약 2.93배 늘었으므로 에너지·산업기업은 정책 노출도를 투자심사와 시나리오 관리에 통합해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.571,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261031_mckinsey_investor_reallocation_butterfly_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-10-31/mckinsey_investor_reallocation_butterfly_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "832e6b2503a9eab7d4d77c2e0477b971551b53c367cee69b055348c17d5c31fe",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth",
+      "figure_ref": "Exhibit 2",
+      "key_message": "기관투자자의 인프라 투자 의향은 확대 38%, 축소 3%로 순증가 의향 +35%p이므로 증권서비스 기업은 대체투자 지원 역량과 서비스 인프라를 우선 점검해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false
