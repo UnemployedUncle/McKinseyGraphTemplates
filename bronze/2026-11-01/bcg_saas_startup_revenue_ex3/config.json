@@ -1,0 +1,144 @@
+{
+  "THEME": {
+    "source": {
+      "palette": {
+        "SaaS 100": "#203d36",
+        "AI 100": "#25bd78",
+        "New AI": "#a7e69a"
+      },
+      "highlight": "#a7e69a",
+      "background": "#FFFFFF",
+      "text_color": "#192923",
+      "axis_color": "#5E6962",
+      "grid_color": "#DCE4DF",
+      "show_grid": false,
+      "line_width": 2.2,
+      "marker": null,
+      "figsize": [
+        9.4,
+        5.7
+      ],
+      "end_label_offset": 8,
+      "title_pos": [
+        0.07,
+        0.95
+      ],
+      "subtitle_pos": [
+        0.07,
+        0.85
+      ],
+      "source_pos": [
+        0.07,
+        0.04
+      ],
+      "title_fontsize": 16,
+      "subtitle_fontsize": 10,
+      "source_fontsize": 8,
+      "label_fontsize": 11,
+      "tick_fontsize": 9,
+      "legend_fontsize": 9,
+      "labelpad": 12,
+      "ylabel_pad": 1,
+      "ylabel_coords": [
+        -0.045,
+        1.01
+      ],
+      "legend_anchor": [
+        0.5,
+        -0.17
+      ],
+      "margins": {
+        "left": 0.1,
+        "right": 0.97,
+        "top": 0.78,
+        "bottom": 0.29
+      }
+    },
+    "neutral": {
+      "palette": {
+        "SaaS 100": "#666666",
+        "AI 100": "#999999",
+        "New AI": "#1D658A"
+      },
+      "highlight": "#1D658A",
+      "background": "#FFFFFF",
+      "text_color": "#24303C",
+      "axis_color": "#4A5359",
+      "grid_color": "#CCD4D8",
+      "show_grid": true,
+      "line_width": 2.9,
+      "marker": "o",
+      "figsize": [
+        9.4,
+        5.7
+      ],
+      "end_label_offset": 8,
+      "title_pos": [
+        0.07,
+        0.95
+      ],
+      "subtitle_pos": [
+        0.07,
+        0.85
+      ],
+      "source_pos": [
+        0.07,
+        0.04
+      ],
+      "title_fontsize": 16,
+      "subtitle_fontsize": 10,
+      "source_fontsize": 8,
+      "label_fontsize": 11,
+      "tick_fontsize": 9,
+      "legend_fontsize": 9,
+      "labelpad": 12,
+      "ylabel_pad": 1,
+      "ylabel_coords": [
+        -0.045,
+        1.01
+      ],
+      "legend_anchor": [
+        0.5,
+        -0.17
+      ],
+      "margins": {
+        "left": 0.1,
+        "right": 0.97,
+        "top": 0.78,
+        "bottom": 0.29
+      }
+    }
+  },
+  "CONTEXT": {
+    "title": "Recent AI startups reached $5M revenue much faster",
+    "subtitle": "Median months from first revenue to $5M annualized revenue | endpoint values from the source",
+    "columns": {
+      "series": "series",
+      "x": "x_value",
+      "y": "value"
+    },
+    "series_order": [
+      "SaaS 100",
+      "AI 100",
+      "New AI"
+    ],
+    "end_labels": {
+      "SaaS 100": "37 months",
+      "AI 100": "24 months",
+      "New AI": "9 months"
+    },
+    "x_label": "MONTHS SINCE FIRST REVENUE",
+    "y_label": "USD million",
+    "xlim": [
+      0,
+      40
+    ],
+    "ylim": [
+      0,
+      5.55
+    ],
+    "x_tick_step": 10,
+    "y_tick_step": 1,
+    "source_note": "Source: Stripe; BCG (2026). Interim line waypoints digitized estimates; not source-reported observations."
+  }
+}

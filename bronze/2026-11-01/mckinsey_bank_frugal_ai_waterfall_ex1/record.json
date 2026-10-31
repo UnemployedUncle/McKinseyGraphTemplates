@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261101_mckinsey_bank_frugal_ai_waterfall_ex1",
+  "chart_key": "a3fcfa62a35a850e585013f504d5efd47370c59dbb496d8b9a85e84f772be235",
+  "date": "2026-11-01",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide",
+  "source_title": "Closing banking’s AI value gap: A CEO guide",
+  "published": "2026-10-30",
+  "updated": null,
+  "retrieved_at": "2026-11-01",
+  "figure_ref": "Exhibit 1",
+  "original_image_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/closing%20bankings%20ai%20value%20gap%20a%20ceo%20guide/ai-bank-of-future-exhibits_exh1.svgz",
+  "business_context": "100% baseline reduced by 10/20/40/10/4 percentage points to remaining 16%.",
+  "key_message": "Illustrative bank servicing-agent design changes reduce indexed cost per inquiry from 100 to 16; validate with production workload and quality.",
+  "insight_type": "composition",
+  "chart_type": "waterfall",
+  "encoding": {
+    "x": "ordered optimization lever",
+    "y": "percent of baseline cost",
+    "color": "cost type",
+    "size": null,
+    "highlight": "remaining cost"
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "x_value",
+      "x_unit",
+      "x_provenance",
+      "provenance",
+      "denominator",
+      "base",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "source_url",
+      "figure_ref",
+      "notes",
+      "sort_order"
+    ],
+    "units": [
+      "% of baseline cost"
+    ],
+    "n_points": 7,
+    "provenance": [
+      "reported"
+    ]
+  },
+  "data_recipe": "Collect resolved inquiry costs with equal scope and service quality, estimate component effects vs baseline, waterfall contributions and final remaining cost",
+  "message_conditions": "requires matching case complexity and resolution quality; the example is modeled",
+  "design_moves": [
+    "ordered cost reductions",
+    "additive baseline contributions",
+    "colored remaining-cost bar"
+  ],
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "training_eligible": false,
+  "training_use": "none - unreviewed and external rights unconfirmed",
+  "exclusion_reasons": [
+    "user_review_pending",
+    "training_rights_unconfirmed",
+    "original_svgz_visual_unavailable"
+  ],
+  "diff_notes": [
+    "SVGZ original chart not directly visualized due unsupported content type; original chart type inferred from official accessible HTML alt text.",
+    "Numeric step sizes and additive sum checked against official description."
+  ],
+  "code_path": "bronze/2026-11-01/mckinsey_bank_frugal_ai_waterfall_ex1/chart.py",
+  "image_path": "artifacts/bronze/20261101_mckinsey_bank_frugal_ai_waterfall_ex1/source.png",
+  "neutral_image_path": "artifacts/bronze/20261101_mckinsey_bank_frugal_ai_waterfall_ex1/neutral.png",
+  "validation_path": "bronze/2026-11-01/mckinsey_bank_frugal_ai_waterfall_ex1/validation.json",
+  "artifact_refs": {},
+  "split_group": "https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide",
+  "training_pair": {
+    "instruction": "A service operation has a baseline cost index of 100 with five illustrative additive reductions of 10,20,40,10,4 points. Design a cost waterfall and flag its illustrative nature.",
+    "response": {
+      "data_spec": [
+        "category",
+        "series",
+        "value",
+        "unit",
+        "period",
+        "x_value",
+        "x_unit",
+        "x_provenance",
+        "provenance",
+        "denominator",
+        "base",
+        "estimate_method",
+        "uncertainty_low",
+        "uncertainty_high",
+        "source_url",
+        "figure_ref",
+        "notes",
+        "sort_order"
+      ],
+      "data_csv": "category,series,value,unit,period,x_value,x_unit,x_provenance,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,source_url,figure_ref,notes,sort_order\n\"Typical\ndesign\",cost_step,100,% of typical design cost; baseline=100,2026 illustrative scenario,0,step order,derived,reported,cost per resolved inquiry; frontier-first design=100,typical design=100,,,,https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide,Exhibit 1,\"McKinsey Figure 1 official image alt text; negative values are additive percent-point contributions to cost reduction. Illustrative case, not observed population result.\",0\n\"Prompt\nengineering\",cost_step,-10,% of typical design cost; baseline=100,2026 illustrative scenario,1,step order,derived,reported,cost per resolved inquiry; frontier-first design=100,typical design=100,,,,https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide,Exhibit 1,\"McKinsey Figure 1 official image alt text; negative values are additive percent-point contributions to cost reduction. Illustrative case, not observed population result.\",1\n\"Context\nhandling\",cost_step,-20,% of typical design cost; baseline=100,2026 illustrative scenario,2,step order,derived,reported,cost per resolved inquiry; frontier-first design=100,typical design=100,,,,https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide,Exhibit 1,\"McKinsey Figure 1 official image alt text; negative values are additive percent-point contributions to cost reduction. Illustrative case, not observed population result.\",2\n\"Right-sized\nmodel\",cost_step,-40,% of typical design cost; baseline=100,2026 illustrative scenario,3,step order,derived,reported,cost per resolved inquiry; frontier-first design=100,typical design=100,,,,https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide,Exhibit 1,\"McKinsey Figure 1 official image alt text; negative values are additive percent-point contributions to cost reduction. Illustrative case, not observed population result.\",3\n\"Infrastructure\n& operations\",cost_step,-10,% of typical design cost; baseline=100,2026 illustrative scenario,4,step order,derived,reported,cost per resolved inquiry; frontier-first design=100,typical design=100,,,,https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide,Exhibit 1,\"McKinsey Figure 1 official image alt text; negative values are additive percent-point contributions to cost reduction. Illustrative case, not observed population result.\",4\n\"Human\nescalation\",cost_step,-4,% of typical design cost; baseline=100,2026 illustrative scenario,5,step order,derived,reported,cost per resolved inquiry; frontier-first design=100,typical design=100,,,,https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide,Exhibit 1,\"McKinsey Figure 1 official image alt text; negative values are additive percent-point contributions to cost reduction. Illustrative case, not observed population result.\",5\n\"Frugal\ndesign\",cost_step,16,% of typical design cost; baseline=100,2026 illustrative scenario,6,step order,derived,reported,cost per resolved inquiry; frontier-first design=100,typical design=100,,,,https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide,Exhibit 1,\"McKinsey Figure 1 official image alt text; negative values are additive percent-point contributions to cost reduction. Illustrative case, not observed population result.\",6\n",
+      "design_rationale": "Use waterfall to show additive decreases and remaining indexed cost.",
+      "config": {
+        "THEME": {
+          "source": {
+            "background": "#FFFFFF",
+            "base_color": "#1D5B9F",
+            "reduction_color": "#4AB4CA",
+            "final_color": "#1B6C59",
+            "grid_color": "#CBD5E0",
+            "text_color": "#24394F",
+            "source_color": "#6B7580",
+            "figsize": [
+              11.6,
+              6.3
+            ],
+            "bar_width": 0.62,
+            "label_offset": 1.8,
+            "label_fontsize": 11,
+            "tick_fontsize": 9,
+            "tick_pad": 11,
+            "title_pos": [
+              0.08,
+              0.94
+            ],
+            "subtitle_pos": [
+              0.08,
+              0.85
+            ],
+            "source_pos": [
+              0.08,
+              0.035
+            ],
+            "title_fontsize": 15,
+            "subtitle_fontsize": 10,
+            "source_fontsize": 8,
+            "margins": {
+              "left": 0.08,
+              "right": 0.98,
+              "top": 0.78,
+              "bottom": 0.23
+            }
+          },
+          "neutral": {
+            "background": "#FFFFFF",
+            "base_color": "#596A79",
+            "reduction_color": "#9EB1BE",
+            "final_color": "#1C806A",
+            "grid_color": "#D5DDE1",
+            "text_color": "#202B33",
+            "source_color": "#657783",
+            "figsize": [
+              11.6,
+              6.3
+            ],
+            "bar_width": 0.62,
+            "label_offset": 1.8,
+            "label_fontsize": 11,
+            "tick_fontsize": 9,
+            "tick_pad": 11,
+            "title_pos": [
+              0.08,
+              0.94
+            ],
+            "subtitle_pos": [
+              0.08,
+              0.85
+            ],
+            "source_pos": [
+              0.08,
+              0.035
+            ],
+            "title_fontsize": 15,
+            "subtitle_fontsize": 10,
+            "source_fontsize": 8,
+            "margins": {
+              "left": 0.08,
+              "right": 0.98,
+              "top": 0.78,
+              "bottom": 0.23
+            }
+          }
+        },
+        "CONTEXT": {
+          "title": "Agent design choices can bring illustrative service cost down to 16%",
+          "subtitle": "Illustrative cost per resolved inquiry | initial design indexed to 100 (approx. 100k inquiries/month)",
+          "columns": {
+            "y": "value",
+            "category": "category",
+            "order": "sort_order"
+          },
+          "number_format": "{:+.0f}%",
+          "y_tick_step": 20,
+          "ylim": [
+            0,
+            117
+          ],
+          "source_note": "Source: McKinsey Frugal AI Framework (2026), Exhibit 1. Percentage-point reductions from baseline, not sequential percentage discounts."
+        }
+      },
+      "executable_code": "#!/usr/bin/env python3\n\"\"\"Recreate a waterfall for illustrative relative cost reductions.\"\"\"\nfrom pathlib import Path\nimport argparse, json\nimport pandas as pd\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import MultipleLocator,PercentFormatter\n\n\ndef render(data, theme, context):\n    data=data.sort_values(context['columns']['order']).reset_index(drop=True)\n    vals=data[context['columns']['y']].astype(float).to_numpy()\n    labels=data[context['columns']['category']].astype(str).to_list()\n    assert len(vals)>=3 and vals[0]>=0 and abs(vals[-1]-(vals[0]+sum(vals[1:-1])))<1e-6, 'Components do not reconcile'\n    fig,ax=plt.subplots(figsize=theme['figsize'],facecolor=theme['background'])\n    ax.set_facecolor(theme['background']);running=float(vals[0]);bars=[]\n    for i,v in enumerate(vals):\n        if i==0 or i==len(vals)-1: bottom=0;h=v;col=theme['base_color'] if i==0 else theme['final_color']\n        else: bottom=running+v if v<0 else running; h=abs(v);col=theme['reduction_color'];running+=v\n        ax.bar(i,h,bottom=bottom,width=theme['bar_width'],color=col)\n        bars.append((bottom,h))\n        ax.text(i,bottom+h+theme['label_offset'],context['number_format'].format(v),ha='center',va='bottom',fontsize=theme['label_fontsize'],fontweight='bold',color=theme['text_color'])\n    ax.set_ylim(*context['ylim']);ax.set_xlim(-0.65,len(labels)-0.35)\n    ax.set_xticks(list(range(len(labels))),labels,fontsize=theme['tick_fontsize'])\n    ax.yaxis.set_major_locator(MultipleLocator(context['y_tick_step']))\n    ax.yaxis.set_major_formatter(PercentFormatter(xmax=100,decimals=0))\n    ax.tick_params(axis='x',length=0,pad=theme['tick_pad']);ax.tick_params(axis='y',length=0,labelsize=theme['tick_fontsize'])\n    ax.grid(axis='y',color=theme['grid_color'],alpha=.5,linewidth=.65)\n    ax.set_axisbelow(True)\n    for spine in ax.spines.values():spine.set_visible(False)\n    fig.text(*theme['title_pos'],context['title'],fontsize=theme['title_fontsize'],fontweight='bold',color=theme['text_color'])\n    fig.text(*theme['subtitle_pos'],context['subtitle'],fontsize=theme['subtitle_fontsize'],color=theme['text_color'])\n    fig.text(*theme['source_pos'],context['source_note'],fontsize=theme['source_fontsize'],color=theme['source_color'])\n    fig.subplots_adjust(**theme['margins'])\n    return fig\n\n\ndef main():\n    p=argparse.ArgumentParser();p.add_argument('--theme',choices=['source','neutral'],default='source')\n    p.add_argument('--data',default='data.csv');p.add_argument('--config',default='config.json');p.add_argument('--output',default='output.png')\n    a=p.parse_args();folder=Path(__file__).resolve().parent\n    cfg=json.loads((folder/a.config).read_text(encoding='utf-8'))\n    fig=render(pd.read_csv(folder/a.data),cfg['THEME'][a.theme],cfg['CONTEXT'])\n    fig.savefig(a.output,dpi=200,facecolor=fig.get_facecolor());plt.close(fig)\nif __name__=='__main__':main()\n"
+    }
+  }
+}

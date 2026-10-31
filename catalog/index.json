@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 26,
+    "bronze": 28,
     "silver": 0,
     "gold": 0
   },
@@ -366,6 +366,34 @@
       "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/rewiring-securities-services-for-a-new-era-of-competition-and-growth",
       "figure_ref": "Exhibit 2",
       "key_message": "기관투자자의 인프라 투자 의향은 확대 38%, 축소 3%로 순증가 의향 +35%p이므로 증권서비스 기업은 대체투자 지원 역량과 서비스 인프라를 우선 점검해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261101_bcg_saas_startup_revenue_ex3",
+      "tier": "bronze",
+      "path": "bronze/2026-11-01/bcg_saas_startup_revenue_ex3",
+      "contract": "render-v1",
+      "payload_sha256": "59af9ef12c9dbe9f7e66ffe9751ca58b973505bb58e5f2a1f8b60d749e98c3fc",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai",
+      "figure_ref": "Exhibit 3",
+      "key_message": "Recent AI-startup benchmark cohorts reached $5m annualized revenue in fewer months; SaaS leaders should run faster pricing experiments.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.571428571428571,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261101_mckinsey_bank_frugal_ai_waterfall_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-11-01/mckinsey_bank_frugal_ai_waterfall_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "77ea4470ebfe70c6e75b9a2463c21edb9234100a29a4ba30408046252511a2ae",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide",
+      "figure_ref": "Exhibit 1",
+      "key_message": "Illustrative bank servicing-agent design changes reduce indexed cost per inquiry from 100 to 16; validate with production workload and quality.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

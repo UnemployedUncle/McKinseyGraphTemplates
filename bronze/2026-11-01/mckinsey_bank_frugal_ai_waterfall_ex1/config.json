@@ -1,0 +1,98 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "base_color": "#1D5B9F",
+      "reduction_color": "#4AB4CA",
+      "final_color": "#1B6C59",
+      "grid_color": "#CBD5E0",
+      "text_color": "#24394F",
+      "source_color": "#6B7580",
+      "figsize": [
+        11.6,
+        6.3
+      ],
+      "bar_width": 0.62,
+      "label_offset": 1.8,
+      "label_fontsize": 11,
+      "tick_fontsize": 9,
+      "tick_pad": 11,
+      "title_pos": [
+        0.08,
+        0.94
+      ],
+      "subtitle_pos": [
+        0.08,
+        0.85
+      ],
+      "source_pos": [
+        0.08,
+        0.035
+      ],
+      "title_fontsize": 15,
+      "subtitle_fontsize": 10,
+      "source_fontsize": 8,
+      "margins": {
+        "left": 0.08,
+        "right": 0.98,
+        "top": 0.78,
+        "bottom": 0.23
+      }
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "base_color": "#596A79",
+      "reduction_color": "#9EB1BE",
+      "final_color": "#1C806A",
+      "grid_color": "#D5DDE1",
+      "text_color": "#202B33",
+      "source_color": "#657783",
+      "figsize": [
+        11.6,
+        6.3
+      ],
+      "bar_width": 0.62,
+      "label_offset": 1.8,
+      "label_fontsize": 11,
+      "tick_fontsize": 9,
+      "tick_pad": 11,
+      "title_pos": [
+        0.08,
+        0.94
+      ],
+      "subtitle_pos": [
+        0.08,
+        0.85
+      ],
+      "source_pos": [
+        0.08,
+        0.035
+      ],
+      "title_fontsize": 15,
+      "subtitle_fontsize": 10,
+      "source_fontsize": 8,
+      "margins": {
+        "left": 0.08,
+        "right": 0.98,
+        "top": 0.78,
+        "bottom": 0.23
+      }
+    }
+  },
+  "CONTEXT": {
+    "title": "Agent design choices can bring illustrative service cost down to 16%",
+    "subtitle": "Illustrative cost per resolved inquiry | initial design indexed to 100 (approx. 100k inquiries/month)",
+    "columns": {
+      "y": "value",
+      "category": "category",
+      "order": "sort_order"
+    },
+    "number_format": "{:+.0f}%",
+    "y_tick_step": 20,
+    "ylim": [
+      0,
+      117
+    ],
+    "source_note": "Source: McKinsey Frugal AI Framework (2026), Exhibit 1. Percentage-point reductions from baseline, not sequential percentage discounts."
+  }
+}

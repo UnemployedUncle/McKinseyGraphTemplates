@@ -1,0 +1,76 @@
+{
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3"
+  },
+  "execution_commands": [
+    "python chart.py --theme source --data data.csv --config config.json --output artifacts/bcg_saas_startup_revenue_ex3/source.png",
+    "python chart.py --theme neutral --data data.csv --config config.json --output artifacts/bcg_saas_startup_revenue_ex3/neutral.png",
+    "python chart.py --theme source --data data.csv --config config.json --output artifacts/bcg_saas_startup_revenue_ex3/output.svg"
+  ],
+  "execution_passed": true,
+  "original_opened": true,
+  "original_url": "https://web-assets.bcg.com/dims4/default/5c5b2f9/2147483647/strip/true/crop/3600x2138%2B0%2B0/resize/499x296%21/format/webp/quality/80/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2F31%2Fd6%2F1e9ca48149fdacd6cd249b76fb27%2Fmonetizing-agents-ex03.png",
+  "visual_comparison_performed": true,
+  "iterations": [
+    {
+      "iteration": 1,
+      "source_rendered": true,
+      "neutral_rendered": true,
+      "images_directly_inspected": true,
+      "notes": "Source and neutral themes both generated at dpi 200. Original comparison available only for BCG."
+    }
+  ],
+  "fidelity_score": 4.571428571428571,
+  "validation_status": "verified",
+  "data_checks": {
+    "source_reported_values_checked": true,
+    "unit_and_denominator_checked": true,
+    "sort_order_checked": true,
+    "missing_data_not_imputed": true,
+    "synthesis_used": false
+  },
+  "diff_notes": [
+    "Intermediate elbows inferred at ~11m and ~14m from small original image, not source-reported numeric observations.",
+    "Paraphrased action title and typography/spacing are not pixel-identical; self assessment only."
+  ],
+  "human_review": "pending",
+  "source_png_checked": true,
+  "neutral_png_checked": true,
+  "execution_artifacts": [
+    "artifacts/bcg_saas_startup_revenue_ex3/source.png",
+    "artifacts/bcg_saas_startup_revenue_ex3/neutral.png",
+    "artifacts/bcg_saas_startup_revenue_ex3/output.svg"
+  ],
+  "seven_item_scores": {
+    "chart_type": {
+      "score": 5,
+      "reason": "Both three-cohort line chart with same endpoint order."
+    },
+    "values_order": {
+      "score": 5,
+      "reason": "9, 24, 37 months to $5M and chronological line endpoints match original; intermediate estimates disclosed."
+    },
+    "axes_ticks": {
+      "score": 5,
+      "reason": "Both show 0–40 months and $0–5m untruncated linear y axis."
+    },
+    "color_highlight": {
+      "score": 5,
+      "reason": "Dark-to-light green maps SaaS100, AI100, NewAI as original."
+    },
+    "labels_annotations": {
+      "score": 4,
+      "reason": "Endpoint month labels match, but font size and exact anchor location differ."
+    },
+    "title_legend": {
+      "score": 4,
+      "reason": "Title paraphrased, legend retains three-cohort mapping but typography differs."
+    },
+    "layout_margins": {
+      "score": 4,
+      "reason": "Portrait ratio and general layout similar; whitespace and chart box differ."
+    }
+  }
+}

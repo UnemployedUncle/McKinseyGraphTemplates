@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261101_bcg_saas_startup_revenue_ex3",
+  "chart_key": "2235a8579187868baa1093f88c6cfd3d1bcfa67dfec9593a0687a89b9fde9520",
+  "date": "2026-11-01",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai",
+  "source_title": "As AI Reshapes SaaS, Companies Need Pivot-Ready Pricing",
+  "published": "2026-10-30",
+  "updated": null,
+  "retrieved_at": "2026-11-01",
+  "figure_ref": "Exhibit 3",
+  "original_image_url": "https://web-assets.bcg.com/dims4/default/5c5b2f9/2147483647/strip/true/crop/3600x2138%2B0%2B0/resize/499x296%21/format/webp/quality/80/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2F31%2Fd6%2F1e9ca48149fdacd6cd249b76fb27%2Fmonetizing-agents-ex03.png",
+  "business_context": "Selected Stripe cohorts time to $5M annualized revenue: recent AI=9, AI100=24, SaaS100=37 months.",
+  "key_message": "Recent AI-startup benchmark cohorts reached $5m annualized revenue in fewer months; SaaS leaders should run faster pricing experiments.",
+  "insight_type": "comparison",
+  "chart_type": "multi-line growth trajectory",
+  "encoding": {
+    "x": "months since first revenue",
+    "y": "USDm annualized revenue",
+    "color": "cohort",
+    "size": null,
+    "highlight": "recent AI cohort"
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "x_value",
+      "x_unit",
+      "x_provenance",
+      "provenance",
+      "denominator",
+      "base",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "source_url",
+      "figure_ref",
+      "notes",
+      "sort_order"
+    ],
+    "units": [
+      "USDm",
+      "months"
+    ],
+    "n_points": 8,
+    "provenance": [
+      "reported",
+      "derived",
+      "digitized_estimate"
+    ]
+  },
+  "data_recipe": "Use firm-month financial data, align revenue definitions, calculate first month crossing $5m by cohort, compare selected cohort medians",
+  "message_conditions": "requires cohort/time-to-target comparability; not a causal AI effect",
+  "design_moves": [
+    "direct endpoint annotations",
+    "three green-toned line series",
+    "separate source/neutral themes"
+  ],
+  "fidelity_score": 4.571428571428571,
+  "validation_status": "verified",
+  "training_eligible": false,
+  "training_use": "none - unreviewed and external rights unconfirmed",
+  "exclusion_reasons": [
+    "user_review_pending",
+    "training_rights_unconfirmed",
+    "digitized_midpoints_not_numeric_training"
+  ],
+  "diff_notes": [
+    "Intermediate elbows inferred at ~11m and ~14m from small original image, not source-reported numeric observations.",
+    "Paraphrased action title and typography/spacing are not pixel-identical; self assessment only."
+  ],
+  "code_path": "bronze/2026-11-01/bcg_saas_startup_revenue_ex3/chart.py",
+  "image_path": "artifacts/bronze/20261101_bcg_saas_startup_revenue_ex3/source.png",
+  "neutral_image_path": "artifacts/bronze/20261101_bcg_saas_startup_revenue_ex3/neutral.png",
+  "validation_path": "bronze/2026-11-01/bcg_saas_startup_revenue_ex3/validation.json",
+  "artifact_refs": {},
+  "split_group": "https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai",
+  "training_pair": {
+    "instruction": "Given three selected cohorts with endpoints at 9, 24, 37 months to reach the same revenue threshold, design a comparable growth-path plot and distinguish digitized guide points.",
+    "response": {
+      "data_spec": [
+        "category",
+        "series",
+        "value",
+        "unit",
+        "period",
+        "x_value",
+        "x_unit",
+        "x_provenance",
+        "provenance",
+        "denominator",
+        "base",
+        "estimate_method",
+        "uncertainty_low",
+        "uncertainty_high",
+        "source_url",
+        "figure_ref",
+        "notes",
+        "sort_order"
+      ],
+      "data_csv": "category,series,value,unit,period,x_value,x_unit,x_provenance,provenance,denominator,base,estimate_method,uncertainty_low,uncertainty_high,source_url,figure_ref,notes,sort_order\nSaaS 100,SaaS 100,0,USD million annualized revenue,2026 article; cohort windows differ,0,months since first revenue,derived,derived,company cohort; median elapsed time,$0m at month 0,,,,https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai,Exhibit 3,\"Illustrative origin; baseline in the source chart Estimated elbows have ~±1.5 month x uncertainty; y ~±0.25 USDm, recorded in notes (uncertainty fields refer to x).\",0\nSaaS 100,SaaS 100,1.0,USD million annualized revenue,2026 article; cohort windows differ,14,months since first revenue,digitized_estimate,digitized_estimate,company cohort; median elapsed time,$0m at month 0,\"manual original-image x/y ruler reading (~10px/month,~23px/$1m); rounded elbow\",-1.5,1.5,https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai,Exhibit 3,\"Unlabeled approximate elbow reconstructed by visual reading of original 499x296 web image Estimated elbows have ~±1.5 month x uncertainty; y ~±0.25 USDm, recorded in notes (uncertainty fields refer to x).\",14\nSaaS 100,SaaS 100,5,USD million annualized revenue,2026 article; cohort windows differ,37,months since first revenue,reported,reported,company cohort; median elapsed time,$0m at month 0,,,,https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai,Exhibit 3,\"Explicit chart endpoint label ($5m). Estimated elbows have ~±1.5 month x uncertainty; y ~±0.25 USDm, recorded in notes (uncertainty fields refer to x).\",37\nAI 100,AI 100,0,USD million annualized revenue,2026 article; cohort windows differ,0,months since first revenue,derived,derived,company cohort; median elapsed time,$0m at month 0,,,,https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai,Exhibit 3,\"Illustrative origin; baseline in the source chart Estimated elbows have ~±1.5 month x uncertainty; y ~±0.25 USDm, recorded in notes (uncertainty fields refer to x).\",0\nAI 100,AI 100,1.0,USD million annualized revenue,2026 article; cohort windows differ,11,months since first revenue,digitized_estimate,digitized_estimate,company cohort; median elapsed time,$0m at month 0,\"manual original-image x/y ruler reading (~10px/month,~23px/$1m); rounded elbow\",-1.5,1.5,https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai,Exhibit 3,\"Unlabeled approximate elbow reconstructed by visual reading of original 499x296 web image Estimated elbows have ~±1.5 month x uncertainty; y ~±0.25 USDm, recorded in notes (uncertainty fields refer to x).\",11\nAI 100,AI 100,5,USD million annualized revenue,2026 article; cohort windows differ,24,months since first revenue,reported,reported,company cohort; median elapsed time,$0m at month 0,,,,https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai,Exhibit 3,\"Explicit chart endpoint label ($5m). Estimated elbows have ~±1.5 month x uncertainty; y ~±0.25 USDm, recorded in notes (uncertainty fields refer to x).\",24\nNew AI,New AI,0,USD million annualized revenue,2026 article; cohort windows differ,0,months since first revenue,derived,derived,company cohort; median elapsed time,$0m at month 0,,,,https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai,Exhibit 3,\"Illustrative origin; baseline in the source chart Estimated elbows have ~±1.5 month x uncertainty; y ~±0.25 USDm, recorded in notes (uncertainty fields refer to x).\",0\nNew AI,New AI,5,USD million annualized revenue,2026 article; cohort windows differ,9,months since first revenue,reported,reported,company cohort; median elapsed time,$0m at month 0,,,,https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai,Exhibit 3,\"Explicit chart endpoint label ($5m). Estimated elbows have ~±1.5 month x uncertainty; y ~±0.25 USDm, recorded in notes (uncertainty fields refer to x).\",9\n",
+      "design_rationale": "Highlight indexed threshold speed for cohorts.",
+      "config": {
+        "THEME": {
+          "source": {
+            "palette": {
+              "SaaS 100": "#203d36",
+              "AI 100": "#25bd78",
+              "New AI": "#a7e69a"
+            },
+            "highlight": "#a7e69a",
+            "background": "#FFFFFF",
+            "text_color": "#192923",
+            "axis_color": "#5E6962",
+            "grid_color": "#DCE4DF",
+            "show_grid": false,
+            "line_width": 2.2,
+            "marker": null,
+            "figsize": [
+              9.4,
+              5.7
+            ],
+            "end_label_offset": 8,
+            "title_pos": [
+              0.07,
+              0.95
+            ],
+            "subtitle_pos": [
+              0.07,
+              0.85
+            ],
+            "source_pos": [
+              0.07,
+              0.04
+            ],
+            "title_fontsize": 16,
+            "subtitle_fontsize": 10,
+            "source_fontsize": 8,
+            "label_fontsize": 11,
+            "tick_fontsize": 9,
+            "legend_fontsize": 9,
+            "labelpad": 12,
+            "ylabel_pad": 1,
+            "ylabel_coords": [
+              -0.045,
+              1.01
+            ],
+            "legend_anchor": [
+              0.5,
+              -0.17
+            ],
+            "margins": {
+              "left": 0.1,
+              "right": 0.97,
+              "top": 0.78,
+              "bottom": 0.29
+            }
+          },
+          "neutral": {
+            "palette": {
+              "SaaS 100": "#666666",
+              "AI 100": "#999999",
+              "New AI": "#1D658A"
+            },
+            "highlight": "#1D658A",
+            "background": "#FFFFFF",
+            "text_color": "#24303C",
+            "axis_color": "#4A5359",
+            "grid_color": "#CCD4D8",
+            "show_grid": true,
+            "line_width": 2.9,
+            "marker": "o",
+            "figsize": [
+              9.4,
+              5.7
+            ],
+            "end_label_offset": 8,
+            "title_pos": [
+              0.07,
+              0.95
+            ],
+            "subtitle_pos": [
+              0.07,
+              0.85
+            ],
+            "source_pos": [
+              0.07,
+              0.04
+            ],
+            "title_fontsize": 16,
+            "subtitle_fontsize": 10,
+            "source_fontsize": 8,
+            "label_fontsize": 11,
+            "tick_fontsize": 9,
+            "legend_fontsize": 9,
+            "labelpad": 12,
+            "ylabel_pad": 1,
+            "ylabel_coords": [
+              -0.045,
+              1.01
+            ],
+            "legend_anchor": [
+              0.5,
+              -0.17
+            ],
+            "margins": {
+              "left": 0.1,
+              "right": 0.97,
+              "top": 0.78,
+              "bottom": 0.29
+            }
+          }
+        },
+        "CONTEXT": {
+          "title": "Recent AI startups reached $5M revenue much faster",
+          "subtitle": "Median months from first revenue to $5M annualized revenue | endpoint values from the source",
+          "columns": {
+            "series": "series",
+            "x": "x_value",
+            "y": "value"
+          },
+          "series_order": [
+            "SaaS 100",
+            "AI 100",
+            "New AI"
+          ],
+          "end_labels": {
+            "SaaS 100": "37 months",
+            "AI 100": "24 months",
+            "New AI": "9 months"
+          },
+          "x_label": "MONTHS SINCE FIRST REVENUE",
+          "y_label": "USD million",
+          "xlim": [
+            0,
+            40
+          ],
+          "ylim": [
+            0,
+            5.55
+          ],
+          "x_tick_step": 10,
+          "y_tick_step": 1,
+          "source_note": "Source: Stripe; BCG (2026). Interim line waypoints digitized estimates; not source-reported observations."
+        }
+      },
+      "executable_code": "#!/usr/bin/env python3\n\"\"\"Recreate an illustrative growth-path line chart with explicit data provenance.\"\"\"\nfrom pathlib import Path\nimport argparse, json\nimport pandas as pd\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import MultipleLocator\n\n\ndef render(data, theme, context):\n    fig, ax = plt.subplots(figsize=theme.get(\"figsize\", [9.3, 5.6]), facecolor=theme[\"background\"])\n    ax.set_facecolor(theme[\"background\"])\n    ordering = context.get(\"series_order\", list(data[context[\"columns\"][\"series\"]].drop_duplicates()))\n    for series in ordering:\n        rows = data.loc[data[context[\"columns\"][\"series\"]] == series].copy()\n        rows = rows.sort_values(context[\"columns\"][\"x\"])\n        ax.plot(rows[context[\"columns\"][\"x\"]], rows[context[\"columns\"][\"y\"]],\n                color=theme[\"palette\"].get(series, theme[\"highlight\"]),\n                linewidth=theme[\"line_width\"], marker=theme.get(\"marker\", None),\n                solid_capstyle=\"round\", label=series)\n        end = rows.iloc[-1]\n        ax.annotate(context[\"end_labels\"].get(series, f\"{end[context['columns']['x']]} months\"),\n                    xy=(end[context[\"columns\"][\"x\"]], end[context[\"columns\"][\"y\"]]),\n                    xytext=(0, theme.get(\"end_label_offset\", 10)), textcoords=\"offset points\",\n                    ha=\"center\", color=theme[\"text_color\"], fontsize=theme[\"label_fontsize\"])\n    ax.set_xlim(*context[\"xlim\"]); ax.set_ylim(*context[\"ylim\"])\n    ax.xaxis.set_major_locator(MultipleLocator(context[\"x_tick_step\"]))\n    ax.yaxis.set_major_locator(MultipleLocator(context[\"y_tick_step\"]))\n    ax.set_xlabel(context[\"x_label\"], labelpad=theme[\"labelpad\"])\n    ax.set_ylabel(context[\"y_label\"], rotation=0, ha=\"left\", labelpad=theme[\"ylabel_pad\"])\n    ax.yaxis.set_label_coords(*theme[\"ylabel_coords\"])\n    ax.tick_params(axis='both', which='both', length=0, colors=theme[\"axis_color\"], labelsize=theme[\"tick_fontsize\"])\n    if theme[\"show_grid\"]: ax.grid(axis=\"y\", color=theme[\"grid_color\"], linewidth=0.6, alpha=0.6)\n    for side in ['top','right','left']: ax.spines[side].set_visible(False)\n    ax.spines['bottom'].set_color(theme[\"axis_color\"])\n    fig.text(*theme[\"title_pos\"], context[\"title\"],fontsize=theme[\"title_fontsize\"],fontweight=\"bold\",color=theme[\"text_color\"])\n    fig.text(*theme[\"subtitle_pos\"],context[\"subtitle\"],fontsize=theme[\"subtitle_fontsize\"],color=theme[\"text_color\"])\n    ax.legend(loc=\"upper center\",bbox_to_anchor=theme[\"legend_anchor\"],ncol=1,frameon=False,fontsize=theme[\"legend_fontsize\"])\n    fig.text(*theme[\"source_pos\"],context[\"source_note\"],fontsize=theme[\"source_fontsize\"],color=theme.get(\"source_color\",theme[\"text_color\"]))\n    fig.subplots_adjust(**theme[\"margins\"])\n    return fig\n\n\ndef main():\n    p=argparse.ArgumentParser();p.add_argument('--theme',choices=['source','neutral'],default='source')\n    p.add_argument('--data',default='data.csv');p.add_argument('--config',default='config.json');p.add_argument('--output',default='output.png')\n    a=p.parse_args();folder=Path(__file__).resolve().parent\n    cfg=json.loads((folder/a.config).read_text(encoding='utf-8'))\n    fig=render(pd.read_csv(folder/a.data),cfg['THEME'][a.theme],cfg['CONTEXT'])\n    fig.savefig(a.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\nif __name__=='__main__':main()\n"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261101_bcg_saas_startup_revenue_ex3",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-01T07:25:37.331189+09:00",
+  "source_url": "https://www.bcg.com/publications/2026/saas-pricing-must-change-agentic-ai",
+  "figure_ref": "Exhibit 3",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "6d375729a115a330b6d7941ab0bebb833f2c00373cb0b706a72dc28a0541674a",
+    "chart.py": "a0f0b3bdb6f22db6bfadcdda04be7894492b681126973bca440a874fa991323b",
+    "config.json": "523cc3e078c82537a29f9d4f25f7b7af2a449b9c4a25b1767e17a782eaa30017",
+    "data.csv": "a0493cdd7b376849813f6acc5f4cb83c1205db815e4c7b7f4f7641a66ceaaa0f",
+    "record.json": "e745327386badabff00da51fec313ae2d1f315f2dadb27939fb488b2ddde4231",
+    "requirements.txt": "decaf84e71ecdd5e3492b6be604ae24a5af3c59edbdd3bd33f988ec65563fe67",
+    "validation.json": "e0ad40c91e1f153da0170d6352d41d0b26902c7fb778ff85277454dc12f8c811"
+  },
+  "payload_sha256": "59af9ef12c9dbe9f7e66ffe9751ca58b973505bb58e5f2a1f8b60d749e98c3fc"
+}

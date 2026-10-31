@@ -1,0 +1,47 @@
+{
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3"
+  },
+  "execution_commands": [
+    "python chart.py --theme source --data data.csv --config config.json --output artifacts/mckinsey_bank_frugal_ai_waterfall_ex1/source.png",
+    "python chart.py --theme neutral --data data.csv --config config.json --output artifacts/mckinsey_bank_frugal_ai_waterfall_ex1/neutral.png",
+    "python chart.py --theme source --data data.csv --config config.json --output artifacts/mckinsey_bank_frugal_ai_waterfall_ex1/output.svg"
+  ],
+  "execution_passed": true,
+  "original_opened": false,
+  "original_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/closing%20bankings%20ai%20value%20gap%20a%20ceo%20guide/ai-bank-of-future-exhibits_exh1.svgz",
+  "visual_comparison_performed": false,
+  "iterations": [
+    {
+      "iteration": 1,
+      "source_rendered": true,
+      "neutral_rendered": true,
+      "images_directly_inspected": true,
+      "notes": "Source and neutral themes both generated at dpi 200. Original comparison available only for BCG."
+    }
+  ],
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "data_checks": {
+    "source_reported_values_checked": true,
+    "unit_and_denominator_checked": true,
+    "sort_order_checked": true,
+    "missing_data_not_imputed": true,
+    "synthesis_used": false
+  },
+  "diff_notes": [
+    "SVGZ original chart not directly visualized due unsupported content type; original chart type inferred from official accessible HTML alt text.",
+    "Numeric step sizes and additive sum checked against official description."
+  ],
+  "human_review": "pending",
+  "source_png_checked": true,
+  "neutral_png_checked": true,
+  "execution_artifacts": [
+    "artifacts/mckinsey_bank_frugal_ai_waterfall_ex1/source.png",
+    "artifacts/mckinsey_bank_frugal_ai_waterfall_ex1/neutral.png",
+    "artifacts/mckinsey_bank_frugal_ai_waterfall_ex1/output.svg"
+  ],
+  "seven_item_scores": null
+}

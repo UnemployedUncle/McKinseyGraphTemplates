@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261101_mckinsey_bank_frugal_ai_waterfall_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-01T07:25:37.331189+09:00",
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide",
+  "figure_ref": "Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "15f453a8042f9a0e9a9b5c1bec0b002730156e907fa9cdd539d9f9ade68af8a1",
+    "chart.py": "bf870bd4398b2b4e90a6919ad8cc6967039d692f4d9271b9e589c3e4f4b732dc",
+    "config.json": "25f006f1409b0a2d0c2310e24e49f6c012ec6adcd691baea4bd4c1d2577c253d",
+    "data.csv": "1c2a180cc5687f6b4fea0efc6889eb4967a16af7ca6b37bb6cd5d8e6c02bb1ba",
+    "record.json": "88591f0b281d424a8f4bce8c3310afe604988bc26e5815bd26d84d9a7be8ee2e",
+    "requirements.txt": "decaf84e71ecdd5e3492b6be604ae24a5af3c59edbdd3bd33f988ec65563fe67",
+    "validation.json": "d3fcad13739c824b9dcb393e3404f7cf979a1b7d2e8662949600299eccfe3c52"
+  },
+  "payload_sha256": "77ea4470ebfe70c6e75b9a2463c21edb9234100a29a4ba30408046252511a2ae"
+}
