@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261102_bain_autonomous_driving_switching_fig7",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-02T07:32:17.882425+09:00",
+  "source_url": "https://www.bain.com/insights/global-auto-consumer-survey-regional-trends-in-a-changing-world/",
+  "figure_ref": "Figure 7",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "1c16dbfacaf449956c871105d82b81c536c6aa6fc33719058f9129c7e3db44c1",
+    "chart.py": "989480f37d3594ed29b1eb41d25d3ef62dff75d160f22fb7d8ad5be7e20b30fc",
+    "config.json": "ac8257b32aa820268c285807fbda9f0db7aba0f0183ce5faf75cc345fba22fff",
+    "data.csv": "38aa41ba9dbc38ccb3a10e7f9ca9a26b030546c3a8174475db0641ad0d5b7716",
+    "record.json": "1eec9188ad8d60542b692e913db61de6e96e926ccc66c38d15dc938a6c6791d5",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "validation.json": "2b2aa71735027907d3ab4c5895097bf9ae41f70ca57e67cda99ce405b29c9d1a"
+  },
+  "payload_sha256": "1fdccf88a1fcbb551d906ab06958f4d76dbafb71637ebaaf7dfeaffa965f3cbe"
+}

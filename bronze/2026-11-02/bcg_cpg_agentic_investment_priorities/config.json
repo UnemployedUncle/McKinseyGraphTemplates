@@ -1,0 +1,85 @@
+{
+  "THEME": {
+    "source": {
+      "figure_size": [
+        10,
+        5.7
+      ],
+      "background": "#ffffff",
+      "ink": "#232323",
+      "muted": "#737373",
+      "spine": "#dddddd",
+      "default": "#b6c9be",
+      "highlight": "#18764a",
+      "title_size": 15.8,
+      "subtitle_size": 10,
+      "bar_width": 0.64,
+      "label_size": 12,
+      "label_offset": 2.0,
+      "tick_size": 11.2,
+      "axis_size": 9,
+      "footnote_size": 8,
+      "grid": true,
+      "margins": {
+        "left": 0.32,
+        "right": 0.94,
+        "bottom": 0.14,
+        "top": 0.73
+      }
+    },
+    "neutral": {
+      "figure_size": [
+        10,
+        5.7
+      ],
+      "background": "#ffffff",
+      "ink": "#172b4d",
+      "muted": "#697386",
+      "spine": "#ddd",
+      "default": "#b3cedd",
+      "highlight": "#256a94",
+      "title_size": 15.2,
+      "subtitle_size": 10,
+      "bar_width": 0.58,
+      "label_size": 11.5,
+      "label_offset": 2.0,
+      "tick_size": 11.2,
+      "axis_size": 9,
+      "footnote_size": 8,
+      "grid": true,
+      "margins": {
+        "left": 0.32,
+        "right": 0.94,
+        "bottom": 0.14,
+        "top": 0.73
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "horizontal_bar",
+    "title": "CPG investment plans favor GEO and data readiness\nover owned agents and ecosystem links",
+    "subtitle": "Share of survey respondents planning investment in next 12 months",
+    "subtitle_y": 0.84,
+    "category_order": [
+      "GEO optimization",
+      "Product data structuring",
+      "Owned agents",
+      "Ecosystem integration"
+    ],
+    "highlight_categories": [
+      "GEO optimization"
+    ],
+    "x_limits": [
+      0,
+      76
+    ],
+    "x_ticks": [
+      0,
+      20,
+      40,
+      60
+    ],
+    "value_format": "{:.0f}%",
+    "source_note": "Source: BCG GenAI CPG Survey 2026 | Reported text; editorial chart (not an exhibit)."
+  }
+}

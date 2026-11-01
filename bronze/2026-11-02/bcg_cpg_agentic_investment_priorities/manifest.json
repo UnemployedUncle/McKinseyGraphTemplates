@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261102_bcg_cpg_agentic_investment_priorities",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-02T07:32:22.276761+09:00",
+  "source_url": "https://www.bcg.com/publications/2026/how-cpg-companies-win-agentic-commerce",
+  "figure_ref": "Body: next-year investment priorities (editorial chart, not an original exhibit)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "14c5bc67eb4d104afd734582cb0b17452a701a131484fa4c139bfa58b2a01cc9",
+    "chart.py": "989480f37d3594ed29b1eb41d25d3ef62dff75d160f22fb7d8ad5be7e20b30fc",
+    "config.json": "804249fa8c54a50e9bb7cd78a783891c6f5239122f825a25e0cec73963aec5ea",
+    "data.csv": "e230b3994205e5b04f524ba8134f911afd8ae7ebbe327820eb1fcfb742f2e0f3",
+    "record.json": "1d1f36919ea6e1512f472c52538d0539d1c7c12003cb7489d45862ea1a0715b2",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "validation.json": "b4752bcf946702b49f210cdfa052fcbde746dda1a224a294a00ba059465651fd"
+  },
+  "payload_sha256": "d29fa553a5757cb40b2b89ade3cd147bf965e8daee203ed6fdd4fda96effcffb"
+}

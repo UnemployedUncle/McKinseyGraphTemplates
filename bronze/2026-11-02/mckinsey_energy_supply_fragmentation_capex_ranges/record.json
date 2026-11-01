@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261102_mckinsey_energy_supply_fragmentation_capex_ranges",
+  "date": "2026-11-02",
+  "firm": "mckinsey",
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-energy-perspective-2026-key-takeaways",
+  "source_title": "Global Energy Perspective 2026: Key takeaways",
+  "published": "2026-10-27",
+  "updated": null,
+  "retrieved_at": "2026-11-02T07:28:38.329470+09:00",
+  "figure_ref": "Body: Fragmented Energy Order CAPEX scenario ranges (editorial chart)",
+  "original_image_url": null,
+  "business_context": "글로벌 공급망 분절 시 설비 투자 비용에 미치는 위험 프리미엄을 평가한다.",
+  "key_message": "지정학적 분절 시나리오에서는 중국 외 공급망 재구축으로 미국·유럽의 태양광 CAPEX가 20~25%, 배터리 저장 CAPEX가 40~50% 높아질 수 있어, 설비 투자 의사결정에 공급망 위험 프리미엄을 별도로 반영해야 한다.",
+  "insight_type": "격차",
+  "chart_type": "range_plot",
+  "encoding": {
+    "x": "lower/upper",
+    "y": "category",
+    "color": "highlight",
+    "size": null,
+    "highlight": [
+      "Battery-storage CAPEX"
+    ]
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "lower",
+      "upper",
+      "unit",
+      "period",
+      "denominator",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "lower_provenance",
+      "upper_provenance",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": [
+      "percent increase in CAPEX"
+    ],
+    "n_points": 2,
+    "provenance": [
+      "reported"
+    ]
+  },
+  "data_recipe": "project × technology × region × scenario → 엔지니어링 견적·공급망 시나리오 → 통화·물가기준 통일 → baseline vs fragmentation CAPEX의 범위 계산 → min/max 보고 범위 → range_plot → 가정 및 시나리오 해석",
+  "message_conditions": "시나리오에서 배터리 CAPEX 범위가 태양광보다 높을 때 차이 메시지 성립. 시나리오 또는 지역이 바뀌면 제목 재작성. 보고 범위는 통계적 신뢰구간이 아니며 실제 비용 상승을 보장하지 않음.",
+  "design_moves": {
+    "chart_type": "range_plot",
+    "ordering": [
+      "Solar CAPEX",
+      "Battery-storage CAPEX"
+    ],
+    "source_theme": true,
+    "neutral_theme": true
+  },
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "training_eligible": false,
+  "training_use": "design_only",
+  "exclusion_reasons": [
+    "human_review_pending",
+    "training_rights_not_confirmed",
+    "editorial_chart_not_original_figure"
+  ],
+  "diff_notes": [
+    "원본에 같은 수치/유형의 정량 그래프가 없어 직접 디자인 재현 점수는 없음.",
+    "공식 기사 본문 숫자 기반 편집형 설계이므로 충실도는 평가하지 않음."
+  ],
+  "code_path": "chart.py",
+  "image_path": "artifacts/mckinsey_energy_supply_fragmentation_capex_ranges/source.png",
+  "neutral_image_path": "artifacts/mckinsey_energy_supply_fragmentation_capex_ranges/neutral.png",
+  "validation_path": "validation.json",
+  "artifact_refs": {
+    "rendered_in_local_package": true,
+    "github_actions_artifact": "not_yet_checked",
+    "code_bundle_path": "bronze/2026-11-02/mckinsey_energy_supply_fragmentation_capex_ranges"
+  },
+  "training_pair": {
+    "instruction": "For this business decision, 글로벌 공급망 분절 시 설비 투자 비용에 미치는 위험 프리미엄을 평가한다. Data must follow project × technology × region × scenario → 엔지니어링 견적·공급망 시나리오 → 통화·물가기준 통일 → baseline vs fragmentation CAPEX의 범위 계산 → min/max 보고 범위 → range_plot → 가정 및 시나리오 해석. Use a range_plot chart with reusable source and neutral themes; preserve provenance and input data without inventing missing values.",
+    "response": {
+      "data_fields": [
+        "category",
+        "series",
+        "value",
+        "lower",
+        "upper",
+        "unit",
+        "period",
+        "denominator",
+        "source_url",
+        "figure_ref",
+        "provenance",
+        "lower_provenance",
+        "upper_provenance",
+        "estimate_method",
+        "uncertainty_low",
+        "uncertainty_high",
+        "notes"
+      ],
+      "calculation": "project × technology × region × scenario → 엔지니어링 견적·공급망 시나리오 → 통화·물가기준 통일 → baseline vs fragmentation CAPEX의 범위 계산 → min/max 보고 범위 → range_plot → 가정 및 시나리오 해석",
+      "data_csv": "category,series,value,lower,upper,unit,period,denominator,source_url,figure_ref,provenance,lower_provenance,upper_provenance,estimate_method,uncertainty_low,uncertainty_high,notes\nSolar CAPEX,Fragmented Energy Order,,20,25,percent increase in CAPEX,scenario through 2050,\"baseline CAPEX under comparable technology, geography and price assumptions\",https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-energy-perspective-2026-key-takeaways,Body: Fragmented Energy Order CAPEX scenario ranges (editorial chart),missing,reported,reported,,,,Scenario reported range; not a statistical confidence interval. Midpoint not invented.\nBattery-storage CAPEX,Fragmented Energy Order,,40,50,percent increase in CAPEX,scenario through 2050,\"baseline CAPEX under comparable technology, geography and price assumptions\",https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-energy-perspective-2026-key-takeaways,Body: Fragmented Energy Order CAPEX scenario ranges (editorial chart),missing,reported,reported,,,,Scenario reported range; not a statistical confidence interval. Midpoint not invented.\n",
+      "config_json": {
+        "THEME": {
+          "source": {
+            "figure_size": [
+              10,
+              5.4
+            ],
+            "background": "#ffffff",
+            "ink": "#202020",
+            "muted": "#676767",
+            "spine": "#dddddd",
+            "default": "#70abd0",
+            "highlight": "#2056a4",
+            "title_size": 15.9,
+            "subtitle_size": 10,
+            "line_width": 7.5,
+            "marker_size": 105,
+            "label_size": 12,
+            "label_offset": 2,
+            "tick_size": 11,
+            "axis_size": 9,
+            "footnote_size": 7.7,
+            "grid": true,
+            "margins": {
+              "left": 0.3,
+              "right": 0.9,
+              "bottom": 0.17,
+              "top": 0.72
+            }
+          },
+          "neutral": {
+            "figure_size": [
+              10,
+              5.4
+            ],
+            "background": "#ffffff",
+            "ink": "#172b4d",
+            "muted": "#6a7582",
+            "spine": "#dddddd",
+            "default": "#80a59b",
+            "highlight": "#18764a",
+            "title_size": 15,
+            "subtitle_size": 10,
+            "line_width": 6.5,
+            "marker_size": 105,
+            "label_size": 11.5,
+            "label_offset": 2,
+            "tick_size": 11,
+            "axis_size": 9,
+            "footnote_size": 7.7,
+            "grid": true,
+            "margins": {
+              "left": 0.3,
+              "right": 0.9,
+              "bottom": 0.17,
+              "top": 0.72
+            }
+          }
+        },
+        "CONTEXT": {
+          "chart_type": "range_plot",
+          "title": "Fragmented supply chains could add a substantial\nCAPEX premium in the US and EU",
+          "subtitle": "Potential increase in project CAPEX under a modeled fragmentation scenario",
+          "subtitle_y": 0.84,
+          "category_order": [
+            "Solar CAPEX",
+            "Battery-storage CAPEX"
+          ],
+          "highlight_categories": [
+            "Battery-storage CAPEX"
+          ],
+          "x_limits": [
+            0,
+            61
+          ],
+          "x_ticks": [
+            0,
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "range_format": "{:.0f}–{:.0f}%",
+          "source_note": "Source: McKinsey Global Energy Perspective 2026 | Scenario estimates; editorial range chart."
+        }
+      },
+      "design_rationale": "글로벌 공급망 분절 시 설비 투자 비용에 미치는 위험 프리미엄을 평가한다.",
+      "chart_code": "#!/usr/bin/env python3\n\"\"\"Editable, data-driven consulting chart (no external image or private assets).\"\"\"\nfrom __future__ import annotations\nimport argparse\nimport csv\nimport json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import Patch\n\n\ndef _rows(path):\n    with open(path, newline='', encoding='utf-8-sig') as source:\n        return list(csv.DictReader(source))\n\n\ndef _float(value):\n    if value is None or str(value).strip() == '':\n        return None\n    return float(value)\n\n\ndef render(data, theme, context):\n    \"\"\"Render one reusable chart; return a Matplotlib Figure.\"\"\"\n    rows = list(data)\n    if not rows:\n        raise ValueError('data.csv must contain at least one row')\n    chart_type = context['chart_type']\n    fig, ax = plt.subplots(figsize=tuple(theme['figure_size']))\n    fig.patch.set_facecolor(theme['background'])\n    ax.set_facecolor(theme['background'])\n    color_map = theme.get('palette', {})\n    title = context['title']\n    fig.text(0.055, 0.965, title, ha='left', va='top',\n             fontsize=theme['title_size'], fontweight='bold',\n             color=theme['ink'], linespacing=1.13)\n    if context.get('subtitle'):\n        fig.text(0.055, context.get('subtitle_y', 0.857), context['subtitle'],\n                 ha='left', va='top', fontsize=theme['subtitle_size'],\n                 color=theme['muted'])\n    if chart_type == 'grouped_bar':\n        categories = context.get('category_order') or list(dict.fromkeys(row['category'] for row in rows))\n        series = context.get('series_order') or list(dict.fromkeys(row['series'] for row in rows))\n        width = float(theme['bar_width'])\n        count = len(series)\n        centers = list(range(len(categories)))\n        for si, item in enumerate(series):\n            for ci, cat in enumerate(categories):\n                chosen = [r for r in rows if r['category'] == cat and r['series'] == item]\n                if len(chosen) != 1:\n                    raise ValueError(f'Expected one observation for {cat}/{item}')\n                val = _float(chosen[0].get('value'))\n                if val is None:\n                    raise ValueError('Missing reported value cannot be rendered')\n                px = ci + (si - (count-1)/2)*width\n                ax.bar(px, val, width=width, color=color_map[item],\n                       linewidth=theme.get('edge_width', 0))\n                ax.text(px, val+float(theme['label_offset']),\n                        context['value_format'].format(val),\n                        fontsize=theme['label_size'],ha='center',va='bottom',\n                        fontweight='bold',color=theme['ink'])\n        ax.set_xlim(-0.5, len(categories)-0.5)\n        ax.set_ylim(*context['y_limits'])\n        ax.set_xticks(centers, categories,fontsize=theme['tick_size'],color=theme['ink'])\n        ax.tick_params(axis='x', length=0)\n        ax.set_yticks([])\n        for side in ('left','right','top'): ax.spines[side].set_visible(False)\n        ax.spines['bottom'].set_color(theme['spine'])\n        ax.spines['bottom'].set_linewidth(.8)\n        legend_handles = [Patch(facecolor=color_map[s],label=s) for s in series]\n        ax.legend(handles=legend_handles,ncol=len(series),loc='lower left',\n                  bbox_to_anchor=(0,1.005),frameon=False,fontsize=theme['legend_size'],\n                  handlelength=1.1,handleheight=.8,handletextpad=.3,columnspacing=.5,\n                  borderaxespad=0)\n        for ann in context.get('gap_annotations', []):\n            idx = categories.index(ann['category'])\n            ax.vlines(idx, ymin=ann.get('line_start',30),\n                      ymax=ann.get('line_end',80),\n                      color=theme['ink'],linestyles=(0,(3,3)),linewidth=1.15)\n            ax.text(idx+.025,ann.get('text_y',77),ann['text'],\n                    fontsize=theme['annotation_size'],color=theme['ink'],\n                    ha='left',va='center')\n    elif chart_type == 'horizontal_bar':\n        categories = context.get('category_order') or [r['category'] for r in sorted(rows,key=lambda r:-float(r['value']))]\n        lookup = {r['category']: r for r in rows}\n        if len(lookup) != len(rows): raise ValueError('Duplicate categories')\n        bars = []\n        for cat in categories:\n            if cat not in lookup: raise ValueError(f'Unknown category {cat}')\n            val = _float(lookup[cat].get('value'))\n            if val is None: raise ValueError('Missing values are not plotted')\n            bars.append(val)\n        y = list(range(len(categories)))\n        colors = [theme.get('highlight',theme['default']) if c in context.get('highlight_categories', [])\n                  else theme['default'] for c in categories]\n        ax.barh(y,bars,color=colors,height=theme['bar_width'])\n        for ypos,v in zip(y,bars):\n            ax.text(v + theme['label_offset'], ypos, context['value_format'].format(v),\n                    va='center',fontsize=theme['label_size'],color=theme['ink'],fontweight='bold')\n        ax.invert_yaxis()\n        ax.set_yticks(y,categories,fontsize=theme['tick_size'],color=theme['ink'])\n        ax.set_xlim(*context['x_limits']);ax.set_xticks(context['x_ticks'])\n        ax.tick_params(axis='x',labelsize=theme['axis_size'],colors=theme['muted'],length=0)\n        ax.tick_params(axis='y',length=0,pad=9)\n        if theme.get('grid',False): ax.grid(axis='x',alpha=.13,zorder=0)\n        ax.set_axisbelow(True)\n        for s in ax.spines.values(): s.set_visible(False)\n    elif chart_type == 'range_plot':\n        categories=context.get('category_order') or [r['category'] for r in rows]\n        lookup={r['category']:r for r in rows}\n        for i,cat in enumerate(categories):\n            r=lookup[cat];lo=_float(r['lower']);hi=_float(r['upper'])\n            if lo is None or hi is None or lo>hi: raise ValueError(f'Invalid range for {cat}')\n            color=theme['highlight'] if cat in context.get('highlight_categories',[]) else theme['default']\n            ax.plot([lo,hi],[i,i],linewidth=theme['line_width'],color=color,solid_capstyle='round')\n            ax.scatter([lo,hi],[i,i],s=theme['marker_size'],color=color,edgecolors=theme['background'],linewidths=1.2,zorder=4)\n            ax.text(hi+theme['label_offset'],i,context['range_format'].format(lo,hi),\n                    va='center',fontsize=theme['label_size'],color=theme['ink'],fontweight='bold')\n        ax.invert_yaxis()\n        ax.set_ylim(len(categories)-.5+.6, -1.1)\n        ax.set_yticks(range(len(categories)),categories,fontsize=theme['tick_size'],color=theme['ink'])\n        ax.set_xlim(*context['x_limits']);ax.set_xticks(context['x_ticks'])\n        ax.tick_params(axis='x',labelsize=theme['axis_size'],colors=theme['muted'],length=0)\n        ax.tick_params(axis='y',length=0,pad=10)\n        if theme.get('grid',False): ax.grid(axis='x',alpha=.14)\n        ax.set_axisbelow(True)\n        for s in ax.spines.values():s.set_visible(False)\n    else:\n        raise ValueError(f'Unsupported chart_type: {chart_type}')\n    fig.subplots_adjust(**theme['margins'])\n    if context.get('source_note'):\n        fig.text(.055,.04,context['source_note'],fontsize=theme['footnote_size'],\n                 color=theme['muted'],va='bottom')\n    return fig\n\n\ndef main():\n    parser=argparse.ArgumentParser()\n    parser.add_argument('--data',default='data.csv')\n    parser.add_argument('--config',default='config.json')\n    parser.add_argument('--theme',choices=['source','neutral'],default='source')\n    parser.add_argument('--output',default='output.png')\n    args=parser.parse_args()\n    root=Path(__file__).resolve().parent\n    csv_path=Path(args.data)\n    if not csv_path.exists():csv_path=root/csv_path\n    config_path=Path(args.config)\n    if not config_path.exists():config_path=root/config_path\n    config=json.loads(config_path.read_text(encoding='utf-8'))\n    fig=render(_rows(csv_path),config['THEME'][args.theme],config['CONTEXT'])\n    fig.savefig(args.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\n\n\nif __name__=='__main__':main()\n",
+      "run_command": "python chart.py --theme source --data data.csv --config config.json --output output.png"
+    }
+  },
+  "split_group": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-energy-perspective-2026-key-takeaways",
+  "chart_key": "5bae0b1465a44d4eece5035e8f7e8dcf7f0e5624c74c6b236c4236b1d53b8aaf"
+}

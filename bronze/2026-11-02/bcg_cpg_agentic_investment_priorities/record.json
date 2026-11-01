@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261102_bcg_cpg_agentic_investment_priorities",
+  "date": "2026-11-02",
+  "firm": "bcg",
+  "source_url": "https://www.bcg.com/publications/2026/how-cpg-companies-win-agentic-commerce",
+  "source_title": "Are CPG Companies Ready for Agentic Commerce?",
+  "published": "2026-10-30",
+  "updated": null,
+  "retrieved_at": "2026-11-02T07:28:38.328827+09:00",
+  "figure_ref": "Body: next-year investment priorities (editorial chart, not an original exhibit)",
+  "original_image_url": null,
+  "business_context": "CPG 기업의 Agentic Commerce 대응에서 어떤 투자 영역을 우선할지 판단한다.",
+  "key_message": "CPG 기업의 향후 1년 투자 계획에서 GEO 최적화(65%)와 상품 데이터 구조화(47%)가 자체 에이전트(41%)·외부 생태계 연동(35%)보다 우선해, 데이터 준비와 유통 채널 연결 투자를 균형 있게 설계할 필요가 있다.",
+  "insight_type": "순위",
+  "chart_type": "horizontal_bar",
+  "encoding": {
+    "x": "value",
+    "y": "category",
+    "color": "highlight",
+    "size": null,
+    "highlight": [
+      "GEO optimization"
+    ]
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "series",
+      "value",
+      "lower",
+      "upper",
+      "unit",
+      "period",
+      "denominator",
+      "source_url",
+      "figure_ref",
+      "provenance",
+      "lower_provenance",
+      "upper_provenance",
+      "estimate_method",
+      "uncertainty_low",
+      "uncertainty_high",
+      "notes"
+    ],
+    "units": [
+      "percent of respondents"
+    ],
+    "n_points": 4,
+    "provenance": [
+      "reported"
+    ]
+  },
+  "data_recipe": "respondent × planned_investment_category → CPG 설문 → 중복선택 인정·무응답 처리 → 문항별 유효 분모 확정 → category별 선택 응답자 / 유효 응답자 ×100 → 내림차순 가로막대 → 우선순위와 절대 ROI 구분",
+  "message_conditions": "GEO가 다른 투자 항목보다 높은 응답 비율이면 제목 성립. 우선순위 역전 시 제목 수정. 선택률만으로 실제 지출·성과·매출 인과를 주장하지 않음.",
+  "design_moves": {
+    "chart_type": "horizontal_bar",
+    "ordering": [
+      "GEO optimization",
+      "Product data structuring",
+      "Owned agents",
+      "Ecosystem integration"
+    ],
+    "source_theme": true,
+    "neutral_theme": true
+  },
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "training_eligible": false,
+  "training_use": "design_only",
+  "exclusion_reasons": [
+    "human_review_pending",
+    "training_rights_not_confirmed",
+    "editorial_chart_not_original_figure"
+  ],
+  "diff_notes": [
+    "원본에 같은 수치/유형의 정량 그래프가 없어 직접 디자인 재현 점수는 없음.",
+    "공식 기사 본문 숫자 기반 편집형 설계이므로 충실도는 평가하지 않음."
+  ],
+  "code_path": "chart.py",
+  "image_path": "artifacts/bcg_cpg_agentic_investment_priorities/source.png",
+  "neutral_image_path": "artifacts/bcg_cpg_agentic_investment_priorities/neutral.png",
+  "validation_path": "validation.json",
+  "artifact_refs": {
+    "rendered_in_local_package": true,
+    "github_actions_artifact": "not_yet_checked",
+    "code_bundle_path": "bronze/2026-11-02/bcg_cpg_agentic_investment_priorities"
+  },
+  "training_pair": {
+    "instruction": "For this business decision, CPG 기업의 Agentic Commerce 대응에서 어떤 투자 영역을 우선할지 판단한다. Data must follow respondent × planned_investment_category → CPG 설문 → 중복선택 인정·무응답 처리 → 문항별 유효 분모 확정 → category별 선택 응답자 / 유효 응답자 ×100 → 내림차순 가로막대 → 우선순위와 절대 ROI 구분. Use a horizontal_bar chart with reusable source and neutral themes; preserve provenance and input data without inventing missing values.",
+    "response": {
+      "data_fields": [
+        "category",
+        "series",
+        "value",
+        "lower",
+        "upper",
+        "unit",
+        "period",
+        "denominator",
+        "source_url",
+        "figure_ref",
+        "provenance",
+        "lower_provenance",
+        "upper_provenance",
+        "estimate_method",
+        "uncertainty_low",
+        "uncertainty_high",
+        "notes"
+      ],
+      "calculation": "respondent × planned_investment_category → CPG 설문 → 중복선택 인정·무응답 처리 → 문항별 유효 분모 확정 → category별 선택 응답자 / 유효 응답자 ×100 → 내림차순 가로막대 → 우선순위와 절대 ROI 구분",
+      "data_csv": "category,series,value,lower,upper,unit,period,denominator,source_url,figure_ref,provenance,lower_provenance,upper_provenance,estimate_method,uncertainty_low,uncertainty_high,notes\nGEO optimization,Investment priority,65,,,percent of respondents,2026 survey,valid respondents within stated market/segment and survey question,https://www.bcg.com/publications/2026/how-cpg-companies-win-agentic-commerce,\"Body: next-year investment priorities (editorial chart, not an original exhibit)\",reported,,,,,,Reported survey share. Not a portion of a common 100% stack.\nProduct data structuring,Investment priority,47,,,percent of respondents,2026 survey,valid respondents within stated market/segment and survey question,https://www.bcg.com/publications/2026/how-cpg-companies-win-agentic-commerce,\"Body: next-year investment priorities (editorial chart, not an original exhibit)\",reported,,,,,,Reported survey share. Not a portion of a common 100% stack.\nOwned agents,Investment priority,41,,,percent of respondents,2026 survey,valid respondents within stated market/segment and survey question,https://www.bcg.com/publications/2026/how-cpg-companies-win-agentic-commerce,\"Body: next-year investment priorities (editorial chart, not an original exhibit)\",reported,,,,,,Reported survey share. Not a portion of a common 100% stack.\nEcosystem integration,Investment priority,35,,,percent of respondents,2026 survey,valid respondents within stated market/segment and survey question,https://www.bcg.com/publications/2026/how-cpg-companies-win-agentic-commerce,\"Body: next-year investment priorities (editorial chart, not an original exhibit)\",reported,,,,,,Reported survey share. Not a portion of a common 100% stack.\n",
+      "config_json": {
+        "THEME": {
+          "source": {
+            "figure_size": [
+              10,
+              5.7
+            ],
+            "background": "#ffffff",
+            "ink": "#232323",
+            "muted": "#737373",
+            "spine": "#dddddd",
+            "default": "#b6c9be",
+            "highlight": "#18764a",
+            "title_size": 15.8,
+            "subtitle_size": 10,
+            "bar_width": 0.64,
+            "label_size": 12,
+            "label_offset": 2.0,
+            "tick_size": 11.2,
+            "axis_size": 9,
+            "footnote_size": 8,
+            "grid": true,
+            "margins": {
+              "left": 0.32,
+              "right": 0.94,
+              "bottom": 0.14,
+              "top": 0.73
+            }
+          },
+          "neutral": {
+            "figure_size": [
+              10,
+              5.7
+            ],
+            "background": "#ffffff",
+            "ink": "#172b4d",
+            "muted": "#697386",
+            "spine": "#ddd",
+            "default": "#b3cedd",
+            "highlight": "#256a94",
+            "title_size": 15.2,
+            "subtitle_size": 10,
+            "bar_width": 0.58,
+            "label_size": 11.5,
+            "label_offset": 2.0,
+            "tick_size": 11.2,
+            "axis_size": 9,
+            "footnote_size": 8,
+            "grid": true,
+            "margins": {
+              "left": 0.32,
+              "right": 0.94,
+              "bottom": 0.14,
+              "top": 0.73
+            }
+          }
+        },
+        "CONTEXT": {
+          "chart_type": "horizontal_bar",
+          "title": "CPG investment plans favor GEO and data readiness\nover owned agents and ecosystem links",
+          "subtitle": "Share of survey respondents planning investment in next 12 months",
+          "subtitle_y": 0.84,
+          "category_order": [
+            "GEO optimization",
+            "Product data structuring",
+            "Owned agents",
+            "Ecosystem integration"
+          ],
+          "highlight_categories": [
+            "GEO optimization"
+          ],
+          "x_limits": [
+            0,
+            76
+          ],
+          "x_ticks": [
+            0,
+            20,
+            40,
+            60
+          ],
+          "value_format": "{:.0f}%",
+          "source_note": "Source: BCG GenAI CPG Survey 2026 | Reported text; editorial chart (not an exhibit)."
+        }
+      },
+      "design_rationale": "CPG 기업의 Agentic Commerce 대응에서 어떤 투자 영역을 우선할지 판단한다.",
+      "chart_code": "#!/usr/bin/env python3\n\"\"\"Editable, data-driven consulting chart (no external image or private assets).\"\"\"\nfrom __future__ import annotations\nimport argparse\nimport csv\nimport json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import Patch\n\n\ndef _rows(path):\n    with open(path, newline='', encoding='utf-8-sig') as source:\n        return list(csv.DictReader(source))\n\n\ndef _float(value):\n    if value is None or str(value).strip() == '':\n        return None\n    return float(value)\n\n\ndef render(data, theme, context):\n    \"\"\"Render one reusable chart; return a Matplotlib Figure.\"\"\"\n    rows = list(data)\n    if not rows:\n        raise ValueError('data.csv must contain at least one row')\n    chart_type = context['chart_type']\n    fig, ax = plt.subplots(figsize=tuple(theme['figure_size']))\n    fig.patch.set_facecolor(theme['background'])\n    ax.set_facecolor(theme['background'])\n    color_map = theme.get('palette', {})\n    title = context['title']\n    fig.text(0.055, 0.965, title, ha='left', va='top',\n             fontsize=theme['title_size'], fontweight='bold',\n             color=theme['ink'], linespacing=1.13)\n    if context.get('subtitle'):\n        fig.text(0.055, context.get('subtitle_y', 0.857), context['subtitle'],\n                 ha='left', va='top', fontsize=theme['subtitle_size'],\n                 color=theme['muted'])\n    if chart_type == 'grouped_bar':\n        categories = context.get('category_order') or list(dict.fromkeys(row['category'] for row in rows))\n        series = context.get('series_order') or list(dict.fromkeys(row['series'] for row in rows))\n        width = float(theme['bar_width'])\n        count = len(series)\n        centers = list(range(len(categories)))\n        for si, item in enumerate(series):\n            for ci, cat in enumerate(categories):\n                chosen = [r for r in rows if r['category'] == cat and r['series'] == item]\n                if len(chosen) != 1:\n                    raise ValueError(f'Expected one observation for {cat}/{item}')\n                val = _float(chosen[0].get('value'))\n                if val is None:\n                    raise ValueError('Missing reported value cannot be rendered')\n                px = ci + (si - (count-1)/2)*width\n                ax.bar(px, val, width=width, color=color_map[item],\n                       linewidth=theme.get('edge_width', 0))\n                ax.text(px, val+float(theme['label_offset']),\n                        context['value_format'].format(val),\n                        fontsize=theme['label_size'],ha='center',va='bottom',\n                        fontweight='bold',color=theme['ink'])\n        ax.set_xlim(-0.5, len(categories)-0.5)\n        ax.set_ylim(*context['y_limits'])\n        ax.set_xticks(centers, categories,fontsize=theme['tick_size'],color=theme['ink'])\n        ax.tick_params(axis='x', length=0)\n        ax.set_yticks([])\n        for side in ('left','right','top'): ax.spines[side].set_visible(False)\n        ax.spines['bottom'].set_color(theme['spine'])\n        ax.spines['bottom'].set_linewidth(.8)\n        legend_handles = [Patch(facecolor=color_map[s],label=s) for s in series]\n        ax.legend(handles=legend_handles,ncol=len(series),loc='lower left',\n                  bbox_to_anchor=(0,1.005),frameon=False,fontsize=theme['legend_size'],\n                  handlelength=1.1,handleheight=.8,handletextpad=.3,columnspacing=.5,\n                  borderaxespad=0)\n        for ann in context.get('gap_annotations', []):\n            idx = categories.index(ann['category'])\n            ax.vlines(idx, ymin=ann.get('line_start',30),\n                      ymax=ann.get('line_end',80),\n                      color=theme['ink'],linestyles=(0,(3,3)),linewidth=1.15)\n            ax.text(idx+.025,ann.get('text_y',77),ann['text'],\n                    fontsize=theme['annotation_size'],color=theme['ink'],\n                    ha='left',va='center')\n    elif chart_type == 'horizontal_bar':\n        categories = context.get('category_order') or [r['category'] for r in sorted(rows,key=lambda r:-float(r['value']))]\n        lookup = {r['category']: r for r in rows}\n        if len(lookup) != len(rows): raise ValueError('Duplicate categories')\n        bars = []\n        for cat in categories:\n            if cat not in lookup: raise ValueError(f'Unknown category {cat}')\n            val = _float(lookup[cat].get('value'))\n            if val is None: raise ValueError('Missing values are not plotted')\n            bars.append(val)\n        y = list(range(len(categories)))\n        colors = [theme.get('highlight',theme['default']) if c in context.get('highlight_categories', [])\n                  else theme['default'] for c in categories]\n        ax.barh(y,bars,color=colors,height=theme['bar_width'])\n        for ypos,v in zip(y,bars):\n            ax.text(v + theme['label_offset'], ypos, context['value_format'].format(v),\n                    va='center',fontsize=theme['label_size'],color=theme['ink'],fontweight='bold')\n        ax.invert_yaxis()\n        ax.set_yticks(y,categories,fontsize=theme['tick_size'],color=theme['ink'])\n        ax.set_xlim(*context['x_limits']);ax.set_xticks(context['x_ticks'])\n        ax.tick_params(axis='x',labelsize=theme['axis_size'],colors=theme['muted'],length=0)\n        ax.tick_params(axis='y',length=0,pad=9)\n        if theme.get('grid',False): ax.grid(axis='x',alpha=.13,zorder=0)\n        ax.set_axisbelow(True)\n        for s in ax.spines.values(): s.set_visible(False)\n    elif chart_type == 'range_plot':\n        categories=context.get('category_order') or [r['category'] for r in rows]\n        lookup={r['category']:r for r in rows}\n        for i,cat in enumerate(categories):\n            r=lookup[cat];lo=_float(r['lower']);hi=_float(r['upper'])\n            if lo is None or hi is None or lo>hi: raise ValueError(f'Invalid range for {cat}')\n            color=theme['highlight'] if cat in context.get('highlight_categories',[]) else theme['default']\n            ax.plot([lo,hi],[i,i],linewidth=theme['line_width'],color=color,solid_capstyle='round')\n            ax.scatter([lo,hi],[i,i],s=theme['marker_size'],color=color,edgecolors=theme['background'],linewidths=1.2,zorder=4)\n            ax.text(hi+theme['label_offset'],i,context['range_format'].format(lo,hi),\n                    va='center',fontsize=theme['label_size'],color=theme['ink'],fontweight='bold')\n        ax.invert_yaxis()\n        ax.set_ylim(len(categories)-.5+.6, -1.1)\n        ax.set_yticks(range(len(categories)),categories,fontsize=theme['tick_size'],color=theme['ink'])\n        ax.set_xlim(*context['x_limits']);ax.set_xticks(context['x_ticks'])\n        ax.tick_params(axis='x',labelsize=theme['axis_size'],colors=theme['muted'],length=0)\n        ax.tick_params(axis='y',length=0,pad=10)\n        if theme.get('grid',False): ax.grid(axis='x',alpha=.14)\n        ax.set_axisbelow(True)\n        for s in ax.spines.values():s.set_visible(False)\n    else:\n        raise ValueError(f'Unsupported chart_type: {chart_type}')\n    fig.subplots_adjust(**theme['margins'])\n    if context.get('source_note'):\n        fig.text(.055,.04,context['source_note'],fontsize=theme['footnote_size'],\n                 color=theme['muted'],va='bottom')\n    return fig\n\n\ndef main():\n    parser=argparse.ArgumentParser()\n    parser.add_argument('--data',default='data.csv')\n    parser.add_argument('--config',default='config.json')\n    parser.add_argument('--theme',choices=['source','neutral'],default='source')\n    parser.add_argument('--output',default='output.png')\n    args=parser.parse_args()\n    root=Path(__file__).resolve().parent\n    csv_path=Path(args.data)\n    if not csv_path.exists():csv_path=root/csv_path\n    config_path=Path(args.config)\n    if not config_path.exists():config_path=root/config_path\n    config=json.loads(config_path.read_text(encoding='utf-8'))\n    fig=render(_rows(csv_path),config['THEME'][args.theme],config['CONTEXT'])\n    fig.savefig(args.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\n\n\nif __name__=='__main__':main()\n",
+      "run_command": "python chart.py --theme source --data data.csv --config config.json --output output.png"
+    }
+  },
+  "split_group": "https://www.bcg.com/publications/2026/how-cpg-companies-win-agentic-commerce",
+  "chart_key": "750a191f860e84d6b5a4b2810c59abb7b3dd56733f4a8f05f756a87f6d467d03"
+}

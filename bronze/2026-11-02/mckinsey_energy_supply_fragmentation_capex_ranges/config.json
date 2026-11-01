@@ -1,0 +1,87 @@
+{
+  "THEME": {
+    "source": {
+      "figure_size": [
+        10,
+        5.4
+      ],
+      "background": "#ffffff",
+      "ink": "#202020",
+      "muted": "#676767",
+      "spine": "#dddddd",
+      "default": "#70abd0",
+      "highlight": "#2056a4",
+      "title_size": 15.9,
+      "subtitle_size": 10,
+      "line_width": 7.5,
+      "marker_size": 105,
+      "label_size": 12,
+      "label_offset": 2,
+      "tick_size": 11,
+      "axis_size": 9,
+      "footnote_size": 7.7,
+      "grid": true,
+      "margins": {
+        "left": 0.3,
+        "right": 0.9,
+        "bottom": 0.17,
+        "top": 0.72
+      }
+    },
+    "neutral": {
+      "figure_size": [
+        10,
+        5.4
+      ],
+      "background": "#ffffff",
+      "ink": "#172b4d",
+      "muted": "#6a7582",
+      "spine": "#dddddd",
+      "default": "#80a59b",
+      "highlight": "#18764a",
+      "title_size": 15,
+      "subtitle_size": 10,
+      "line_width": 6.5,
+      "marker_size": 105,
+      "label_size": 11.5,
+      "label_offset": 2,
+      "tick_size": 11,
+      "axis_size": 9,
+      "footnote_size": 7.7,
+      "grid": true,
+      "margins": {
+        "left": 0.3,
+        "right": 0.9,
+        "bottom": 0.17,
+        "top": 0.72
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "range_plot",
+    "title": "Fragmented supply chains could add a substantial\nCAPEX premium in the US and EU",
+    "subtitle": "Potential increase in project CAPEX under a modeled fragmentation scenario",
+    "subtitle_y": 0.84,
+    "category_order": [
+      "Solar CAPEX",
+      "Battery-storage CAPEX"
+    ],
+    "highlight_categories": [
+      "Battery-storage CAPEX"
+    ],
+    "x_limits": [
+      0,
+      61
+    ],
+    "x_ticks": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "range_format": "{:.0f}–{:.0f}%",
+    "source_note": "Source: McKinsey Global Energy Perspective 2026 | Scenario estimates; editorial range chart."
+  }
+}

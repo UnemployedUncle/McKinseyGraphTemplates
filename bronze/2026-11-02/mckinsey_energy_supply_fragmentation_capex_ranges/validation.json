@@ -1,0 +1,35 @@
+{
+  "original_checked": false,
+  "render_success": true,
+  "source_and_neutral_checked": true,
+  "iterations": 1,
+  "category_checks": "pass",
+  "unit_checks": "pass",
+  "value_checks": "pass",
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "score_items": {},
+  "diff_notes": [
+    "원본에 같은 수치/유형의 정량 그래프가 없어 직접 디자인 재현 점수는 없음.",
+    "공식 기사 본문 숫자 기반 편집형 설계이므로 충실도는 평가하지 않음."
+  ],
+  "executed_commands": [
+    "python chart.py --theme source --data data.csv --config config.json --output ../../../artifacts/mckinsey_energy_supply_fragmentation_capex_ranges/source.png",
+    "python chart.py --theme neutral --data data.csv --config config.json --output ../../../artifacts/mckinsey_energy_supply_fragmentation_capex_ranges/neutral.png"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "render_backend": "Agg",
+    "output_dpi": 200
+  },
+  "evaluation_note": "Self-assessment, not an independent certification.",
+  "data_checks": {
+    "reported_values": "pass",
+    "categories_order": "pass",
+    "unit_and_denominator": "pass",
+    "no_fabricated_values": "pass",
+    "no_false_original_claim": "pass"
+  },
+  "evaluated_at": "2026-11-02T07:32:28.324741+09:00"
+}

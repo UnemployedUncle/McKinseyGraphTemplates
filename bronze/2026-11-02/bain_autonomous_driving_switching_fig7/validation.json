@@ -1,0 +1,65 @@
+{
+  "original_checked": true,
+  "render_success": true,
+  "source_and_neutral_checked": true,
+  "iterations": 2,
+  "category_checks": "pass",
+  "unit_checks": "pass",
+  "value_checks": "pass",
+  "fidelity_score": 4.571428571428571,
+  "validation_status": "verified",
+  "score_items": {
+    "chart_type": {
+      "score": 5,
+      "observation": "원본과 동일한 지역별 두 계열 인접 세로막대"
+    },
+    "values_and_order": {
+      "score": 5,
+      "observation": "EU 48/25, US 46/25, China 60/61 정확하고 순서 일치"
+    },
+    "axis_and_ticks": {
+      "score": 5,
+      "observation": "범주 순서와 수평 기준선 유지, y 눈금 생략"
+    },
+    "colors_and_highlight": {
+      "score": 5,
+      "observation": "원본의 연분홍과 진한 적색 매핑 근사"
+    },
+    "labels_and_annotations": {
+      "score": 4,
+      "observation": "직접값·격차 점선은 있으나 주석 위치와 간격에 작은 차이"
+    },
+    "title_and_legend": {
+      "score": 4,
+      "observation": "긴 원본 제목을 액션 타이틀로 재서술, 좌측 범례는 재현"
+    },
+    "ratio_and_margins": {
+      "score": 4,
+      "observation": "그림 종횡비 유사하나 출처 각주 및 제목으로 상단/하단 여백 차이"
+    }
+  },
+  "diff_notes": [
+    "원본 Figure 7의 6개 막대, 색 배치, 직접 수치, 격차 주석을 확인함.",
+    "원본보다 큰 제목·범례 공간과 하단 각주가 있으며 주석 간격이 완전히 같지 않음.",
+    "2026-11-02 2회 렌더링 후 최종 비교; 7항목 점수는 독립/픽셀 검증이 아닌 자체 평가."
+  ],
+  "executed_commands": [
+    "python chart.py --theme source --data data.csv --config config.json --output ../../../artifacts/bain_autonomous_driving_switching_fig7/source.png",
+    "python chart.py --theme neutral --data data.csv --config config.json --output ../../../artifacts/bain_autonomous_driving_switching_fig7/neutral.png"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "render_backend": "Agg",
+    "output_dpi": 200
+  },
+  "evaluation_note": "Self-assessment, not an independent certification.",
+  "data_checks": {
+    "reported_values": "pass",
+    "categories_order": "pass",
+    "unit_and_denominator": "pass",
+    "percentage_vs_percentage_points": "pass",
+    "source_url_de_duplicate": "pass"
+  },
+  "evaluated_at": "2026-11-02T07:32:17.880422+09:00"
+}

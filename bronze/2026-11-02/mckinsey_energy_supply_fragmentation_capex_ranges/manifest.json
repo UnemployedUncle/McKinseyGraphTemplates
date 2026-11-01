@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261102_mckinsey_energy_supply_fragmentation_capex_ranges",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-02T07:32:28.325710+09:00",
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-energy-perspective-2026-key-takeaways",
+  "figure_ref": "Body: Fragmented Energy Order CAPEX scenario ranges (editorial chart)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "58a03f56eb8cf47b529fca268315dbaa0f4b793082d015fc39d787ba69a87fd6",
+    "chart.py": "989480f37d3594ed29b1eb41d25d3ef62dff75d160f22fb7d8ad5be7e20b30fc",
+    "config.json": "b8e2653c8d3077496015e4bef7ee23d5d374455aac9fa84905baaf9631d65b08",
+    "data.csv": "ecfd68242a2929df58c5b8af4caa4c434f8daa6e0d18911ec8893fc34c6c3fee",
+    "record.json": "a4e6f908041c85dced0e9c5985e545f5a0295d06efd4c91240ffdac7f50253f0",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "validation.json": "1d8949d56e5e74ef0a56f380bab87e9a331342d85312af0b337e94fd4ee61328"
+  },
+  "payload_sha256": "e14706c5a9129348d514165c01256864ed3d3c9afeac82d43d04b7a156ede9d3"
+}
