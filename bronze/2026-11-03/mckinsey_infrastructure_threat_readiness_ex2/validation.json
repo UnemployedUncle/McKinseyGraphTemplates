@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "validation_status": "unverified",
+  "code_execution": "passed",
+  "visual_original_checked": false,
+  "visual_original_reason": "Official article and exhibit caption read, but original figure pixels not reliably accessible; editorial chart only",
+  "fidelity_score": null,
+  "fidelity_items": {
+    "chart_type": null,
+    "data_order": null,
+    "axes": null,
+    "colors": null,
+    "labels": null,
+    "titles_legend": null,
+    "layout": null
+  },
+  "iterations": 1,
+  "commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png"
+  ],
+  "data_checks": {
+    "provenance": "reported",
+    "same_denominator": true,
+    "range_0_100": true,
+    "sum_not_composition": true,
+    "numeric_values": 5,
+    "period": "Q1 2026"
+  },
+  "diff_notes": "Editorial visualization of source-reported article values; no claim of exact original figure recreation.",
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "human_review": "pending"
+}

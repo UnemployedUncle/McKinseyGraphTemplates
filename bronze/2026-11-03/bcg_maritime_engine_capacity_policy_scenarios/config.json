@@ -1,0 +1,44 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "highlight": "#287D6F",
+      "secondary": "#A8D6C6",
+      "text": "#16364A",
+      "muted": "#647584",
+      "grid": "#8E9DA5",
+      "figsize": [
+        11.5,
+        6.4
+      ],
+      "bar_width": 0.64,
+      "left": 0.19
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "highlight": "#467E57",
+      "secondary": "#C9D9C2",
+      "text": "#2E3D32",
+      "muted": "#67726A",
+      "grid": "#9FAAA4",
+      "figsize": [
+        11.5,
+        6.4
+      ],
+      "bar_width": 0.64,
+      "left": 0.19
+    }
+  },
+  "CONTEXT": {
+    "title": "Carbon pricing changes conventional fleet capacity",
+    "subtitle": "Conventional engines without onboard carbon capture | 2050 modeled scenarios",
+    "footnote": "Source: BCG / GCMD, Nov 2 2026. Scenario estimates, not observed outcomes; editorial comparison.",
+    "chart_type": "vertical_bar",
+    "axis_label": "Share of global fleet engine capacity in 2050 (%)",
+    "axis_max": 49,
+    "highlight": [
+      "Regional-only regulation"
+    ],
+    "show_difference": true
+  }
+}

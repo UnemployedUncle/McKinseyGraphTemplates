@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 31,
+    "bronze": 33,
     "silver": 0,
     "gold": 0
   },
@@ -436,6 +436,34 @@
       "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-energy-perspective-2026-key-takeaways",
       "figure_ref": "Body: Fragmented Energy Order CAPEX scenario ranges (editorial chart)",
       "key_message": "지정학적 분절 시나리오에서는 중국 외 공급망 재구축으로 미국·유럽의 태양광 CAPEX가 20~25%, 배터리 저장 CAPEX가 40~50% 높아질 수 있어, 설비 투자 의사결정에 공급망 위험 프리미엄을 별도로 반영해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261103_bcg_maritime_engine_capacity_policy_scenarios",
+      "tier": "bronze",
+      "path": "bronze/2026-11-03/bcg_maritime_engine_capacity_policy_scenarios",
+      "contract": "render-v1",
+      "payload_sha256": "cdc7564d64b8438db0bbed11ef39f8f33a73c07822af57b7486dfbaf77a55d5e",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/maritime-fuel-mix-regulation-cost",
+      "figure_ref": "Exhibit 2 context (two reported engine-capacity values; editorial visualization)",
+      "key_message": "2050년 탄소가격 정책 시나리오에 따라 탄소포집 없는 기존 엔진의 선대 용량 비중이 19%에서 37%로 달라질 수 있으므로, 선주와 항만 운영자는 단일 연료 전략 대신 규제 시나리오별 유연성을 확보해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261103_mckinsey_infrastructure_threat_readiness_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-03/mckinsey_infrastructure_threat_readiness_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "98ade8cf56b287dd9e6ee7ff09ab7a2fab1f6bc109aa4bc4d5185783d569d6d2",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
+      "figure_ref": "Exhibit 2, reported values (editorial visualization)",
+      "key_message": "사이버·IT 위협 대응 역량은 98%의 조직이 보유했지만 간첩·은밀한 작전 대응 역량은 32%에 불과하므로, 인프라 회복력 투자는 디지털 보안 외의 사각지대도 다뤄야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

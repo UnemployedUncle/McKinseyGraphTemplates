@@ -1,0 +1,3 @@
+category,value,unit,period,source_url,figure_ref,provenance,denominator,estimate_method,uncertainty_low,uncertainty_high,notes
+High carbon penalty,19,percent,modeled 2050,https://www.bcg.com/publications/2026/maritime-fuel-mix-regulation-cost,Exhibit 2 context (two reported engine-capacity values; editorial visualization),reported,global fleet engine capacity in modeled 2050 scenario,,,,Source-reported number; metric defined in record.json
+Regional-only regulation,37,percent,modeled 2050,https://www.bcg.com/publications/2026/maritime-fuel-mix-regulation-cost,Exhibit 2 context (two reported engine-capacity values; editorial visualization),reported,global fleet engine capacity in modeled 2050 scenario,,,,Source-reported number; metric defined in record.json

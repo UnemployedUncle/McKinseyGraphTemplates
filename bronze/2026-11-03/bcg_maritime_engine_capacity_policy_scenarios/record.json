@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261103_bcg_maritime_engine_capacity_policy_scenarios",
+  "chart_key": "7154aca2c750b21f522c7e6bcd18ef4a4c115177752b05f600a651631c6d70b4",
+  "date": "2026-11-03",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/maritime-fuel-mix-regulation-cost",
+  "source_title": "Charting the Maritime Fuel Transition",
+  "published": "2026-11-02",
+  "updated": null,
+  "retrieved_at": "2026-11-02T22:24:21.174477+00:00",
+  "figure_ref": "Exhibit 2 context (two reported engine-capacity values; editorial visualization)",
+  "original_image_url": null,
+  "business_context": "글로벌 해운의 탄소가격 정책에 따른 엔진·연료 투자 유연성",
+  "key_message": "2050년 탄소가격 정책 시나리오에 따라 탄소포집 없는 기존 엔진의 선대 용량 비중이 19%에서 37%로 달라질 수 있으므로, 선주와 항만 운영자는 단일 연료 전략 대신 규제 시나리오별 유연성을 확보해야 한다.",
+  "insight_type": "comparison",
+  "chart_type": "vertical_bar",
+  "encoding": {
+    "x": "policy_scenario",
+    "y": "conventional_engine_capacity_share_without_occs",
+    "color": "highlight category",
+    "size": null,
+    "highlight": [
+      "Regional-only regulation"
+    ]
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "value",
+      "unit",
+      "period",
+      "provenance",
+      "denominator",
+      "source_url"
+    ],
+    "units": "percent",
+    "n_points": 2,
+    "provenance": [
+      "reported"
+    ],
+    "denominator": "global fleet engine capacity in modeled 2050 scenario",
+    "period": "modeled 2050",
+    "sample": "BCG·GCMD의 2050년 연료 믹스 모델 시나리오; 표본조사가 아닌 모델 결과"
+  },
+  "data_recipe": "1. policy_scenario 및 동일한 capacity_unit를 정의한다.\n2. 모델에서 scenario별 conventional_engine_capacity_without_occs 및 global_fleet_capacity를 수집한다.\n3. 같은 시나리오의 전체 선대 엔진 용량을 분모로 사용하여 비중을 산출한다.\n4. 예측 시점(2050)과 정책 가정(Tier 2 carbon penalty 혹은 지역별 규제)을 명시한다.\n5. 동일 지표만 막대 비교하고 차이를 percentage points로 표시한다. 완성된 원본 연료 믹스 차트인 척하지 않는다.\n",
+  "message_conditions": "이는 정책 시나리오 결과 비교로 기술 선택의 확정적 전망이나 실현 가능성은 보장하지 않는다. 2050년 85% fossil fuel consumption의 분모는 엔진 용량 37%와 다르므로 함께 더할 수 없다.",
+  "design_moves": [
+    "탄소포집 없는 기존 엔진 용량 비중 19%와 37%를 비교하는 세로 막대. 원본 Exhibit 2의 전체 연료 믹스 차트가 아닌 본문 발표값의 부분 재구성",
+    "Reconfigurable theme + context + CSV",
+    "Zero-baseline bars, direct value labels, source note"
+  ],
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "training_eligible": false,
+  "training_use": "design_only_candidate; NOT approved for model training or redistribution",
+  "exclusion_reasons": [
+    "human_review_pending",
+    "original_visual_fidelity_unverified",
+    "training_rights_not_confirmed"
+  ],
+  "diff_notes": "Editorial visualization of source-reported article values; no claim of exact original figure recreation.",
+  "code_path": "chart.py",
+  "image_path": null,
+  "neutral_image_path": null,
+  "validation_path": "validation.json",
+  "artifact_refs": [
+    "local_artifacts/bcg_maritime_engine_capacity_policy_scenarios/source.png",
+    "local_artifacts/bcg_maritime_engine_capacity_policy_scenarios/neutral.png"
+  ],
+  "training_pair": {
+    "instruction": "Given a business context '글로벌 해운의 탄소가격 정책에 따른 엔진·연료 투자 유연성' and conventional_engine_capacity_share_without_occs data, build a reusable matplotlib vertical_bar chart. Do not assert the source chart was faithfully reproduced.",
+    "response": "Data.csv:\ncategory,value,unit,period,source_url,figure_ref,provenance,denominator,estimate_method,uncertainty_low,uncertainty_high,notes\nHigh carbon penalty,19,percent,modeled 2050,https://www.bcg.com/publications/2026/maritime-fuel-mix-regulation-cost,Exhibit 2 context (two reported engine-capacity values; editorial visualization),reported,global fleet engine capacity in modeled 2050 scenario,,,,Source-reported number; metric defined in record.json\nRegional-only regulation,37,percent,modeled 2050,https://www.bcg.com/publications/2026/maritime-fuel-mix-regulation-cost,Exhibit 2 context (two reported engine-capacity values; editorial visualization),reported,global fleet engine capacity in modeled 2050 scenario,,,,Source-reported number; metric defined in record.json\n\nConfiguration:\n{\n  \"THEME\": {\n    \"source\": {\n      \"background\": \"#FFFFFF\",\n      \"highlight\": \"#287D6F\",\n      \"secondary\": \"#A8D6C6\",\n      \"text\": \"#16364A\",\n      \"muted\": \"#647584\",\n      \"grid\": \"#8E9DA5\",\n      \"figsize\": [\n        11.5,\n        6.4\n      ],\n      \"bar_width\": 0.64,\n      \"left\": 0.19\n    },\n    \"neutral\": {\n      \"background\": \"#FFFFFF\",\n      \"highlight\": \"#467E57\",\n      \"secondary\": \"#C9D9C2\",\n      \"text\": \"#2E3D32\",\n      \"muted\": \"#67726A\",\n      \"grid\": \"#9FAAA4\",\n      \"figsize\": [\n        11.5,\n        6.4\n      ],\n      \"bar_width\": 0.64,\n      \"left\": 0.19\n    }\n  },\n  \"CONTEXT\": {\n    \"title\": \"Carbon pricing changes conventional fleet capacity\",\n    \"subtitle\": \"Conventional engines without onboard carbon capture | 2050 modeled scenarios\",\n    \"footnote\": \"Source: BCG / GCMD, Nov 2 2026. Scenario estimates, not observed outcomes; editorial comparison.\",\n    \"chart_type\": \"vertical_bar\",\n    \"axis_label\": \"Share of global fleet engine capacity in 2050 (%)\",\n    \"axis_max\": 49,\n    \"highlight\": [\n      \"Regional-only regulation\"\n    ],\n    \"show_difference\": true\n  }\n}\n\nRun: python chart.py --data data.csv --config config.json --theme source --output output.png\nFull executable Python chart module:\n#!/usr/bin/env python3\n\"\"\"Deterministic, configuration-driven chart renderer (no network access).\"\"\"\nfrom __future__ import annotations\nimport argparse\nimport csv\nimport json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n\ndef read_data(path):\n    with Path(path).open(encoding=\"utf-8-sig\", newline=\"\") as stream:\n        rows = list(csv.DictReader(stream))\n    if not rows:\n        raise ValueError(\"data.csv contains no records\")\n    for row in rows:\n        row[\"value\"] = float(row[\"value\"])\n        if not 0 <= row[\"value\"] <= 100:\n            raise ValueError(\"Percent values must be between 0 and 100\")\n        if row.get(\"provenance\") not in {\"reported\", \"derived\", \"digitized_estimate\"}:\n            raise ValueError(\"Each plotted value requires provenance\")\n    return rows\n\n\ndef render(data, theme, context):\n    \"\"\"Render selected chart type with numeric marks drawn strictly from data.\"\"\"\n    if not data:\n        raise ValueError(\"No data\")\n    fig, ax = plt.subplots(figsize=tuple(theme.get(\"figsize\", [11.2, 6.4])))\n    fig.patch.set_facecolor(theme[\"background\"])\n    ax.set_facecolor(theme[\"background\"])\n    labels = [r[\"category\"] for r in data]\n    vals = np.array([float(r[\"value\"]) for r in data])\n    colors = [theme[\"highlight\"] if r[\"category\"] in context.get(\"highlight\", []) else theme[\"secondary\"] for r in data]\n    kind = context.get(\"chart_type\", \"horizontal_bar\")\n    if kind == \"horizontal_bar\":\n        pos = np.arange(len(data))\n        bars = ax.barh(pos, vals, height=theme.get(\"bar_width\", 0.61), color=colors, edgecolor=\"none\")\n        ax.set_yticks(pos, labels=labels)\n        ax.invert_yaxis()\n        ax.set_xlim(0, context.get(\"axis_max\", 110))\n        ax.set_xlabel(context.get(\"axis_label\", \"Share of respondents (%)\"), labelpad=12)\n        ax.xaxis.grid(True, alpha=.14, color=theme[\"grid\"])\n        ax.set_axisbelow(True)\n        ax.tick_params(axis=\"y\", length=0, pad=12, labelsize=11)\n        for bar, value in zip(bars, vals):\n            ax.text(bar.get_width()+1.5, bar.get_y()+bar.get_height()/2, f\"{value:.0f}%\", va=\"center\", fontsize=12, fontweight=\"bold\", color=theme[\"text\"])\n    elif kind == \"vertical_bar\":\n        pos=np.arange(len(data))\n        bars=ax.bar(pos, vals, width=theme.get(\"bar_width\", .56), color=colors, edgecolor=\"none\")\n        ax.set_xticks(pos, labels=labels)\n        ax.set_ylim(0, context.get(\"axis_max\", 45))\n        ax.set_ylabel(context.get(\"axis_label\", \"Share (%)\"), labelpad=12)\n        ax.yaxis.grid(True, alpha=.14, color=theme[\"grid\"])\n        ax.set_axisbelow(True)\n        ax.tick_params(axis=\"x\", length=0, pad=12, labelsize=11)\n        for bar,value in zip(bars, vals):\n            ax.text(bar.get_x()+bar.get_width()/2, value+1, f\"{value:.0f}%\", ha=\"center\", va=\"bottom\", fontsize=17, fontweight=\"bold\", color=theme[\"text\"])\n        if len(vals)==2 and context.get(\"show_difference\",False):\n            delta=vals[1]-vals[0]\n            ax.text(.5, max(vals)+4.5, f\"{delta:+.0f} percentage points\", ha=\"center\", fontsize=11, color=theme[\"highlight\"], fontweight=\"bold\")\n    else:\n        raise ValueError(\"Unsupported chart_type: \" + str(kind))\n    ax.spines[:].set_visible(False)\n    ax.tick_params(colors=theme[\"text\"])\n    for label in ax.get_xticklabels()+ax.get_yticklabels():label.set_color(theme[\"text\"])\n    ax.title.set_color(theme[\"text\"])\n    fig.suptitle(context[\"title\"], fontsize=19, fontweight=\"bold\", x=.07, y=.978, ha=\"left\", color=theme[\"text\"])\n    fig.text(.07,.916,context[\"subtitle\"],fontsize=10.5,color=theme[\"muted\"],ha=\"left\")\n    fig.text(.07,.055,context[\"footnote\"],fontsize=8.7,color=theme[\"muted\"],ha=\"left\")\n    fig.subplots_adjust(left=theme.get(\"left\",.32),right=.91,top=.83,bottom=.18)\n    return fig\n\n\ndef main():\n    p=argparse.ArgumentParser()\n    p.add_argument(\"--data\",default=\"data.csv\")\n    p.add_argument(\"--config\",default=\"config.json\")\n    p.add_argument(\"--theme\",choices=[\"source\",\"neutral\"],default=\"source\")\n    p.add_argument(\"--output\",default=\"output.png\")\n    args=p.parse_args()\n    cfg=json.loads(Path(args.config).read_text(encoding=\"utf-8\"))\n    fig=render(read_data(args.data),cfg[\"THEME\"][args.theme],cfg[\"CONTEXT\"])\n    fig.savefig(args.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\n    print(args.output)\n\nif __name__==\"__main__\":main()\n"
+  },
+  "split_group": "https://www.bcg.com/publications/2026/maritime-fuel-mix-regulation-cost"
+}

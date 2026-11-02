@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261103_bcg_maritime_engine_capacity_policy_scenarios",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-02T22:24:28.422949+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/maritime-fuel-mix-regulation-cost",
+  "figure_ref": "Exhibit 2 context (two reported engine-capacity values; editorial visualization)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "6a117aabc02d1a62015777198494e1dc2bda65df67c9012fd164e4a32e12b8b8",
+    "chart.py": "faa4e5c2da81ec75ce3f3958ad90480c0431de4538db6d957750937da678ddd8",
+    "config.json": "5a6ba1b58c80aa79d8c470fb82aaf4958b23ff664fb609429c5491a6ad99721a",
+    "data.csv": "21f89c9a2c9d6136c482a382f046837986522ad59c92492874b2586f03f54f2d",
+    "record.json": "0c6bd3551ffe18bf05a95d38d46623a095ae85ad8a356078d88f9ba78b3f5754",
+    "requirements.txt": "ec090d20bf7dfadb7b0dc31e0e5ccf5e6ae7f646cc83cd3d376bed6061070503",
+    "validation.json": "a04327f0d74982a0dd0878ca1d7d978745a60ea4fedf3e3cf64732edc04b8c2f"
+  },
+  "payload_sha256": "cdc7564d64b8438db0bbed11ef39f8f33a73c07822af57b7486dfbaf77a55d5e"
+}

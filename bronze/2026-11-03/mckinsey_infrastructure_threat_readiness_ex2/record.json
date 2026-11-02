@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "20261103_mckinsey_infrastructure_threat_readiness_ex2",
+  "chart_key": "d6ef22044fbe2bb77cb46c9eb00447e46078b162ed13c798eff4d1f8c115f41d",
+  "date": "2026-11-03",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
+  "source_title": "Critical infrastructure is under threat. Are organizations prepared?",
+  "published": "2026-11-02",
+  "updated": null,
+  "retrieved_at": "2026-11-02T22:24:21.173098+00:00",
+  "figure_ref": "Exhibit 2, reported values (editorial visualization)",
+  "original_image_url": null,
+  "business_context": "복합·하이브리드 위협에 대비한 조직 보안 포트폴리오 편중",
+  "key_message": "사이버·IT 위협 대응 역량은 98%의 조직이 보유했지만 간첩·은밀한 작전 대응 역량은 32%에 불과하므로, 인프라 회복력 투자는 디지털 보안 외의 사각지대도 다뤄야 한다.",
+  "insight_type": "comparison",
+  "chart_type": "horizontal_bar",
+  "encoding": {
+    "x": "capability_presence_share",
+    "y": "threat_category",
+    "color": "highlight category",
+    "size": null,
+    "highlight": [
+      "Espionage / covert operations"
+    ]
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "value",
+      "unit",
+      "period",
+      "provenance",
+      "denominator",
+      "source_url"
+    ],
+    "units": "percent",
+    "n_points": 5,
+    "provenance": [
+      "reported"
+    ],
+    "denominator": "responding organizations (n=122)",
+    "period": "Q1 2026",
+    "sample": "2026년 1분기 조사 참여 조직 122개; 위협별 역량 존재 여부의 복수 응답"
+  },
+  "data_recipe": "1. 조직·사업장별 특정 위협에 대한 대응 capability 유무와 기준 기간을 수집한다.\n2. 위협 분류를 중복 없는 코드로 정규화하고 질문 문항별 유효 응답 조직을 분모로 사용한다.\n3. threat_category 별 established=true 조직 수 / 유효 응답조직 수 ×100을 계산한다.\n4. reported/derived 구분 및 표본·시점·반올림을 검증한다.\n5. 내림차순 정렬 후 최저 보유율을 highlight로 표기한다. 위협의 발생확률 또는 피해 심각도와 혼동하지 않는다.\n",
+  "message_conditions": "이 메시지는 설문 문항이 측정한 **역량 보유**에만 해당한다. 실제 회복력이나 침해 사고 가능성의 차이를 직접 뜻하지 않는다. 위협 위험도·발생 가능성을 포함한 비용편익 결론은 추가 데이터가 필요하다.",
+  "design_moves": [
+    "다섯 위협별 대응 역량 보유율을 공통 0~100% 축에서 내림차순 가로 막대로 비교하고 최저 역량인 간첩·은밀한 작전을 강조",
+    "Reconfigurable theme + context + CSV",
+    "Zero-baseline bars, direct value labels, source note"
+  ],
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "training_eligible": false,
+  "training_use": "design_only_candidate; NOT approved for model training or redistribution",
+  "exclusion_reasons": [
+    "human_review_pending",
+    "original_visual_fidelity_unverified",
+    "training_rights_not_confirmed"
+  ],
+  "diff_notes": "Editorial visualization of source-reported article values; no claim of exact original figure recreation.",
+  "code_path": "chart.py",
+  "image_path": null,
+  "neutral_image_path": null,
+  "validation_path": "validation.json",
+  "artifact_refs": [
+    "local_artifacts/mckinsey_infrastructure_threat_readiness_ex2/source.png",
+    "local_artifacts/mckinsey_infrastructure_threat_readiness_ex2/neutral.png"
+  ],
+  "training_pair": {
+    "instruction": "Given a business context '복합·하이브리드 위협에 대비한 조직 보안 포트폴리오 편중' and capability_presence_share data, build a reusable matplotlib horizontal_bar chart. Do not assert the source chart was faithfully reproduced.",
+    "response": "Data.csv:\ncategory,value,unit,period,source_url,figure_ref,provenance,denominator,estimate_method,uncertainty_low,uncertainty_high,notes\nCyber and IT threats,98,percent,Q1 2026,https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared,\"Exhibit 2, reported values (editorial visualization)\",reported,responding organizations (n=122),,,,Source-reported number; metric defined in record.json\nPhysical / hardware infrastructure,77,percent,Q1 2026,https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared,\"Exhibit 2, reported values (editorial visualization)\",reported,responding organizations (n=122),,,,Source-reported number; metric defined in record.json\nInformation / psychological operations,59,percent,Q1 2026,https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared,\"Exhibit 2, reported values (editorial visualization)\",reported,responding organizations (n=122),,,,Source-reported number; metric defined in record.json\nEconomic / political coercion,47,percent,Q1 2026,https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared,\"Exhibit 2, reported values (editorial visualization)\",reported,responding organizations (n=122),,,,Source-reported number; metric defined in record.json\nEspionage / covert operations,32,percent,Q1 2026,https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared,\"Exhibit 2, reported values (editorial visualization)\",reported,responding organizations (n=122),,,,Source-reported number; metric defined in record.json\n\nConfiguration:\n{\n  \"THEME\": {\n    \"source\": {\n      \"background\": \"#FFFFFF\",\n      \"highlight\": \"#115A87\",\n      \"secondary\": \"#B0CCDA\",\n      \"text\": \"#16364A\",\n      \"muted\": \"#647584\",\n      \"grid\": \"#8E9DA5\",\n      \"figsize\": [\n        11.5,\n        6.4\n      ],\n      \"bar_width\": 0.64,\n      \"left\": 0.36\n    },\n    \"neutral\": {\n      \"background\": \"#FFFFFF\",\n      \"highlight\": \"#467E57\",\n      \"secondary\": \"#C9D9C2\",\n      \"text\": \"#2E3D32\",\n      \"muted\": \"#67726A\",\n      \"grid\": \"#9FAAA4\",\n      \"figsize\": [\n        11.5,\n        6.4\n      ],\n      \"bar_width\": 0.64,\n      \"left\": 0.36\n    }\n  },\n  \"CONTEXT\": {\n    \"title\": \"Prepared for cyber threats, exposed to covert ones\",\n    \"subtitle\": \"Established threat-resilience capabilities | organizations surveyed, Q1 2026 (n=122)\",\n    \"footnote\": \"Source: McKinsey, Nov 2 2026, Exhibit 2 (values in article). Re-designed, not an exhibit replica.\",\n    \"chart_type\": \"horizontal_bar\",\n    \"axis_label\": \"Share of organizations with an established capability (%)\",\n    \"axis_max\": 110,\n    \"highlight\": [\n      \"Espionage / covert operations\"\n    ],\n    \"show_difference\": false\n  }\n}\n\nRun: python chart.py --data data.csv --config config.json --theme source --output output.png\nFull executable Python chart module:\n#!/usr/bin/env python3\n\"\"\"Deterministic, configuration-driven chart renderer (no network access).\"\"\"\nfrom __future__ import annotations\nimport argparse\nimport csv\nimport json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n\ndef read_data(path):\n    with Path(path).open(encoding=\"utf-8-sig\", newline=\"\") as stream:\n        rows = list(csv.DictReader(stream))\n    if not rows:\n        raise ValueError(\"data.csv contains no records\")\n    for row in rows:\n        row[\"value\"] = float(row[\"value\"])\n        if not 0 <= row[\"value\"] <= 100:\n            raise ValueError(\"Percent values must be between 0 and 100\")\n        if row.get(\"provenance\") not in {\"reported\", \"derived\", \"digitized_estimate\"}:\n            raise ValueError(\"Each plotted value requires provenance\")\n    return rows\n\n\ndef render(data, theme, context):\n    \"\"\"Render selected chart type with numeric marks drawn strictly from data.\"\"\"\n    if not data:\n        raise ValueError(\"No data\")\n    fig, ax = plt.subplots(figsize=tuple(theme.get(\"figsize\", [11.2, 6.4])))\n    fig.patch.set_facecolor(theme[\"background\"])\n    ax.set_facecolor(theme[\"background\"])\n    labels = [r[\"category\"] for r in data]\n    vals = np.array([float(r[\"value\"]) for r in data])\n    colors = [theme[\"highlight\"] if r[\"category\"] in context.get(\"highlight\", []) else theme[\"secondary\"] for r in data]\n    kind = context.get(\"chart_type\", \"horizontal_bar\")\n    if kind == \"horizontal_bar\":\n        pos = np.arange(len(data))\n        bars = ax.barh(pos, vals, height=theme.get(\"bar_width\", 0.61), color=colors, edgecolor=\"none\")\n        ax.set_yticks(pos, labels=labels)\n        ax.invert_yaxis()\n        ax.set_xlim(0, context.get(\"axis_max\", 110))\n        ax.set_xlabel(context.get(\"axis_label\", \"Share of respondents (%)\"), labelpad=12)\n        ax.xaxis.grid(True, alpha=.14, color=theme[\"grid\"])\n        ax.set_axisbelow(True)\n        ax.tick_params(axis=\"y\", length=0, pad=12, labelsize=11)\n        for bar, value in zip(bars, vals):\n            ax.text(bar.get_width()+1.5, bar.get_y()+bar.get_height()/2, f\"{value:.0f}%\", va=\"center\", fontsize=12, fontweight=\"bold\", color=theme[\"text\"])\n    elif kind == \"vertical_bar\":\n        pos=np.arange(len(data))\n        bars=ax.bar(pos, vals, width=theme.get(\"bar_width\", .56), color=colors, edgecolor=\"none\")\n        ax.set_xticks(pos, labels=labels)\n        ax.set_ylim(0, context.get(\"axis_max\", 45))\n        ax.set_ylabel(context.get(\"axis_label\", \"Share (%)\"), labelpad=12)\n        ax.yaxis.grid(True, alpha=.14, color=theme[\"grid\"])\n        ax.set_axisbelow(True)\n        ax.tick_params(axis=\"x\", length=0, pad=12, labelsize=11)\n        for bar,value in zip(bars, vals):\n            ax.text(bar.get_x()+bar.get_width()/2, value+1, f\"{value:.0f}%\", ha=\"center\", va=\"bottom\", fontsize=17, fontweight=\"bold\", color=theme[\"text\"])\n        if len(vals)==2 and context.get(\"show_difference\",False):\n            delta=vals[1]-vals[0]\n            ax.text(.5, max(vals)+4.5, f\"{delta:+.0f} percentage points\", ha=\"center\", fontsize=11, color=theme[\"highlight\"], fontweight=\"bold\")\n    else:\n        raise ValueError(\"Unsupported chart_type: \" + str(kind))\n    ax.spines[:].set_visible(False)\n    ax.tick_params(colors=theme[\"text\"])\n    for label in ax.get_xticklabels()+ax.get_yticklabels():label.set_color(theme[\"text\"])\n    ax.title.set_color(theme[\"text\"])\n    fig.suptitle(context[\"title\"], fontsize=19, fontweight=\"bold\", x=.07, y=.978, ha=\"left\", color=theme[\"text\"])\n    fig.text(.07,.916,context[\"subtitle\"],fontsize=10.5,color=theme[\"muted\"],ha=\"left\")\n    fig.text(.07,.055,context[\"footnote\"],fontsize=8.7,color=theme[\"muted\"],ha=\"left\")\n    fig.subplots_adjust(left=theme.get(\"left\",.32),right=.91,top=.83,bottom=.18)\n    return fig\n\n\ndef main():\n    p=argparse.ArgumentParser()\n    p.add_argument(\"--data\",default=\"data.csv\")\n    p.add_argument(\"--config\",default=\"config.json\")\n    p.add_argument(\"--theme\",choices=[\"source\",\"neutral\"],default=\"source\")\n    p.add_argument(\"--output\",default=\"output.png\")\n    args=p.parse_args()\n    cfg=json.loads(Path(args.config).read_text(encoding=\"utf-8\"))\n    fig=render(read_data(args.data),cfg[\"THEME\"][args.theme],cfg[\"CONTEXT\"])\n    fig.savefig(args.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\n    print(args.output)\n\nif __name__==\"__main__\":main()\n"
+  },
+  "split_group": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared"
+}

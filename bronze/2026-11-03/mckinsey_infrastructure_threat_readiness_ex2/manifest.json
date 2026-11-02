@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261103_mckinsey_infrastructure_threat_readiness_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-02T22:24:28.420469+00:00",
+  "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
+  "figure_ref": "Exhibit 2, reported values (editorial visualization)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "72f26924864f44d0bc05434c1c99d80edfd4fab7cad51fee5e5fa604c087a15c",
+    "chart.py": "faa4e5c2da81ec75ce3f3958ad90480c0431de4538db6d957750937da678ddd8",
+    "config.json": "e833e12d10fbcfc6db0f7faf2662f0d6ce2bfd20f253f10e10937c6ad20ea18d",
+    "data.csv": "69e965fb8bfc070d098bd50beaff004efbf716fa6c1906868f343ea91f501da0",
+    "record.json": "599525be73b5ec57b36b423e79b64ac56dabc33a177e357e840fb9953b6d833f",
+    "requirements.txt": "ec090d20bf7dfadb7b0dc31e0e5ccf5e6ae7f646cc83cd3d376bed6061070503",
+    "validation.json": "1c008172b72bc13920028445c7ea976d5c25ade7c976e5e5d0cf4384617a6a84"
+  },
+  "payload_sha256": "98ade8cf56b287dd9e6ee7ff09ab7a2fab1f6bc109aa4bc4d5185783d569d6d2"
+}
