@@ -1,0 +1,62 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        11,
+        5.5
+      ],
+      "background": "#ffffff",
+      "text": "#142036",
+      "muted": "#606d77",
+      "grid": "#cccccc",
+      "colors": {
+        "deployment_ready": "#168C9F",
+        "not_deployment_ready": "#BD3CA5"
+      },
+      "label_size": 9,
+      "marker_size": 80,
+      "inside_text": "#ffffff",
+      "title_size": 17,
+      "title_x": 0.075,
+      "title_y": 0.92,
+      "margins": {
+        "left": 0.075,
+        "right": 0.95,
+        "top": 0.74,
+        "bottom": 0.19
+      }
+    },
+    "neutral": {
+      "figsize": [
+        11,
+        5.5
+      ],
+      "background": "#ffffff",
+      "text": "#192236",
+      "muted": "#687486",
+      "grid": "#cccccc",
+      "colors": {
+        "deployment_ready": "#3C617D",
+        "not_deployment_ready": "#9BA8B5"
+      },
+      "label_size": 9,
+      "marker_size": 80,
+      "inside_text": "#ffffff",
+      "title_size": 17,
+      "title_x": 0.075,
+      "title_y": 0.92,
+      "margins": {
+        "left": 0.075,
+        "right": 0.95,
+        "top": 0.74,
+        "bottom": 0.19
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "stacked",
+    "title": "Climate-adaptation need is not the same as a deployable market",
+    "subtitle": "2050 annual adaptation costs at 2°C warming · $ billion (2020 USD)",
+    "footnote": "Reported: USD 460bn ready plus USD 690bn facing barriers = USD 1,150bn. Report rounds total to about USD 1.2tn."
+  }
+}

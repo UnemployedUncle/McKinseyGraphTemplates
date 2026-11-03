@@ -1,0 +1,134 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        13.5,
+        8.5
+      ],
+      "background": "#ffffff",
+      "text": "#141414",
+      "muted": "#666666",
+      "grid": "#cccccc",
+      "colors": {
+        "China_controls": "#E98021",
+        "China_no_controls": "#563017",
+        "Other_mixed": "#A29C91"
+      },
+      "label_size": 7.5,
+      "marker_size": 64,
+      "show_labels": true,
+      "inside_text": "white",
+      "title_size": 19,
+      "title_x": 0.075,
+      "title_y": 0.97,
+      "margins": {
+        "left": 0.1,
+        "right": 0.92,
+        "top": 0.83,
+        "bottom": 0.26
+      }
+    },
+    "neutral": {
+      "figsize": [
+        13.5,
+        8.5
+      ],
+      "background": "#ffffff",
+      "text": "#151f34",
+      "muted": "#687486",
+      "grid": "#d3dae4",
+      "colors": {
+        "China_controls": "#245b83",
+        "China_no_controls": "#7c9eb3",
+        "Other_mixed": "#a9afb8"
+      },
+      "label_size": 7.5,
+      "marker_size": 64,
+      "show_labels": true,
+      "inside_text": "white",
+      "title_size": 19,
+      "title_x": 0.075,
+      "title_y": 0.97,
+      "margins": {
+        "left": 0.1,
+        "right": 0.92,
+        "top": 0.83,
+        "bottom": 0.26
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "scatter",
+    "title": "China leads concentrated minerals and uses export controls",
+    "x_label": "Market concentration in extraction (index, 0–1)",
+    "y_label": "Market concentration in processing (index, 0–1)",
+    "groups": {
+      "China_controls": "China lead · export controls",
+      "China_no_controls": "China lead · no controls",
+      "Other_mixed": "Other / mixed"
+    },
+    "footnote": "Coordinates read from official Exhibit 3 image; approximate ±0.04 index units. Not original underlying data.",
+    "offsets": {
+      "Gallium": [
+        -10,
+        -13
+      ],
+      "Graphite": [
+        -8,
+        13
+      ],
+      "Tungsten": [
+        -9,
+        -12
+      ],
+      "Niobium": [
+        -12,
+        -10
+      ],
+      "Manganese": [
+        -7,
+        14
+      ],
+      "Rare earth elements": [
+        -5,
+        12
+      ],
+      "Cobalt": [
+        6,
+        -11
+      ],
+      "Germanium": [
+        -8,
+        -12
+      ],
+      "Antimony": [
+        -8,
+        -14
+      ],
+      "Lithium": [
+        -8,
+        -14
+      ],
+      "Platinum group metals": [
+        6,
+        -11
+      ],
+      "Nickel": [
+        -8,
+        -13
+      ],
+      "Copper": [
+        -8,
+        -13
+      ],
+      "Tantalum": [
+        6,
+        11
+      ],
+      "Aluminum (bauxite)": [
+        6,
+        13
+      ]
+    }
+  }
+}

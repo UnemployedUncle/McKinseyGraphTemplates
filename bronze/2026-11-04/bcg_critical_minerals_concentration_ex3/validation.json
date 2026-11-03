@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "validated_at": "2026-11-03T22:22:08.108382+00:00",
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "commands": [
+    "python chart.py --theme source --data data.csv --config config.json --output ../../artifacts/bcg_critical_minerals_concentration_ex3/source.png",
+    "python chart.py --theme neutral --data data.csv --config config.json --output ../../artifacts/bcg_critical_minerals_concentration_ex3/neutral.png"
+  ],
+  "iterations": 1,
+  "render_passed": true,
+  "checks": {
+    "source_data": true,
+    "percent_vs_percentage_points": true,
+    "denominator": true,
+    "period": true,
+    "units": true,
+    "no_synthetic_values": true,
+    "rounding": true,
+    "record_non_duplicate_by_known_catalog": true,
+    "image_rendered_source": true,
+    "image_rendered_neutral": true,
+    "image_visual_inspected_source": true,
+    "image_visual_inspected_neutral": true
+  },
+  "original_check": {
+    "source_visual_opened": true,
+    "chart_type_matches": "scatter",
+    "included_points": 20,
+    "coordinate_precision": "estimated from static image ±0.04 index units",
+    "source_points_complete": false,
+    "unit_check": true,
+    "range_check": true,
+    "original_fig_url": "https://web-assets.bcg.com/dims4/default/98966ec/2147483647/strip/true/crop/3600x2507%2B0%2B0/resize/499x347%21/format/webp/quality/80/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2F4e%2Fd4%2Fe095166e4c38b0cfeb1782775710%2Fthe-geopolitics-of-critical-minerals-ex03.png"
+  },
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "fidelity_dimensions": {
+    "chart_type": null,
+    "data_values_and_order": null,
+    "axes": null,
+    "color_and_emphasis": null,
+    "labels_and_annotations": null,
+    "legend_and_aspect_ratio": null,
+    "whitespace": null
+  },
+  "self_score_reason": "Not scored: original complete chart cannot be reliably reproduced from published coordinates or editorial visualization; user review pending.",
+  "diff_notes": "Source Exhibit 3 static graphic inspected. Diagram type is similar; estimated points, partial label placement, legend layout and typography differ; not a quantitative exact reproduction.",
+  "human_review": "pending",
+  "training_eligible": false
+}

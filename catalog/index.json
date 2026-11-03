@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 33,
+    "bronze": 35,
     "silver": 0,
     "gold": 0
   },
@@ -464,6 +464,34 @@
       "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
       "figure_ref": "Exhibit 2, reported values (editorial visualization)",
       "key_message": "사이버·IT 위협 대응 역량은 98%의 조직이 보유했지만 간첩·은밀한 작전 대응 역량은 32%에 불과하므로, 인프라 회복력 투자는 디지털 보안 외의 사각지대도 다뤄야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261104_bcg_critical_minerals_concentration_ex3",
+      "tier": "bronze",
+      "path": "bronze/2026-11-04/bcg_critical_minerals_concentration_ex3",
+      "contract": "render-v1",
+      "payload_sha256": "8ed0225bb942c7cc2bb13631080f44509e2d58137865d6380cf63534abaff9ef",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/critical-minerals-geopolitics",
+      "figure_ref": "Exhibit 3",
+      "key_message": "핵심광물의 채굴과 정련은 서로 다른 국가·기업에 집중될 수 있어 공급망 다변화 전략은 생산국뿐 아니라 정련의 집중도와 수출통제 대상 여부를 함께 평가해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261104_mckinsey_climate_adaptation_readiness_2050",
+      "tier": "bronze",
+      "path": "bronze/2026-11-04/mckinsey_climate_adaptation_readiness_2050",
+      "contract": "render-v1",
+      "payload_sha256": "116b785be3a0eae6af263a5c1da7b463b9ed7d92714583b0901813d4db0ff6c3",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/mgi/our-research/advancing-adaptation-breaking-barriers-to-a-trillion-dollar-opportunity",
+      "figure_ref": "By 2050 deployment-ready climate adaptation will grow (web graphic context; editorial decomposition)",
+      "key_message": "2050년 연간 기후적응 필요액 중 약 4,600억 달러가 현재의 조건 아래 집행 가능한 반면 약 6,900억 달러는 수요·자금 조달 장벽에 직면하므로, 투자기회를 평가할 때 사회적 필요와 실제 실행가능성을 구분해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/critical-minerals-geopolitics",
+  "source_title": "The Geopolitics of Critical Minerals: Navigating Scarcity, Concentration, and Control",
+  "published_at": "2026-11-03",
+  "collected_at": "2026-11-04",
+  "data_period": "research published 2026-11-03; underlying mineral snapshot dates undisclosed",
+  "figure_ref": "Exhibit 3",
+  "chart_key": "bcg_critical_minerals_concentration_ex3",
+  "business_context": "원문은 23개 핵심광물에 대한 매장·채굴·정련·제조 및 국제 소유망을 분석한다. Exhibit 3은 광물별 채굴과 정련 시장 집중도를 두 축에 배치하고 중국의 수출통제 대상 여부를 표시한다. 정련 집중도가 높은 광물은 채굴국이 다변화되어도 실질 공급망 위험이 남을 수 있다.",
+  "key_message": "핵심광물의 채굴과 정련은 서로 다른 국가·기업에 집중될 수 있어 공급망 다변화 전략은 생산국뿐 아니라 정련의 집중도와 수출통제 대상 여부를 함께 평가해야 한다.",
+  "insight_type": "집단별 비교·위험 집중 / quadrant scatter",
+  "chart_type": "scatter",
+  "encoding": "x=extraction index, y=processing index; point marker and color encode source-figure leader/control classification; one point per mineral. Both axes span 0–1 with 0.5 horizontal reference. The source labels many points; template uses data-driven placements with manual legibility offsets.",
+  "data_spec": {
+    "observation_unit": "mineral",
+    "x": "extraction_concentration",
+    "y": "processing_concentration",
+    "color": "group",
+    "unit": "concentration index (0-1)",
+    "denominator": "mineral-specific concentration definition not numerically disclosed; see official methodology",
+    "period": "research published 2026-11-03; underlying mineral snapshot dates undisclosed",
+    "provenance": "digitized_estimate",
+    "uncertainty": "coordinate ±0.04, based on manual interpretation of official 499-pixel preview",
+    "sampling": "20 visually legible points out of chart; one or more labels may be omitted, not exhaustive"
+  },
+  "data_recipe": [
+    "Secure minerals and jurisdiction-level extraction/processing market shares for the same period.",
+    "Compute concentration using the source-defined index, not raw percentages.",
+    "Mark each mineral by the leader and official export-control policy at the snapshot date.",
+    "Plot x extraction / y processing on 0–1 scales; annotate selected risk minerals.",
+    "Validate the raw point coordinates against the original source dataset before claiming research-grade accuracy."
+  ],
+  "message_conditions": [
+    "Only compare x and y if underlying concentration-index methodology matches.",
+    "Do not interpret estimated coordinates as directly reported values or exact current policy classification.",
+    "Labels overlap, original downloadable data unknown; direct original image was viewed but fidelity of complete chart remains unverified."
+  ],
+  "design_moves": [
+    "Shared coordinate system",
+    "Direct data labels",
+    "Separated source vs neutral themes"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Source Exhibit 3 static graphic inspected. Diagram type is similar; estimated points, partial label placement, legend layout and typography differ; not a quantitative exact reproduction.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.bcg.com/publications/2026/critical-minerals-geopolitics",
+  "training_pair": {
+    "instruction": "Using the attached CSV and JSON config, render a reusable and faithful-to-data consulting chart that communicates: 핵심광물의 채굴과 정련은 서로 다른 국가·기업에 집중될 수 있어 공급망 다변화 전략은 생산국뿐 아니라 정련의 집중도와 수출통제 대상 여부를 함께 평가해야 한다.",
+    "response": {
+      "code_file": "chart.py",
+      "input_csv": "data.csv",
+      "config_file": "config.json",
+      "install": "pip install -r requirements.txt",
+      "run": "python chart.py --theme source --data data.csv --config config.json --output output.png",
+      "notes": "The exact input values and complete code are in the sibling immutable payload files; no original images or licensed fonts."
+    }
+  }
+}

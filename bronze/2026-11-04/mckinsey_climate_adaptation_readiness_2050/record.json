@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/mgi/our-research/advancing-adaptation-breaking-barriers-to-a-trillion-dollar-opportunity",
+  "source_title": "Advancing adaptation: Breaking barriers to a trillion-dollar opportunity",
+  "published_at": "2026-11-03",
+  "collected_at": "2026-11-04",
+  "data_period": "modeled 2050; 2020 price base",
+  "figure_ref": "By 2050 deployment-ready climate adaptation will grow (web graphic context; editorial decomposition)",
+  "chart_key": "mckinsey_climate_adaptation_readiness_2050",
+  "business_context": "McKinsey Global Institute는 20개 검증된 기후적응 조치의 투자 필요액과 집행 장벽을 분석했다. 2050년 2°C 온난화 조건에서 즉시 집행 가능한 조치 비용을 연간 약 4,600억 달러로 추정한다. 나머지 약 6,900억 달러는 수요·조정 역량 또는 자금조달 장벽에 직면해 필요액이 그대로 시장 규모로 전환되지 않는다.",
+  "key_message": "2050년 연간 기후적응 필요액 중 약 4,600억 달러가 현재의 조건 아래 집행 가능한 반면 약 6,900억 달러는 수요·자금 조달 장벽에 직면하므로, 투자기회를 평가할 때 사회적 필요와 실제 실행가능성을 구분해야 한다.",
+  "insight_type": "부분 대비 전체·자금조달 장벽 / editorial stacked bar",
+  "chart_type": "stacked",
+  "encoding": "x=annual estimated cost share of 460+690, y=one 2050 scenario, fill by deployment readiness, labels show reported $ billions plus shares derived using component sum. No misleading separate percentage axis; reading order ready then barriers.",
+  "data_spec": {
+    "observation_unit": "global adaptation-readiness segment, year 2050 scenario",
+    "metric": "annual adaptation costs",
+    "unit": "USD billion, real 2020 prices",
+    "denominator": "20 proven adaptation measures under 2°C 2050 scenario",
+    "period": "modeled 2050; 2020 price base",
+    "provenance": "reported",
+    "rounding": "460+690=1150 (USD bn); original says approx 1.2 trillion rounded, not exact equality",
+    "sampling": "20 measures, 1 km geographic pixels and 9 population-demographic groups, scenario modeling (not respondent survey)"
+  },
+  "data_recipe": [
+    "Define 20 hazard-protection measures, exposure geography and common price year.",
+    "Estimate annualized capital plus operating costs under consistent climate scenario.",
+    "Classify each measure/location as deployment-ready or requiring demand or financing interventions.",
+    "Sum each class at the global level, retain exact vs rounded totals separately.",
+    "Render 100% shares from reported components while labeling original absolute amounts."
+  ],
+  "message_conditions": [
+    "Model estimates, not realized 2050 spending or financial addressable market guarantees.",
+    "Reported total ~$1.2T is rounded; do not force 460/690 to sum to 1200.",
+    "The original report embeds a larger interactive breakdown; this is an editorial two-segment summary, not original Exhibit replication."
+  ],
+  "design_moves": [
+    "Shared coordinate system",
+    "Direct data labels",
+    "Separated source vs neutral themes"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "McKinsey official HTML narrative and graphic text checked; original interactive visual geometry not verified. This is a clearly labeled editorial summary.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.mckinsey.com/mgi/our-research/advancing-adaptation-breaking-barriers-to-a-trillion-dollar-opportunity",
+  "training_pair": {
+    "instruction": "Using the attached CSV and JSON config, render a reusable and faithful-to-data consulting chart that communicates: 2050년 연간 기후적응 필요액 중 약 4,600억 달러가 현재의 조건 아래 집행 가능한 반면 약 6,900억 달러는 수요·자금 조달 장벽에 직면하므로, 투자기회를 평가할 때 사회적 필요와 실제 실행가능성을 구분해야 한다.",
+    "response": {
+      "code_file": "chart.py",
+      "input_csv": "data.csv",
+      "config_file": "config.json",
+      "install": "pip install -r requirements.txt",
+      "run": "python chart.py --theme source --data data.csv --config config.json --output output.png",
+      "notes": "The exact input values and complete code are in the sibling immutable payload files; no original images or licensed fonts."
+    }
+  }
+}

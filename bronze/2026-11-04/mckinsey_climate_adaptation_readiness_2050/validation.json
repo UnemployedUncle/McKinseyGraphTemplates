@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "validated_at": "2026-11-03T22:22:08.495346+00:00",
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "commands": [
+    "python chart.py --theme source --data data.csv --config config.json --output ../../artifacts/mckinsey_climate_adaptation_readiness_2050/source.png",
+    "python chart.py --theme neutral --data data.csv --config config.json --output ../../artifacts/mckinsey_climate_adaptation_readiness_2050/neutral.png"
+  ],
+  "iterations": 2,
+  "render_passed": true,
+  "checks": {
+    "source_data": true,
+    "percent_vs_percentage_points": true,
+    "denominator": true,
+    "period": true,
+    "units": true,
+    "no_synthetic_values": true,
+    "rounding": true,
+    "record_non_duplicate_by_known_catalog": true,
+    "image_rendered_source": true,
+    "image_rendered_neutral": true,
+    "image_visual_inspected_source": true,
+    "image_visual_inspected_neutral": true
+  },
+  "original_check": {
+    "source_visual_opened": false,
+    "official_chart_narrative_read": true,
+    "chart_type_matches": false,
+    "editorial_design": true,
+    "sum_of_reported_components_bn": 1150,
+    "report_rounded_total_bn": 1200,
+    "unit_check": true,
+    "period_check": true
+  },
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "fidelity_dimensions": {
+    "chart_type": null,
+    "data_values_and_order": null,
+    "axes": null,
+    "color_and_emphasis": null,
+    "labels_and_annotations": null,
+    "legend_and_aspect_ratio": null,
+    "whitespace": null
+  },
+  "self_score_reason": "Not scored: original complete chart cannot be reliably reproduced from published coordinates or editorial visualization; user review pending.",
+  "diff_notes": "McKinsey official HTML narrative and graphic text checked; original interactive visual geometry not verified. This is a clearly labeled editorial summary.",
+  "human_review": "pending",
+  "training_eligible": false
+}

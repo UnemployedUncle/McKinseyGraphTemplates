@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261104_mckinsey_climate_adaptation_readiness_2050",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-03T22:22:08.497531+00:00",
+  "source_url": "https://www.mckinsey.com/mgi/our-research/advancing-adaptation-breaking-barriers-to-a-trillion-dollar-opportunity",
+  "figure_ref": "By 2050 deployment-ready climate adaptation will grow (web graphic context; editorial decomposition)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "61bc461f34e05cdfd25d040ac48582acd44c5f7ef0442532c33dcaf0b911a6b6",
+    "chart.py": "9d3eed974e6fd18b44a6cf07934b99ac63afb2e357391f358bbcfbd0a5ee5a16",
+    "config.json": "dee252ec070b73feba3ae87774f03e71c8ea18442b9008e4646613045d3e925c",
+    "data.csv": "5eeb0c95540873e9c65e7734faba9a80457dc03ba8b54fcb10c1b1f9ae4202cf",
+    "record.json": "7069c8b2717e3763557fdc9e80d426265e0d28260fc9136d5b783ee8b0ebdf78",
+    "requirements.txt": "48e1d792aa42dc067223fe311036f1388d0fea6b9deec4c84760db4c2f70d2a5",
+    "validation.json": "ceb03239d54663f415f57f20de18ff06f11ca7962bcae88e115c1c145302fd5f"
+  },
+  "payload_sha256": "116b785be3a0eae6af263a5c1da7b463b9ed7d92714583b0901813d4db0ff6c3"
+}

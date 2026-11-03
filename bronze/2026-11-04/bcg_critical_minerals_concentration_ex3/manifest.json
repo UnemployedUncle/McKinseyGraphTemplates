@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261104_bcg_critical_minerals_concentration_ex3",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-03T22:22:08.494363+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/critical-minerals-geopolitics",
+  "figure_ref": "Exhibit 3",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "d61ecc41a11bcd68f041769d8410cdf5d53a5722c4747e638780416d4c7cd7d0",
+    "chart.py": "9d3eed974e6fd18b44a6cf07934b99ac63afb2e357391f358bbcfbd0a5ee5a16",
+    "config.json": "69c7a3272c45c107ea23751882824299c6395f38f92f1fd0bb8b2af1c54685a6",
+    "data.csv": "4e12fb7c983185e29e52f14ff2f5986a45c13662b4395440efdd24ceab1dab14",
+    "record.json": "f5c28c9e88c95312864f65b3b3d76123c3d0554190b55c3399fe6bf9060c8a00",
+    "requirements.txt": "48e1d792aa42dc067223fe311036f1388d0fea6b9deec4c84760db4c2f70d2a5",
+    "validation.json": "e4952fdda038f0519744b512e3e62538bee1689814d113186cc8ef2115c0e9e2"
+  },
+  "payload_sha256": "8ed0225bb942c7cc2bb13631080f44509e2d58137865d6380cf63534abaff9ef"
+}
