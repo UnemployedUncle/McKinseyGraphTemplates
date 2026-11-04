@@ -1,0 +1,68 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        11.6,
+        7.2
+      ],
+      "background": "#FFFFFF",
+      "text": "#1B2424",
+      "muted": "#667777",
+      "grid": "#DDE8E7",
+      "colors": {
+        "verification": "#00636A",
+        "customer_proof": "#1CA5A9",
+        "persuasion": "#8ED9DC"
+      },
+      "title_size": 15,
+      "label_size": 9.2,
+      "value_size": 9.5,
+      "margins": {
+        "left": 0.385,
+        "right": 0.94,
+        "top": 0.8,
+        "bottom": 0.13
+      }
+    },
+    "neutral": {
+      "figsize": [
+        11.6,
+        7.2
+      ],
+      "background": "#FFFFFF",
+      "text": "#161616",
+      "muted": "#666666",
+      "grid": "#DFDFDF",
+      "colors": {
+        "verification": "#353535",
+        "customer_proof": "#858585",
+        "persuasion": "#BDBDBD"
+      },
+      "title_size": 15,
+      "label_size": 9.2,
+      "value_size": 9.5,
+      "margins": {
+        "left": 0.385,
+        "right": 0.94,
+        "top": 0.8,
+        "bottom": 0.13
+      }
+    }
+  },
+  "CONTEXT": {
+    "title": "Credible proof earns far more trust than persuasion cues",
+    "subtitle": "Net trust score by factor influencing a deal, September 2026",
+    "x_label": "Net trust score (%p)",
+    "footnote": "Source: BCG Year-End Sales Events Consumer Study 2026, Exhibit 2; n=10,220 overall.\nNet score = share increasing trust minus share decreasing trust. Not a share of respondents.",
+    "group_labels": {
+      "verification": "Verifiable proof",
+      "customer_proof": "Customer proof",
+      "persuasion": "Persuasion cues"
+    },
+    "annotations": {
+      "top_message": "Top: retailer reputation and returns policies (65)",
+      "bottom_message": "Bottom: influencer recommendations (3)"
+    },
+    "order": "reported_figure_order"
+  }
+}

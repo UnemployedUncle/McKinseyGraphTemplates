@@ -1,0 +1,55 @@
+{
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/from-science-fiction-to-reality-the-next-phase-of-shared-autonomous-mobility",
+  "source_title": "From science fiction to reality: The next phase of shared autonomous mobility",
+  "figure_ref": "Exhibit 4 (reported regional scenario inputs; editorial design, not original reconstruction)",
+  "chart_key": "mckinsey_shared_av_2035_regional_scenarios_ex4",
+  "published_at": "2026-11-04",
+  "data_period": "2035 modeled scenarios; source published 2026",
+  "business_context": "Investors need to distinguish optimistic from lower-bound regional AV market projections.",
+  "key_message": "2035년 공유 자율주행 교통 시장은 기본 시나리오 약 1,900억 달러에서 상방 시나리오 약 4,300억 달러로 범위가 넓어, 지역별 서비스 가동률과 확장 속도를 시나리오로 관리해야 한다.",
+  "chart_type": "stacked_columns_editorial",
+  "insight_type": "scenario and regional composition",
+  "encoding": "x=base/upside scenario; y=USD billions; fill=region; stacked values add to $190B/$430B; direct totals",
+  "data_spec": {
+    "observation_unit": "region x 2035 market scenario",
+    "unit": "USD billion per year; price-year basis undisclosed",
+    "denominator": "modeled shared AV market revenues",
+    "period": "2035 (projected)",
+    "sample": "model, not respondent survey",
+    "calculation": "sum four nonoverlapping regional values per scenario"
+  },
+  "data_recipe": [
+    "Collect additive regional base/upside endpoints",
+    "Harmonize region, horizon, valuation basis",
+    "Sum and reconcile reported scenario totals",
+    "Stack region segments and label totals"
+  ],
+  "message_conditions": [
+    "Model scenario not realized investment or statistical CI",
+    "Original Exhibit 4 design could not be viewed; editorial redesign unverified"
+  ],
+  "design_moves": [
+    "stacked columns for additive 2035 market",
+    "contrast two conditional scenarios",
+    "summed data-driven bar totals"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original McKinsey Exhibit 4 SVGZ returned unsupported image/svg+xml on attempted open. Regional model endpoints were verified from the article, not actual source chart geometry. This is explicitly editorial stacked columns.",
+  "schema_version": "1.0.0",
+  "collected_at": "2026-11-05",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/from-science-fiction-to-reality-the-next-phase-of-shared-autonomous-mobility",
+  "training_pair": {
+    "instruction": "Generate a reusable consulting figure supporting: 2035년 공유 자율주행 교통 시장은 기본 시나리오 약 1,900억 달러에서 상방 시나리오 약 4,300억 달러로 범위가 넓어, 지역별 서비스 가동률과 확장 속도를 시나리오로 관리해야 한다.",
+    "response": {
+      "code_file": "chart.py",
+      "input_csv": "data.csv",
+      "config_file": "config.json",
+      "run": "python chart.py --theme source --data data.csv --config config.json --output source.png",
+      "notes": "The source article and Exhibit are accessible via official URL; this bundle stores no figure image, logo, full article, or external font. Exact values and full executable rendering code are in sibling files; usage requires no undisclosed assumptions."
+    }
+  }
+}

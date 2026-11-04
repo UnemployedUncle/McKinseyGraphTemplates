@@ -1,0 +1,12 @@
+category,value,group,provenance,unit,period,denominator,source_ref
+Retailer reputation,65,verification,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+Money-back or free returns,65,verification,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+Verified purchase reviews,59,verification,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+Clear regular-versus-sale prices,58,verification,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+High average star rating,58,customer_proof,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+Many customer reviews or ratings,57,customer_proof,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+Real customer photos or video,56,customer_proof,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+Low return-rate badge,35,verification,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+Real-time scarcity messages,8,persuasion,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+AI-generated review summaries,4,persuasion,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2
+Influencer recommendations,3,persuasion,reported,net_percentage_points,2026-09,"Respondents to factor question; 10,220 overall participants",BCG Exhibit 2

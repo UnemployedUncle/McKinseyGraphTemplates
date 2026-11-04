@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261105_bcg_black_friday_trust_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-04T22:27:48.060291+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/trust-matters-year-end-sales-events",
+  "figure_ref": "Exhibit 2",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "config.json": "25b8270b292bcbeddc7613fc7bd91736c09f49aa7c72e8c357081bcae24c2d64",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "record.json": "fc13d2fcd07547e6850be7a338015b77969407935e5ec01e6a3e55a82190816c",
+    "chart.py": "969ad9d520b4fa5b7b48eb4970dd14f4795bd67db857d9ac0386bf5b8603199f",
+    "validation.json": "870581f5c3a29fe3df2f8829bdc578670772797bb4a9a526fcb0a3ad36a9a4e4",
+    "card.md": "5408a83ba9b861f8cd56121985551049f0e1aea8f3c428f16ab8cf13577a2ee9",
+    "data.csv": "22fa24831edef60835aac9eef005e76800ff688bab3d526a5c494e22500a165d"
+  },
+  "payload_sha256": "2369fb873af2a05609c185cd14c55ef93b94c4cecb78a05044d6d5cc17395b1c"
+}

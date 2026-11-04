@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "executed_at_utc": "2026-11-04T22:27:47.234836+00:00",
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "pillow_version": "12.3.0",
+  "commands": [
+    "python /mnt/data/CGT_2026-11-05/staging/mckinsey_shared_av_2035_regional_scenarios_ex4/chart.py --data /mnt/data/CGT_2026-11-05/staging/mckinsey_shared_av_2035_regional_scenarios_ex4/data.csv --config /mnt/data/CGT_2026-11-05/staging/mckinsey_shared_av_2035_regional_scenarios_ex4/config.json --theme source --output /mnt/data/CGT_2026-11-05/artifacts/mckinsey_shared_av_2035_regional_scenarios_ex4/source.png",
+    "python /mnt/data/CGT_2026-11-05/staging/mckinsey_shared_av_2035_regional_scenarios_ex4/chart.py --data /mnt/data/CGT_2026-11-05/staging/mckinsey_shared_av_2035_regional_scenarios_ex4/data.csv --config /mnt/data/CGT_2026-11-05/staging/mckinsey_shared_av_2035_regional_scenarios_ex4/config.json --theme neutral --output /mnt/data/CGT_2026-11-05/artifacts/mckinsey_shared_av_2035_regional_scenarios_ex4/neutral.png"
+  ],
+  "renderer": "matplotlib Agg",
+  "png_dpi": 200,
+  "attempts": 1,
+  "render_success": true,
+  "semantic_checks": {
+    "required_columns": true,
+    "all_values_reported": true,
+    "nonmissing_values": true,
+    "two_themes": true,
+    "source_neutral_png_success": true,
+    "dpi_200": true,
+    "exact_8_regional_values": true,
+    "base_total_190": true,
+    "upside_total_430": true,
+    "additive_nonoverlap": true,
+    "all_values_nonnegative": true
+  },
+  "original_review": "Official article text and linked Exhibit 4 text inspected, original SVGZ visual not accessible.",
+  "fidelity_ratings": {
+    "chart_type": null,
+    "data_values_and_order": null,
+    "axes_and_scale": null,
+    "color_and_emphasis": null,
+    "labels_and_annotations": null,
+    "title_and_notes": null,
+    "legend_proportions_whitespace": null
+  },
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "human_review": "pending",
+  "source_fidelity_passed": false,
+  "diff_notes": "Original McKinsey Exhibit 4 SVGZ returned unsupported image/svg+xml on attempted open. Regional model endpoints were verified from the article, not actual source chart geometry. This is explicitly editorial stacked columns.",
+  "remaining_differences": "Original McKinsey Exhibit 4 SVGZ returned unsupported image/svg+xml on attempted open. Regional model endpoints were verified from the article, not actual source chart geometry. This is explicitly editorial stacked columns.",
+  "training_eligible": false,
+  "executed_pngs": [
+    "artifacts/mckinsey_shared_av_2035_regional_scenarios_ex4/source.png",
+    "artifacts/mckinsey_shared_av_2035_regional_scenarios_ex4/neutral.png"
+  ],
+  "notes": "Successful code execution, independent numerical checks, original visual fidelity, and owner human review are separate states."
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261105_mckinsey_shared_av_2035_regional_scenarios_ex4",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-04T22:27:48.063552+00:00",
+  "source_url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/from-science-fiction-to-reality-the-next-phase-of-shared-autonomous-mobility",
+  "figure_ref": "Exhibit 4 (reported regional scenario inputs; editorial design, not original reconstruction)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "config.json": "ea9812de62c64412ad58e6643d67c755a84890df73c68e9d31cf5d8d3de69e3f",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "record.json": "7ed7bd0534f0ab9bf8258e0e87d23bb001d589debf5a54477435ca8b82a26a39",
+    "chart.py": "4862165f6a85cb7a0e39448b2b92d3a37d197956eefb653ee9a1edbed4cd82f0",
+    "validation.json": "95fd79f4300c1e1b7b8bb1fd02f395c86f9ffba05bc3bd58e00a32106ccbc4e2",
+    "card.md": "621941cedf4424a40ba587d2120c3f69eede16b8d0f8439e2f1f110f038f095e",
+    "data.csv": "1d6d985c25a17169b54f3791171567f086a13aaab8aa7ce4fabcf6e77d2da8a7"
+  },
+  "payload_sha256": "7e53fff32a53be03ecf7df7da73cd51344391e1c0feb8ded8396d3b3465fc998"
+}

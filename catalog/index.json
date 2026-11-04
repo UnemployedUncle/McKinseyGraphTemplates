@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 35,
+    "bronze": 37,
     "silver": 0,
     "gold": 0
   },
@@ -492,6 +492,34 @@
       "source_url": "https://www.mckinsey.com/mgi/our-research/advancing-adaptation-breaking-barriers-to-a-trillion-dollar-opportunity",
       "figure_ref": "By 2050 deployment-ready climate adaptation will grow (web graphic context; editorial decomposition)",
       "key_message": "2050년 연간 기후적응 필요액 중 약 4,600억 달러가 현재의 조건 아래 집행 가능한 반면 약 6,900억 달러는 수요·자금 조달 장벽에 직면하므로, 투자기회를 평가할 때 사회적 필요와 실제 실행가능성을 구분해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261105_bcg_black_friday_trust_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-05/bcg_black_friday_trust_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "2369fb873af2a05609c185cd14c55ef93b94c4cecb78a05044d6d5cc17395b1c",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/trust-matters-year-end-sales-events",
+      "figure_ref": "Exhibit 2",
+      "key_message": "2026년 소비자 설문에서 유통사 평판·환불 보장의 신뢰 순점수는 각각 +65%p이나 인플루언서 추천은 +3%p이므로, 판촉 규모 확대보다 검증 가능한 증거를 우선 강화해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261105_mckinsey_shared_av_2035_regional_scenarios_ex4",
+      "tier": "bronze",
+      "path": "bronze/2026-11-05/mckinsey_shared_av_2035_regional_scenarios_ex4",
+      "contract": "render-v1",
+      "payload_sha256": "7e53fff32a53be03ecf7df7da73cd51344391e1c0feb8ded8396d3b3465fc998",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/from-science-fiction-to-reality-the-next-phase-of-shared-autonomous-mobility",
+      "figure_ref": "Exhibit 4 (reported regional scenario inputs; editorial design, not original reconstruction)",
+      "key_message": "2035년 공유 자율주행 교통 시장은 기본 시나리오 약 1,900억 달러에서 상방 시나리오 약 4,300억 달러로 범위가 넓어, 지역별 서비스 가동률과 확장 속도를 시나리오로 관리해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

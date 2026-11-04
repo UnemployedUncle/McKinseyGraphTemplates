@@ -1,0 +1,71 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        10.5,
+        7.5
+      ],
+      "background": "#FFFFFF",
+      "text": "#1D2737",
+      "muted": "#566172",
+      "colors": {
+        "United States": "#0C3970",
+        "Europe": "#489BCD",
+        "China": "#08A4C8",
+        "Middle East": "#8ED6E5"
+      },
+      "title_size": 15,
+      "label_size": 10,
+      "margins": {
+        "left": 0.14,
+        "right": 0.91,
+        "top": 0.77,
+        "bottom": 0.18
+      }
+    },
+    "neutral": {
+      "figsize": [
+        10.5,
+        7.5
+      ],
+      "background": "#FFFFFF",
+      "text": "#161616",
+      "muted": "#666666",
+      "colors": {
+        "United States": "#2F2F2F",
+        "Europe": "#676767",
+        "China": "#999999",
+        "Middle East": "#CCCCCC"
+      },
+      "title_size": 15,
+      "label_size": 10,
+      "margins": {
+        "left": 0.14,
+        "right": 0.91,
+        "top": 0.77,
+        "bottom": 0.18
+      }
+    }
+  },
+  "CONTEXT": {
+    "title": "The 2035 shared-AV market varies widely by adoption scenario",
+    "subtitle": "Annual shared-autonomous-vehicle market by region, USD billion (modeled 2035)",
+    "y_label": "USD billion, 2035",
+    "scenario_order": [
+      "Base",
+      "Upside"
+    ],
+    "region_order": [
+      "United States",
+      "Europe",
+      "China",
+      "Middle East"
+    ],
+    "figure_ref": "Exhibit 4 numerical subset — editorial stacked-bar design",
+    "annotations": {
+      "Base": "Lower-bound scenario",
+      "Upside": "Upper-bound scenario"
+    },
+    "footnote": "Source: McKinsey, November 4, 2026. Model scenario values, not realized spending or forecasts.\nRegional endpoints sum to $190B / $430B; source SVGZ design not visually validated."
+  }
+}

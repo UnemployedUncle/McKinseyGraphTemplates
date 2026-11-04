@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "executed_at_utc": "2026-11-04T22:27:46.950463+00:00",
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "pillow_version": "12.3.0",
+  "commands": [
+    "python /mnt/data/CGT_2026-11-05/staging/bcg_black_friday_trust_ex2/chart.py --data /mnt/data/CGT_2026-11-05/staging/bcg_black_friday_trust_ex2/data.csv --config /mnt/data/CGT_2026-11-05/staging/bcg_black_friday_trust_ex2/config.json --theme source --output /mnt/data/CGT_2026-11-05/artifacts/bcg_black_friday_trust_ex2/source.png",
+    "python /mnt/data/CGT_2026-11-05/staging/bcg_black_friday_trust_ex2/chart.py --data /mnt/data/CGT_2026-11-05/staging/bcg_black_friday_trust_ex2/data.csv --config /mnt/data/CGT_2026-11-05/staging/bcg_black_friday_trust_ex2/config.json --theme neutral --output /mnt/data/CGT_2026-11-05/artifacts/bcg_black_friday_trust_ex2/neutral.png"
+  ],
+  "renderer": "matplotlib Agg",
+  "png_dpi": 200,
+  "attempts": 1,
+  "render_success": true,
+  "semantic_checks": {
+    "required_columns": true,
+    "all_values_reported": true,
+    "nonmissing_values": true,
+    "two_themes": true,
+    "source_neutral_png_success": true,
+    "dpi_200": true,
+    "exact_11_reported": true,
+    "ranked_descending": true,
+    "net_scores_in_bounds": true,
+    "top_both_65": true,
+    "bottom_3": true
+  },
+  "original_review": "Official source figure visually opened through BCG-hosted original image link in web article; current run image compared to it.",
+  "fidelity_ratings": {
+    "chart_type": 5,
+    "data_values_and_order": 5,
+    "axes_and_scale": 5,
+    "color_and_emphasis": 4,
+    "labels_and_annotations": 5,
+    "title_and_notes": 4,
+    "legend_proportions_whitespace": 4
+  },
+  "fidelity_score": 4.57,
+  "validation_status": "verified",
+  "human_review": "pending",
+  "source_fidelity_passed": true,
+  "diff_notes": "Topological match to BCG official Exhibit 2: 11 bars, same order and values. Our title, factor short labels, palette shade and footer/legend geometry differ; fonts are open source defaults, not source assets.",
+  "remaining_differences": "Topological match to BCG official Exhibit 2: 11 bars, same order and values. Our title, factor short labels, palette shade and footer/legend geometry differ; fonts are open source defaults, not source assets.",
+  "training_eligible": false,
+  "executed_pngs": [
+    "artifacts/bcg_black_friday_trust_ex2/source.png",
+    "artifacts/bcg_black_friday_trust_ex2/neutral.png"
+  ],
+  "notes": "Successful code execution, independent numerical checks, original visual fidelity, and owner human review are separate states."
+}

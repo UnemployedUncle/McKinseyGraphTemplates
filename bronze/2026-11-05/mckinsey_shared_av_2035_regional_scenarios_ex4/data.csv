@@ -1,0 +1,9 @@
+scenario,region,value_usd_bn,provenance,value_type,unit,period,denominator,source_ref
+Base,United States,100,reported,modeled_scenario,USD_billion_2035,2035,"Regional annual shared AV market revenue, not percent",McKinsey November 4 2026 narrative for Exhibit 4
+Base,Europe,20,reported,modeled_scenario,USD_billion_2035,2035,"Regional annual shared AV market revenue, not percent",McKinsey November 4 2026 narrative for Exhibit 4
+Base,China,60,reported,modeled_scenario,USD_billion_2035,2035,"Regional annual shared AV market revenue, not percent",McKinsey November 4 2026 narrative for Exhibit 4
+Base,Middle East,10,reported,modeled_scenario,USD_billion_2035,2035,"Regional annual shared AV market revenue, not percent",McKinsey November 4 2026 narrative for Exhibit 4
+Upside,United States,190,reported,modeled_scenario,USD_billion_2035,2035,"Regional annual shared AV market revenue, not percent",McKinsey November 4 2026 narrative for Exhibit 4
+Upside,Europe,70,reported,modeled_scenario,USD_billion_2035,2035,"Regional annual shared AV market revenue, not percent",McKinsey November 4 2026 narrative for Exhibit 4
+Upside,China,150,reported,modeled_scenario,USD_billion_2035,2035,"Regional annual shared AV market revenue, not percent",McKinsey November 4 2026 narrative for Exhibit 4
+Upside,Middle East,20,reported,modeled_scenario,USD_billion_2035,2035,"Regional annual shared AV market revenue, not percent",McKinsey November 4 2026 narrative for Exhibit 4

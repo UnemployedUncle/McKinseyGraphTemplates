@@ -1,0 +1,54 @@
+{
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/trust-matters-year-end-sales-events",
+  "source_title": "For Year-End Sales Events, Trust Is the New Currency",
+  "figure_ref": "Exhibit 2",
+  "chart_key": "bcg_black_friday_trust_ex2",
+  "published_at": "2026-11-04",
+  "data_period": "September 2026 survey",
+  "business_context": "Retailers need to improve deal credibility: net trust scores separate verifiable proof from persuasive tactics.",
+  "key_message": "2026년 소비자 설문에서 유통사 평판·환불 보장의 신뢰 순점수는 각각 +65%p이나 인플루언서 추천은 +3%p이므로, 판촉 규모 확대보다 검증 가능한 증거를 우선 강화해야 한다.",
+  "chart_type": "horizontal_bar",
+  "insight_type": "ranked driver contrast",
+  "encoding": "x=net trust score (pp); y=ranked factor; teal color=verification/customer proof/persuasion; direct end labels; no numeric x ticks",
+  "data_spec": {
+    "observation_unit": "consumer-survey factor",
+    "unit": "net percentage points",
+    "denominator": "respondents to factor question (item counts not disclosed; 10,220 survey overall)",
+    "period": "September 2026",
+    "sample": "10,220 consumers in 10 countries, ages 18-75",
+    "calculation": "% share saying increases trust minus % share saying decreases trust"
+  },
+  "data_recipe": [
+    "Survey respondent-factor net impact",
+    "Compute net pp by factor and identical weight rules",
+    "Rank scores; classify factors with a transparent legend"
+  ],
+  "message_conditions": [
+    "Net trust score not a share of shoppers or actual conversion",
+    "No causal inference or per-factor confidence intervals"
+  ],
+  "design_moves": [
+    "source figure category grouping",
+    "11 descending horizontal bars",
+    "end-of-bar numeric labels"
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "diff_notes": "Topological match to BCG official Exhibit 2: 11 bars, same order and values. Our title, factor short labels, palette shade and footer/legend geometry differ; fonts are open source defaults, not source assets.",
+  "schema_version": "1.0.0",
+  "collected_at": "2026-11-05",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.bcg.com/publications/2026/trust-matters-year-end-sales-events",
+  "training_pair": {
+    "instruction": "Generate a reusable consulting figure supporting: 2026년 소비자 설문에서 유통사 평판·환불 보장의 신뢰 순점수는 각각 +65%p이나 인플루언서 추천은 +3%p이므로, 판촉 규모 확대보다 검증 가능한 증거를 우선 강화해야 한다.",
+    "response": {
+      "code_file": "chart.py",
+      "input_csv": "data.csv",
+      "config_file": "config.json",
+      "run": "python chart.py --theme source --data data.csv --config config.json --output source.png",
+      "notes": "The source article and Exhibit are accessible via official URL; this bundle stores no figure image, logo, full article, or external font. Exact values and full executable rendering code are in sibling files; usage requires no undisclosed assumptions."
+    }
+  }
+}
