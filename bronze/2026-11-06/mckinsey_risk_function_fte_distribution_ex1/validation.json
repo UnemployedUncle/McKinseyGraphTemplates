@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "validated_at_utc": "2026-11-05T22:28:39.606218+00:00",
+  "run_start_local": "2026-11-06T07:17:20+09:00",
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "execution_commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/mckinsey_risk_function_fte_distribution_ex1/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/mckinsey_risk_function_fte_distribution_ex1/neutral.png"
+  ],
+  "run_count": 1,
+  "revision_count": 0,
+  "render_passed": true,
+  "semantic_data_checks_passed": true,
+  "source_image_checked": false,
+  "rendered_images_inspected": true,
+  "outputs": [
+    {
+      "theme": "source",
+      "output": "artifacts/mckinsey_risk_function_fte_distribution_ex1/source.png",
+      "exists": true,
+      "png_size_px": [
+        2300,
+        1680
+      ],
+      "dpi": [
+        199.9996,
+        199.9996
+      ]
+    },
+    {
+      "theme": "neutral",
+      "output": "artifacts/mckinsey_risk_function_fte_distribution_ex1/neutral.png",
+      "exists": true,
+      "png_size_px": [
+        2300,
+        1680
+      ],
+      "dpi": [
+        199.9996,
+        199.9996
+      ]
+    }
+  ],
+  "fidelity_categories": null,
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "original_reproduction": false,
+  "diff_notes": "Official SVGZ for Exhibit 1 could not be displayed; original combined AI-opportunity overlay not reproduced. Partial quantitative bar reconstruction only.",
+  "human_review": "pending",
+  "training_eligible": false
+}

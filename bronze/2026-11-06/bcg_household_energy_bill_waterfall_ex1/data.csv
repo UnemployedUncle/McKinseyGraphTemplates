@@ -1,0 +1,14 @@
+order,category,kind,value,provenance,unit,period,denominator,source_ref,uncertainty
+0,Base electricity appliances / lighting,baseline_component,1100,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+0,Heating and cooling electricity,baseline_component,1400,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+0,EV charging electricity,baseline_component,1000,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+1,Solar|panel,saving,900,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+2,Solar with|battery,saving,900,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+3,Solar + battery|dynamic tariff,saving,100,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+4,Heat pump /|HVAC,saving,100,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+5,EV charging|off-peak,saving,100,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+6,Today|optimized bill,checkpoint,1400,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+7,Battery|to grid,saving,150,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+8,Heat pump /|HVAC to grid,saving,100,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+9,EV|to grid,saving,450,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published
+10,Future|optimized bill,checkpoint,700,reported,EUR_per_household_year,2026-11-05,Typical European household annual energy bill,Exhibit 1,Not published

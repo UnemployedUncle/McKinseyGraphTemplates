@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261106_bcg_household_energy_bill_waterfall_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-05T22:30:02.464602+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/energy-retailers-cut-household-bills",
+  "figure_ref": "Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "record.json": "80ad08d97638125b0db250fbb5d45b8bdc3758911f1843b7f23138297bebf753",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "6c8c0859f3e93a0cfdf3077e1abae0391d4110f878a1339928c11b652ca82855",
+    "validation.json": "39f7bf2b98d4aa2ba296f1a7d9a9cd312cbf39c8d8a75e892ed2f4efd61a9172",
+    "data.csv": "0a014f20ae76c96aea1a9096a4b0830e1538c60aa91bfb371d6b2db7d67bfdb6",
+    "chart.py": "5359a83ccc658fdf927ce0fce40c7c215de53652737df15b9ea23ab1fcc7f514",
+    "config.json": "5d28c1d31cbe98c65d5201502fa04253cbb74685e4de0e43e3b5008ad506c69c"
+  },
+  "payload_sha256": "13b534655a9cb0edf59dedaaf859d27d3720477e223725cf58e2499d521e97ed"
+}

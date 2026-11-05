@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261106_mckinsey_risk_function_fte_distribution_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-05T22:30:02.466233+00:00",
+  "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-ai-enabled-risk-function-of-the-future",
+  "figure_ref": "Exhibit 1 (13-category FTE bars; partial)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "record.json": "276baafef685d320e56fa624b7e2e6b7e4729b0a587c36de84dc02ac1008e1fd",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "2dd14edc540a97b7055640834a8f84f905f184236dff146418b1406d602082b1",
+    "validation.json": "55df736ecb3aec305f6911fa757d79d744e8a49e3d0e9333e5e55eff8e752b7f",
+    "data.csv": "b3248d20709b00a5fc43a8dde1dd01224e35598a5b1dfb38029f19282c6b044b",
+    "chart.py": "2e46809fa6716135a52fe84b4f3620405879648be51244b9aeef906e9db80bd6",
+    "config.json": "b3e9ab712cde63cc1a7370a50c49683f2c0bf83798108384e20d6de74c287bd1"
+  },
+  "payload_sha256": "d9b4a31f8a02bdfcf0441bbf3dca1848b2459c02ce3f6faa2b68a7b358d47901"
+}

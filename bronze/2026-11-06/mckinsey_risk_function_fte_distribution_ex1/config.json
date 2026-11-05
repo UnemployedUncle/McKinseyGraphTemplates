@@ -1,0 +1,34 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#202B33",
+      "subtle": "#657882",
+      "grid": "#E1E8EC",
+      "neutral_bar": "#7EB8C2",
+      "highlight": "#176781",
+      "figsize": [
+        11.5,
+        8.4
+      ]
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#263238",
+      "subtle": "#6D7C87",
+      "grid": "#E1E4E6",
+      "neutral_bar": "#A6B1B8",
+      "highlight": "#3F5C70",
+      "figsize": [
+        11.5,
+        8.4
+      ]
+    }
+  },
+  "CONTEXT": {
+    "title": "Credit and compliance dominate second-line risk capacity",
+    "subtitle": "Typical FTE distribution, large international/global banks (%)",
+    "highlight_min": 13,
+    "footnote": "McKinsey, Nov 4, 2026, Exhibit 1 (quantitative portion only). Percentages sum to 99% owing to rounding; period/sample not disclosed."
+  }
+}

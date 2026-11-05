@@ -1,0 +1,72 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#1F2929",
+      "subtle": "#5E6D6D",
+      "figsize": [
+        14,
+        7.5
+      ],
+      "baseline_colors": [
+        "#08753D",
+        "#16B565",
+        "#97E86C"
+      ],
+      "saving_colors": [
+        "#42E477",
+        "#34C661",
+        "#12B5B7",
+        "#20B1B2",
+        "#12A7B4",
+        "#0BA4B4",
+        "#20B3B3",
+        "#179EA9",
+        "#0AA7B0"
+      ],
+      "checkpoint_colors": {
+        "today": "#292A9E",
+        "future": "#5D52BF"
+      },
+      "connector": "#9EA7A7",
+      "inbar_text": "#113126"
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#233038",
+      "subtle": "#677781",
+      "figsize": [
+        14,
+        7.5
+      ],
+      "baseline_colors": [
+        "#193842",
+        "#457A83",
+        "#91B0B5"
+      ],
+      "saving_colors": [
+        "#3B8A92",
+        "#3B8A92",
+        "#3B8A92",
+        "#3B8A92",
+        "#3B8A92",
+        "#3B8A92",
+        "#3B8A92",
+        "#3B8A92",
+        "#3B8A92"
+      ],
+      "checkpoint_colors": {
+        "today": "#243B55",
+        "future": "#577187"
+      },
+      "connector": "#B6C0C4",
+      "inbar_text": "#FFFFFF"
+    }
+  },
+  "CONTEXT": {
+    "title": "Household energy management could cut annual bills by 60–80%",
+    "subtitle": "Illustrative BCG analysis • annual household energy bill (EUR)",
+    "first_label": "Unoptimized\ntotal bill",
+    "footnote": "Source: BCG, Nov 5, 2026, Exhibit 1. Scenario/estimate, not measured household savings. Self-generation capex excluded."
+  }
+}

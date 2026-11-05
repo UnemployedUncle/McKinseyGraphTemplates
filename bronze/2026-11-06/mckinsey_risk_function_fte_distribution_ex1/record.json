@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-ai-enabled-risk-function-of-the-future",
+  "canonical_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-ai-enabled-risk-function-of-the-future",
+  "article_title": "The AI-enabled risk function of the future",
+  "publication_date": "2026-11-04",
+  "collected_at_utc": "2026-11-05T22:23:58.066928+00:00",
+  "data_observation_period": "undisclosed; typical distribution as discussed in 2026",
+  "figure_ref": "Exhibit 1 (13-category FTE bars; partial)",
+  "chart_key": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-ai-enabled-risk-function-of-the-future#exhibit_1_(13-category_fte_bars;_partial)",
+  "business_context": "Bank second-line risk staffing and AI workflow opportunity selection",
+  "key_message": "Credit risk (27%), financial-crime compliance (16%) and operational risk (13%) account for 56 pp of typical second-line risk FTEs; staffing scale is not an AI benefit estimate.",
+  "chart_type": "ranked_horizontal_bar",
+  "encodings": {
+    "x": "percent of second-line risk FTEs",
+    "y": "ranked risk function",
+    "color": "emphasized top functions/neutral"
+  },
+  "data_spec": {
+    "observation_unit": "risk service in a typical large international bank",
+    "columns": [
+      "order",
+      "category",
+      "kind",
+      "value",
+      "provenance",
+      "unit",
+      "period",
+      "denominator",
+      "source_ref",
+      "uncertainty"
+    ],
+    "measure": "percent distribution of second-line risk and compliance full-time equivalents"
+  },
+  "data_recipe": [
+    "fix bank risk service perimeter",
+    "collect FTE allocation by risk service and date",
+    "reconcile FTE by exclusive category",
+    "divide by second-line FTE total",
+    "round only for presentation",
+    "check rank order and rounding remainder",
+    "separately collect automation ROI and governance"
+  ],
+  "message_conditions": [
+    "Official graphic SVGZ not accessible, so quantitative categories and values are reported from official alt-text; only partial bar panel reconstructed, fidelity null.",
+    "Rendering passed; replication self-score is not human approval."
+  ],
+  "design_moves": [
+    "action title",
+    "direct labels",
+    "ordered categorical marks",
+    "two config-driven themes",
+    "source/fidelity limitations"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Official SVGZ for Exhibit 1 could not be displayed; original combined AI-opportunity overlay not reproduced. Partial quantitative bar reconstruction only.",
+  "training_eligible": false,
+  "training_rights_confirmed": false,
+  "training_pair": {
+    "instruction": "Create a reusable ranked_horizontal_bar from the documented data.csv using only reported values, explicit categorical semantics and theme/context external configuration.",
+    "response": {
+      "execution": "python chart.py --data data.csv --config config.json --theme source --output source.png",
+      "files": [
+        "chart.py",
+        "data.csv",
+        "config.json"
+      ],
+      "data_input": "Use the included data.csv as the exact non-synthetic input.",
+      "code": "The executable code is the complete adjacent chart.py file; use the matching immutable SHA256 manifest for precise bytes."
+    }
+  },
+  "split_group": "mckinsey:2026-11-04:ai-enabled-risk-function",
+  "human_review": "pending",
+  "source_review_note": "No graphic assets or source page full text included. Study content is not licensed for model training."
+}

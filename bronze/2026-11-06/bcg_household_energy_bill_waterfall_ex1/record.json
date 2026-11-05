@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/energy-retailers-cut-household-bills",
+  "canonical_url": "https://www.bcg.com/publications/2026/energy-retailers-cut-household-bills",
+  "article_title": "Why Lower Bills for Households Are Good Business for Energy Retailers",
+  "publication_date": "2026-11-05",
+  "collected_at_utc": "2026-11-05T22:23:58.064254+00:00",
+  "data_observation_period": "undisclosed scenario input period",
+  "figure_ref": "Exhibit 1",
+  "chart_key": "https://www.bcg.com/publications/2026/energy-retailers-cut-household-bills#exhibit_1",
+  "business_context": "European retail electricity, heating and EV costs",
+  "key_message": "A modeled European household can reduce annual energy costs from EUR 3,500 to 1,400 and potentially 700 with integrated generation and flexibility; economics must account for investment costs.",
+  "chart_type": "waterfall",
+  "encodings": {
+    "x": "interventions in scenario order",
+    "y": "cumulative annual energy bill EUR",
+    "color": "baseline/savings/checkpoint"
+  },
+  "data_spec": {
+    "observation_unit": "modeled European household × saving lever",
+    "columns": [
+      "order",
+      "category",
+      "kind",
+      "value",
+      "provenance",
+      "unit",
+      "period",
+      "denominator",
+      "source_ref",
+      "uncertainty"
+    ],
+    "measure": "nominal or real basis not specified; EUR per household per year"
+  },
+  "data_recipe": [
+    "normalize annual baseline EUR",
+    "verify mutually exclusive base components sum 3500",
+    "subtract incremental savings in scenario order",
+    "validate 1400 and 700 checkpoints",
+    "calculate savings shares 60% / 80%",
+    "test capex assumptions separately"
+  ],
+  "message_conditions": [
+    "Original accessible; labels transcribed directly. Differences from original include brand font, some positioning and background/shade treatment. Self score pending after visual review.",
+    "Rendering passed; replication self-score is not human approval."
+  ],
+  "design_moves": [
+    "action title",
+    "direct labels",
+    "ordered categorical marks",
+    "two config-driven themes",
+    "source/fidelity limitations"
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.571,
+  "diff_notes": "Typography, bar proportions, label placement, palette nuance differ; official Exhibit 1 viewed, and all EUR values reconciled.",
+  "training_eligible": false,
+  "training_rights_confirmed": false,
+  "training_pair": {
+    "instruction": "Create a reusable waterfall from the documented data.csv using only reported values, explicit categorical semantics and theme/context external configuration.",
+    "response": {
+      "execution": "python chart.py --data data.csv --config config.json --theme source --output source.png",
+      "files": [
+        "chart.py",
+        "data.csv",
+        "config.json"
+      ],
+      "data_input": "Use the included data.csv as the exact non-synthetic input.",
+      "code": "The executable code is the complete adjacent chart.py file; use the matching immutable SHA256 manifest for precise bytes."
+    }
+  },
+  "split_group": "bcg:2026-11-05:energy-retailers-cut-household-bills",
+  "human_review": "pending",
+  "source_review_note": "No graphic assets or source page full text included. Study content is not licensed for model training."
+}

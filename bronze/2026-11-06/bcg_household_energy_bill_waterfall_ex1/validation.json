@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "validated_at_utc": "2026-11-05T22:28:39.605218+00:00",
+  "run_start_local": "2026-11-06T07:17:20+09:00",
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "execution_commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/bcg_household_energy_bill_waterfall_ex1/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/bcg_household_energy_bill_waterfall_ex1/neutral.png"
+  ],
+  "run_count": 1,
+  "revision_count": 1,
+  "render_passed": true,
+  "semantic_data_checks_passed": true,
+  "source_image_checked": true,
+  "rendered_images_inspected": true,
+  "outputs": [
+    {
+      "theme": "source",
+      "output": "artifacts/bcg_household_energy_bill_waterfall_ex1/source.png",
+      "exists": true,
+      "png_size_px": [
+        2800,
+        1500
+      ],
+      "dpi": [
+        199.9996,
+        199.9996
+      ]
+    },
+    {
+      "theme": "neutral",
+      "output": "artifacts/bcg_household_energy_bill_waterfall_ex1/neutral.png",
+      "exists": true,
+      "png_size_px": [
+        2800,
+        1500
+      ],
+      "dpi": [
+        199.9996,
+        199.9996
+      ]
+    }
+  ],
+  "fidelity_categories": {
+    "chart_type": 5,
+    "data_values_and_order": 5,
+    "axes": 5,
+    "colors_and_highlighting": 4,
+    "labels_and_annotations": 4,
+    "legend_and_proportions": 5,
+    "margins_title": 4
+  },
+  "fidelity_score": 4.571,
+  "validation_status": "verified",
+  "original_reproduction": true,
+  "diff_notes": "Typography, bar proportions, label placement, palette nuance differ; official Exhibit 1 viewed, and all EUR values reconciled.",
+  "human_review": "pending",
+  "training_eligible": false
+}
