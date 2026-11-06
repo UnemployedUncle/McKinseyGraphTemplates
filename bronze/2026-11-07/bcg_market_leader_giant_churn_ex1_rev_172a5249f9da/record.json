@@ -1,0 +1,73 @@
+{
+  "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+  "source_title": "Corporate Giants Are Staying on Top Longer. Should They Feel Safe?",
+  "publication_date": "2026-11-06",
+  "collected_at_utc": "2026-11-06T22:21:43.258144+00:00",
+  "figure_ref": "Exhibit 1",
+  "chart_key": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer#exhibit-1",
+  "business_context": "Sector valuation leadership persistence, 1990–2025",
+  "key_message": "Median valuation-leader churn across industries declined from 24% to 13%; incumbents should test new-value capture instead of assuming staying power equals advantage.",
+  "chart_type": "two_period_churn_scatter",
+  "reproduction_type": "partial_digitized_reconstruction",
+  "encoding": {
+    "x": "historical churn (%)",
+    "y": "recent churn (%)",
+    "point": "industry",
+    "reference": "y=x",
+    "color": "parity-zone"
+  },
+  "data_spec": {
+    "observation_unit": "industry",
+    "x_period": "1990–2004",
+    "y_period": "2005–2025",
+    "denominator": "combined market cap of current top 10",
+    "method": "percentage represented by new entrants in five years",
+    "source": "S&P Capital IQ / BCG; graphic digitization",
+    "unit": "%",
+    "provenance": "digitized_estimate",
+    "digitization_error_bound_pp": 2.0,
+    "published_cross_industry_median_pct": {
+      "old": 24,
+      "recent": 13
+    }
+  },
+  "data_recipe": [
+    "collect top-ten firms with five-year lag",
+    "compute value-weighted entrant share",
+    "take period medians per sector",
+    "plot paired sector metrics and equality line",
+    "for labels and replotting, preserve actual x=100 for Digital platforms and display after-50 axis compression only as a graphical transform, never modify reported/digitized data to 60"
+  ],
+  "message_conditions": [
+    "sector comparability",
+    "US listed population",
+    "digitized sector values approximate",
+    "lock-in not the same as value creation"
+  ],
+  "design_moves": [
+    "scatter with equal-value diagonal",
+    "green below parity",
+    "labels in CSV offsets",
+    "stable numeric axes"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": [
+    "Digitized point positions from low-resolution image, not exact raw data",
+    "Company wordmark and proprietary typography omitted",
+    "Some annotations differ from original; self-fidelity unscored",
+    "Revision fixes Digital platforms x point: BCG explicitly reports nearly 100%, not 60%; the chart now has a documented compressed horizontal scale after 50%. The earlier Bronze version must not be used for fidelity or numeric analysis."
+  ],
+  "training_pair": {
+    "instruction": "Given an input CSV with fields label, x, y, label_dx, label_dy, provenance, unit, source_note, reconstruct a two_period_churn_scatter with two configurable themes. Explain provenance and caveats.",
+    "response": "Use the exact corrected chart.py, data.csv and config.json from this versioned bundle. Run `python chart.py --theme source --data data.csv --config config.json --output source.png` (and theme neutral). Input CSV has Digital platforms x=100 as approximation of official nearly 100%; config stores a display-only 50-to-100 compressed axis. Full source:\n#!/usr/bin/env python3\n\"\"\"Reusable, attribution-aware consulting charts: render(data, theme, context) -> fig.\"\"\"\nimport argparse, csv, json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import MultipleLocator, FuncFormatter, FixedLocator, FixedFormatter\n\ndef render(data, theme, context):\n    colors=theme['colors']\n    fig, ax=plt.subplots(figsize=theme.get('figsize',[11,6.2]))\n    fig.patch.set_facecolor(colors['background']);ax.set_facecolor(colors['background'])\n    fig.subplots_adjust(**theme.get('margins',dict(left=.25,right=.94,bottom=.16,top=.80)))\n    for spine in ax.spines.values():spine.set_visible(False)\n    ax.tick_params(length=0,labelsize=theme.get('tick_fontsize',9),colors=colors['text'],pad=7)\n    ax.set_axisbelow(True)\n    kind=context['chart_type']\n    if kind=='scatter':\n        ax.set_xlim(*context.get('xlim',[0,60]));ax.set_ylim(*context.get('ylim',[0,30]))\n        ax.set_aspect('auto')\n        xb=context.get('x_axis_compression')\n        def tx(x):\n            if not xb:return x\n            return x if x<=xb['start'] else xb['start']+(x-xb['start'])*xb['factor']\n        if xb:\n            ticks=xb.get('tick_values',[0,10,20,30,40,100])\n            ax.xaxis.set_major_locator(FixedLocator([tx(x) for x in ticks]))\n            ax.xaxis.set_major_formatter(FixedFormatter([str(x) for x in ticks]))\n        else:ax.xaxis.set_major_locator(MultipleLocator(context.get('x_step',10)))\n        ax.yaxis.set_major_locator(MultipleLocator(context.get('y_step',5)))\n        ax.grid(axis='both',color=colors['grid'],lw=.7)\n        xx=[context['xlim'][0],context['xlim'][1]]\n        ax.fill_between(xx,[0,0],[min(context['ylim'][1],v) for v in xx],color=colors['increase_zone'],alpha=.22,zorder=0)\n        ax.fill_between(xx,[min(context['ylim'][1],v) for v in xx],[context['ylim'][1]]*2,color=colors['decrease_zone'],alpha=.16,zorder=0)\n        ax.plot(xx,xx,ls='--',lw=1.3,color=colors['diagonal'],zorder=1)\n        for row in data:\n            x=tx(float(row['x']));y=float(row['y'])\n            ax.scatter(x,y,s=theme.get('marker_size',45),color=colors['dot'],edgecolor='white',linewidth=.65,zorder=3)\n            ax.annotate(row['label'],(x,y),xytext=(float(row.get('label_dx') or 5),float(row.get('label_dy') or 5)),\n                textcoords='offset points',ha='left',va='bottom',fontsize=theme.get('label_fontsize',7.0),color=colors['text'])\n        ax.set_xlabel(context['x_label'],fontsize=11,color=colors['text'],labelpad=15)\n        ax.set_ylabel(context['y_label'],fontsize=11,color=colors['text'],labelpad=15)\n        ax.text(.04,.94,context['upper_zone_label'],transform=ax.transAxes,color=colors['text'],fontsize=9,va='top')\n        ax.text(.96,.08,context['lower_zone_label'],transform=ax.transAxes,color=colors['text'],fontsize=9,ha='right')\n    elif kind=='barh':\n        rows=sorted(data,key=lambda x:float(x['value']))\n        names=[r['label'] for r in rows];values=[float(r['value']) for r in rows]\n        highlights=set(context.get('highlights',[]))\n        bars=ax.barh(range(len(rows)),values,color=[colors['highlight'] if r['label'] in highlights else colors['bar'] for r in rows],height=.6)\n        ax.set_yticks(range(len(rows)),names)\n        ax.set_xlim(0,context.get('x_max',max(values)*1.3))\n        ax.xaxis.set_major_locator(MultipleLocator(context.get('x_step',2)))\n        ax.xaxis.set_major_formatter(FuncFormatter(lambda x,pos:f'{x:.0f}%'))\n        ax.grid(axis='x',color=colors['grid'],lw=.8)\n        for rect,v in zip(bars,values):\n            ax.text(rect.get_width()+.22,rect.get_y()+rect.get_height()/2,f'{v:g}%',ha='left',va='center',fontsize=10,fontweight='bold',color=colors['text'])\n        ax.set_xlabel(context['x_label'],fontsize=11,color=colors['text'],labelpad=12)\n    else:raise ValueError(f'Unknown chart_type {kind}')\n    fig.text(theme.get('title_x',.07),.955,context['title'],ha='left',va='top',fontsize=theme.get('title_size',15),fontweight='bold',color=colors['text'])\n    fig.text(theme.get('title_x',.07),.905,context['subtitle'],ha='left',va='top',fontsize=theme.get('subtitle_size',9),color=colors['muted'])\n    fig.text(theme.get('title_x',.07),.045,context['footnote'],ha='left',va='bottom',fontsize=theme.get('footnote_size',8),color=colors['muted'])\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser()\n    p.add_argument('--data',default='data.csv');p.add_argument('--config',default='config.json')\n    p.add_argument('--theme',choices=['source','neutral'],default='source');p.add_argument('--output',required=True)\n    a=p.parse_args()\n    with open(a.data,encoding='utf-8',newline='') as f: data=list(csv.DictReader(f))\n    cfg=json.loads(Path(a.config).read_text(encoding='utf-8'))\n    fig=render(data,cfg['THEME'][a.theme],cfg['CONTEXT'])\n    Path(a.output).parent.mkdir(parents=True,exist_ok=True)\n    fig.savefig(a.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\nif __name__=='__main__':main()\n"
+  },
+  "split_group": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+  "training_eligible": false,
+  "visual_check": {
+    "original_chart_opened": true,
+    "original_render_direct_visual_check": true,
+    "metric_verified": false,
+    "reason": "Original BCG chart image opened; exact underlying sector values unavailable. Digitized screenshot with ±2 pp reading tolerance."
+  }
+}
