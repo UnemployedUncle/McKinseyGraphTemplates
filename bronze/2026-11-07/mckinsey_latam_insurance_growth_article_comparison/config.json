@@ -1,0 +1,58 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        10.5,
+        6.2
+      ],
+      "margins": {
+        "left": 0.31,
+        "right": 0.91,
+        "bottom": 0.19,
+        "top": 0.78
+      },
+      "title_size": 15,
+      "colors": {
+        "background": "#FFFFFF",
+        "bar": "#6D92AD",
+        "highlight": "#073B70",
+        "text": "#102C3B",
+        "muted": "#566F7D",
+        "grid": "#E7EFF3"
+      }
+    },
+    "neutral": {
+      "figsize": [
+        10.5,
+        6.2
+      ],
+      "margins": {
+        "left": 0.31,
+        "right": 0.91,
+        "bottom": 0.19,
+        "top": 0.78
+      },
+      "title_size": 15,
+      "colors": {
+        "background": "#FAFBFC",
+        "bar": "#7E939B",
+        "highlight": "#264653",
+        "text": "#253943",
+        "muted": "#687A81",
+        "grid": "#E4E9EB"
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "barh",
+    "title": "Insurance premiums kept growing in selected LATAM markets",
+    "subtitle": "Annual premium growth | 2024–2025, fixed exchange rates",
+    "x_label": "Growth in premiums (%)",
+    "highlights": [
+      "Latin America (aggregate)"
+    ],
+    "x_max": 15,
+    "x_step": 3,
+    "footnote": "Source: McKinsey, Nov. 5, 2026. National regulators / Global Insurance Pools. Editorial subset of text, not Exhibit 1 reproduction."
+  }
+}
