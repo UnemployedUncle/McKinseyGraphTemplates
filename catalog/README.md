@@ -43,5 +43,7 @@
 | bronze | [20261105_mckinsey_shared_av_2035_regional_scenarios_ex4](../bronze/2026-11-05/mckinsey_shared_av_2035_regional_scenarios_ex4) | pending | unverified |
 | bronze | [20261106_bcg_household_energy_bill_waterfall_ex1](../bronze/2026-11-06/bcg_household_energy_bill_waterfall_ex1) | pending | verified |
 | bronze | [20261106_mckinsey_risk_function_fte_distribution_ex1](../bronze/2026-11-06/mckinsey_risk_function_fte_distribution_ex1) | pending | unverified |
+| bronze | [20261107_bcg_market_leader_giant_churn_ex1](../bronze/2026-11-07/bcg_market_leader_giant_churn_ex1) | pending | unverified |
+| bronze | [20261107_mckinsey_latam_insurance_growth_article_comparison](../bronze/2026-11-07/mckinsey_latam_insurance_growth_article_comparison) | pending | unverified |
 
 검수할 정확한 payload_sha256은 각 manifest.json과 index.json에서 확인합니다.
