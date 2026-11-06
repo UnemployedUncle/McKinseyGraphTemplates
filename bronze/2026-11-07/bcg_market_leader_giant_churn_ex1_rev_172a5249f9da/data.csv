@@ -1,0 +1,16 @@
+label,x,y,label_dx,label_dy,provenance,unit,source_note
+Consumer staples,5.6,10.0,6,-3,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Communications infra.,7.0,6.0,6,-1,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Energy,10.5,8.0,5,5,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Retail,12.0,3.5,5,-1,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+IT,16.5,8.0,5,-2,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Auto,13.3,11.5,5,5,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Health care,14.8,13.0,5,1,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Industrials,24.6,16.0,5,1,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Utilities,30.5,15.0,5,4,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Financials,30.1,11.0,5,-7,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Consumer discretionary,34.0,16.1,5,8,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Materials,44.0,25.5,6,3,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Real estate,46.0,22.8,6,-1,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Media and entertainment,48.2,16.0,6,-5,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 screenshot; approx ±2 pp per axis
+Digital platforms,100.0,5.2,-75,6,digitized_estimate,percent_giant_churn,2026-11-06 Exhibit 1 axis reads about 100%; article explicitly says nearly 100% (approx ±2 pp). Axis is visually compressed above 50%.
