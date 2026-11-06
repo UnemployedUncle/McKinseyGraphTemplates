@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261107_mckinsey_latam_insurance_growth_article_comparison",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-06T22:21:55.285746+00:00",
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/how-ai-can-help-unlock-insurance-growth-in-latin-america",
+  "figure_ref": "Article text: premium growth by geography (adjacent to Exhibit 1)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "ac7e7cf84ac728ffff25027f4d5953aa6ac152f063a5361709f590b81abe7241",
+    "chart.py": "22683d2bac6f2d55fb15fb6c7942b374c8b165304424f32a253138aba35aee1b",
+    "config.json": "643dcffdd89a4afb32ea01de727bb47bbea237e9e4f54243d54423cb913497d9",
+    "data.csv": "1af02a064899ef4d3e429b9264333e803dd85f44816cc440b2b0e0faa6caa5d5",
+    "record.json": "e268f269164e3947575a9126fda5271b30ecfec6814e6b88377a766f8e8c918a",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "validation.json": "a0cf61fce4e317ff63ad71d9b7bc725623db729619adaa0fa38e83614305f001"
+  },
+  "payload_sha256": "e12b2949bb72ad8707a93cccdb4453eabb1b635c50c3fcf92b8e41864b5172b1"
+}
