@@ -1,0 +1,69 @@
+{
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/how-ai-can-help-unlock-insurance-growth-in-latin-america",
+  "source_title": "How AI can help unlock insurance growth in Latin America",
+  "publication_date": "2026-11-05",
+  "collected_at_utc": "2026-11-06T22:21:43.260164+00:00",
+  "figure_ref": "Article text: premium growth by geography (adjacent to Exhibit 1)",
+  "chart_key": "https://www.mckinsey.com/industries/financial-services/our-insights/how-ai-can-help-unlock-insurance-growth-in-latin-america#article-text:-premium-growth-by-geography-(adjacent-to-exhibit-1)",
+  "business_context": "Latin America 2025 insurance geography growth, strategic market prioritization",
+  "key_message": "Regional premiums grew only about 4% in 2025 while Colombia, Mexico, and Chile grew 9%, 11%, and 12% respectively; disaggregate regional averages before market prioritization.",
+  "chart_type": "ranked_horizontal_bar_editorial",
+  "reproduction_type": "editorial_from_article_numbers",
+  "encoding": {
+    "x": "annual premiums growth %",
+    "y": "country/region",
+    "color": "aggregate highlight",
+    "sort": "ascending for top-down descending"
+  },
+  "data_spec": {
+    "observation_unit": "geography-year",
+    "period": "2024–2025",
+    "unit": "% YOY",
+    "denominator": "premium base within each geography",
+    "fx_basis": "fixed exchange rates",
+    "price_basis": "inflation adjustment not disclosed",
+    "data_source": "McKinsey Global Insurance Pools and national insurance regulators",
+    "provenance": "reported"
+  },
+  "data_recipe": [
+    "collect premiums by country in constant FX",
+    "calculate 2024-25 growth by jurisdiction",
+    "aggregate regions using premiums not naive means",
+    "compare markets on a common percentage axis"
+  ],
+  "message_conditions": [
+    "matched premium scope",
+    "constant FX not equivalent to real inflation adjustment",
+    "no implied causality with AI adoption",
+    "region aggregate is weighted from base premiums"
+  ],
+  "design_moves": [
+    "descending horizontal bars",
+    "separate aggregate highlight",
+    "common zero baseline",
+    "direct labels"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": [
+    "Original Exhibit 1 is a multi-metric chart; this reuses separately published text figures and is explicitly an editorial redraw"
+  ],
+  "training_pair": {
+    "instruction": "Given an input CSV with fields label, value, provenance, period, metric, unit, denominator, coverage, reconstruct a ranked_horizontal_bar_editorial with two configurable themes. Explain provenance and caveats.",
+    "response": {
+      "code_path": "chart.py",
+      "data_path": "data.csv",
+      "config_path": "config.json",
+      "run_command": "python chart.py --data data.csv --config config.json --theme source --output output.png",
+      "code": "#!/usr/bin/env python3\n\"\"\"Reusable, attribution-aware consulting charts: render(data, theme, context) -> fig.\"\"\"\nimport argparse, csv, json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import MultipleLocator, FuncFormatter\n\ndef render(data, theme, context):\n    colors=theme['colors']\n    fig, ax=plt.subplots(figsize=theme.get('figsize',[11,6.2]))\n    fig.patch.set_facecolor(colors['background']);ax.set_facecolor(colors['background'])\n    fig.subplots_adjust(**theme.get('margins',dict(left=.25,right=.94,bottom=.16,top=.80)))\n    for spine in ax.spines.values():spine.set_visible(False)\n    ax.tick_params(length=0,labelsize=theme.get('tick_fontsize',9),colors=colors['text'],pad=7)\n    ax.set_axisbelow(True)\n    kind=context['chart_type']\n    if kind=='scatter':\n        ax.set_xlim(*context.get('xlim',[0,60]));ax.set_ylim(*context.get('ylim',[0,30]))\n        ax.set_aspect('auto');ax.xaxis.set_major_locator(MultipleLocator(context.get('x_step',10)))\n        ax.yaxis.set_major_locator(MultipleLocator(context.get('y_step',5)))\n        ax.grid(axis='both',color=colors['grid'],lw=.7)\n        xx=[context['xlim'][0],context['xlim'][1]]\n        ax.fill_between(xx,[0,0],[min(context['ylim'][1],v) for v in xx],color=colors['increase_zone'],alpha=.22,zorder=0)\n        ax.fill_between(xx,[min(context['ylim'][1],v) for v in xx],[context['ylim'][1]]*2,color=colors['decrease_zone'],alpha=.16,zorder=0)\n        ax.plot(xx,xx,ls='--',lw=1.3,color=colors['diagonal'],zorder=1)\n        for row in data:\n            x=float(row['x']);y=float(row['y'])\n            ax.scatter(x,y,s=theme.get('marker_size',45),color=colors['dot'],edgecolor='white',linewidth=.65,zorder=3)\n            ax.annotate(row['label'],(x,y),xytext=(float(row.get('label_dx') or 5),float(row.get('label_dy') or 5)),\n                textcoords='offset points',ha='left',va='bottom',fontsize=theme.get('label_fontsize',7.0),color=colors['text'])\n        ax.set_xlabel(context['x_label'],fontsize=11,color=colors['text'],labelpad=15)\n        ax.set_ylabel(context['y_label'],fontsize=11,color=colors['text'],labelpad=15)\n        ax.text(.04,.94,context['upper_zone_label'],transform=ax.transAxes,color=colors['text'],fontsize=9,va='top')\n        ax.text(.96,.08,context['lower_zone_label'],transform=ax.transAxes,color=colors['text'],fontsize=9,ha='right')\n    elif kind=='barh':\n        rows=sorted(data,key=lambda x:float(x['value']))\n        names=[r['label'] for r in rows];values=[float(r['value']) for r in rows]\n        highlights=set(context.get('highlights',[]))\n        bars=ax.barh(range(len(rows)),values,color=[colors['highlight'] if r['label'] in highlights else colors['bar'] for r in rows],height=.6)\n        ax.set_yticks(range(len(rows)),names)\n        ax.set_xlim(0,context.get('x_max',max(values)*1.3))\n        ax.xaxis.set_major_locator(MultipleLocator(context.get('x_step',2)))\n        ax.xaxis.set_major_formatter(FuncFormatter(lambda x,pos:f'{x:.0f}%'))\n        ax.grid(axis='x',color=colors['grid'],lw=.8)\n        for rect,v in zip(bars,values):\n            ax.text(rect.get_width()+.22,rect.get_y()+rect.get_height()/2,f'{v:g}%',ha='left',va='center',fontsize=10,fontweight='bold',color=colors['text'])\n        ax.set_xlabel(context['x_label'],fontsize=11,color=colors['text'],labelpad=12)\n    else:raise ValueError(f'Unknown chart_type {kind}')\n    fig.text(theme.get('title_x',.07),.955,context['title'],ha='left',va='top',fontsize=theme.get('title_size',15),fontweight='bold',color=colors['text'])\n    fig.text(theme.get('title_x',.07),.905,context['subtitle'],ha='left',va='top',fontsize=theme.get('subtitle_size',9),color=colors['muted'])\n    fig.text(theme.get('title_x',.07),.045,context['footnote'],ha='left',va='bottom',fontsize=theme.get('footnote_size',8),color=colors['muted'])\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser()\n    p.add_argument('--data',default='data.csv');p.add_argument('--config',default='config.json')\n    p.add_argument('--theme',choices=['source','neutral'],default='source');p.add_argument('--output',required=True)\n    a=p.parse_args()\n    with open(a.data,encoding='utf-8',newline='') as f: data=list(csv.DictReader(f))\n    cfg=json.loads(Path(a.config).read_text(encoding='utf-8'))\n    fig=render(data,cfg['THEME'][a.theme],cfg['CONTEXT'])\n    Path(a.output).parent.mkdir(parents=True,exist_ok=True)\n    fig.savefig(a.output,dpi=200,facecolor=fig.get_facecolor())\n    plt.close(fig)\nif __name__=='__main__':main()\n"
+    }
+  },
+  "split_group": "https://www.mckinsey.com/industries/financial-services/our-insights/how-ai-can-help-unlock-insurance-growth-in-latin-america",
+  "training_eligible": false,
+  "visual_check": {
+    "original_chart_opened": false,
+    "original_render_direct_visual_check": false,
+    "metric_verified": true,
+    "reason": "Published article numbers verified; this is an editorial subset, not a reproduction of Exhibit 1."
+  }
+}
