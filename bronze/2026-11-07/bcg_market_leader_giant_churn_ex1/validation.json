@@ -1,0 +1,40 @@
+{
+  "validation_status": "unverified",
+  "source_data_check": "digitized_approximate",
+  "render_status": "passed",
+  "original_comparison_passed": false,
+  "fidelity_score": null,
+  "human_review": "pending",
+  "execution": [
+    {
+      "command": "python chart.py --theme source --data data.csv --config config.json --output ../../../../artifacts/bcg_market_leader_giant_churn_ex1/source.png",
+      "returncode": 0,
+      "stderr": "",
+      "output": "artifacts/bcg_market_leader_giant_churn_ex1/source.png"
+    },
+    {
+      "command": "python chart.py --theme neutral --data data.csv --config config.json --output ../../../../artifacts/bcg_market_leader_giant_churn_ex1/neutral.png",
+      "returncode": 0,
+      "stderr": "",
+      "output": "artifacts/bcg_market_leader_giant_churn_ex1/neutral.png"
+    }
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "render_iterations": 1,
+  "semantic_checks": {
+    "row_count": 15,
+    "no_duplicate_labels": true,
+    "valid_provenance": true,
+    "values_in_range": true,
+    "period_units_denominator_documented": true,
+    "no_synthetic_source_mixing": true
+  },
+  "seven_dimension_scores": null,
+  "remaining_differences": "Original BCG graphic plotted approximate per-industry coordinates; full figure fidelity remains unverified.",
+  "source_article_verified": true,
+  "original_image_opened": true,
+  "source_page_publication_date": "2026-11-06",
+  "data_observation_period": "1990–2025 sampled at five-year intervals",
+  "command_redaction_note": "Published commands are relocatable equivalents of executed commands; temporary filesystem paths and interpreter installation path are omitted. Original exit codes and Python/matplotlib versions are preserved."
+}
