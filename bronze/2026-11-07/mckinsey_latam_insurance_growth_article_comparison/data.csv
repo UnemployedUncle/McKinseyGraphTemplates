@@ -1,0 +1,5 @@
+label,value,provenance,period,metric,unit,denominator,coverage
+Latin America (aggregate),4,reported,2024-2025,year_on_year_premium_growth,percent,prior_year_geography_premiums_fixed_fx,region
+Colombia,9,reported,2024-2025,year_on_year_premium_growth,percent,prior_year_geography_premiums_fixed_fx,country
+Mexico,11,reported,2024-2025,year_on_year_premium_growth,percent,prior_year_geography_premiums_fixed_fx,country
+Chile,12,reported,2024-2025,year_on_year_premium_growth,percent,prior_year_geography_premiums_fixed_fx,country
