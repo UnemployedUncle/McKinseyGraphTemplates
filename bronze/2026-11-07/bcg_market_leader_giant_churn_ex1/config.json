@@ -1,0 +1,74 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        12,
+        7
+      ],
+      "margins": {
+        "left": 0.13,
+        "right": 0.94,
+        "bottom": 0.16,
+        "top": 0.82
+      },
+      "marker_size": 38,
+      "label_fontsize": 7.6,
+      "title_size": 16,
+      "colors": {
+        "background": "#FFFFFF",
+        "dot": "#27A765",
+        "increase_zone": "#58C999",
+        "decrease_zone": "#F2EFAF",
+        "diagonal": "#969D98",
+        "text": "#1A2420",
+        "muted": "#676F70",
+        "grid": "#E9EEEA"
+      }
+    },
+    "neutral": {
+      "figsize": [
+        12,
+        7
+      ],
+      "margins": {
+        "left": 0.13,
+        "right": 0.94,
+        "bottom": 0.16,
+        "top": 0.82
+      },
+      "marker_size": 38,
+      "label_fontsize": 7.6,
+      "title_size": 16,
+      "colors": {
+        "background": "#FAFAFA",
+        "dot": "#263D4E",
+        "increase_zone": "#B6C8D2",
+        "decrease_zone": "#E8ECEE",
+        "diagonal": "#A9B3B8",
+        "text": "#18262D",
+        "muted": "#64717A",
+        "grid": "#E2E7E9"
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "scatter",
+    "title": "Market leaders are staying on top longer",
+    "subtitle": "Median giant churn by industry | previous period vs. latest period",
+    "x_label": "Median giant churn, 1990–2004 (%)",
+    "y_label": "Median giant churn, 2005–2025 (%)",
+    "xlim": [
+      0,
+      62
+    ],
+    "ylim": [
+      0,
+      30
+    ],
+    "x_step": 10,
+    "y_step": 5,
+    "upper_zone_label": "Less leadership lock-in",
+    "lower_zone_label": "More leadership lock-in",
+    "footnote": "Source: BCG / S&P Capital IQ. Coordinates digitized from Exhibit 1 (approx. ±2 pp). Not official microdata."
+  }
+}
