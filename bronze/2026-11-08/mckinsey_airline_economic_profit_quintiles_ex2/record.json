@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/industries/travel/our-insights/could-aviation-at-last-be-close-to-earning-its-wings",
+  "source_title": "Could aviation at last be close to earning its wings?",
+  "published_at": "2026-11-06",
+  "collected_at": "2026-11-08",
+  "underlying_data_period": "2025",
+  "figure_ref": "Exhibit 2 / published narrative figures",
+  "chart_key": "mckinsey_aviation_economic_profit_power_curve_2025_cohort_summary",
+  "split_group": "mckinsey_aviation_value_chain_2026_11_06",
+  "business_context": "Which airline performance cohorts create or destroy economic profit?",
+  "key_message": "Among 97 airlines in 2025, the top 20 created +$14bn, the middle 57 lost $2.3bn, and the bottom 20 lost $22.9bn; concentration of losses matters more than industry-average direction.",
+  "insight_type": "distribution_outliers",
+  "chart_type": "diverging_bar_editorial",
+  "encoding": {
+    "x": "economic_profit_usd_billion",
+    "y": "group",
+    "color": "sign of value creation",
+    "label": "economic profit and airline count"
+  },
+  "data_spec": {
+    "unit": "USD billions per cohort",
+    "n": 97,
+    "period": "2025",
+    "provenance": "reported",
+    "benchmark_industry_total_usd_billion": -12.8,
+    "group_total_usd_billion": -11.2,
+    "difference_usd_billion": 1.6,
+    "difference_explanation": "not disclosed; different scope possible, not assumed"
+  },
+  "data_recipe": [
+    "calculate per-company economic profit (ROIC minus WACC times invested capital)",
+    "rank airlines into performance cohorts",
+    "sum and count within cohort",
+    "separately verify coverage of industry-level aggregate",
+    "render left negative, right positive bars"
+  ],
+  "message_conditions": [
+    "consistent measurement year and USD units",
+    "cohort total not mean per airline",
+    "original power curve not reproduced"
+  ],
+  "design_moves": [
+    "signed zero baseline",
+    "divergent polarity color",
+    "label group sizes",
+    "explicit currency unit",
+    "source reconciliation footnote"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original Exhibit 2 SVGZ image inaccessible. Chart is editorial cohort-summary bars rather than original power curve. Source group amounts do not reconcile with article industry total.",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Use reported airline cohort totals to construct an editable diverging bar chart of economic-profit asymmetry.",
+    "response": "Use bundled chart.py render(data,theme,context)->fig and data.csv (top,+14.0,20; middle,-2.3,57; bottom,-22.9,20; year 2025; USD billions). config.json THEME.source/neutral, CONTEXT labels. Run python chart.py --data data.csv --config config.json --theme source --output source.png. Do not present as McKinsey source power curve; group sum -11.2 != published industry -12.8."
+  }
+}

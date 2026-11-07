@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 42,
+    "bronze": 44,
     "silver": 0,
     "gold": 0
   },
@@ -590,6 +590,34 @@
       "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/how-ai-can-help-unlock-insurance-growth-in-latin-america",
       "figure_ref": "Article text: premium growth by geography (adjacent to Exhibit 1)",
       "key_message": "Regional premiums grew only about 4% in 2025 while Colombia, Mexico, and Chile grew 9%, 11%, and 12% respectively; disaggregate regional averages before market prioritization.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261108_bcg_market_leader_value_capture_tenure_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "981cc88637092b3f2288d8de28b90a3e9e9bd800fecfe87a732ea466fe13e5d7",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+      "figure_ref": "Exhibit 2",
+      "key_message": "Incumbent longevity does not guarantee value creation: compare top-five leadership tenure and share of new industry value captured together.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261108_mckinsey_airline_economic_profit_quintiles_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-08/mckinsey_airline_economic_profit_quintiles_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "310c3b80108d1a85df7f740e939d8bfa7b3ebd324c4db206d2faac4fb17e5550",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/travel/our-insights/could-aviation-at-last-be-close-to-earning-its-wings",
+      "figure_ref": "Exhibit 2 / published narrative figures",
+      "key_message": "Among 97 airlines in 2025, the top 20 created +$14bn, the middle 57 lost $2.3bn, and the bottom 20 lost $22.9bn; concentration of losses matters more than industry-average direction.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

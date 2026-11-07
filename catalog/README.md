@@ -46,5 +46,7 @@
 | bronze | [20261107_bcg_market_leader_giant_churn_ex1](../bronze/2026-11-07/bcg_market_leader_giant_churn_ex1) | pending | unverified |
 | bronze | [20261107_bcg_market_leader_giant_churn_ex1_rev_172a5249f9da](../bronze/2026-11-07/bcg_market_leader_giant_churn_ex1_rev_172a5249f9da) | pending | unverified |
 | bronze | [20261107_mckinsey_latam_insurance_growth_article_comparison](../bronze/2026-11-07/mckinsey_latam_insurance_growth_article_comparison) | pending | unverified |
+| bronze | [20261108_bcg_market_leader_value_capture_tenure_ex2](../bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2) | pending | unverified |
+| bronze | [20261108_mckinsey_airline_economic_profit_quintiles_ex2](../bronze/2026-11-08/mckinsey_airline_economic_profit_quintiles_ex2) | pending | unverified |
 
 검수할 정확한 payload_sha256은 각 manifest.json과 index.json에서 확인합니다.

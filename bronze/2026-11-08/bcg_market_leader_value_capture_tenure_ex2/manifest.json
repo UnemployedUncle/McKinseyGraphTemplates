@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261108_bcg_market_leader_value_capture_tenure_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-07T18:28:52.952814+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+  "figure_ref": "Exhibit 2",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "6c905544629e66bdd3878765057177d63c70d6de3d5c5cd4734840016754d764",
+    "chart.py": "6c60f6a791b6d71ef06aff590a23370683baa00fb84f0178e31de31c4339a626",
+    "config.json": "7226748beed4345fb71e4e5052060bdbd94a11d8504139660e08c3b95cbf790c",
+    "data.csv": "ee4b2639cc1dda1daf693f577c686712956e40b5052841e2c845db2411deea00",
+    "record.json": "df30e593941187f8d82298946e3eaa366e3f991bef0c58bb30bd7feddadc9b8f",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "validation.json": "e9b6438276ff5bc434235a565415f1060454d10b5959daac4643a49900bb2a85"
+  },
+  "payload_sha256": "981cc88637092b3f2288d8de28b90a3e9e9bd800fecfe87a732ea466fe13e5d7"
+}

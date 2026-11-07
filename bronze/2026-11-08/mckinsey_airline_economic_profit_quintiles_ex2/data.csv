@@ -1,0 +1,4 @@
+group,economic_profit_usd_billion,airline_count,provenance,unit,year,denominator,source_ref
+Top quintile,14.0,20,reported,USD billion,2025,97 sampled airlines; cohort total economic profit,Exhibit 2 / article text
+Middle three quintiles,-2.3,57,reported,USD billion,2025,97 sampled airlines; cohort total economic profit,Exhibit 2 / article text
+Bottom quintile,-22.9,20,reported,USD billion,2025,97 sampled airlines; cohort total economic profit,Exhibit 2 / article text

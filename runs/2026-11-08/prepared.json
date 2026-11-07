@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "run_date": "2026-11-08",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "scheduled_time_local": "03:15",
+  "actual_started_local": "2026-11-08T03:19:10+09:00",
+  "prepared_at_local": "2026-11-08T03:31:18+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "target_count": 3,
+  "produced_topics": 2,
+  "produced_bundles": 2,
+  "bronze_counts_before": 42,
+  "bronze_counts_after_commit_expected": 44,
+  "silver_counts_before": 0,
+  "gold_counts_before": 0,
+  "historical_original_verified_before": 12,
+  "new_original_verified": 0,
+  "source_image_checks": {
+    "bcg": "original figure opened; values digitized estimates",
+    "mckinsey": "official article verified; SVGZ original not visually accessible"
+  },
+  "render": {
+    "source_and_neutral_png": 4,
+    "dpi": 200,
+    "status": "passed"
+  },
+  "local_unittest": {
+    "passed": 6,
+    "failed": 0
+  },
+  "github_publication": {
+    "branch": "main",
+    "status": "to_be_confirmed",
+    "expected_parent_sha": "1287efcd5110e538920cd54693fff5500b418810",
+    "workflow_status": "not_yet_checked"
+  },
+  "new_paths": [
+    "bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2",
+    "bronze/2026-11-08/mckinsey_airline_economic_profit_quintiles_ex2"
+  ],
+  "source_urls": [
+    "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+    "https://www.mckinsey.com/industries/travel/our-insights/could-aviation-at-last-be-close-to-earning-its-wings"
+  ],
+  "excluded": {
+    "Bain": "No independently confirmed, recent, nonduplicate quantitative chart within 7-day and 30-day search windows. No substitute invented."
+  },
+  "human_review": "pending",
+  "silver_or_gold_modified": false,
+  "training_eligible": false,
+  "delivered_at_local": null,
+  "report_path": "runs/2026-11-08/RUN_REPORT.md",
+  "access_recovery": "At 07:15 read runs/2026-11-08/prepared.json and RUN_REPORT.md on GitHub main; recheck manifests, latest HEAD and Actions. Only deliver the same day prepared topics. Do not start new research or publish duplicate chart."
+}

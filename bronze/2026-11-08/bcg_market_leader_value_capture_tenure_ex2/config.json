@@ -1,0 +1,128 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "plot_background": "#ffffff",
+      "text": "#102a21",
+      "muted": "#60756d",
+      "primary": "#1c9b71",
+      "highlight": "#ef8753",
+      "grid": "#d5e3da",
+      "figsize": [
+        11.8,
+        7.0
+      ],
+      "title_font_size": 19,
+      "subtitle_font_size": 11,
+      "label_font_size": 7.8,
+      "font_size": 10,
+      "marker_size": 95,
+      "footnote_font_size": 8,
+      "margins": {
+        "left": 0.12,
+        "right": 0.96,
+        "top": 0.78,
+        "bottom": 0.2
+      }
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "plot_background": "#ffffff",
+      "text": "#1e293b",
+      "muted": "#64748b",
+      "primary": "#475569",
+      "highlight": "#cc683e",
+      "grid": "#d8dee7",
+      "figsize": [
+        11.8,
+        7.0
+      ],
+      "title_font_size": 19,
+      "subtitle_font_size": 11,
+      "label_font_size": 7.8,
+      "font_size": 10,
+      "marker_size": 95,
+      "footnote_font_size": 8,
+      "margins": {
+        "left": 0.12,
+        "right": 0.96,
+        "top": 0.78,
+        "bottom": 0.2
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "quadrant_scatter",
+    "x_field": "value_capture_pct",
+    "y_field": "tenure_pct",
+    "label_field": "industry",
+    "title": "Are market leaders still capturing the next value pool?",
+    "subtitle": "Two dimensions of incumbent resilience across 14 visibly identifiable industries | 2025",
+    "x_axis": "2015–2025 new value captured by top five companies (%)",
+    "y_axis": "Top-five companies older than industry median tenure (%)",
+    "footnote": "Source: BCG, Nov 6 2026, Exhibit 2. DIGITIZED ESTIMATES (±4 pp); graph labels overlap. Percentages are not audited source values.",
+    "highlights": [
+      "Auto",
+      "Digital platforms",
+      "Consumer discretionary"
+    ],
+    "label_offsets": {
+      "Consumer discretionary": [
+        5,
+        -11
+      ],
+      "Communications infrastructure": [
+        -31,
+        13
+      ],
+      "Utilities": [
+        -9,
+        -12
+      ],
+      "Consumer staples": [
+        4,
+        3
+      ],
+      "Digital platforms": [
+        -56,
+        13
+      ],
+      "Energy": [
+        -28,
+        -12
+      ],
+      "Financials": [
+        4,
+        5
+      ],
+      "Media and entertainment": [
+        4,
+        -12
+      ],
+      "Auto": [
+        -4,
+        10
+      ],
+      "Health care": [
+        -25,
+        -12
+      ],
+      "Real estate": [
+        5,
+        2
+      ],
+      "IT": [
+        4,
+        -11
+      ],
+      "Industrials": [
+        4,
+        5
+      ],
+      "Materials": [
+        4,
+        -10
+      ]
+    }
+  }
+}

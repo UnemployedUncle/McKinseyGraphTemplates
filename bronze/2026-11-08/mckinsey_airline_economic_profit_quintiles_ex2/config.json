@@ -1,0 +1,61 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "plot_background": "#ffffff",
+      "text": "#082948",
+      "muted": "#6b7785",
+      "positive": "#30a8b9",
+      "negative": "#125a8b",
+      "grid": "#d8e6eb",
+      "figsize": [
+        11.5,
+        6.5
+      ],
+      "title_font_size": 19,
+      "subtitle_font_size": 11,
+      "footnote_font_size": 8,
+      "font_size": 10,
+      "margins": {
+        "left": 0.25,
+        "right": 0.96,
+        "top": 0.78,
+        "bottom": 0.18
+      }
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "plot_background": "#ffffff",
+      "text": "#1e293b",
+      "muted": "#64748b",
+      "positive": "#69859c",
+      "negative": "#4b5563",
+      "grid": "#dce2e9",
+      "figsize": [
+        11.5,
+        6.5
+      ],
+      "title_font_size": 19,
+      "subtitle_font_size": 11,
+      "footnote_font_size": 8,
+      "font_size": 10,
+      "margins": {
+        "left": 0.25,
+        "right": 0.96,
+        "top": 0.78,
+        "bottom": 0.18
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "diverging_bar",
+    "label_field": "group",
+    "value_field": "economic_profit_usd_billion",
+    "count_field": "airline_count",
+    "sample_size": 97,
+    "title": "Airline economic profit is sharply uneven across performers",
+    "subtitle": "2025 | 97-airline sample | total economic profit by performance cohort",
+    "x_axis": "Economic profit (USD billions; cohort total, not per airline)",
+    "footnote": "Source: McKinsey, Nov 6 2026, Exhibit 2 article text. EDITORIAL three-cohort bars, not original power curve. Sample cohort sum -11.2bn vs industry estimate -12.8bn (not reconciled)."
+  }
+}

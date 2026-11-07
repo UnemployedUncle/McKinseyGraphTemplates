@@ -1,0 +1,64 @@
+{
+  "run_date": "2026-11-08",
+  "runtime": {
+    "python": "3.13.5"
+  },
+  "commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/bcg_market_leader_value_capture_tenure_ex2/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/bcg_market_leader_value_capture_tenure_ex2/neutral.png"
+  ],
+  "iterations": 1,
+  "render_status": "passed",
+  "theme_tests": {
+    "source": "passed",
+    "neutral": "passed"
+  },
+  "data_checks": {
+    "csv_parsed": true,
+    "provenance_values_checked": true,
+    "units_consistent": true,
+    "denominator_checked": true,
+    "missing_handled": true,
+    "rounding_tolerance_reviewed": true,
+    "no_synthetic_interleaved": true
+  },
+  "original_image_checked": true,
+  "visual_score": null,
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "human_review": "pending",
+  "training_eligible": false,
+  "score_rationale": "BCG original opened but its coordinates cannot be confirmed exactly; McKinsey source SVGZ not visually accessible and edited chart differs in form.",
+  "remaining_differences": "BCG approximate 14/15 industry point coordinates ±4 pp; McKinsey editorial 3-cohort summary, not original curve and industry vs group totals differ.",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 6,
+    "failed": 0,
+    "status": "passed"
+  },
+  "semantic_checks": {
+    "mckinsey_count_sum": 97,
+    "mckinsey_group_economic_profit_total": -11.2,
+    "mckinsey_article_sector_total": -12.8,
+    "mckinsey_unreconciled_difference": 1.6,
+    "bcg_industries_digitized": 14,
+    "bcg_value_source": "digitized_estimate ±4 pp",
+    "synthetic_values_included": false
+  },
+  "reviewed_rendered_images": true,
+  "self_assessment_rubric": {
+    "chart_type": null,
+    "values_and_order": null,
+    "axis": null,
+    "colors_and_highlight": null,
+    "labels_and_annotations": null,
+    "legend_ratio": null,
+    "margins": null,
+    "reason": "Unverified visual accuracy; point-by-point BCG values are estimates and McKinsey source graph was inaccessible. No 7-category scores assigned."
+  },
+  "render_commands_actual": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/bcg_market_leader_value_capture_tenure_ex2/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/bcg_market_leader_value_capture_tenure_ex2/neutral.png"
+  ],
+  "iteration_count": 1
+}

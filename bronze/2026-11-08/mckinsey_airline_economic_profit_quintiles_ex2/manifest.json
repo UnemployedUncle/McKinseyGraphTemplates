@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261108_mckinsey_airline_economic_profit_quintiles_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-07T18:28:53.670860+00:00",
+  "source_url": "https://www.mckinsey.com/industries/travel/our-insights/could-aviation-at-last-be-close-to-earning-its-wings",
+  "figure_ref": "Exhibit 2 / published narrative figures",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "bcda7c85c63efa53cf9c0cf568d729b2fba7b9ca9042947a4743cd6e76baef5c",
+    "chart.py": "6c60f6a791b6d71ef06aff590a23370683baa00fb84f0178e31de31c4339a626",
+    "config.json": "855045e9b316db43c8e2be029d83b80cda85f2cf9409546555a8453bb186cdc2",
+    "data.csv": "31712596205dc3873413b1e4a75030192f829dcce30c480b72041f4e5fb2a374",
+    "record.json": "1fe8fd03ded32fd23354c5013a510ca5f986967fec82fc7ec18995b2360b8521",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "validation.json": "46123f36566a792ae428bb0e9921df3dd65941d144e8d9ef8d76c2b8ddb66eed"
+  },
+  "payload_sha256": "310c3b80108d1a85df7f740e939d8bfa7b3ebd324c4db206d2faac4fb17e5550"
+}
