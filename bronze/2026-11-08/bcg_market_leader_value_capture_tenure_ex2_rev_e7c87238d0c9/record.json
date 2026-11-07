@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+  "source_title": "Why Market Leaders Are Staying on Top Longer in 2026",
+  "published_at": "2026-11-06",
+  "collected_at": "2026-11-08",
+  "underlying_data_period": "1990-2025 public market valuations; 2015-2025 value creation; end-2025 comparison",
+  "figure_ref": "Exhibit 2",
+  "chart_key": "bcg_market_leaders_exhibit_2_value_capture_tenure",
+  "split_group": "bcg_market_leaders_staying_on_top_longer_2026_11_06",
+  "business_context": "Is incumbent leadership stable AND capturing new value?",
+  "key_message": "Incumbent longevity does not guarantee value creation: compare top-five leadership tenure and share of new industry value captured together.",
+  "insight_type": "quadrant_positioning",
+  "chart_type": "scatter",
+  "encoding": {
+    "x": "value_capture_pct",
+    "y": "tenure_pct",
+    "color": "selected industries (editorial)",
+    "marker": "industry",
+    "size": "constant"
+  },
+  "data_spec": {
+    "unit": "percent",
+    "sample": "14 visually legible sectors of 15 study groups",
+    "value_provenance": "digitized_estimate",
+    "uncertainty_pp": 4,
+    "numerator_y": "top-five incumbents with tenure > industry median",
+    "denominator_y": "top five firms"
+  },
+  "data_recipe": [
+    "choose consistent industry membership and market capitalization",
+    "find top-five at year-end",
+    "compute new value captured over prior 10 years",
+    "compute top-five industry tenure share",
+    "plot x and y; validate points"
+  ],
+  "message_conditions": [
+    "same industry definitions",
+    "same date",
+    "nonzero industry new value",
+    "digitzation approximate"
+  ],
+  "design_moves": [
+    "orthogonal metrics",
+    "industry labels",
+    "quadrant cues editorial",
+    "0–100 consistent axes",
+    "selected highlight"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original figure was viewed but coordinates digitized ±4 pp; partial label overlap and editorial quadrant boundaries; exact fidelity not verified.",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Build a config-driven 2D consulting scatter comparing new value capture and leadership tenure.",
+    "response": "Use the bundled chart.py render(data,theme,context)->fig; supply rows of bundled data.csv with industry,value_capture_pct,tenure_pct,uncertainty_pp,provenance and bundled config.json THEME.source/neutral and CONTEXT. Run: python chart.py --data data.csv --config config.json --theme source --output source.png. Values are approximate digitized_estimate; do not use as exact reported coordinates."
+  }
+}

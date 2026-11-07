@@ -5,14 +5,14 @@
   "phase": "preparation",
   "scheduled_time_local": "03:15",
   "actual_started_local": "2026-11-08T03:19:10+09:00",
-  "prepared_at_local": "2026-11-08T03:31:18+09:00",
+  "prepared_at_local": "2026-11-08T03:36:42+09:00",
   "prepared_complete": true,
   "delivered": false,
   "target_count": 3,
   "produced_topics": 2,
-  "produced_bundles": 2,
+  "produced_bundles": 3,
   "bronze_counts_before": 42,
-  "bronze_counts_after_commit_expected": 44,
+  "bronze_counts_after_commit_expected": 45,
   "silver_counts_before": 0,
   "gold_counts_before": 0,
   "historical_original_verified_before": 12,
@@ -32,12 +32,17 @@
   },
   "github_publication": {
     "branch": "main",
-    "status": "to_be_confirmed",
+    "status": "final_revision_commit_to_be_confirmed_from_main",
     "expected_parent_sha": "1287efcd5110e538920cd54693fff5500b418810",
-    "workflow_status": "not_yet_checked"
+    "workflow_status": "not_yet_checked",
+    "initial_commit_sha": "ff5be245e5ca5223f65062ac5df252982eceb38d",
+    "initial_workflow_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/42401923520",
+    "initial_workflow_status": "success",
+    "final_expected_parent_sha": "ff5be245e5ca5223f65062ac5df252982eceb38d"
   },
   "new_paths": [
     "bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2",
+    "bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2_rev_e7c87238d0c9",
     "bronze/2026-11-08/mckinsey_airline_economic_profit_quintiles_ex2"
   ],
   "source_urls": [
@@ -52,5 +57,14 @@
   "training_eligible": false,
   "delivered_at_local": null,
   "report_path": "runs/2026-11-08/RUN_REPORT.md",
-  "access_recovery": "At 07:15 read runs/2026-11-08/prepared.json and RUN_REPORT.md on GitHub main; recheck manifests, latest HEAD and Actions. Only deliver the same day prepared topics. Do not start new research or publish duplicate chart."
+  "access_recovery": "At 07:15 read runs/2026-11-08/prepared.json and RUN_REPORT.md on GitHub main; recheck manifests, latest HEAD and Actions. Only deliver the same day prepared topics. Do not start new research or publish duplicate chart.",
+  "superseded_bronze_paths": [
+    "bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2"
+  ],
+  "recommended_bronze_paths": [
+    "bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2_rev_e7c87238d0c9",
+    "bronze/2026-11-08/mckinsey_airline_economic_profit_quintiles_ex2"
+  ],
+  "correction_reason": "Original BCG CSV mistakenly labeled percentage-share point estimates as percentage points (unit) and used uncertainty_pct for ±pp. Immutable corrected revision changes unit=percent and uncertainty_pp; original preserved for audit.",
+  "correction_sha256": "e7c87238d0c9567d907e7e0784b171dd04d483f4f57395c94cd9a2c37f653f8e"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 44,
+    "bronze": 45,
     "silver": 0,
     "gold": 0
   },
@@ -600,6 +600,20 @@
       "path": "bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2",
       "contract": "render-v1",
       "payload_sha256": "981cc88637092b3f2288d8de28b90a3e9e9bd800fecfe87a732ea466fe13e5d7",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+      "figure_ref": "Exhibit 2",
+      "key_message": "Incumbent longevity does not guarantee value creation: compare top-five leadership tenure and share of new industry value captured together.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261108_bcg_market_leader_value_capture_tenure_ex2_rev_e7c87238d0c9",
+      "tier": "bronze",
+      "path": "bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2_rev_e7c87238d0c9",
+      "contract": "render-v1",
+      "payload_sha256": "e7c87238d0c9567d907e7e0784b171dd04d483f4f57395c94cd9a2c37f653f8e",
       "human_review": "pending",
       "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
       "figure_ref": "Exhibit 2",
