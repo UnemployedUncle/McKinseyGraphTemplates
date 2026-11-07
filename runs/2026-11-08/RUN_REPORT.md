@@ -1,10 +1,14 @@
+## 최종 수정 — BCG Exhibit 2 계보 일치
+
+BCG Exhibit 2의 이전 수정본 (`..._rev_e7c87238d0c9`)은 데이터 단위를 바로잡았으나, 11월 7일 동일 기사 Exhibit 1의 `record.json`과 **split_group 문자열이 달라** 학습 데이터 분할 시 누수를 초래할 수 있음을 발견했습니다. 동일 출처의 정확한 기존 `split_group`인 `https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer`를 적용하고, `chart_key`를 `https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer#exhibit-2`로 맞춘 **최종 권장 Bronze**는 `bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2_rev_7c3dc58a8de3/`입니다. 처음 두 버전은 불변성을 위해 그대로 유지하지만 재사용 비권장입니다. 최초 코드 자체 평가로 승인하지 않으며 기존 `human_review=pending` 상태 유지. 완성 주제 2건, 신규 묶음(감사 버전 포함) 4개, 전체 Bronze **46건**, Silver/Gold 각각 0건.
+
 # 주의: 데이터 단위 오류 수정 및 새 불변 Bronze 버전 (2026-11-08)
 
-초기 GitHub 커밋 `ff5be245e5ca5223f65062ac5df252982eceb38d`의 BCG Exhibit 2 CSV에서 **비율값의 단위가 `percentage points`로 잘못 기록**되었고, 오차 필드가 `uncertainty_pct`로 작성되었습니다. 이 데이터 의미 검증 오류는 재사용에 영향을 줄 수 있으므로 새 불변 Bronze 버전 `bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2_rev_e7c87238d0c9/`을 추가했습니다. 수정본은 **단위 `percent`**, 판독오차 `uncertainty_pp=4`로 의미를 분리했으며 기존 최초 묶음은 변경하지 않았습니다. **BCG 원본은 코드/교육용 재사용에는 수정본만 사용**합니다. 신규 주제는 2건으로 유지되지만 첫 버전 포함 저장된 Bronze 묶음은 3개이며 커밋 후 누적은 **45건**입니다. McKinsey 원본 묶음은 그대로 유지합니다. 현 실행 6개 단위 테스트와 4개 PNG 렌더링 완료; GitHub Actions는 최초 커밋 success이고 최종 수정 커밋 상태는 07:15 전 또는 전달 전 확인해야 합니다.
+초기 GitHub 커밋 `ff5be245e5ca5223f65062ac5df252982eceb38d`의 BCG Exhibit 2 CSV에서 **비율값의 단위가 `percentage points`로 잘못 기록**되었고, 오차 필드가 `uncertainty_pct`로 작성되었습니다. 이 데이터 의미 검증 오류는 재사용에 영향을 줄 수 있으므로 새 불변 Bronze 버전 `bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2_rev_7c3dc58a8de3/`을 추가했습니다. 수정본은 **단위 `percent`**, 판독오차 `uncertainty_pp=4`로 의미를 분리했으며 기존 최초 묶음은 변경하지 않았습니다. **BCG 원본은 코드/교육용 재사용에는 수정본만 사용**합니다. 신규 주제는 2건으로 유지되지만 첫 버전 포함 저장된 Bronze 묶음은 3개이며 커밋 후 누적은 **45건**입니다. McKinsey 원본 묶음은 그대로 유지합니다. 현 실행 6개 단위 테스트와 4개 PNG 렌더링 완료; GitHub Actions는 최초 커밋 success이고 최종 수정 커밋 상태는 07:15 전 또는 전달 전 확인해야 합니다.
 
 # Consulting Graph Template — 준비 보고서 / 2026-11-08 (Asia/Seoul)
 
-**모드:** 03:15 준비 단계. **시작:** 2026-11-08 03:19 KST. **완료:** 2026-11-08T03:33:01+09:00 KST. **목표/완료:** 3/2건. **기준 Git:** main, parent `1287efcd5110e538920cd54693fff5500b418810`. **새 파일:** Bronze 3묶음(2주제+BCG 수정본), 24개 파일. **당일 신규 자체 원본 재현 통과:** 0 (두 건 모두 unverified). **기존 누적:** Bronze 42 → 커밋 후 45, Silver 0, Gold 0, 과거 자체 원본 통과 12. **승인:** 모두 pending. **코드 테스트:** 6/6 통과. **렌더링:** PNG 200dpi 4개 확인. 원본 정확성·코드 실행·사용자 검수는 별개.
+**모드:** 03:15 준비 단계. **시작:** 2026-11-08 03:19 KST. **완료:** 2026-11-08T03:33:01+09:00 KST. **목표/완료:** 3/2건. **기준 Git:** main, parent `1287efcd5110e538920cd54693fff5500b418810`. **새 파일:** Bronze 4묶음(2주제+BCG 수정 이력 2종), 32개 파일. **당일 신규 자체 원본 재현 통과:** 0 (두 건 모두 unverified). **기존 누적:** Bronze 42 → 최종 커밋 후 46, Silver 0, Gold 0, 과거 자체 원본 통과 12. **승인:** 모두 pending. **코드 테스트:** 6/6 통과. **렌더링:** PNG 200dpi 4개 확인. 원본 정확성·코드 실행·사용자 검수는 별개.
 
 ## 1) BCG — 기업의 장기 선도 지위가 실제 신규 가치 포획으로 연결되는가?
 
@@ -15,7 +19,7 @@
 - **값의 출처:** 499×377 저해상도 공식 Exhibit 2 이미지에서 판독한 추정 좌표 14개, **digitized_estimate / ±4%p**, 정확한 원자료 없음. 분모: 각 업종 상위 5개 기업. 전체 보고서는 15개 업종이므로 커버리지 14/15, 잔여 1개를 임의로 보간하지 않음.
 - **한계:** 개별 기업의 시총 자료를 사용해 재계산하지 않았고, 겹친 라벨은 혼동될 수 있으므로 fidelity_score=null, `unverified`. 원문 데이터 학습 이용 권한이 제공된 것은 아님.
 - **재사용:** 특정 품목·거래선의 시장 지위 유지와 신규 이익풀 확보를 함께 비교. 관측단위 `industry × period`; 데이터 수집→상위5 업체 선정→가치 증분과 상위5 점유 산출→활동기간 비교→표시.
-- **Git 재사용 권장:** `bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2_rev_e7c87238d0c9/`. 최초 버전은 수정 전 이력으로 유지됨. 그림은 Git에 넣지 않고 GitHub Actions 아티팩트 또는 일일 패키지에서 조회.
+- **Git 재사용 권장:** `bronze/2026-11-08/bcg_market_leader_value_capture_tenure_ex2_rev_7c3dc58a8de3/`. 최초 버전은 수정 전 이력으로 유지됨. 그림은 Git에 넣지 않고 GitHub Actions 아티팩트 또는 일일 패키지에서 조회.
 
 ## 2) McKinsey — 97개 항공사의 경제적 이익이 상·하위 기업에 극단적으로 분포
 
@@ -43,6 +47,6 @@
 
 1. GitHub `main:runs/2026-11-08/prepared.json`과 본 보고서를 먼저 읽는다. 해당 파일이 없으면 준비 완료를 추정하지 않는다.
 2. GitHub manifest, catalog/index.json, latest commit, Actions 렌더링 아티팩트 실제 완료 여부 확인.
-3. 이 날짜에 **한 번만** BCG·McKinsey 차트 핵심 분석, 이미지/코드 링크, 2/3 결과, 45/0/0, 원본 verified 신규0, Bain 제외 이유를 사용자에게 알린다. 새 리서치·신규 주제·기존 차트 재생성을 시작하지 않는다.
+3. 이 날짜에 **한 번만** BCG·McKinsey 차트 핵심 분석, 이미지/코드 링크, 2/3 결과, 46/0/0, 원본 verified 신규0, Bain 제외 이유를 사용자에게 알린다. 새 리서치·신규 주제·기존 차트 재생성을 시작하지 않는다.
 4. `delivered=false`를 사용자가 자동으로 학습 완료한 상태로 해석하지 않는다. 사용자 승인·Silver/Gold 승격 금지.
 

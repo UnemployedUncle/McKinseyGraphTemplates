@@ -1,0 +1,15 @@
+industry,value_capture_pct,tenure_pct,uncertainty_pp,provenance,unit,measurement_year,value_capture_period,population,source_ref
+Consumer discretionary,4,80,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Communications infrastructure,35,80,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Utilities,37,80,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Consumer staples,64,80,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Digital platforms,100,80,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Financials,38,60,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Energy,36,60,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Media and entertainment,70,60,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Auto,94,60,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Health care,37,40,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Real estate,48,40,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+IT,67,40,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Industrials,13,20,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
+Materials,36,20,4,digitized_estimate,percent,2025,2015-2025,"Top five public industry companies, 2025",Exhibit 2
