@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261109_bcg_carveout_full_potential_tsr_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-08T18:30:44.793620+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/carve-out-strategy-both-companies",
+  "figure_ref": "Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "data.csv": "4ba33a4b5755eb9f3f357db87b89bf267589cf194fe08faeec47541c7283e318",
+    "card.md": "532f73b80223d536285ddb3b5b6323138fdd09bf36d53c15a4e4bdb3271ad600",
+    "validation.json": "7789a856afbf3ace5d1a88f90195b3f8a1f3ef2d11589bf383e4f7fdcdd26e9b",
+    "config.json": "2791c810c5ed59e681bc92f2794d047d37c537d7223ae7125803ef32e797518f",
+    "record.json": "ea50b88ad99a8f00aa38ec766cba454c6ea16ff763fed018cb4f80b7e98d6cd1",
+    "requirements.txt": "be962eeeecd348b8916cfba280d12d5aea2fe8fd2b01df6f4a2aa8af748d6c46",
+    "chart.py": "c74ea9d6c73095f17e0bba1e482c75479a516d8fafcfdd0e2c3f05ef495cd5cb"
+  },
+  "payload_sha256": "59a52cea998eca74d00d7cca22df6150ad98c9f9b3eb7820fe62684546af2885"
+}

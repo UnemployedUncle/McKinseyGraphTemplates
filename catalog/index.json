@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 46,
+    "bronze": 48,
     "silver": 0,
     "gold": 0
   },
@@ -646,6 +646,34 @@
       "source_url": "https://www.mckinsey.com/industries/travel/our-insights/could-aviation-at-last-be-close-to-earning-its-wings",
       "figure_ref": "Exhibit 2 / published narrative figures",
       "key_message": "Among 97 airlines in 2025, the top 20 created +$14bn, the middle 57 lost $2.3bn, and the bottom 20 lost $22.9bn; concentration of losses matters more than industry-average direction.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261109_bcg_carveout_full_potential_tsr_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-11-09/bcg_carveout_full_potential_tsr_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "59a52cea998eca74d00d7cca22df6150ad98c9f9b3eb7820fe62684546af2885",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/carve-out-strategy-both-companies",
+      "figure_ref": "Exhibit 1",
+      "key_message": "Full-potential carve-outs outperformed all carve-outs by 20.3 index points after 24 months; separation plus redesign may create additional value.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261109_mckinsey_finland_five_big_moves_ex3_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-09/mckinsey_finland_five_big_moves_ex3_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "a26fe9c26783e36a7f3b3e27744c698e35b1f87b884d2c444df65026c126c34b",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/assessing-the-growth-trajectory-of-finlands-largest-companies",
+      "figure_ref": "Article text: five big moves (adjacent to Exhibit 3; editorial visualization)",
+      "key_message": "Of 21 Finnish large caps, none met programmatic M&A and only one met productivity outperformance in 2025.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

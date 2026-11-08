@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "run_date": "2026-11-09",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "scheduled_time_local": "03:15",
+  "actual_started_local": "2026-11-09T03:18:24+09:00",
+  "prepared_at_local": "2026-11-09T03:32:24+09:00",
+  "prepared_complete": false,
+  "delivered": false,
+  "delivered_at_local": null,
+  "target_count": 3,
+  "produced_topics": 2,
+  "produced_bundles": 2,
+  "bronze_counts_before": 46,
+  "bronze_counts_after_commit_expected": 48,
+  "silver_counts_before": 0,
+  "gold_counts_before": 0,
+  "historical_original_verified_before": 12,
+  "new_original_verified": 1,
+  "local_unittest": {
+    "passed": 6,
+    "failed": 0
+  },
+  "render": {
+    "source_and_neutral_png": 4,
+    "dpi": 200,
+    "status": "passed",
+    "visually_inspected": true
+  },
+  "github_publication": {
+    "branch": "main",
+    "status": "pending",
+    "parent_sha": "28926ff16ecf71d327f7fcfccc9a5910ae5c6061",
+    "remote_commit_sha": null,
+    "remote_recheck": false,
+    "workflow_status": "not_yet_checked"
+  },
+  "new_paths": [
+    "bronze/2026-11-09/mckinsey_finland_five_big_moves_ex3_editorial",
+    "bronze/2026-11-09/bcg_carveout_full_potential_tsr_ex1"
+  ],
+  "source_urls": [
+    "https://www.bcg.com/publications/2026/carve-out-strategy-both-companies",
+    "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/assessing-the-growth-trajectory-of-finlands-largest-companies"
+  ],
+  "excluded": {
+    "Bain": "Recent 7 and 30 days: no confirmed nonduplicate quantitative figure with accessible original and verified publication date; 2026-10-29 Figure 1 article already in catalog."
+  },
+  "historical_score_source": "agent self-assessment, not human review",
+  "new_original_verified_self_score": {
+    "bcg": 4.57,
+    "mckinsey": null
+  },
+  "human_review": "pending",
+  "silver_or_gold_modified": false,
+  "training_eligible": false,
+  "report_path": "runs/2026-11-09/RUN_REPORT.md",
+  "resume_0715": "At 07:15 read this exact prepared.json and RUN_REPORT.md from GitHub main, then verify main HEAD and manifests and current Action status; deliver once only without new research, new topic or Git commit. If still not ready, report incomplete.",
+  "bundles": {
+    "bronze/2026-11-09/bcg_carveout_full_potential_tsr_ex1": {
+      "payload_sha256": "59a52cea998eca74d00d7cca22df6150ad98c9f9b3eb7820fe62684546af2885",
+      "human_review": "pending"
+    },
+    "bronze/2026-11-09/mckinsey_finland_five_big_moves_ex3_editorial": {
+      "payload_sha256": "a26fe9c26783e36a7f3b3e27744c698e35b1f87b884d2c444df65026c126c34b",
+      "human_review": "pending"
+    }
+  }
+}

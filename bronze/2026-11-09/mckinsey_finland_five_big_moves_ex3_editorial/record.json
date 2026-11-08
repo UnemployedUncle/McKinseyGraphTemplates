@@ -1,0 +1,62 @@
+{
+  "source_url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/assessing-the-growth-trajectory-of-finlands-largest-companies",
+  "title": "Assessing the growth trajectory of Finland's largest companies",
+  "published_at": "2026-11-06",
+  "collected_at": "2026-11-09",
+  "observed_period": "2025",
+  "firm": "McKinsey",
+  "figure_ref": "Article text: five big moves (adjacent to Exhibit 3; editorial visualization)",
+  "chart_key": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/assessing-the-growth-trajectory-of-finlands-largest-companies#five-big-moves",
+  "business_context": "Finnish listed companies have raised growth ambition without comparable execution of strategic moves",
+  "key_message": "Of 21 Finnish large caps, none met programmatic M&A and only one met productivity outperformance in 2025.",
+  "insight_type": "nonexclusive adoption ranking",
+  "chart_type": "horizontal_bar_editorial_not_original",
+  "encoding": {
+    "x": "company_count of 21",
+    "y": "strategic move",
+    "color": "0/1 emphasized",
+    "sort": "descending"
+  },
+  "data_spec": {
+    "grain": "move × 2025",
+    "unit": "companies",
+    "denominator": "21 Finnish listed companies",
+    "provenance": "reported article text counts"
+  },
+  "data_recipe": [
+    "Collect company-by-move Boolean criterion",
+    "Apply same observation period and threshold for 21 firms",
+    "Count pass by move without treating categories as exclusive",
+    "Sort and render counts using common 0-21 baseline"
+  ],
+  "message_conditions": [
+    "Same 21 firms in denominator for all moves",
+    "Multi-selection categories not exclusive, cannot sum to company population"
+  ],
+  "design_moves": [
+    "ranked horizontal bars",
+    "display counts as n/21",
+    "low-count color emphasis"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original interactive/SVGZ Exhibit 3 not visually accessible; editorial chart from published numeric article text, not an original reproduction.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Visualize five independent strategy move pass counts in 21 firms using descending horizontal bars, without summing nonexclusive categories.",
+    "response": {
+      "files": [
+        "chart.py",
+        "data.csv",
+        "config.json",
+        "requirements.txt"
+      ],
+      "run": "python chart.py --data data.csv --config config.json --theme source --output source.png",
+      "data_csv": "move,company_count,denominator,observation_year,unit,provenance,source\nDynamic resource reallocation,8,21,2025,companies,reported,\"McKinsey 2026-11-06 article, five big moves\"\nDifferentiation,7,21,2025,companies,reported,\"McKinsey 2026-11-06 article, five big moves\"\nBig investments,3,21,2025,companies,reported,\"McKinsey 2026-11-06 article, five big moves\"\nProductivity improvement,1,21,2025,companies,reported,\"McKinsey 2026-11-06 article, five big moves\"\nProgrammatic M&A,0,21,2025,companies,reported,\"McKinsey 2026-11-06 article, five big moves\"\n",
+      "code_reference": "chart.py in the identical immutable Bronze bundle, runnable with matplotlib"
+    }
+  },
+  "split_group": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/assessing-the-growth-trajectory-of-finlands-largest-companies",
+  "rights": "Third-party figure not saved, not authorized for model training without separate review."
+}

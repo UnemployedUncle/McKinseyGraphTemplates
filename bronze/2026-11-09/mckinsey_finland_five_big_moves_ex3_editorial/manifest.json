@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261109_mckinsey_finland_five_big_moves_ex3_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-08T18:30:45.451040+00:00",
+  "source_url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/assessing-the-growth-trajectory-of-finlands-largest-companies",
+  "figure_ref": "Article text: five big moves (adjacent to Exhibit 3; editorial visualization)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "data.csv": "7314bcea173e11eaa68333a9c62b9213cd817543c02ac4bd43e6c1380a5a8235",
+    "card.md": "d416445060466d153d2a0da081ba5eb88d337e113741750eab56945f26e3c39f",
+    "validation.json": "227804e1100287e8f65b6fb52a86c51445b135010327f348e5dec3daf661eaf4",
+    "config.json": "f8c24140ee6a7de0cb4d0413815f8f5f994665f20e7d23ba0753d123978c0735",
+    "record.json": "0a39d3418e68a9c8452a57ba00fc88321340a8d9bc40733221d12a1e3f074fd8",
+    "requirements.txt": "be962eeeecd348b8916cfba280d12d5aea2fe8fd2b01df6f4a2aa8af748d6c46",
+    "chart.py": "e7931563e19857fc7efbe9d619bc5b1ac162d542aa5b6190f54d700a233e82f9"
+  },
+  "payload_sha256": "a26fe9c26783e36a7f3b3e27744c698e35b1f87b884d2c444df65026c126c34b"
+}

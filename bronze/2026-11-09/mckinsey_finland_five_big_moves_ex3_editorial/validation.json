@@ -1,0 +1,31 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "execution_status": "passed",
+  "human_review": "pending",
+  "source_visual_checked": false,
+  "figure_original_accessible": false,
+  "source_verification": "2026-11-09 official article read; SVGZ figure inaccessible; editorial visualization",
+  "data_checks": {
+    "expected_rows": 5,
+    "provenance_reported": true,
+    "units_checked": true,
+    "rounding_checked": true,
+    "missing_checked": true,
+    "nonexclusive_not_summed": true,
+    "semantic_passed": true,
+    "sum_not_unique_respondents": true
+  },
+  "render_commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png (run from bundle directory; output directed outside Bronze)",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png (run from bundle directory; output directed outside Bronze)"
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "render_iterations": 1,
+  "self_assessment_7_items": null,
+  "remaining_differences": "Original SVGZ chart not open; manual editorial adaptation.",
+  "original_reproduction": false,
+  "rendered_dpi": 200,
+  "image_validation": "source and neutral 200dpi PNGs inspected visually; no clipping or semantic chart errors"
+}

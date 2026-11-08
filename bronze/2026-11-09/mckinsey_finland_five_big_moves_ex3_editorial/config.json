@@ -1,0 +1,34 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "main_color": "#2e709e",
+      "low_color": "#e1a55a",
+      "spine_color": "#9ba9af",
+      "text_color": "#283947",
+      "note_color": "#64727e",
+      "figure_size": [
+        11.5,
+        6.5
+      ]
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "main_color": "#3b756d",
+      "low_color": "#b78171",
+      "spine_color": "#9ba9af",
+      "text_color": "#253e38",
+      "note_color": "#64727e",
+      "figure_size": [
+        11.5,
+        6.5
+      ]
+    }
+  },
+  "CONTEXT": {
+    "title": "Few Finnish large caps made strategic big moves",
+    "x_label": "Number of firms (out of 21, non-exclusive)",
+    "low_threshold": 1,
+    "footnote": "Source: McKinsey (2026-11-06), 2025 activity; 21 listed Finnish companies. Editorial design, not original Exhibit 3."
+  }
+}

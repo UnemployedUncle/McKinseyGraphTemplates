@@ -1,0 +1,51 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "full_color": "#27b568",
+      "all_color": "#aab1ad",
+      "baseline_color": "#7e8985",
+      "spine_color": "#b0b7b4",
+      "text_color": "#293b32",
+      "note_color": "#666666",
+      "font_size": 10,
+      "figure_size": [
+        11.8,
+        6.4
+      ]
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "full_color": "#245c8c",
+      "all_color": "#c2c9d1",
+      "baseline_color": "#9199a4",
+      "spine_color": "#9aabb6",
+      "text_color": "#253343",
+      "note_color": "#777777",
+      "font_size": 10,
+      "figure_size": [
+        11.8,
+        6.4
+      ]
+    }
+  },
+  "CONTEXT": {
+    "title": "Full-potential carve-outs outperform over 24 months",
+    "all_label": "All carve-outs",
+    "full_label": "Full-potential carve-outs",
+    "y_label": "Cumulative relative TSR index",
+    "baseline_index": 100,
+    "y_range": [
+      90,
+      130
+    ],
+    "y_ticks": [
+      90,
+      100,
+      110,
+      120,
+      130
+    ],
+    "footnote": "Source: BCG Exhibit 1; displayed index labels. Relative index points, not standalone annual returns."
+  }
+}

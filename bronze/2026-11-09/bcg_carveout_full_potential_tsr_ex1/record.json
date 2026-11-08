@@ -1,0 +1,63 @@
+{
+  "source_url": "https://www.bcg.com/publications/2026/carve-out-strategy-both-companies",
+  "title": "Better Apart: When a Carve-Out Transforms Both Companies",
+  "published_at": "2026-10-28",
+  "collected_at": "2026-11-09",
+  "observed_period": "T+3 days through 24 months after carve-out, transaction sample timing unspecified",
+  "firm": "BCG",
+  "figure_ref": "Exhibit 1",
+  "chart_key": "https://www.bcg.com/publications/2026/carve-out-strategy-both-companies#exhibit-1",
+  "business_context": "A carve-out should redesign both successor businesses, not merely complete separation",
+  "key_message": "Full-potential carve-outs outperformed all carve-outs by 20.3 index points after 24 months; separation plus redesign may create additional value.",
+  "insight_type": "cohort divergence indexed event time",
+  "chart_type": "line_chart_original_structure",
+  "encoding": {
+    "x": "event period",
+    "y": "relative TSR index",
+    "color": "full vs all carve-outs",
+    "annotation": "24-month gap"
+  },
+  "data_spec": {
+    "grain": "cohort × elapsed_period; initial T-3 days indexed baseline",
+    "unit": "relative TSR index points",
+    "denominator": "BCG benchmark series baseline=100; actual sample size undisclosed",
+    "provenance": "reported nine labeled post-event time points; derived initial index baseline 100 at T-3 days"
+  },
+  "data_recipe": [
+    "Collect corporate event dates and classify cohorts",
+    "Index relative TSR series consistently to baseline 100",
+    "Aggregate same elapsed event periods",
+    "Compute difference at last horizon",
+    "Render under source/neutral theme"
+  ],
+  "message_conditions": [
+    "Same event-time alignment and indexing",
+    "No assumption that co-occurrence proves causal effect"
+  ],
+  "design_moves": [
+    "two lines",
+    "direct index labels",
+    "end-point difference bracket"
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "diff_notes": "Original index baseline T-3 included as derived (100); source image values individually labeled for nine subsequent times. Typography and proprietary branding are not reproduced.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Recreate BCG Exhibit 1 event-aligned two-series relative TSR index chart with visible numeric labels and a difference annotation, using reported index labels.",
+    "response": {
+      "files": [
+        "chart.py",
+        "data.csv",
+        "config.json",
+        "requirements.txt"
+      ],
+      "run": "python chart.py --data data.csv --config config.json --theme source --output source.png",
+      "data_csv": "order,period_label,full_potential_index,all_carveouts_index,full_potential_provenance,all_carveouts_provenance,unit,uncertainty_index_points,source\n1,T-3 days,100.0,100.0,derived,derived,relative_tsr_index,0,\"common index normalization baseline, referenced in Exhibit 1\"\n2,T+3 days,101.7,100.7,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n3,3 months,100.4,100.2,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n4,6 months,101.8,100.6,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n5,9 months,105.1,100.8,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n6,12 months,108.1,101.5,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n7,15 months,111.4,103.0,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n8,18 months,112.5,101.1,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n9,21 months,118.8,101.2,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n10,24 months,121.1,100.8,reported,reported,relative_tsr_index,0,BCG Exhibit 1 annotated plotted values\n",
+      "code_reference": "chart.py in the identical immutable Bronze bundle, runnable with matplotlib"
+    }
+  },
+  "split_group": "https://www.bcg.com/publications/2026/carve-out-strategy-both-companies",
+  "rights": "Third-party figure not saved, not authorized for model training without separate review."
+}

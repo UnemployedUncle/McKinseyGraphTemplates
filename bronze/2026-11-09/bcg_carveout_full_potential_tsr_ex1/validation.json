@@ -1,0 +1,39 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "execution_status": "passed",
+  "human_review": "pending",
+  "source_visual_checked": true,
+  "figure_original_accessible": true,
+  "source_verification": "2026-11-09 official article and BCG inline figure opened",
+  "data_checks": {
+    "expected_rows": 10,
+    "provenance_reported": true,
+    "units_checked": true,
+    "rounding_checked": true,
+    "missing_checked": true,
+    "nonexclusive_not_summed": false,
+    "semantic_passed": true,
+    "last_period_gap_index_points": 20.3
+  },
+  "render_commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png (run from bundle directory; output directed outside Bronze)",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png (run from bundle directory; output directed outside Bronze)"
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "render_iterations": 2,
+  "self_assessment_7_items": {
+    "type": 5,
+    "data_values_order": 5,
+    "axes": 5,
+    "color_emphasis": 4,
+    "labels_annotations_title": 5,
+    "legend_aspect_ratio": 4,
+    "whitespace": 4
+  },
+  "remaining_differences": "Typography, colors, margins, title layout differ; event cohort underlying data and sample size not disclosed",
+  "original_reproduction": true,
+  "rendered_dpi": 200,
+  "image_validation": "source and neutral 200dpi PNGs inspected visually; no clipping or semantic chart errors"
+}
