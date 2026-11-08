@@ -5,8 +5,8 @@
   "phase": "preparation",
   "scheduled_time_local": "03:15",
   "actual_started_local": "2026-11-09T03:18:24+09:00",
-  "prepared_at_local": "2026-11-09T03:32:24+09:00",
-  "prepared_complete": false,
+  "prepared_at_local": "2026-11-09T03:39:23+09:00",
+  "prepared_complete": true,
   "delivered": false,
   "delivered_at_local": null,
   "target_count": 3,
@@ -30,11 +30,19 @@
   },
   "github_publication": {
     "branch": "main",
-    "status": "pending",
-    "parent_sha": "28926ff16ecf71d327f7fcfccc9a5910ae5c6061",
-    "remote_commit_sha": null,
-    "remote_recheck": false,
-    "workflow_status": "not_yet_checked"
+    "status": "published_verified",
+    "original_parent_sha": "28926ff16ecf71d327f7fcfccc9a5910ae5c6061",
+    "initial_commit_sha": "a02483145872a405bf9633b8ed4dd369c279c185",
+    "data_integrity_repair_commit_sha": "1b44fb261f4e0dd4b2c524973f1fd74e58ded324",
+    "git_ref": "main",
+    "remote_recheck": true,
+    "new_files_remote_exact_match": "18/18",
+    "workflow_run_id": 42510967291,
+    "workflow_status": "success",
+    "workflow_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/42510967291",
+    "artifact_id": 13629477060,
+    "artifact_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/42510967291/artifacts/13629477060",
+    "repair_note": "Initial GitHub tree transfer normalized CRLF CSV line endings, breaking manifest. Restored the exact original CSV bytes via Git base64 blobs, retaining planned hashes, no semantic edits."
   },
   "new_paths": [
     "bronze/2026-11-09/mckinsey_finland_five_big_moves_ex3_editorial",
@@ -66,5 +74,6 @@
       "payload_sha256": "a26fe9c26783e36a7f3b3e27744c698e35b1f87b884d2c444df65026c126c34b",
       "human_review": "pending"
     }
-  }
+  },
+  "prepared_archive": "2026-11-09 preparation ZIP in original automation conversation attachment; code source is GitHub main"
 }

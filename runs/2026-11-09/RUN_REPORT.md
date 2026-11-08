@@ -35,3 +35,10 @@
 ## 무결성·승인
 - 각각 file SHA256 및 payload SHA256을 파일 바이트 기반으로 산출, `human_review.status=pending`, `training_eligible=false`. 사용자의 Silver/Gold 승인, 워크플로 수동 promote, 외부 학습 업로드 없음.
 - **준비 상태는 `prepared.json`의 GitHub publication 상태 및 최종 GitHub 원격 재조회 이후 확정**. 07:15에는 같은 자료만 전달, 새 조사/코드/커밋 금지.
+
+## 원격 게시 최종 감사 (2026-11-09 03:39:23 Asia/Seoul)
+- `main`에 2026-11-09 Bronze 2건, manifest, 카탈로그/색인, 실행 보고·준비 레코드 반영. 원격 파일 **18/18 내용 동일** (CSV는 원본 줄바꿈 바이트 비교를 별도 수행).
+- 초기 업로드에서 GitHub 전송 과정이 `data.csv`의 `CRLF`를 `LF`로 변환해 manifest 해시 검사 실패. 원본 바이트를 Git base64 blob으로 복원한 전송 무결성 복구 커밋: `1b44fb261f4e0dd4b2c524973f1fd74e58ded324`. 데이터 의미·정식 payload 해시 변경 없음.
+- GitHub Actions `42510967291`: `success`; Python 기존 단위 테스트, 전체 메달리온 해시 검증, 전체 차트 렌더, Preview 아티팩트 업로드 성공. 아티팩트 `13629477060`: https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/42510967291/artifacts/13629477060
+- GitHub 인증/승인 위임 없이 Bronze만 추가. 사용자 검수 0건, Bronze 48 / Silver 0 / Gold 0, 과거+오늘 자체 원본 재현 검증 통과 13건. 검수 전 학습 데이터 사용 불가.
+- `prepared_complete=true`, `delivered=false`는 이 보고와 동일한 GitHub `runs/2026-11-09/prepared.json`에서 확인. 오전 7시 15분에는 당일 준비본만 한 번 전달하고 신규 조사·중복 커밋하지 않음.
