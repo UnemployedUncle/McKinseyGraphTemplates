@@ -66,7 +66,12 @@
       "gold": 0
     },
     "actions_status": "not_confirmed",
-    "publication_style": "sequential content API writes (atomic tree commit unsupported by accessible connector)"
+    "publication_style": "sequential content API writes (atomic tree commit unsupported by accessible connector)",
+    "code_catalog_commit_sha": "6f8d3c7e474f7e27f384be4d84e59b4e7ac8711f",
+    "report_creation_commit_sha": "b94958a8e151658e5c70f54676f26d3494370a46",
+    "report_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/runs/2026-11-10/RUN_REPORT.md",
+    "catalog_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/catalog/README.md",
+    "actions_status_details": "GitHub connector only exposes PR-triggered runs; push-triggered status/individual Actions runs not verifiable; combined status check returned empty."
   },
   "excluded": {
     "Bain": "No confirmed new nonduplicate quantitative original visual with verifiable publication date and direct access within 7/30 day search."
