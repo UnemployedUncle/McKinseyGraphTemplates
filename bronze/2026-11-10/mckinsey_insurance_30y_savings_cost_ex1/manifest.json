@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261110_mckinsey_insurance_30y_savings_cost_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-09T18:34:54.166832+00:00",
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/the-1-percent-wake-up-call-for-life-insurers",
+  "figure_ref": "Exhibit 1 (two panels; published narrative values)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "config.json": "42bdada2e0963031d6bdf1c049c9f6f0c7fd468e9b40260d5228af845388e9cb",
+    "data.csv": "b04cbf0f1608d5cc2c6005d68691f42698a0bc79f406f29e51488cb188cb5fa7",
+    "chart.py": "0b1245f406ff24aa17de74cb1b69c2f5635f01f098fca3b5ed25f29586edaaa4",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "record.json": "e04bd9222e53fecabfdce78d50a58de33075c40143993c74d988b92b828b0fd1",
+    "validation.json": "ff1182278e388733b0f7cee5f8fa14172540ed13e5d93ff380c6320e9396e4c2",
+    "card.md": "f1633153c23dd10f79c85d8868461789a5308db95206fc277fdaa9268963c054"
+  },
+  "payload_sha256": "9ab2365a0b78dacb7a7ca0ba3b2556ea7facc2446b246e5f0639ccf2954d5a03"
+}
