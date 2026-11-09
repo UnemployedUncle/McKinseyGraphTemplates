@@ -1,0 +1,75 @@
+{
+  "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/the-1-percent-wake-up-call-for-life-insurers",
+  "source_title": "The 1 percent wake-up call for life insurers",
+  "publication_date": "2026-11-03",
+  "collected_at_local": "2026-11-10",
+  "data_observation_period": "Illustrative 30-year projection assumptions; supporting market benchmarks 2026",
+  "firm": "McKinsey",
+  "figure_ref": "Exhibit 1 (two panels; published narrative values)",
+  "chart_key": "https://www.mckinsey.com/industries/financial-services/our-insights/the-1-percent-wake-up-call-for-life-insurers|Exhibit 1 (two panels; published narrative values)",
+  "business_context": "Life insurance and low-cost ETF retirement savings products",
+  "key_message": "Identical monthly pension contributions can produce very different illustrative outcomes from fees and asset-allocation assumptions.",
+  "insight_type": "cost and return assumption sensitivity",
+  "chart_type": "two-panel horizontal bar",
+  "original_chart_type": "two-panel horizontal bar",
+  "visual_encoding": {
+    "x": "final_savings_eur",
+    "y": "product_label",
+    "color": "highlight",
+    "panel": "scenario"
+  },
+  "data_spec": {
+    "grain": "scenario × product",
+    "fields": [
+      "scenario",
+      "product",
+      "final_savings_eur",
+      "annual_cost_pct",
+      "annual_gross_return_pct",
+      "monthly_contribution_eur",
+      "horizon_years",
+      "provenance"
+    ],
+    "units": "EUR final savings; percent annual fees; percent assumed gross return",
+    "denominator": "EUR 100 per month for 30 years",
+    "sample": "illustrative simulation, not population sample"
+  },
+  "data_recipe": [
+    "collect observed metrics using consistent definitions",
+    "normalize units, time horizon, and comparator",
+    "document missing values and reported vs derived provenance",
+    "apply render(data, theme, context) after editing CSV/config"
+  ],
+  "message_conditions": [
+    "equal contribution and consistent horizon",
+    "do not interpret different gross returns as fee effects"
+  ],
+  "design_moves": [
+    "two separate panels",
+    "direct endpoint labels",
+    "theme-controlled palette",
+    "editable data and context"
+  ],
+  "original_visual_access": "SVGZ original inaccessible; detailed official text description was available",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original precise visual appearance not confirmed; published text describes a 2-panel horizontal bar figure.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_rights": "not cleared",
+  "training_pair": {
+    "instruction": "Create a reusable two-panel horizontal bar from the disclosed figures, preserving data provenance and source context.",
+    "response": {
+      "file": "chart.py",
+      "input": "data.csv",
+      "configuration": "config.json",
+      "execution": [
+        "python chart.py --data data.csv --config config.json --theme source --output source.png",
+        "python chart.py --data data.csv --config config.json --theme neutral --output neutral.png"
+      ],
+      "required_transform": "Divide by 1000 for x-axis plotting (EUR thousands); preserve original EUR values and 30-year assumptions in the CSV."
+    }
+  },
+  "split_group": "mckinsey:the-1-percent-wake-up-call-for-life-insurers:2026-11-03",
+  "repo_date": "2026-11-10"
+}
