@@ -1,0 +1,42 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "focus": "#60BEA1",
+      "neutral": "#087559",
+      "text": "#172928",
+      "muted": "#667975",
+      "grid": "#E6EFEB",
+      "figsize": [
+        12,
+        5.4
+      ]
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "focus": "#343D43",
+      "neutral": "#A4A9AD",
+      "text": "#202428",
+      "muted": "#555D64",
+      "grid": "#E7E8EA",
+      "figsize": [
+        12,
+        5.4
+      ]
+    }
+  },
+  "CONTEXT": {
+    "title": "Commercial transformations: endpoint performance by cohort",
+    "periods": [
+      "2012-2021",
+      "third_study_to_2025"
+    ],
+    "focus_cohort": "transformed",
+    "panel_titles": {
+      "2012-2021": "2012–2021 (historical investment value)",
+      "third_study_to_2025": "Third study → 2025 (recent value)"
+    },
+    "x_label": "Value of a $100 initial investment (index)",
+    "footnote": "Source: BCG Exhibit 2 · Exact endpoints only; no intermediate trajectory reconstructed · CAGR 27% vs 17% / 10% vs 2%."
+  }
+}
