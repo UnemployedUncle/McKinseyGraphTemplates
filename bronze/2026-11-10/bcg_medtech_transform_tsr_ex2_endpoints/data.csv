@@ -1,0 +1,5 @@
+period,cohort,cohort_label,rank,value_index,annualized_cagr_pct,provenance,observation_end_year,start_index,unit,publication_date,source_ref
+2012-2021,transformed,Transformed firms,1,1001,27,reported,2021,100,index of $100 invested,2026-11-02,Exhibit 2 left
+2012-2021,benchmark,Medtech index,2,430,17,reported,2021,100,index of $100 invested,2026-11-02,Exhibit 2 left
+third_study_to_2025,transformed,Transformed firms,1,161,10,reported,2025,100,index of $100 invested,2026-11-02,Exhibit 2 right
+third_study_to_2025,benchmark,Medtech index,2,112,2,reported,2025,100,index of $100 invested,2026-11-02,Exhibit 2 right
