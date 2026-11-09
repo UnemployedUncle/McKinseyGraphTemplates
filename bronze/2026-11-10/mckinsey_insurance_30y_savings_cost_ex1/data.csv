@@ -1,0 +1,6 @@
+scenario,product,product_label,rank,final_savings_eur,annual_cost_pct,annual_gross_return_pct,horizon_years,monthly_contribution_eur,highlight,provenance,source_ref
+same_7pct_gross,state_default,State default fund,1,120000,0.1,7,30,100,no,reported,Exhibit 1 top
+same_7pct_gross,neobroker,Neobroker ETF,2,117000,0.2,7,30,100,no,reported,Exhibit 1 top
+same_7pct_gross,unit_linked_insurer,Advised unit-linked insurer,3,86000,1.85,7,30,100,yes,reported,Exhibit 1 top
+realistic_products,traditional_insurer,Traditional guaranteed insurer,1,47000,1.5,3.2,30,100,yes,reported,Exhibit 1 bottom
+realistic_products,neobroker,Neobroker ETF,2,117000,0.2,7,30,100,no,reported,Exhibit 1 bottom
