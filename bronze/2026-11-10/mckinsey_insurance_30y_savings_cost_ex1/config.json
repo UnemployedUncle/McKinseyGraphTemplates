@@ -1,0 +1,43 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "focus": "#285A7D",
+      "neutral": "#8EB4C3",
+      "onbar": "#ffffff",
+      "text": "#172F3B",
+      "muted": "#566C74",
+      "grid": "#DDE6EA",
+      "figsize": [
+        11.5,
+        8.7
+      ]
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "focus": "#353D46",
+      "neutral": "#A7ADB3",
+      "onbar": "#ffffff",
+      "text": "#1F242A",
+      "muted": "#56606C",
+      "grid": "#E6E6E6",
+      "figsize": [
+        11.5,
+        8.7
+      ]
+    }
+  },
+  "CONTEXT": {
+    "title": "What €100 per month can accumulate over 30 years",
+    "panels": [
+      "same_7pct_gross",
+      "realistic_products"
+    ],
+    "panel_titles": {
+      "same_7pct_gross": "Same 7% gross return — different annual fees",
+      "realistic_products": "Different asset allocation and fees — illustrative products"
+    },
+    "x_label": "Final savings (€ thousands)",
+    "footnote": "McKinsey Exhibit 1 · Illustrative outcomes, not forecasts · All scenarios: €100/month for 30 years; no guaranteed return."
+  }
+}
