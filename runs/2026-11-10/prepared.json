@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "run_date": "2026-11-10",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "scheduled_time_local": "03:15",
+  "actual_started_local": "2026-11-10T03:19:41+09:00",
+  "prepared_at_local": "2026-11-10T03:41:29+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "delivered_at_local": null,
+  "target_count": 3,
+  "produced_topics": 2,
+  "produced_bundles": 2,
+  "counts_before": {
+    "bronze": 48,
+    "silver": 0,
+    "gold": 0
+  },
+  "counts_after": {
+    "bronze": 50,
+    "silver": 0,
+    "gold": 0
+  },
+  "original_verified_before": 13,
+  "original_verified_new": 0,
+  "original_verified_total": 13,
+  "local_unit_test": {
+    "status": "passed",
+    "passed": 8,
+    "failed": 0
+  },
+  "render": {
+    "status": "passed",
+    "images": 4,
+    "dpi": 200,
+    "visually_inspected": true
+  },
+  "new_paths": [
+    "bronze/2026-11-10/bcg_medtech_transform_tsr_ex2_endpoints",
+    "bronze/2026-11-10/mckinsey_insurance_30y_savings_cost_ex1"
+  ],
+  "payload_sha256": {
+    "bcg_medtech_transform_tsr_ex2_endpoints": "eb4566939caee0bdaa65938e151fa3ce4d9875ed4b78f3ba4f15c0b6108fc2e0",
+    "mckinsey_insurance_30y_savings_cost_ex1": "9ab2365a0b78dacb7a7ca0ba3b2556ea7facc2446b246e5f0639ccf2954d5a03"
+  },
+  "validation_status": {
+    "bcg_medtech_transform_tsr_ex2_endpoints": "unverified",
+    "mckinsey_insurance_30y_savings_cost_ex1": "unverified"
+  },
+  "fidelity_score": {
+    "bcg_medtech_transform_tsr_ex2_endpoints": null,
+    "mckinsey_insurance_30y_savings_cost_ex1": null
+  },
+  "human_review": "pending",
+  "silver_or_gold_modified": false,
+  "training_eligible": false,
+  "github_publication": {
+    "branch": "main",
+    "state": "published_verified",
+    "remote_files_exact_match": "16/16",
+    "catalog_verified": true,
+    "catalog_counts": {
+      "bronze": 50,
+      "silver": 0,
+      "gold": 0
+    },
+    "actions_status": "not_confirmed",
+    "publication_style": "sequential content API writes (atomic tree commit unsupported by accessible connector)"
+  },
+  "excluded": {
+    "Bain": "No confirmed new nonduplicate quantitative original visual with verifiable publication date and direct access within 7/30 day search."
+  },
+  "run_report_path": "runs/2026-11-10/RUN_REPORT.md",
+  "prepared_archive": "2026-11-10 preparation ZIP in same automation conversation, not original Git image files",
+  "delivery_instruction": "07:15 reads prepared.json and RUN_REPORT.md from GitHub main, confirms same date + Git catalog counts, then delivers once. Never researches/generates/commits duplicate topics on delivery."
+}
