@@ -1,0 +1,73 @@
+{
+  "source_url": "https://www.bcg.com/publications/2026/ai-medtech-commercial-operations",
+  "source_title": "Beyond the Milkman: AI’s New Playbook for Medtech Commercial Excellence",
+  "publication_date": "2026-11-02",
+  "collected_at_local": "2026-11-10",
+  "data_observation_period": "Historical 2012–2021; recent third-study endpoint to 2025 (exact recent baseline month not independently identified)",
+  "firm": "BCG",
+  "figure_ref": "Exhibit 2 (endpoint-only editorial summary)",
+  "chart_key": "https://www.bcg.com/publications/2026/ai-medtech-commercial-operations|Exhibit 2 (endpoint-only editorial summary)",
+  "business_context": "Medtech commercial transformation cohort performance",
+  "key_message": "Commercial transformations outperformed the medtech index in reported endpoint values in both periods; do not interpret the association as AI-specific causal impact.",
+  "insight_type": "cohort benchmark gap",
+  "chart_type": "two-panel endpoint lollipop",
+  "original_chart_type": "two-panel time series line",
+  "visual_encoding": {
+    "x": "value_index",
+    "y": "cohort_label",
+    "color": "cohort",
+    "panel": "period"
+  },
+  "data_spec": {
+    "grain": "period × cohort",
+    "fields": [
+      "period",
+      "cohort",
+      "value_index",
+      "annualized_cagr_pct",
+      "observation_end_year",
+      "provenance"
+    ],
+    "units": "indexed dollar value (initial investment=100)",
+    "denominator": "original $100 invested within each comparison window",
+    "sample": "not published for model comparison"
+  },
+  "data_recipe": [
+    "collect observed metrics using consistent definitions",
+    "normalize units, time horizon, and comparator",
+    "document missing values and reported vs derived provenance",
+    "apply render(data, theme, context) after editing CSV/config"
+  ],
+  "message_conditions": [
+    "cohorts are comparable across similar dates",
+    "do not infer causal effect"
+  ],
+  "design_moves": [
+    "two separate panels",
+    "direct endpoint labels",
+    "theme-controlled palette",
+    "editable data and context"
+  ],
+  "original_visual_access": "confirmed from official BCG embedded exhibit",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original is a two-period time-series plot, but endpoint-only editorial summary intentionally omits unknown in-between trajectories.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_rights": "not cleared; commercial AI training of BCG source content may be restricted",
+  "training_pair": {
+    "instruction": "Create a reusable two-panel endpoint lollipop from the disclosed figures, preserving data provenance and source context.",
+    "response": {
+      "file": "chart.py",
+      "input": "data.csv",
+      "configuration": "config.json",
+      "execution": [
+        "python chart.py --data data.csv --config config.json --theme source --output source.png",
+        "python chart.py --data data.csv --config config.json --theme neutral --output neutral.png"
+      ],
+      "required_transform": "Read the exact CSV rows, filter by panel and rank, label only published values. Do not interpolate missing time points."
+    }
+  },
+  "split_group": "bcg:ai-medtech-commercial-operations:2026-11-02",
+  "repo_date": "2026-11-10"
+}
