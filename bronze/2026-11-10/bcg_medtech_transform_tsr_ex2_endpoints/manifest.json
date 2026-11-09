@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261110_bcg_medtech_transform_tsr_ex2_endpoints",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-09T18:34:53.384109+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/ai-medtech-commercial-operations",
+  "figure_ref": "Exhibit 2 (endpoint-only editorial summary)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "config.json": "d90dbc4af89fb0afba75088d6555ab648722b4571faede665bce1bcc18e44c75",
+    "data.csv": "68f5665368149374303e8fd01fa2fa8df7609b32cf7b3f648a5e24e4e6edd0ba",
+    "chart.py": "d908b6a4c378ecfefb072e4d2f9f13228e3e9ae980d083057c0b1e22ff42c22e",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "record.json": "60fe792b271de44364c323d8a640df935255c5a97abc2e131651366a003efde8",
+    "validation.json": "9673e5fd584cf8d467299dee7975282a228dd45a52ec3fcd09cc4498b3b023d9",
+    "card.md": "2cd7967037d23c98a3e76e04838deafcedc36cfea89cdd8506536ca96a2cc384"
+  },
+  "payload_sha256": "eb4566939caee0bdaa65938e151fa3ce4d9875ed4b78f3ba4f15c0b6108fc2e0"
+}
