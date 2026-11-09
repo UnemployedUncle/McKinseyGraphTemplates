@@ -1,0 +1,42 @@
+{
+  "run_date": "2026-11-10",
+  "render_status": "passed",
+  "original_comparison_status": "unverified",
+  "fidelity_score": null,
+  "fidelity_dimensions": {
+    "chart_type": null,
+    "data_and_order": null,
+    "axis": null,
+    "colors_and_emphasis": null,
+    "labels_and_annotations": null,
+    "legend_and_ratio": null,
+    "whitespace": null
+  },
+  "score_reason": "Original is presented with a different data resolution (BCG) or not accessible as rendered SVGZ (McKinsey). No original recreation pass can be claimed.",
+  "iterations": 2,
+  "source_visual": "confirmed",
+  "data_checks": {
+    "reported_values": true,
+    "periods": true,
+    "denominators": true,
+    "units": true,
+    "ranking": true,
+    "missing_not_fabricated": true
+  },
+  "execution_commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output ../../artifacts/bcg_medtech_transform_tsr_ex2_endpoints/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output ../../artifacts/bcg_medtech_transform_tsr_ex2_endpoints/neutral.png"
+  ],
+  "execution_environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "remaining_differences": "Original is a two-period time-series plot, but endpoint-only editorial summary intentionally omits unknown in-between trajectories.",
+  "human_review": "pending",
+  "generated_images_outside_bronze": true,
+  "unit_test_command": "python -m unittest discover -s tests -v",
+  "unit_test_count": 8,
+  "unit_test_result": "8/8 passed",
+  "visual_inspection": "source and neutral rendered images inspected; no clipping or data semantic issues observed",
+  "generated_image_dpi": 200
+}
