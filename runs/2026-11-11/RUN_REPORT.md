@@ -25,3 +25,9 @@ McKinsey: https://www.mckinsey.com/industries/public-sector/our-insights/beyond-
 
 ## Review control
 Human review never delegated or marked approved. Silver and Gold untouched. Never use Bronze as approved training data.
+
+## Remote publication and independent CI verification
+- Bronze/catalog source commit: [a73ec8e449446bbf4a9cc010a7dea9ac69474aae](https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/a73ec8e449446bbf4a9cc010a7dea9ac69474aae).
+- Remote contents match: **14/14 payload files** were retrieved and independently SHA256-recomputed; both manifest payload digests match; catalog counts **Bronze 52 / Silver 0 / Gold 0** confirmed.
+- GitHub Actions: [Validate medallion run 42875481017](https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/42875481017) **completed / success**. Artifacts: [13790714268](https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/42875481017/artifacts/13790714268).
+- User review pending, no Silver/Gold modifications. 07:15 delivery reads this preparation record, checks today's date and delivered=false, and does not conduct new research or duplicate writes.

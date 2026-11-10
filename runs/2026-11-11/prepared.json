@@ -57,11 +57,22 @@
   "training_eligible": false,
   "github_publication": {
     "branch": "main",
-    "state": "intended_on_same_commit",
-    "base_sha": "11945b834359cb4a9f136ff9d52b5efa3309effa",
-    "commit_sha": null,
-    "remote_files_exact_match": "pending",
-    "actions_status": "pending"
+    "state": "published_verified",
+    "initial_base_sha": "11945b834359cb4a9f136ff9d52b5efa3309effa",
+    "code_catalog_commit_sha": "a73ec8e449446bbf4a9cc010a7dea9ac69474aae",
+    "remote_files_exact_match": "14/14 payload files SHA256; both manifests and catalog verified",
+    "catalog_verified": true,
+    "catalog_counts": {
+      "bronze": 52,
+      "silver": 0,
+      "gold": 0
+    },
+    "actions_status": "completed_success",
+    "actions_run_id": 42875481017,
+    "actions_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/42875481017",
+    "actions_artifact_id": 13790714268,
+    "actions_artifact_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/42875481017/artifacts/13790714268",
+    "publication_style": "one Git tree with parent HEAD, update_ref expected_sha and force=false"
   },
   "excluded": {
     "Bain": "Official recent 7-day and expanded 30-day searches produced no new verifiable nonduplicate published quantitative exhibit."
@@ -71,5 +82,6 @@
     "McKinsey": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience"
   },
   "run_report_path": "runs/2026-11-11/RUN_REPORT.md",
-  "delivery_instruction": "07:15 reads prepared.json, RUN_REPORT.md and main SHA, verifies data and Actions; delivers once without new research/code/commits."
+  "delivery_instruction": "07:15 reads prepared.json, RUN_REPORT.md and main SHA, verifies data and Actions; delivers once without new research/code/commits.",
+  "prepared_at_local": "2026-11-11T03:31:07+09:00"
 }
