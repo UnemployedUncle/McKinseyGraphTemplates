@@ -1,0 +1,61 @@
+{
+  "CONTEXT": {
+    "title": "State service satisfaction spans wide ranges",
+    "x_label": "Share satisfied in a state (%)",
+    "xticks": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "xlim": [
+      0,
+      100
+    ],
+    "footer": "State of the States 2026 (n=50,744) | Only two published service ranges; editorial design"
+  },
+  "THEME": {
+    "source": {
+      "figsize": [
+        11,
+        5.3
+      ],
+      "background": "#FFFFFF",
+      "title_color": "#081F38",
+      "text_color": "#2B3848",
+      "line_color": "#106FA8",
+      "min_color": "#A3C3D9",
+      "max_color": "#074A7D",
+      "grid_color": "#D8E4ED",
+      "line_width": 6,
+      "marker_size": 125,
+      "title_size": 17,
+      "axis_size": 10,
+      "label_size": 12,
+      "label_offset": 0.15,
+      "footnote_size": 9
+    },
+    "neutral": {
+      "figsize": [
+        11,
+        5.3
+      ],
+      "background": "#FFFFFF",
+      "title_color": "#222222",
+      "text_color": "#333333",
+      "line_color": "#777777",
+      "min_color": "#BBBBBB",
+      "max_color": "#222222",
+      "grid_color": "#DDDDDD",
+      "line_width": 6,
+      "marker_size": 125,
+      "title_size": 17,
+      "axis_size": 10,
+      "label_size": 12,
+      "label_offset": 0.15,
+      "footnote_size": 9
+    }
+  }
+}

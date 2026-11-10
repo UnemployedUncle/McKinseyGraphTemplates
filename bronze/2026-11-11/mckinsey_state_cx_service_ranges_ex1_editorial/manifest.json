@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261111_mckinsey_state_cx_service_ranges_ex1_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-10T18:27:57.250Z",
+  "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
+  "figure_ref": "Exhibit 1 (two reported service ranges; editorial)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "6925e5ee6d1e54aa5864e622ffd40d0e7633e83a00965a15ede224156f2eb72c",
+    "data.csv": "d54742d533f79a96fea05203bd4a06944a40e87ab609ec316bd1035c92771b77",
+    "config.json": "96baf1783d89a6f59dfd4a4be8848705a53f058f8b979081e20214bfcac63ca1",
+    "card.md": "3bfaa0c310a3f2725f556e28636d586e0f4b73d5cd66bb3b824960d73ec7523d",
+    "requirements.txt": "48e1d792aa42dc067223fe311036f1388d0fea6b9deec4c84760db4c2f70d2a5",
+    "record.json": "f3a0a9566a8c2ade918267173037db0fcf943a87a5c8b8d6307ee4fa77cecb64",
+    "validation.json": "5b7046740ada856edc68a2b253e0b854c227a6091c2be2d9ca4cc48b5e915f60"
+  },
+  "payload_sha256": "9ce4d1654fcf1537a376c0b653bb439363aafba9fc0ef1ee995229e9317b2d5c"
+}

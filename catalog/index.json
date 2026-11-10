@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 50,
+    "bronze": 52,
     "silver": 0,
     "gold": 0
   },
@@ -702,6 +702,34 @@
       "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/the-1-percent-wake-up-call-for-life-insurers",
       "figure_ref": "Exhibit 1 (two panels; published narrative values)",
       "key_message": "Identical monthly pension contributions can produce very different illustrative outcomes from fees and asset-allocation assumptions.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261111_bcg_industrials_ai_capability_gap_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-11/bcg_industrials_ai_capability_gap_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "c5d6e005817dc73079d5bfd08f9d600c2c5e8a2a4809a1fe117dc9da64ec115d",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/how-industrial-companies-win-with-ai",
+      "figure_ref": "Exhibit 2",
+      "key_message": "Data strategy has the widest industry-vs-other-sector best-in-class gap (-8pp).",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261111_mckinsey_state_cx_service_ranges_ex1_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-11/mckinsey_state_cx_service_ranges_ex1_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "9ce4d1654fcf1537a376c0b653bb439363aafba9fc0ef1ee995229e9317b2d5c",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
+      "figure_ref": "Exhibit 1 (two reported service ranges; editorial)",
+      "key_message": "State satisfaction spreads by 37–40 percentage points in two reported services.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "run_date": "2026-11-11",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "scheduled_time_local": "03:15",
+  "actual_started_local": "2026-11-11T03:13:15+09:00",
+  "prepared_at_utc": "2026-11-10T18:27:57.250Z",
+  "prepared_complete": true,
+  "delivered": false,
+  "delivered_at_local": null,
+  "target_count": 3,
+  "produced_topics": 2,
+  "produced_bundles": 2,
+  "counts_before": {
+    "bronze": 50,
+    "silver": 0,
+    "gold": 0
+  },
+  "counts_after": {
+    "bronze": 52,
+    "silver": 0,
+    "gold": 0
+  },
+  "original_verified_before": 13,
+  "original_verified_new": 1,
+  "original_verified_total": 14,
+  "local_unit_test": {
+    "status": "passed",
+    "passed": 6,
+    "failed": 0
+  },
+  "render": {
+    "status": "passed",
+    "images": 4,
+    "dpi": 200,
+    "visually_inspected": true
+  },
+  "new_paths": [
+    "bronze/2026-11-11/bcg_industrials_ai_capability_gap_ex2",
+    "bronze/2026-11-11/mckinsey_state_cx_service_ranges_ex1_editorial"
+  ],
+  "payload_sha256": {
+    "bcg_industrials_ai_capability_gap_ex2": "c5d6e005817dc73079d5bfd08f9d600c2c5e8a2a4809a1fe117dc9da64ec115d",
+    "mckinsey_state_cx_service_ranges_ex1_editorial": "9ce4d1654fcf1537a376c0b653bb439363aafba9fc0ef1ee995229e9317b2d5c"
+  },
+  "validation_status": {
+    "bcg_industrials_ai_capability_gap_ex2": "verified",
+    "mckinsey_state_cx_service_ranges_ex1_editorial": "unverified"
+  },
+  "fidelity_score": {
+    "bcg_industrials_ai_capability_gap_ex2": 4.57,
+    "mckinsey_state_cx_service_ranges_ex1_editorial": null
+  },
+  "human_review": "pending",
+  "silver_or_gold_modified": false,
+  "training_eligible": false,
+  "github_publication": {
+    "branch": "main",
+    "state": "intended_on_same_commit",
+    "base_sha": "11945b834359cb4a9f136ff9d52b5efa3309effa",
+    "commit_sha": null,
+    "remote_files_exact_match": "pending",
+    "actions_status": "pending"
+  },
+  "excluded": {
+    "Bain": "Official recent 7-day and expanded 30-day searches produced no new verifiable nonduplicate published quantitative exhibit."
+  },
+  "source_references": {
+    "BCG": "https://www.bcg.com/publications/2026/how-industrial-companies-win-with-ai",
+    "McKinsey": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience"
+  },
+  "run_report_path": "runs/2026-11-11/RUN_REPORT.md",
+  "delivery_instruction": "07:15 reads prepared.json, RUN_REPORT.md and main SHA, verifies data and Actions; delivers once without new research/code/commits."
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
+  "source_title": "Beyond agency boundaries: Building a statewide approach to customer experience",
+  "publication_date": "2026-11-09",
+  "collected_date": "2026-11-11",
+  "data_period": "2026-04-15 to 2026-06-06",
+  "figure_ref": "Exhibit 1 (two reported service ranges; editorial)",
+  "chart_key": "mckinsey|https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience|Exhibit 1 (two reported service ranges; editorial)",
+  "business_context": "State-government service satisfaction dispersion",
+  "key_message": "State satisfaction spreads by 37–40 percentage points in two reported services.",
+  "chart_type": "editorial_range_plot",
+  "encoding": {
+    "x": "satisfaction_pct",
+    "y": "service",
+    "color": "min/max"
+  },
+  "data_spec": {
+    "grain": "service × state summarized by min/max",
+    "unit": [
+      "percent",
+      "percentage_points"
+    ],
+    "denominator": "service-specific resident responses; overall n=50,744",
+    "provenance": "min_pct/max_pct reported; width_pp derived"
+  },
+  "data_recipe": [
+    "Collect comparable resident service ratings by state",
+    "Measure 9-or-10 satisfaction within state",
+    "Compute minima/maxima by service",
+    "Render interval graphic; inspect uncertainty"
+  ],
+  "message_conditions": [
+    "Comparable service questions and time window",
+    "Extremes are not averages or causal effects"
+  ],
+  "design_moves": [
+    "Editorial interval plot from two reported ranges",
+    "No intermediate state values invented",
+    "Direct min/max values on 0–100% axis"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original SVGZ unavailable, two published ranges redrawn editorially, not original reproduction.",
+  "training_pair": {
+    "instruction": "Make a reusable 2-service state satisfaction interval plot without inventing state-level observations.",
+    "response": "Exact executable chart code: chart.py; original quantitative input: data.csv; layout/colors/text: config.json. Run python chart.py --data data.csv --config config.json --theme source --output source.png (or --theme neutral). All variables are declared in the bundle; source figures are not included."
+  },
+  "split_group": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
+  "human_review": "pending",
+  "training_eligible": false
+}

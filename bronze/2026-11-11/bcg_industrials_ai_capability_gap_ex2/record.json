@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/how-industrial-companies-win-with-ai",
+  "source_title": "For Industrial Companies, Winning with AI Takes More Than Tech",
+  "publication_date": "2026-11-10",
+  "collected_date": "2026-11-11",
+  "data_period": "BCG Applied AI Index 2026 (survey dates not public)",
+  "figure_ref": "Exhibit 2",
+  "chart_key": "bcg|https://www.bcg.com/publications/2026/how-industrial-companies-win-with-ai|Exhibit 2",
+  "business_context": "Industrial AI data-strategy readiness",
+  "key_message": "Data strategy has the widest industry-vs-other-sector best-in-class gap (-8pp).",
+  "chart_type": "five_column_kpi_comparison",
+  "encoding": {
+    "x": "capability category",
+    "y": "gap/value KPI cards",
+    "color": "source-like green vs neutral"
+  },
+  "data_spec": {
+    "grain": "capability × sector group",
+    "unit": [
+      "percent",
+      "percentage_points"
+    ],
+    "denominator": "sector group respondents; precise sample undisclosed",
+    "provenance": "industrial_pct/gap_pp reported; other_sector_pct derived"
+  },
+  "data_recipe": [
+    "Collect company-sector capability scores",
+    "Apply consistent best-in-class cutoff",
+    "Aggregate by capability and industry status",
+    "Derive gaps and validate pp arithmetic",
+    "Render via CSV+THEME+CONTEXT"
+  ],
+  "message_conditions": [
+    "Same sector definitions and measurement rule",
+    "Noncausal between-sector comparison"
+  ],
+  "design_moves": [
+    "Five equal-width original-type KPI cards",
+    "Direct gap and industrial-rate labels",
+    "Distinct source/neutral palettes"
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "diff_notes": "Original card descriptions omitted, approximate margins and palette; no proprietary imagery stored.",
+  "training_pair": {
+    "instruction": "Reproduce a five-column industrials-vs-other-sector AI data capability KPI grid.",
+    "response": "Exact executable chart code: chart.py; original quantitative input: data.csv; layout/colors/text: config.json. Run python chart.py --data data.csv --config config.json --theme source --output source.png (or --theme neutral). All variables are declared in the bundle; source figures are not included."
+  },
+  "split_group": "https://www.bcg.com/publications/2026/how-industrial-companies-win-with-ai",
+  "human_review": "pending",
+  "training_eligible": false
+}

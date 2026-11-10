@@ -1,0 +1,64 @@
+{
+  "CONTEXT": {
+    "title": "AI capability gaps are widest in industrial data strategy",
+    "subtitle": "Best-in-class score: industrial companies vs all other sectors | pp gap shown above",
+    "percent_label": "industrial top-tier",
+    "footer": "Source: BCG Applied AI Index 2026; Exhibit 2. Other-sector percentages calculated from pp gaps."
+  },
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "title_color": "#0A3022",
+      "text_color": "#21443D",
+      "stripe_color": "#F1FAF2",
+      "gap_color": "#0A3A2E",
+      "number_color": "#08412D",
+      "line_color": "#F6A946",
+      "callout_background": "#D8F8E4",
+      "figsize": [
+        14.5,
+        6
+      ],
+      "axes_box": [
+        0.045,
+        0.1,
+        0.91,
+        0.64
+      ],
+      "title_size": 18,
+      "subtitle_size": 10,
+      "gap_size": 16,
+      "number_size": 23,
+      "small_size": 9,
+      "label_size": 9,
+      "footnote_size": 9
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "title_color": "#222222",
+      "text_color": "#444444",
+      "stripe_color": "#F4F4F4",
+      "gap_color": "#333333",
+      "number_color": "#111111",
+      "line_color": "#999999",
+      "callout_background": "#EAEAEA",
+      "figsize": [
+        14.5,
+        6
+      ],
+      "axes_box": [
+        0.045,
+        0.1,
+        0.91,
+        0.64
+      ],
+      "title_size": 18,
+      "subtitle_size": 10,
+      "gap_size": 16,
+      "number_size": 23,
+      "small_size": 9,
+      "label_size": 9,
+      "footnote_size": 9
+    }
+  }
+}

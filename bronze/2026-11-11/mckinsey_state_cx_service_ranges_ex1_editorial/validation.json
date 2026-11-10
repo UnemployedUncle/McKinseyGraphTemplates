@@ -1,0 +1,39 @@
+{
+  "actual_execution": true,
+  "execution_command": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/mckinsey_state_cx_service_ranges_ex1_editorial/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/mckinsey_state_cx_service_ranges_ex1_editorial/neutral.png"
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "dpi": 200,
+  "iteration_count": 1,
+  "render_status": "passed",
+  "visual_inspection": {
+    "source": "opened/checked",
+    "neutral": "opened/checked"
+  },
+  "data_checks": {
+    "units": "passed",
+    "provenance": "passed",
+    "bounds": "passed",
+    "percent_vs_pp": "passed",
+    "rounding": "passed",
+    "source_values": "passed",
+    "sorting": "passed"
+  },
+  "original_accessed": false,
+  "original_chart_type": "multi-service original SVGZ (not opened)",
+  "recreation_kind": "editorial_redesign",
+  "score_categories": null,
+  "fidelity_score": null,
+  "validation_status": "unverified",
+  "human_review": "pending",
+  "remaining_differences": [
+    "SVGZ original could not be rendered",
+    "Only two reported ranges, no full original values"
+  ],
+  "unit_test_count": 6,
+  "unit_test_status": "passed",
+  "unit_test_scope": "Local tests for provenance, chart API, data arithmetic, reuse and manifest; full GitHub workflow result checked separately."
+}

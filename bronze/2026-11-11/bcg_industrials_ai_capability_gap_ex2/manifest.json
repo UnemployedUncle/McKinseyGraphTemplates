@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261111_bcg_industrials_ai_capability_gap_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-10T18:27:57.235Z",
+  "source_url": "https://www.bcg.com/publications/2026/how-industrial-companies-win-with-ai",
+  "figure_ref": "Exhibit 2",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "52b46021b88914da5511a10ba4c24f522d54e270815d7aaef9b1cb505bff8e4e",
+    "data.csv": "f0a2a7f30e4e4d693a9dd2b9cc70ca9b19adbee2b9f632726e106b34b207c300",
+    "config.json": "47c11f93267036a79e95455f1a503b25a322ec97abb7281481e0d87d1cfe7ea8",
+    "card.md": "3eded139694dfe583e2aa8c6ed21db8e844f4f2924e8ada2e214270889e4a7ff",
+    "requirements.txt": "48e1d792aa42dc067223fe311036f1388d0fea6b9deec4c84760db4c2f70d2a5",
+    "record.json": "5f107f8fbe7a567a89d51ce32bb184644f250f4996afea0972741b7a8a749d81",
+    "validation.json": "8afc0136b2500353e820ae7d7385162b57d531c44e4b1bbcbaaa575d3ad87735"
+  },
+  "payload_sha256": "c5d6e005817dc73079d5bfd08f9d600c2c5e8a2a4809a1fe117dc9da64ec115d"
+}

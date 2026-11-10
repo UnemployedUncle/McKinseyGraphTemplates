@@ -1,0 +1,47 @@
+{
+  "actual_execution": true,
+  "execution_command": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/bcg_industrials_ai_capability_gap_ex2/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/bcg_industrials_ai_capability_gap_ex2/neutral.png"
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "dpi": 200,
+  "iteration_count": 1,
+  "render_status": "passed",
+  "visual_inspection": {
+    "source": "opened/checked",
+    "neutral": "opened/checked"
+  },
+  "data_checks": {
+    "units": "passed",
+    "provenance": "passed",
+    "bounds": "passed",
+    "percent_vs_pp": "passed",
+    "rounding": "passed",
+    "source_values": "passed",
+    "sorting": "passed"
+  },
+  "original_accessed": true,
+  "original_chart_type": "five-column comparative KPI table",
+  "recreation_kind": "partial_original_type_reproduction",
+  "score_categories": {
+    "type": 5,
+    "values_order": 5,
+    "axes": 5,
+    "color_emphasis": 4,
+    "labels_annotations": 4,
+    "legend_ratios": 5,
+    "margins": 4
+  },
+  "fidelity_score": 4.57,
+  "validation_status": "verified",
+  "human_review": "pending",
+  "remaining_differences": [
+    "Original capability descriptions omitted",
+    "approximate palette, fonts and margins"
+  ],
+  "unit_test_count": 6,
+  "unit_test_status": "passed",
+  "unit_test_scope": "Local tests for provenance, chart API, data arithmetic, reuse and manifest; full GitHub workflow result checked separately."
+}
