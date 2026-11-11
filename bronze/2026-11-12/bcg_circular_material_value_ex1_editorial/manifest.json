@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261112_bcg_circular_material_value_ex1_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-11T18:37:13.615Z",
+  "source_url": "https://www.bcg.com/publications/2026/circularity-value-existing-materials",
+  "figure_ref": "Exhibit 1 (article reported values; editorial)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "178b2df5b21b33289d98c185c703e02b90db362f49f2d8aa77181a7b9babbde7",
+    "data.csv": "4d479f1b9c56c30a53add458358115f297f067b59e43babd8b02a28c1ad38a00",
+    "config.json": "2f5f54928c80bec34c9182a40205379212b63e5b2f95003174b5ad3014d04bab",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "380480157cc0c1757d935f18897cbbfe57c81a6e8dd1e21ccd796bd0bf8ec7c8",
+    "record.json": "e8e34e57ba168623bd8d0a0f9d14bebf0bf8c601adf14de22b92ed123b4570a7",
+    "validation.json": "1285644f2f81f29e41fda38db1b0726fc4fdcd7d930e93054c8cd6f2dc289c97"
+  },
+  "payload_sha256": "641e93cb4152c4f7ab3d715cce60e8e1baed308e4e77c49918c7f9cedda53bac"
+}

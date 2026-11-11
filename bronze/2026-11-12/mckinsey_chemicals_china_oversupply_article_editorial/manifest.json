@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261112_mckinsey_chemicals_china_oversupply_article_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-11T18:37:13.637Z",
+  "source_url": "https://www.mckinsey.com/industries/chemicals/our-insights/system-advantage-the-new-source-of-value-in-chemicals",
+  "figure_ref": "Article quantitative comparison near Exhibit 2 (editorial)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "178b2df5b21b33289d98c185c703e02b90db362f49f2d8aa77181a7b9babbde7",
+    "data.csv": "bcb995ae1f1d728647da340cc82ebf3696af881a2bdf599304e076f13d547455",
+    "config.json": "c4ee30a1e2918ef754db2f429f8b4d795b105143c15284fa0a1aa51364afff0c",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "2aeb01ca9e21c3aabf1bf5b4aab5c68a26cd7afb7d902de5a3b3991d88f6ae39",
+    "record.json": "86dd5eb107de58069a2c4e39a0b46fd871741fa27ca029503407bf257ebcf7b9",
+    "validation.json": "8c75ef21eb7f6b717effeefcf1e152c75a1e2c84d1a663f558188a58c7a8e4a5"
+  },
+  "payload_sha256": "67040bc4db8e531963f109f71ed086e27a0eb59b49b5c115eb5bc89a817fe678"
+}

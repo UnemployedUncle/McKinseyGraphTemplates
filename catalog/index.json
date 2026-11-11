@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 52,
+    "bronze": 54,
     "silver": 0,
     "gold": 0
   },
@@ -730,6 +730,34 @@
       "source_url": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
       "figure_ref": "Exhibit 1 (two reported service ranges; editorial)",
       "key_message": "State satisfaction spreads by 37–40 percentage points in two reported services.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261112_bcg_circular_material_value_ex1_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-12/bcg_circular_material_value_ex1_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "641e93cb4152c4f7ab3d715cce60e8e1baed308e4e77c49918c7f9cedda53bac",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/circularity-value-existing-materials",
+      "figure_ref": "Exhibit 1 (article reported values; editorial)",
+      "key_message": "EU 사용중인 전자제품·가전의 핵심광물 재고 가치는 €65B를 넘고 연간 사용종료 핵심광물 가치 약 €9B는 EU 전자산업의 연간 수요 약 €6B보다 크지만, 실질 회수가능량은 별도 평가해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261112_mckinsey_chemicals_china_oversupply_article_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-12/mckinsey_chemicals_china_oversupply_article_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "67040bc4db8e531963f109f71ed086e27a0eb59b49b5c115eb5bc89a817fe678",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/chemicals/our-insights/system-advantage-the-new-source-of-value-in-chemicals",
+      "figure_ref": "Article quantitative comparison near Exhibit 2 (editorial)",
+      "key_message": "중국의 glyphosate 기존 공급은 글로벌 수요 대비 40% 많고 일부 고무 첨가제는 300% 많다. 화학기업의 포트폴리오는 업종 평균이 아니라 개별 품목의 공급구조를 기준으로 평가해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

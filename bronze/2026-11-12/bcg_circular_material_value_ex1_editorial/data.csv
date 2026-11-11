@@ -1,0 +1,4 @@
+group,metric,value,provenance,qualifier,reference_period,unit,scope,source_url,note
+stock,In-use stock,65,reported,lower_bound,stock,EUR billion,EU consumer electronics and appliances,https://www.bcg.com/publications/2026/circularity-value-existing-materials,Source article public value; year not disclosed
+annual_flow,End-of-use annual value,9,reported,approx,annual,EUR billion/year,EU end-of-use products,https://www.bcg.com/publications/2026/circularity-value-existing-materials,Source article public value; year not disclosed
+annual_flow,Annual manufacturing need,6,reported,approx,annual,EUR billion/year,EU electronics manufacturing,https://www.bcg.com/publications/2026/circularity-value-existing-materials,Source article public value; year not disclosed

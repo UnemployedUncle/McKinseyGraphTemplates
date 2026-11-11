@@ -1,0 +1,33 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "accent": "#087C65",
+      "secondary": "#ABC9C0",
+      "text": "#20312D",
+      "footnote": "#61726C",
+      "figure_size": [
+        11,
+        6.2
+      ]
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "accent": "#354761",
+      "secondary": "#A8B4C1",
+      "text": "#232E3B",
+      "footnote": "#6B7280",
+      "figure_size": [
+        11,
+        6.2
+      ]
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "horizontal_oversupply",
+    "title": "China's chemicals oversupply varies by product",
+    "subtitle": "China existing supply relative to global demand | article-reported figures",
+    "axis_label": "Excess above global demand (%)",
+    "footnote": "McKinsey Nov 10 2026; reported article values, editorial—not an original Exhibit reconstruction."
+  }
+}

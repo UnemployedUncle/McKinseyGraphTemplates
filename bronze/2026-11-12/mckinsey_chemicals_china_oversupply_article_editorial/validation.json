@@ -1,0 +1,41 @@
+{
+  "render_passed": true,
+  "execution_status": "passed",
+  "original_visual_checked": false,
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "iterations": 1,
+  "commands": [
+    "python test_templates.py -v",
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png"
+  ],
+  "versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "checks": {
+    "local_template_tests": "7/7 pass",
+    "unit_provenance": "passed",
+    "data_semantics": "passed",
+    "source_render_dpi200": "passed",
+    "neutral_render_dpi200": "passed",
+    "both_images_visually_inspected": true,
+    "original_visual": "not inspected"
+  },
+  "fidelity_categories": {
+    "type": null,
+    "values_order": null,
+    "axes": null,
+    "color_emphasis": null,
+    "labels_annotations_title": null,
+    "legend_ratio": null,
+    "whitespace": null
+  },
+  "score_reason": "Editorial recreation and original image unavailable; null by policy.",
+  "remaining_differences": [
+    "Source chart image not visually confirmed",
+    "Edited chart format, no source fidelity claim",
+    "Original research/model year and error margin undisclosed"
+  ]
+}

@@ -1,0 +1,3 @@
+group,metric,value,provenance,qualifier,reference_period,unit,scope,source_url,note
+excess,Glyphosate,40,reported,reported,current_reported,percent_above_global_demand,China supply / global demand,https://www.mckinsey.com/industries/chemicals/our-insights/system-advantage-the-new-source-of-value-in-chemicals,Source article public value; year not disclosed
+excess,Selected rubber additives,300,reported,reported,current_reported,percent_above_global_demand,China supply / global demand,https://www.mckinsey.com/industries/chemicals/our-insights/system-advantage-the-new-source-of-value-in-chemicals,Source article public value; year not disclosed

@@ -1,0 +1,71 @@
+{
+  "source_url": "https://www.bcg.com/publications/2026/circularity-value-existing-materials",
+  "canonical_url": "https://www.bcg.com/publications/2026/circularity-value-existing-materials",
+  "source_title": "How Companies Can Find New Value in Existing Materials",
+  "published_at": "2026-11-11",
+  "collected_at": "2026-11-12",
+  "data_observation_period": "not_disclosed",
+  "figure_ref": "Exhibit 1 (article reported values; editorial)",
+  "chart_key": "bcg:https://www.bcg.com/publications/2026/circularity-value-existing-materials:Exhibit 1 (article reported values; editorial)",
+  "firm": "bcg",
+  "business_context": "EU circular resource value chain",
+  "key_message": "EU 사용중인 전자제품·가전의 핵심광물 재고 가치는 €65B를 넘고 연간 사용종료 핵심광물 가치 약 €9B는 EU 전자산업의 연간 수요 약 €6B보다 크지만, 실질 회수가능량은 별도 평가해야 한다.",
+  "insight_type": "stock-flow contrast",
+  "chart_type": "stock_flow_dual",
+  "encoding": {
+    "x": "value",
+    "y": "metric",
+    "color": "THEME accent/secondary",
+    "size": "value",
+    "sort": "data-driven",
+    "labels": "direct value labels",
+    "axis": "zero",
+    "notes": "CONTEXT footnote"
+  },
+  "data_spec": {
+    "file": "data.csv",
+    "fields": [
+      "group",
+      "metric",
+      "value",
+      "provenance",
+      "qualifier",
+      "reference_period",
+      "unit",
+      "scope",
+      "source_url",
+      "note"
+    ],
+    "unit": "EUR billion stock versus EUR billion/year flow",
+    "denominator": null,
+    "sample_and_model": "not disclosed in article"
+  },
+  "data_recipe": [
+    "Define coverage and valuation basis",
+    "Calculate in-use stock",
+    "Calculate end-of-use and manufacturing annual flows",
+    "Keep periods separate",
+    "Stress test recovery and collection"
+  ],
+  "message_conditions": [
+    "Stock >€65B is not a flow. About €9B and €6B are annual flows; theoretical end-of-use value does not equal recoverable supply.",
+    "No artificial values, no causal inference"
+  ],
+  "design_moves": [
+    "Source and neutral themes",
+    "Direct data labels",
+    "Data-derived bar positions",
+    "Explicit units and scope"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_visual_checked": false,
+  "diff_notes": "Original graphic not visually accessed; editorial chart from reported article figures.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Generate a reproducible matplotlib comparison using exact published numerical values and transparent provenance.",
+    "response": "Full code is chart.py, values are data.csv, and complete theme/context is config.json. Install requirements.txt and run python chart.py --data data.csv --config config.json --theme source --output source.png; repeat with theme neutral."
+  },
+  "split_group": "https://www.bcg.com/publications/2026/circularity-value-existing-materials"
+}

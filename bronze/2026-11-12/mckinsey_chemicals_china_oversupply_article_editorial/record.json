@@ -1,0 +1,71 @@
+{
+  "source_url": "https://www.mckinsey.com/industries/chemicals/our-insights/system-advantage-the-new-source-of-value-in-chemicals",
+  "canonical_url": "https://www.mckinsey.com/industries/chemicals/our-insights/system-advantage-the-new-source-of-value-in-chemicals",
+  "source_title": "System advantage: The new source of value in chemicals",
+  "published_at": "2026-11-10",
+  "collected_at": "2026-11-12",
+  "data_observation_period": "not_disclosed",
+  "figure_ref": "Article quantitative comparison near Exhibit 2 (editorial)",
+  "chart_key": "mckinsey:https://www.mckinsey.com/industries/chemicals/our-insights/system-advantage-the-new-source-of-value-in-chemicals:Article quantitative comparison near Exhibit 2 (editorial)",
+  "firm": "mckinsey",
+  "business_context": "Chemicals industry trade and portfolio positioning",
+  "key_message": "중국의 glyphosate 기존 공급은 글로벌 수요 대비 40% 많고 일부 고무 첨가제는 300% 많다. 화학기업의 포트폴리오는 업종 평균이 아니라 개별 품목의 공급구조를 기준으로 평가해야 한다.",
+  "insight_type": "oversupply intensity by product",
+  "chart_type": "horizontal_oversupply",
+  "encoding": {
+    "x": "value",
+    "y": "metric",
+    "color": "THEME accent/secondary",
+    "size": "value",
+    "sort": "data-driven",
+    "labels": "direct value labels",
+    "axis": "zero",
+    "notes": "CONTEXT footnote"
+  },
+  "data_spec": {
+    "file": "data.csv",
+    "fields": [
+      "group",
+      "metric",
+      "value",
+      "provenance",
+      "qualifier",
+      "reference_period",
+      "unit",
+      "scope",
+      "source_url",
+      "note"
+    ],
+    "unit": "percent_above_global_demand",
+    "denominator": "global demand for each product",
+    "sample_and_model": "not disclosed in article"
+  },
+  "data_recipe": [
+    "Define chemicals and identical periods",
+    "Collect China supply and worldwide demand",
+    "Calculate excess percentage against global demand",
+    "Plot sorted bars and verify semantics",
+    "Stress test economics"
+  ],
+  "message_conditions": [
+    "300% is specific to certain rubber additives. The underlying year, molecules and methodology are undisclosed; do not interpret as inventories or realized exports.",
+    "No artificial values, no causal inference"
+  ],
+  "design_moves": [
+    "Source and neutral themes",
+    "Direct data labels",
+    "Data-derived bar positions",
+    "Explicit units and scope"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_visual_checked": false,
+  "diff_notes": "Original graphic not visually accessed; editorial chart from reported article figures.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Generate a reproducible matplotlib comparison using exact published numerical values and transparent provenance.",
+    "response": "Full code is chart.py, values are data.csv, and complete theme/context is config.json. Install requirements.txt and run python chart.py --data data.csv --config config.json --theme source --output source.png; repeat with theme neutral."
+  },
+  "split_group": "https://www.mckinsey.com/industries/chemicals/our-insights/system-advantage-the-new-source-of-value-in-chemicals"
+}
