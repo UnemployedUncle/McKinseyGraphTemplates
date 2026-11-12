@@ -25,12 +25,21 @@
     "local_mini_unit_tests": "5/5 passed",
     "local_medallion_validate": "passed",
     "original_visual_check": "not verified",
-    "github_actions": "pending"
+    "github_actions": "success",
+    "github_actions_run_id": 43281064256,
+    "github_actions_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43281064256",
+    "github_actions_artifact_id": 13973710400,
+    "full_repo_unit_tests": "passed",
+    "full_repo_medallion_validate": "passed",
+    "full_repo_render_all": "passed",
+    "full_repo_upload_artifact": "passed",
+    "artifact_integrity_sha256": "056169a9bab5adf705dce0899e0ac5b6f603aef3649317fd563b22d4c381112a"
   },
   "source_commits": {
     "main_before": "804fe213b15d1cc7d025b1eca0ec77f8f006c776",
-    "prepared_commit_sha": "same commit as this file",
-    "main_after": "read GitHub ref after commit"
+    "prepared_commit_sha": "a22f95c77e9170b6e66a10edb57cdcd496577ee1",
+    "main_after": "a22f95c77e9170b6e66a10edb57cdcd496577ee1",
+    "bronze_commit_sha": "a22f95c77e9170b6e66a10edb57cdcd496577ee1"
   },
   "output_files": [
     {

@@ -38,4 +38,11 @@ Original main parent: 804fe213b15d1cc7d025b1eca0ec77f8f006c776.
 - bronze/2026-11-13/bcg_health_consumerization_country_index_exhibit_editorial: payload_sha256=56f20e003bd7e7e362e491c60832bc7183422dd763d3e5452c6e3b7b867bb579, human_review=pending
 - bronze/2026-11-13/mckinsey_trade_achilles_heel_ex3_import_width: payload_sha256=44ef83ae0885ea0968e7aff70c1c838ab03b0d14a0e50273fc9caecf36bbd5d0, human_review=pending
 
-Records and files: chart.py, data.csv, config.json, requirements.txt, card.md, record.json, validation.json, manifest.json per bundle. Exact SHA256 is in manifests. Catalog was recalculated preserving prior 54 entries and all Silver/Gold states. Delivery flag is false; separate 07:15 run should read this report and prepared.json and not repeat creation. Source/original logos/images/font files are not committed. GitHub Actions result must be verified from the actual run before claiming success.
+Records and files: chart.py, data.csv, config.json, requirements.txt, card.md, record.json, validation.json, manifest.json per bundle. Exact SHA256 is in manifests. Catalog was recalculated preserving prior 54 entries and all Silver/Gold states. Delivery flag is false; separate 07:15 run should read this report and prepared.json and not repeat creation. Source/original logos/images/font files are not committed. GitHub Actions completed successfully for bronze commit a22f95c77e9170b6e66a10edb57cdcd496577ee1.
+
+## Confirmed GitHub Actions execution
+
+- Run: https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43281064256 (completed/success).
+- All four core steps passed: unittest, medallion validate, render_all, artifact upload.
+- Artifact ID `13973710400` (`chart-previews-and-smoke-tests`), SHA256 `056169a9bab5adf705dce0899e0ac5b6f603aef3649317fd563b22d4c381112a`.
+- Bronze commit: `a22f95c77e9170b6e66a10edb57cdcd496577ee1`. The preparation record update is audit-only; no new chart content or approval is created.
