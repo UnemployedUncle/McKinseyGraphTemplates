@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261113_bcg_health_consumerization_country_index_exhibit_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-12T18:28:48.274366+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/health-care-consumerization-patients",
+  "figure_ref": "Health Care Consumerization Index by Country (article exhibit; editorial)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "validation.json": "14a935a90b070512f0644391e8ac6994f589a4f45eb89097026ad506f91c949b",
+    "requirements.txt": "77417e57750baf1b5b8ebd1a46723a2b9c3f57d5b7963d0d73ce917deeed4ec2",
+    "card.md": "4f7702ece04b92f13b323a62bceae03b930c06a68d876795a7044c20ba7944e6",
+    "data.csv": "74987506b08c95c7dbb776d8b79cc34ee5db0d5f4ba83f9093114cbfaeb55bf6",
+    "record.json": "6b60f41316ca7e02f69816e78e50c4ed55f057aecb6fe01f40d6771a0e22f4b7",
+    "config.json": "f0492ed84570627c44c0c29e8988abd9031c275b8d9fb33f20c0d57901fdb4bb",
+    "chart.py": "e36d0922de19683845045b33aab52b63cb9fcec4f7ef5428cb70dd02ddbf7201"
+  },
+  "payload_sha256": "56f20e003bd7e7e362e491c60832bc7183422dd763d3e5452c6e3b7b867bb579"
+}

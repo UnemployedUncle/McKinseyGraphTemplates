@@ -1,0 +1,54 @@
+{
+  "run_date": "2026-11-13",
+  "time_zone": "Asia/Seoul",
+  "phase": "03:15_prepare",
+  "start_time_kst": "2026-11-13T03:19:11+09:00",
+  "completed_at_utc": "2026-11-12T18:33:22.215Z",
+  "completed_at_kst": "2026-11-13T03:33:22.215+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "target_new_subjects": 3,
+  "actual_new_subjects": 2,
+  "new_bronze": 2,
+  "counts": {
+    "bronze": 56,
+    "silver": 0,
+    "gold": 0
+  },
+  "original_reproduction_verified_cumulative": 14,
+  "original_reproduction_verified_today": 0,
+  "check_status": {
+    "local_chart_render": "passed",
+    "source_png": 2,
+    "neutral_png": 2,
+    "dpi": 200,
+    "local_mini_unit_tests": "5/5 passed",
+    "local_medallion_validate": "passed",
+    "original_visual_check": "not verified",
+    "github_actions": "pending"
+  },
+  "source_commits": {
+    "main_before": "804fe213b15d1cc7d025b1eca0ec77f8f006c776",
+    "prepared_commit_sha": "same commit as this file",
+    "main_after": "read GitHub ref after commit"
+  },
+  "output_files": [
+    {
+      "path": "bronze/2026-11-13/bcg_health_consumerization_country_index_exhibit_editorial",
+      "payload_sha256": "56f20e003bd7e7e362e491c60832bc7183422dd763d3e5452c6e3b7b867bb579",
+      "review": "pending",
+      "fidelity_score": null
+    },
+    {
+      "path": "bronze/2026-11-13/mckinsey_trade_achilles_heel_ex3_import_width",
+      "payload_sha256": "44ef83ae0885ea0968e7aff70c1c838ab03b0d14a0e50273fc9caecf36bbd5d0",
+      "review": "pending",
+      "fidelity_score": null
+    }
+  ],
+  "missing_firm": {
+    "firm": "Bain",
+    "reason": "Official eligible non-duplicate chart with verified release date and inspectable original not confirmed in 7/30-day search"
+  },
+  "notes": "Images generated and manually inspected as local artifacts; not inside immutable Bronze. GitHub Actions to be confirmed separately. No human approval, Silver/Gold promotion, or model training."
+}

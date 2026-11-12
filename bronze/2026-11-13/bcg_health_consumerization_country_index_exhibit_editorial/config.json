@@ -1,0 +1,46 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "accent": "#087C65",
+      "secondary": "#B9C9C1",
+      "highlight": "#D26046",
+      "text": "#1C312A",
+      "muted": "#526D63",
+      "grid": "#D9E3DE",
+      "figure_size": [
+        13.5,
+        7.0
+      ]
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "accent": "#354A66",
+      "secondary": "#B3BECB",
+      "highlight": "#A76C4C",
+      "text": "#222D39",
+      "muted": "#697887",
+      "grid": "#D9E1E7",
+      "figure_size": [
+        13.5,
+        7.0
+      ]
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "ranked_index",
+    "title": "Health care consumerization varies by market",
+    "subtitle": "BCG 10-market survey | Index of consumer attitudes (0–100), Jul–Aug 2026",
+    "x_label": "Health care consumerization index (points, 0–100)",
+    "label_col": "country",
+    "value_col": "index_score",
+    "highlight_categories": [
+      "China",
+      "India",
+      "United Arab Emirates",
+      "Brazil"
+    ],
+    "max_x": 82,
+    "footnote": "Source: BCG (12 Nov 2026); n=9,914. Index points, not percentages. Editorial rendering of reported figures."
+  }
+}

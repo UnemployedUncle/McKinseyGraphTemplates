@@ -1,0 +1,72 @@
+{
+  "source_url": "https://www.bcg.com/publications/2026/health-care-consumerization-patients",
+  "canonical_url": "https://www.bcg.com/publications/2026/health-care-consumerization-patients",
+  "source_title": "The Consumerization of Health Care: How Patients Are Reshaping the Industry",
+  "published_at": "2026-11-12",
+  "collected_at": "2026-11-13",
+  "data_observation_period": "2026-07 to 2026-08",
+  "figure_ref": "Health Care Consumerization Index by Country (article exhibit; editorial)",
+  "chart_key": "bcg:https://www.bcg.com/publications/2026/health-care-consumerization-patients:Health Care Consumerization Index by Country",
+  "firm": "bcg",
+  "business_context": "health care consumer experience, cross-market attitudes",
+  "key_message": "중국 72점과 일본 36점의 의료소비자화 인식지수 격차는 36점으로, 환자 선택권·편의성 중심의 사업모델은 국가별로 차별화해야 한다.",
+  "insight_type": "geographic ranking of index points",
+  "chart_type": "ranked_horizontal_bar_editorial",
+  "encoding": {
+    "x": "index_score",
+    "y": "country",
+    "color": "selected upper four, editorial emphasis",
+    "size": "index_score",
+    "sort": "descending",
+    "labels": "direct index point values",
+    "axis": "zero baseline, index defined 0-100",
+    "notes": "survey date, sample, index interpretation"
+  },
+  "data_spec": {
+    "file": "data.csv",
+    "fields": [
+      "country",
+      "index_score",
+      "index_scale",
+      "survey_period",
+      "provenance",
+      "metric",
+      "population",
+      "group",
+      "source_url",
+      "note"
+    ],
+    "unit": "index points (0-100), not percentage",
+    "denominator": "survey respondents per country, index of six weighted items",
+    "sample_and_model": "n=9,914 in 10 markets; UAE n=354; exact raw responses and item weights not disclosed"
+  },
+  "data_recipe": [
+    "Normalize country and survey period",
+    "Keep reported 0-100 index scores as index points",
+    "Sort and draw horizontal bars",
+    "Derive cross-market gap in index points",
+    "Interpret with health-system context and sampling limitations"
+  ],
+  "message_conditions": [
+    "Same six-item composite index in all markets",
+    "Scores do not measure service utilization or patient satisfaction",
+    "Country difference is not causal effect or market size"
+  ],
+  "design_moves": [
+    "rank descending",
+    "highlight the four highest scores as editorial choice",
+    "direct labels and zero baseline",
+    "separate caption from chart design"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_visual_checked": false,
+  "diff_notes": "Original exhibit picture not visually opened, so editorial ranked bar from all ten officially reported values; not marked as original reproduction.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Build a reusable 10-market ranked bar of health care consumerization index scores with defensible data provenance and editable themes.",
+    "response": "Files: chart.py with render(data,theme,context)->fig, reported values in data.csv, exact THEME.source/neutral and CONTEXT mappings in config.json. Run python chart.py --data data.csv --config config.json --theme source --output source.png and repeat --theme neutral."
+  },
+  "split_group": "https://www.bcg.com/publications/2026/health-care-consumerization-patients"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261113_mckinsey_trade_achilles_heel_ex3_import_width",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-12T18:28:49.280880+00:00",
+  "source_url": "https://www.mckinsey.com/mgi/our-research/the-achilles-heel-of-global-trade-building-resilience-where-it-matters-most",
+  "figure_ref": "Exhibit 3: Share of imports exposed to 2 or 3 vulnerabilities; variable-width columns",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "validation.json": "600f7b5227b04ee0afd19e3b9be088b3b23fadc6694140408bddf68cbe3fa062",
+    "requirements.txt": "77417e57750baf1b5b8ebd1a46723a2b9c3f57d5b7963d0d73ce917deeed4ec2",
+    "card.md": "726976921289e07b49dd1da29b8fcf2ff02e2d1b31cfbb1f796d5d670113d142",
+    "data.csv": "7afcc4c2583654353abb273f114727ede68b3e3da928810800b623552f93b79e",
+    "record.json": "d149784f0cdcc2fe7872b54519d3fa503482fedb3fd4d183c933bb8042e86699",
+    "config.json": "c558b72a00a3445d3cb809c1daa85be58bfe6fa14927715bb37e757e64c18a8b",
+    "chart.py": "e36d0922de19683845045b33aab52b63cb9fcec4f7ef5428cb70dd02ddbf7201"
+  },
+  "payload_sha256": "44ef83ae0885ea0968e7aff70c1c838ab03b0d14a0e50273fc9caecf36bbd5d0"
+}

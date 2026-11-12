@@ -1,0 +1,40 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_visual_checked": false,
+  "execution_status": "passed",
+  "render_commands": [
+    {
+      "command": "python chart.py --data data.csv --config config.json --theme source --output source.png",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": "python chart.py --data data.csv --config config.json --theme neutral --output neutral.png",
+      "exit_code": 0,
+      "stderr": ""
+    }
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "pandas_version": "2.2.3",
+  "render_dpi": 200,
+  "themes": [
+    "source",
+    "neutral"
+  ],
+  "iteration_count": 1,
+  "data_checks": {
+    "numeric_nonnegative": true,
+    "unique_labels": true,
+    "rows": 10,
+    "csv_provenance": true,
+    "range_0_100": true
+  },
+  "layout_check": "PNG files manually inspected after render; no originals visually available",
+  "fidelity_dimensions": null,
+  "self_score_reason": "Original graphical image not visually accessed: no valid 7-dimension fidelity score",
+  "remaining_differences": "BCG: article chart not seen, published index values ranked editorially. McKinsey: graphical exhibit not seen, text-reported width encoding used; visual labels/layout cannot be confirmed.",
+  "human_review": "pending",
+  "training_eligible": false
+}

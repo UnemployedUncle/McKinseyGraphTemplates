@@ -1,0 +1,76 @@
+{
+  "source_url": "https://www.mckinsey.com/mgi/our-research/the-achilles-heel-of-global-trade-building-resilience-where-it-matters-most",
+  "canonical_url": "https://www.mckinsey.com/mgi/our-research/the-achilles-heel-of-global-trade-building-resilience-where-it-matters-most",
+  "source_title": "The Achilles’ heel of global trade: Building resilience where it matters most",
+  "published_at": "2026-11-12",
+  "collected_at": "2026-11-13",
+  "data_observation_period": "2024",
+  "figure_ref": "Exhibit 3: Share of imports exposed to 2 or 3 vulnerabilities; variable-width columns",
+  "chart_key": "mckinsey:https://www.mckinsey.com/mgi/our-research/the-achilles-heel-of-global-trade-building-resilience-where-it-matters-most:Exhibit 3",
+  "firm": "mckinsey",
+  "business_context": "global goods import risk and supply chain resilience",
+  "key_message": "일본 수입의 36%가 복합 무역취약성에 노출되는 반면 말레이시아는 10%이며, 실제 경제적 위험은 취약 비율뿐 아니라 수입 규모·치명도·회복수단으로 판단해야 한다.",
+  "insight_type": "exposure layers and import-weighted country comparison",
+  "chart_type": "variable_width_stacked_bar",
+  "encoding": {
+    "x": "economy sorted by exposure, column width imports_usd_billion",
+    "y": "exposure_total_pct",
+    "color": "exactly_two_pct and all_three_pct",
+    "size": "imports_usd_billion width",
+    "sort": "descending total exposure percent",
+    "labels": "country labels; selected direct percentages",
+    "axis": "y 0-40, widths $bn",
+    "notes": "explicit rounding/exclusions"
+  },
+  "data_spec": {
+    "file": "data.csv",
+    "fields": [
+      "economy",
+      "exposure_total_pct",
+      "all_three_pct",
+      "exactly_two_pct",
+      "imports_usd_billion",
+      "total_provenance",
+      "all_three_provenance",
+      "exactly_two_provenance",
+      "width_provenance",
+      "data_year",
+      "source_url",
+      "calculation",
+      "unit"
+    ],
+    "unit": "percentage of goods imports by economy; total imports $bn (nominal USD, 2024)",
+    "denominator": "total import value for each economy in 2024; Europe-30 excludes intra-bloc",
+    "sample_and_model": "UN Comtrade; MGI vulnerability model, product criticality/concentration/geopolitical distance"
+  },
+  "data_recipe": [
+    "Normalize country and year total nominal goods imports",
+    "Classify products as exactly two/all three risk criteria",
+    "Aggregate vulnerability shares per economy",
+    "Derive two-only by total minus all-three (rounding-aware)",
+    "Map import value to column width and vulnerability shares to stacked height",
+    "Review physical chokepoints and substitute suppliers before acting"
+  ],
+  "message_conditions": [
+    "Derived exactly_two_pct uses already rounded reported inputs",
+    "Column widths show relative imports not loss probability",
+    "Shares apply to each economy own import base and do not establish causal losses"
+  ],
+  "design_moves": [
+    "variable-width stacked columns reflecting published Exhibit 3 encoding",
+    "data-derived column positions",
+    "sort descending share",
+    "two themes and explicit source footnote"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_visual_checked": false,
+  "diff_notes": "Official HTML Exhibit 3 text/table and encoding checked, but original raster/PDF diagram not viewed. Structural reconstruction remains unverified.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Create an import-weighted stacked column view for 15 economies showing exactly two versus three supply-chain vulnerabilities, with exact official inputs and source metadata.",
+    "response": "Files: chart.py rendering import-width Marimekko; data.csv includes 15 publicly reported import values and vulnerability percentages, derived exactly_two_pct; config.json defines THEME.source/neutral and CONTEXT. Run python chart.py --data data.csv --config config.json --theme source --output source.png and repeat --theme neutral."
+  },
+  "split_group": "https://www.mckinsey.com/mgi/our-research/the-achilles-heel-of-global-trade-building-resilience-where-it-matters-most"
+}
