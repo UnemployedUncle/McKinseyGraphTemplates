@@ -1,0 +1,53 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#182535",
+      "muted": "#687684",
+      "primary": "#1A9E91",
+      "secondary": "#CBD6DD",
+      "negative": "#D86962",
+      "grid": "#E6EBEF",
+      "font": "DejaVu Sans",
+      "figsize": [
+        11,
+        6.2
+      ],
+      "annotation_color": "#394B59"
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#212121",
+      "muted": "#606060",
+      "primary": "#313131",
+      "secondary": "#A5A5A5",
+      "negative": "#717171",
+      "grid": "#E5E5E5",
+      "font": "DejaVu Sans",
+      "figsize": [
+        11,
+        6.2
+      ],
+      "annotation_color": "#505050"
+    }
+  },
+  "CONTEXT": {
+    "category_field": "country",
+    "value_field": "value",
+    "ascending": false,
+    "focus_category": "Spain",
+    "x_limits": [
+      -30,
+      100
+    ],
+    "tick_step": 20,
+    "bar_height": 0.56,
+    "title": "Farm spending intentions diverge across European markets",
+    "subtitle": "Net spending sentiment = % expecting increase − % expecting decrease · 2026",
+    "xlabel": "Net spending sentiment (percentage points)",
+    "value_suffix": "pp",
+    "show_plus": true,
+    "footnote": "Source: McKinsey Global Farmer Insights 2026 (Europe n=701). Fielded Apr–Jul 2026; horizon 12–18 months. Editorial design.",
+    "tick_suffix": "pp"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "source_url": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark",
+  "figure_ref": "Article reported governance statistics (editorial; not exhibit reproduction)",
+  "original_visual_inspected": false,
+  "exhibit_image_access": "SVG/Web visual fidelity not established; article text and reported numbers inspected; this is editorial visualization",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "fidelity_rubric": {
+    "chart_type": null,
+    "data_and_order": null,
+    "axes": null,
+    "colors_and_highlights": null,
+    "labels_annotations_title": null,
+    "legend_aspect_ratio": null,
+    "whitespace": null
+  },
+  "reason_for_null_score": "Editorial redesign and no verified visual inspection of original exhibit.",
+  "semantic_checks": {
+    "unit": true,
+    "denominator_context": true,
+    "period": true,
+    "provenance": true,
+    "unique_category": true,
+    "signed_bar_handling": true,
+    "original_vs_editorial_separated": true
+  },
+  "run_commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output ../../../artifacts/bronze/bcg_banking_ai_governance_operational_gap_editorial/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output ../../../artifacts/bronze/bcg_banking_ai_governance_operational_gap_editorial/neutral.png"
+  ],
+  "software_versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3"
+  },
+  "render_attempts": 2,
+  "outstanding_differences": "Original exact visual encoding/layout not assessed; this should not be promoted as exact reproduction.",
+  "human_review": "pending",
+  "design_correction": "Added tick-suffix configuration to support units per chart",
+  "command_path_note": "Reproducible equivalent of commands executed for this snapshot; absolute temporary paths intentionally omitted."
+}

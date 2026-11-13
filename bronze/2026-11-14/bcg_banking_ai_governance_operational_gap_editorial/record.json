@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark",
+  "source_title": "Why Operationalizing Governance Gives Banks an Advantage in Scaling AI",
+  "publication_date": "2026-11-13",
+  "retrieved_at": "2026-11-14",
+  "data_period": "2026 banking AI governance benchmark (field dates not disclosed)",
+  "figure_ref": "Article reported governance statistics (editorial; not exhibit reproduction)",
+  "chart_key": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark#article-reported-governance-statistics-(editorial;-not-exhibit-reproduction)",
+  "business_context": "Banks expanding autonomous agents while governance controls and inventories lag policy adoption.",
+  "key_message": "AI 운영 허용 73%, 전용 AI 정책 77%와 달리 Agent 전반 통제체계를 갖춘 은행은 8%로, AI 활용과 실행 가능한 통제를 별도로 관리해야 한다.",
+  "visual_type": "ranked_horizontal_bar",
+  "original_chart_type": "Two-dimensional AI adoption vs risk maturity segmentation (exhibit); this bar design does not reproduce that exhibit",
+  "editorial_redesign": true,
+  "encoding": {
+    "x": "reported value, percentage points for net sentiment; percentage for banking shares",
+    "y": "measure",
+    "color": "focus category or negative",
+    "size": "bar length proportional to value",
+    "sort": "by value",
+    "axis": "0 reference line; no truncated x origin"
+  },
+  "data_spec": {
+    "grain": "governance_condition × survey benchmark",
+    "value_field": "value",
+    "unit": "% of surveyed banks",
+    "denominator": "26 surveyed global and domestic systemically important banks (percentage rounded; survey question applicability may vary)",
+    "time_basis": "2026 banking AI governance benchmark (field dates not disclosed)",
+    "comparison": "Marginal percentages for different questions; categories overlap and are not a funnel or cohort transition.",
+    "sample": "26 major banks worldwide; official report states 26; exact per-question bases not disclosed.",
+    "source": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark",
+    "provenance_definitions": {
+      "reported": "publicly stated",
+      "derived": "formula on reported inputs",
+      "digitized_estimate": "visual digitization with error bounds",
+      "missing": "unknown"
+    }
+  },
+  "data_recipe": [
+    "Define survey questions and institution eligibility for each control.",
+    "Create binary institution × governance-condition indicators; retain per-question denominator.",
+    "Compute 100 × number meeting condition / number answering, without treating categories as sequential stages.",
+    "Select target metric and use common 0–100% axis; inspect missing responses and rounding."
+  ],
+  "message_conditions": [
+    "Each proportion is a marginal share of responding institutions for a distinct question.",
+    "A 69pp or 65pp difference is NOT the fraction of banks missing the control.",
+    "Survey n=26, exact effective denominators and sampling intervals not disclosed; no causal conclusions."
+  ],
+  "design_moves": [
+    "Direct-label each bar instead of a legend.",
+    "Rank shares to foreground policy vs agent-controls imbalance.",
+    "Highlight controls in a contrasting style without implying paired respondent transitions."
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Published article numbers checked; original exhibit visually not verified; editorial redesign rather than original reproduction.",
+  "training_pair": {
+    "instruction": "From bank AI risk benchmark marginal percentages, create a reproducible neutral and source-themed ranked horizontal bar without conflating policy adoption with agent-specific controls.",
+    "response": {
+      "render_entrypoint": "chart.py:render(data, theme, context)",
+      "input_file": "data.csv",
+      "config_file": "config.json",
+      "run_commands": [
+        "python chart.py --data data.csv --config config.json --theme source --output source.png",
+        "python chart.py --data data.csv --config config.json --theme neutral --output neutral.png"
+      ],
+      "data_rows": [
+        {
+          "measure": "Dedicated AI policy",
+          "value": 77,
+          "unit": "percent",
+          "period": "2026",
+          "provenance": "reported",
+          "denominator": "banks in benchmark",
+          "source_note": "Dedicated AI policy"
+        },
+        {
+          "measure": "Agents permitted in production",
+          "value": 73,
+          "unit": "percent",
+          "period": "2026",
+          "provenance": "reported",
+          "denominator": "banks in benchmark",
+          "source_note": "Permitted for select use cases"
+        },
+        {
+          "measure": "Comprehensive agent controls",
+          "value": 8,
+          "unit": "percent",
+          "period": "2026",
+          "provenance": "reported",
+          "denominator": "banks in benchmark",
+          "source_note": "Standard monitoring and controls explicitly cover AI agents"
+        }
+      ],
+      "script": "chart.py in this immutable bundle; execute with pandas/matplotlib; input fields explicitly mapped in CONTEXT"
+    }
+  },
+  "split_group": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark",
+  "training_eligible": false,
+  "human_review": "pending"
+}

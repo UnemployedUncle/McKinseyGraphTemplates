@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-farmer-insights-2026-a-closer-look-at-europe",
+  "source_title": "Global Farmer Insights 2026: A closer look at Europe",
+  "publication_date": "2026-11-12",
+  "retrieved_at": "2026-11-14",
+  "data_period": "Survey April–July 2026; spending intentions next 12–18 months",
+  "figure_ref": "Exhibit 2 reported national net spending sentiment (editorial reconstruction)",
+  "chart_key": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-farmer-insights-2026-a-closer-look-at-europe#exhibit-2-reported-national-net-spending-sentiment-(editorial-reconstruction)",
+  "business_context": "Agri-input suppliers tailoring commercial strategy for farmers in Spain, Germany, and France under margin pressure.",
+  "key_message": "향후 12~18개월 농업 지출 순증가 의향은 스페인 +78%p, 독일 +44%p, 프랑스 −8%p로, 유럽 단일 영업 전략보다 국가별 투입재·장비 수요 세분화가 중요하다.",
+  "visual_type": "diverging_horizontal_bar",
+  "original_chart_type": "Exhibit 2 graphic; original visual encoding inaccessible/unverified",
+  "editorial_redesign": true,
+  "encoding": {
+    "x": "reported value, percentage points for net sentiment; percentage for banking shares",
+    "y": "country",
+    "color": "focus category or negative",
+    "size": "bar length proportional to value",
+    "sort": "by value",
+    "axis": "0 reference line; no truncated x origin"
+  },
+  "data_spec": {
+    "grain": "country × survey_wave",
+    "value_field": "value",
+    "unit": "net spending sentiment (%p)",
+    "denominator": "Percent of country survey respondents expecting to increase spending minus percent expecting to decrease (not share of all farmers increasing spending)",
+    "time_basis": "Survey April–July 2026; spending intentions next 12–18 months",
+    "comparison": "Three countries, same 2026 wave; different sample sizes 200/250/251; net difference in percentage points.",
+    "sample": "701 Europe farmers: Germany n=250, France n=251, Spain n=200; total global 5,500 across 10 countries.",
+    "source": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-farmer-insights-2026-a-closer-look-at-europe",
+    "provenance_definitions": {
+      "reported": "publicly stated",
+      "derived": "formula on reported inputs",
+      "digitized_estimate": "visual digitization with error bounds",
+      "missing": "unknown"
+    }
+  },
+  "data_recipe": [
+    "Use country × respondent spending outlook (increase/same/decrease); preserve sample design and missingness.",
+    "For each country calculate 100 × increase respondents / valid answers minus 100 × decrease respondents / valid answers.",
+    "Keep sign and percentage-point unit; do not interpret net result as respondents increasing spending.",
+    "Sort country values; draw diverging bars with anchored zero; use direct labels, note survey wave and projection horizon."
+  ],
+  "message_conditions": [
+    "Values are net sentiment (difference in two proportions), not percentages of farmers who will spend more.",
+    "Country samples vary (ES200, DE250, FR251); no raw respondent data, confidence intervals, or weights published.",
+    "2026 expectation horizon 12–18 months is not realized spending; extreme events after field dates excluded."
+  ],
+  "design_moves": [
+    "Use shared zero reference to emphasize France below neutral.",
+    "Highlight negative sign via separate thematic color.",
+    "Sort by score, label +/− signs with pp, show context and sample information."
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Published article numbers checked; original exhibit visually not verified; editorial redesign rather than original reproduction.",
+  "training_pair": {
+    "instruction": "Render a diverging survey net-sentiment chart for Spain +78pp, Germany +44pp and France −8pp, with explicit signed units and 2026 survey fieldwork information.",
+    "response": {
+      "render_entrypoint": "chart.py:render(data, theme, context)",
+      "input_file": "data.csv",
+      "config_file": "config.json",
+      "run_commands": [
+        "python chart.py --data data.csv --config config.json --theme source --output source.png",
+        "python chart.py --data data.csv --config config.json --theme neutral --output neutral.png"
+      ],
+      "data_rows": [
+        {
+          "country": "Spain",
+          "value": 78,
+          "unit": "percentage_points",
+          "period": "2026 Apr-Jul",
+          "provenance": "reported",
+          "denominator": "increase_pct minus decrease_pct",
+          "sample_n": 200,
+          "note": "Expectation next 12–18 months"
+        },
+        {
+          "country": "Germany",
+          "value": 44,
+          "unit": "percentage_points",
+          "period": "2026 Apr-Jul",
+          "provenance": "reported",
+          "denominator": "increase_pct minus decrease_pct",
+          "sample_n": 250,
+          "note": "Expectation next 12–18 months"
+        },
+        {
+          "country": "France",
+          "value": -8,
+          "unit": "percentage_points",
+          "period": "2026 Apr-Jul",
+          "provenance": "reported",
+          "denominator": "increase_pct minus decrease_pct",
+          "sample_n": 251,
+          "note": "Expectation next 12–18 months"
+        }
+      ],
+      "script": "chart.py in this immutable bundle; execute with pandas/matplotlib; input fields explicitly mapped in CONTEXT"
+    }
+  },
+  "split_group": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-farmer-insights-2026-a-closer-look-at-europe",
+  "training_eligible": false,
+  "human_review": "pending"
+}

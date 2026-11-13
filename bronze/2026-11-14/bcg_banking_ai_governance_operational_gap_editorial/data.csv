@@ -1,0 +1,4 @@
+measure,value,unit,period,provenance,denominator,source_note
+Dedicated AI policy,77,percent,2026,reported,banks in benchmark,Dedicated AI policy
+Agents permitted in production,73,percent,2026,reported,banks in benchmark,Permitted for select use cases
+Comprehensive agent controls,8,percent,2026,reported,banks in benchmark,Standard monitoring and controls explicitly cover AI agents

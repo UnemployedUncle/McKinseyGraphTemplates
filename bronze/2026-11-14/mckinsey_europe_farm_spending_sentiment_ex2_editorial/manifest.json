@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261114_mckinsey_europe_farm_spending_sentiment_ex2_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-13T18:20:48.904693+00:00",
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-farmer-insights-2026-a-closer-look-at-europe",
+  "figure_ref": "Exhibit 2 reported national net spending sentiment (editorial reconstruction)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "data.csv": "01b3db45d0f1947b3829cfb172f352ab5448f3b89c7ba405a8018ee0940088d8",
+    "requirements.txt": "3eea14305cf53152f4386e621626726145c8198061d0842e99a64f860da7c6ec",
+    "validation.json": "b601f364d8db4bf50382269d5199059510148d2f6439183c41249286bd4a95f5",
+    "config.json": "1b38af8d915c0b7ddd15ee0a61e2f5950b1f01de094220504f6a1cf77a9148fc",
+    "chart.py": "44196ae64f5fab2607218f51c8b096197da53c197cabac9da500839a8ffd2402",
+    "card.md": "7bd276b52f81bb0ae814c610bae3a575d3ff75a2ad8b7a47603e66a532750572",
+    "record.json": "124d593aa05bdcf7fceb37045274d2bc5f8c4c8e22d508261c03e9dcda24a246"
+  },
+  "payload_sha256": "a57c2167f4ea8ddf2431325e2f32d4aa217e15da0c5152300661798acfbb8a26"
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-11-14",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "started_at_local": "2026-11-14T03:16:32+09:00",
+  "prepared_at_utc": "2026-11-13T18:27:11.511Z",
+  "prepared_complete": true,
+  "delivered": false,
+  "commit_sha": null,
+  "actions_status": "pending",
+  "counts": {
+    "bronze": 58,
+    "silver": 0,
+    "gold": 0
+  },
+  "target": 3,
+  "completed": 2,
+  "verified_original_new": 0,
+  "verified_original_cumulative": 14,
+  "local_unit_tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "local_medallion_validate": "passed",
+  "previews": {
+    "source": 2,
+    "neutral": 2,
+    "dpi": 200,
+    "inspected": true,
+    "location": "Github Actions artifact if successful; prepared local ZIP is not persisted by Git"
+  },
+  "source_records": [
+    {
+      "path": "bronze/2026-11-14/bcg_banking_ai_governance_operational_gap_editorial",
+      "source_url": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark",
+      "figure_ref": "Article reported governance statistics (editorial; not exhibit reproduction)",
+      "payload_sha256": "c96d01f522f6ccdd7548c44653bf79c1fe7419db282359ecc2206a4c1739a997",
+      "human_review": "pending",
+      "validation_status": "unverified",
+      "fidelity_score": null
+    },
+    {
+      "path": "bronze/2026-11-14/mckinsey_europe_farm_spending_sentiment_ex2_editorial",
+      "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-farmer-insights-2026-a-closer-look-at-europe",
+      "figure_ref": "Exhibit 2 reported national net spending sentiment (editorial reconstruction)",
+      "payload_sha256": "a57c2167f4ea8ddf2431325e2f32d4aa217e15da0c5152300661798acfbb8a26",
+      "human_review": "pending",
+      "validation_status": "unverified",
+      "fidelity_score": null
+    }
+  ],
+  "excluded": [
+    {
+      "firm": "Bain",
+      "reason": "Recent 7/30 day suitable primary quantitative exhibit not verified with nonduplicate and original access conditions."
+    }
+  ],
+  "run_report_path": "runs/2026-11-14/RUN_REPORT.md",
+  "training_performed": false,
+  "approval_performed": false
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 56,
+    "bronze": 58,
     "silver": 0,
     "gold": 0
   },
@@ -786,6 +786,34 @@
       "source_url": "https://www.mckinsey.com/mgi/our-research/the-achilles-heel-of-global-trade-building-resilience-where-it-matters-most",
       "figure_ref": "Exhibit 3: Share of imports exposed to 2 or 3 vulnerabilities; variable-width columns",
       "key_message": "일본 수입의 36%가 복합 무역취약성에 노출되는 반면 말레이시아는 10%이며, 실제 경제적 위험은 취약 비율뿐 아니라 수입 규모·치명도·회복수단으로 판단해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261114_bcg_banking_ai_governance_operational_gap_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-14/bcg_banking_ai_governance_operational_gap_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "c96d01f522f6ccdd7548c44653bf79c1fe7419db282359ecc2206a4c1739a997",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark",
+      "figure_ref": "Article reported governance statistics (editorial; not exhibit reproduction)",
+      "key_message": "AI 운영 허용 73%, 전용 AI 정책 77%와 달리 Agent 전반 통제체계를 갖춘 은행은 8%로, AI 활용과 실행 가능한 통제를 별도로 관리해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261114_mckinsey_europe_farm_spending_sentiment_ex2_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-14/mckinsey_europe_farm_spending_sentiment_ex2_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "a57c2167f4ea8ddf2431325e2f32d4aa217e15da0c5152300661798acfbb8a26",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-farmer-insights-2026-a-closer-look-at-europe",
+      "figure_ref": "Exhibit 2 reported national net spending sentiment (editorial reconstruction)",
+      "key_message": "향후 12~18개월 농업 지출 순증가 의향은 스페인 +78%p, 독일 +44%p, 프랑스 −8%p로, 유럽 단일 영업 전략보다 국가별 투입재·장비 수요 세분화가 중요하다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

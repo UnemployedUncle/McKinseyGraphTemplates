@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261114_bcg_banking_ai_governance_operational_gap_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-13T18:20:48.137559+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark",
+  "figure_ref": "Article reported governance statistics (editorial; not exhibit reproduction)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "data.csv": "4bc00985dc57f6072229a10e0fa860b2f95a762e6141bceef2b24dc2ec903442",
+    "requirements.txt": "3eea14305cf53152f4386e621626726145c8198061d0842e99a64f860da7c6ec",
+    "validation.json": "2cc9532b56b0c2562d8ed7bc57ca37b18bf90f85405d5991c21684a2aa90f0f3",
+    "config.json": "9129583cd1c911013a08d91b880d475cb24325e5ace08c6835ce509e3723d2cf",
+    "chart.py": "44196ae64f5fab2607218f51c8b096197da53c197cabac9da500839a8ffd2402",
+    "card.md": "09ff157b42ae7842c2de0952530293422200007b0cb6d07e45cf3f903fa2901b",
+    "record.json": "f67c1ed1f50032c1e1fc201c3dea38aad1eca12d59845d4e83ca3cf9d881e39a"
+  },
+  "payload_sha256": "c96d01f522f6ccdd7548c44653bf79c1fe7419db282359ecc2206a4c1739a997"
+}

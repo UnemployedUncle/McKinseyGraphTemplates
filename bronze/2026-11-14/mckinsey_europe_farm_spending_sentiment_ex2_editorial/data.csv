@@ -1,0 +1,4 @@
+country,value,unit,period,provenance,denominator,sample_n,note
+Spain,78,percentage_points,2026 Apr-Jul,reported,increase_pct minus decrease_pct,200,Expectation next 12–18 months
+Germany,44,percentage_points,2026 Apr-Jul,reported,increase_pct minus decrease_pct,250,Expectation next 12–18 months
+France,-8,percentage_points,2026 Apr-Jul,reported,increase_pct minus decrease_pct,251,Expectation next 12–18 months
