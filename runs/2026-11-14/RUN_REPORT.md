@@ -36,3 +36,12 @@
 - `scripts/medallion.py`의 `ingest/validate` 규칙과 호환되는 파일별 SHA256 및 payload_sha256을 manifest에 작성했다.
 - 카탈로그 `catalog/index.json`, `catalog/README.md`, `dataset/bronze.jsonl`는 같은 목록으로 동기화한다.
 - GitHub는 `main` 현재 HEAD를 부모로 하는 Git tree 커밋, `expected_sha` fast-forward 업데이트, 원격 재조회가 완료된 경우에만 저장 성공으로 판단한다.
+
+## 원격 실행 검증 (2026-11-14 KST)
+- 코드·데이터 적재 커밋: https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/b2ccdd46f9331e739034af9a1f6bf517116482d7
+- CSV 원본 바이트 무결성 복구: https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/f8baf1bec9ffcc9bcec13b3c129f333b0ef2325f (CRLF 유지 및 manifest SHA256 일치)
+- GitHub Actions: https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43482946315 — **completed/success**, 단위 테스트/메달리온 검사/전체 차트 렌더/아티팩트 업로드 성공.
+- 아티팩트: https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43482946315/artifacts/14065887234
+- 원격 CSV byte-for-byte base64 검증 2/2 일치. Bronze 누적 58건, 신규 2건 human_review pending.
+- 신규 그림의 원본 시각 충실도는 두 건 모두 **unverified**, 자체 점수 **null**. GitHub CI 성공은 사용자 승인이나 원본 동일성 증거가 아니다.
+- 현재 기록은 준비 확정 상태 `prepared_complete=true`, `delivered=false`; 07:15 단계에서 이 문서와 커밋·아티팩트만 재조회한다.

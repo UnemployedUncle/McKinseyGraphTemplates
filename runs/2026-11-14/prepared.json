@@ -8,7 +8,7 @@
   "prepared_complete": true,
   "delivered": false,
   "commit_sha": null,
-  "actions_status": "pending",
+  "actions_status": "success",
   "counts": {
     "bronze": 58,
     "silver": 0,
@@ -58,5 +58,24 @@
   ],
   "run_report_path": "runs/2026-11-14/RUN_REPORT.md",
   "training_performed": false,
-  "approval_performed": false
+  "approval_performed": false,
+  "bronze_commit_sha": "b2ccdd46f9331e739034af9a1f6bf517116482d7",
+  "byte_integrity_repair_commit_sha": "f8baf1bec9ffcc9bcec13b3c129f333b0ef2325f",
+  "verified_code_commit_sha": "f8baf1bec9ffcc9bcec13b3c129f333b0ef2325f",
+  "actions_run_id": 43482946315,
+  "actions_run_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43482946315",
+  "actions_artifact_id": 14065887234,
+  "actions_artifact_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43482946315/artifacts/14065887234",
+  "actions_checks": {
+    "unit_tests": "success",
+    "medallion_validation": "success",
+    "render_all": "success",
+    "artifact_upload": "success"
+  },
+  "csv_transport_integrity": {
+    "method": "Git blob base64 preserved CRLF exactly",
+    "byte_identity_remote_check": true,
+    "manifest_consistent_with_remote": true
+  },
+  "confirmed_at_utc": "2026-11-13T18:30:46.372Z"
 }
