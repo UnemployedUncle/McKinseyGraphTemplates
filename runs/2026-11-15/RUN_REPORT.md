@@ -9,3 +9,12 @@
 - Local Python render tests: source and neutral PNG at 200dpi for each; 4 generated PNG, directly inspected. Dedicated semantic checks: 5 passed. Full repository tests and Actions to be confirmed separately after commit.
 - All new human_review=pending; no Silver/Gold, no model retraining.
 - Screenshots/reports from third parties, branding files, fonts, secrets, and generated PNG are not committed as Bronze payloads.
+
+## Confirmed GitHub Actions evidence
+- Code commit: 7f7c9bdc1e6d1296f318e15d2bc9d47ae2cf4845
+- Workflow run: https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43626645416 — completed/success.
+- Artifact: https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43626645416/artifacts/14126202636 — chart-previews-and-smoke-tests.
+- CI checks: unit tests successful; medallion validate successful; render_all successful; artifact upload successful.
+- Both source/neutral output variants rendered locally at 200dpi and directly inspected; all exact code/data/config local SHA256 hashes matched committed manifest files before upload.
+- New BCG self-fidelity verified 4.57/5 (original screenshot inspected); McKinsey editorial reconstruction unverified/null. Both are human_review=pending.
+- No notification during preparation; 07:15 delivery should read prepared.json and this report, and must not repeat research or commit.

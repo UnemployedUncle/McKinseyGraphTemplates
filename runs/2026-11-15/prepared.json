@@ -4,10 +4,10 @@
   "timezone": "Asia/Seoul",
   "phase": "preparation",
   "started_at_local": "2026-11-15T03:15:37+09:00",
-  "prepared_complete": false,
+  "prepared_complete": true,
   "delivered": false,
-  "bronze_commit_sha": null,
-  "actions_status": "pending",
+  "bronze_commit_sha": "7f7c9bdc1e6d1296f318e15d2bc9d47ae2cf4845",
+  "actions_status": "success",
   "counts": {
     "bronze": 60,
     "silver": 0,
@@ -57,5 +57,23 @@
   ],
   "run_report_path": "runs/2026-11-15/RUN_REPORT.md",
   "training_performed": false,
-  "approval_performed": false
+  "approval_performed": false,
+  "prepared_at_utc": "2026-11-14T18:29:25.008Z",
+  "verified_code_commit_sha": "7f7c9bdc1e6d1296f318e15d2bc9d47ae2cf4845",
+  "actions_run_id": 43626645416,
+  "actions_run_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43626645416",
+  "actions_artifact_id": 14126202636,
+  "actions_artifact_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43626645416/artifacts/14126202636",
+  "actions_checks": {
+    "unit_tests": "success",
+    "medallion_validation": "success",
+    "render_all": "success",
+    "artifact_upload": "success"
+  },
+  "local_environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "prepared_report_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/runs/2026-11-15/RUN_REPORT.md",
+  "delivery_expected_local": "2026-11-15T07:15:00+09:00"
 }
