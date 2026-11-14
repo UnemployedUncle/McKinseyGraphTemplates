@@ -1,0 +1,5 @@
+period,category,value_pct,unit,denominator,provenance,calculation
+2024/25,Domestic crush,52,percent of total soybean use,US soybean total use,derived,57 minus 5 percentage points
+2024/25,Exports,40,percent of total soybean use,US soybean total use,derived,35 plus 5 percentage points
+2026/27,Domestic crush,57,percent of total soybean use,US soybean total use,reported,as published
+2026/27,Exports,35,percent of total soybean use,US soybean total use,reported,as published

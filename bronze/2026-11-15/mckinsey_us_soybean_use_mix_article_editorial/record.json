@@ -1,0 +1,63 @@
+{
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil",
+  "source_title": "Taking stock: Farm pressures and uneven recovery in the United States and Brazil",
+  "publication_date": "2026-11-11",
+  "collected_at": "2026-11-15",
+  "survey_or_data_period": "2024/25 baseline inferred and 2026/27 forecast",
+  "firm": "McKinsey",
+  "figure_ref": "Soybean crush versus exports exhibit (editorial bar using article values)",
+  "chart_key": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil#Soybean crush versus exports exhibit (editorial bar using article values)",
+  "canonical_source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil",
+  "business_context": "McKinsey Agriculture Industry Review 2026-11-11, citing underlying US soybean supply and use projections; detailed source in article notes.",
+  "key_message": "미국 대두 총 사용량 중 국내 가공 비중은 2026/27년 57%로 증가하고 수출 비중은 35%로 감소할 전망이므로, 농산물 트레이딩·가공 투자에서 최종 수요처 변화를 반영해야 한다.",
+  "insight_type": "mix shift / domestic versus export channels",
+  "chart_type": "grouped_share",
+  "encoding": {
+    "x": "marketing year",
+    "y": "percentage of total use",
+    "color": "crush versus exports",
+    "size": "shared vertical percent axis"
+  },
+  "data_spec": {
+    "unit": "percentage share of US total soybean use",
+    "denominator": "Total soybean use by US marketing year",
+    "observation_unit": "marketing year × soybean use destination",
+    "provenance": "reported for original values; derived for computed historical values",
+    "source_details": "McKinsey Agriculture Industry Review 2026-11-11, citing underlying US soybean supply and use projections; detailed source in article notes."
+  },
+  "data_recipe": [
+    "Confirm common soybean-use denominator and marketing-year conventions.",
+    "Extract use shares per category from official cited sources.",
+    "Derive earlier shares only when the stated period and percentage-point changes match.",
+    "Separate domestic processing and exports without assuming they exhaust total use.",
+    "Render grouped bars with unit, year, and reported/derived provenance."
+  ],
+  "message_conditions": [
+    "Both series use share of total US soybean use, not production or crop acreage.",
+    "Two-year baseline derived using explicitly stated five percentage-point changes."
+  ],
+  "design_moves": [
+    "Chart type: grouped_share",
+    "Zero baseline and no synthetic values.",
+    "Direct value labels and documented emphasis.",
+    "Source and neutral themes via config.json."
+  ],
+  "limitations": [
+    "Other soybean uses are omitted; the two percentages do not add to 100%.",
+    "Underlying original vector exhibit inaccessible; fidelity cannot be scored.",
+    "Published text may round reported changes, and inferred earlier values inherit that uncertainty."
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": [
+    "Grouped bars are editorial; original chart not visually verified.",
+    "2024/25 shares derived from prose stating five percentage-point changes over two years.",
+    "Crush and export do not sum to 100%; other uses intentionally omitted."
+  ],
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Use the public data in data.csv and design rules in config.json to render grouped_share; preserve reported/derived provenance and disclose limitations.",
+    "response": "Install requirements.txt, then run: python chart.py --data data.csv --config config.json --theme source --output source.png ; rerun --theme neutral --output neutral.png. The exact observed inputs and style mapping are in data.csv and config.json."
+  },
+  "split_group": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil"
+}

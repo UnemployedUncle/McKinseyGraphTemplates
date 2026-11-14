@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-11-15",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "started_at_local": "2026-11-15T03:15:37+09:00",
+  "prepared_complete": false,
+  "delivered": false,
+  "bronze_commit_sha": null,
+  "actions_status": "pending",
+  "counts": {
+    "bronze": 60,
+    "silver": 0,
+    "gold": 0
+  },
+  "target": 3,
+  "completed": 2,
+  "verified_original_new": 1,
+  "verified_original_cumulative": 15,
+  "local_unit_tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "local_renderings": 4,
+  "previews": {
+    "source": 2,
+    "neutral": 2,
+    "dpi": 200,
+    "inspected": true,
+    "location": "Local user package; GitHub Actions artifact if CI succeeds"
+  },
+  "source_records": [
+    {
+      "path": "bronze/2026-11-15/bcg_canada_black_friday_budget_ex1",
+      "source_url": "https://www.bcg.com/publications/2026/canadians-are-shopping-on-tighter-budgets-this-black-friday",
+      "figure_ref": "Exhibit 1 (Canadian shoppers' planned spend by price category)",
+      "payload_sha256": "a9dfee5e0ce576b5acca4ff2f7d7670149fe92297cfe1fcb3c7e9a847dcf86ff",
+      "human_review": "pending",
+      "validation_status": "verified",
+      "fidelity_score": 4.57
+    },
+    {
+      "path": "bronze/2026-11-15/mckinsey_us_soybean_use_mix_article_editorial",
+      "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil",
+      "figure_ref": "Soybean crush versus exports exhibit (editorial bar using article values)",
+      "payload_sha256": "27b439afd64b21bcb5aa55bcec9025beed88e393a228eb74bc6c0c3ec2352835",
+      "human_review": "pending",
+      "validation_status": "unverified",
+      "fidelity_score": null
+    }
+  ],
+  "excluded": [
+    {
+      "firm": "Bain",
+      "reason": "Recent seven-/thirty-day official nonduplicate figure with confirmed publication and accessible numerical original not verified."
+    }
+  ],
+  "run_report_path": "runs/2026-11-15/RUN_REPORT.md",
+  "training_performed": false,
+  "approval_performed": false
+}

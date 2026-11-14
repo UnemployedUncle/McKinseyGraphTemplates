@@ -1,0 +1,38 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "comparison_scores": null,
+  "score_basis": "Official HTML figure link returned SVGZ and was not visually rendered. Editorial grouped bar; not claimed as original reproduction.",
+  "iteration_count": 1,
+  "original_visual_inspected": false,
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil",
+  "figure_ref": "Soybean crush versus exports exhibit (editorial bar using article values)",
+  "render_status": "passed",
+  "rendering": {
+    "commands": [
+      "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png",
+      "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png"
+    ],
+    "dpi": 200,
+    "source_png_inspected": true,
+    "neutral_png_inspected": true
+  },
+  "environment": {
+    "python": "3.11+ compatible; locally tested Python3",
+    "matplotlib": "runtime version recorded in execution report"
+  },
+  "semantic_checks": {
+    "units": "passed",
+    "denominators": "passed with documented exclusions",
+    "periods": "passed",
+    "provenance": "passed",
+    "totals_or_change": "57-52=5pp and 40-35=5pp; other use categories are not shown"
+  },
+  "diff_notes": [
+    "Grouped bars are editorial; original chart not visually verified.",
+    "2024/25 shares derived from prose stating five percentage-point changes over two years.",
+    "Crush and export do not sum to 100%; other uses intentionally omitted."
+  ],
+  "human_review": "pending",
+  "training_eligible": false
+}

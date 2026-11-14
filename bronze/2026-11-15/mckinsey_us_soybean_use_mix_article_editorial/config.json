@@ -1,0 +1,31 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#1C2938",
+      "muted": "#5D6875",
+      "guide": "#C9D4DD",
+      "series": [
+        "#1465B8",
+        "#A0C5E3"
+      ]
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#1C2938",
+      "muted": "#5D6875",
+      "guide": "#C9D4DD",
+      "series": [
+        "#50595E",
+        "#B1B9BA"
+      ]
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "grouped_share",
+    "title": "US soybean demand is shifting toward domestic processing",
+    "subtitle": "Share of total US soybean use by destination  |  2024/25 vs 2026/27",
+    "y_label": "Share of total soybean use (%)",
+    "footnote": "Source: McKinsey, Nov 11 2026; 2024/25 values derived from stated 5 pp changes. Editorial redesign."
+  }
+}

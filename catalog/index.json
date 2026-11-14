@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 58,
+    "bronze": 60,
     "silver": 0,
     "gold": 0
   },
@@ -814,6 +814,34 @@
       "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/global-farmer-insights-2026-a-closer-look-at-europe",
       "figure_ref": "Exhibit 2 reported national net spending sentiment (editorial reconstruction)",
       "key_message": "향후 12~18개월 농업 지출 순증가 의향은 스페인 +78%p, 독일 +44%p, 프랑스 −8%p로, 유럽 단일 영업 전략보다 국가별 투입재·장비 수요 세분화가 중요하다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261115_bcg_canada_black_friday_budget_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-11-15/bcg_canada_black_friday_budget_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "a9dfee5e0ce576b5acca4ff2f7d7670149fe92297cfe1fcb3c7e9a847dcf86ff",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/canadians-are-shopping-on-tighter-budgets-this-black-friday",
+      "figure_ref": "Exhibit 1 (Canadian shoppers' planned spend by price category)",
+      "key_message": "캐나다의 블랙프라이데이 평균 계획예산 CAD 530 중 생활필수·저가상품이 CAD 330(62%)이므로, 가격 민감도에 맞춘 상품·프로모션 믹스가 필요하다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261115_mckinsey_us_soybean_use_mix_article_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-15/mckinsey_us_soybean_use_mix_article_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "27b439afd64b21bcb5aa55bcec9025beed88e393a228eb74bc6c0c3ec2352835",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil",
+      "figure_ref": "Soybean crush versus exports exhibit (editorial bar using article values)",
+      "key_message": "미국 대두 총 사용량 중 국내 가공 비중은 2026/27년 57%로 증가하고 수출 비중은 35%로 감소할 전망이므로, 농산물 트레이딩·가공 투자에서 최종 수요처 변화를 반영해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

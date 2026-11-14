@@ -1,0 +1,33 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#222A28",
+      "muted": "#66716B",
+      "total": "#1ABC70",
+      "low": "#8CF776",
+      "high": "#125F4A",
+      "low_text": "#2A9959",
+      "guide": "#BCC7C1"
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#222A28",
+      "muted": "#66716B",
+      "total": "#5D6667",
+      "low": "#C8CCCA",
+      "high": "#646E6C",
+      "low_text": "#606968",
+      "guide": "#BCC7C1"
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "descending_waterfall",
+    "title": "Canadian Black Friday budgets prioritize affordable goods",
+    "subtitle": "Planned spending per respondent, 2026  |  Canada  |  CAD",
+    "total_label": "Total\nbudget",
+    "low_note": "Low-ticket: $330 (62%)",
+    "high_note": "High-ticket: $200 (38%)",
+    "footnote": "Source: BCG Black Friday Consumer Study, 2026. Values rounded; shares total 99%."
+  }
+}

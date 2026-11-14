@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261115_bcg_canada_black_friday_budget_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-14T18:24:00+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/canadians-are-shopping-on-tighter-budgets-this-black-friday",
+  "figure_ref": "Exhibit 1 (Canadian shoppers' planned spend by price category)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "a430b399fb425a2480c768577e221d147b60a2cbba5352a8e25679250e207392",
+    "data.csv": "9852387a910c5bcf7adc7e485d0171eccd75998dadfa5dfd850d4c1bbbe418c6",
+    "config.json": "e3e49b4bf87dc2c48625f900264e7fd6636b9b5fc3ff1714821d08c33be4c96c",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "record.json": "f8d906a10a93b2eb480d6c1e71e498607d0a1d335032dcf2ddf323131856ddc1",
+    "card.md": "03145ec7cbf0709e18a2999714a151716cc5a8dbee9225e4c12b53c3003a3aa4",
+    "validation.json": "d34e5c82a5cccb3565e49a97dd489bf9614cab7962d7ec4da6e0f8f95c803a05"
+  },
+  "payload_sha256": "a9dfee5e0ce576b5acca4ff2f7d7670149fe92297cfe1fcb3c7e9a847dcf86ff"
+}

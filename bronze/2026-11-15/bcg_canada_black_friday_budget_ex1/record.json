@@ -1,0 +1,63 @@
+{
+  "source_url": "https://www.bcg.com/publications/2026/canadians-are-shopping-on-tighter-budgets-this-black-friday",
+  "source_title": "Canadians Are Shopping on Tighter Budgets This Black Friday",
+  "publication_date": "2026-11-12",
+  "collected_at": "2026-11-15",
+  "survey_or_data_period": "2026 seasonal survey; collection date not specified",
+  "firm": "BCG",
+  "figure_ref": "Exhibit 1 (Canadian shoppers' planned spend by price category)",
+  "chart_key": "https://www.bcg.com/publications/2026/canadians-are-shopping-on-tighter-budgets-this-black-friday#Exhibit 1 (Canadian shoppers' planned spend by price category)",
+  "canonical_source_url": "https://www.bcg.com/publications/2026/canadians-are-shopping-on-tighter-budgets-this-black-friday",
+  "business_context": "BCG 2026 Black Friday Consumer Study; Canada respondents n=1,000; detailed fieldwork dates not disclosed.",
+  "key_message": "캐나다의 블랙프라이데이 평균 계획예산 CAD 530 중 생활필수·저가상품이 CAD 330(62%)이므로, 가격 민감도에 맞춘 상품·프로모션 믹스가 필요하다.",
+  "insight_type": "composition/affordability allocation",
+  "chart_type": "descending_waterfall",
+  "encoding": {
+    "x": "ordered budget category",
+    "y": "CAD descending offset",
+    "color": "low/high price tiers",
+    "size": "CAD 530 total"
+  },
+  "data_spec": {
+    "unit": "CAD per shopper; share percent",
+    "denominator": "Average Canadian survey respondent's planned budget CAD 530",
+    "observation_unit": "spending category × 2026 survey",
+    "provenance": "reported for original values; derived for computed historical values",
+    "source_details": "BCG 2026 Black Friday Consumer Study; Canada respondents n=1,000; detailed fieldwork dates not disclosed."
+  },
+  "data_recipe": [
+    "Normalize average planned budget in common currency and period.",
+    "Assign each segment to low/high affordability bands.",
+    "Compute dollar budget per segment and rounded share; reconcile rounding.",
+    "Order segments from higher spending to lower and render a descending waterfall.",
+    "Label total budget and group subtotals independently."
+  ],
+  "message_conditions": [
+    "Values refer to same shoppers, purchase event, CAD unit and time horizon.",
+    "Five segment dollars sum to CAD 530, low segments to CAD 330 and high segments to CAD 200."
+  ],
+  "design_moves": [
+    "Chart type: descending_waterfall",
+    "Zero baseline and no synthetic values.",
+    "Direct value labels and documented emphasis.",
+    "Source and neutral themes via config.json."
+  ],
+  "limitations": [
+    "Survey intention is not realized purchases.",
+    "Rounded percentage values sum to 99%.",
+    "Income/age mix and sample error are not disclosed in the graphic."
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "diff_notes": [
+    "Original title/subtitle typography and dotted group brackets are simplified.",
+    "Original long-form category text shortened for legibility; no proprietary logo/font.",
+    "Percent shares sum to 99% because published figures are rounded."
+  ],
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Use the public data in data.csv and design rules in config.json to render descending_waterfall; preserve reported/derived provenance and disclose limitations.",
+    "response": "Install requirements.txt, then run: python chart.py --data data.csv --config config.json --theme source --output source.png ; rerun --theme neutral --output neutral.png. The exact observed inputs and style mapping are in data.csv and config.json."
+  },
+  "split_group": "https://www.bcg.com/publications/2026/canadians-are-shopping-on-tighter-budgets-this-black-friday"
+}

@@ -1,0 +1,46 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "comparison_scores": {
+    "chart_type": 5,
+    "values_and_order": 5,
+    "axes": 5,
+    "color_and_emphasis": 4,
+    "labels_annotations_title": 4,
+    "legend_and_proportions": 5,
+    "margins": 4
+  },
+  "score_basis": "Official Exhibit 1 visually opened from BCG article on 2026-11-15; 5 descending waterfall steps, 530 CAD total, 62% low-ticket",
+  "iteration_count": 2,
+  "original_visual_inspected": true,
+  "source_url": "https://www.bcg.com/publications/2026/canadians-are-shopping-on-tighter-budgets-this-black-friday",
+  "figure_ref": "Exhibit 1 (Canadian shoppers' planned spend by price category)",
+  "render_status": "passed",
+  "rendering": {
+    "commands": [
+      "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png",
+      "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png"
+    ],
+    "dpi": 200,
+    "source_png_inspected": true,
+    "neutral_png_inspected": true
+  },
+  "environment": {
+    "python": "3.11+ compatible; locally tested Python3",
+    "matplotlib": "runtime version recorded in execution report"
+  },
+  "semantic_checks": {
+    "units": "passed",
+    "denominators": "passed with documented exclusions",
+    "periods": "passed",
+    "provenance": "passed",
+    "totals_or_change": "200+130+80+70+50=530; 330+200=530; reported percentages sum to 99 (rounding)"
+  },
+  "diff_notes": [
+    "Original title/subtitle typography and dotted group brackets are simplified.",
+    "Original long-form category text shortened for legibility; no proprietary logo/font.",
+    "Percent shares sum to 99% because published figures are rounded."
+  ],
+  "human_review": "pending",
+  "training_eligible": false
+}

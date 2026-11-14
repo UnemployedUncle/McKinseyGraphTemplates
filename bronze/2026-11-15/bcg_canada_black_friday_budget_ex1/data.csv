@@ -1,0 +1,6 @@
+order,label,value_cad,share_pct,segment,unit,period,denominator,provenance
+1,Essentials,200,38,low,CAD per shopper,2026 year-end sales,530 CAD planned spend,reported
+2,Lower-price,130,24,low,CAD per shopper,2026 year-end sales,530 CAD planned spend,reported
+3,Planned expense,80,15,high,CAD per shopper,2026 year-end sales,530 CAD planned spend,reported
+4,High-ticket,70,13,high,CAD per shopper,2026 year-end sales,530 CAD planned spend,reported
+5,Luxury,50,9,high,CAD per shopper,2026 year-end sales,530 CAD planned spend,reported

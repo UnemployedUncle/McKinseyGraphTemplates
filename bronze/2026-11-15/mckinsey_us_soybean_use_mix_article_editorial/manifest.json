@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261115_mckinsey_us_soybean_use_mix_article_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-14T18:24:00+00:00",
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil",
+  "figure_ref": "Soybean crush versus exports exhibit (editorial bar using article values)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "a430b399fb425a2480c768577e221d147b60a2cbba5352a8e25679250e207392",
+    "data.csv": "1718ff866ae8da221e88c4e5b107da7c97205c7694242bf95fea4c6d63f89a82",
+    "config.json": "0094449ae6298d04c3587be74c03e666fb711391cb9539ee511baf398cd44993",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "record.json": "8bc0afea66cfa07dbb9ffcaa91cf80aacb779c815211f91af91909afb41b3411",
+    "card.md": "2f7b1a250db5ff143964fa03e31a399aae70bf2975db13ff80b3cabfb9c109e9",
+    "validation.json": "55ed23438978cf37bc944cda0abd455d43e8a1216d1e528dab459fe508bbc5b7"
+  },
+  "payload_sha256": "27b439afd64b21bcb5aa55bcec9025beed88e393a228eb74bc6c0c3ec2352835"
+}
