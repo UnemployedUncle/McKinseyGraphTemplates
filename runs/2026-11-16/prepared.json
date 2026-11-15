@@ -1,0 +1,68 @@
+{
+  "run_date": "2026-11-16",
+  "timezone": "Asia/Seoul",
+  "started_at": "2026-11-16T03:10:30+09:00",
+  "prepared_finished_at": "2026-11-16T03:29:00+09:00",
+  "phase": "preparation",
+  "prepared_complete": true,
+  "delivered": false,
+  "target_count": 3,
+  "completed_count": 2,
+  "new_bronze": 2,
+  "counts": {
+    "bronze": 62,
+    "silver": 0,
+    "gold": 0
+  },
+  "cumulative_agent_verified": 15,
+  "new_agent_verified": 0,
+  "bronze_commit": "223a8fd8c65236108cee8557f67f493f6f472999",
+  "validation_workflow_run": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43746553302",
+  "workflow_status": "completed",
+  "workflow_conclusion": "success",
+  "artifact_id": 14174566744,
+  "local_tests_passed": 5,
+  "local_tests_failed": 0,
+  "output_png_count": 4,
+  "output_dpi": 200,
+  "download_package": "Consulting_Graph_Template_2026-11-16_PREVIEWS_AND_CODE.zip",
+  "download_package_scope": "Exact SHA256-matched chart.py, data.csv, config.json, requirements.txt and locally rendered source/neutral images; canonical full analysis and manifest are in GitHub",
+  "entries": [
+    {
+      "firm": "BCG",
+      "slug": "bcg_corporate_giant_churn_ex1_scatter_estimate",
+      "path": "bronze/2026-11-16/bcg_corporate_giant_churn_ex1_scatter_estimate",
+      "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+      "published_at": "2026-11-06",
+      "figure_ref": "Exhibit 1",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "payload_sha256": "962382e1c2a14a3a4498fb7a0226a4b9587f35ea1fb9352f91025271329c8b4f",
+      "human_review": "pending",
+      "limitation": "Public 499px original examined; 15 industry x/y values digitized with ±3 percentage point uncertainty"
+    },
+    {
+      "firm": "McKinsey",
+      "slug": "mckinsey_us_robotaxi_cities_ex1_timeline",
+      "path": "bronze/2026-11-16/mckinsey_us_robotaxi_cities_ex1_timeline",
+      "source_url": "https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground",
+      "published_at": "2026-11-12",
+      "figure_ref": "Exhibit 1",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "payload_sha256": "ce0a69426820b6c31c9969bb6fc825e64f828e7058a0c9a008efcec414eb9d05",
+      "human_review": "pending",
+      "limitation": "Original SVGZ inaccessible; all five milestone values verified from official chart alt-text; editorial timeline"
+    }
+  ],
+  "excluded": [
+    {
+      "firm": "Bain",
+      "reason": "Recent 7-day and expanded 30-day official search did not verify a dated accessible new quantitative chart outside the existing catalog"
+    }
+  ],
+  "training_eligible": false,
+  "promotions_performed": false,
+  "new_automation_created": false,
+  "external_training_performed": false
+}
