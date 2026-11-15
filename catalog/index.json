@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 60,
+    "bronze": 62,
     "silver": 0,
     "gold": 0
   },
@@ -842,6 +842,34 @@
       "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/taking-stock-farm-pressures-and-uneven-recovery-in-the-united-states-and-brazil",
       "figure_ref": "Soybean crush versus exports exhibit (editorial bar using article values)",
       "key_message": "미국 대두 총 사용량 중 국내 가공 비중은 2026/27년 57%로 증가하고 수출 비중은 35%로 감소할 전망이므로, 농산물 트레이딩·가공 투자에서 최종 수요처 변화를 반영해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261116_bcg_corporate_giant_churn_ex1_scatter_estimate",
+      "tier": "bronze",
+      "path": "bronze/2026-11-16/bcg_corporate_giant_churn_ex1_scatter_estimate",
+      "contract": "render-v1",
+      "payload_sha256": "962382e1c2a14a3a4498fb7a0226a4b9587f35ea1fb9352f91025271329c8b4f",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+      "figure_ref": "Exhibit 1 — Leadership Has Been Locking In, but the Degree Varies by Sector",
+      "key_message": "시장가치 상위 기업의 가치 가중 교체율은 1990–2004년 중앙값 24%에서 2005–2025년 13%로 낮아졌지만 업종별 차이가 크므로 산업별 고착화 위험을 따로 평가해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261116_mckinsey_us_robotaxi_cities_ex1_timeline",
+      "tier": "bronze",
+      "path": "bronze/2026-11-16/mckinsey_us_robotaxi_cities_ex1_timeline",
+      "contract": "render-v1",
+      "payload_sha256": "ce0a69426820b6c31c9969bb6fc825e64f828e7058a0c9a008efcec414eb9d05",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground",
+      "figure_ref": "Exhibit 1 — Shared autonomous services are expanding rapidly in the United States",
+      "key_message": "미국 상용 로보택시 도시 수는 2024년 말 3곳에서 2026년 9월 15곳으로 늘었다. 2026년 말 20곳과 2027년 말 약 40곳은 전망이므로 관측과 분리해 실행 계획을 수립해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground",
+  "source_title": "Autonomous mobility gains ground",
+  "published_at": "2026-11-12",
+  "collected_at": "2026-11-16",
+  "data_observed_at": "2024-12 to 2026-09 observed; 2026-12 to 2027-12 forecasts",
+  "figure_ref": "Exhibit 1 — Shared autonomous services are expanding rapidly in the United States",
+  "chart_key": "https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground#Exhibit 1 — Shared autonomous services are expanding rapidly in the United States",
+  "business_context": "US commercial autonomous mobility scaling",
+  "key_message": "미국 상용 로보택시 도시 수는 2024년 말 3곳에서 2026년 9월 15곳으로 늘었다. 2026년 말 20곳과 2027년 말 약 40곳은 전망이므로 관측과 분리해 실행 계획을 수립해야 한다.",
+  "insight_type": "scaling trajectory / forecast distinction",
+  "chart_type": "milestone_timeline",
+  "encoding": {
+    "x": "period_label",
+    "y": "cities",
+    "color": "observed vs forecast",
+    "size": "fixed",
+    "label": "cities"
+  },
+  "data_spec": {
+    "grain": "date milestone × observed/forecast",
+    "metric": "Cities with commercial robotaxi or roboshuttle service",
+    "unit": "count",
+    "denominator": "Distinct US cities with commercial shared AV services, including safety-driver services",
+    "periods": [
+      "2024-12",
+      "2025-12",
+      "2026-09",
+      "2026-12 forecast",
+      "2027-12 forecast"
+    ],
+    "observations": [
+      3,
+      6,
+      15,
+      20,
+      40
+    ],
+    "population": "US cities; company sites and press searches; McKinsey Center for Future Mobility"
+  },
+  "data_recipe": [
+    "List US cities with commercial shared AV launches at each date",
+    "Count each city once with consistent commercial-service definition",
+    "Keep observed data separate from forecast assumptions",
+    "Render sequential milestones; use solid line for observed and dashed for projected",
+    "Validate new forecasts against actual launches before reusing"
+  ],
+  "message_conditions": [
+    "Forecasted 20 and 40 are not actual deployments",
+    "Cities with service are not market size, riders, or fleet count",
+    "Includes services operating with and without safety driver"
+  ],
+  "design_moves": [
+    "x=period_label",
+    "y=cities",
+    "color=observed vs forecast",
+    "size=fixed",
+    "label=cities",
+    "THEME.source/neutral",
+    "Data-driven positions and axes",
+    "Direct labels and explicit notes"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original McKinsey SVGZ asset failed public image fetch; all five quantitative labels are available in official image description. This is an editorial line timeline rather than a fidelity-certified original reproduction.",
+  "training_pair": {
+    "instruction": "Using source metadata and data.csv, build a milestone_timeline reusable chart with observed/digitized value provenance and source/neutral themes.",
+    "response": "Exact reproducible code is the immutable chart.py in this bundle; actual inputs are data.csv and config.json. Run `python chart.py --data data.csv --config config.json --theme source --output source.png` and repeat with neutral theme. Do not treat editorial redesign as original-image fidelity."
+  },
+  "split_group": "https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground",
+  "human_review": "pending",
+  "training_eligible": false
+}

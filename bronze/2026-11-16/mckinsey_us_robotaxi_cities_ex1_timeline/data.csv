@@ -1,0 +1,6 @@
+period,period_label,cities,status,unit,provenance,observation_period,denominator,source_note
+2024-12,Dec 2024,3,observed,cities,reported,2024-12,US_cities_with_commercial_AV_service,McKinsey_Chart_of_Week_Exhibit_1
+2025-12,Dec 2025,6,observed,cities,reported,2025-12,US_cities_with_commercial_AV_service,McKinsey_Chart_of_Week_Exhibit_1
+2026-09,Sep 2026,15,observed,cities,reported,2026-09,US_cities_with_commercial_AV_service,McKinsey_Chart_of_Week_Exhibit_1
+2026-12,Dec 2026,20,forecast,cities,reported,2026-12,US_cities_with_commercial_AV_service,McKinsey_Chart_of_Week_Exhibit_1_forecast
+2027-12,Dec 2027,40,forecast,cities,reported,2027-12,US_cities_with_commercial_AV_service,McKinsey_Chart_of_Week_Exhibit_1_forecast

@@ -1,0 +1,16 @@
+sector,previous_pct,recent_pct,label_dx,label_dy,unit,provenance,estimate_error_pp,observation_period,denominator,source_note
+Consumer staples,3.5,9.5,-28,11,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Communications infrastructure,5,6,-10,-15,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Auto,12,11.5,7,2,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Energy,10,6.5,-6,20,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+IT,14,6.1,8,0,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Retail,10.5,3.5,5,-9,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Health care,17,13.5,5,4,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Industrials,23,16.5,5,4,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Utilities,30.5,14.5,6,1,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Financials,29,10.5,4,-7,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Consumer discretionary,33,21,4,-7,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Materials,44,25.5,5,8,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Real estate,45,22.5,5,9,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Media and entertainment,47,16.2,6,-4,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading
+Digital platforms,60,5,-49,7,percent,digitized_estimate,3,1990-2004_vs_2005-2025,top_10_sector_market_cap,BCG_Exhibit_1_thumbnail_axis_reading

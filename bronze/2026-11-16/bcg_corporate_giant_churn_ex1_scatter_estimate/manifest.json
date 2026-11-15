@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261116_bcg_corporate_giant_churn_ex1_scatter_estimate",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-15T18:24:00.730Z",
+  "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+  "figure_ref": "Exhibit 1 — Leadership Has Been Locking In, but the Degree Varies by Sector",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "19887a4260d5bfbe2ca14aff569bd325e8f474ce610019da337216d6567ea5c1",
+    "data.csv": "af87cb92c56d37c6870dcd15845d6bf899a1c696152faad487c335ce283c0381",
+    "config.json": "199c7a7e257849f445d1d9f71f3d5bc00be85474d985963fe5b2f4346ee516d8",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "2aec68bb5069530097577989e71a7c2de01d38001740893c12454896b9d52a26",
+    "validation.json": "ef86dda5f6aaf6458a570f1b97f469902acb0494a3a61f1af499ff82243e8cc1",
+    "record.json": "e74b17e652dc6c1d3b17fc07a1f4e3b14e86f5eccf7106129ec9899668084600"
+  },
+  "payload_sha256": "962382e1c2a14a3a4498fb7a0226a4b9587f35ea1fb9352f91025271329c8b4f"
+}

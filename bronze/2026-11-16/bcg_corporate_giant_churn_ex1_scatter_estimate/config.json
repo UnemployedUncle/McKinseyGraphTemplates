@@ -1,0 +1,48 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FAFCFA",
+      "ink": "#17362A",
+      "muted": "#5A7568",
+      "point": "#25A76B",
+      "accent": "#176D48",
+      "grid": "#C5DDD0",
+      "figsize": [
+        11,
+        6.2
+      ]
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "ink": "#252A32",
+      "muted": "#646B75",
+      "point": "#7A8C9C",
+      "accent": "#273D53",
+      "grid": "#D5DCE3",
+      "figsize": [
+        11,
+        6.2
+      ]
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "industry_scatter",
+    "title": "Market leaders are becoming more persistent",
+    "x_label": "Median giant churn, 1990–2004 (%)",
+    "y_label": "Median giant churn, 2005–2025 (%)",
+    "x_limits": [
+      0,
+      65
+    ],
+    "y_limits": [
+      0,
+      31
+    ],
+    "highlight": [
+      "Digital platforms",
+      "Retail",
+      "Consumer staples"
+    ],
+    "footnote": "Illustrative digitization of BCG Exhibit 1; estimates ±2–3 pp, not original data. Lower = more stable top-10 leadership."
+  }
+}

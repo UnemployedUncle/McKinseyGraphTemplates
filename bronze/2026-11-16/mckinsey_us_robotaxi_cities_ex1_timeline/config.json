@@ -1,0 +1,36 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FAFCFA",
+      "ink": "#17362A",
+      "muted": "#5A7568",
+      "point": "#25A76B",
+      "accent": "#176D48",
+      "grid": "#C5DDD0",
+      "figsize": [
+        11,
+        6.2
+      ]
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "ink": "#252A32",
+      "muted": "#646B75",
+      "point": "#7A8C9C",
+      "accent": "#273D53",
+      "grid": "#D5DCE3",
+      "figsize": [
+        11,
+        6.2
+      ]
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "milestone_timeline",
+    "title": "US commercial robotaxi rollout is accelerating",
+    "x_label": "Time / observation and forecast milestones",
+    "y_label": "Cities with commercial services (count)",
+    "y_max": 46,
+    "footnote": "Observed through Sep 2026; Dec 2026 and Dec 2027 are forecasts. Includes services with or without a safety driver."
+  }
+}

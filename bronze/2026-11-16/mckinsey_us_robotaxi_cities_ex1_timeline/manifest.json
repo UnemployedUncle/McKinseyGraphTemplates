@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261116_mckinsey_us_robotaxi_cities_ex1_timeline",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-15T18:24:00.763Z",
+  "source_url": "https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground",
+  "figure_ref": "Exhibit 1 — Shared autonomous services are expanding rapidly in the United States",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "19887a4260d5bfbe2ca14aff569bd325e8f474ce610019da337216d6567ea5c1",
+    "data.csv": "f110cabed0039d04cb1427ec0aafc2af5c6aedd13cafa48330b3e61efe1a5e16",
+    "config.json": "d89b39b0ac3e3e42987067076d1b366dc32c02635c00a02d753232bed787a9b5",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "c91d4e7ebd43c92e804ddc8f4debed04ae575b672714786b3f8bd0b3cbdfc046",
+    "validation.json": "3a628bbced8b57be58696a9e9d75b7a113d5930792d09f5ab32f1030f880f2c7",
+    "record.json": "008584bbb1569b77ff93daff9f6d35cc84c6d0fead75fc4db6e4dc21c860996e"
+  },
+  "payload_sha256": "ce0a69426820b6c31c9969bb6fc825e64f828e7058a0c9a008efcec414eb9d05"
+}

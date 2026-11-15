@@ -64,5 +64,7 @@
 | bronze | [20261114_mckinsey_europe_farm_spending_sentiment_ex2_editorial](../bronze/2026-11-14/mckinsey_europe_farm_spending_sentiment_ex2_editorial) | pending | unverified |
 | bronze | [20261115_bcg_canada_black_friday_budget_ex1](../bronze/2026-11-15/bcg_canada_black_friday_budget_ex1) | pending | verified |
 | bronze | [20261115_mckinsey_us_soybean_use_mix_article_editorial](../bronze/2026-11-15/mckinsey_us_soybean_use_mix_article_editorial) | pending | unverified |
+| bronze | [20261116_bcg_corporate_giant_churn_ex1_scatter_estimate](../bronze/2026-11-16/bcg_corporate_giant_churn_ex1_scatter_estimate) | pending | unverified |
+| bronze | [20261116_mckinsey_us_robotaxi_cities_ex1_timeline](../bronze/2026-11-16/mckinsey_us_robotaxi_cities_ex1_timeline) | pending | unverified |
 
 검수할 정확한 payload_sha256은 각 manifest.json과 index.json에서 확인합니다.

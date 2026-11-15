@@ -1,0 +1,39 @@
+{
+  "execution_status": "passed",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "source_figure_verified": false,
+  "source_figure_verification_note": "Original McKinsey SVGZ asset failed public image fetch; all five quantitative labels are available in official image description. This is an editorial line timeline rather than a fidelity-certified original reproduction.",
+  "reproduction_type": "editorial_timeline_from_reported_values",
+  "rating_criteria": [
+    "chart_type",
+    "values_order",
+    "axes",
+    "color_emphasis",
+    "labels_annotations",
+    "title_legend",
+    "aspect_whitespace"
+  ],
+  "ratings": null,
+  "rating_rationale": "Unverified due to approximate digitization or inaccessible source SVGZ; fidelity score must remain null.",
+  "iteration_count": 2,
+  "commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png",
+    "python -m unittest discover -s tests -v",
+    "python scripts/medallion.py validate"
+  ],
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "output_dpi": 200,
+  "semantic_checks": {
+    "units_periods": "passed",
+    "provenance": "passed",
+    "forecast_separation": "passed",
+    "digitization_error": "not_applicable"
+  },
+  "remaining_differences": [
+    "Original McKinsey SVGZ asset failed public image fetch; all five quantitative labels are available in official image description. This is an editorial line timeline rather than a fidelity-certified original reproduction."
+  ],
+  "human_review": "pending"
+}

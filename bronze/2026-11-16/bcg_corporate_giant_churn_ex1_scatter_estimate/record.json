@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+  "source_title": "Corporate Giants Are Staying on Top Longer. Should They Feel Safe?",
+  "published_at": "2026-11-06",
+  "collected_at": "2026-11-16",
+  "data_observed_at": "1990–2025 five-year windows",
+  "figure_ref": "Exhibit 1 — Leadership Has Been Locking In, but the Degree Varies by Sector",
+  "chart_key": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer#Exhibit 1 — Leadership Has Been Locking In, but the Degree Varies by Sector",
+  "business_context": "Sector competitive concentration and persistence",
+  "key_message": "시장가치 상위 기업의 가치 가중 교체율은 1990–2004년 중앙값 24%에서 2005–2025년 13%로 낮아졌지만 업종별 차이가 크므로 산업별 고착화 위험을 따로 평가해야 한다.",
+  "insight_type": "sector dispersion / before-after",
+  "chart_type": "industry_scatter",
+  "encoding": {
+    "x": "previous_pct",
+    "y": "recent_pct",
+    "color": "selected sectors",
+    "size": "fixed",
+    "label": "sector"
+  },
+  "data_spec": {
+    "grain": "sector × comparison period",
+    "metric": "Giant churn: entrants' market cap as % of sector top-ten market cap",
+    "unit": "percent",
+    "denominator": "Top ten firms' market capitalization in each industry",
+    "periods": [
+      "1990-2004",
+      "2005-2025"
+    ],
+    "observations": "15 visually digitized industry points, ±3 percentage points; narrative medians 24%,13% reported separately",
+    "population": "US-listed top 2,000 market-cap firms; data from S&P Capital IQ"
+  },
+  "data_recipe": [
+    "Collect top-ten companies by sector and market cap at five-year intervals",
+    "Identify companies entering the top ten relative to the preceding period",
+    "Sum entrant market cap divided by total top-ten cap",
+    "Take median of five-year observations separately in each era",
+    "Plot sector-level pairs, retaining point digitization uncertainty"
+  ],
+  "message_conditions": [
+    "Sector classification must be consistent across eras",
+    "Point coordinates are digitized estimates, not reported underlying observations",
+    "Omitted private companies and non-US-only listings limit generalization"
+  ],
+  "design_moves": [
+    "x=previous_pct",
+    "y=recent_pct",
+    "color=selected sectors",
+    "size=fixed",
+    "label=sector",
+    "THEME.source/neutral",
+    "Data-driven positions and axes",
+    "Direct labels and explicit notes"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original public low-resolution Exhibit 1 opened; point coordinate readings approximate. Recreated labels and equality diagonal, but removed original colored sector shading and arrow design; not a verified pixel reproduction.",
+  "training_pair": {
+    "instruction": "Using source metadata and data.csv, build a industry_scatter reusable chart with observed/digitized value provenance and source/neutral themes.",
+    "response": "Exact reproducible code is the immutable chart.py in this bundle; actual inputs are data.csv and config.json. Run `python chart.py --data data.csv --config config.json --theme source --output source.png` and repeat with neutral theme. Do not treat editorial redesign as original-image fidelity."
+  },
+  "split_group": "https://www.bcg.com/publications/2026/market-leaders-staying-on-top-longer",
+  "human_review": "pending",
+  "training_eligible": false
+}
