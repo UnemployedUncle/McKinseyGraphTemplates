@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "execution_date": "2026-11-17",
+  "timezone": "Asia/Seoul",
+  "run_phase": "preparation",
+  "started_at": "2026-11-17T03:42:34+09:00",
+  "prepared_at": "2026-11-17T03:51:23.079+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "target_count": 3,
+  "new_bronze_count": 2,
+  "counts": {
+    "bronze": 64,
+    "silver": 0,
+    "gold": 0
+  },
+  "original_reproduction_verified_total": 15,
+  "new_original_reproduction_verified": 0,
+  "base_head_sha": "9fe5b02b0a937c89cafaa5a2fecb300ea70309e0",
+  "bronze_commit_sha": "1c391bfd69eb6f4dde15411ff2aaf2b23ac9bd82",
+  "actions": {
+    "commit_sha": "9fe5b02b0a937c89cafaa5a2fecb300ea70309e0",
+    "run_id": 43931066765,
+    "status": "completed",
+    "conclusion": "success",
+    "artifact_id": 14257459918,
+    "run_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/43931066765"
+  },
+  "source_review": {
+    "bcg": {
+      "published_date": "2026-11-16",
+      "collected_date": "2026-11-17",
+      "figure_ref": "Exhibit 1",
+      "source_url": "https://www.bcg.com/publications/2026/us-drug-pricing-changes-europe",
+      "original_visual_inspected": true
+    },
+    "mckinsey": {
+      "published_date": "2026-11-16",
+      "collected_date": "2026-11-17",
+      "source_url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-role-in-leading-on-sustainability",
+      "original_exhibit_reproduction": false
+    }
+  },
+  "charts": [
+    {
+      "firm": "bcg",
+      "template_id": "20261117_bcg_europe_drug_pricing_profit_range_editorial",
+      "path": "bronze/2026-11-17/bcg_europe_drug_pricing_profit_range_editorial",
+      "payload_sha256": "7153505df0576d7e66368806d5137ede3bb29e847bc53f6001364b8b153ced14",
+      "human_review": "pending",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "code_executed": true,
+      "source_rendered": true,
+      "neutral_rendered": true,
+      "limitation": "Editorial interval highlights 25–70% scenario only; original Exhibit 1 is a three-scenario before/after bar chart; do not claim reproduced fidelity."
+    },
+    {
+      "firm": "mckinsey",
+      "template_id": "20261117_mckinsey_danfoss_green_ask_supplier_coverage_editorial",
+      "path": "bronze/2026-11-17/mckinsey_danfoss_green_ask_supplier_coverage_editorial",
+      "payload_sha256": "11a57893b6b66922ebb3ebadf45e5e7b751332145470e2311dd4ac70e1cb3ba8",
+      "human_review": "pending",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "code_executed": true,
+      "source_rendered": true,
+      "neutral_rendered": true,
+      "limitation": "Green Ask slope is an editorial rendering of article text; original Exhibit 1 depicts science-based target adoption, not Green Ask."
+    }
+  ],
+  "excluded": {
+    "bain": "Official figure with confirmed publication date, directly inspectable numerical source, and nonduplicate chart key could not be established in the 7-day then 30-day search."
+  },
+  "verification": {
+    "source_facts_confirmed": true,
+    "local_render_reexecuted": true,
+    "local_render_pixel_match_with_actions": "4/4",
+    "local_chart_python_sha_match": "2/2",
+    "local_data_csv_sha_match": "2/2",
+    "local_config_json_sha_match": "2/2",
+    "local_semantic_checks": "BCG endpoints 25,70; McKinsey 40,58 difference 18pp; image 2200x1240@200dpi",
+    "github_actions_unit_tests": "passed",
+    "github_actions_medallion": "passed",
+    "github_actions_render_all": "passed",
+    "github_actions_render_count": 128,
+    "source_fidelity": "unverified",
+    "human_review": "pending",
+    "last_checked_at": "2026-11-17T03:51:23.079+09:00"
+  },
+  "morning_delivery_instruction": "At 07:15 Asia/Seoul, read this prepared.json and RUN_REPORT.md, verify actual remote commit and actions. Send one complete delivery if not delivered. Do not research, render, or commit duplicate charts. Do not approve or promote Bronze.",
+  "report_path": "runs/2026-11-17/RUN_REPORT.md",
+  "report_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/runs/2026-11-17/RUN_REPORT.md"
+}
