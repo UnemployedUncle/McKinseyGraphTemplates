@@ -1,0 +1,47 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "foreground": "#153344",
+      "muted": "#536977",
+      "grid": "#C8D4DA",
+      "accent": "#129D8D",
+      "accent_dark": "#08796C",
+      "figsize": [
+        11,
+        6.2
+      ]
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "foreground": "#252525",
+      "muted": "#666666",
+      "grid": "#D8D8D8",
+      "accent": "#505050",
+      "accent_dark": "#303030",
+      "figsize": [
+        11,
+        6.2
+      ]
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "interval",
+    "title": "Future drug-launch profit varies across pricing scenarios",
+    "subtitle": "Reported modeled range as a percentage of current profit",
+    "xlabel": "Future launch profit / current profit (%)",
+    "xlim": [
+      0,
+      100
+    ],
+    "xticks": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "footer": "Source: BCG, Nov 16 2026. Editorial range, NOT original Exhibit 1."
+  }
+}

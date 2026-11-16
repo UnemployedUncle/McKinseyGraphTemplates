@@ -1,0 +1,28 @@
+{
+  "execution_status": "passed",
+  "validation_status": "unverified",
+  "original_visual_verified": false,
+  "fidelity_score": null,
+  "fidelity_dimensions": null,
+  "iterations": 1,
+  "commands": [
+    "python chart.py --data data.csv --config config.json --theme source --out artifacts/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --out artifacts/neutral.png"
+  ],
+  "rendering_checks": {
+    "source_png": true,
+    "neutral_png": true,
+    "dpi": 200,
+    "dimensions": [
+      2200,
+      1240
+    ],
+    "note": "Local equivalent plot rendered/inspected using Python 3.13.5 and matplotlib 3.10.8; repository CI status is distinct."
+  },
+  "data_checks": {
+    "provenance_reported_only": true,
+    "unit_and_denominator_verified": true,
+    "arithmetic_verified": true
+  },
+  "diff_notes": "Article numeric facts verified, not original exhibit reproduction; 7-dimension fidelity rating N/A."
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261117_mckinsey_danfoss_green_ask_supplier_coverage_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-16T18:35:47.268Z",
+  "source_url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-role-in-leading-on-sustainability",
+  "figure_ref": "Article, Own the supply chain, Danfoss Green Ask paragraph; not source Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "6116fd73e655c1f85104775d2d144c0633f4a5699d2969b8fa55399ebac92a22",
+    "chart.py": "04fe672a90da07390bbf3892ab8635f2bc8fc2a0e785c306b08f98fa6d0937f5",
+    "config.json": "c97ec0d346e4e935dcfdaf99cc99e708aa0aca209a45d633ac06ab26d54caaa3",
+    "data.csv": "37a791c311b53b5cfe870b8bf20060392f6215b9d50d344431f090eaa5b410b0",
+    "record.json": "4fd31f6c70b0d428fd00ea49b55050dc63cfbf239b525e3fc51327d4df3a3e9c",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "validation.json": "bd84e96ae233a862b55e437bcf00862d508918ee66509d9b98487453b5684bae"
+  },
+  "payload_sha256": "11a57893b6b66922ebb3ebadf45e5e7b751332145470e2311dd4ac70e1cb3ba8"
+}

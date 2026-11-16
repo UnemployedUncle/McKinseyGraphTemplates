@@ -1,0 +1,51 @@
+{
+  "source_url": "https://www.bcg.com/publications/2026/us-drug-pricing-changes-europe",
+  "source_title": "How New Drug Pricing Models Will Play Across Europe",
+  "published_date": "2026-11-16",
+  "collected_date": "2026-11-17",
+  "data_observed_date": "2026 published model; scenario horizon not fully disclosed",
+  "firm": "bcg",
+  "figure_ref": "Article Exhibit 1 referenced; editorial range from article text, not image reproduction",
+  "chart_key": "bcg_europe_drug_pricing_profit_range_editorial:Article Exhibit 1 referenced; editorial range from article text, not image reproduction",
+  "business_context": "Future launch profit relative to current level",
+  "key_message": "BCG의 약가 정책 시나리오에 따라 미래 출시 제품의 이익 수준은 현재 대비 25~70% 범위로 달라질 수 있다. 규제 시나리오별 손익 민감도와 가격전략을 분리해서 검토해야 한다.",
+  "chart_type": "interval",
+  "insight_type": "scenario_range",
+  "encoding": "Single range interval; x is modeled profit as a percentage of current, y is one modeled range, labeled endpoints and a common 0–100 scale.",
+  "data_spec": {
+    "unit": "percent_of_current_profit",
+    "denominator": "current profits as 100% baseline",
+    "observation_unit": "scenario range",
+    "period": "2026 published model; scenario horizon not fully disclosed",
+    "provenance": "reported",
+    "source_file": "data.csv",
+    "sample": "not disclosed"
+  },
+  "data_recipe": [
+    "Set current profit to the common baseline of 100%.",
+    "Extract low and high remaining-profit scenario endpoints.",
+    "Record both endpoints as reported model estimates, not observed profit.",
+    "Check percent versus percentage-point interpretation and compare horizon.",
+    "Plot the range; data-derived width is 70−25=45 pp; change CSV and theme for reuse."
+  ],
+  "message_conditions": [
+    "Range is a scenario estimate, not a statistical confidence interval.",
+    "Both percentages describe retained profit level, not percent decline.",
+    "Original Exhibit 1 is a different bar chart; reproduction fidelity cannot be scored.",
+    "Regional/asset assumptions, sample and timing are unpublished."
+  ],
+  "design_moves": [
+    "Single range interval; x is modeled profit as a percentage of current, y is one modeled range, labeled endpoints and a common 0–100 scale.",
+    "Direct labels and annotations are calculated from CSV values"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original exhibit was not reproduced; editorial chart based on article text. Style, layout and source chart type differ.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "split_group": "https://www.bcg.com/publications/2026/us-drug-pricing-changes-europe",
+  "training_pair": {
+    "instruction": "Render a reproducible interval chart from the supplied reported observations, with both source and neutral themes and explicit provenance.",
+    "response": "Use chart.py, data.csv, config.json in this immutable bundle. Run python chart.py --data data.csv --config config.json --theme source --out source.png. It defines render(data,theme,context)->fig. Actual data.csv:\nmetric,period,low,high,unit,provenance,qualifier,source_note\nprofit_on_future_launches,2026 model scenarios,25,70,percent_of_current_profit,reported,scenario_range,BCG scenario estimate; model details not disclosed\n"
+  }
+}

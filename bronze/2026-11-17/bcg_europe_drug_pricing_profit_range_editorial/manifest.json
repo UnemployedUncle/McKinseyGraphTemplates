@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261117_bcg_europe_drug_pricing_profit_range_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-16T18:35:47.249Z",
+  "source_url": "https://www.bcg.com/publications/2026/us-drug-pricing-changes-europe",
+  "figure_ref": "Article Exhibit 1 referenced; editorial range from article text, not image reproduction",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "0b6c8726e71d035f3bf3e864cdb2211f41479fcc6caebe6b8357f956f98f6663",
+    "chart.py": "04fe672a90da07390bbf3892ab8635f2bc8fc2a0e785c306b08f98fa6d0937f5",
+    "config.json": "16c8f91a8b4d82bc79871a9fa83c895d4eb9250188a8f49f544fe28d1d2c2078",
+    "data.csv": "d9f786bbc554599168bedec4ffd2b01ec9f74e9fa0c1a8c7b9b85737f2246f2f",
+    "record.json": "cc8d38a9353e2b9e47dc719255ca9cc9316ead6f30b45f592586a9068d5b0c72",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "validation.json": "bd84e96ae233a862b55e437bcf00862d508918ee66509d9b98487453b5684bae"
+  },
+  "payload_sha256": "7153505df0576d7e66368806d5137ede3bb29e847bc53f6001364b8b153ced14"
+}

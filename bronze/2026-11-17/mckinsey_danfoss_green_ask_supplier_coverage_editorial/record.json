@@ -1,0 +1,51 @@
+{
+  "source_url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-role-in-leading-on-sustainability",
+  "source_title": "The CEO’s role in leading on sustainability",
+  "published_date": "2026-11-16",
+  "collected_date": "2026-11-17",
+  "data_observed_date": "2025 prior-year and 2026 current-year, per May 2026 Danfoss climate transition plan cited by McKinsey",
+  "firm": "mckinsey",
+  "figure_ref": "Article, Own the supply chain, Danfoss Green Ask paragraph; not source Exhibit 1",
+  "chart_key": "mckinsey_danfoss_green_ask_supplier_coverage_editorial:Article, Own the supply chain, Danfoss Green Ask paragraph; not source Exhibit 1",
+  "business_context": "Annual purchases covered by Green Ask supplier program",
+  "key_message": "Danfoss Green Ask의 연간 매입액 포괄 비중은 전년도 40%에서 58%로 18%p 확대됐다. 공급망 프로그램의 성과는 협력사 수보다 거래액 포괄률을 중심으로 측정하되 탄소 감축 성과와 구별해야 한다.",
+  "chart_type": "slope",
+  "insight_type": "before_after_coverage",
+  "encoding": "Slope line: x=2025/2026, y=program coverage (%), point labels 40/58 and derived +18pp; neutral and source themes.",
+  "data_spec": {
+    "unit": "percent_of_annual_purchases",
+    "denominator": "annual purchases",
+    "observation_unit": "year",
+    "period": "2025 prior-year and 2026 current-year, per May 2026 Danfoss climate transition plan cited by McKinsey",
+    "provenance": "reported",
+    "source_file": "data.csv",
+    "sample": "not disclosed"
+  },
+  "data_recipe": [
+    "Identify covered supplier purchases as numerator and all annual purchases as denominator.",
+    "Retain the period-specific 40% and 58% reported shares.",
+    "Compute 58−40=18 percentage-point change, not a relative 18% change.",
+    "Preserve the company-specific definition of supplier program coverage.",
+    "Reconfigure CSV, colors and labels for another period-pair comparison."
+  ],
+  "message_conditions": [
+    "Denominator is spend share, not supplier count.",
+    "The figures indicate program coverage, not measured carbon reduction.",
+    "Specific supplier inclusion and verification methods remain unpublished.",
+    "Original article Exhibit 1 is an unrelated SBTi chart, so this editorial slope is not a reproduction."
+  ],
+  "design_moves": [
+    "Slope line: x=2025/2026, y=program coverage (%), point labels 40/58 and derived +18pp; neutral and source themes.",
+    "Direct labels and annotations are calculated from CSV values"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original exhibit was not reproduced; editorial chart based on article text. Style, layout and source chart type differ.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "split_group": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-role-in-leading-on-sustainability",
+  "training_pair": {
+    "instruction": "Render a reproducible slope chart from the supplied reported observations, with both source and neutral themes and explicit provenance.",
+    "response": "Use chart.py, data.csv, config.json in this immutable bundle. Run python chart.py --data data.csv --config config.json --theme source --out source.png. It defines render(data,theme,context)->fig. Actual data.csv:\nmetric,period,value,unit,provenance,qualifier,source_note\ngreen_ask_purchase_coverage,2025,40,percent_of_annual_purchases,reported,prior_year,Danfoss 2026 plan cited by McKinsey\ngreen_ask_purchase_coverage,2026,58,percent_of_annual_purchases,reported,current_year,Danfoss 2026 plan cited by McKinsey\n"
+  }
+}

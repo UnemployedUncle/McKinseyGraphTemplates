@@ -1,0 +1,3 @@
+metric,period,value,unit,provenance,qualifier,source_note
+green_ask_purchase_coverage,2025,40,percent_of_annual_purchases,reported,prior_year,Danfoss 2026 plan cited by McKinsey
+green_ask_purchase_coverage,2026,58,percent_of_annual_purchases,reported,current_year,Danfoss 2026 plan cited by McKinsey

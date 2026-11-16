@@ -1,0 +1,45 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "foreground": "#153344",
+      "muted": "#536977",
+      "grid": "#C8D4DA",
+      "accent": "#129D8D",
+      "accent_dark": "#08796C",
+      "figsize": [
+        11,
+        6.2
+      ]
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "foreground": "#252525",
+      "muted": "#666666",
+      "grid": "#D8D8D8",
+      "accent": "#505050",
+      "accent_dark": "#303030",
+      "figsize": [
+        11,
+        6.2
+      ]
+    }
+  },
+  "CONTEXT": {
+    "chart_type": "slope",
+    "title": "Green Ask supplier coverage rose by 18 percentage points",
+    "subtitle": "Danfoss: share of annual purchases covered",
+    "ylabel": "Coverage of annual purchases (%)",
+    "ylim": [
+      0,
+      70
+    ],
+    "yticks": [
+      0,
+      20,
+      40,
+      60
+    ],
+    "footer": "Source: McKinsey, Nov 16 2026; Danfoss plan May 2026. Editorial slope, NOT original exhibit."
+  }
+}
