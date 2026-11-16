@@ -37,6 +37,16 @@ def main():
                         fallback_command = command[:flag_index] + command[flag_index + 2:]
                         run = subprocess.run(fallback_command, cwd=folder, env=env,
                                              capture_output=True, text=True, timeout=60)
+                    # Some newer CLI templates use --out instead of --output.
+                    # Retry only on the explicit argparse missing/unsupported flag error.
+                    if run.returncode != 0 and (
+                        'the following arguments are required: --out' in run.stderr
+                        or 'unrecognized arguments: --output' in run.stderr
+                    ):
+                        alternate = command.copy()
+                        alternate[alternate.index('--output')] = '--out'
+                        run = subprocess.run(alternate, cwd=folder, env=env,
+                                             capture_output=True, text=True, timeout=60)
                     success = run.returncode == 0 and dest.exists() and dest.stat().st_size > 0
                     report = {'template_id': m['template_id'], 'theme': theme, 'success': success,
                               'returncode': run.returncode, 'stdout': run.stdout, 'stderr': run.stderr,
