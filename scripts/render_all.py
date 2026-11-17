@@ -29,13 +29,23 @@ def main():
                 env['MPLBACKEND'] = 'Agg'
                 try:
                     run = subprocess.run(command, cwd=folder, env=env, capture_output=True, text=True, timeout=60)
-                    # Older render-v1 templates accept --config, while newer ones
-                    # load config.json beside chart.py without a CLI flag.
-                    # Retry only for this specific argparse incompatibility.
-                    if run.returncode != 0 and 'unrecognized arguments: --config' in run.stderr:
-                        flag_index = command.index('--config')
-                        fallback_command = command[:flag_index] + command[flag_index + 2:]
-                        run = subprocess.run(fallback_command, cwd=folder, env=env,
+                    # Respect template CLI variants without changing immutable Bronze.
+                    # Retry only if argparse explicitly rejects --data/--config.
+                    active_command = command.copy()
+                    for _ in range(2):
+                        if run.returncode == 0 or 'unrecognized arguments:' not in run.stderr:
+                            break
+                        unexpected = run.stderr.split('unrecognized arguments:', 1)[1]
+                        removed = False
+                        for flag in ('--data', '--config'):
+                            if flag in unexpected and flag in active_command:
+                                flag_index = active_command.index(flag)
+                                active_command = (active_command[:flag_index] +
+                                                  active_command[flag_index + 2:])
+                                removed = True
+                        if not removed:
+                            break
+                        run = subprocess.run(active_command, cwd=folder, env=env,
                                              capture_output=True, text=True, timeout=60)
                     # Some newer CLI templates use --out instead of --output.
                     # Retry only on the explicit argparse missing/unsupported flag error.
@@ -43,7 +53,7 @@ def main():
                         'the following arguments are required: --out' in run.stderr
                         or 'unrecognized arguments: --output' in run.stderr
                     ):
-                        alternate = command.copy()
+                        alternate = active_command.copy()
                         alternate[alternate.index('--output')] = '--out'
                         run = subprocess.run(alternate, cwd=folder, env=env,
                                              capture_output=True, text=True, timeout=60)
