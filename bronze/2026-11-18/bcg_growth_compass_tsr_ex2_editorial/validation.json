@@ -1,0 +1,48 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "source_original_opened": true,
+  "original_type": "Three circular growth-vector compass panels with annualized TSR captions",
+  "original_comparison_possible": true,
+  "source_reproduction": false,
+  "fidelity_categories": null,
+  "render_status": "passed",
+  "iteration_count": 1,
+  "execution_command": [
+    "python chart.py --theme source --output artifacts/source.png",
+    "python chart.py --theme neutral --output artifacts/neutral.png"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "image_dpi": 200,
+    "image_pixels": [
+      2200,
+      1240
+    ]
+  },
+  "tests": [
+    {
+      "name": "source_theme_render",
+      "result": "passed"
+    },
+    {
+      "name": "neutral_theme_render",
+      "result": "passed"
+    },
+    {
+      "name": "semantic_provenance_and_units",
+      "result": "passed",
+      "checks": [
+        "source_pair_trane_23_5",
+        "source_pair_brinker_32_0",
+        "aurobindo_peer_missing_not_zero",
+        "annualized_tsr_vs_cumulative_return"
+      ]
+    }
+  ],
+  "differences": "Original six-vector radial graphics are not reproduced; the new quantitative dot chart is a deliberate editorial redesign. Aurobindo median not disclosed.",
+  "score_reason": "Original figure layout not reproduced; explicit editorial redesign. No original fidelity score is valid.",
+  "human_review": "pending",
+  "checked_on": "2026-11-18"
+}

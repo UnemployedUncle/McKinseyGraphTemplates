@@ -1,0 +1,49 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "source_original_opened": false,
+  "original_type": "Six energy value-pool exhibit (SVG, inaccessible to graphic comparison)",
+  "original_comparison_possible": false,
+  "source_reproduction": false,
+  "fidelity_categories": null,
+  "render_status": "passed",
+  "iteration_count": 1,
+  "execution_command": [
+    "python chart.py --theme source --output artifacts/source.png",
+    "python chart.py --theme neutral --output artifacts/neutral.png"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "image_dpi": 200,
+    "image_pixels": [
+      2200,
+      1240
+    ]
+  },
+  "tests": [
+    {
+      "name": "source_theme_render",
+      "result": "passed"
+    },
+    {
+      "name": "neutral_theme_render",
+      "result": "passed"
+    },
+    {
+      "name": "semantic_provenance_and_units",
+      "result": "passed",
+      "checks": [
+        "observed_vs_conditional_forecast",
+        "reported_1_9_7_8",
+        "derived_5_9_bn_gap",
+        "price_basis_missing",
+        "no_mix_with_78bn_value_pools"
+      ]
+    }
+  ],
+  "differences": "Original article's six-value-pool SVG exhibit could not be viewed; this is an editorial chart from a separate sourced paragraph, not exhibit reproduction. Do not compare £78bn market revenues against £7.8bn grid costs as additive.",
+  "score_reason": "Original figure layout not reproduced; explicit editorial redesign. No original fidelity score is valid.",
+  "human_review": "pending",
+  "checked_on": "2026-11-18"
+}

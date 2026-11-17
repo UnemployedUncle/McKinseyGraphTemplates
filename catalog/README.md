@@ -68,5 +68,7 @@
 | bronze | [20261116_mckinsey_us_robotaxi_cities_ex1_timeline](../bronze/2026-11-16/mckinsey_us_robotaxi_cities_ex1_timeline) | pending | unverified |
 | bronze | [20261117_bcg_europe_drug_pricing_profit_range_editorial](../bronze/2026-11-17/bcg_europe_drug_pricing_profit_range_editorial) | pending | unverified |
 | bronze | [20261117_mckinsey_danfoss_green_ask_supplier_coverage_editorial](../bronze/2026-11-17/mckinsey_danfoss_green_ask_supplier_coverage_editorial) | pending | unverified |
+| bronze | [20261118_bcg_growth_compass_tsr_ex2_editorial](../bronze/2026-11-18/bcg_growth_compass_tsr_ex2_editorial) | pending | unverified |
+| bronze | [20261118_mckinsey_uk_grid_constraint_cost_outlook_editorial](../bronze/2026-11-18/mckinsey_uk_grid_constraint_cost_outlook_editorial) | pending | unverified |
 
 검수할 정확한 payload_sha256은 각 manifest.json과 index.json에서 확인합니다.

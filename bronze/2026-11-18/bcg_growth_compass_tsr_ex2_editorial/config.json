@@ -1,0 +1,26 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "text": "#123b2b",
+      "muted": "#63736b",
+      "accent": "#0b7956",
+      "benchmark": "#aebbb4",
+      "grid": "#d9e3de"
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "text": "#1a252d",
+      "muted": "#62707a",
+      "accent": "#283848",
+      "benchmark": "#b0bcc6",
+      "grid": "#e1e6e9"
+    }
+  },
+  "CONTEXT": {
+    "kind": "paired_dots",
+    "title": "Growth leaders outperformed sector peers",
+    "x_label": "Five-year annualized TSR (%)",
+    "footnote": "Source: BCG, Nov 17 2026, Exhibit 2; company/peer rates are published. Aurobindo median undisclosed. Editorial adaptation."
+  }
+}

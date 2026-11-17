@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261118_bcg_growth_compass_tsr_ex2_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-17T18:28:00.426Z",
+  "source_url": "https://www.bcg.com/publications/2026/how-ceos-build-growth-strategy",
+  "figure_ref": "Exhibit 2 — How Three TSR Outperformers Combine Mutually Reinforcing Growth Vectors (editorial TSR paired dots)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "96c54ae723c06ce4dcd8d8d80915634a4866d3ccbdd76aa45c705ee1352121c6",
+    "data.csv": "8b7fa8f2d1ec659d5f522a9a1d335f08e2a0621585d653a307d7c686b7c9a07f",
+    "config.json": "9b05a314520eb22197f3a998f411e42626ac69785f61dfc020292f39f5f40af7",
+    "requirements.txt": "4f76312b5001c018874f9eb28599b71e3dddcaad647311a4539866158642f704",
+    "card.md": "0911cea6ce7383c78fa2b8f8b68fff7d4292b1b9227aeb11879c71cf30c5dc78",
+    "record.json": "ed3b8f200aab892c6453008579875dc441e4b24443eb791d6770fc2f01508e79",
+    "validation.json": "9811d3d8edaeee80c299aa5dfac59c585c214e4c0005dbb06403d64974370cb0"
+  },
+  "payload_sha256": "40ebb438893023d65e3e1780ae5b6e5fc14899f2021e4a0224b43d83966dabc3"
+}

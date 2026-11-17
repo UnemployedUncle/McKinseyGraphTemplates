@@ -1,0 +1,95 @@
+{
+  "firm": "BCG",
+  "title": "To Find Growth in Today's Market, CEOs Need a New Compass",
+  "source_url": "https://www.bcg.com/publications/2026/how-ceos-build-growth-strategy",
+  "source_published_at": "2026-11-17",
+  "source_checked_at": "2026-11-18",
+  "figure_ref": "Exhibit 2 — How Three TSR Outperformers Combine Mutually Reinforcing Growth Vectors (editorial TSR paired dots)",
+  "chart_key": "bcg_bcg_growth_compass_tsr_ex2_editorial",
+  "business_context": "BCG argues companies should combine reinforcing growth vectors rather than follow one universal growth playbook. Exhibit 2 illustrates three companies' growth-vector combinations alongside five-year shareholder returns. The published panel makes the sector comparison explicit for Trane and Brinker but not numerically for Aurobindo.",
+  "key_message": "Trane Technologies (23% vs 5% median) and Brinker International (32% vs 0% median) outperformed their respective sector medians in five-year annualized TSR; Aurobindo Pharma delivered 13% but its numerical sector comparator was not disclosed.",
+  "so_what": "Compare growth-path choices against comparable industry baselines, without treating observed TSR outperformance as causal proof.",
+  "insight_type": "paired_dot_editorial",
+  "chart_type": "paired_dot_editorial",
+  "original_chart_type": "Three circular growth-vector compass panels with annualized TSR captions",
+  "encoding": "x=annualized TSR, y=company in exhibit order, dots=company versus sector median, connector=percentage-point gap, direct labels; one missing benchmark plotted only as a single dot.",
+  "data_spec": {
+    "observation_unit": "company x five-year annualized TSR period",
+    "fields": [
+      "company",
+      "value_pct",
+      "benchmark_pct",
+      "value_provenance",
+      "benchmark_provenance",
+      "period",
+      "denominator"
+    ],
+    "values": [
+      {
+        "company": "Trane Technologies",
+        "value_pct": "23",
+        "benchmark_pct": "5",
+        "value_provenance": "reported",
+        "benchmark_provenance": "reported",
+        "period": "Sep 2021–Sep 2026",
+        "denominator": "five-year annualized total shareholder return"
+      },
+      {
+        "company": "Brinker International",
+        "value_pct": "32",
+        "benchmark_pct": "0",
+        "value_provenance": "reported",
+        "benchmark_provenance": "reported",
+        "period": "Sep 2021–Sep 2026",
+        "denominator": "five-year annualized total shareholder return"
+      },
+      {
+        "company": "Aurobindo Pharma",
+        "value_pct": "13",
+        "benchmark_pct": "",
+        "value_provenance": "reported",
+        "benchmark_provenance": "missing",
+        "period": "Sep 2021–Sep 2026",
+        "denominator": "five-year annualized total shareholder return"
+      }
+    ],
+    "unit": "% annualized TSR",
+    "period": "Sep 2021–Sep 2026",
+    "source": "BCG ValueScience / S&P Capital IQ; sample count not disclosed for this exhibit; company and sector returns include reinvested dividends.",
+    "provenance_policy": [
+      "reported",
+      "derived",
+      "digitized_estimate",
+      "missing"
+    ]
+  },
+  "data_recipe": [
+    "Fix consistent five-year TSR period and peer selection.",
+    "Calculate annualized dividend-reinvested TSR for company and industry median.",
+    "Mark unavailable comparator as missing, never zero.",
+    "Use paired dots for known company–median pairs and one unpaired dot for unknown benchmark.",
+    "Check whether external factors could explain TSR outperformance."
+  ],
+  "message_conditions": [
+    "Same return measure, period, and currency are used for comparison.",
+    "S&P 500 industry median is not an individually matched competitor.",
+    "Observed outperformance is descriptive, not a causal estimate."
+  ],
+  "design_moves": [
+    "x=annualized TSR, y=company in exhibit order, dots=company versus sector median, connector=percentage-point gap, direct labels; one missing benchmark plotted only as a single dot.",
+    "Direct labels and context caveats",
+    "Source and neutral themes configurable; data-driven coordinate calculation"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original six-vector radial graphics are not reproduced; the new quantitative dot chart is a deliberate editorial redesign. Aurobindo median not disclosed.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Reproduce this reusable paired_dot_editorial with the exact provided data.csv and config.json. Keep observations and assumptions distinct and do not claim a source-faithful reconstruction.",
+    "response": "Use exact CSV rows in data_spec.values, writing columns in data_spec.fields order. Use the adjacent executable chart.py and config.json from this immutable bundle. Run python chart.py --theme source --output artifacts/source.png or --theme neutral --output artifacts/neutral.png; the same render(data,theme,context) function produces both."
+  },
+  "split_group": "bcg_how-ceos-build-growth-strategy",
+  "source_verification": "Article published Nov 17 2026. Official Exhibit 2 opened and visually inspected. Brinker 32%/0% and Trane 23%/5% can be read in the caption; Aurobindo 13% with unknown numeric median.",
+  "underlying_data_time": "Sep 2021–Sep 2026"
+}

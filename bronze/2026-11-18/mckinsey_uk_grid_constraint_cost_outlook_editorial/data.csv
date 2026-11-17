@@ -1,0 +1,3 @@
+label,time_label,value_gbp_billion,status,provenance,denominator,price_basis
+Constraint cost,2025/26 actual,1.9,observed,reported,annual UK electricity transmission constraint costs,missing
+Constraint cost,2030 scenario,7.8,forecast,reported,annual UK electricity transmission constraint costs,missing

@@ -1,0 +1,86 @@
+{
+  "firm": "McKinsey",
+  "title": "Solving Britain's energy bottlenecks: The £78 billion-a-year opportunity for cleaner, more affordable power",
+  "source_url": "https://www.mckinsey.com/uk/our-insights/solving-britains-energy-bottlenecks-the-78-billion-pounds-a-year-opportunity-for-cleaner-more-affordable-power",
+  "source_published_at": "2026-11-16",
+  "source_checked_at": "2026-11-18",
+  "figure_ref": "Article paragraph on UK transmission constraint costs, citing National Audit Office, Sep 11 2026 (not source six-value-pool exhibit)",
+  "chart_key": "mckinsey_mckinsey_uk_grid_constraint_cost_outlook_editorial",
+  "business_context": "McKinsey frames six bottleneck-related UK energy value pools totaling about £78bn annual commercial opportunity in 2030. It separately cites the National Audit Office's observation of £1.9bn transmission constraint costs in 2025/26. Absent coordinated grid action the cited outlook could reach £7.8bn per year by 2030.",
+  "key_message": "Without concerted upgrades, annual UK transmission constraint costs could rise from £1.9 billion in FY2025/26 to £7.8 billion by 2030, a conditional £5.9 billion increase.",
+  "so_what": "Prioritize transmission-grid bottlenecks by potential annual system cost, while keeping conditional outcomes separate from committed spending.",
+  "insight_type": "status_bar_editorial",
+  "chart_type": "status_bar_editorial",
+  "original_chart_type": "Six energy value-pool exhibit (SVG, inaccessible to graphic comparison)",
+  "encoding": "x=period/status, y=annual GBP billions, fill+hatching=observed versus conditional forecast, direct labels and computed £5.9bn difference.",
+  "data_spec": {
+    "observation_unit": "annual transmission constraint cost x period",
+    "fields": [
+      "label",
+      "time_label",
+      "value_gbp_billion",
+      "status",
+      "provenance",
+      "denominator",
+      "price_basis"
+    ],
+    "values": [
+      {
+        "label": "Constraint cost",
+        "time_label": "2025/26 actual",
+        "value_gbp_billion": "1.9",
+        "status": "observed",
+        "provenance": "reported",
+        "denominator": "annual UK electricity transmission constraint costs",
+        "price_basis": "missing"
+      },
+      {
+        "label": "Constraint cost",
+        "time_label": "2030 scenario",
+        "value_gbp_billion": "7.8",
+        "status": "forecast",
+        "provenance": "reported",
+        "denominator": "annual UK electricity transmission constraint costs",
+        "price_basis": "missing"
+      }
+    ],
+    "unit": "GBP bn per year",
+    "period": "FY2025/26 and conditional 2030",
+    "source": "UK National Audit Office / McKinsey citation; modeled assumptions for 2030 scenario not provided in article.",
+    "provenance_policy": [
+      "reported",
+      "derived",
+      "digitized_estimate",
+      "missing"
+    ]
+  },
+  "data_recipe": [
+    "Define annual network constraint costs as the comparable metric.",
+    "Use FY2025/26 reported cost and 2030 conditional scenario only.",
+    "Keep forecast status explicit and preserve undisclosed price-basis.",
+    "Calculate annual difference by subtracting reported values.",
+    "Do not confuse costs with the article's distinct £78bn commercial opportunity."
+  ],
+  "message_conditions": [
+    "The £7.8bn estimate is conditional on insufficient grid upgrades.",
+    "Each number is an annual amount, not a cumulative multi-year amount.",
+    "Inflation basis for the National Audit Office constraint-cost comparison is not stated in this article."
+  ],
+  "design_moves": [
+    "x=period/status, y=annual GBP billions, fill+hatching=observed versus conditional forecast, direct labels and computed £5.9bn difference.",
+    "Direct labels and context caveats",
+    "Source and neutral themes configurable; data-driven coordinate calculation"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original article's six-value-pool SVG exhibit could not be viewed; this is an editorial chart from a separate sourced paragraph, not exhibit reproduction. Do not compare £78bn market revenues against £7.8bn grid costs as additive.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Reproduce this reusable status_bar_editorial with the exact provided data.csv and config.json. Keep observations and assumptions distinct and do not claim a source-faithful reconstruction.",
+    "response": "Use exact CSV rows in data_spec.values, writing columns in data_spec.fields order. Use the adjacent executable chart.py and config.json from this immutable bundle. Run python chart.py --theme source --output artifacts/source.png or --theme neutral --output artifacts/neutral.png; the same render(data,theme,context) function produces both."
+  },
+  "split_group": "mckinsey_solving-britains-energy-bottlenecks-the-78-billion-pounds-a-year-opportunity-for-cleaner-more-affordable-power",
+  "source_verification": "McKinsey article dated Nov 16 2026; UK National Audit Office forecast dated Sep 11 2026. Source exhibit SVG fetch unsupported. Textual numbers accessible.",
+  "underlying_data_time": "FY2025/26 and conditional 2030"
+}

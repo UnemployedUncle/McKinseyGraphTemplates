@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261118_mckinsey_uk_grid_constraint_cost_outlook_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-17T18:28:00.440Z",
+  "source_url": "https://www.mckinsey.com/uk/our-insights/solving-britains-energy-bottlenecks-the-78-billion-pounds-a-year-opportunity-for-cleaner-more-affordable-power",
+  "figure_ref": "Article paragraph on UK transmission constraint costs, citing National Audit Office, Sep 11 2026 (not source six-value-pool exhibit)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "9980fa36b958e8145521de6b6db45db484b323e7050552854a3073bc43c9daef",
+    "data.csv": "d718b3845c50c8622166ee130f03682795884d6e46a0b3052fd28a76c38aec23",
+    "config.json": "039f667e7e955dbcbc1e49b926f41857cd3dec232190d7b929262338452de18b",
+    "requirements.txt": "a5f7d4f6229f7090b174135dc1d673302766684fd91573a4f13633f0ef009d02",
+    "card.md": "74776ecf5bf220b68bb1e0074f1f720867a1423ec3abfceb070e733c5d704602",
+    "record.json": "b22b4099ce717edbb834d9ada28fe3e991c98171d660034e43aff4f05c2520a5",
+    "validation.json": "daa290708c04c86346bd7112deb32b852f1df8008f3de65e102cbd113ae4d773"
+  },
+  "payload_sha256": "622ba0a0d37b8a54cd75c8896a12c1253df9677e0901f3b9e1e3af93e778eb94"
+}
