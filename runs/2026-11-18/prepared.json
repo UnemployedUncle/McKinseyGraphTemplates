@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-18",
+  "timezone": "Asia/Seoul",
+  "stage": "preparation",
+  "started_at_kst": "2026-11-18T03:19:52+09:00",
+  "completed_at_kst": "2026-11-18T03:37:03.813+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "delivery_due_local": "07:15",
+  "target": 3,
+  "new_bronze": 2,
+  "excluded_firm": "Bain",
+  "counts": {
+    "bronze": 66,
+    "silver": 0,
+    "gold": 0
+  },
+  "cumulative_source_fidelity_verified": 15,
+  "today_source_fidelity_verified": 0,
+  "new_bundle_review": "pending",
+  "new_bundle_fidelity": "unverified",
+  "new_bundle_fidelity_score": null,
+  "github_repository": "https://github.com/UnemployedUncle/McKinseyGraphTemplates",
+  "branch": "main",
+  "base_verified_commit": "a7270abb9bc66dea4c939ffd3914e66f8605bb18",
+  "source_bundle_commit": "9bdf09a5eb2ff09737c394850b3a12999d9c70f7",
+  "checksum_correction_commit": "2cae761deb8638dd57b148a2872c78f890d75ebb",
+  "runner_compatibility_commit": "a7270abb9bc66dea4c939ffd3914e66f8605bb18",
+  "github_actions": {
+    "run_id": 44149292190,
+    "run_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44149292190",
+    "conclusion": "success",
+    "stages": [
+      "unittest",
+      "medallion integrity validation",
+      "full render_all 132 previews",
+      "upload artifact"
+    ],
+    "artifact_id": 14359140159,
+    "artifact_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44149292190/artifacts/14359140159"
+  },
+  "images": {
+    "total_new": 4,
+    "dpi": 200,
+    "pixels": [
+      2200,
+      1240
+    ],
+    "themes": [
+      "source",
+      "neutral"
+    ],
+    "available_in_actions_artifact": true
+  },
+  "bundles": [
+    {
+      "firm": "BCG",
+      "path": "bronze/2026-11-18/bcg_growth_compass_tsr_ex2_editorial",
+      "source_url": "https://www.bcg.com/publications/2026/how-ceos-build-growth-strategy",
+      "source_published_at": "2026-11-17",
+      "figure_ref": "Exhibit 2",
+      "payload_sha256": "d6b101831413992a15a049a1e942e95cf36b3c072f97ddf7df6cac39e783c757",
+      "status": "unverified",
+      "score": null,
+      "human_review": "pending"
+    },
+    {
+      "firm": "McKinsey",
+      "path": "bronze/2026-11-18/mckinsey_uk_grid_constraint_cost_outlook_editorial",
+      "source_url": "https://www.mckinsey.com/uk/our-insights/solving-britains-energy-bottlenecks-the-78-billion-pounds-a-year-opportunity-for-cleaner-more-affordable-power",
+      "source_published_at": "2026-11-16",
+      "underlying_report_date": "2026-09-11",
+      "figure_ref": "Article transmission constraint-cost paragraph, not original six-pool exhibit",
+      "payload_sha256": "ff751b76d8086641dd233776ece5c81c457c06778182e4827f357f766900d1ed",
+      "status": "unverified",
+      "score": null,
+      "human_review": "pending"
+    }
+  ],
+  "notes": [
+    "GitHub remote manifest, catalog, and full runner validated after correcting SHA256 and CLI-compatibility issues; no previous Bronze/Silver/Gold snapshot modified.",
+    "These are explicitly editorial quantitative reconstructions, not faithful image reproductions.",
+    "Do not restart research, regenerate chart code, duplicate Git commits, or deliver twice at 07:15.",
+    "No original images, company marks, fonts, secrets, internal data, manual approvals, Silver/Gold promotion, or model retraining."
+  ]
+}
