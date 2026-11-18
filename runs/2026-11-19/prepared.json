@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-19",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "planned_preparation_time": "03:15",
+  "started_at": "2026-11-19T03:12:25+09:00",
+  "completed_at": "2026-11-19T03:29:45+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "delivery_target": "07:15 Asia/Seoul",
+  "bronze_commit": "794d541ef84b7e17c3d9f3b6ea497e91b0567037",
+  "bronze_commit_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/794d541ef84b7e17c3d9f3b6ea497e91b0567037",
+  "report_path": "runs/2026-11-19/RUN_REPORT.md",
+  "counts": {
+    "target": 3,
+    "new": 3,
+    "bronze": 69,
+    "silver": 0,
+    "gold": 0,
+    "previous_source_fidelity_verified": 15,
+    "new_source_fidelity_verified": 1,
+    "cumulative_self_verified": 16,
+    "human_approved_new": 0
+  },
+  "new_charts": [
+    {
+      "firm": "Bain",
+      "slug": "bain_future_banking_leadership_roe_fig2",
+      "source_url": "https://www.bain.com/insights/future-of-banking-strategy-for-ai-era/",
+      "published": "2026-11-12",
+      "figure_ref": "Figure 2",
+      "message": "Market-leading banking businesses show 15% ROE versus 9% for weak positions among top 30 banks; 6 percentage-point descriptive gap.",
+      "why": "Two vertically aligned colored bars with baseline zero and direct 9%/15% labels reproduce the original two-category comparison.",
+      "reuse": "Peer positioning versus ROE and other profitability metrics, with consistent sample definition.",
+      "validation_status": "verified",
+      "fidelity_score": 4.57,
+      "visual_original_opened": true,
+      "payload_sha256": "1e1a5309a013c68ba19f2a61d925005d6816bec558f5a57aaef747775c939b21",
+      "limitations": "Correlation only, sample limited to top 30 listed banks; different font and white space from source.",
+      "bronze_path": "bronze/2026-11-19/bain_future_banking_leadership_roe_fig2",
+      "manifest_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/bronze/2026-11-19/bain_future_banking_leadership_roe_fig2/manifest.json",
+      "human_review": "pending",
+      "training_eligible": false
+    },
+    {
+      "firm": "BCG",
+      "slug": "bcg_oecd_energy_import_ex2_editorial",
+      "source_url": "https://www.bcg.com/publications/2026/countries-strengthen-energy-security",
+      "published": "2026-11-18",
+      "figure_ref": "Exhibit 2 related narrative; editorial",
+      "message": "About 60% of OECD countries import more than half their energy; approx 40% is a calculated complement.",
+      "why": "Approximate 100%-stacked share bar emphasizes dependency frequency, without inventing individual country observations.",
+      "reuse": "Country risk exposure and resilience scorecards with exact country denominators when available.",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "visual_original_opened": false,
+      "payload_sha256": "17be91295723a295555013dd4a511640b071838a06d484f55895f167aab91fa7",
+      "limitations": "Original source exhibit was not visually available; denominator/year not disclosed in passage, 60% rounded, 40% derived and approximate.",
+      "bronze_path": "bronze/2026-11-19/bcg_oecd_energy_import_ex2_editorial",
+      "manifest_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/bronze/2026-11-19/bcg_oecd_energy_import_ex2_editorial/manifest.json",
+      "human_review": "pending",
+      "training_eligible": false
+    },
+    {
+      "firm": "McKinsey",
+      "slug": "mckinsey_banking_roe_uplift_ex5_editorial",
+      "source_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/global-banking-annual-review",
+      "published": "2026-11-17",
+      "figure_ref": "Exhibit 5 numerical bridge; editorial",
+      "message": "Modeling starts at 13% 2025 banking ROE, adds 2.3pp passive gains and 1.4pp active premium to an implied 16.7% scenario for 2028.",
+      "why": "Waterfall separates 2025 baseline, modeled external lift and managerial choices; original graphic not verified.",
+      "reuse": "ROE decomposition, cost bridges and strategy scenarios; distinguish estimates from realized results.",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "visual_original_opened": false,
+      "payload_sha256": "1a7f8c566b0add66799eab783a3fd383622183898cef156828e924bc9ae7f3e2",
+      "limitations": "Scenario rather than realization; source model details incomplete; original exhibit not visually inspected.",
+      "bronze_path": "bronze/2026-11-19/mckinsey_banking_roe_uplift_ex5_editorial",
+      "manifest_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/bronze/2026-11-19/mckinsey_banking_roe_uplift_ex5_editorial/manifest.json",
+      "human_review": "pending",
+      "training_eligible": false
+    }
+  ],
+  "local_validation": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "checks": "6 source/neutral PNGs at 2200x1240, 200dpi; CSV provenance and data semantics checked; visual review of all six generated PNGs performed.",
+    "local_package": "Consulting_Graph_Template_2026-11-19_PREPARED.zip (temporary conversation artifact, do not assume it persists in next run)"
+  },
+  "github_actions": {
+    "run_id": 44369857675,
+    "url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44369857675",
+    "status": "completed",
+    "conclusion": "success",
+    "artifact_id": 14457189416,
+    "artifact_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44369857675/artifacts/14457189416",
+    "jobs": [
+      "unit tests",
+      "medallion validate",
+      "all chart renders",
+      "artifact upload"
+    ]
+  },
+  "notes": [
+    "No source report images, logos, font files, credentials, or internal data committed.",
+    "All new Bronze bundles have manifest human_review=pending, training_eligible=false.",
+    "No human Silver or Gold promotion and no model training.",
+    "07:15 stage must read this prepared file and current status; no repeat research/experiment/commit.",
+    "New source charts represent one verified source-faithful Bain and two unverified editorial visualizations."
+  ]
+}
