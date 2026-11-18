@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261119_bcg_oecd_energy_import_ex2_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-18T18:26:59.986Z",
+  "source_url": "https://www.bcg.com/publications/2026/countries-strengthen-energy-security",
+  "figure_ref": "Exhibit 2 related reported narrative (editorial approximate-share bar; original chart not inspected)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "1b316d968e80b85e16847ef333d9354b67a16b510b9b78f205f4e9dabc7f01bb",
+    "data.csv": "bbab19b71e82f43866005db579dc6f19d42134fed5038a4dbb70fe86b8c46fb8",
+    "config.json": "d6ed620d77d5988dc3d65707b2ae8cd6acdc5d918e6f4c54af5f48aab0fed27a",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "4cf9d6249eb5d0b412b80aef77306ee5efdea92e44679c5c0aeaa4719f4162af",
+    "record.json": "b39119c80819e2a8d91c31500ffa4a07c45211822ca9415447b576a4b67c2a43",
+    "validation.json": "dea7f1d5e9833db13ef712eb4820b40a97e64c5101150a87d3f81b71797166c8"
+  },
+  "payload_sha256": "17be91295723a295555013dd4a511640b071838a06d484f55895f167aab91fa7"
+}

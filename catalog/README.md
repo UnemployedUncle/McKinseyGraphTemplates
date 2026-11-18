@@ -70,5 +70,8 @@
 | bronze | [20261117_mckinsey_danfoss_green_ask_supplier_coverage_editorial](../bronze/2026-11-17/mckinsey_danfoss_green_ask_supplier_coverage_editorial) | pending | unverified |
 | bronze | [20261118_bcg_growth_compass_tsr_ex2_editorial](../bronze/2026-11-18/bcg_growth_compass_tsr_ex2_editorial) | pending | unverified |
 | bronze | [20261118_mckinsey_uk_grid_constraint_cost_outlook_editorial](../bronze/2026-11-18/mckinsey_uk_grid_constraint_cost_outlook_editorial) | pending | unverified |
+| bronze | [20261119_bain_future_banking_leadership_roe_fig2](../bronze/2026-11-19/bain_future_banking_leadership_roe_fig2) | pending | verified |
+| bronze | [20261119_bcg_oecd_energy_import_ex2_editorial](../bronze/2026-11-19/bcg_oecd_energy_import_ex2_editorial) | pending | unverified |
+| bronze | [20261119_mckinsey_banking_roe_uplift_ex5_editorial](../bronze/2026-11-19/mckinsey_banking_roe_uplift_ex5_editorial) | pending | unverified |
 
 검수할 정확한 payload_sha256은 각 manifest.json과 index.json에서 확인합니다.

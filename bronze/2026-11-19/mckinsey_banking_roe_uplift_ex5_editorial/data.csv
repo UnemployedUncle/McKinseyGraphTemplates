@@ -1,0 +1,4 @@
+label,value,status,provenance,unit,period,denominator
+2025 ROE,13,observed_baseline,reported,% ROE,2025,"Global banking ROE, modeled base"
+Passive uplift,2.3,forecast_increment,reported,percentage points,2025–2028,Average industry and regulatory tailwinds
+Active premium,1.4,forecast_increment,reported,percentage points,2025–2028,Average incremental benefit from active capital deployment

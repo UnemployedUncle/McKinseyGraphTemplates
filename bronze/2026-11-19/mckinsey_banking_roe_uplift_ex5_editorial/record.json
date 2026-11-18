@@ -1,0 +1,96 @@
+{
+  "firm": "MCKINSEY",
+  "title": "Global Banking Annual Review 2026",
+  "source_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/global-banking-annual-review",
+  "source_published_at": "2026-11-17",
+  "source_checked_at": "2026-11-19",
+  "underlying_data_time": "2025 observed baseline and 2028 modeled scenario",
+  "figure_ref": "Exhibit 5 — expected change in global banking ROE 2025–2028 (editorial waterfall)",
+  "chart_key": "mckinsey_mckinsey_banking_roe_uplift_ex5_editorial",
+  "business_context": "McKinsey describes structural pressures and opportunities facing the global banking industry. Its Exhibit 5 models 2025 ROE of 13% plus passive tailwinds of 2.3pp and active initiatives of a further 1.4pp by 2028. The increments are modeled contributions, not audited realized returns.",
+  "key_message": "In a modeled scenario, banking ROE could rise from 13% to 15.3% through passive effects and to 16.7% with an additional 1.4pp active premium.",
+  "so_what": "Executives should separate externally available tailwinds from the incremental impact of active capital allocation before setting 2028 ROE targets.",
+  "insight_type": "waterfall",
+  "chart_type": "waterfall",
+  "original_chart_type": "Original chart not visually verified (web exhibit accessible in prose only)",
+  "encoding": "x=baseline and forecast scenario components; y=ROE%; colors=baseline,increments,total; floating contributions",
+  "data_spec": {
+    "observation_unit": "global banking ROE component",
+    "fields": [
+      "label",
+      "value",
+      "status",
+      "provenance",
+      "unit",
+      "period",
+      "denominator"
+    ],
+    "values": [
+      {
+        "label": "2025 ROE",
+        "value": "13",
+        "status": "observed_baseline",
+        "provenance": "reported",
+        "unit": "% ROE",
+        "period": "2025",
+        "denominator": "Global banking ROE, modeled base"
+      },
+      {
+        "label": "Passive uplift",
+        "value": "2.3",
+        "status": "forecast_increment",
+        "provenance": "reported",
+        "unit": "percentage points",
+        "period": "2025–2028",
+        "denominator": "Average industry and regulatory tailwinds"
+      },
+      {
+        "label": "Active premium",
+        "value": "1.4",
+        "status": "forecast_increment",
+        "provenance": "reported",
+        "unit": "percentage points",
+        "period": "2025–2028",
+        "denominator": "Average incremental benefit from active capital deployment"
+      }
+    ],
+    "source": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/global-banking-annual-review",
+    "unit": "% ROE",
+    "period": "2025 observed baseline and 2028 modeled scenario",
+    "provenance_policy": [
+      "reported",
+      "derived",
+      "digitized_estimate",
+      "missing"
+    ]
+  },
+  "data_recipe": [
+    "Record the historical 2025 ROE baseline and set the same denominator of equity in all periods.",
+    "Extract passive and active modeled ROE changes in percentage points, not relative percent growth.",
+    "Calculate intermediary scenario 13 + 2.3 = 15.3 and 2028 active scenario 15.3 + 1.4 = 16.7.",
+    "In a waterfall, render increments from the prior total and the final total from zero.",
+    "Distinguish observed 2025 baseline from conditional modeled 2028 increments; verify assumptions before adoption."
+  ],
+  "message_conditions": [
+    "The +2.3pp and +1.4pp values describe modeled average scenarios, not realized sector performance.",
+    "The apparent 16.7% is derived by addition; source warns that rounded components can differ slightly.",
+    "No bank-level distribution or confidence interval is available; neither increment is guaranteed.",
+    "Avoid equating global modeled returns with returns to an individual bank."
+  ],
+  "design_moves": [
+    "Kind waterfall; color/layout/context configurable via THEME and CONTEXT",
+    "Direct labels and careful unit/denominator distinction",
+    "All positions computed from data and series order"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Source chart image unavailable for direct visual comparison; reconstructed an editorial bridge of publicly reported numbers.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Create a reusable waterfall from the exact CSV and config in this Bronze snapshot; distinguish source fidelity, execution, and human review.",
+    "response": "Load the adjacent data.csv rows matching data_spec.values and config.json THEME/CONTEXT; execute the adjacent chart.py with python chart.py --theme source --output artifacts/source.png and --theme neutral --output artifacts/neutral.png. render(data,theme,context)->fig is reusable. Do not use source images or treat this Bronze file as approved training data."
+  },
+  "split_group": "mckinsey_global-banking-annual-review",
+  "source_verification": "Source chart image unavailable for direct visual comparison; reconstructed an editorial bridge of publicly reported numbers."
+}

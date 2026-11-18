@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 66,
+    "bronze": 69,
     "silver": 0,
     "gold": 0
   },
@@ -926,6 +926,48 @@
       "source_url": "https://www.mckinsey.com/uk/our-insights/solving-britains-energy-bottlenecks-the-78-billion-pounds-a-year-opportunity-for-cleaner-more-affordable-power",
       "figure_ref": "Article paragraph on UK transmission constraint costs, citing National Audit Office, Sep 11 2026 (not source six-value-pool exhibit)",
       "key_message": "Without concerted upgrades, annual UK transmission constraint costs could rise from £1.9 billion in FY2025/26 to £7.8 billion by 2030, a conditional £5.9 billion increase.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261119_bain_future_banking_leadership_roe_fig2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-19/bain_future_banking_leadership_roe_fig2",
+      "contract": "render-v1",
+      "payload_sha256": "1e1a5309a013c68ba19f2a61d925005d6816bec558f5a57aaef747775c939b21",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/future-of-banking-strategy-for-ai-era/",
+      "figure_ref": "Figure 2 — Banks with leadership positions have measurably better returns",
+      "key_message": "Business-area market leadership correlates with higher ROE: 15% versus 9% among the surveyed top 30 banks.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261119_bcg_oecd_energy_import_ex2_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-19/bcg_oecd_energy_import_ex2_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "17be91295723a295555013dd4a511640b071838a06d484f55895f167aab91fa7",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/countries-strengthen-energy-security",
+      "figure_ref": "Exhibit 2 related reported narrative (editorial approximate-share bar; original chart not inspected)",
+      "key_message": "Approximately 60% of OECD countries depend on imports for more than half their energy.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261119_mckinsey_banking_roe_uplift_ex5_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-19/mckinsey_banking_roe_uplift_ex5_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "1a7f8c566b0add66799eab783a3fd383622183898cef156828e924bc9ae7f3e2",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/global-banking-annual-review",
+      "figure_ref": "Exhibit 5 — expected change in global banking ROE 2025–2028 (editorial waterfall)",
+      "key_message": "In a modeled scenario, banking ROE could rise from 13% to 15.3% through passive effects and to 16.7% with an additional 1.4pp active premium.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

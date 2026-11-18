@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261119_bain_future_banking_leadership_roe_fig2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-18T18:26:59.986Z",
+  "source_url": "https://www.bain.com/insights/future-of-banking-strategy-for-ai-era/",
+  "figure_ref": "Figure 2 — Banks with leadership positions have measurably better returns",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "1b316d968e80b85e16847ef333d9354b67a16b510b9b78f205f4e9dabc7f01bb",
+    "data.csv": "9a2a693f882f2dca27fce2d37f4831230878d49268940002192fab55573dcbba",
+    "config.json": "4dba3922ff43d04e92b8a70b140d1b4767ffb9a96dcdf6e54180c74963ae0685",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "08a6597a006c75347f9131ec7204030a0685c3c37cc7a6ea419d5f27bade9920",
+    "record.json": "b0355ad88b63a00f9ec41ccffa1ce4b5f2aae69a21a411c0b4f3a323786ae1b3",
+    "validation.json": "dc4bcf1f0e892bac181d81b33bde6001e5a4a7fbd5a8ec88e7284d8e162b8e69"
+  },
+  "payload_sha256": "1e1a5309a013c68ba19f2a61d925005d6816bec558f5a57aaef747775c939b21"
+}

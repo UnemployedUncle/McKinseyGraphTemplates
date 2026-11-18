@@ -1,0 +1,87 @@
+{
+  "firm": "BCG",
+  "title": "How Countries Can Strengthen Their Energy Security",
+  "source_url": "https://www.bcg.com/publications/2026/countries-strengthen-energy-security",
+  "source_published_at": "2026-11-18",
+  "source_checked_at": "2026-11-19",
+  "underlying_data_time": "Unpublished in excerpt; article published 2026-11-18",
+  "figure_ref": "Exhibit 2 related reported narrative (editorial approximate-share bar; original chart not inspected)",
+  "chart_key": "bcg_bcg_oecd_energy_import_ex2_editorial",
+  "business_context": "BCG frames energy import dependence as a strategic vulnerability amid geopolitical and market disruptions. The public article states that about 60% of OECD countries import more than half of their energy. The publication does not provide exact country-level data or a precise measurement year in the passage used.",
+  "key_message": "Approximately 60% of OECD countries depend on imports for more than half their energy.",
+  "so_what": "Energy-security strategy should identify exposure to imports at the national level before choosing diversification, domestic capacity, or resilience policies.",
+  "insight_type": "stacked_share",
+  "chart_type": "stacked_share",
+  "original_chart_type": "Not verified (original exhibit image inaccessible)",
+  "encoding": "x=0–100% of OECD country count; stacked segments=import dependence; approximate direct labels",
+  "data_spec": {
+    "observation_unit": "OECD country import-dependence class",
+    "fields": [
+      "label",
+      "value",
+      "status",
+      "provenance",
+      "unit",
+      "period",
+      "denominator"
+    ],
+    "values": [
+      {
+        "label": "Import >50% of energy",
+        "value": "60",
+        "status": "high_dependency",
+        "provenance": "reported",
+        "unit": "approx % of OECD countries",
+        "period": "Article published 2026-11-18",
+        "denominator": "OECD countries; n and survey year undisclosed"
+      },
+      {
+        "label": "Others / at most 50%",
+        "value": "40",
+        "status": "other",
+        "provenance": "derived",
+        "unit": "approx % of OECD countries",
+        "period": "Article published 2026-11-18",
+        "denominator": "100 - approximately 60; approximate complement"
+      }
+    ],
+    "source": "https://www.bcg.com/publications/2026/countries-strengthen-energy-security",
+    "unit": "approx % of OECD countries",
+    "period": "Unpublished in excerpt; article published 2026-11-18",
+    "provenance_policy": [
+      "reported",
+      "derived",
+      "digitized_estimate",
+      "missing"
+    ]
+  },
+  "data_recipe": [
+    "Set the OECD country membership and measurement year before collecting country-level energy balances.",
+    "Compute net-import dependence consistently: imports, exports, production and total energy supply definitions must align.",
+    "Count countries above the 50% threshold, with the denominator explicitly known.",
+    "Label rounded aggregate shares as approximate; compute a residual only as an approximate complement.",
+    "Use a 100% stacked bar for an editorial summary; do not present it as the source's original exhibit."
+  ],
+  "message_conditions": [
+    "60% is a rounded estimate, not exact observed country count.",
+    "40% is derived as an approximate complement and not separately reported.",
+    "Missing country denominator, date and import-definition details prevent precision or confidence bounds.",
+    "No inference about energy volume shares, import values or individual country risk from this aggregate count."
+  ],
+  "design_moves": [
+    "Kind stacked_share; color/layout/context configurable via THEME and CONTEXT",
+    "Direct labels and careful unit/denominator distinction",
+    "All positions computed from data and series order"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Official narrative value checked, but original BCG Exhibit 2 image was not visually available; deliberately editorial, with derived rounded complement.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Create a reusable stacked_share from the exact CSV and config in this Bronze snapshot; distinguish source fidelity, execution, and human review.",
+    "response": "Load the adjacent data.csv rows matching data_spec.values and config.json THEME/CONTEXT; execute the adjacent chart.py with python chart.py --theme source --output artifacts/source.png and --theme neutral --output artifacts/neutral.png. render(data,theme,context)->fig is reusable. Do not use source images or treat this Bronze file as approved training data."
+  },
+  "split_group": "bcg_countries-strengthen-energy-security",
+  "source_verification": "Official narrative value checked, but original BCG Exhibit 2 image was not visually available; deliberately editorial, with derived rounded complement."
+}

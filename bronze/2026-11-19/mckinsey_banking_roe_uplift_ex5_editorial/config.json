@@ -1,0 +1,29 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "text": "#14202e",
+      "muted": "#63717c",
+      "on_accent": "#ffffff",
+      "accent": "#1b86b9",
+      "neutral": "#aebdc8",
+      "final": "#092c4e"
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "text": "#202a30",
+      "muted": "#58636b",
+      "accent": "#536575",
+      "neutral": "#c5cbd1",
+      "final": "#293744",
+      "on_accent": "#ffffff"
+    }
+  },
+  "CONTEXT": {
+    "kind": "waterfall",
+    "title": "Banking ROE uplift: passive tailwinds vs active capital choices",
+    "y_label": "Return on equity (%)",
+    "total_label": "2028 active ROE",
+    "footnote": "McKinsey Exhibit 5 | 13 + 2.3 + 1.4 = 16.7% (rounding noted in source)"
+  }
+}

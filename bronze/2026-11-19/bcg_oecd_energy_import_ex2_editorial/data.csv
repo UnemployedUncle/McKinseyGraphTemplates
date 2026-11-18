@@ -1,0 +1,3 @@
+label,value,status,provenance,unit,period,denominator
+Import >50% of energy,60,high_dependency,reported,approx % of OECD countries,Article published 2026-11-18,OECD countries; n and survey year undisclosed
+Others / at most 50%,40,other,derived,approx % of OECD countries,Article published 2026-11-18,100 - approximately 60; approximate complement

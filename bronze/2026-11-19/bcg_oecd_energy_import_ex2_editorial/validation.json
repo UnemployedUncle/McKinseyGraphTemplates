@@ -1,0 +1,32 @@
+{
+  "executed_at": "2026-11-18T18:26:59.986Z",
+  "python_version": "3.11+ compatible; local 3.x (actual minor unrecorded)",
+  "matplotlib_version": "3.10.8",
+  "commands": [
+    "python chart.py --theme source --output artifacts/source.png",
+    "python chart.py --theme neutral --output artifacts/neutral.png"
+  ],
+  "render_status": "passed",
+  "rendered_themes": [
+    "source",
+    "neutral"
+  ],
+  "dpi": 200,
+  "iterations": 1,
+  "meaning_checks": {
+    "unit_and_percent_vs_pp": "passed",
+    "sum_and_rounding": "checked",
+    "denominator": "defined or caveated",
+    "provenance": "reported/derived distinguished",
+    "missing_values": "not synthesized",
+    "sorting": "preserved original category order"
+  },
+  "original_visual_inspected": false,
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "seven_category_scores": null,
+  "score_rationale": "Official narrative value checked, but original BCG Exhibit 2 image was not visually available; deliberately editorial, with derived rounded complement.",
+  "diff_notes": "Official narrative value checked, but original BCG Exhibit 2 image was not visually available; deliberately editorial, with derived rounded complement.",
+  "human_review": "pending",
+  "training_eligible": false
+}

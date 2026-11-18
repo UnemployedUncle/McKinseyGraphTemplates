@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261119_mckinsey_banking_roe_uplift_ex5_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-18T18:26:59.986Z",
+  "source_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/global-banking-annual-review",
+  "figure_ref": "Exhibit 5 — expected change in global banking ROE 2025–2028 (editorial waterfall)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "1b316d968e80b85e16847ef333d9354b67a16b510b9b78f205f4e9dabc7f01bb",
+    "data.csv": "473c0659d5ca33bfda90a3fb33456e2bfd0951bf5aa4fee69f35f64a07442383",
+    "config.json": "71ae8e2242e8ecf29c516c279d897f97ce9c9c6bdf3a0f09f783de74ed8a0186",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27",
+    "card.md": "47ad399b4a2377677c2ce661a62214c1859fc82cba1cbbe69a86792c2cdfed0d",
+    "record.json": "877a71f23e71c617a936b272a1f8d836c4ade4b74aa94d397ffa47811b451b1c",
+    "validation.json": "b181eb5a7059c3037d37eec4fcd8f21c1ff328a1dd0492f68486548d587b3316"
+  },
+  "payload_sha256": "1a7f8c566b0add66799eab783a3fd383622183898cef156828e924bc9ae7f3e2"
+}

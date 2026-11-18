@@ -1,0 +1,86 @@
+{
+  "firm": "BAIN",
+  "title": "The Future of Banking: Strategy for the AI Era",
+  "source_url": "https://www.bain.com/insights/future-of-banking-strategy-for-ai-era/",
+  "source_published_at": "2026-11-12",
+  "source_checked_at": "2026-11-19",
+  "underlying_data_time": "Bank assets at 2025 year-end; return analysis 2025",
+  "figure_ref": "Figure 2 — Banks with leadership positions have measurably better returns",
+  "chart_key": "bain_bain_future_banking_leadership_roe_fig2",
+  "business_context": "Bain compares return on equity across business areas in major global banks classified by market leadership. Leading positions are associated with 15% ROE versus 9% for weaker positions. The exhibit is an association, not an experiment identifying a causal effect.",
+  "key_message": "Business-area market leadership correlates with higher ROE: 15% versus 9% among the surveyed top 30 banks.",
+  "so_what": "Prioritize defending or building defensible leadership where economics justify it; do not assume the 6pp ROE association is causal.",
+  "insight_type": "comparison_bar",
+  "chart_type": "comparison_bar",
+  "original_chart_type": "Two-category vertical bar, weak gray and leading red",
+  "encoding": "x=leadership group; y=ROE%; bar fill=leadership class; direct labels; zero axis",
+  "data_spec": {
+    "observation_unit": "business area market-position category",
+    "fields": [
+      "label",
+      "value",
+      "status",
+      "provenance",
+      "unit",
+      "period",
+      "denominator"
+    ],
+    "values": [
+      {
+        "label": "Weak",
+        "value": "9",
+        "status": "weak",
+        "provenance": "reported",
+        "unit": "% ROE",
+        "period": "2025 analysis",
+        "denominator": "Top 30 banks by 2025 year-end assets"
+      },
+      {
+        "label": "Leading",
+        "value": "15",
+        "status": "leading",
+        "provenance": "reported",
+        "unit": "% ROE",
+        "period": "2025 analysis",
+        "denominator": "Top 30 banks by 2025 year-end assets"
+      }
+    ],
+    "source": "https://www.bain.com/insights/future-of-banking-strategy-for-ai-era/",
+    "unit": "% ROE",
+    "period": "Bank assets at 2025 year-end; return analysis 2025",
+    "provenance_policy": [
+      "reported",
+      "derived",
+      "digitized_estimate",
+      "missing"
+    ]
+  },
+  "data_recipe": [
+    "Select a consistent population of large banks and define business-area leadership using disclosed ranks.",
+    "Assign each comparable business area to weak or leading based on rank thresholds.",
+    "Compute ROE with the same measurement date, weighting policy and profitability definition.",
+    "Plot both values against a shared zero baseline, with exact direct labels.",
+    "Test composition, survivorship and endogeneity before claiming causal effects."
+  ],
+  "message_conditions": [
+    "Top 30 publicly traded banks ranked by 2025 assets; the sample is not all banks.",
+    "Weak and leading refer to market-position classes across 18 business areas.",
+    "Reported returns are averages/benchmark comparisons; underlying bank-level estimates and weighting were not disclosed."
+  ],
+  "design_moves": [
+    "Kind comparison_bar; color/layout/context configurable via THEME and CONTEXT",
+    "Direct labels and careful unit/denominator distinction",
+    "All positions computed from data and series order"
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "diff_notes": "Opened actual Flourish Figure 2 thumbnail; shape, ordering, colors, labels and two reported values reproduced. Font and vertical whitespace are not pixel-identical.",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Create a reusable comparison_bar from the exact CSV and config in this Bronze snapshot; distinguish source fidelity, execution, and human review.",
+    "response": "Load the adjacent data.csv rows matching data_spec.values and config.json THEME/CONTEXT; execute the adjacent chart.py with python chart.py --theme source --output artifacts/source.png and --theme neutral --output artifacts/neutral.png. render(data,theme,context)->fig is reusable. Do not use source images or treat this Bronze file as approved training data."
+  },
+  "split_group": "bain_future-of-banking-strategy-for-ai-era",
+  "source_verification": "Opened actual Flourish Figure 2 thumbnail; shape, ordering, colors, labels and two reported values reproduced. Font and vertical whitespace are not pixel-identical."
+}

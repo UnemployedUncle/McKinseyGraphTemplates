@@ -1,0 +1,40 @@
+{
+  "executed_at": "2026-11-18T18:26:59.986Z",
+  "python_version": "3.11+ compatible; local 3.x (actual minor unrecorded)",
+  "matplotlib_version": "3.10.8",
+  "commands": [
+    "python chart.py --theme source --output artifacts/source.png",
+    "python chart.py --theme neutral --output artifacts/neutral.png"
+  ],
+  "render_status": "passed",
+  "rendered_themes": [
+    "source",
+    "neutral"
+  ],
+  "dpi": 200,
+  "iterations": 1,
+  "meaning_checks": {
+    "unit_and_percent_vs_pp": "passed",
+    "sum_and_rounding": "checked",
+    "denominator": "defined or caveated",
+    "provenance": "reported/derived distinguished",
+    "missing_values": "not synthesized",
+    "sorting": "preserved original category order"
+  },
+  "original_visual_inspected": true,
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "seven_category_scores": {
+    "chart_type": 5,
+    "data_values": 5,
+    "order_axis": 5,
+    "color_emphasis": 5,
+    "labels_titles": 5,
+    "legend_proportions": 4,
+    "margins": 3
+  },
+  "score_rationale": "Opened actual Flourish Figure 2 thumbnail; shape, ordering, colors, labels and two reported values reproduced. Font and vertical whitespace are not pixel-identical.",
+  "diff_notes": "Opened actual Flourish Figure 2 thumbnail; shape, ordering, colors, labels and two reported values reproduced. Font and vertical whitespace are not pixel-identical.",
+  "human_review": "pending",
+  "training_eligible": false
+}

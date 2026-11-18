@@ -1,0 +1,27 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "text": "#14202e",
+      "muted": "#63717c",
+      "on_accent": "#ffffff",
+      "accent": "#d60000",
+      "neutral": "#d1d1d1",
+      "final": "#b50000"
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "text": "#202a30",
+      "muted": "#58636b",
+      "accent": "#536575",
+      "neutral": "#c5cbd1",
+      "final": "#293744",
+      "on_accent": "#ffffff"
+    }
+  },
+  "CONTEXT": {
+    "kind": "comparison_bar",
+    "title": "Market leaders earn higher banking ROE",
+    "footnote": "Bain, Figure 2 | Top 30 banks by 2025 assets | Reported returns: 9% vs 15%"
+  }
+}

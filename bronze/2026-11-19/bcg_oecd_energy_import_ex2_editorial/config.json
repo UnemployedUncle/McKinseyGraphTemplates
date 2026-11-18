@@ -1,0 +1,28 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "text": "#14202e",
+      "muted": "#63717c",
+      "on_accent": "#ffffff",
+      "accent": "#008f91",
+      "neutral": "#d1dadc",
+      "final": "#007275"
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "text": "#202a30",
+      "muted": "#58636b",
+      "accent": "#536575",
+      "neutral": "#c5cbd1",
+      "final": "#293744",
+      "on_accent": "#ffffff"
+    }
+  },
+  "CONTEXT": {
+    "kind": "stacked_share",
+    "title": "Energy import dependency spans most OECD countries",
+    "x_label": "Approximate share of OECD countries",
+    "footnote": "BCG (2026-11-18), Exhibit 2 related headline | Approximate share; not country-level series"
+  }
+}
