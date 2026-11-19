@@ -1,0 +1,6 @@
+economy,gdp_per_working_age_eur_thousands,employment_rate_pct,gdp_per_hour_eur,hours_per_worker,unit,period,denominator,gdp_provenance,employment_provenance,hourly_provenance,hours_provenance
+United States,96,76,71,1775,2024 EUR PPP-adjusted,2024,Population age 20–64; hours per employed worker,reported,reported,reported,reported
+Belgium,88,72,77,1583,2024 EUR PPP-adjusted,2024,Population age 20–64; hours per employed worker,reported,reported,reported,reported
+Netherlands,88,84,72,1452,2024 EUR PPP-adjusted,2024,Population age 20–64; hours per employed worker,reported,reported,reported,reported
+Denmark,87,80,79,1372,2024 EUR PPP-adjusted,2024,Population age 20–64; hours per employed worker,reported,reported,reported,reported
+European Union,70,76,57,1661,2024 EUR PPP-adjusted,2024,Population age 20–64; hours per employed worker,reported,reported,reported,reported

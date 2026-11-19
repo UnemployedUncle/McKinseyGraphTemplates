@@ -1,0 +1,113 @@
+{
+  "firm": "BCG",
+  "title": "Entrepreneurial Prosperity Cycle: The Engine of Entrepreneurial Capitalism",
+  "source_url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+  "source_published_at": "2026-11-19",
+  "source_checked_at": "2026-11-20",
+  "underlying_data_time": "2013–2024 cumulative real income growth",
+  "figure_ref": "Exhibit 7 — real-income changes for lower and top income cohorts in São Paulo and Singapore",
+  "chart_key": "bcg_cities_startup_ex7_income_groups",
+  "business_context": "Real-income growth for lower and top 10% cohorts in two startup cities, differing bottom-cohort denominators",
+  "key_message": "São Paulo bottom 40% +9% vs top 10% +7%; Singapore bottom 10% +36% vs top 10% +32%, 2013–2024 real cumulative growth.",
+  "so_what": "Use distributional real incomes alongside startup capital metrics, without causal inference.",
+  "insight_type": "grouped_bar",
+  "chart_type": "grouped_bar",
+  "original_chart_type": "Bar chart described in article, original image not viewed",
+  "encoding": "x=city and bracket; y=cumulative real income growth %; fill=low vs high cohort; direct labels, zero baseline",
+  "data_spec": {
+    "observation_unit": "city-income cohort",
+    "fields": [
+      "city",
+      "group_code",
+      "income_group",
+      "value_pct",
+      "unit",
+      "period",
+      "denominator",
+      "provenance",
+      "source_detail"
+    ],
+    "values": [
+      {
+        "city": "São Paulo",
+        "group_code": "low",
+        "income_group": "Bottom 40%",
+        "value_pct": 9,
+        "unit": "% real income change",
+        "period": "2013-2024",
+        "denominator": "real incomes of lowest 40% in São Paulo",
+        "provenance": "reported",
+        "source_detail": "BCG Exhibit 7 narrative"
+      },
+      {
+        "city": "São Paulo",
+        "group_code": "high",
+        "income_group": "Top 10%",
+        "value_pct": 7,
+        "unit": "% real income change",
+        "period": "2013-2024",
+        "denominator": "real incomes of highest 10% in São Paulo",
+        "provenance": "reported",
+        "source_detail": "BCG Exhibit 7 narrative"
+      },
+      {
+        "city": "Singapore",
+        "group_code": "low",
+        "income_group": "Bottom 10%",
+        "value_pct": 36,
+        "unit": "% real income change",
+        "period": "2013-2024",
+        "denominator": "real incomes of lowest 10% in Singapore",
+        "provenance": "reported",
+        "source_detail": "BCG Exhibit 7 narrative"
+      },
+      {
+        "city": "Singapore",
+        "group_code": "high",
+        "income_group": "Top 10%",
+        "value_pct": 32,
+        "unit": "% real income change",
+        "period": "2013-2024",
+        "denominator": "real incomes of highest 10% in Singapore",
+        "provenance": "reported",
+        "source_detail": "BCG Exhibit 7 narrative"
+      }
+    ],
+    "period": "2013–2024 cumulative real income growth",
+    "unit": "% real income growth",
+    "provenance_policy": [
+      "reported",
+      "derived",
+      "digitized_estimate",
+      "missing"
+    ]
+  },
+  "data_recipe": [
+    "Define cities, income cohorts, and periods",
+    "Collect published real income levels or percent changes",
+    "Attach per-value provenance and denominator",
+    "Compute within-city gap in pp; not annual growth",
+    "Plot grouped bars with mismatched cohort footnotes"
+  ],
+  "message_conditions": [
+    "São Paulo low cohort bottom 40%, Singapore low cohort bottom 10%",
+    "All four values describe cumulative 2013–2024 real growth",
+    "No causal identification"
+  ],
+  "design_moves": [
+    "Zero-axis paired bars with direct labels",
+    "Low cohort emphasized, top decile gray",
+    "Explicit cross-city cutoff caveat"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Official published numbers and chart descriptions inspected; actual chart image not directly opened. Editorial reconstruction only.",
+  "source_verification": "Official article text and Exhibit label/alt text checked; no original graphic visual comparison.",
+  "split_group": "bcg_cities-build-startup-ecosystems-faster",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Create the reusable chart from exact published values, retaining cohort definitions, units, provenance, and the source-visual uncertainty.",
+    "response": "Read adjacent data.csv and config.json. Execute 'python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png', repeat with --theme neutral. chart.py implements render(data,theme,context)->fig. CSV fields: city, group_code, income_group, value_pct, unit, period, denominator, provenance, source_detail; actual observations and per-field provenance are in data_spec.values. Only change THEME/CONTEXT/CSV for reuse. No source graphic, human approval or model training supplied."
+  }
+}

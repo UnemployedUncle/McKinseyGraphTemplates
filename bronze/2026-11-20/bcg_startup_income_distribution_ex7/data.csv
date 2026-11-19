@@ -1,0 +1,5 @@
+city,group_code,income_group,value_pct,unit,period,denominator,provenance,source_detail
+São Paulo,low,Bottom 40%,9,% real income change,2013-2024,real incomes of lowest 40% in São Paulo,reported,BCG Exhibit 7 narrative
+São Paulo,high,Top 10%,7,% real income change,2013-2024,real incomes of highest 10% in São Paulo,reported,BCG Exhibit 7 narrative
+Singapore,low,Bottom 10%,36,% real income change,2013-2024,real incomes of lowest 10% in Singapore,reported,BCG Exhibit 7 narrative
+Singapore,high,Top 10%,32,% real income change,2013-2024,real incomes of highest 10% in Singapore,reported,BCG Exhibit 7 narrative

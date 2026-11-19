@@ -1,0 +1,29 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#142C32",
+      "muted": "#6B777A",
+      "accent": "#1E8269",
+      "neutral": "#B9C6C7",
+      "grid": "#D9E3E0",
+      "header_bg": "#EBF3F1"
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#202020",
+      "muted": "#777777",
+      "accent": "#262626",
+      "neutral": "#B8B8B8",
+      "grid": "#E0E0E0",
+      "header_bg": "#F4F4F4"
+    }
+  },
+  "CONTEXT": {
+    "kind": "grouped_income_bar",
+    "title": "Lower-income groups grew faster in two startup hubs",
+    "subtitle": "Real income growth, 2013–2024 (%); income cutoffs differ by city",
+    "note": "São Paulo compares bottom 40% vs top 10%; Singapore bottom 10% vs top 10%. Not identical cohorts.",
+    "source_line": "Source: BCG, Entrepreneurial Prosperity Cycle (Nov 19, 2026), Exhibit 7 narrative."
+  }
+}

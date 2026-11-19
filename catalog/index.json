@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 69,
+    "bronze": 71,
     "silver": 0,
     "gold": 0
   },
@@ -968,6 +968,34 @@
       "source_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/global-banking-annual-review",
       "figure_ref": "Exhibit 5 — expected change in global banking ROE 2025–2028 (editorial waterfall)",
       "key_message": "In a modeled scenario, banking ROE could rise from 13% to 15.3% through passive effects and to 16.7% with an additional 1.4pp active premium.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261120_bcg_startup_income_distribution_ex7",
+      "tier": "bronze",
+      "path": "bronze/2026-11-20/bcg_startup_income_distribution_ex7",
+      "contract": "render-v1",
+      "payload_sha256": "2fb2924cb5059be617bef73a3e4c098553660faad529543228d9c3944de6fb50",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+      "figure_ref": "Exhibit 7 — real-income changes for lower and top income cohorts in São Paulo and Singapore",
+      "key_message": "São Paulo bottom 40% +9% vs top 10% +7%; Singapore bottom 10% +36% vs top 10% +32%, 2013–2024 real cumulative growth.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261120_mckinsey_belgium_productivity_ex1_bar_table",
+      "tier": "bronze",
+      "path": "bronze/2026-11-20/mckinsey_belgium_productivity_ex1_bar_table",
+      "contract": "render-v1",
+      "payload_sha256": "8783cf8cf68e127636f7c4aeff7d7d54eadad0ce60eb903466c9cd2e37c11b79",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/a-bold-vision-for-belgium",
+      "figure_ref": "Exhibit 1 — GDP per working-age person bars and three productivity drivers",
+      "key_message": "Belgium 2024 GDP per working-age €88k, employment 72%, hourly GDP €77; Netherlands €88k, 84%, €72.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

@@ -1,0 +1,29 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#122A4F",
+      "muted": "#66717C",
+      "accent": "#247CC3",
+      "neutral": "#A8C0D0",
+      "grid": "#DAE2E9",
+      "header_bg": "#EDF3F7"
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "muted": "#777777",
+      "accent": "#353535",
+      "neutral": "#BFBFBF",
+      "grid": "#E0E0E0",
+      "header_bg": "#F4F4F4"
+    }
+  },
+  "CONTEXT": {
+    "kind": "productivity_bar_table",
+    "title": "Belgium has high output per hour, but a low employment rate",
+    "subtitle": "GDP per working-age person (2024, € thousands); inputs below",
+    "note": "All currencies PPP-normalized to Belgium 2024 price levels; values rounded independently.",
+    "source_line": "Source: McKinsey, A bold vision for Belgium (Nov 19, 2026), Exhibit 1; Eurostat, OECD."
+  }
+}

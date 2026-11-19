@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261120_bcg_startup_income_distribution_ex7",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-19T18:30:00.000000+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+  "figure_ref": "Exhibit 7 — real-income changes for lower and top income cohorts in São Paulo and Singapore",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "076f46cb0325e4166f2b0862e3fd2c4d332cf3ce2e4ccd27700dfb07a7bda549",
+    "data.csv": "f411b40558cba0381b17fc90cd9470f78a46987a6f02320b006f9bd80bde82bd",
+    "config.json": "38451e9fdbad9965413c55592c0a1dac478205709bb892f20e94799405654be4",
+    "requirements.txt": "ec090d20bf7dfadb7b0dc31e0e5ccf5e6ae7f646cc83cd3d376bed6061070503",
+    "card.md": "0a9a46e750b4b45be8f1fbb186269c0e84f47af444eebb5c9fd2480d09d69c2a",
+    "record.json": "abe0f7771fbea8dcf5262836fed7612c44cc104b109d0a8b63ebc4aa0d277490",
+    "validation.json": "7a0d02d59fa5c7bce821c75b37a3f54f450144652c0903eba2e9214b92a757be"
+  },
+  "payload_sha256": "2fb2924cb5059be617bef73a3e4c098553660faad529543228d9c3944de6fb50"
+}

@@ -1,0 +1,142 @@
+{
+  "firm": "MCKINSEY",
+  "title": "A bold vision for Belgium",
+  "source_url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/a-bold-vision-for-belgium",
+  "source_published_at": "2026-11-19",
+  "source_checked_at": "2026-11-20",
+  "underlying_data_time": "2024 statistics, OECD/Eurostat updated Jul–Oct 2026",
+  "figure_ref": "Exhibit 1 — GDP per working-age person bars and three productivity drivers",
+  "chart_key": "mckinsey_belgium_productivity_ex1_bar_table",
+  "business_context": "Belgium hourly productivity is high but employment below peers",
+  "key_message": "Belgium 2024 GDP per working-age €88k, employment 72%, hourly GDP €77; Netherlands €88k, 84%, €72.",
+  "so_what": "Decompose output per working-age resident into employment, hourly productivity, and hours to diagnose performance.",
+  "insight_type": "bar_and_table",
+  "chart_type": "bar_and_table",
+  "original_chart_type": "Bar + driver table described in official alt text, original image not viewed",
+  "encoding": "x=economy; y=GDP/working age in 2024 Belgium PPP €k; Belgium accent; three driver rows in table",
+  "data_spec": {
+    "observation_unit": "country-year",
+    "fields": [
+      "economy",
+      "gdp_per_working_age_eur_thousands",
+      "employment_rate_pct",
+      "gdp_per_hour_eur",
+      "hours_per_worker",
+      "unit",
+      "period",
+      "denominator",
+      "gdp_provenance",
+      "employment_provenance",
+      "hourly_provenance",
+      "hours_provenance"
+    ],
+    "values": [
+      {
+        "economy": "United States",
+        "gdp_per_working_age_eur_thousands": 96,
+        "employment_rate_pct": 76,
+        "gdp_per_hour_eur": 71,
+        "hours_per_worker": 1775,
+        "unit": "2024 EUR PPP-adjusted",
+        "period": "2024",
+        "denominator": "Population age 20–64; hours per employed worker",
+        "gdp_provenance": "reported",
+        "employment_provenance": "reported",
+        "hourly_provenance": "reported",
+        "hours_provenance": "reported"
+      },
+      {
+        "economy": "Belgium",
+        "gdp_per_working_age_eur_thousands": 88,
+        "employment_rate_pct": 72,
+        "gdp_per_hour_eur": 77,
+        "hours_per_worker": 1583,
+        "unit": "2024 EUR PPP-adjusted",
+        "period": "2024",
+        "denominator": "Population age 20–64; hours per employed worker",
+        "gdp_provenance": "reported",
+        "employment_provenance": "reported",
+        "hourly_provenance": "reported",
+        "hours_provenance": "reported"
+      },
+      {
+        "economy": "Netherlands",
+        "gdp_per_working_age_eur_thousands": 88,
+        "employment_rate_pct": 84,
+        "gdp_per_hour_eur": 72,
+        "hours_per_worker": 1452,
+        "unit": "2024 EUR PPP-adjusted",
+        "period": "2024",
+        "denominator": "Population age 20–64; hours per employed worker",
+        "gdp_provenance": "reported",
+        "employment_provenance": "reported",
+        "hourly_provenance": "reported",
+        "hours_provenance": "reported"
+      },
+      {
+        "economy": "Denmark",
+        "gdp_per_working_age_eur_thousands": 87,
+        "employment_rate_pct": 80,
+        "gdp_per_hour_eur": 79,
+        "hours_per_worker": 1372,
+        "unit": "2024 EUR PPP-adjusted",
+        "period": "2024",
+        "denominator": "Population age 20–64; hours per employed worker",
+        "gdp_provenance": "reported",
+        "employment_provenance": "reported",
+        "hourly_provenance": "reported",
+        "hours_provenance": "reported"
+      },
+      {
+        "economy": "European Union",
+        "gdp_per_working_age_eur_thousands": 70,
+        "employment_rate_pct": 76,
+        "gdp_per_hour_eur": 57,
+        "hours_per_worker": 1661,
+        "unit": "2024 EUR PPP-adjusted",
+        "period": "2024",
+        "denominator": "Population age 20–64; hours per employed worker",
+        "gdp_provenance": "reported",
+        "employment_provenance": "reported",
+        "hourly_provenance": "reported",
+        "hours_provenance": "reported"
+      }
+    ],
+    "period": "2024 statistics, OECD/Eurostat updated Jul–Oct 2026",
+    "unit": "2024 PPP-adjusted EUR",
+    "provenance_policy": [
+      "reported",
+      "derived",
+      "digitized_estimate",
+      "missing"
+    ]
+  },
+  "data_recipe": [
+    "Fix country sample and 2024 PPP basis",
+    "Collect employment%, GDP/hour and hours per worker",
+    "Keep per-field reported provenance",
+    "Sanity-check product of drivers with rounding tolerance",
+    "Align KPI bars and driver table"
+  ],
+  "message_conditions": [
+    "20–64 employment/population denominator",
+    "2024 Belgium PPP normalized euros, not nominal FX",
+    "Published drivers rounded independently"
+  ],
+  "design_moves": [
+    "Belgium highlighted in zero-axis comparison",
+    "Direct numeric labels",
+    "Three driver metrics aligned below bars and PPP note"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Official published numbers and chart descriptions inspected; actual chart image not directly opened. Editorial reconstruction only.",
+  "source_verification": "Official article text and Exhibit label/alt text checked; no original graphic visual comparison.",
+  "split_group": "mckinsey_a-bold-vision-for-belgium",
+  "training_eligible": false,
+  "human_review": "pending",
+  "training_pair": {
+    "instruction": "Create the reusable chart from exact published values, retaining cohort definitions, units, provenance, and the source-visual uncertainty.",
+    "response": "Read adjacent data.csv and config.json. Execute 'python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png', repeat with --theme neutral. chart.py implements render(data,theme,context)->fig. CSV fields: economy, gdp_per_working_age_eur_thousands, employment_rate_pct, gdp_per_hour_eur, hours_per_worker, unit, period, denominator, gdp_provenance, employment_provenance, hourly_provenance, hours_provenance; actual observations and per-field provenance are in data_spec.values. Only change THEME/CONTEXT/CSV for reuse. No source graphic, human approval or model training supplied."
+  }
+}

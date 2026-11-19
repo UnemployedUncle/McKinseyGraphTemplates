@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261120_mckinsey_belgium_productivity_ex1_bar_table",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-19T18:30:00.000000+00:00",
+  "source_url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/a-bold-vision-for-belgium",
+  "figure_ref": "Exhibit 1 — GDP per working-age person bars and three productivity drivers",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "076f46cb0325e4166f2b0862e3fd2c4d332cf3ce2e4ccd27700dfb07a7bda549",
+    "data.csv": "994712490360ee8ba65958ea3d6817a3f7b2025ef738066ce89d9398ff2f453d",
+    "config.json": "441b1bb74e197092468603d184af281b0fea88c5f3768d29da2fe8ad6a45aa51",
+    "requirements.txt": "ec090d20bf7dfadb7b0dc31e0e5ccf5e6ae7f646cc83cd3d376bed6061070503",
+    "card.md": "2c9efd894b3e73ba8a55d6e2d81d6052668cbad8c719e0bb1af12b0b7c6f38b9",
+    "record.json": "390e4440eb693957715431044d5f5fc80895a5758fe053bb3bc7447a5156a65a",
+    "validation.json": "7a0d02d59fa5c7bce821c75b37a3f54f450144652c0903eba2e9214b92a757be"
+  },
+  "payload_sha256": "8783cf8cf68e127636f7c4aeff7d7d54eadad0ce60eb903466c9cd2e37c11b79"
+}

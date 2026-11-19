@@ -1,0 +1,57 @@
+{
+  "status": "unverified",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "human_review": "pending",
+  "original_visual_opened": false,
+  "execution_passed": true,
+  "source_data_semantics_passed": true,
+  "iterations": 2,
+  "commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png"
+  ],
+  "versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5"
+  },
+  "fidelity_rubric": {
+    "chart_type": null,
+    "data_order": null,
+    "axis": null,
+    "colors_and_emphasis": null,
+    "labels_and_annotations": null,
+    "legend_and_proportions": null,
+    "spacing": null
+  },
+  "score_rationale": "Original image not directly inspected. Seven fidelity criteria not scorable.",
+  "remaining_differences": "Original exact layout, colors, labels, axes and whitespace unconfirmed.",
+  "semantic_checks_passed": true,
+  "provenance_checks_passed": true,
+  "unit_tests": {
+    "command": "python test_quant.py",
+    "passed": 2,
+    "failed": 0
+  },
+  "actual_generated_outputs": [
+    {
+      "theme": "source",
+      "pixels": [
+        2200,
+        1240
+      ],
+      "dpi": 200,
+      "visually_inspected": true
+    },
+    {
+      "theme": "neutral",
+      "pixels": [
+        2200,
+        1240
+      ],
+      "dpi": 200,
+      "visually_inspected": true
+    }
+  ]
+}
