@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-20",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "planned_preparation_time": "03:15",
+  "started_at": "2026-11-20T03:14:05+09:00",
+  "completed_at": "2026-11-20T03:33:38+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "delivery_target": "07:15 Asia/Seoul",
+  "bronze_commit": "0396eda2b4365a18e18a5cef9e0d9eef46a87d16",
+  "bronze_commit_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/0396eda2b4365a18e18a5cef9e0d9eef46a87d16",
+  "report_path": "runs/2026-11-20/RUN_REPORT.md",
+  "counts": {
+    "target": 3,
+    "new": 2,
+    "bronze": 71,
+    "silver": 0,
+    "gold": 0,
+    "previous_source_fidelity_verified": 16,
+    "new_source_fidelity_verified": 0,
+    "cumulative_self_verified": 16,
+    "human_approved_new": 0
+  },
+  "new_charts": [
+    {
+      "firm": "BCG",
+      "slug": "bcg_startup_income_distribution_ex7",
+      "source_url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+      "published": "2026-11-19",
+      "data_time": "2013–2024",
+      "figure_ref": "Exhibit 7 related passage",
+      "message": "São Paulo bottom 40% 9% vs top 10% 7%; Singapore bottom 10% 36% vs top 10% 32%.",
+      "why": "Grouped bar shows income-cohort growth within each city; cohort denominators differ.",
+      "reuse": "City-level distributional performance metrics",
+      "bronze_path": "bronze/2026-11-20/bcg_startup_income_distribution_ex7",
+      "manifest_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/bronze/2026-11-20/bcg_startup_income_distribution_ex7/manifest.json",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "visual_original_opened": false,
+      "human_review": "pending",
+      "training_eligible": false,
+      "payload_sha256": "2fb2924cb5059be617bef73a3e4c098553660faad529543228d9c3944de6fb50"
+    },
+    {
+      "firm": "McKinsey",
+      "slug": "mckinsey_belgium_productivity_ex1_bar_table",
+      "source_url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/a-bold-vision-for-belgium",
+      "published": "2026-11-19",
+      "data_time": "2024",
+      "figure_ref": "Exhibit 1",
+      "message": "Belgium 2024 GDP/working age €88k, employment rate 72%, GDP/hour €77; Netherlands €88k, 84%, €72.",
+      "why": "Peer bar + aligned driver table separates KPI level and drivers.",
+      "reuse": "Country or business-unit productivity decomposition",
+      "bronze_path": "bronze/2026-11-20/mckinsey_belgium_productivity_ex1_bar_table",
+      "manifest_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/bronze/2026-11-20/mckinsey_belgium_productivity_ex1_bar_table/manifest.json",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "visual_original_opened": false,
+      "human_review": "pending",
+      "training_eligible": false,
+      "payload_sha256": "8783cf8cf68e127636f7c4aeff7d7d54eadad0ce60eb903466c9cd2e37c11b79"
+    }
+  ],
+  "excluded": [
+    {
+      "firm": "Bain",
+      "reason": "Official dated, visually accessible and new chart not confirmed in last 7 or 30 days; third-party release is insufficient."
+    }
+  ],
+  "local_validation": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "unit_tests_passed": 2,
+    "rendered_images": 4,
+    "pixels": [
+      2200,
+      1240
+    ],
+    "dpi": 200,
+    "visual_inspection": true,
+    "github_remote_sha256_files_matched": 14,
+    "github_remote_payloads_matched": 2
+  },
+  "github_actions": {
+    "status": "not_confirmed",
+    "reason": "Available commit workflow-run lookup is PR-only and returned no runs; do not claim success."
+  },
+  "notes": [
+    "Immutable remote file digest is canonical; local preview scripts may not be byte-identical to the final Git versions.",
+    "No Silver/Gold promotion or human approval.",
+    "07:15 delivery reads this report first; no new research or duplicate commit."
+  ]
+}
