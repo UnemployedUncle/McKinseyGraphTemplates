@@ -1,0 +1,27 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "design_mode": "editorial redesign",
+  "original_visual_opened": false,
+  "original_visual_evidence": "Official SVGZ unsupported by image opener; article text and caption confirmed",
+  "checks": {
+    "reported_values": true,
+    "unit": true,
+    "denominator": true,
+    "rounding": true,
+    "sort": true,
+    "missing": true,
+    "no_synthetic": true,
+    "source_and_neutral_render": true
+  },
+  "execution": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "cmd": "python chart.py --theme {source,neutral} --output artifacts/<slug>/<theme>.png",
+    "dpi": 200,
+    "revisions": 1
+  },
+  "seven_dimension_scores": null,
+  "notes": "Original image not viewable; editorial graphic must not be claimed as faithful.",
+  "human_review": "pending"
+}

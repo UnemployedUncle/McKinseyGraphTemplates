@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261121_bcg_ai_vision_funding_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-20T18:16:32.045747+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+  "figure_ref": "Exhibit 2 — CMOs with clear AI vision are better positioned to access funding",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "record.json": "99451c1fa2639114ac7270adf60791e595301fc07092719eab0c6a765e18c2c7",
+    "chart.py": "452750d968b405e72280baf96f2c5b8e472bc29c508d9f68a7ac28199a76148e",
+    "data.csv": "41883c082d63edfb27576af725098f932eb887ab8cd0050bf8902b76e2310efa",
+    "validation.json": "91faae2687a9a6396abe550aa43f4706cbca544afe35d16069d1d8a54a8150f3",
+    "card.md": "2afb6d1664b5e3532865bbbf6abf9053c56ce41c220b2b2ed3d792224d907088",
+    "config.json": "9d61cbd4650ed858c35639df497db4e3954b47218f90a7f331d760b6217db17d",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27"
+  },
+  "payload_sha256": "36ac7f1541499b6d212fa890f1b7134e14469d88b45352d758eea77864f51ea5"
+}

@@ -1,0 +1,118 @@
+{
+  "source_url": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai",
+  "source_title": "Advancing US economic mobility in the age of AI",
+  "firm": "McKinsey",
+  "published_date": "2026-11-20",
+  "collected_date": "2026-11-21",
+  "data_period": "2025 workforce mapped to 2035 modeled automation",
+  "figure_ref": "Exhibit 1 related reported figures — projected displaced share of automation-adopted hours (editorial chart)",
+  "chart_key": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai#Exhibit 1 related reported figures — projected displaced share of automation-adopted hours (editorial chart)",
+  "business_context": "Workforce equity and modeled adoption/displacement of AI and automation",
+  "key_message": "Among automation-adopted work hours, model-projected displacement shares are 41% Latino, 40% Black, 37% White, and 36% Asian, not shares of all work hours.",
+  "insight_type": "ranked cohort model comparison",
+  "chart_type": "horizontal ranked bar (editorial)",
+  "encoding": {
+    "x": "value_pct",
+    "y": "group",
+    "color": "highlight_groups",
+    "labels": "direct value and response category",
+    "sorting": "descending"
+  },
+  "data_spec": {
+    "csv": "data.csv",
+    "fields": [
+      "group",
+      "category",
+      "value_pct",
+      "unit",
+      "provenance",
+      "period",
+      "denominator",
+      "sequence",
+      "source_note"
+    ],
+    "value_provenance": "reported",
+    "unit": "%",
+    "denominator": "automation-adopted hours within each group",
+    "period": "2025 workforce mapped to 2035 modeled automation"
+  },
+  "data_recipe": [
+    "Define denominator and cohort membership",
+    "Collect reported rates and source dates",
+    "Label units, period and provenance per row",
+    "Validate category completeness / ranges",
+    "Configure THEME and CONTEXT",
+    "Render both source and neutral at dpi200 and review"
+  ],
+  "message_conditions": "er by rate only if story calls for ranking, highlight selectively, preserve projected label, and validate 0≤value≤100; render source/neutral. To reuse, change CSV `group`, `value_pct`, `denominator`, `period`, and `CONTEXT`, preserving same unit across rows.\n\n",
+  "design_moves": [
+    "Separate source vs neutral palette",
+    "Data-driven bar lengths",
+    "Direct value labels",
+    "Explicit denominator and source footnote"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original image not viewable; editorial graphic must not be claimed as faithful.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai",
+  "training_pair": {
+    "instruction": "Recreate or adapt a comparison chart using the exact BCG/McKinsey values in CSV and both palettes; do not invent missing observations.",
+    "response": {
+      "entrypoint": "chart.py",
+      "data_file": "data.csv",
+      "config_file": "config.json",
+      "install": "pip install -r requirements.txt",
+      "command": "python chart.py --theme source --data data.csv --config config.json --output source.png",
+      "neutral_command": "python chart.py --theme neutral --data data.csv --config config.json --output neutral.png",
+      "data_rows": [
+        {
+          "group": "Latino",
+          "category": "Projected labor displacement",
+          "value_pct": 41,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "2035 modeled",
+          "denominator": "automation-adopted work hours performed by Latino workers",
+          "sequence": 1,
+          "source_note": "McKinsey Exhibit 1 article text"
+        },
+        {
+          "group": "Black",
+          "category": "Projected labor displacement",
+          "value_pct": 40,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "2035 modeled",
+          "denominator": "automation-adopted work hours performed by Black workers",
+          "sequence": 2,
+          "source_note": "McKinsey Exhibit 1 article text"
+        },
+        {
+          "group": "White",
+          "category": "Projected labor displacement",
+          "value_pct": 37,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "2035 modeled",
+          "denominator": "automation-adopted work hours performed by White workers",
+          "sequence": 3,
+          "source_note": "McKinsey Exhibit 1 article text"
+        },
+        {
+          "group": "Asian",
+          "category": "Projected labor displacement",
+          "value_pct": 36,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "2035 modeled",
+          "denominator": "automation-adopted work hours performed by Asian workers",
+          "sequence": 4,
+          "source_note": "McKinsey Exhibit 1 article text"
+        }
+      ],
+      "code_source": "Exact runnable chart.py included in the same immutable bundle; training eligibility pending human review and rights check."
+    }
+  }
+}

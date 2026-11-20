@@ -1,0 +1,27 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "design_mode": "source-like reconstruction",
+  "original_visual_opened": true,
+  "original_visual_evidence": "BCG Exhibit 2 displayed from official web-assets.bcg.com resized original",
+  "checks": {
+    "reported_values": true,
+    "unit": true,
+    "denominator": true,
+    "rounding": true,
+    "sort": true,
+    "missing": true,
+    "no_synthetic": true,
+    "source_and_neutral_render": true
+  },
+  "execution": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "cmd": "python chart.py --theme {source,neutral} --output artifacts/<slug>/<theme>.png",
+    "dpi": 200,
+    "revisions": 1
+  },
+  "seven_dimension_scores": null,
+  "notes": "BCG source-style mini-bars use the source categories, but spacing/typography differ; no >=4.5 fidelity established.",
+  "human_review": "pending"
+}

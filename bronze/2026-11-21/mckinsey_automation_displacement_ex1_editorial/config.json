@@ -1,0 +1,41 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#172B30",
+      "muted": "#617074",
+      "accent": "#25BD68",
+      "alternate": "#22B0B5",
+      "neutral": "#A7BFC5",
+      "grid": "#D6E5E4",
+      "on_accent": "#FFFFFF"
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#202020",
+      "muted": "#707070",
+      "accent": "#3C3C3C",
+      "alternate": "#797979",
+      "neutral": "#ACACAC",
+      "grid": "#E2E2E2",
+      "on_accent": "#FFFFFF"
+    }
+  },
+  "CONTEXT": {
+    "kind": "displacement_bars",
+    "title": "Automation may displace different shares of adopted hours",
+    "subtitle": "2035 model projection | Displaced portion of automation-adopted work hours (%)",
+    "group_order": [
+      "Latino",
+      "Black",
+      "White",
+      "Asian"
+    ],
+    "highlight_groups": [
+      "Latino",
+      "Black"
+    ],
+    "note": "Denominator: automation-adopted hours WITHIN each group, not all working hours. Projected, not observed.",
+    "source_line": "Source: McKinsey Institute for Economic Mobility / MGI, Nov 20, 2026, Exhibit 1 text."
+  }
+}

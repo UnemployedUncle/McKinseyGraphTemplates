@@ -75,5 +75,7 @@
 | bronze | [20261119_mckinsey_banking_roe_uplift_ex5_editorial](../bronze/2026-11-19/mckinsey_banking_roe_uplift_ex5_editorial) | pending | unverified |
 | bronze | [20261120_bcg_startup_income_distribution_ex7](../bronze/2026-11-20/bcg_startup_income_distribution_ex7) | pending | unverified |
 | bronze | [20261120_mckinsey_belgium_productivity_ex1_bar_table](../bronze/2026-11-20/mckinsey_belgium_productivity_ex1_bar_table) | pending | unverified |
+| bronze | [20261121_bcg_ai_vision_funding_ex2](../bronze/2026-11-21/bcg_ai_vision_funding_ex2) | pending | unverified |
+| bronze | [20261121_mckinsey_automation_displacement_ex1_editorial](../bronze/2026-11-21/mckinsey_automation_displacement_ex1_editorial) | pending | unverified |
 
 검수할 정확한 payload_sha256은 각 manifest.json과 index.json에서 확인합니다.

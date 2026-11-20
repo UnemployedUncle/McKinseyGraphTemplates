@@ -1,0 +1,140 @@
+{
+  "source_url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+  "source_title": "CMOs Are Thinking Big with Agentic AI. They Should Be Thinking Even Bigger.",
+  "firm": "BCG",
+  "published_date": "2026-11-20",
+  "collected_date": "2026-11-21",
+  "data_period": "May–July 2026",
+  "figure_ref": "Exhibit 2 — CMOs with clear AI vision are better positioned to access funding",
+  "chart_key": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team#Exhibit 2 — CMOs with clear AI vision are better positioned to access funding",
+  "business_context": "Budget access for agentic AI marketing transformation",
+  "key_message": "A clear AI vision is associated with a higher share of CMOs reporting sufficient or more-than-sufficient AI funding (62% versus 37%).",
+  "insight_type": "within-group distributions",
+  "chart_type": "mini progress bars in two rows",
+  "encoding": {
+    "x": "within-group percentage fill",
+    "y": "group and category",
+    "color": "vision clarity segment",
+    "labels": "direct value and response category",
+    "sorting": "original group and response order"
+  },
+  "data_spec": {
+    "csv": "data.csv",
+    "fields": [
+      "group",
+      "category",
+      "value_pct",
+      "unit",
+      "provenance",
+      "period",
+      "denominator",
+      "sequence",
+      "source_note"
+    ],
+    "value_provenance": "reported",
+    "unit": "%",
+    "denominator": "different within-group survey segments",
+    "period": "May–July 2026"
+  },
+  "data_recipe": [
+    "Define denominator and cohort membership",
+    "Collect reported rates and source dates",
+    "Label units, period and provenance per row",
+    "Validate category completeness / ranges",
+    "Configure THEME and CONTEXT",
+    "Render both source and neutral at dpi200 and review"
+  ],
+  "message_conditions": "total 100% within rounding tolerance.\n4. Set `CONTEXT.group_order`, `CONTEXT.group_titles` and message-specific caption; edit `THEME` only for source/neutral palettes.\n5. Supply new CSV to `chart.py`; render both variants and visually inspect all six labels.\n\n",
+  "design_moves": [
+    "Separate source vs neutral palette",
+    "Data-driven bar lengths",
+    "Direct value labels",
+    "Explicit denominator and source footnote"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "BCG source-style mini-bars use the source categories, but spacing/typography differ; no >=4.5 fidelity established.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+  "training_pair": {
+    "instruction": "Recreate or adapt a comparison chart using the exact BCG/McKinsey values in CSV and both palettes; do not invent missing observations.",
+    "response": {
+      "entrypoint": "chart.py",
+      "data_file": "data.csv",
+      "config_file": "config.json",
+      "install": "pip install -r requirements.txt",
+      "command": "python chart.py --theme source --data data.csv --config config.json --output source.png",
+      "neutral_command": "python chart.py --theme neutral --data data.csv --config config.json --output neutral.png",
+      "data_rows": [
+        {
+          "group": "Clear vision",
+          "category": "Have what I need",
+          "value_pct": 54,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "May–July 2026",
+          "denominator": "survey respondents with clear AI vision",
+          "sequence": 1,
+          "source_note": "BCG Exhibit 2"
+        },
+        {
+          "group": "Clear vision",
+          "category": "Have more than I need",
+          "value_pct": 8,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "May–July 2026",
+          "denominator": "survey respondents with clear AI vision",
+          "sequence": 2,
+          "source_note": "BCG Exhibit 2"
+        },
+        {
+          "group": "Clear vision",
+          "category": "Need a lot more",
+          "value_pct": 38,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "May–July 2026",
+          "denominator": "survey respondents with clear AI vision",
+          "sequence": 3,
+          "source_note": "BCG Exhibit 2"
+        },
+        {
+          "group": "Unclear vision",
+          "category": "Have what I need",
+          "value_pct": 37,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "May–July 2026",
+          "denominator": "survey respondents without clear AI vision",
+          "sequence": 1,
+          "source_note": "BCG Exhibit 2"
+        },
+        {
+          "group": "Unclear vision",
+          "category": "Need a little more",
+          "value_pct": 33,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "May–July 2026",
+          "denominator": "survey respondents without clear AI vision",
+          "sequence": 2,
+          "source_note": "BCG Exhibit 2"
+        },
+        {
+          "group": "Unclear vision",
+          "category": "Need a lot more",
+          "value_pct": 30,
+          "unit": "%",
+          "provenance": "reported",
+          "period": "May–July 2026",
+          "denominator": "survey respondents without clear AI vision",
+          "sequence": 3,
+          "source_note": "BCG Exhibit 2"
+        }
+      ],
+      "code_source": "Exact runnable chart.py included in the same immutable bundle; training eligibility pending human review and rights check."
+    }
+  }
+}

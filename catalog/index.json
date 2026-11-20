@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 71,
+    "bronze": 73,
     "silver": 0,
     "gold": 0
   },
@@ -996,6 +996,34 @@
       "source_url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/a-bold-vision-for-belgium",
       "figure_ref": "Exhibit 1 — GDP per working-age person bars and three productivity drivers",
       "key_message": "Belgium 2024 GDP per working-age €88k, employment 72%, hourly GDP €77; Netherlands €88k, 84%, €72.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261121_bcg_ai_vision_funding_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-21/bcg_ai_vision_funding_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "36ac7f1541499b6d212fa890f1b7134e14469d88b45352d758eea77864f51ea5",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+      "figure_ref": "Exhibit 2 — CMOs with clear AI vision are better positioned to access funding",
+      "key_message": "A clear AI vision is associated with a higher share of CMOs reporting sufficient or more-than-sufficient AI funding (62% versus 37%).",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261121_mckinsey_automation_displacement_ex1_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-21/mckinsey_automation_displacement_ex1_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "1d6bf39ebd61b32e400061be2bc2c803d4394517febe7b743f849328ce69859e",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai",
+      "figure_ref": "Exhibit 1 related reported figures — projected displaced share of automation-adopted hours (editorial chart)",
+      "key_message": "Among automation-adopted work hours, model-projected displacement shares are 41% Latino, 40% Black, 37% White, and 36% Asian, not shares of all work hours.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

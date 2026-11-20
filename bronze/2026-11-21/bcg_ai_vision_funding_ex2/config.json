@@ -1,0 +1,39 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#FFFFFF",
+      "text": "#172B30",
+      "muted": "#617074",
+      "accent": "#25BD68",
+      "alternate": "#22B0B5",
+      "neutral": "#A7BFC5",
+      "grid": "#D6E5E4",
+      "on_accent": "#FFFFFF"
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "text": "#202020",
+      "muted": "#707070",
+      "accent": "#3C3C3C",
+      "alternate": "#797979",
+      "neutral": "#ACACAC",
+      "grid": "#E2E2E2",
+      "on_accent": "#FFFFFF"
+    }
+  },
+  "CONTEXT": {
+    "kind": "funding_tiles",
+    "title": "Clear AI ambition is linked to funding access",
+    "subtitle": "CMO survey, May–July 2026 | Percent of respondents within each vision group",
+    "group_order": [
+      "Clear vision",
+      "Unclear vision"
+    ],
+    "group_titles": [
+      "CMOs with a clear AI vision",
+      "CMOs without a clear AI vision"
+    ],
+    "note": "Sufficient-or-more funding: 62% with a clear vision vs 37% without (+25 pp). Association, not causation.",
+    "source_line": "Source: BCG / Global Marketing and Media Alliance, Nov 20, 2026, Exhibit 2 (n≈60 total CMOs)."
+  }
+}

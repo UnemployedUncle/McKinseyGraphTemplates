@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261121_mckinsey_automation_displacement_ex1_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-20T18:16:35.007108+00:00",
+  "source_url": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai",
+  "figure_ref": "Exhibit 1 related reported figures — projected displaced share of automation-adopted hours (editorial chart)",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "record.json": "6f35e1258164203b9f84a7f80b84663f07eb3b2cfe013c003b7c993f098ca489",
+    "chart.py": "452750d968b405e72280baf96f2c5b8e472bc29c508d9f68a7ac28199a76148e",
+    "data.csv": "a5084ab45938deacf6d8112399e697e036b2490cd3c75e97ffff070e08865e93",
+    "validation.json": "0510fd418b264fd39703ba5fc09d16446e4c2c7bdda47f2ed8a92b44fb9b8dd0",
+    "card.md": "3380a4d4a473c6a873fb55245712810f62fdc8cc347d98a95adba4e8abd9f302",
+    "config.json": "74ba87787dcd65b9feff60e11075ab3e720a2dde1d84596a50616fe12bed9881",
+    "requirements.txt": "be923c642695914a2c78b1fe8cd465496994e45d41c89ae86b5962883f01eb27"
+  },
+  "payload_sha256": "1d6bf39ebd61b32e400061be2bc2c803d4394517febe7b743f849328ce69859e"
+}

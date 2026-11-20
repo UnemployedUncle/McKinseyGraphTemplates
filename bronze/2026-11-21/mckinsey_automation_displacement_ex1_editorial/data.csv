@@ -1,0 +1,5 @@
+group,category,value_pct,unit,provenance,period,denominator,sequence,source_note
+Latino,Projected labor displacement,41,%,reported,2035 modeled,automation-adopted work hours performed by Latino workers,1,McKinsey Exhibit 1 article text
+Black,Projected labor displacement,40,%,reported,2035 modeled,automation-adopted work hours performed by Black workers,2,McKinsey Exhibit 1 article text
+White,Projected labor displacement,37,%,reported,2035 modeled,automation-adopted work hours performed by White workers,3,McKinsey Exhibit 1 article text
+Asian,Projected labor displacement,36,%,reported,2035 modeled,automation-adopted work hours performed by Asian workers,4,McKinsey Exhibit 1 article text
