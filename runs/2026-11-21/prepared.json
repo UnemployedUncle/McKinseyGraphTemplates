@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Seoul",
+  "phase": "preparation",
+  "planned_preparation_time": "03:15",
+  "actual_started_at": "2026-11-21T03:10:19+09:00",
+  "completed_at": "2026-11-21T03:33:31+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "delivery_target": "07:15 Asia/Seoul",
+  "source_of_truth": "GitHub main",
+  "bronze_commit": "5569bf0a531a93b723e1ce9153add74efe272fb3",
+  "bronze_commit_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/5569bf0a531a93b723e1ce9153add74efe272fb3",
+  "latest_verified_code_commit": "5569bf0a531a93b723e1ce9153add74efe272fb3",
+  "report_path": "runs/2026-11-21/RUN_REPORT.md",
+  "catalog_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/blob/main/catalog/README.md",
+  "counts": {
+    "target": 3,
+    "new": 2,
+    "bronze": 73,
+    "silver": 0,
+    "gold": 0,
+    "previous_original_fidelity_verified": 16,
+    "new_original_fidelity_verified": 0,
+    "cumulative_original_fidelity_verified": 16,
+    "human_approved_new": 0
+  },
+  "new_charts": [
+    {
+      "firm": "BCG",
+      "slug": "bcg_ai_vision_funding_ex2",
+      "published_date": "2026-11-20",
+      "collected_date": "2026-11-21",
+      "data_period": "May–July 2026",
+      "source_url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+      "figure_ref": "Exhibit 2",
+      "message": "CMOs with a clear AI vision: 54% sufficient, 8% more than enough, 38% need much more funding; without clear vision: 37%, 33% need a little more, 30% need much more. Distinct response categories between groups.",
+      "why_chart": "Two rows of three mini progress bars preserving each group’s reported categories; +25pp in sufficient-or-more funding is association, not causation.",
+      "reuse": "Segmented survey distributions; do not merge different category taxonomies.",
+      "bronze_path": "bronze/2026-11-21/bcg_ai_vision_funding_ex2",
+      "payload_sha256": "36ac7f1541499b6d212fa890f1b7134e14469d88b45352d758eea77864f51ea5",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "source_original_visual_opened": true,
+      "human_review": "pending",
+      "training_eligible": false
+    },
+    {
+      "firm": "McKinsey",
+      "slug": "mckinsey_automation_displacement_ex1_editorial",
+      "published_date": "2026-11-20",
+      "collected_date": "2026-11-21",
+      "data_period": "2035 modeled projection",
+      "source_url": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai",
+      "figure_ref": "Exhibit 1 related reported values (editorial ranked bar)",
+      "message": "Modeled displacement percentages of automation-adopted work hours: Latino 41%, Black 40%, White 37%, Asian 36%; not total work hours or job loss shares.",
+      "why_chart": "Ranked horizontal bar highlights cohorts and common denominator; original SVGZ not viewable, thus editorial/unverified.",
+      "reuse": "Projected risk by comparable cohorts for workforce transition planning, with explicit adopted-hours denominator.",
+      "bronze_path": "bronze/2026-11-21/mckinsey_automation_displacement_ex1_editorial",
+      "payload_sha256": "1d6bf39ebd61b32e400061be2bc2c803d4394517febe7b743f849328ce69859e",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "source_original_visual_opened": false,
+      "human_review": "pending",
+      "training_eligible": false
+    }
+  ],
+  "excluded": [
+    {
+      "firm": "Bain",
+      "reason": "No distinct official chart with publication date, accessible original and nonduplicate figure confirmed in 7-day or 30-day window."
+    }
+  ],
+  "local_validation": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "test_suite": "3 local semantic/immutability tests passed",
+    "unit_tests_passed": 3,
+    "actual_renders": 4,
+    "dpi": 200,
+    "pixel_dimensions": [
+      2200,
+      1240
+    ],
+    "preview_inspected": true,
+    "remote_files_SHA256_matched": 14,
+    "remote_payload_sha256_matched": 2,
+    "report": "Successful execution is separate from source design fidelity and human approval."
+  },
+  "github_actions": {
+    "run_id": 44793342427,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44793342427",
+    "artifact_id": 14656614856,
+    "artifact_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44793342427/artifacts/14656614856",
+    "observed_steps": [
+      "Python requirements installation",
+      "unittest discover",
+      "medallion.validate",
+      "render_all",
+      "upload artifact"
+    ],
+    "code_commit": "5569bf0a531a93b723e1ce9153add74efe272fb3"
+  },
+  "notes": [
+    "No duplicate discovery or Git commit during 07:15 delivery.",
+    "New immutable Bronze only; Silver/Gold and user changes preserved.",
+    "No original report graphics, logos, font files, nonpublic data, or credentials uploaded.",
+    "Generated PNG and render logs are in Actions artifact, not immutable Bronze.",
+    "Prepared is not user delivery or user review approval."
+  ]
+}

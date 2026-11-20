@@ -39,3 +39,9 @@
 ## 원격 파일
 - [2026-11-21 Bronze](../../bronze/2026-11-21/)
 - [전체 카탈로그](../../catalog/README.md)
+
+## GitHub 원격 게시·최종 자동 검증 기록
+- 새 Bronze 및 카탈로그 커밋: [5569bf0a](https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/5569bf0a531a93b723e1ce9153add74efe272fb3). 원격 14개 immutable payload 파일 SHA256 및 2개 payload_sha256 전부 일치
+- Actions: [44793342427](https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44793342427) — **completed/success**, Python unit tests, medallion validate, full render, artifact upload 각 단계 완료
+- Actions 아티팩트: [chart-previews-and-smoke-tests](https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44793342427/artifacts/14656614856), image 파일은 immutable Bronze 외부에 보관
+- 준비 확정(한국시간): 2026-11-21T03:33:31+09:00. 07:15 전달 전에는 결과 알림을 하지 않음; 사용자 검수 완료 아님
