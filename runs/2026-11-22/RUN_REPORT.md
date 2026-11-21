@@ -56,3 +56,10 @@
 
 - 준비 완료는 사용자 학습·전달 완료가 아님. `prepared_complete=true`, `delivered=false`.
 - 오전 07:15 전달에서는 본 보고서와 manifest, 필요하면 Actions 기록을 재조회하여 준비된 결과만 제공. 신규 조사나 중복 커밋 금지.
+
+## 원격 자동 검증 완료 확인 (추가)
+
+- Bronze 코드 커밋에 대한 [GitHub Actions 실행 44935091011](https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44935091011)은 `completed/success`이며, requirements 설치·12개 기본 unittest·medallion 무결성·전체 Bronze 렌더링·아티팩트 업로드가 모두 성공했다.
+- [생성 이미지 및 렌더링 로그 아티팩트](https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44935091011/artifacts/14719526807)
+- GitHub 원격 신규 21개 파일 SHA256과 3개 payload_sha256은 실제 파일 내용으로 재계산하여 일치했다.
+- 로컬 사용자 ZIP은 source chart.py/data.csv/config.json/requirements.txt 총 12개 Git 정확일치 코어 및 PNG 6개를 제공한다. 부가 분석 메모 초안은 GitHub의 record/manifest와는 별개이며, 검수 대상의 기준은 항상 GitHub 불변 Bronze이다.

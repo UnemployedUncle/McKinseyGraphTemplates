@@ -85,14 +85,27 @@
     "preview_inspected": true,
     "remote_files_sha256_matched": 21,
     "remote_payload_sha256_matched": 3,
-    "summary": "Local generator rendered 6 figures; GitHub code/inputs follow the same rendering structure. Remote immutable payload verified by re-reading every file and recomputing SHA256."
+    "summary": "Local generator rendered 6 figures; GitHub code/inputs follow the same rendering structure. Remote immutable payload verified by re-reading every file and recomputing SHA256.",
+    "core_file_match": true,
+    "core_files_matched": 12,
+    "local_zip_file_type": "Git-matched 12 core files + six 200dpi PNG previews + local analysis note drafts; exact record/manifest in GitHub"
   },
   "github_actions": {
     "run_id": 44935091011,
-    "status": "in_progress",
-    "conclusion": null,
+    "status": "completed",
+    "conclusion": "success",
     "url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44935091011",
-    "code_commit": "5e35f3d81430ccf4e1ccd832fa2d74a376fa38e1"
+    "artifact_id": 14719526807,
+    "artifact_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/44935091011/artifacts/14719526807",
+    "code_commit": "5e35f3d81430ccf4e1ccd832fa2d74a376fa38e1",
+    "observed_steps": [
+      "pip install",
+      "unittest discover",
+      "medallion.py validate",
+      "render_all.py",
+      "upload-artifact"
+    ],
+    "verified_after_initial_preparation": true
   },
   "notes": [
     "Preparation is not user delivery, review, or approval.",
@@ -101,6 +114,7 @@
     "No third-party original charts, logos, font files, datasets, API keys or private information were committed.",
     "Source figures: Bain and BCG opened; McKinsey Exhibit 1 SVGZ unavailable; editorial visualization only.",
     "No duplicate commit or new research in the 07:15 delivery run.",
-    "Local ZIP is a runnable preview bundle; GitHub main is the authoritative snapshot and manifests."
+    "Local ZIP is a runnable preview bundle; GitHub main is the authoritative snapshot and manifests.",
+    "At 03:25 KST, the Bronze commit GitHub Actions validation and artifact upload were confirmed successful; final record commit checks are independent."
   ]
 }
