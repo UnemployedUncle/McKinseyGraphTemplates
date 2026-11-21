@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 73,
+    "bronze": 76,
     "silver": 0,
     "gold": 0
   },
@@ -1024,6 +1024,48 @@
       "source_url": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai",
       "figure_ref": "Exhibit 1 related reported figures — projected displaced share of automation-adopted hours (editorial chart)",
       "key_message": "Among automation-adopted work hours, model-projected displacement shares are 41% Latino, 40% Black, 37% White, and 36% Asian, not shares of all work hours.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261122_bain_lng_trading_profit_fig2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-22/bain_lng_trading_profit_fig2",
+      "contract": "render-v1",
+      "payload_sha256": "229ea8d4e96ba8493cdae2fcf12e987ba50204bf0ddb366c791aa884f800bcb2",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/lng-glut-how-to-win-when-trading-gets-crowded/",
+      "figure_ref": "Figure 2 — Aggregate LNG trading profits will likely fall below breakeven in the next glut",
+      "key_message": "2030–34F 연간 총거래이익 약 $5.5bn보다 취소 수수료 약 $5.8bn이 클 수 있어 단순 차감 순이익은 약 −$0.3bn으로 내려갈 수 있다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.71,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261122_bcg_agentic_cpu_growth_slide4",
+      "tier": "bronze",
+      "path": "bronze/2026-11-22/bcg_agentic_cpu_growth_slide4",
+      "contract": "render-v1",
+      "payload_sha256": "df67b9d51f9834b301089073b2587c8b186069bff80413216dcdb3098461e738",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/ai-data-center-supply-demand-outlook",
+      "figure_ref": "Slideshow slide 4 of 9 — Agentic AI CPU growth",
+      "key_message": "2031년 BCG 모형상 CPU 설치 용량 총 53GW 중 기준 설치기반 약 28GW 외에 기존 수요 성장 약 12GW, AI 추가 수요 약 13GW가 포함된 것으로 판독된다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261122_mckinsey_anz_agtech_adoption_ex1_editorial",
+      "tier": "bronze",
+      "path": "bronze/2026-11-22/mckinsey_anz_agtech_adoption_ex1_editorial",
+      "contract": "render-v1",
+      "payload_sha256": "47b7770785a2d61838f8e3c89f4a1fdc76b6f655ea50c6c60993a3cecbd202d5",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/australian-and-new-zealand-farmers-adopt-agtech-at-twice-the-rate-of-their-global-peers",
+      "figure_ref": "Exhibit 1 related reported survey values — editorial AUS/NZ vs global",
+      "key_message": "2026년 AUS/NZ 응답 농가의 Agtech 도입률 86%는 글로벌 46%보다 40%p 높으며 digital agronomy 등 제품별 도입에서도 격차가 보고되었다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

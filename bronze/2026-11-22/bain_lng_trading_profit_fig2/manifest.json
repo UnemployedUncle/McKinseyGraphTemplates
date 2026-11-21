@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261122_bain_lng_trading_profit_fig2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-21T18:21:32.845Z",
+  "source_url": "https://www.bain.com/insights/lng-glut-how-to-win-when-trading-gets-crowded/",
+  "figure_ref": "Figure 2 — Aggregate LNG trading profits will likely fall below breakeven in the next glut",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "1d45784528d2b704d6c61a93930d1582334f5c52287ef87ae425de5ec1905d3d",
+    "chart.py": "aa3b95e611dd22e5d457c6bc28ec22768609bbe5d8a4a280126bc36efb3f8331",
+    "config.json": "a15a1ceb2fc5444a63291363e81a5d725ee42df9597cb27c29fa1b3dee34d522",
+    "data.csv": "96d81d089444c6a942117df943242bb5d6c734bec544dee667f7ea0c1bd2ce91",
+    "record.json": "b52cf775d3d2611f2f9b797b0c838488bdf226bcfb54659c96fee64b5ea7721c",
+    "requirements.txt": "f2474e79247a1ad965a2b8a20ef8ce4fa6a01b2dc86b7cc43095145ad9d28b94",
+    "validation.json": "298f3b021cbaa201da94a26442ed57fc433824176b8052652e64c6ce38c71dd1"
+  },
+  "payload_sha256": "229ea8d4e96ba8493cdae2fcf12e987ba50204bf0ddb366c791aa884f800bcb2"
+}

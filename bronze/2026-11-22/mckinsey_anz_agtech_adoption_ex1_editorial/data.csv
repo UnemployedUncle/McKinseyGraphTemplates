@@ -1,0 +1,6 @@
+category,aus_nz_pct,global_pct,local_provenance,global_provenance,difference_pp,difference_provenance
+Any agtech product,86,46,reported,reported,40,derived
+Digital agronomy,61,24,reported,reported,37,derived
+Precision hardware,56,23,reported,reported,33,derived
+Farm management software,50,19,reported,reported,31,derived
+Generative AI,35,17,reported,reported,18,derived

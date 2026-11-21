@@ -1,0 +1,87 @@
+{
+  "source_url": "https://www.bain.com/insights/lng-glut-how-to-win-when-trading-gets-crowded/",
+  "source_title": "LNG Glut: How to Win When Trading Gets Crowded",
+  "published_date": "2026-11-18",
+  "collected_date": "2026-11-22",
+  "data_period": "2017–19, 2020, 2022–23, 2026E, 2030–34F",
+  "firm": "Bain",
+  "figure_ref": "Figure 2 — Aggregate LNG trading profits will likely fall below breakeven in the next glut",
+  "chart_key": "https://www.bain.com/insights/lng-glut-how-to-win-when-trading-gets-crowded/#Figure 2 — Aggregate LNG trading profits will likely fall below breakeven in the next glut",
+  "business_context": "LNG 장기 구매계약, 계약 유연성 및 취소 수수료에 노출된 트레이딩 포트폴리오의 수익성 설계.",
+  "key_message": "2030–34F 연간 총거래이익 약 $5.5bn보다 취소 수수료 약 $5.8bn이 클 수 있어 단순 차감 순이익은 약 −$0.3bn으로 내려갈 수 있다.",
+  "insight_type": "negative-profit risk bridge",
+  "chart_type": "profit_bridge",
+  "encoding": {
+    "x": "period (historical/estimated/forecast)",
+    "y": "USD billion per year",
+    "color": "source/neutral palette by role",
+    "size": "fixed mark size",
+    "sorting": "period ascending",
+    "highlight": "Projected net < 0",
+    "label": "direct values plus units",
+    "axis": "USD billion / year",
+    "annotation": "양의 회색 gross bar, 음의 적색 cancellation bar, 순값 검정 dot; 2030–34F 전망과 음의 순이익을 강조. 시간 순 정렬. 제목에 조건부 전망을 표시.",
+    "legend": "series role"
+  },
+  "data_spec": {
+    "fields": [
+      {
+        "field": "period",
+        "role": "metadata"
+      },
+      {
+        "field": "gross_usd_bn",
+        "role": "measure_or_measure_provenance"
+      },
+      {
+        "field": "cancellation_loss_usd_bn",
+        "role": "measure_or_measure_provenance"
+      },
+      {
+        "field": "net_usd_bn",
+        "role": "measure_or_measure_provenance"
+      },
+      {
+        "field": "provenance",
+        "role": "metadata"
+      },
+      {
+        "field": "net_provenance",
+        "role": "metadata"
+      },
+      {
+        "field": "cancellation_provenance",
+        "role": "metadata"
+      },
+      {
+        "field": "status",
+        "role": "metadata"
+      }
+    ],
+    "unit": "USD billion / year",
+    "period": "2017–19, 2020, 2022–23, 2026E, 2030–34F",
+    "denominator": "USD bn/year; 연도/구간별 정규화된 추정 이익; gross와 미국산 cargo cancellation fees, 순값은 공개값의 차이.",
+    "source_sampling": "지역별 거래예상 모형; 세부 표본과 계수 미공개.",
+    "calculation": "2020 net=4.2−1.7=2.5; 2030–34F net=5.5−5.8=−0.3. Other nets missing."
+  },
+  "data_recipe": [
+    "공개된 시기별 gross profit을 USD bn/year로 정규화한다.",
+    "공개된 cancellation fees만 각 시기 필드에 기록한다(나머지는 missing).",
+    "공개값이 모두 있는 시기에만 net=gross−fees를 계산하고 derived로 기록한다.",
+    "CSV의 status에 관측·추정·전망을 구분한 뒤 config THEME/CONTEXT로 렌더링한다."
+  ],
+  "message_conditions": "총거래이익과 취소 수수료가 동일 연간·통화 기준이라는 조건에서 성립. 누락된 fees를 0으로 해석하면 안 되며 gross는 모든 운영비를 뺀 실현 순이익이 아니다. 미래 원자재 가격이나 정책 변동으로 반례 가능.",
+  "design_moves": "양의 회색 gross bar, 음의 적색 cancellation bar, 순값 검정 dot; 2030–34F 전망과 음의 순이익을 강조. 시간 순 정렬. 제목에 조건부 전망을 표시.",
+  "source_original_visual_opened": true,
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "diff_notes": "원본 Figure 2 확인. 데이터·순서·signed bars 및 net dots를 재현했으나 주석·여백·스타일이 다르고 일부 값은 원본 반올림 수치.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Reproduce the signed/stacked/paired chart with chart.py using CSV and both SOURCE/NEUTRAL themes. Preserve provenance, date, denominator and missing values.",
+    "response": "Copy chart.py, data.csv, config.json into one directory; pip install -r requirements.txt; run python chart.py --data data.csv --config config.json --theme source --output source.png and repeat with --theme neutral --output neutral.png. Input CSV header and data: period,gross_usd_bn,cancellation_loss_usd_bn,net_usd_bn,provenance,net_provenance,cancellation_provenance,status\n2017–19,5.5,,,reported,missing,missing,historical\n2020,4.2,1.7,2.5,reported,derived,reported,historical\n2022–23,22,,,reported,missing,missing,historical\n2026E,20,,,reported,missing,missing,estimated\n2030–34F,5.5,5.8,-0.3,reported,derived,reported,forecast\n",
+    "output_code": "chart.py implements render(data,theme,context)->fig with matplotlib. THEME.source, THEME.neutral and CONTEXT are configurable."
+  },
+  "split_group": "https://www.bain.com/insights/lng-glut-how-to-win-when-trading-gets-crowded/"
+}

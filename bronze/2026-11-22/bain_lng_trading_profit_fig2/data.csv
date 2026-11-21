@@ -1,0 +1,6 @@
+period,gross_usd_bn,cancellation_loss_usd_bn,net_usd_bn,provenance,net_provenance,cancellation_provenance,status
+2017–19,5.5,,,reported,missing,missing,historical
+2020,4.2,1.7,2.5,reported,derived,reported,historical
+2022–23,22,,,reported,missing,missing,historical
+2026E,20,,,reported,missing,missing,estimated
+2030–34F,5.5,5.8,-0.3,reported,derived,reported,forecast

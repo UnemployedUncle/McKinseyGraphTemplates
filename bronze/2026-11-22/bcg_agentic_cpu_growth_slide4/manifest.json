@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261122_bcg_agentic_cpu_growth_slide4",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-21T18:21:32.845Z",
+  "source_url": "https://www.bcg.com/publications/2026/ai-data-center-supply-demand-outlook",
+  "figure_ref": "Slideshow slide 4 of 9 — Agentic AI CPU growth",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "f2d3f334f000194d3d45fd49ad843a743d47db5b9efd2f36f8662ae12cc38ad7",
+    "chart.py": "aa3b95e611dd22e5d457c6bc28ec22768609bbe5d8a4a280126bc36efb3f8331",
+    "config.json": "a74b23fd44b175a4f8571a506661097f9e74ce5c00f1eed886b056ebae383cf7",
+    "data.csv": "9613935e9e41efdd3ef13b25b4d05496c28a6564c04f7158e873c34d8b7f3c6d",
+    "record.json": "ede42adc2ed9aee59e89ad9d069b07dcb0d9c1d6c18da5879e6f2658712f7a78",
+    "requirements.txt": "f2474e79247a1ad965a2b8a20ef8ce4fa6a01b2dc86b7cc43095145ad9d28b94",
+    "validation.json": "fac7838a3cd531b87837699fc22bb3980ae219a8d97c007a827110b9069a47db"
+  },
+  "payload_sha256": "df67b9d51f9834b301089073b2587c8b186069bff80413216dcdb3098461e738"
+}

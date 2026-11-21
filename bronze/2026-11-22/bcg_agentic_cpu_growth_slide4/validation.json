@@ -1,0 +1,26 @@
+{
+  "execution_status": "passed",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "source_original_visual_opened": true,
+  "human_review": "pending",
+  "assessed_by": "agent_self_evaluation",
+  "seven_criteria_scores": null,
+  "fidelity_rationale": "원본 슬라이드 시각적으로 열었지만 개별 segment 값은 소형 그래프 판독 추정이라 정량 원본 재현 점수 부여 불가.",
+  "diff_notes": "원본 슬라이드 시각적으로 열었지만 개별 segment 값은 소형 그래프 판독 추정이라 정량 원본 재현 점수 부여 불가.",
+  "iteration_count": 1,
+  "run_command": "python chart.py --data data.csv --config config.json --theme source --output source.png; repeat with --theme neutral --output neutral.png",
+  "tool_versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "data_semantics": "passed: 5 custom unit tests",
+    "render_source": "passed: 200dpi, 2200x1240, visually inspected",
+    "render_neutral": "passed: 200dpi, 2200x1240, visually inspected",
+    "original_fidelity": "unverified"
+  },
+  "remaining_differences": "원본 슬라이드 시각적으로 열었지만 개별 segment 값은 소형 그래프 판독 추정이라 정량 원본 재현 점수 부여 불가.",
+  "meaning_checks": "Checked missing vs zero, 2020/2030–34 derived net, stacked component totals ±1GW, survey pp and denominator."
+}

@@ -1,0 +1,84 @@
+{
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/australian-and-new-zealand-farmers-adopt-agtech-at-twice-the-rate-of-their-global-peers",
+  "source_title": "Australian and New Zealand farmers adopt agtech at twice the rate of their global peers",
+  "published_date": "2026-11-20",
+  "collected_date": "2026-11-22",
+  "data_period": "Global survey April–July 2026; AUS/NZ supplement July 2026",
+  "firm": "McKinsey",
+  "figure_ref": "Exhibit 1 related reported survey values — editorial AUS/NZ vs global",
+  "chart_key": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/australian-and-new-zealand-farmers-adopt-agtech-at-twice-the-rate-of-their-global-peers#Exhibit 1 related reported survey values — editorial AUS/NZ vs global",
+  "business_context": "Agtech 업체 시장 진출 우선순위와 제품별 확산, 도입 촉진 및 현장 지원 설계.",
+  "key_message": "2026년 AUS/NZ 응답 농가의 Agtech 도입률 86%는 글로벌 46%보다 40%p 높으며 digital agronomy 등 제품별 도입에서도 격차가 보고되었다.",
+  "insight_type": "adoption gap by survey segment",
+  "chart_type": "paired_horizontal",
+  "encoding": {
+    "x": "respondent share (%)",
+    "y": "product category",
+    "color": "source/neutral palette by role",
+    "size": "fixed mark size",
+    "sorting": "local rate descending",
+    "highlight": "primary comparable series",
+    "label": "direct values plus units",
+    "axis": "Respondents (%)",
+    "annotation": "AUS/NZ vs global 2군 막대를 가로방향으로 배치하고 카테고리는 AUS/NZ 높은 순으로 정렬; 직접 값 레이블 표시, 최대 100% 축.",
+    "legend": "series role"
+  },
+  "data_spec": {
+    "fields": [
+      {
+        "field": "category",
+        "role": "metadata"
+      },
+      {
+        "field": "aus_nz_pct",
+        "role": "measure_or_measure_provenance"
+      },
+      {
+        "field": "global_pct",
+        "role": "measure_or_measure_provenance"
+      },
+      {
+        "field": "local_provenance",
+        "role": "metadata"
+      },
+      {
+        "field": "global_provenance",
+        "role": "metadata"
+      },
+      {
+        "field": "difference_pp",
+        "role": "measure_or_measure_provenance"
+      },
+      {
+        "field": "difference_provenance",
+        "role": "metadata"
+      }
+    ],
+    "unit": "Respondents (%)",
+    "period": "Global survey April–July 2026; AUS/NZ supplement July 2026",
+    "denominator": "조사 응답 농가 중 해당 기술을 사용한다고 응답한 비율(%), 2026년 4–7월; AUS/NZ 약 150명, 글로벌 약 5,500명; 집단별 서로 다른 모집단.",
+    "source_sampling": "McKinsey 2026 survey n~5,500 across 10 countries and AUS/NZ n~150; methodology weighting unavailable.",
+    "calculation": "any agtech +40pp = 86−46; other categories +37,+33,+31,+18pp."
+  },
+  "data_recipe": [
+    "조사 질문과 응답 비율 분모를 정의한다.",
+    "두 집단의 기술별 사용 응답률을 CSV 컬럼에 reported로 기록한다.",
+    "difference_pp=aus_nz_pct−global_pct로 계산해 derived 표기한다.",
+    "복수 응답 가능하므로 기술별 비율을 더해 100%라고 해석하지 않는다.",
+    "THEME,CONTEXT,CSV 수정만으로 타 산업 제품 채택률 비교에 재사용한다."
+  ],
+  "message_conditions": "지역·글로벌 샘플 특성이 다를 수 있고 글로벌 집단이 지역 부분표본을 포함할 가능성을 고려해야 한다. 이는 기술 구매 전환이나 정책 효과의 인과추정이 아니다. 원본 Exhibit 1 SVGZ는 시각적 확인 불가였고 원본은 지역별 비교여서 본 차트는 편집형.",
+  "design_moves": "AUS/NZ vs global 2군 막대를 가로방향으로 배치하고 카테고리는 AUS/NZ 높은 순으로 정렬; 직접 값 레이블 표시, 최대 100% 축.",
+  "source_original_visual_opened": false,
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "원본 Exhibit 1은 SVGZ라 직접 열지 못했고 지역별 비교 구성이 다름. 편집형 paired horizontal은 원본 재현 점수를 받을 수 없음.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Reproduce the signed/stacked/paired chart with chart.py using CSV and both SOURCE/NEUTRAL themes. Preserve provenance, date, denominator and missing values.",
+    "response": "Copy chart.py, data.csv, config.json into one directory; pip install -r requirements.txt; run python chart.py --data data.csv --config config.json --theme source --output source.png and repeat with --theme neutral --output neutral.png. Input CSV header and data: category,aus_nz_pct,global_pct,local_provenance,global_provenance,difference_pp,difference_provenance\nAny agtech product,86,46,reported,reported,40,derived\nDigital agronomy,61,24,reported,reported,37,derived\nPrecision hardware,56,23,reported,reported,33,derived\nFarm management software,50,19,reported,reported,31,derived\nGenerative AI,35,17,reported,reported,18,derived\n",
+    "output_code": "chart.py implements render(data,theme,context)->fig with matplotlib. THEME.source, THEME.neutral and CONTEXT are configurable."
+  },
+  "split_group": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/australian-and-new-zealand-farmers-adopt-agtech-at-twice-the-rate-of-their-global-peers"
+}

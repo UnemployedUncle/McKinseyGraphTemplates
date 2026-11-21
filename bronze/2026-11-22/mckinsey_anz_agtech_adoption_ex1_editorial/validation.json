@@ -1,0 +1,26 @@
+{
+  "execution_status": "passed",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "source_original_visual_opened": false,
+  "human_review": "pending",
+  "assessed_by": "agent_self_evaluation",
+  "seven_criteria_scores": null,
+  "fidelity_rationale": "원본 Exhibit 1은 SVGZ라 직접 열지 못했고 지역별 비교 구성이 다름. 편집형 paired horizontal은 원본 재현 점수를 받을 수 없음.",
+  "diff_notes": "원본 Exhibit 1은 SVGZ라 직접 열지 못했고 지역별 비교 구성이 다름. 편집형 paired horizontal은 원본 재현 점수를 받을 수 없음.",
+  "iteration_count": 2,
+  "run_command": "python chart.py --data data.csv --config config.json --theme source --output source.png; repeat with --theme neutral --output neutral.png",
+  "tool_versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "data_semantics": "passed: 5 custom unit tests",
+    "render_source": "passed: 200dpi, 2200x1240, visually inspected",
+    "render_neutral": "passed: 200dpi, 2200x1240, visually inspected",
+    "original_fidelity": "unverified"
+  },
+  "remaining_differences": "원본 Exhibit 1은 SVGZ라 직접 열지 못했고 지역별 비교 구성이 다름. 편집형 paired horizontal은 원본 재현 점수를 받을 수 없음.",
+  "meaning_checks": "Checked missing vs zero, 2020/2030–34 derived net, stacked component totals ±1GW, survey pp and denominator."
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261122_mckinsey_anz_agtech_adoption_ex1_editorial",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-21T18:21:32.845Z",
+  "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/australian-and-new-zealand-farmers-adopt-agtech-at-twice-the-rate-of-their-global-peers",
+  "figure_ref": "Exhibit 1 related reported survey values — editorial AUS/NZ vs global",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "5c37679b17edac331e0e9df4ad5b7eb6c8620916ef31762d96b827585b2404d2",
+    "chart.py": "aa3b95e611dd22e5d457c6bc28ec22768609bbe5d8a4a280126bc36efb3f8331",
+    "config.json": "811566a52226591ae27f51cf91844c31d195c5aed23f7b5262953d74f804059f",
+    "data.csv": "bbf503d18c41111d121dda42aaa8e1bd27dd20c9a42786e6d309e55dd4e052c3",
+    "record.json": "129c969d9adfa729a95be8402f5018330515d5b1ed4dcadfcfc338c6de84cfd3",
+    "requirements.txt": "f2474e79247a1ad965a2b8a20ef8ce4fa6a01b2dc86b7cc43095145ad9d28b94",
+    "validation.json": "ff073f831cce3996bd907f8a3223bdfe8f3e62683e181a0ea2658deb5bbedb8f"
+  },
+  "payload_sha256": "47b7770785a2d61838f8e3c89f4a1fdc76b6f655ea50c6c60993a3cecbd202d5"
+}
