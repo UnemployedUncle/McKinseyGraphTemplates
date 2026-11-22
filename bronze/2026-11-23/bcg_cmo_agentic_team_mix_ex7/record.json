@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "source_url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+  "source_title": "CMO Survey 2026: How Agentic AI Will Reshape the Marketing Team",
+  "firm": "BCG",
+  "published_date": "2026-11-20",
+  "collected_date": "2026-11-23",
+  "data_observation_period": "2026 survey, now vs forecast in 2–3 years",
+  "figure_ref": "Exhibit 7 — More Than One-Quarter of the Team Will Be Agentic AI Dovetailing with Humans",
+  "chart_key": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team#Exhibit 7 — More Than One-Quarter of the Team Will Be Agentic AI Dovetailing with Humans",
+  "business_context": "CMO Survey 2026: How Agentic AI Will Reshape the Marketing Team",
+  "key_message": "CMO가 예상하는 Agentic AI 업무 비중은 현재 7%에서 2~3년 후 27%로 증가하지만 이는 실제 인력 감축 실적이 아닌 전망이다.",
+  "insight_type": "마케팅 운영모델 재설계에서 AI와 사람·외부 파트너의 미래 역할 분담을 함께 시나리오화하자.",
+  "chart_type": "paired_donut",
+  "encoding": {
+    "x": "category",
+    "y": "share_pct",
+    "color": "THEME.palette",
+    "size": "uniform",
+    "order": "CSV",
+    "label": "direct values",
+    "annotations": "CONTEXT"
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "now_pct",
+      "future_pct",
+      "provenance",
+      "unit",
+      "status",
+      "denominator",
+      "period"
+    ],
+    "unit": "percent",
+    "denominator": "Survey respondent CMOs, exhibit-specific n not disclosed",
+    "provenance": "reported"
+  },
+  "data_recipe": [
+    "Collect reported values from original",
+    "Keep period/denominator/source metadata",
+    "Check rounding and missingness",
+    "Edit CSV and config",
+    "Render source/neutral 200dpi"
+  ],
+  "message_conditions": [
+    "Comparable definitions and denominators",
+    "Separate forecast from observation",
+    "No causal inferences from survey trend"
+  ],
+  "design_moves": [
+    "Direct labels",
+    "Configurable themes and annotations",
+    "Data-driven geometry",
+    "Explicit uncertainty"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Source Exhibit 7 graphic was opened; paired donut is an editorial redesign, not original reproduction. Rounded group shares total 101% and 98%.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Recreate the paired_donut chart from Exhibit 7 — More Than One-Quarter of the Team Will Be Agentic AI Dovetailing with Humans using the reported inputs.",
+    "response": {
+      "render_code_file": "chart.py",
+      "render_signature": "render(data,theme,context)->fig",
+      "exact_data_csv": "category,now_pct,future_pct,provenance,unit,status,denominator,period\nFull-timers,57,48,reported,percent,expected work mix,CMO-reported mix,now vs 2–3 years\nAgency,25,16,reported,percent,expected work mix,CMO-reported mix,now vs 2–3 years\nFreelance,8,5,reported,percent,expected work mix,CMO-reported mix,now vs 2–3 years\nAgentic AI,7,27,reported,percent,expected work mix,CMO-reported mix,now vs 2–3 years\nOther,4,2,reported,percent,expected work mix,CMO-reported mix,now vs 2–3 years\n",
+      "exact_config_json": "{\n  \"THEME\": {\n    \"source\": {\n      \"figsize\": [\n        11,\n        6.2\n      ],\n      \"background\": \"#FFFFFF\",\n      \"text_color\": \"#252525\",\n      \"muted_color\": \"#666666\",\n      \"axis_color\": \"#A0A0A0\",\n      \"inside_color\": \"#FFFFFF\",\n      \"accent\": \"#C0001B\",\n      \"palette\": {\n        \"Full-timers\": \"#267C6A\",\n        \"Agency\": \"#4EAEA5\",\n        \"Freelance\": \"#A9D6D2\",\n        \"Agentic AI\": \"#0E4238\",\n        \"Other\": \"#DDE9E7\"\n      }\n    },\n    \"neutral\": {\n      \"figsize\": [\n        11,\n        6.2\n      ],\n      \"background\": \"#FFFFFF\",\n      \"text_color\": \"#424242\",\n      \"muted_color\": \"#666666\",\n      \"axis_color\": \"#A0A0A0\",\n      \"inside_color\": \"#FFFFFF\",\n      \"accent\": \"#555555\",\n      \"palette\": {\n        \"Full-timers\": \"#303030\",\n        \"Agency\": \"#707070\",\n        \"Freelance\": \"#B3B3B3\",\n        \"Agentic AI\": \"#505050\",\n        \"Other\": \"#D8D8D8\"\n      }\n    }\n  },\n  \"CONTEXT\": {\n    \"chart_kind\": \"paired_donut\",\n    \"title\": \"Agentic AI is expected to take a larger share of work\",\n    \"subtitle\": \"Current vs expected marketing team/work mix (%)\",\n    \"comparison_columns\": [\n      \"now_pct\",\n      \"future_pct\"\n    ],\n    \"comparison_labels\": [\n      \"Now\",\n      \"In 2–3 years\"\n    ],\n    \"note\": \"Published rounded shares sum to 101% now and 98% later; donut geometry normalizes only for display.\",\n    \"source_label\": \"BCG × MMA Global 2026, Exhibit 7\"\n  }\n}\n",
+      "command": "python chart.py --data data.csv --config config.json --theme source --output source.png --dpi 200"
+    }
+  },
+  "split_group": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team"
+}

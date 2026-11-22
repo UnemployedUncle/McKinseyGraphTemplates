@@ -1,0 +1,57 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        11,
+        6.2
+      ],
+      "background": "#FFFFFF",
+      "text_color": "#252525",
+      "muted_color": "#666666",
+      "axis_color": "#A0A0A0",
+      "inside_color": "#FFFFFF",
+      "accent": "#C0001B",
+      "palette": {
+        "Full-timers": "#267C6A",
+        "Agency": "#4EAEA5",
+        "Freelance": "#A9D6D2",
+        "Agentic AI": "#0E4238",
+        "Other": "#DDE9E7"
+      }
+    },
+    "neutral": {
+      "figsize": [
+        11,
+        6.2
+      ],
+      "background": "#FFFFFF",
+      "text_color": "#424242",
+      "muted_color": "#666666",
+      "axis_color": "#A0A0A0",
+      "inside_color": "#FFFFFF",
+      "accent": "#555555",
+      "palette": {
+        "Full-timers": "#303030",
+        "Agency": "#707070",
+        "Freelance": "#B3B3B3",
+        "Agentic AI": "#505050",
+        "Other": "#D8D8D8"
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_kind": "paired_donut",
+    "title": "Agentic AI is expected to take a larger share of work",
+    "subtitle": "Current vs expected marketing team/work mix (%)",
+    "comparison_columns": [
+      "now_pct",
+      "future_pct"
+    ],
+    "comparison_labels": [
+      "Now",
+      "In 2–3 years"
+    ],
+    "note": "Published rounded shares sum to 101% now and 98% later; donut geometry normalizes only for display.",
+    "source_label": "BCG × MMA Global 2026, Exhibit 7"
+  }
+}

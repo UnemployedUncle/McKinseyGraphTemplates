@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "original_checked": true,
+  "original_evidence": "Source Exhibit 7 graphic was opened; paired donut is an editorial redesign, not original reproduction. Rounded group shares total 101% and 98%.",
+  "code_execution": {
+    "python_version": "3.13.5",
+    "matplotlib_version": "3.10.8",
+    "local_daily_equivalent_renderer_executed": true,
+    "exact_post_commit_renderer_recheck_pending": true,
+    "source_and_neutral_previews_generated_locally": true,
+    "dpi": 200
+  },
+  "commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output source.png --dpi 200",
+    "python chart.py --data data.csv --config config.json --theme neutral --output neutral.png --dpi 200"
+  ],
+  "iteration_count": 1,
+  "meaning_checks": {
+    "units": "percent",
+    "denominator": "Survey respondent CMOs, exhibit-specific n not disclosed",
+    "raw_values_reported": true,
+    "bcg_rounding": "101/98, geometry normalized only",
+    "mckinsey_midpoint_sum": "100"
+  },
+  "score_basis": null,
+  "remaining_differences": "Source Exhibit 7 graphic was opened; paired donut is an editorial redesign, not original reproduction. Rounded group shares total 101% and 98%.",
+  "human_review": "pending",
+  "training_eligible": false
+}

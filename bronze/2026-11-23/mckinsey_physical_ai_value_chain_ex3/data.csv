@@ -1,0 +1,5 @@
+category,value_pct,provenance,unit,status,denominator,period
+Hardware,35,reported,percent,2035 model range midpoint,total modeled 2035 physical AI value,2035
+Software,30,reported,percent,2035 model range midpoint,total modeled 2035 physical AI value,2035
+Deployment,12.5,reported,percent,2035 model range midpoint,total modeled 2035 physical AI value,2035
+Field operations,22.5,reported,percent,2035 model range midpoint,total modeled 2035 physical AI value,2035

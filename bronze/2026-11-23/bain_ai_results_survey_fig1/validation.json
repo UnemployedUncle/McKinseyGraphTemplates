@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "original_checked": true,
+  "original_evidence": "Original Flourish chart thumbnail opened; visual appearance approximate.",
+  "code_execution": {
+    "python_version": "3.13.5",
+    "matplotlib_version": "3.10.8",
+    "local_daily_equivalent_renderer_executed": true,
+    "exact_post_commit_renderer_recheck_pending": true,
+    "source_and_neutral_previews_generated_locally": true,
+    "dpi": 200
+  },
+  "commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output source.png --dpi 200",
+    "python chart.py --data data.csv --config config.json --theme neutral --output neutral.png --dpi 200"
+  ],
+  "iteration_count": 1,
+  "meaning_checks": {
+    "units": "percent",
+    "denominator": "Each survey wave n=199/197/200/200, repeated cross sections",
+    "raw_values_reported": true,
+    "bcg_rounding": "101/98, geometry normalized only",
+    "mckinsey_midpoint_sum": "100"
+  },
+  "score_basis": {
+    "dimensions": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      4,
+      4
+    ],
+    "average": 4.71
+  },
+  "remaining_differences": "Original Flourish chart thumbnail opened; visual appearance approximate.",
+  "human_review": "pending",
+  "training_eligible": false
+}

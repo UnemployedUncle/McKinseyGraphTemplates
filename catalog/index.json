@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 76,
+    "bronze": 79,
     "silver": 0,
     "gold": 0
   },
@@ -1066,6 +1066,48 @@
       "source_url": "https://www.mckinsey.com/industries/energy-and-materials/our-insights/blog/australian-and-new-zealand-farmers-adopt-agtech-at-twice-the-rate-of-their-global-peers",
       "figure_ref": "Exhibit 1 related reported survey values — editorial AUS/NZ vs global",
       "key_message": "2026년 AUS/NZ 응답 농가의 Agtech 도입률 86%는 글로벌 46%보다 40%p 높으며 digital agronomy 등 제품별 도입에서도 격차가 보고되었다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261123_bain_ai_results_survey_fig1",
+      "tier": "bronze",
+      "path": "bronze/2026-11-23/bain_ai_results_survey_fig1",
+      "contract": "render-v1",
+      "payload_sha256": "c9d1bea99acf871ac39f372a7d86db5ed029f855a102ad823481d46016fa6e5b",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/",
+      "figure_ref": "Figure 1 — Companies reporting quantified AI revenue or cost results",
+      "key_message": "AI 활용을 통해 정량적 매출·비용 성과를 확보한 응답 기업의 비중은 2024년 18%에서 2026년 8월 33%로 상승했다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.71,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261123_bcg_cmo_agentic_team_mix_ex7",
+      "tier": "bronze",
+      "path": "bronze/2026-11-23/bcg_cmo_agentic_team_mix_ex7",
+      "contract": "render-v1",
+      "payload_sha256": "c5de6cf64fe64e99a92c577adb739e6e65bf75b73cc3c843479bc15812f5c172",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+      "figure_ref": "Exhibit 7 — More Than One-Quarter of the Team Will Be Agentic AI Dovetailing with Humans",
+      "key_message": "CMO가 예상하는 Agentic AI 업무 비중은 현재 7%에서 2~3년 후 27%로 증가하지만 이는 실제 인력 감축 실적이 아닌 전망이다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261123_mckinsey_physical_ai_value_chain_ex3",
+      "tier": "bronze",
+      "path": "bronze/2026-11-23/mckinsey_physical_ai_value_chain_ex3",
+      "contract": "render-v1",
+      "payload_sha256": "fda46f51a7228040ed1bd403c67e4a9c192332e614cf35d40bd33f3a8f816871",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/industries/industrials/our-insights/physical-ai-is-breaking-out-of-the-box",
+      "figure_ref": "Exhibit 3 — Modeled 2035 physical AI value chain midpoint shares",
+      "key_message": "2035년 Physical AI 가치풀 모형의 중간값 비중은 Hardware 35%, Software 30%, Deployment 12.5%, Field operations 22.5%다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false

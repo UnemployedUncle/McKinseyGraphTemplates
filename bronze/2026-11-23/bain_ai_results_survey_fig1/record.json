@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "source_url": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/",
+  "source_title": "Survey: Workflow Redesign Is Key to AI Success",
+  "firm": "Bain",
+  "published_date": "2026-11-18",
+  "collected_date": "2026-11-23",
+  "data_observation_period": "2024 Q4 to 2026 Q3",
+  "figure_ref": "Figure 1 — Companies reporting quantified AI revenue or cost results",
+  "chart_key": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/#Figure 1 — Companies reporting quantified AI revenue or cost results",
+  "business_context": "Survey: Workflow Redesign Is Key to AI Success",
+  "key_message": "AI 활용을 통해 정량적 매출·비용 성과를 확보한 응답 기업의 비중은 2024년 18%에서 2026년 8월 33%로 상승했다.",
+  "insight_type": "AI 도입 건수가 아닌 정량적 사업 성과를 확보한 기업 비중을 기간별로 추적하자.",
+  "chart_type": "line",
+  "encoding": {
+    "x": "label",
+    "y": "share_pct",
+    "color": "THEME.palette",
+    "size": "uniform",
+    "order": "CSV",
+    "label": "direct values",
+    "annotations": "CONTEXT"
+  },
+  "data_spec": {
+    "fields": [
+      "label",
+      "period",
+      "value_pct",
+      "sample_n",
+      "provenance",
+      "unit",
+      "denominator"
+    ],
+    "unit": "percent",
+    "denominator": "Each survey wave n=199/197/200/200, repeated cross sections",
+    "provenance": "reported"
+  },
+  "data_recipe": [
+    "Collect reported values from original",
+    "Keep period/denominator/source metadata",
+    "Check rounding and missingness",
+    "Edit CSV and config",
+    "Render source/neutral 200dpi"
+  ],
+  "message_conditions": [
+    "Comparable definitions and denominators",
+    "Separate forecast from observation",
+    "No causal inferences from survey trend"
+  ],
+  "design_moves": [
+    "Direct labels",
+    "Configurable themes and annotations",
+    "Data-driven geometry",
+    "Explicit uncertainty"
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "diff_notes": "Original Flourish chart thumbnail opened; visual appearance approximate.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Recreate the line chart from Figure 1 — Companies reporting quantified AI revenue or cost results using the reported inputs.",
+    "response": {
+      "render_code_file": "chart.py",
+      "render_signature": "render(data,theme,context)->fig",
+      "exact_data_csv": "label,period,value_pct,sample_n,provenance,unit,denominator\nQ4 2024,2024-12,18,199,reported,percent,survey respondents in wave\nQ3 2025,2025-08,23,197,reported,percent,survey respondents in wave\nQ1 2026,2026-03,30,200,reported,percent,survey respondents in wave\nQ3 2026,2026-08,33,200,reported,percent,survey respondents in wave\n",
+      "exact_config_json": "{\n  \"THEME\": {\n    \"source\": {\n      \"figsize\": [\n        11,\n        6.2\n      ],\n      \"background\": \"#FFFFFF\",\n      \"text_color\": \"#252525\",\n      \"muted_color\": \"#666666\",\n      \"axis_color\": \"#A0A0A0\",\n      \"inside_color\": \"#FFFFFF\",\n      \"accent\": \"#C0001B\",\n      \"palette\": {}\n    },\n    \"neutral\": {\n      \"figsize\": [\n        11,\n        6.2\n      ],\n      \"background\": \"#FFFFFF\",\n      \"text_color\": \"#424242\",\n      \"muted_color\": \"#666666\",\n      \"axis_color\": \"#A0A0A0\",\n      \"inside_color\": \"#FFFFFF\",\n      \"accent\": \"#555555\",\n      \"palette\": {}\n    }\n  },\n  \"CONTEXT\": {\n    \"chart_kind\": \"line\",\n    \"title\": \"Companies reporting quantified AI results\",\n    \"subtitle\": \"Share of Bain survey respondents with a measured revenue or cost outcome\",\n    \"note\": \"Separate survey waves, n=199 / 197 / 200 / 200. Not a causal panel study.\",\n    \"source_label\": \"Bain, Nov 18 2026, Figure 1\"\n  }\n}\n",
+      "command": "python chart.py --data data.csv --config config.json --theme source --output source.png --dpi 200"
+    }
+  },
+  "split_group": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/"
+}

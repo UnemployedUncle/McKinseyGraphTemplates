@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261123_bain_ai_results_survey_fig1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-22T18:29:25.989Z",
+  "source_url": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/",
+  "figure_ref": "Figure 1 — Companies reporting quantified AI revenue or cost results",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "b9d5173f12780facce4211d7f1e52a885eb69935befe0e4d80a4c82ab01fe7da",
+    "data.csv": "cc10b4a832ebdf00045f74bdf7215feec1221d2cb3d6ca2543540dfa477b8e15",
+    "config.json": "8ba9b78329fe55e17dbbc57ac76d1d563c0a14946abd7a1ed18e555a1a393312",
+    "requirements.txt": "c7985209d4590704ead1797f7f9375d1dae9c9780e60392386f2344ae4279fff",
+    "card.md": "13277e288360b7151596f7eec3753a91040efa8a1ec248ed0e595a423c36a8d4",
+    "record.json": "333fb47b443755a0fb1df9eeef0e3e4f21963afa24fdc6d055f93d0e285b17aa",
+    "validation.json": "7f68330be48b86f11768a87206f35e12478427b380cfa2029619e36cb309c1fd"
+  },
+  "payload_sha256": "c9d1bea99acf871ac39f372a7d86db5ed029f855a102ad823481d46016fa6e5b"
+}

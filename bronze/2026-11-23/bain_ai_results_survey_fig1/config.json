@@ -1,0 +1,37 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        11,
+        6.2
+      ],
+      "background": "#FFFFFF",
+      "text_color": "#252525",
+      "muted_color": "#666666",
+      "axis_color": "#A0A0A0",
+      "inside_color": "#FFFFFF",
+      "accent": "#C0001B",
+      "palette": {}
+    },
+    "neutral": {
+      "figsize": [
+        11,
+        6.2
+      ],
+      "background": "#FFFFFF",
+      "text_color": "#424242",
+      "muted_color": "#666666",
+      "axis_color": "#A0A0A0",
+      "inside_color": "#FFFFFF",
+      "accent": "#555555",
+      "palette": {}
+    }
+  },
+  "CONTEXT": {
+    "chart_kind": "line",
+    "title": "Companies reporting quantified AI results",
+    "subtitle": "Share of Bain survey respondents with a measured revenue or cost outcome",
+    "note": "Separate survey waves, n=199 / 197 / 200 / 200. Not a causal panel study.",
+    "source_label": "Bain, Nov 18 2026, Figure 1"
+  }
+}

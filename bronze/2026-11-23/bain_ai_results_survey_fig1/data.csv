@@ -1,0 +1,5 @@
+label,period,value_pct,sample_n,provenance,unit,denominator
+Q4 2024,2024-12,18,199,reported,percent,survey respondents in wave
+Q3 2025,2025-08,23,197,reported,percent,survey respondents in wave
+Q1 2026,2026-03,30,200,reported,percent,survey respondents in wave
+Q3 2026,2026-08,33,200,reported,percent,survey respondents in wave

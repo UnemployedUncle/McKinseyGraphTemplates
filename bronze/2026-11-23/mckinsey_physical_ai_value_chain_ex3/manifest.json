@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261123_mckinsey_physical_ai_value_chain_ex3",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-22T18:29:25.989Z",
+  "source_url": "https://www.mckinsey.com/industries/industrials/our-insights/physical-ai-is-breaking-out-of-the-box",
+  "figure_ref": "Exhibit 3 — Modeled 2035 physical AI value chain midpoint shares",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "b9d5173f12780facce4211d7f1e52a885eb69935befe0e4d80a4c82ab01fe7da",
+    "data.csv": "b31a7577cb4d625226eb443f8d684d41e120aaf836205f6e3016ff842b394a75",
+    "config.json": "76ce332ce12b5756a1a0ec2f040aa1864b277bb42723f1c55893b8bb78516e93",
+    "requirements.txt": "c7985209d4590704ead1797f7f9375d1dae9c9780e60392386f2344ae4279fff",
+    "card.md": "009ecb3f62a92b93e305238853d28558e53eec9904729927aa285d4673d5baf2",
+    "record.json": "ba13d1f2a8158351c08cda1a4849a218b1273827ded7d98bfe7b4fd3e95d55ac",
+    "validation.json": "e8bd8cb9ae8f1ba616f7ee4f2a6cb4575b97262b80a092c314701d7f80161f98"
+  },
+  "payload_sha256": "fda46f51a7228040ed1bd403c67e4a9c192332e614cf35d40bd33f3a8f816871"
+}

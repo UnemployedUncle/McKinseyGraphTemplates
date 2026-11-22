@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261123_bcg_cmo_agentic_team_mix_ex7",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-22T18:29:25.989Z",
+  "source_url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+  "figure_ref": "Exhibit 7 — More Than One-Quarter of the Team Will Be Agentic AI Dovetailing with Humans",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "b9d5173f12780facce4211d7f1e52a885eb69935befe0e4d80a4c82ab01fe7da",
+    "data.csv": "9fa30428a6f164aa7c46655efd8556e4e823299bdf2e6351a962d9ee1878de50",
+    "config.json": "febf85a1e9bfddb411c45374fa68fadfa2aef4b12c175bce2a791721a5903607",
+    "requirements.txt": "c7985209d4590704ead1797f7f9375d1dae9c9780e60392386f2344ae4279fff",
+    "card.md": "1fb8a766cd373b84b0263b3a28bd2a1c8ff12e1d88dd7f0fbfcb09bb7acc28d2",
+    "record.json": "a514d0f894494243081f1cd52005e8d9de277552af47981461c38181b06fa151",
+    "validation.json": "384f700f39b07a5abeab8e94fddbf4ba77205b93b733d5d14c81fa9efc5353ba"
+  },
+  "payload_sha256": "c5de6cf64fe64e99a92c577adb739e6e65bf75b73cc3c843479bc15812f5c172"
+}

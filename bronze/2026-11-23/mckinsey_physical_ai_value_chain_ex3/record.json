@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "source_url": "https://www.mckinsey.com/industries/industrials/our-insights/physical-ai-is-breaking-out-of-the-box",
+  "source_title": "Physical AI Is Breaking Out of the Box",
+  "firm": "McKinsey",
+  "published_date": "2026-11-20",
+  "collected_date": "2026-11-23",
+  "data_observation_period": "2035 modeled projection",
+  "figure_ref": "Exhibit 3 — Modeled 2035 physical AI value chain midpoint shares",
+  "chart_key": "https://www.mckinsey.com/industries/industrials/our-insights/physical-ai-is-breaking-out-of-the-box#Exhibit 3 — Modeled 2035 physical AI value chain midpoint shares",
+  "business_context": "Physical AI Is Breaking Out of the Box",
+  "key_message": "2035년 Physical AI 가치풀 모형의 중간값 비중은 Hardware 35%, Software 30%, Deployment 12.5%, Field operations 22.5%다.",
+  "insight_type": "Physical AI 투자기회 평가에서 하드웨어뿐 아니라 배포·현장 운영의 장기 가치풀을 분리해 검토하자.",
+  "chart_type": "treemap",
+  "encoding": {
+    "x": "category",
+    "y": "share_pct",
+    "color": "THEME.palette",
+    "size": "value_pct",
+    "order": "CSV",
+    "label": "direct values",
+    "annotations": "CONTEXT"
+  },
+  "data_spec": {
+    "fields": [
+      "category",
+      "value_pct",
+      "provenance",
+      "unit",
+      "status",
+      "denominator",
+      "period"
+    ],
+    "unit": "percent",
+    "denominator": "McKinsey modeled four-part future value pool, published ranges' midpoint shares",
+    "provenance": "reported"
+  },
+  "data_recipe": [
+    "Collect reported values from original",
+    "Keep period/denominator/source metadata",
+    "Check rounding and missingness",
+    "Edit CSV and config",
+    "Render source/neutral 200dpi"
+  ],
+  "message_conditions": [
+    "Comparable definitions and denominators",
+    "Separate forecast from observation",
+    "No causal inferences from survey trend"
+  ],
+  "design_moves": [
+    "Direct labels",
+    "Configurable themes and annotations",
+    "Data-driven geometry",
+    "Explicit uncertainty"
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Official Exhibit 3 numeric footnote inspected, original chart artwork not visually retrieved; editorial treemap.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Recreate the treemap chart from Exhibit 3 — Modeled 2035 physical AI value chain midpoint shares using the reported inputs.",
+    "response": {
+      "render_code_file": "chart.py",
+      "render_signature": "render(data,theme,context)->fig",
+      "exact_data_csv": "category,value_pct,provenance,unit,status,denominator,period\nHardware,35,reported,percent,2035 model range midpoint,total modeled 2035 physical AI value,2035\nSoftware,30,reported,percent,2035 model range midpoint,total modeled 2035 physical AI value,2035\nDeployment,12.5,reported,percent,2035 model range midpoint,total modeled 2035 physical AI value,2035\nField operations,22.5,reported,percent,2035 model range midpoint,total modeled 2035 physical AI value,2035\n",
+      "exact_config_json": "{\n  \"THEME\": {\n    \"source\": {\n      \"figsize\": [\n        11,\n        6.2\n      ],\n      \"background\": \"#FFFFFF\",\n      \"text_color\": \"#252525\",\n      \"muted_color\": \"#666666\",\n      \"axis_color\": \"#A0A0A0\",\n      \"inside_color\": \"#FFFFFF\",\n      \"accent\": \"#C0001B\",\n      \"palette\": {\n        \"Hardware\": \"#123C4A\",\n        \"Software\": \"#307C91\",\n        \"Deployment\": \"#5CBAC0\",\n        \"Field operations\": \"#167B6E\"\n      }\n    },\n    \"neutral\": {\n      \"figsize\": [\n        11,\n        6.2\n      ],\n      \"background\": \"#FFFFFF\",\n      \"text_color\": \"#424242\",\n      \"muted_color\": \"#666666\",\n      \"axis_color\": \"#A0A0A0\",\n      \"inside_color\": \"#FFFFFF\",\n      \"accent\": \"#555555\",\n      \"palette\": {\n        \"Hardware\": \"#303030\",\n        \"Software\": \"#707070\",\n        \"Deployment\": \"#B3B3B3\",\n        \"Field operations\": \"#505050\"\n      }\n    }\n  },\n  \"CONTEXT\": {\n    \"chart_kind\": \"treemap\",\n    \"title\": \"Physical AI value extends beyond hardware\",\n    \"subtitle\": \"Midpoint share of modeled 2035 value pool (%)\",\n    \"note\": \"Forward-looking modeled shares; not observed revenue. Values are interval midpoints.\",\n    \"source_label\": \"McKinsey, Nov 20 2026, Exhibit 3 footnote\"\n  }\n}\n",
+      "command": "python chart.py --data data.csv --config config.json --theme source --output source.png --dpi 200"
+    }
+  },
+  "split_group": "https://www.mckinsey.com/industries/industrials/our-insights/physical-ai-is-breaking-out-of-the-box"
+}

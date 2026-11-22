@@ -1,0 +1,47 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        11,
+        6.2
+      ],
+      "background": "#FFFFFF",
+      "text_color": "#252525",
+      "muted_color": "#666666",
+      "axis_color": "#A0A0A0",
+      "inside_color": "#FFFFFF",
+      "accent": "#C0001B",
+      "palette": {
+        "Hardware": "#123C4A",
+        "Software": "#307C91",
+        "Deployment": "#5CBAC0",
+        "Field operations": "#167B6E"
+      }
+    },
+    "neutral": {
+      "figsize": [
+        11,
+        6.2
+      ],
+      "background": "#FFFFFF",
+      "text_color": "#424242",
+      "muted_color": "#666666",
+      "axis_color": "#A0A0A0",
+      "inside_color": "#FFFFFF",
+      "accent": "#555555",
+      "palette": {
+        "Hardware": "#303030",
+        "Software": "#707070",
+        "Deployment": "#B3B3B3",
+        "Field operations": "#505050"
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_kind": "treemap",
+    "title": "Physical AI value extends beyond hardware",
+    "subtitle": "Midpoint share of modeled 2035 value pool (%)",
+    "note": "Forward-looking modeled shares; not observed revenue. Values are interval midpoints.",
+    "source_label": "McKinsey, Nov 20 2026, Exhibit 3 footnote"
+  }
+}
