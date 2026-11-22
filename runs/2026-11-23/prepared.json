@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-11-23",
+  "timezone": "Asia/Seoul",
+  "run_mode": "03:15 preparation",
+  "started_at": "2026-11-23T03:15:47+09:00",
+  "completed_at": "2026-11-23T03:32:12.483+09:00",
+  "prepared_complete": true,
+  "ready_with_limitations": true,
+  "delivered": false,
+  "delivery_date": "2026-11-23",
+  "delivery_target_time": "07:15",
+  "goal": 3,
+  "new_bronze": 3,
+  "counts": {
+    "bronze": 79,
+    "silver": 0,
+    "gold": 0
+  },
+  "self_fidelity_verified_cumulative": 18,
+  "self_fidelity_verified_new": 1,
+  "human_approvals_new": 0,
+  "github": {
+    "repository": "UnemployedUncle/McKinseyGraphTemplates",
+    "branch": "main",
+    "bronze_commit": "9ac94805536dfbb0c2c3f27f4e20fa1fddae0845",
+    "bronze_commit_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/9ac94805536dfbb0c2c3f27f4e20fa1fddae0845",
+    "bronze_root": "bronze/2026-11-23",
+    "status": "pushed_and_re_read",
+    "github_actions": {
+      "status": "not_confirmed",
+      "reason": "Push commit combined-status and PR-only workflow lookup provided no actionable push-Action evidence"
+    }
+  },
+  "templates": [
+    {
+      "path": "bronze/2026-11-23/bain_ai_results_survey_fig1",
+      "template_id": "20261123_bain_ai_results_survey_fig1",
+      "source_url": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/",
+      "figure_ref": "Figure 1 — Companies reporting quantified AI revenue or cost results",
+      "validation_status": "verified",
+      "fidelity_score": 4.71,
+      "payload_sha256": "c9d1bea99acf871ac39f372a7d86db5ed029f855a102ad823481d46016fa6e5b",
+      "human_review": "pending",
+      "training_eligible": false
+    },
+    {
+      "path": "bronze/2026-11-23/bcg_cmo_agentic_team_mix_ex7",
+      "template_id": "20261123_bcg_cmo_agentic_team_mix_ex7",
+      "source_url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+      "figure_ref": "Exhibit 7 — More Than One-Quarter of the Team Will Be Agentic AI Dovetailing with Humans",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "payload_sha256": "c5de6cf64fe64e99a92c577adb739e6e65bf75b73cc3c843479bc15812f5c172",
+      "human_review": "pending",
+      "training_eligible": false
+    },
+    {
+      "path": "bronze/2026-11-23/mckinsey_physical_ai_value_chain_ex3",
+      "template_id": "20261123_mckinsey_physical_ai_value_chain_ex3",
+      "source_url": "https://www.mckinsey.com/industries/industrials/our-insights/physical-ai-is-breaking-out-of-the-box",
+      "figure_ref": "Exhibit 3 — Modeled 2035 physical AI value chain midpoint shares",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "payload_sha256": "fda46f51a7228040ed1bd403c67e4a9c192332e614cf35d40bd33f3a8f816871",
+      "human_review": "pending",
+      "training_eligible": false
+    }
+  ],
+  "local_validation": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "unittests_passed": 5,
+    "local_ingest_validate_passed": true,
+    "source_png_count": 3,
+    "neutral_png_count": 3,
+    "dpi": 200,
+    "preview_inspected": true,
+    "preview_package": "Conversation attachment Consulting_Graph_Template_2026-11-23_PREPARED.zip",
+    "preview_code_sha_identical_to_git": false,
+    "explanation": "Local previews were generated from equivalent drafts. Git main is the authoritative exact code and review manifest. Exact Git commit renderer was not separately executed in container."
+  },
+  "remote_integrity": {
+    "immutable_snapshot_confirmed": true,
+    "actual_remote_file_sha256_matched": 21,
+    "actual_remote_payload_sha256_matched": 3,
+    "canonical_urls_and_figure_refs_deduplicated": true
+  },
+  "quality": {
+    "bain": "self verified 4.71/5 original type inspected",
+    "bcg": "editorial redesign; unverified, fidelity null",
+    "mckinsey": "original graphic not visually inspected; unverified, fidelity null"
+  },
+  "controls": {
+    "silver_gold_unchanged": true,
+    "approval_not_substituted": true,
+    "no_model_training": true,
+    "no_new_schedule": true,
+    "no_original_artwork_committed": true
+  },
+  "notes": [
+    "Preparation is not user learning or delivery.",
+    "Re-read this prepared.json and RUN_REPORT.md at 07:15; do not initiate new research, chart creation or duplicate commit.",
+    "Image previews exist in conversation ZIP; the GitHub snapshot contains immutable text only.",
+    "Do not claim Actions success without independent evidence."
+  ]
+}
