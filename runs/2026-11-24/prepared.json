@@ -4,7 +4,7 @@
   "timezone": "Asia/Seoul",
   "run_mode": "03:15 preparation",
   "started_at": "2026-11-24T03:14:09+09:00",
-  "completed_at": "2026-11-24T03:35:44+09:00",
+  "completed_at": "2026-11-24T03:37:41+09:00",
   "prepared_complete": true,
   "ready_with_limitations": true,
   "delivered": false,
@@ -80,7 +80,12 @@
     "preview_metadata_sha256_identical_to_git": false,
     "preview_package": "Consulting_Graph_Template_2026-11-24_GIT_MATCHED_CORE_AND_PREVIEWS.zip",
     "exact_remote_core_render_confirmed": true,
-    "original_fidelity_verified": 0
+    "original_fidelity_verified": 0,
+    "local_targeted_unittests": 8,
+    "local_targeted_unittests_passed": 8,
+    "repository_unit_suite_status": "not executed in local container",
+    "package_sha256": "577e4a5a121c0439a3f514ce45a80f6bee8e07ea082511fd16e01da0d9da66db",
+    "package_file_count": 29
   },
   "remote_integrity": {
     "manifest_files_count": 21,
