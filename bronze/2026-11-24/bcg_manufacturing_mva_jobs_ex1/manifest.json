@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261124_bcg_manufacturing_mva_jobs_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-23T18:30:48.186Z",
+  "source_url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+  "figure_ref": "Exhibit 1 — Traditional manufacturing could lose $1.8tn MVA and 26m jobs",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "1285a8d9f96924db182e00fff93bc6b278bcf6badf2548d5f8388a244b04e1b3",
+    "data.csv": "423703c929c824b90730b50bfe2cd40692a9a974fbe7b3c78296f523aa81eef7",
+    "config.json": "e92b15c661aa80ffcbd9e1cfb0bfd8d473fcf274fd529418913cc0bfa792b47d",
+    "card.md": "9233a9093574fdf3b06b20445dc88280fcb07f05ee7e7608dbc509ff8accb751",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "record.json": "9a7cf068efd7dedfaa7fd8344e2962f3ba626bbb9f215097cf1cf24053a14786",
+    "validation.json": "08c0073f8377d9e7468f7c56fa33d198188d04c7fa0558324754c944728597e1"
+  },
+  "payload_sha256": "ed8606c30dad97c8549bfcb18797d077fa2150468b97276e818f184af3903919"
+}
