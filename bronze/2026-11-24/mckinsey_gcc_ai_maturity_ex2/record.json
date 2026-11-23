@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/rewiring-gcc-countries-for-ai-realizing-value-in-government",
+  "source_title": "Rewiring GCC countries for AI: Realizing value in government",
+  "published_date": "2026-11-23",
+  "collected_date": "2026-11-24",
+  "data_observation_period": "Survey 2026-08-11 to 2026-10-12",
+  "figure_ref": "Exhibit 2 — AI adoption maturity stage distribution",
+  "chart_key": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/rewiring-gcc-countries-for-ai-realizing-value-in-government#Exhibit 2",
+  "business_context": "Rewiring GCC countries for AI: Realizing value in government",
+  "key_message": "AI 도입을 넘어 조직의 업무흐름을 바꾼 응답 비중은 높지만, 역할까지 재설계한 단계는 16%에 불과하다.",
+  "insight_type": "Maturity distribution / bottleneck to role redesign",
+  "chart_type": "maturity_stack",
+  "encoding": {
+    "x": "CSV categories",
+    "y": [
+      "share_pct",
+      "unit",
+      "provenance",
+      "sample_n",
+      "survey_period",
+      "denominator"
+    ],
+    "color": "THEME palette",
+    "size": "data-driven where appropriate",
+    "order": "CSV order",
+    "labels": "direct source values",
+    "axes": "CONTEXT / chart renderer",
+    "annotations": "CONTEXT"
+  },
+  "data_spec": {
+    "fields": [
+      "stage",
+      "share_pct",
+      "unit",
+      "provenance",
+      "sample_n",
+      "survey_period",
+      "denominator"
+    ],
+    "unit": "See data.csv",
+    "provenance": "reported",
+    "denominator": "See data.csv",
+    "period": "Survey 2026-08-11 to 2026-10-12"
+  },
+  "data_recipe": [
+    "상호 배타적인 성숙도 단계 정의를 수집한다.",
+    "조사 분모와 불완전 응답 제외 기준을 기록한다.",
+    "비중합 100%와 단계 순서를 검사한다.",
+    "CSV의 stage/share_pct, config.json의 THEME/CONTEXT를 바꾼다.",
+    "두 테마를 200dpi로 렌더링해 레이블 가독성을 확인한다."
+  ],
+  "message_conditions": [
+    "Mutually exclusive stages and total ~100%",
+    "Same n for every stage",
+    "Do not equate maturity with confirmed financial return"
+  ],
+  "design_moves": [
+    "X=응답자 비중(%) 0~100, Y=단일 범주, 색=Early/Scaled/Workflow/Role, 구간크기=공식값12/7/65/16, 순서=원본 성숙도, 직접값 레이블. 원본 설명상 100% 수평 누적 막대로 편집."
+  ],
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "diff_notes": "Original SVGZ file inaccessible, so actual graphic was not directly inspected. Source figure fidelity unverified and score null.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/rewiring-gcc-countries-for-ai-realizing-value-in-government",
+  "training_pair": {
+    "instruction": "Recreate Exhibit 2 — AI adoption maturity stage distribution using publicly reported figures and a reusable renderer.",
+    "response": {
+      "render_code_file": "chart.py",
+      "render_signature": "render(data, theme, context)->fig",
+      "exact_data_csv": "stage,share_pct,unit,provenance,sample_n,survey_period,denominator\nEarly stage,12,percent,reported,120,2026-08-11 to 2026-10-12,respondents with complete and consistent answers\nScaled use,7,percent,reported,120,2026-08-11 to 2026-10-12,respondents with complete and consistent answers\nWorkflow redesign,65,percent,reported,120,2026-08-11 to 2026-10-12,respondents with complete and consistent answers\nRole redesign,16,percent,reported,120,2026-08-11 to 2026-10-12,respondents with complete and consistent answers\n",
+      "exact_config_json": "{\n  \"THEME\": {\n    \"source\": {\n      \"figsize\": [\n        11,\n        6.2\n      ],\n      \"background\": \"#FFFFFF\",\n      \"text\": \"#222222\",\n      \"muted\": \"#666666\",\n      \"grid\": \"#B7B7B7\",\n      \"accent\": \"#225A7D\",\n      \"secondary\": \"#F16D73\",\n      \"loss\": \"#DAA278\",\n      \"palette\": {\n        \"Early stage\": \"#CFD9DF\",\n        \"Scaled use\": \"#9FB6C3\",\n        \"Workflow redesign\": \"#235D7C\",\n        \"Role redesign\": \"#103B5A\"\n      }\n    },\n    \"neutral\": {\n      \"figsize\": [\n        11,\n        6.2\n      ],\n      \"background\": \"#FFFFFF\",\n      \"text\": \"#222222\",\n      \"muted\": \"#666666\",\n      \"grid\": \"#B7B7B7\",\n      \"accent\": \"#414141\",\n      \"secondary\": \"#898989\",\n      \"loss\": \"#A5A5A5\",\n      \"palette\": {\n        \"Early stage\": \"#D6D6D6\",\n        \"Scaled use\": \"#AFAFAF\",\n        \"Workflow redesign\": \"#6D6D6D\",\n        \"Role redesign\": \"#303030\"\n      }\n    }\n  },\n  \"CONTEXT\": {\n    \"chart_kind\": \"maturity_stack\",\n    \"title\": \"Workflow redesign is widespread; role redesign is still rare\",\n    \"subtitle\": \"Four mutually exclusive stages of AI organizational maturity, GCC senior-leader survey 2026\",\n    \"note\": \"N=120 after excluding 14 incomplete + 1 inconsistent responses from 135. Sample is not GCC-representative.\",\n    \"source_label\": \"Source: McKinsey, Nov 23 2026, Exhibit 2; survey Aug 11–Oct 12 2026.\"\n  }\n}\n",
+      "command": "python chart.py --data data.csv --config config.json --theme source --output source.png --dpi 200"
+    }
+  }
+}
