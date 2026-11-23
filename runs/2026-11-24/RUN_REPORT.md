@@ -57,3 +57,9 @@
 ## 다음 전달
 
 2026-11-24 07:15에는 이 보고서와 `prepared.json`을 GitHub main에서 먼저 읽는다. 이미 준비된 자료만 한 번 전달하고 신규 자료 조사·중복 커밋·Silver/Gold 승인 대행을 수행하지 않는다.
+
+## 사전 준비 이후 추가 로컬 테스트
+
+- 현 생성 차트의 CSV 산술·분모·provenance·manifest SHA256, `render` 반환 및 source/neutral 200dpi PNG를 검증하는 별도 `unittest` 8개를 Python에서 실제 수행했고 **8/8 통과**했다.
+- 이 검사는 저장소 `tests/test_medallion.py`를 실행한 결과가 아니다. GitHub Actions 실행 성공 여부 역시 아직 독립 확인되지 않았다.
+- 공개 사용자 미리보기 패키지: `Consulting_Graph_Template_2026-11-24_GIT_MATCHED_CORE_AND_PREVIEWS.zip`. 그 안의 chart.py/data.csv/config.json/requirements.txt와 원격 SHA256은 동일하다. 검수 대상 card.md/record.json/validation.json/manifest.json은 **GitHub 버전**이 기준이다.
