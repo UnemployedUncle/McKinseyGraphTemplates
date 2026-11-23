@@ -1,0 +1,4 @@
+region,base_mva_usd_bn,loss_mva_usd_bn,jobs_base_m,jobs_at_risk_m,mva_unit,jobs_unit,provenance,scenario
+US,2514,460,24,5,2025 USD billion,million,reported,current competitiveness
+Western Europe,2595,991,42,15,2025 USD billion,million,reported,current competitiveness
+Japan,993,314,18,6,2025 USD billion,million,reported,current competitiveness
