@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-11-24",
+  "timezone": "Asia/Seoul",
+  "run_mode": "03:15 preparation",
+  "started_at": "2026-11-24T03:14:09+09:00",
+  "completed_at": "2026-11-24T03:32:29+09:00",
+  "prepared_complete": true,
+  "ready_with_limitations": true,
+  "delivered": false,
+  "delivery_target_time": "07:15",
+  "goal": 3,
+  "new_bronze": 3,
+  "counts": {
+    "bronze": 82,
+    "silver": 0,
+    "gold": 0
+  },
+  "self_fidelity_verified_cumulative": 18,
+  "self_fidelity_verified_new": 0,
+  "human_approvals_new": 0,
+  "github": {
+    "repository": "UnemployedUncle/McKinseyGraphTemplates",
+    "branch": "main",
+    "bronze_commit": "e7ffc3670f04dddc9ee1bc5694989be0056d8cab",
+    "bronze_root": "bronze/2026-11-24",
+    "status": "committed_to_work_branch_pending_main_fast_forward",
+    "github_actions": {
+      "status": "not_confirmed_at_preparation"
+    }
+  },
+  "templates": [
+    {
+      "path": "bronze/2026-11-24/bain_ai_headcount_outlook_fig3",
+      "published_date": "2026-11-18",
+      "source_url": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/",
+      "figure_ref": "Figure 3",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "payload_sha256": "b16b24f4a75f9548bdc7fa1e31d5879679b878da1b4cc83291f1e60024e1cc93",
+      "human_review": "pending",
+      "training_eligible": false
+    },
+    {
+      "path": "bronze/2026-11-24/bcg_manufacturing_mva_jobs_ex1",
+      "published_date": "2026-11-23",
+      "source_url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+      "figure_ref": "Exhibit 1",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "payload_sha256": "ed8606c30dad97c8549bfcb18797d077fa2150468b97276e818f184af3903919",
+      "human_review": "pending",
+      "training_eligible": false
+    },
+    {
+      "path": "bronze/2026-11-24/mckinsey_gcc_ai_maturity_ex2",
+      "published_date": "2026-11-23",
+      "source_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/rewiring-gcc-countries-for-ai-realizing-value-in-government",
+      "figure_ref": "Exhibit 2",
+      "validation_status": "unverified",
+      "fidelity_score": null,
+      "payload_sha256": "7cdc0bcadc87bd71e811d3429e392515c4624f83c94b930eed8895af1b0a518d",
+      "human_review": "pending",
+      "training_eligible": false
+    }
+  ],
+  "local_validation": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "source_png_count": 3,
+    "neutral_png_count": 3,
+    "dpi": 200,
+    "pngs_inspected": true,
+    "semantic_test_passed": true,
+    "local_preview_package": "Consulting_Graph_Template_2026-11-24_PREPARED.zip",
+    "chart_data_config_sha256_identical_to_git": true,
+    "preview_metadata_sha256_identical_to_git": false
+  },
+  "remote_integrity": {
+    "manifest_files_count": 21,
+    "new_payload_sha256_count": 3,
+    "catalog_updated": true
+  },
+  "controls": {
+    "silver_gold_unchanged": true,
+    "approval_not_substituted": true,
+    "no_model_training": true,
+    "no_new_schedule": true,
+    "no_original_artwork_committed": true
+  },
+  "notes": [
+    "Review GitHub main commit and ACTIONS before delivery. If main publish failed, prepared_complete true is only branch-local and must not be interpreted as main delivery readiness.",
+    "Preparation is not user delivery or learning.",
+    "At 07:15 read prepared.json and RUN_REPORT.md first; do not initiate new research or duplicate commit."
+  ]
+}
