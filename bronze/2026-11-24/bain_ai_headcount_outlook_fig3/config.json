@@ -1,0 +1,49 @@
+{
+  "THEME": {
+    "source": {
+      "figsize": [
+        11,
+        6.2
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "muted": "#666666",
+      "grid": "#B7B7B7",
+      "accent": "#B20016",
+      "secondary": "#F16D73",
+      "loss": "#DAA278",
+      "palette": {
+        "Early stage": "#CFD9DF",
+        "Scaled use": "#9FB6C3",
+        "Workflow redesign": "#235D7C",
+        "Role redesign": "#103B5A"
+      }
+    },
+    "neutral": {
+      "figsize": [
+        11,
+        6.2
+      ],
+      "background": "#FFFFFF",
+      "text": "#222222",
+      "muted": "#666666",
+      "grid": "#B7B7B7",
+      "accent": "#414141",
+      "secondary": "#898989",
+      "loss": "#A5A5A5",
+      "palette": {
+        "Early stage": "#D6D6D6",
+        "Scaled use": "#AFAFAF",
+        "Workflow redesign": "#6D6D6D",
+        "Role redesign": "#303030"
+      }
+    }
+  },
+  "CONTEXT": {
+    "chart_kind": "slope_grid",
+    "title": "AI-related headcount expectations have shifted",
+    "subtitle": "Expected change in headcount by business function (%), Q1 vs Q3 2026",
+    "note": "Separate survey waves; forecast expectations, not actual headcount. Figure 3 thumbnail read directly.",
+    "source_label": "Source: Bain & Company, Nov 18 2026, Figure 3. Bain AI readiness survey."
+  }
+}
