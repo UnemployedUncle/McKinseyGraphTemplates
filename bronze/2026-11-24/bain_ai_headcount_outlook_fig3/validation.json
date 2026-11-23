@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "actual_execution_commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png --dpi 200",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png --dpi 200"
+  ],
+  "source_png_executed": true,
+  "neutral_png_executed": true,
+  "render_passed": true,
+  "render_dpi": 200,
+  "revision_count": 2,
+  "semantic_checks": {
+    "provenance": "passed",
+    "units": "passed",
+    "denominator": "documented; see source",
+    "calculated_values": "passed",
+    "rounding": "documented",
+    "missing": "no interpolation"
+  },
+  "original_inspected": true,
+  "original_view": "Official Flourish thumbnail viewed https://public.flourish.studio/visualisation/30552254/thumbnail",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "seven_dimension_scores": null,
+  "score_rationale": "Original shape and numeric values viewed, but full seven-axis fidelity rubric >=4.5 not completed",
+  "remaining_differences": "Original thumbnail visually inspected and reported values checked; mini-panel typography and spacing remain approximate; seven-dimension fidelity was not fully scored.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "render_is_not_source_validation": true,
+  "tested_date": "2026-11-24",
+  "repository_suite_status": "not executed locally; see GitHub Actions after publish"
+}
