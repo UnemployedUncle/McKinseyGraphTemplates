@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261124_mckinsey_gcc_ai_maturity_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-23T18:31:19.239Z",
+  "source_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/rewiring-gcc-countries-for-ai-realizing-value-in-government",
+  "figure_ref": "Exhibit 2 — AI adoption maturity stage distribution",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "1285a8d9f96924db182e00fff93bc6b278bcf6badf2548d5f8388a244b04e1b3",
+    "data.csv": "8107f1dca542f67ab40df4279fee959bd2213c25aa9e1ddc1dc9edbd702be92b",
+    "config.json": "943965194025c768cd4acc060c152ea1bd559af8d79733b12ebafe3d0f78074a",
+    "card.md": "59336f6dec2f499be516bc3c84cde213cb6c00b7666bffb5ca0c3903747340c8",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "record.json": "6a6224716cb138f34884667a1861f68ebb56262bf233080be648bb187c119107",
+    "validation.json": "f7780ef20f1b3c8ea04017e345fbf51453ef7fe8b46aae168ea51458b9f2b9b4"
+  },
+  "payload_sha256": "7cdc0bcadc87bd71e811d3429e392515c4624f83c94b930eed8895af1b0a518d"
+}
