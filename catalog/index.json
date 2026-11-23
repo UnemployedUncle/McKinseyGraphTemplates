@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 79,
+    "bronze": 82,
     "silver": 0,
     "gold": 0
   },
@@ -1108,6 +1108,48 @@
       "source_url": "https://www.mckinsey.com/industries/industrials/our-insights/physical-ai-is-breaking-out-of-the-box",
       "figure_ref": "Exhibit 3 — Modeled 2035 physical AI value chain midpoint shares",
       "key_message": "2035년 Physical AI 가치풀 모형의 중간값 비중은 Hardware 35%, Software 30%, Deployment 12.5%, Field operations 22.5%다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261124_bain_ai_headcount_outlook_fig3",
+      "tier": "bronze",
+      "path": "bronze/2026-11-24/bain_ai_headcount_outlook_fig3",
+      "contract": "render-v1",
+      "payload_sha256": "b16b24f4a75f9548bdc7fa1e31d5879679b878da1b4cc83291f1e60024e1cc93",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/",
+      "figure_ref": "Figure 3 — AI-related headcount expectations by function, Q1 vs Q3 2026",
+      "key_message": "AI에 따른 인력 전망이 직무별로 다르게 재평가되므로, 일률적 감원 가정 대신 직무별 계획을 업데이트해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261124_bcg_manufacturing_mva_jobs_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-11-24/bcg_manufacturing_mva_jobs_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "ed8606c30dad97c8549bfcb18797d077fa2150468b97276e818f184af3903919",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+      "figure_ref": "Exhibit 1 — Traditional manufacturing could lose $1.8tn MVA and 26m jobs",
+      "key_message": "생산성 개선이 없을 때 제조업 이전 위험은 서유럽에 가장 집중되므로 국가·산업별 현대화 투자 우선순위를 재검토해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261124_mckinsey_gcc_ai_maturity_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-24/mckinsey_gcc_ai_maturity_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "7cdc0bcadc87bd71e811d3429e392515c4624f83c94b930eed8895af1b0a518d",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/rewiring-gcc-countries-for-ai-realizing-value-in-government",
+      "figure_ref": "Exhibit 2 — AI adoption maturity stage distribution",
+      "key_message": "AI 도입을 넘어 조직의 업무흐름을 바꾼 응답 비중은 높지만, 역할까지 재설계한 단계는 16%에 불과하다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
       "training_eligible": false
