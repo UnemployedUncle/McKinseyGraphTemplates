@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "environment": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8"
+  },
+  "actual_execution_commands": [
+    "python chart.py --data data.csv --config config.json --theme source --output artifacts/source.png --dpi 200",
+    "python chart.py --data data.csv --config config.json --theme neutral --output artifacts/neutral.png --dpi 200"
+  ],
+  "source_png_executed": true,
+  "neutral_png_executed": true,
+  "render_passed": true,
+  "render_dpi": 200,
+  "revision_count": 1,
+  "semantic_checks": {
+    "provenance": "passed",
+    "units": "passed",
+    "denominator": "documented; see source",
+    "calculated_values": "passed",
+    "rounding": "documented",
+    "missing": "no interpolation"
+  },
+  "original_inspected": false,
+  "original_view": "Official Exhibit 2 HTML alt description verified; SVGZ graphical file unsupported",
+  "validation_status": "unverified",
+  "fidelity_score": null,
+  "seven_dimension_scores": null,
+  "score_rationale": "Original SVGZ not viewable; cannot rate fidelity",
+  "remaining_differences": "Original SVGZ file inaccessible, so actual graphic was not directly inspected. Source figure fidelity unverified and score null.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "render_is_not_source_validation": true,
+  "tested_date": "2026-11-24",
+  "repository_suite_status": "not executed locally; see GitHub Actions after publish"
+}
