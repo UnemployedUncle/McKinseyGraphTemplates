@@ -4,7 +4,7 @@
   "timezone": "Asia/Seoul",
   "run_mode": "03:15 preparation",
   "started_at": "2026-11-24T03:14:09+09:00",
-  "completed_at": "2026-11-24T03:32:29+09:00",
+  "completed_at": "2026-11-24T03:35:44+09:00",
   "prepared_complete": true,
   "ready_with_limitations": true,
   "delivered": false,
@@ -24,10 +24,13 @@
     "branch": "main",
     "bronze_commit": "e7ffc3670f04dddc9ee1bc5694989be0056d8cab",
     "bronze_root": "bronze/2026-11-24",
-    "status": "committed_to_work_branch_pending_main_fast_forward",
+    "status": "pushed_and_re_read",
     "github_actions": {
-      "status": "not_confirmed_at_preparation"
-    }
+      "status": "not_confirmed"
+    },
+    "publish_method": "fast_forward main from immutable staging branch using expected_sha and force=false; all previous files preserved",
+    "main_validated_commit": "bcfa2e696e781e1c5910a4de2eb449ea4ce61b4f",
+    "main_validated_commit_url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/commit/bcfa2e696e781e1c5910a4de2eb449ea4ce61b4f"
   },
   "templates": [
     {
@@ -74,12 +77,19 @@
     "semantic_test_passed": true,
     "local_preview_package": "Consulting_Graph_Template_2026-11-24_PREPARED.zip",
     "chart_data_config_sha256_identical_to_git": true,
-    "preview_metadata_sha256_identical_to_git": false
+    "preview_metadata_sha256_identical_to_git": false,
+    "preview_package": "Consulting_Graph_Template_2026-11-24_GIT_MATCHED_CORE_AND_PREVIEWS.zip",
+    "exact_remote_core_render_confirmed": true,
+    "original_fidelity_verified": 0
   },
   "remote_integrity": {
     "manifest_files_count": 21,
     "new_payload_sha256_count": 3,
-    "catalog_updated": true
+    "catalog_updated": true,
+    "immutable_snapshot_confirmed": true,
+    "actual_remote_file_sha256_matched": 21,
+    "actual_remote_payload_sha256_matched": 3,
+    "catalog_counts_re_read": true
   },
   "controls": {
     "silver_gold_unchanged": true,
@@ -89,8 +99,9 @@
     "no_original_artwork_committed": true
   },
   "notes": [
-    "Review GitHub main commit and ACTIONS before delivery. If main publish failed, prepared_complete true is only branch-local and must not be interpreted as main delivery readiness.",
     "Preparation is not user delivery or learning.",
-    "At 07:15 read prepared.json and RUN_REPORT.md first; do not initiate new research or duplicate commit."
+    "At 07:15 read prepared.json and RUN_REPORT.md first; do not initiate new research or duplicate commit.",
+    "GitHub main update succeeded and the remote manifest SHA256, payload and catalog were all independently re-read.",
+    "GitHub Actions pass state was not confirmed; no successful-run claim is made."
   ]
 }
