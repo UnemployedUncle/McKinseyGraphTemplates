@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261124_bain_ai_headcount_outlook_fig3",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-23T18:30:43.978Z",
+  "source_url": "https://www.bain.com/insights/survey-workflow-redesign-is-key-to-ai-success/",
+  "figure_ref": "Figure 3 — AI-related headcount expectations by function, Q1 vs Q3 2026",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "1285a8d9f96924db182e00fff93bc6b278bcf6badf2548d5f8388a244b04e1b3",
+    "data.csv": "bc608d92d6005f48cb2d07a738623bcd0557223308740126108adc22abf1a09c",
+    "config.json": "7e8d2e4110ac124108eded3ffa44bc156fce50edc548de86fb5f8b579d55fc37",
+    "card.md": "8258f9e6bba9e5cfe60bfbb6cdee50b077e8386f0c4bcb557fbc345d28df748f",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "record.json": "11a5409820d8c26fceb86f7f0de39f76f61c6fdf2a9cc59530ae9e1a39c8a963",
+    "validation.json": "57626fc4b45946bb14996e0b802a863c0ce393828e0ac15cc7c4f68907a7662a"
+  },
+  "payload_sha256": "b16b24f4a75f9548bdc7fa1e31d5879679b878da1b4cc83291f1e60024e1cc93"
+}
