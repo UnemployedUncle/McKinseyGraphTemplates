@@ -86,5 +86,8 @@
 | bronze | [20261124_bain_ai_headcount_outlook_fig3](../bronze/2026-11-24/bain_ai_headcount_outlook_fig3) | pending | unverified |
 | bronze | [20261124_bcg_manufacturing_mva_jobs_ex1](../bronze/2026-11-24/bcg_manufacturing_mva_jobs_ex1) | pending | unverified |
 | bronze | [20261124_mckinsey_gcc_ai_maturity_ex2](../bronze/2026-11-24/mckinsey_gcc_ai_maturity_ex2) | pending | unverified |
+| bronze | [20261125_bain_ai_retail_visibility_fig1](../bronze/2026-11-25/bain_ai_retail_visibility_fig1) | pending | verified |
+| bronze | [20261125_bcg_japan_physical_ai_value_sidebar](../bronze/2026-11-25/bcg_japan_physical_ai_value_sidebar) | pending | verified |
+| bronze | [20261125_mckinsey_banking_agentic_time_to_value_ex1](../bronze/2026-11-25/mckinsey_banking_agentic_time_to_value_ex1) | pending | verified |
 
 검수할 정확한 payload_sha256은 각 manifest.json과 index.json에서 확인합니다.

@@ -1,0 +1,65 @@
+{
+  "THEME": {
+    "source": {
+      "font_size": 11,
+      "title_size": 18,
+      "ink": "#18211c",
+      "colors": [
+        "#112478",
+        "#8794bf"
+      ],
+      "accent": "#d3e1ff"
+    },
+    "neutral": {
+      "font_size": 11,
+      "title_size": 18,
+      "ink": "#18211c",
+      "colors": [
+        "#365a78",
+        "#a3b8c9"
+      ],
+      "accent": "#dce7ee"
+    }
+  },
+  "CONTEXT": {
+    "title": "Banking agentic AI: build, ramp-up and payback",
+    "kind": "timeline_stack",
+    "figsize": [
+      12,
+      7.5
+    ],
+    "series_labels": [
+      "Build",
+      "Ramp-up to|full benefit"
+    ],
+    "note": "Payback: estimated run-rate impact months needed to recover build cost. ROI: ramp-adjusted estimate; year 1 assumes no benefit.\nSource: Client interviews, September–October 2026; McKinsey AI ROI benchmark. PDF cover gives November 2026; parent report dated Nov 17.",
+    "unit": "Average time to full benefit (months)",
+    "count_label": "Use cases",
+    "kpi_labels": [
+      "Average payback",
+      "Three-year ROI",
+      "Use cases"
+    ],
+    "kpi_formats": [
+      "~{:g} mo",
+      "~{:g}x",
+      "{:g}"
+    ],
+    "layout": {
+      "axes_rect": [
+        0.13,
+        0.39,
+        0.84,
+        0.43
+      ],
+      "title_xy": [
+        0.025,
+        0.95
+      ],
+      "note_xy": [
+        0.025,
+        0.055
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "original_visual_inspected": true,
+  "original_scope": "Methodology sidebar exhibit — cost savings and new value",
+  "original_url": "https://web-assets.bcg.com/dims4/default/ac977ed/2147483647/strip/true/crop/7500x3445%2B0%2B0/resize/768x353!/format/webp/quality/80/?url=http://boston-consulting-group-brightspot.s3.amazonaws.com/ad/b7/f65f577a4431bc88198e5f52e229/physical-ai-wont-be-won-by-adoption-sidebar.png",
+  "render_passed": true,
+  "data_checks_passed": true,
+  "reuse_test_passed": true,
+  "human_review": "pending",
+  "training_eligible": false,
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "render_iterations": 3,
+  "iteration_notes": "Initial render; small segment labels separated; layout moved to config; final six PNG visually inspected",
+  "commands": [
+    "python chart.py --theme source --output source.png --dpi 200",
+    "python chart.py --theme neutral --output neutral.png --dpi 200"
+  ],
+  "tests": {
+    "repository_medallion_unit_tests": "12/12 passed against fetched test and script in isolated temp fixtures",
+    "chart_unit_tests": "6/6 passed across all 3 charts; values, sums, order, missing, reuse and 200 dpi"
+  },
+  "criteria": {
+    "type": {
+      "score": 5,
+      "reason": "Three scenario stacks"
+    },
+    "values_order": {
+      "score": 5,
+      "reason": "All 12 component/total/GDP labels checked"
+    },
+    "axis": {
+      "score": 5,
+      "reason": "Common zero baseline and proportional height"
+    },
+    "color_emphasis": {
+      "score": 5,
+      "reason": "Purple/green and GDP accent retained"
+    },
+    "labels_annotations": {
+      "score": 4,
+      "reason": "Small label offset and right legend replacing original bracket"
+    },
+    "title_legend": {
+      "score": 4,
+      "reason": "Title and footnote paraphrased"
+    },
+    "aspect_margins": {
+      "score": 4,
+      "reason": "Panel width and typography approximate"
+    }
+  },
+  "diff_notes": "원본의 누적막대와 색, 값, 순서 유지. 오른쪽 괄호를 범례로 변경했고 작은 구간 라벨을 옆으로 이동; 글꼴·제목·각주 근사.",
+  "scope_limit": "Visual approximation, not pixel equality."
+}

@@ -1,0 +1,56 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "original_visual_inspected": true,
+  "original_scope": "Figure 1 — Overall tab",
+  "original_url": "https://public.flourish.studio/visualisation/30873269/thumbnail",
+  "render_passed": true,
+  "data_checks_passed": true,
+  "reuse_test_passed": true,
+  "human_review": "pending",
+  "training_eligible": false,
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "render_iterations": 3,
+  "iteration_notes": "Initial render; rank/separators and readability revision; layout moved to config; final six PNG visually inspected",
+  "commands": [
+    "python chart.py --theme source --output source.png --dpi 200",
+    "python chart.py --theme neutral --output neutral.png --dpi 200"
+  ],
+  "tests": {
+    "repository_medallion_unit_tests": "12/12 passed against fetched test and script in isolated temp fixtures",
+    "chart_unit_tests": "6/6 passed across all 3 charts; values, sums, order, missing, reuse and 200 dpi"
+  },
+  "criteria": {
+    "type": {
+      "score": 5,
+      "reason": "Four paired horizontal panels, five ranks each"
+    },
+    "values_order": {
+      "score": 5,
+      "reason": "All 40 labels and retailer order match"
+    },
+    "axis": {
+      "score": 5,
+      "reason": "Hidden numerical axis and shared lengths"
+    },
+    "color_emphasis": {
+      "score": 5,
+      "reason": "Red/gray contrast and rank column retained"
+    },
+    "labels_annotations": {
+      "score": 5,
+      "reason": "Direct labels retained; no logos"
+    },
+    "title_legend": {
+      "score": 4,
+      "reason": "Title paraphrased; static Overall only"
+    },
+    "aspect_margins": {
+      "score": 4,
+      "reason": "Aspect 1.71 vs original approx 1.6; font spacing differs"
+    }
+  },
+  "diff_notes": "Overall 정적 화면 한정. 원본 숫자 순위열과 구분선 반영; 탭 전환 및 hover 미구현, 제목과 각주 재작성, 로고 제외.",
+  "scope_limit": "Visual approximation, not pixel equality. Static display only; no interactive tab functionality."
+}

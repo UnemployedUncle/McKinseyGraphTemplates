@@ -1,0 +1,56 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "original_visual_inspected": true,
+  "original_scope": "PDF page 2 (zero-based page 2), Exhibit 1 — time to value by domain",
+  "original_url": "PDF page index 2",
+  "render_passed": true,
+  "data_checks_passed": true,
+  "reuse_test_passed": true,
+  "human_review": "pending",
+  "training_eligible": false,
+  "python_version": "3.13.5",
+  "matplotlib_version": "3.10.8",
+  "render_iterations": 3,
+  "iteration_notes": "Initial render; common code revision and layout moved to config; final six PNG visually inspected",
+  "commands": [
+    "python chart.py --theme source --output source.png --dpi 200",
+    "python chart.py --theme neutral --output neutral.png --dpi 200"
+  ],
+  "tests": {
+    "repository_medallion_unit_tests": "12/12 passed against fetched test and script in isolated temp fixtures",
+    "chart_unit_tests": "6/6 passed across all 3 charts; values, sums, order, missing, reuse and 200 dpi"
+  },
+  "criteria": {
+    "type": {
+      "score": 5,
+      "reason": "Stacked duration bars plus case counts and KPIs"
+    },
+    "values_order": {
+      "score": 5,
+      "reason": "All printed durations, counts and summary KPIs"
+    },
+    "axis": {
+      "score": 5,
+      "reason": "Zero baseline; no ticks as original"
+    },
+    "color_emphasis": {
+      "score": 5,
+      "reason": "Dark and light blue segments retained"
+    },
+    "labels_annotations": {
+      "score": 5,
+      "reason": "Components, totals, case counts and distinct aggregate"
+    },
+    "title_legend": {
+      "score": 4,
+      "reason": "Paraphrased title and footnotes"
+    },
+    "aspect_margins": {
+      "score": 4,
+      "reason": "Exhibit crop aspect and typography approximate"
+    }
+  },
+  "diff_notes": "PDF Exhibit 1의 막대·사례수 행·요약 KPI 유지; 제목·각주 재작성, 글꼴과 여백 근사.",
+  "scope_limit": "Visual approximation, not pixel equality."
+}

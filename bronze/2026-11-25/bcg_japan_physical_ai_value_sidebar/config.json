@@ -1,0 +1,59 @@
+{
+  "THEME": {
+    "source": {
+      "font_size": 11,
+      "title_size": 18,
+      "ink": "#18211c",
+      "colors": [
+        "#4442b8",
+        "#10d600"
+      ],
+      "accent": "#97dedb"
+    },
+    "neutral": {
+      "font_size": 11,
+      "title_size": 18,
+      "ink": "#18211c",
+      "colors": [
+        "#365a78",
+        "#a3b8c9"
+      ],
+      "accent": "#dce7ee"
+    }
+  },
+  "CONTEXT": {
+    "title": "Physical AI: labor savings and new demand in Japan",
+    "kind": "scenario_stack",
+    "figsize": [
+      12,
+      5.6
+    ],
+    "series_labels": [
+      "Cost savings",
+      "New value"
+    ],
+    "note": "Sources: US BLS, US Department of Labor (O*NET), IFR, company data, expert interviews, BCG Institute.\n2040 technical ceiling, not expected adoption. Exchange rate: $1 = ¥150 (2025 average).",
+    "unit": "Addressable annual value ($ billions)",
+    "gdp_label": "Share of FY2025 GDP",
+    "layout": {
+      "axes_rect": [
+        0.04,
+        0.26,
+        0.73,
+        0.57
+      ],
+      "legend_xy": [
+        0.78,
+        0.77
+      ],
+      "title_xy": [
+        0.025,
+        0.95
+      ],
+      "note_xy": [
+        0.025,
+        0.055
+      ]
+    }
+  }
+}

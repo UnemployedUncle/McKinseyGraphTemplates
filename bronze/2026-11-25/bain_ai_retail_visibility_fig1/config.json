@@ -1,0 +1,58 @@
+{
+  "THEME": {
+    "source": {
+      "font_size": 11,
+      "title_size": 18,
+      "ink": "#18211c",
+      "colors": [
+        "#cc0000",
+        "#cccccc"
+      ],
+      "accent": "#f3b4b4"
+    },
+    "neutral": {
+      "font_size": 11,
+      "title_size": 18,
+      "ink": "#18211c",
+      "colors": [
+        "#365a78",
+        "#a3b8c9"
+      ],
+      "accent": "#dce7ee"
+    }
+  },
+  "CONTEXT": {
+    "title": "AI visibility and retail market share can diverge",
+    "kind": "ranked_pairs",
+    "figsize": [
+      12,
+      7
+    ],
+    "series_labels": [
+      "Indexed AI visibility",
+      "Market share"
+    ],
+    "note": "Source: Profound, Jefferies, Flywheel, Euromonitor, Convenience Store News, Pyxis, company data, Bain analysis.\nIndexed AI visibility: top-20 retailer mentions, weighted by AI assistant monthly users (Oct 2026).\nPrompt mix varies by category. Values are rounded; not a conversion or causal metric.",
+    "layout": {
+      "subplots": {
+        "left": 0.1,
+        "right": 0.975,
+        "top": 0.76,
+        "bottom": 0.22,
+        "wspace": 0.28
+      },
+      "legend_xy": [
+        0.025,
+        0.87
+      ],
+      "title_xy": [
+        0.025,
+        0.95
+      ],
+      "note_xy": [
+        0.025,
+        0.055
+      ]
+    }
+  }
+}

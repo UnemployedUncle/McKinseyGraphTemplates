@@ -1,0 +1,7 @@
+category,build_months,ramp_months,total_months,case_count,row_type,payback_months,roi_3y_x,build_provenance,ramp_provenance,total_provenance,count_provenance,payback_provenance,roi_provenance,period
+Operations and|servicing,6,6,12,33,domain,,,reported,reported,reported,reported,missing,missing,"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026"
+Risk and|compliance,6,10,16,7,domain,,,reported,reported,reported,reported,missing,missing,"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026"
+Knowledge and|reporting,5,3,8,4,domain,,,reported,reported,reported,reported,missing,missing,"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026"
+Software|development,9,9,18,4,domain,,,reported,reported,reported,reported,missing,missing,"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026"
+Other,8,4,12,4,domain,,,reported,reported,reported,reported,missing,missing,"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026"
+Average,7,6,13,52,aggregate,10,2.9,reported,reported,reported,reported,reported,reported,"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026"

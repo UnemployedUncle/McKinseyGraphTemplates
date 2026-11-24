@@ -1,0 +1,135 @@
+{
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/physical-ai-japan-value-opportunity",
+  "published_date": "2026-11-24",
+  "collected_date": "2026-11-25",
+  "figure_ref": "Methodology sidebar exhibit — cost savings and new value",
+  "chart_key": "bcg_japan_physical_ai_value_sidebar",
+  "source_image_url": "https://web-assets.bcg.com/dims4/default/ac977ed/2147483647/strip/true/crop/7500x3445%2B0%2B0/resize/768x353!/format/webp/quality/80/?url=http://boston-consulting-group-brightspot.s3.amazonaws.com/ad/b7/f65f577a4431bc88198e5f52e229/physical-ai-wont-be-won-by-adoption-sidebar.png",
+  "business_context": "일본은 인력 부족과 제조기술 기반 때문에 Physical AI의 중요한 시험 시장이다.",
+  "key_message": "기술 진전 수준에 따라 일본 Physical AI의 2040년 기술적 가치 상한이 크게 달라지므로 투자 판단에서 시나리오를 분리해야 한다.",
+  "chart_type": "scenario_stack",
+  "encoding": {
+    "x": "ordered scenarios",
+    "y": "annual USD billion",
+    "color": "cost savings vs new value",
+    "size": "bar length from values",
+    "sort": "restricted, medium, maximum",
+    "labels": "component values, totals, GDP percentages"
+  },
+  "data_spec": {
+    "unit": "USD billion/year; GDP share percent",
+    "period": "2040 scenario; GDP denominator FY2025; FX 2025 average",
+    "denominator": "annual Japanese addressable value; FY2025 Japan GDP for percentage",
+    "source": "US BLS; US Department of Labor O*NET; IFR; company data; expert interviews; BCG Institute analysis",
+    "sample": "20 industries, 232 occupations, approximately 7,500 tasks mapped to O*NET",
+    "provenance": "All numeric observations are printed on original figure; calculated bar stack total equals printed total.",
+    "nominal_real": "price basis not disclosed; USD converted at 2025 average FX",
+    "missing": "raw data, detailed model or survey weights not disclosed",
+    "calculation_notes": "절감 가치는 인원·임금과 기술 대체율에 기반하고 신규 가치는 수익성과 기술 대체율 및 수요 확대 가정에 의존한다. 최대 $450bn은 2040년 기술적 상한이며 실현 매출이나 GDP 증가 예측이 아니다."
+  },
+  "data_recipe": [
+    "기준연도 직종·업무별 인원과 임금을 정리한다.",
+    "기술 시나리오별 업무 대체율로 절감 가능 가치를 산출한다.",
+    "미충족 수요와 수익성·확장 가정을 반영해 추가 가치를 산출한다.",
+    "두 구성값을 합산하고 동일한 기준 GDP 대비 비중을 주석으로 표시한다."
+  ],
+  "message_conditions": [
+    "비용절감과 추가 가치의 중복 집계 방지",
+    "최대 기술적 대체율은 실현율이 아님",
+    "자본비용·규제·현장 적합성 및 사회적 수용성이 제약",
+    "모형의 세부 입력 및 가격 기준은 미공개"
+  ],
+  "design_moves": [
+    "원본의 누적막대와 색, 값, 순서 유지. 오른쪽 괄호를 범례로 변경했고 작은 구간 라벨을 옆으로 이동; 글꼴·제목·각주 근사."
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "diff_notes": "원본의 누적막대와 색, 값, 순서 유지. 오른쪽 괄호를 범례로 변경했고 작은 구간 라벨을 옆으로 이동; 글꼴·제목·각주 근사.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.bcg.com/publications/2026/physical-ai-japan-value-opportunity",
+  "training_pair": {
+    "instruction": "Recreate the identified chart using the supplied observations and configurable themes.",
+    "response": {
+      "code_file": "chart.py",
+      "input_file": "data.csv",
+      "config_file": "config.json",
+      "command": "python chart.py --theme source --output source.png --dpi 200",
+      "input_schema": {
+        "unit": "USD billion/year; GDP share percent",
+        "period": "2040 scenario; GDP denominator FY2025; FX 2025 average",
+        "denominator": "annual Japanese addressable value; FY2025 Japan GDP for percentage",
+        "source": "US BLS; US Department of Labor O*NET; IFR; company data; expert interviews; BCG Institute analysis",
+        "sample": "20 industries, 232 occupations, approximately 7,500 tasks mapped to O*NET",
+        "provenance": "All numeric observations are printed on original figure; calculated bar stack total equals printed total.",
+        "nominal_real": "price basis not disclosed; USD converted at 2025 average FX",
+        "missing": "raw data, detailed model or survey weights not disclosed",
+        "calculation_notes": "절감 가치는 인원·임금과 기술 대체율에 기반하고 신규 가치는 수익성과 기술 대체율 및 수요 확대 가정에 의존한다. 최대 $450bn은 2040년 기술적 상한이며 실현 매출이나 GDP 증가 예측이 아니다."
+      },
+      "configuration": {
+        "THEME": {
+          "source": {
+            "font_size": 11,
+            "title_size": 18,
+            "ink": "#18211c",
+            "colors": [
+              "#4442b8",
+              "#10d600"
+            ],
+            "accent": "#97dedb"
+          },
+          "neutral": {
+            "font_size": 11,
+            "title_size": 18,
+            "ink": "#18211c",
+            "colors": [
+              "#365a78",
+              "#a3b8c9"
+            ],
+            "accent": "#dce7ee"
+          }
+        },
+        "CONTEXT": {
+          "title": "Physical AI: labor savings and new demand in Japan",
+          "kind": "scenario_stack",
+          "figsize": [
+            12,
+            5.6
+          ],
+          "series_labels": [
+            "Cost savings",
+            "New value"
+          ],
+          "note": "Sources: US BLS, US Department of Labor (O*NET), IFR, company data, expert interviews, BCG Institute.\n2040 technical ceiling, not expected adoption. Exchange rate: $1 = ¥150 (2025 average).",
+          "unit": "Addressable annual value ($ billions)",
+          "gdp_label": "Share of FY2025 GDP",
+          "layout": {
+            "axes_rect": [
+              0.04,
+              0.26,
+              0.73,
+              0.57
+            ],
+            "legend_xy": [
+              0.78,
+              0.77
+            ],
+            "title_xy": [
+              0.025,
+              0.95
+            ],
+            "note_xy": [
+              0.025,
+              0.055
+            ]
+          }
+        }
+      },
+      "data_csv": "category,description,cost_savings,new_value,total,gdp_pct,cost_savings_provenance,new_value_provenance,total_provenance,gdp_pct_provenance,value_unit,gdp_unit,period\nRestricted,Only proven|capabilities,27,10,37,0.8,reported,reported,reported,reported,USD billion/year,percent,2040 scenario; GDP denominator FY2025; FX 2025 average\nMedium,Incremental|progress,142,78,220,4.9,reported,reported,reported,reported,USD billion/year,percent,2040 scenario; GDP denominator FY2025; FX 2025 average\nMaximum,Outdoor perception|and dexterity,296,154,450,10,reported,reported,reported,reported,USD billion/year,percent,2040 scenario; GDP denominator FY2025; FX 2025 average\n",
+      "code": "import argparse, csv, json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import Patch\n\ndef render(data, theme, context):\n    plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': theme['font_size']})\n    fig = plt.figure(figsize=context['figsize'], facecolor='white')\n    fig.text(*context['layout']['title_xy'],context['title'],fontsize=theme['title_size'],weight='bold',va='top',color=theme['ink'])\n    if context['kind']=='ranked_pairs':\n        groups=list(dict.fromkeys(r['group'] for r in data))\n        axes=fig.subplots(1,len(groups),squeeze=False)[0]\n        fig.subplots_adjust(**context['layout']['subplots'])\n        fig.legend(handles=[Patch(color=theme['colors'][i],label=v) for i,v in enumerate(context['series_labels'])],loc='upper left',bbox_to_anchor=context['layout']['legend_xy'],ncol=2,frameon=False)\n        xmax=max(float(r[k]) for r in data for k in ('value_a','value_b'))*1.30\n        for panel,(ax,group) in enumerate(zip(axes,groups)):\n            rows=sorted((r for r in data if r['group']==group),key=lambda r:int(r['rank']))\n            ax.set_title(group,weight='bold',pad=10)\n            for y,r in enumerate(rows):\n                if panel==0: ax.text(-xmax*.25,y+.1,r['rank'],ha='center',va='center',color=theme['colors'][0],fontsize=theme['title_size'],clip_on=False)\n                ax.text(0,y-.35,r['category'],weight='bold',va='bottom',fontsize=theme['font_size']-1)\n                for i,k in enumerate(('value_a','value_b')):\n                    v=float(r[k]); pos=y+i*.22\n                    ax.barh(pos,v,height=.20,color=theme['colors'][i]); ax.text(v+.45,pos,f'{v:g}%',va='center',fontsize=theme['font_size']-1)\n            ax.set_xlim(0,xmax); ax.set_ylim(len(rows)-.45,-.65); ax.axis('off')\n            if panel < len(groups)-1: ax.axvline(xmax*1.07,color='#dddddd',lw=.8,clip_on=False)\n    elif context['kind']=='scenario_stack':\n        ax=fig.add_axes(context['layout']['axes_rect']); ax.axis('off')\n        rows=data; vals=[float(r['cost_savings'])+float(r['new_value']) for r in rows]\n        ymax=max(vals)*1.25; ax.set_ylim(0,ymax); ax.set_xlim(-.48,len(rows)-.45)\n        for i,(r,total) in enumerate(zip(rows,vals)):\n            a,b=float(r['cost_savings']),float(r['new_value']); w=.65\n            ax.bar(i,a,width=w,color=theme['colors'][0]); ax.bar(i,b,bottom=a,width=w,color=theme['colors'][1]);\n            ax.text(i,a/2,f'{a:g}',ha='center',va='center',color='white',weight='bold',fontsize=theme['font_size']-1)\n            ax.text(i if b/ymax>.04 else i+w*.34,a+b/2,f'{b:g}',ha='center',va='center',color=theme['ink'],weight='bold',fontsize=theme['font_size']-2 if b/ymax<=.04 else theme['font_size']-1,bbox=dict(fc=theme['colors'][1],ec='none',pad=.5) if b/ymax<=.04 else None)\n            ax.text(i,total+ymax*.025,f'{total:g}',ha='center',va='bottom',weight='bold')\n            ax.text(i+w*.34,total+ymax*.07,f\"{float(r['gdp_pct']):.1f}%\",ha='center',va='bottom',bbox=dict(boxstyle='round,pad=.25',fc=theme['accent'],ec='none'),weight='bold',fontsize=theme['font_size']-1)\n            ax.text(i,-ymax*.05,r['category'],ha='center',va='top',weight='bold',clip_on=False)\n            ax.text(i,-ymax*.12,r['description'].replace('|','\\n'),ha='center',va='top',fontsize=theme['font_size']-1,clip_on=False)\n        fig.text(.04,.85,context['unit'],weight='bold',color=theme['ink'])\n        fig.legend(handles=[Patch(color=theme['accent'],label=context['gdp_label']),Patch(color=theme['colors'][1],label=context['series_labels'][1]),Patch(color=theme['colors'][0],label=context['series_labels'][0])],loc='upper left',bbox_to_anchor=context['layout']['legend_xy'],frameon=False,fontsize=theme['font_size']-1)\n    elif context['kind']=='timeline_stack':\n        ax=fig.add_axes(context['layout']['axes_rect']); rows=data; vals=[float(r['build_months'])+float(r['ramp_months']) for r in rows]; ymax=max(vals)*1.2\n        ax.set_ylim(0,ymax); ax.set_xlim(-.55,len(rows)-.45); ax.axis('off'); ax.axhline(0,color='#666666',lw=.7)\n        for i,(r,total) in enumerate(zip(rows,vals)):\n            a,b=float(r['build_months']),float(r['ramp_months']); ax.bar(i,a,width=.48,color=theme['colors'][0]); ax.bar(i,b,bottom=a,width=.48,color=theme['colors'][1],edgecolor='white',linewidth=.5)\n            ax.text(i,a/2,f'{a:g}',ha='center',va='center',color='white'); ax.text(i,a+b/2,f'{b:g}',ha='center',va='center',color=theme['ink']); ax.text(i,total+ymax*.025,f'{total:g}',ha='center',va='bottom',weight='bold')\n            ax.text(i,-ymax*.035,r['category'].replace('|','\\n'),ha='center',va='top',clip_on=False); ax.text(i,-ymax*.25,r['case_count'],ha='center',va='center',clip_on=False)\n            if r['row_type']=='aggregate' and i>0: ax.axvline(i-.5,color='#aaaaaa',ls=':',lw=1,ymin=-.2,clip_on=False)\n        ax.text(-.58,float(rows[0]['build_months'])/2,context['series_labels'][0],ha='right',va='center',fontsize=theme['font_size']-1,clip_on=False)\n        ax.text(-.58,float(rows[0]['build_months'])+float(rows[0]['ramp_months'])/2,context['series_labels'][1].replace('|','\\n'),ha='right',va='center',fontsize=theme['font_size']-1,clip_on=False)\n        fig.text(.025,.88,context['unit'],weight='bold'); fig.text(.025,.285,context['count_label'],weight='bold',fontsize=theme['font_size']-1)\n        for y in (.31,.26): fig.add_artist(plt.Line2D([.025,.975],[y,y],transform=fig.transFigure,color='#999999',lw=.7))\n        aggregate=next(r for r in rows if r['row_type']=='aggregate'); keys=('payback_months','roi_3y_x','case_count')\n        for i,(key,label) in enumerate(zip(keys,context['kpi_labels'])):\n            x=.025+i*.33; fig.text(x,.205,label,fontsize=theme['font_size']-1,va='center'); fig.text(x+.15,.205,context['kpi_formats'][i].format(float(aggregate[key])),weight='bold',fontsize=theme['title_size'],va='center')\n            if i<2: fig.add_artist(plt.Line2D([x+.31,x+.31],[.17,.24],transform=fig.transFigure,color='#777777',lw=.7))\n    else: raise ValueError('unknown kind')\n    fig.text(*context['layout']['note_xy'],context['note'],fontsize=theme['font_size']-2,va='bottom',color=theme['ink'],linespacing=1.35)\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser(); root=Path(__file__).parent\n    p.add_argument('--data',type=Path,default=root/'data.csv'); p.add_argument('--config',type=Path,default=root/'config.json'); p.add_argument('--theme',choices=['source','neutral'],default='source'); p.add_argument('--output',type=Path,required=True); p.add_argument('--dpi',type=int,default=200)\n    a=p.parse_args(); c=json.loads(a.config.read_text()); data=list(csv.DictReader(a.data.open())); fig=render(data,c['THEME'][a.theme],c['CONTEXT']); a.output.parent.mkdir(parents=True,exist_ok=True); fig.savefig(a.output,dpi=a.dpi); plt.close(fig)\nif __name__=='__main__': main()\n"
+    }
+  },
+  "source_title": "Physical AI in Japan",
+  "insight_type": "Scenario ceiling"
+}

@@ -1,0 +1,143 @@
+{
+  "firm": "McKinsey",
+  "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+  "published_date": "2026-11-17",
+  "collected_date": "2026-11-25",
+  "figure_ref": "PDF page 2 (zero-based page 2), Exhibit 1 — time to value by domain",
+  "chart_key": "mckinsey_banking_agentic_time_to_value_ex1",
+  "source_image_url": "PDF page index 2",
+  "business_context": "은행의 Agentic AI 경쟁은 비용절감뿐 아니라 조직의 실행 속도와 고객 접점 변화에 달려 있다.",
+  "key_message": "Agentic AI 투자회수기간과 완전한 효과 도달 기간은 다른 지표이므로 구축·램프업·손익 회수의 세 기준을 분리해야 한다.",
+  "chart_type": "timeline_stack",
+  "encoding": {
+    "x": "ordered domains and separate published aggregate",
+    "y": "duration months",
+    "color": "build vs ramp-up",
+    "size": "bar length from values",
+    "sort": "original order, aggregate last",
+    "labels": "component values, total, case-count row, separate summary KPIs"
+  },
+  "data_spec": {
+    "unit": "months; case counts; ROI multiple",
+    "period": "Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026",
+    "denominator": "domain-level use cases; 52 total",
+    "source": "Client interviews, September–October 2026; McKinsey AI ROI benchmark",
+    "sample": "52 use cases: 33 operations, 7 risk, 4 knowledge, 4 software, 4 other",
+    "provenance": "All printed values reported; 10 and 2.9 are approximate. Domain payback and ROI missing.",
+    "nominal_real": "not applicable; ROI formula as source footnote, price basis not disclosed",
+    "missing": "raw cases, aggregation weights, individual cashflows not disclosed",
+    "calculation_notes": "공식 상위 보고서 발행일은 11월 17일이고 PDF 표지에는 2026년 11월만 표기된다. 평균 13개월은 공개 집계값이며 표본별 가중치 미공개. 3년 ROI의 원문 산식 설명은 연간 영향 2배에서 연간 운영비 2배와 구축비를 차감하는 방식으로 첫 해 효과를 0으로 가정한다. 정확한 비율 분모와 사례별 현금흐름은 공개되지 않았다."
+  },
+  "data_recipe": [
+    "도메인별 실제 구축 시작·완료 및 효과 정착 날짜를 정의한다.",
+    "동일한 월 단위로 구축·램프업 기간을 구분해 집계한다.",
+    "사례수와 집계방식을 별도 표시한다.",
+    "현금흐름 정의에 따른 투자회수 및 ROI를 별도로 계산해 요약한다."
+  ],
+  "message_conditions": [
+    "기간과 현금흐름 정의가 같아야 비교 가능",
+    "집계 평균의 가중 방식은 미공개, 공개 평균을 재계산하지 않음",
+    "10개월은 전체 착수부터 회수까지라는 뜻이 아님",
+    "선별된 사례 표본이며 모든 AI 사업의 보장 수익이 아님"
+  ],
+  "design_moves": [
+    "PDF Exhibit 1의 막대·사례수 행·요약 KPI 유지; 제목·각주 재작성, 글꼴과 여백 근사."
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "diff_notes": "PDF Exhibit 1의 막대·사례수 행·요약 KPI 유지; 제목·각주 재작성, 글꼴과 여백 근사.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "mckinsey_global-banking-annual-review",
+  "training_pair": {
+    "instruction": "Recreate the identified chart using the supplied observations and configurable themes.",
+    "response": {
+      "code_file": "chart.py",
+      "input_file": "data.csv",
+      "config_file": "config.json",
+      "command": "python chart.py --theme source --output source.png --dpi 200",
+      "input_schema": {
+        "unit": "months; case counts; ROI multiple",
+        "period": "Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026",
+        "denominator": "domain-level use cases; 52 total",
+        "source": "Client interviews, September–October 2026; McKinsey AI ROI benchmark",
+        "sample": "52 use cases: 33 operations, 7 risk, 4 knowledge, 4 software, 4 other",
+        "provenance": "All printed values reported; 10 and 2.9 are approximate. Domain payback and ROI missing.",
+        "nominal_real": "not applicable; ROI formula as source footnote, price basis not disclosed",
+        "missing": "raw cases, aggregation weights, individual cashflows not disclosed",
+        "calculation_notes": "공식 상위 보고서 발행일은 11월 17일이고 PDF 표지에는 2026년 11월만 표기된다. 평균 13개월은 공개 집계값이며 표본별 가중치 미공개. 3년 ROI의 원문 산식 설명은 연간 영향 2배에서 연간 운영비 2배와 구축비를 차감하는 방식으로 첫 해 효과를 0으로 가정한다. 정확한 비율 분모와 사례별 현금흐름은 공개되지 않았다."
+      },
+      "configuration": {
+        "THEME": {
+          "source": {
+            "font_size": 11,
+            "title_size": 18,
+            "ink": "#18211c",
+            "colors": [
+              "#112478",
+              "#8794bf"
+            ],
+            "accent": "#d3e1ff"
+          },
+          "neutral": {
+            "font_size": 11,
+            "title_size": 18,
+            "ink": "#18211c",
+            "colors": [
+              "#365a78",
+              "#a3b8c9"
+            ],
+            "accent": "#dce7ee"
+          }
+        },
+        "CONTEXT": {
+          "title": "Banking agentic AI: build, ramp-up and payback",
+          "kind": "timeline_stack",
+          "figsize": [
+            12,
+            7.5
+          ],
+          "series_labels": [
+            "Build",
+            "Ramp-up to|full benefit"
+          ],
+          "note": "Payback: estimated run-rate impact months needed to recover build cost. ROI: ramp-adjusted estimate; year 1 assumes no benefit.\nSource: Client interviews, September–October 2026; McKinsey AI ROI benchmark. PDF cover gives November 2026; parent report dated Nov 17.",
+          "unit": "Average time to full benefit (months)",
+          "count_label": "Use cases",
+          "kpi_labels": [
+            "Average payback",
+            "Three-year ROI",
+            "Use cases"
+          ],
+          "kpi_formats": [
+            "~{:g} mo",
+            "~{:g}x",
+            "{:g}"
+          ],
+          "layout": {
+            "axes_rect": [
+              0.13,
+              0.39,
+              0.84,
+              0.43
+            ],
+            "title_xy": [
+              0.025,
+              0.95
+            ],
+            "note_xy": [
+              0.025,
+              0.055
+            ]
+          }
+        }
+      },
+      "data_csv": "category,build_months,ramp_months,total_months,case_count,row_type,payback_months,roi_3y_x,build_provenance,ramp_provenance,total_provenance,count_provenance,payback_provenance,roi_provenance,period\nOperations and|servicing,6,6,12,33,domain,,,reported,reported,reported,reported,missing,missing,\"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026\"\nRisk and|compliance,6,10,16,7,domain,,,reported,reported,reported,reported,missing,missing,\"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026\"\nKnowledge and|reporting,5,3,8,4,domain,,,reported,reported,reported,reported,missing,missing,\"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026\"\nSoftware|development,9,9,18,4,domain,,,reported,reported,reported,reported,missing,missing,\"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026\"\nOther,8,4,12,4,domain,,,reported,reported,reported,reported,missing,missing,\"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026\"\nAverage,7,6,13,52,aggregate,10,2.9,reported,reported,reported,reported,reported,reported,\"Client interviews Sep–Oct 2026; 3-year ROI model; parent report Nov 17, PDF month Nov 2026\"\n",
+      "code": "import argparse, csv, json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import Patch\n\ndef render(data, theme, context):\n    plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': theme['font_size']})\n    fig = plt.figure(figsize=context['figsize'], facecolor='white')\n    fig.text(*context['layout']['title_xy'],context['title'],fontsize=theme['title_size'],weight='bold',va='top',color=theme['ink'])\n    if context['kind']=='ranked_pairs':\n        groups=list(dict.fromkeys(r['group'] for r in data))\n        axes=fig.subplots(1,len(groups),squeeze=False)[0]\n        fig.subplots_adjust(**context['layout']['subplots'])\n        fig.legend(handles=[Patch(color=theme['colors'][i],label=v) for i,v in enumerate(context['series_labels'])],loc='upper left',bbox_to_anchor=context['layout']['legend_xy'],ncol=2,frameon=False)\n        xmax=max(float(r[k]) for r in data for k in ('value_a','value_b'))*1.30\n        for panel,(ax,group) in enumerate(zip(axes,groups)):\n            rows=sorted((r for r in data if r['group']==group),key=lambda r:int(r['rank']))\n            ax.set_title(group,weight='bold',pad=10)\n            for y,r in enumerate(rows):\n                if panel==0: ax.text(-xmax*.25,y+.1,r['rank'],ha='center',va='center',color=theme['colors'][0],fontsize=theme['title_size'],clip_on=False)\n                ax.text(0,y-.35,r['category'],weight='bold',va='bottom',fontsize=theme['font_size']-1)\n                for i,k in enumerate(('value_a','value_b')):\n                    v=float(r[k]); pos=y+i*.22\n                    ax.barh(pos,v,height=.20,color=theme['colors'][i]); ax.text(v+.45,pos,f'{v:g}%',va='center',fontsize=theme['font_size']-1)\n            ax.set_xlim(0,xmax); ax.set_ylim(len(rows)-.45,-.65); ax.axis('off')\n            if panel < len(groups)-1: ax.axvline(xmax*1.07,color='#dddddd',lw=.8,clip_on=False)\n    elif context['kind']=='scenario_stack':\n        ax=fig.add_axes(context['layout']['axes_rect']); ax.axis('off')\n        rows=data; vals=[float(r['cost_savings'])+float(r['new_value']) for r in rows]\n        ymax=max(vals)*1.25; ax.set_ylim(0,ymax); ax.set_xlim(-.48,len(rows)-.45)\n        for i,(r,total) in enumerate(zip(rows,vals)):\n            a,b=float(r['cost_savings']),float(r['new_value']); w=.65\n            ax.bar(i,a,width=w,color=theme['colors'][0]); ax.bar(i,b,bottom=a,width=w,color=theme['colors'][1]);\n            ax.text(i,a/2,f'{a:g}',ha='center',va='center',color='white',weight='bold',fontsize=theme['font_size']-1)\n            ax.text(i if b/ymax>.04 else i+w*.34,a+b/2,f'{b:g}',ha='center',va='center',color=theme['ink'],weight='bold',fontsize=theme['font_size']-2 if b/ymax<=.04 else theme['font_size']-1,bbox=dict(fc=theme['colors'][1],ec='none',pad=.5) if b/ymax<=.04 else None)\n            ax.text(i,total+ymax*.025,f'{total:g}',ha='center',va='bottom',weight='bold')\n            ax.text(i+w*.34,total+ymax*.07,f\"{float(r['gdp_pct']):.1f}%\",ha='center',va='bottom',bbox=dict(boxstyle='round,pad=.25',fc=theme['accent'],ec='none'),weight='bold',fontsize=theme['font_size']-1)\n            ax.text(i,-ymax*.05,r['category'],ha='center',va='top',weight='bold',clip_on=False)\n            ax.text(i,-ymax*.12,r['description'].replace('|','\\n'),ha='center',va='top',fontsize=theme['font_size']-1,clip_on=False)\n        fig.text(.04,.85,context['unit'],weight='bold',color=theme['ink'])\n        fig.legend(handles=[Patch(color=theme['accent'],label=context['gdp_label']),Patch(color=theme['colors'][1],label=context['series_labels'][1]),Patch(color=theme['colors'][0],label=context['series_labels'][0])],loc='upper left',bbox_to_anchor=context['layout']['legend_xy'],frameon=False,fontsize=theme['font_size']-1)\n    elif context['kind']=='timeline_stack':\n        ax=fig.add_axes(context['layout']['axes_rect']); rows=data; vals=[float(r['build_months'])+float(r['ramp_months']) for r in rows]; ymax=max(vals)*1.2\n        ax.set_ylim(0,ymax); ax.set_xlim(-.55,len(rows)-.45); ax.axis('off'); ax.axhline(0,color='#666666',lw=.7)\n        for i,(r,total) in enumerate(zip(rows,vals)):\n            a,b=float(r['build_months']),float(r['ramp_months']); ax.bar(i,a,width=.48,color=theme['colors'][0]); ax.bar(i,b,bottom=a,width=.48,color=theme['colors'][1],edgecolor='white',linewidth=.5)\n            ax.text(i,a/2,f'{a:g}',ha='center',va='center',color='white'); ax.text(i,a+b/2,f'{b:g}',ha='center',va='center',color=theme['ink']); ax.text(i,total+ymax*.025,f'{total:g}',ha='center',va='bottom',weight='bold')\n            ax.text(i,-ymax*.035,r['category'].replace('|','\\n'),ha='center',va='top',clip_on=False); ax.text(i,-ymax*.25,r['case_count'],ha='center',va='center',clip_on=False)\n            if r['row_type']=='aggregate' and i>0: ax.axvline(i-.5,color='#aaaaaa',ls=':',lw=1,ymin=-.2,clip_on=False)\n        ax.text(-.58,float(rows[0]['build_months'])/2,context['series_labels'][0],ha='right',va='center',fontsize=theme['font_size']-1,clip_on=False)\n        ax.text(-.58,float(rows[0]['build_months'])+float(rows[0]['ramp_months'])/2,context['series_labels'][1].replace('|','\\n'),ha='right',va='center',fontsize=theme['font_size']-1,clip_on=False)\n        fig.text(.025,.88,context['unit'],weight='bold'); fig.text(.025,.285,context['count_label'],weight='bold',fontsize=theme['font_size']-1)\n        for y in (.31,.26): fig.add_artist(plt.Line2D([.025,.975],[y,y],transform=fig.transFigure,color='#999999',lw=.7))\n        aggregate=next(r for r in rows if r['row_type']=='aggregate'); keys=('payback_months','roi_3y_x','case_count')\n        for i,(key,label) in enumerate(zip(keys,context['kpi_labels'])):\n            x=.025+i*.33; fig.text(x,.205,label,fontsize=theme['font_size']-1,va='center'); fig.text(x+.15,.205,context['kpi_formats'][i].format(float(aggregate[key])),weight='bold',fontsize=theme['title_size'],va='center')\n            if i<2: fig.add_artist(plt.Line2D([x+.31,x+.31],[.17,.24],transform=fig.transFigure,color='#777777',lw=.7))\n    else: raise ValueError('unknown kind')\n    fig.text(*context['layout']['note_xy'],context['note'],fontsize=theme['font_size']-2,va='bottom',color=theme['ink'],linespacing=1.35)\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser(); root=Path(__file__).parent\n    p.add_argument('--data',type=Path,default=root/'data.csv'); p.add_argument('--config',type=Path,default=root/'config.json'); p.add_argument('--theme',choices=['source','neutral'],default='source'); p.add_argument('--output',type=Path,required=True); p.add_argument('--dpi',type=int,default=200)\n    a=p.parse_args(); c=json.loads(a.config.read_text()); data=list(csv.DictReader(a.data.open())); fig=render(data,c['THEME'][a.theme],c['CONTEXT']); a.output.parent.mkdir(parents=True,exist_ok=True); fig.savefig(a.output,dpi=a.dpi); plt.close(fig)\nif __name__=='__main__': main()\n"
+    }
+  },
+  "source_title": "Global Banking Annual Review 2026: The AI disruption dividend",
+  "insight_type": "Time to value",
+  "parent_source_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/global-banking-annual-review",
+  "publication_date_precision": "parent report day; PDF month only"
+}

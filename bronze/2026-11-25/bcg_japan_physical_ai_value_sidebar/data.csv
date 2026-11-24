@@ -1,0 +1,4 @@
+category,description,cost_savings,new_value,total,gdp_pct,cost_savings_provenance,new_value_provenance,total_provenance,gdp_pct_provenance,value_unit,gdp_unit,period
+Restricted,Only proven|capabilities,27,10,37,0.8,reported,reported,reported,reported,USD billion/year,percent,2040 scenario; GDP denominator FY2025; FX 2025 average
+Medium,Incremental|progress,142,78,220,4.9,reported,reported,reported,reported,USD billion/year,percent,2040 scenario; GDP denominator FY2025; FX 2025 average
+Maximum,Outdoor perception|and dexterity,296,154,450,10,reported,reported,reported,reported,USD billion/year,percent,2040 scenario; GDP denominator FY2025; FX 2025 average

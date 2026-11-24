@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261125_bain_ai_retail_visibility_fig1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-24T18:21:20.065702+00:00",
+  "source_url": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+  "figure_ref": "Figure 1 — Overall tab",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "config.json": "f8b4c62f4de236afaeb7eb5e9722918e192668e177ad292662433916801de449",
+    "card.md": "8bfe14f31a9c1edfb1e46cdd114b0c0245eacf899348e6b92c1613b2d8f8b1ec",
+    "record.json": "f7c92891cb815307f077a2fe194ed1a08f34f0420a2e3e863c4ac5803fd4f806",
+    "validation.json": "6726aea13ed6c5153a60f8cc8ffa2c60aa2a626b9dac4eb5c53b95dc686dd324",
+    "data.csv": "28f4396f87326b516dbd5e3a7718be85f84204ce85b007bc179a132e1428f88d",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "chart.py": "d931ae104cb96509fc141809d4cba1490351e5fef5ba8a254d2eca91186c2ea6"
+  },
+  "payload_sha256": "3a87709e86b7e4c04154482887b5bdf4131b4c033eac94418912ed11ed55015a"
+}

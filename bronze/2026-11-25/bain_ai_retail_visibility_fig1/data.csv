@@ -1,0 +1,21 @@
+group,rank,category,value_a,value_b,value_a_provenance,value_b_provenance,unit,period
+Consumer electronics,1,Best Buy,20,17,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Consumer electronics,2,Amazon,12,25,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Consumer electronics,3,Walmart,12,19,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Consumer electronics,4,Target,9,2,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Consumer electronics,5,Apple,8,20,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Beauty,1,Ulta,21,13,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Beauty,2,Sephora,18,11,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Beauty,3,Target,11,9,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Beauty,4,Walmart,8,12,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Beauty,5,Nordstrom,7,2,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Home improvement,1,The Home Depot,29,18,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Home improvement,2,Lowe's,26,9,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Home improvement,3,Walmart,6,3,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Home improvement,4,Ace Hardware,5,1,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Home improvement,5,Amazon,5,5,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Grocery,1,Walmart,15,20,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Grocery,2,Aldi,12,3,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Grocery,3,Costco,10,7,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Grocery,4,Kroger,9,7,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed
+Grocery,5,Whole Foods Market,7,1,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed

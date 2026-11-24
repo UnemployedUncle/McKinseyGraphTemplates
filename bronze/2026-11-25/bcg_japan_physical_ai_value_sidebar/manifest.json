@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261125_bcg_japan_physical_ai_value_sidebar",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-24T18:21:20.686408+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/physical-ai-japan-value-opportunity",
+  "figure_ref": "Methodology sidebar exhibit — cost savings and new value",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "config.json": "ee21f74d7170a0d6c2cfa1f2afd150ca636c7e1ba3f8d2c27d58863a7b6993be",
+    "card.md": "015ae4b89b60d046d7ac7bf2a1f8963be8e87af2e7d879d8551a3abf0c88dcb3",
+    "record.json": "b55babf4a8301e24d9f7d0a4745ac362095fbf8e4e9be0bf231e456d100766cf",
+    "validation.json": "82506233916f216da821fdf7ccf6c62ce538e2b456992205a08c3579153fa833",
+    "data.csv": "46d45bd1a626005a430d644495b788dda5fd33e77bb02dab6c863d6bffa2cf71",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "chart.py": "d931ae104cb96509fc141809d4cba1490351e5fef5ba8a254d2eca91186c2ea6"
+  },
+  "payload_sha256": "35ef199676d68697eb526a95277ff2e58e796f4a372521734de21c6d85194882"
+}

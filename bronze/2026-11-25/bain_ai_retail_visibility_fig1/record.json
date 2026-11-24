@@ -1,0 +1,133 @@
+{
+  "firm": "Bain",
+  "source_url": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+  "published_date": "2026-11-21",
+  "collected_date": "2026-11-25",
+  "figure_ref": "Figure 1 — Overall tab",
+  "chart_key": "bain_ai_retail_visibility_fig1",
+  "source_image_url": "https://public.flourish.studio/visualisation/30873269/thumbnail",
+  "business_context": "쇼핑 여정에서 AI 답변이 상품과 판매점 탐색을 매개한다.",
+  "key_message": "AI 검색 내 가시성은 기존 시장점유율과 일치하지 않으므로 두 지표를 업종별로 독립적으로 모니터링해야 한다.",
+  "chart_type": "ranked_pairs",
+  "encoding": {
+    "x": "common percent length within panels",
+    "y": "retailer order within vertical",
+    "color": "two metrics",
+    "size": "bar length from values",
+    "sort": "original rank, including rounded ties",
+    "labels": "reported values; percent labels"
+  },
+  "data_spec": {
+    "unit": "percent (both metrics, distinct denominators)",
+    "period": "AI assistant weights: October 2026; prompt fieldwork date not disclosed",
+    "denominator": "indexed top-20 retailer mentions vs category market share",
+    "source": "Profound; Jefferies; Flywheel; Euromonitor International; Convenience Store News; Pyxis; company financials; Bain analysis",
+    "sample": "4,400+ shopping prompts; 300,000+ runs across LLMs; top 20 indexed mentions",
+    "provenance": "All numeric observations are printed on original figure; rank follows original display, not recomputed from rounded values.",
+    "nominal_real": "not applicable",
+    "missing": "raw data, detailed model or survey weights not disclosed",
+    "calculation_notes": "AI 가시성은 해당 판매점 언급 실행을 판매점 언급이 있는 실행으로 나누고 AI 서비스 월간 이용자 기준으로 가중해 상위 20개 기준으로 인덱싱했다. 시장점유율은 별도 분모이며 카테고리별 프롬프트 구성 차이도 존재한다. 상위 5개만 표시되므로 합계가 100%일 필요는 없다."
+  },
+  "data_recipe": [
+    "업종별 동일한 프롬프트 집합 및 기간을 정의한다.",
+    "모델별 응답에서 판매점 언급 여부를 집계하고 모델 이용자 가중치를 적용한다.",
+    "상위 20개 판매점 기준 인덱스와 별도 시장점유율을 조인한다.",
+    "가시성 순위를 유지하고 같은 축에 두 지표를 나란히 표시한다."
+  ],
+  "message_conditions": [
+    "같은 업종 내 비교, 시장점유율의 정의 및 모델 가중치 일치",
+    "프롬프트 구성·모델 버전이 바뀌면 순위가 달라질 수 있음",
+    "AI 언급은 실제 구매, 매출 기여 또는 인과효과를 의미하지 않음"
+  ],
+  "design_moves": [
+    "Overall 정적 화면 한정. 원본 숫자 순위열과 구분선 반영; 탭 전환 및 hover 미구현, 제목과 각주 재작성, 로고 제외."
+  ],
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "diff_notes": "Overall 정적 화면 한정. 원본 숫자 순위열과 구분선 반영; 탭 전환 및 hover 미구현, 제목과 각주 재작성, 로고 제외.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "split_group": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+  "training_pair": {
+    "instruction": "Recreate the identified chart using the supplied observations and configurable themes.",
+    "response": {
+      "code_file": "chart.py",
+      "input_file": "data.csv",
+      "config_file": "config.json",
+      "command": "python chart.py --theme source --output source.png --dpi 200",
+      "input_schema": {
+        "unit": "percent (both metrics, distinct denominators)",
+        "period": "AI assistant weights: October 2026; prompt fieldwork date not disclosed",
+        "denominator": "indexed top-20 retailer mentions vs category market share",
+        "source": "Profound; Jefferies; Flywheel; Euromonitor International; Convenience Store News; Pyxis; company financials; Bain analysis",
+        "sample": "4,400+ shopping prompts; 300,000+ runs across LLMs; top 20 indexed mentions",
+        "provenance": "All numeric observations are printed on original figure; rank follows original display, not recomputed from rounded values.",
+        "nominal_real": "not applicable",
+        "missing": "raw data, detailed model or survey weights not disclosed",
+        "calculation_notes": "AI 가시성은 해당 판매점 언급 실행을 판매점 언급이 있는 실행으로 나누고 AI 서비스 월간 이용자 기준으로 가중해 상위 20개 기준으로 인덱싱했다. 시장점유율은 별도 분모이며 카테고리별 프롬프트 구성 차이도 존재한다. 상위 5개만 표시되므로 합계가 100%일 필요는 없다."
+      },
+      "configuration": {
+        "THEME": {
+          "source": {
+            "font_size": 11,
+            "title_size": 18,
+            "ink": "#18211c",
+            "colors": [
+              "#cc0000",
+              "#cccccc"
+            ],
+            "accent": "#f3b4b4"
+          },
+          "neutral": {
+            "font_size": 11,
+            "title_size": 18,
+            "ink": "#18211c",
+            "colors": [
+              "#365a78",
+              "#a3b8c9"
+            ],
+            "accent": "#dce7ee"
+          }
+        },
+        "CONTEXT": {
+          "title": "AI visibility and retail market share can diverge",
+          "kind": "ranked_pairs",
+          "figsize": [
+            12,
+            7
+          ],
+          "series_labels": [
+            "Indexed AI visibility",
+            "Market share"
+          ],
+          "note": "Source: Profound, Jefferies, Flywheel, Euromonitor, Convenience Store News, Pyxis, company data, Bain analysis.\nIndexed AI visibility: top-20 retailer mentions, weighted by AI assistant monthly users (Oct 2026).\nPrompt mix varies by category. Values are rounded; not a conversion or causal metric.",
+          "layout": {
+            "subplots": {
+              "left": 0.1,
+              "right": 0.975,
+              "top": 0.76,
+              "bottom": 0.22,
+              "wspace": 0.28
+            },
+            "legend_xy": [
+              0.025,
+              0.87
+            ],
+            "title_xy": [
+              0.025,
+              0.95
+            ],
+            "note_xy": [
+              0.025,
+              0.055
+            ]
+          }
+        }
+      },
+      "data_csv": "group,rank,category,value_a,value_b,value_a_provenance,value_b_provenance,unit,period\nConsumer electronics,1,Best Buy,20,17,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nConsumer electronics,2,Amazon,12,25,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nConsumer electronics,3,Walmart,12,19,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nConsumer electronics,4,Target,9,2,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nConsumer electronics,5,Apple,8,20,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nBeauty,1,Ulta,21,13,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nBeauty,2,Sephora,18,11,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nBeauty,3,Target,11,9,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nBeauty,4,Walmart,8,12,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nBeauty,5,Nordstrom,7,2,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nHome improvement,1,The Home Depot,29,18,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nHome improvement,2,Lowe's,26,9,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nHome improvement,3,Walmart,6,3,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nHome improvement,4,Ace Hardware,5,1,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nHome improvement,5,Amazon,5,5,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nGrocery,1,Walmart,15,20,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nGrocery,2,Aldi,12,3,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nGrocery,3,Costco,10,7,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nGrocery,4,Kroger,9,7,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\nGrocery,5,Whole Foods Market,7,1,reported,reported,percent,AI assistant weights: October 2026; prompt fieldwork date not disclosed\n",
+      "code": "import argparse, csv, json\nfrom pathlib import Path\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import Patch\n\ndef render(data, theme, context):\n    plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': theme['font_size']})\n    fig = plt.figure(figsize=context['figsize'], facecolor='white')\n    fig.text(*context['layout']['title_xy'],context['title'],fontsize=theme['title_size'],weight='bold',va='top',color=theme['ink'])\n    if context['kind']=='ranked_pairs':\n        groups=list(dict.fromkeys(r['group'] for r in data))\n        axes=fig.subplots(1,len(groups),squeeze=False)[0]\n        fig.subplots_adjust(**context['layout']['subplots'])\n        fig.legend(handles=[Patch(color=theme['colors'][i],label=v) for i,v in enumerate(context['series_labels'])],loc='upper left',bbox_to_anchor=context['layout']['legend_xy'],ncol=2,frameon=False)\n        xmax=max(float(r[k]) for r in data for k in ('value_a','value_b'))*1.30\n        for panel,(ax,group) in enumerate(zip(axes,groups)):\n            rows=sorted((r for r in data if r['group']==group),key=lambda r:int(r['rank']))\n            ax.set_title(group,weight='bold',pad=10)\n            for y,r in enumerate(rows):\n                if panel==0: ax.text(-xmax*.25,y+.1,r['rank'],ha='center',va='center',color=theme['colors'][0],fontsize=theme['title_size'],clip_on=False)\n                ax.text(0,y-.35,r['category'],weight='bold',va='bottom',fontsize=theme['font_size']-1)\n                for i,k in enumerate(('value_a','value_b')):\n                    v=float(r[k]); pos=y+i*.22\n                    ax.barh(pos,v,height=.20,color=theme['colors'][i]); ax.text(v+.45,pos,f'{v:g}%',va='center',fontsize=theme['font_size']-1)\n            ax.set_xlim(0,xmax); ax.set_ylim(len(rows)-.45,-.65); ax.axis('off')\n            if panel < len(groups)-1: ax.axvline(xmax*1.07,color='#dddddd',lw=.8,clip_on=False)\n    elif context['kind']=='scenario_stack':\n        ax=fig.add_axes(context['layout']['axes_rect']); ax.axis('off')\n        rows=data; vals=[float(r['cost_savings'])+float(r['new_value']) for r in rows]\n        ymax=max(vals)*1.25; ax.set_ylim(0,ymax); ax.set_xlim(-.48,len(rows)-.45)\n        for i,(r,total) in enumerate(zip(rows,vals)):\n            a,b=float(r['cost_savings']),float(r['new_value']); w=.65\n            ax.bar(i,a,width=w,color=theme['colors'][0]); ax.bar(i,b,bottom=a,width=w,color=theme['colors'][1]);\n            ax.text(i,a/2,f'{a:g}',ha='center',va='center',color='white',weight='bold',fontsize=theme['font_size']-1)\n            ax.text(i if b/ymax>.04 else i+w*.34,a+b/2,f'{b:g}',ha='center',va='center',color=theme['ink'],weight='bold',fontsize=theme['font_size']-2 if b/ymax<=.04 else theme['font_size']-1,bbox=dict(fc=theme['colors'][1],ec='none',pad=.5) if b/ymax<=.04 else None)\n            ax.text(i,total+ymax*.025,f'{total:g}',ha='center',va='bottom',weight='bold')\n            ax.text(i+w*.34,total+ymax*.07,f\"{float(r['gdp_pct']):.1f}%\",ha='center',va='bottom',bbox=dict(boxstyle='round,pad=.25',fc=theme['accent'],ec='none'),weight='bold',fontsize=theme['font_size']-1)\n            ax.text(i,-ymax*.05,r['category'],ha='center',va='top',weight='bold',clip_on=False)\n            ax.text(i,-ymax*.12,r['description'].replace('|','\\n'),ha='center',va='top',fontsize=theme['font_size']-1,clip_on=False)\n        fig.text(.04,.85,context['unit'],weight='bold',color=theme['ink'])\n        fig.legend(handles=[Patch(color=theme['accent'],label=context['gdp_label']),Patch(color=theme['colors'][1],label=context['series_labels'][1]),Patch(color=theme['colors'][0],label=context['series_labels'][0])],loc='upper left',bbox_to_anchor=context['layout']['legend_xy'],frameon=False,fontsize=theme['font_size']-1)\n    elif context['kind']=='timeline_stack':\n        ax=fig.add_axes(context['layout']['axes_rect']); rows=data; vals=[float(r['build_months'])+float(r['ramp_months']) for r in rows]; ymax=max(vals)*1.2\n        ax.set_ylim(0,ymax); ax.set_xlim(-.55,len(rows)-.45); ax.axis('off'); ax.axhline(0,color='#666666',lw=.7)\n        for i,(r,total) in enumerate(zip(rows,vals)):\n            a,b=float(r['build_months']),float(r['ramp_months']); ax.bar(i,a,width=.48,color=theme['colors'][0]); ax.bar(i,b,bottom=a,width=.48,color=theme['colors'][1],edgecolor='white',linewidth=.5)\n            ax.text(i,a/2,f'{a:g}',ha='center',va='center',color='white'); ax.text(i,a+b/2,f'{b:g}',ha='center',va='center',color=theme['ink']); ax.text(i,total+ymax*.025,f'{total:g}',ha='center',va='bottom',weight='bold')\n            ax.text(i,-ymax*.035,r['category'].replace('|','\\n'),ha='center',va='top',clip_on=False); ax.text(i,-ymax*.25,r['case_count'],ha='center',va='center',clip_on=False)\n            if r['row_type']=='aggregate' and i>0: ax.axvline(i-.5,color='#aaaaaa',ls=':',lw=1,ymin=-.2,clip_on=False)\n        ax.text(-.58,float(rows[0]['build_months'])/2,context['series_labels'][0],ha='right',va='center',fontsize=theme['font_size']-1,clip_on=False)\n        ax.text(-.58,float(rows[0]['build_months'])+float(rows[0]['ramp_months'])/2,context['series_labels'][1].replace('|','\\n'),ha='right',va='center',fontsize=theme['font_size']-1,clip_on=False)\n        fig.text(.025,.88,context['unit'],weight='bold'); fig.text(.025,.285,context['count_label'],weight='bold',fontsize=theme['font_size']-1)\n        for y in (.31,.26): fig.add_artist(plt.Line2D([.025,.975],[y,y],transform=fig.transFigure,color='#999999',lw=.7))\n        aggregate=next(r for r in rows if r['row_type']=='aggregate'); keys=('payback_months','roi_3y_x','case_count')\n        for i,(key,label) in enumerate(zip(keys,context['kpi_labels'])):\n            x=.025+i*.33; fig.text(x,.205,label,fontsize=theme['font_size']-1,va='center'); fig.text(x+.15,.205,context['kpi_formats'][i].format(float(aggregate[key])),weight='bold',fontsize=theme['title_size'],va='center')\n            if i<2: fig.add_artist(plt.Line2D([x+.31,x+.31],[.17,.24],transform=fig.transFigure,color='#777777',lw=.7))\n    else: raise ValueError('unknown kind')\n    fig.text(*context['layout']['note_xy'],context['note'],fontsize=theme['font_size']-2,va='bottom',color=theme['ink'],linespacing=1.35)\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser(); root=Path(__file__).parent\n    p.add_argument('--data',type=Path,default=root/'data.csv'); p.add_argument('--config',type=Path,default=root/'config.json'); p.add_argument('--theme',choices=['source','neutral'],default='source'); p.add_argument('--output',type=Path,required=True); p.add_argument('--dpi',type=int,default=200)\n    a=p.parse_args(); c=json.loads(a.config.read_text()); data=list(csv.DictReader(a.data.open())); fig=render(data,c['THEME'][a.theme],c['CONTEXT']); a.output.parent.mkdir(parents=True,exist_ok=True); fig.savefig(a.output,dpi=a.dpi); plt.close(fig)\nif __name__=='__main__': main()\n"
+    }
+  },
+  "source_title": "AI retail search visibility",
+  "insight_type": "Benchmark gap"
+}

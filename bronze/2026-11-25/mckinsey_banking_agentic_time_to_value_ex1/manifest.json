@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261125_mckinsey_banking_agentic_time_to_value_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-24T18:21:21.376261+00:00",
+  "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+  "figure_ref": "PDF page 2 (zero-based page 2), Exhibit 1 — time to value by domain",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "config.json": "910c87b47e64b9b3b055f0e6b471501cb366e2e73e2ea178b16f922723ee09cd",
+    "card.md": "ab4b08987d49ebadb99fb4d596acff89872abb89f1aff01a2bcd60f285eaf809",
+    "record.json": "4cc7fc3a303e60c0acf64277ceb2fe917b7e92c86214f0b34cfc2f83b93dceb7",
+    "validation.json": "b109861fc46417a58d935e60396322dfec679171e4df509f2eda4fb0e5b936cf",
+    "data.csv": "8b9f4df718e909429244cef0e7943e6e4d7bdf532ed003e6362cd1bed90e9afe",
+    "requirements.txt": "12a0a7bc6e1b1254c2f593a250e6ccff4dbd3cf0b27d6819696a9db86f4e530d",
+    "chart.py": "d931ae104cb96509fc141809d4cba1490351e5fef5ba8a254d2eca91186c2ea6"
+  },
+  "payload_sha256": "517e376099b7f5b954cc7a5f38aa731b96f2345710b48bc1221ba66945e2f01f"
+}

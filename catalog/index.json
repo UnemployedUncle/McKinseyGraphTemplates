@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 82,
+    "bronze": 85,
     "silver": 0,
     "gold": 0
   },
@@ -1152,6 +1152,48 @@
       "key_message": "AI 도입을 넘어 조직의 업무흐름을 바꾼 응답 비중은 높지만, 역할까지 재설계한 단계는 16%에 불과하다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": null,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261125_bain_ai_retail_visibility_fig1",
+      "tier": "bronze",
+      "path": "bronze/2026-11-25/bain_ai_retail_visibility_fig1",
+      "contract": "render-v1",
+      "payload_sha256": "3a87709e86b7e4c04154482887b5bdf4131b4c033eac94418912ed11ed55015a",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+      "figure_ref": "Figure 1 — Overall tab",
+      "key_message": "AI 검색 내 가시성은 기존 시장점유율과 일치하지 않으므로 두 지표를 업종별로 독립적으로 모니터링해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.71,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261125_bcg_japan_physical_ai_value_sidebar",
+      "tier": "bronze",
+      "path": "bronze/2026-11-25/bcg_japan_physical_ai_value_sidebar",
+      "contract": "render-v1",
+      "payload_sha256": "35ef199676d68697eb526a95277ff2e58e796f4a372521734de21c6d85194882",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/physical-ai-japan-value-opportunity",
+      "figure_ref": "Methodology sidebar exhibit — cost savings and new value",
+      "key_message": "기술 진전 수준에 따라 일본 Physical AI의 2040년 기술적 가치 상한이 크게 달라지므로 투자 판단에서 시나리오를 분리해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261125_mckinsey_banking_agentic_time_to_value_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-11-25/mckinsey_banking_agentic_time_to_value_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "517e376099b7f5b954cc7a5f38aa731b96f2345710b48bc1221ba66945e2f01f",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+      "figure_ref": "PDF page 2 (zero-based page 2), Exhibit 1 — time to value by domain",
+      "key_message": "Agentic AI 투자회수기간과 완전한 효과 도달 기간은 다른 지표이므로 구축·램프업·손익 회수의 세 기준을 분리해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.71,
       "training_eligible": false
     }
   ]
