@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-26",
+  "started_at": "2026-11-26T03:15:03+09:00",
+  "local_validated_at": "2026-11-26T03:19:59+09:00",
+  "remote_verified_at": "2026-11-26T03:24:27+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "goal": 3,
+  "completed": 3,
+  "counts": {
+    "bronze": 88,
+    "silver": 0,
+    "gold": 0
+  },
+  "original_verified_total": 23,
+  "original_verified_new": 2,
+  "bronze_commit": "69819ce419ebff167018aa1b4cf1a01a78d952d6",
+  "previous_head": "25b2ee501a1d6ee487adfa8892db4742a2964d65",
+  "templates": [
+    {
+      "firm": "Bain",
+      "path": "bronze/2026-11-26/bain_grocery_citation_mix_fig2",
+      "payload_sha256": "1d38d1b71dd01639e262397dbfddfc8eeb4118723f4174288143ba385db17702",
+      "source_url": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+      "published_date": "2026-11-21",
+      "figure_ref": "Figure 2",
+      "validation_status": "unverified",
+      "fidelity_score": 4.43
+    },
+    {
+      "firm": "BCG",
+      "path": "bronze/2026-11-26/bcg_ims_tco_scale_ex4",
+      "payload_sha256": "b97357f1ebcc0b2cb1618a850a9fc06febb5562e120eed1cc2acf41bdba18829",
+      "source_url": "https://www.bcg.com/publications/2026/telco-core-network-as-a-service",
+      "published_date": "2026-11-25",
+      "figure_ref": "Exhibit 4",
+      "validation_status": "verified",
+      "fidelity_score": 4.71
+    },
+    {
+      "firm": "McKinsey",
+      "path": "bronze/2026-11-26/mckinsey_banking_ai_preference_ex3",
+      "payload_sha256": "196d7187f8d14a66df4af9b85dc6093dae6cdeacd4d412e0bded5bbc11c2c4c1",
+      "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+      "published_date": "2026-11-17",
+      "figure_ref": "Exhibit 3, zero-based PDF page 8",
+      "validation_status": "verified",
+      "fidelity_score": 4.57
+    }
+  ],
+  "validation": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "local_tests_passed": 6,
+    "local_tests_total": 6,
+    "local_png_count": 6,
+    "dpi": 200,
+    "visual_inspection": true,
+    "manifest_payloads_verified": 3,
+    "remote_files_byte_identical": 24,
+    "remote_catalog_rows": 88,
+    "remote_catalog_jsonl_match": true,
+    "medallion_ingest_catalog": "Executed exact current relevant functions in isolated local repository for 3 new bundles; compared with remote script; merged generated rows into prior remote index without replacing existing rows.",
+    "full_repo_ci_local": false,
+    "actions": {
+      "run_id": 45674771511,
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/45674771511"
+    }
+  },
+  "package": {
+    "filename": "Consulting_Graph_Template_2026-11-26_PREPARED.zip",
+    "sha256": "e7db3c424bee478d8184e0724c7e043e5f34cdc4685059399ba1f5f679cd41e8",
+    "file_count": 33,
+    "bytes": 962110,
+    "persistent_copy": "user library",
+    "persistent_copy_confirmed": true
+  },
+  "human_review": "pending",
+  "training_eligible": false,
+  "notes": "No promotion or model training. Bain remains below 4.5 after 3 rounds; other charts passed self-assessment. No duplicate source/figure pairs. For delivery, retrieve this record and package, and recheck CI only; no new research or duplicate commit."
+}
