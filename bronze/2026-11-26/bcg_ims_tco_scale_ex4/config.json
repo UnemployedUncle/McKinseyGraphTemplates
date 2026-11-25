@@ -1,0 +1,67 @@
+{
+  "THEME": {
+    "source": {
+      "colors": [
+        "#ddd9cf",
+        "#092b1a",
+        "#a0fa79"
+      ],
+      "label_colors": [
+        "#111",
+        "white",
+        "#111"
+      ],
+      "ink": "#13251f",
+      "muted": "#666666",
+      "ribbon_alpha": 0.36
+    },
+    "neutral": {
+      "colors": [
+        "#d0d5dc",
+        "#355b78",
+        "#83b9b4"
+      ],
+      "label_colors": [
+        "#111",
+        "white",
+        "#111"
+      ],
+      "ink": "#13251f",
+      "muted": "#666666",
+      "ribbon_alpha": 0.36
+    }
+  },
+  "CONTEXT": {
+    "kind": "grouped",
+    "groups": [
+      "1 million subscribers",
+      "2 million subscribers",
+      "5 million subscribers"
+    ],
+    "series": [
+      "Traditional IMS",
+      "Operator-deployed cloud-native IMS",
+      "IMSaaS"
+    ],
+    "title": "Managed IMS reduces five-year TCO, especially at smaller scale",
+    "subtitle": "Indexed annualized five-year IMS TCO per subscriber",
+    "note": "Source: BCG analysis using Orange Wholesale and ng-voice inputs. Traditional IMS at 1m subscribers = 100. Relative savings from displayed indices.",
+    "figsize": [
+      12,
+      6.7
+    ],
+    "margins": {
+      "left": 0.075,
+      "right": 0.98,
+      "top": 0.79,
+      "bottom": 0.24
+    },
+    "bar_width": 0.24,
+    "ymax": 120,
+    "short_series": [
+      "traditional",
+      "cloud-native",
+      "managed"
+    ]
+  }
+}

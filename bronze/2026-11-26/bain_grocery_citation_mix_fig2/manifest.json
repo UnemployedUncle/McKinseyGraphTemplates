@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261126_bain_grocery_citation_mix_fig2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-25T18:19:59.574591+00:00",
+  "source_url": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+  "figure_ref": "Figure 2 — grocery citations by source type",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "0dec65054f40a499d788f8a90c1df0811dc6f2f49b96337d5e2e72e0f7940d72",
+    "chart.py": "fe43b3fc4cdc4344fa954a4408a9df039c0ea96844a88196415fc1d26fcfdbb3",
+    "data.csv": "91d423ed49d9795ecea5d7b227d89e0b399c299325765cd842822ee3463b03dd",
+    "config.json": "3c1b9c39bb94d1f1b602cc758c034dd3e9c165a4bc6db3330b638c2cdd75b334",
+    "record.json": "47d89731fedc149c1834fdfc2be7fdd96d9d8b60dc834b764d533e1a7c2a13d6",
+    "validation.json": "9a5e8315386dfd1a3a7e4c1bacdd867486ca314c67f6ff358151182399aef916",
+    "requirements.txt": "f2474e79247a1ad965a2b8a20ef8ce4fa6a01b2dc86b7cc43095145ad9d28b94"
+  },
+  "payload_sha256": "1d38d1b71dd01639e262397dbfddfc8eeb4118723f4174288143ba385db17702"
+}

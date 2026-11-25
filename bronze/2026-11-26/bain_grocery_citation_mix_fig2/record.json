@@ -1,0 +1,138 @@
+{
+  "firm": "Bain",
+  "source_url": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+  "published_date": "2026-11-21",
+  "collected_date": "2026-11-26",
+  "figure_ref": "Figure 2 — grocery citations by source type",
+  "chart_key": "bain_grocery_citation_mix_fig2",
+  "source_image_url": "https://public.flourish.studio/visualisation/30856098/thumbnail",
+  "split_group": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+  "business_context": "플랫폼마다 어떤 출처를 근거로 답변하는지 진단",
+  "key_message": "AI 검색 최적화에는 플랫폼별 인용 출처 구성을 구분한 콘텐츠 전략이 필요하다.",
+  "chart_type": "stacked",
+  "insight_type": "composition",
+  "encoding": "동일 폭 세로 100% 누적막대, 플랫폼 순서 유지, 출처 유형별 고정색, 공개 레이블만 표기. 상단 범례, 하단 출처·추정 경고. 작은 구간은 별도 수치 라벨 없이 표현.",
+  "data_spec": {
+    "unit": "percent of citations per assistant",
+    "period": "2026; exact collection dates not disclosed",
+    "denominator": "All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant",
+    "fields": [
+      "group",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "denominator",
+      "provenance",
+      "error_pp",
+      "source_ref"
+    ],
+    "value_provenance": "reported or digitized_estimate; no synthetic observations"
+  },
+  "data_recipe": "플랫폼별 인용 발생 건수를 출처 유형별로 집계하고 각 플랫폼의 전체 인용수로 나눈다. 분류를 동일하게 유지하고 중복 인용 발생 건수 처리 기준을 고정한다. 공개 라벨과 판독 추정치를 구분하고 반올림 합계는 도형만 정규화한다.",
+  "message_conditions": "인용 구성은 클릭률·매출 기여가 아니다. 프롬프트와 모델 버전이 바뀌면 결과도 바뀐다. 비표시 세부 구간은 썸네일의 100% 축 412px 및 경계 판독으로 반올림한 추정값(±1%p); 0 추정도 확정 0이 아니다. 표본 수와 상세 조사일 미공개. 원본 hover는 재현하지 않음.",
+  "design_moves": "동일 폭 세로 100% 누적막대, 플랫폼 순서 유지, 출처 유형별 고정색, 공개 레이블만 표기. 상단 범례, 하단 출처·추정 경고. 작은 구간은 별도 수치 라벨 없이 표현.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Render the specified chart with its published or explicitly estimated inputs, and preserve units, comparison order and provenance.",
+    "response": {
+      "code": "import argparse,csv,json\nfrom pathlib import Path\nimport numpy as np\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import Rectangle,Patch\nfrom matplotlib.ticker import PercentFormatter\n\n\ndef render(data, theme, context):\n    groups=context['groups']; series=context['series']; colors=theme['colors']\n    lookup={(r['group'],r['series']):float(r['value']) for r in data}\n    assert len(lookup)==len(data)==len(groups)*len(series)\n    a=np.array([[lookup[g,s] for s in series] for g in groups]); assert np.isfinite(a).all() and (a>=0).all()\n    fig,ax=plt.subplots(figsize=context['figsize']); fig.patch.set_facecolor('white')\n    fig.subplots_adjust(**context['margins']); fig.text(.055,.945,context['title'],fontsize=18,weight='bold',color=theme['ink'],va='top')\n    fig.text(.055,.88,context['subtitle'],fontsize=11,weight='medium',color=theme['ink'],va='top')\n    kind=context['kind']; x=np.arange(len(groups)); ax.spines[['top','right','left']].set_visible(False)\n    ax.tick_params(axis='both',length=0,labelsize=10); ax.set_axisbelow(True)\n    if kind=='grouped':\n        w=context['bar_width']; ax.set_ylim(0,context['ymax']); ax.set_xticks(x,groups); ax.set_yticks(np.arange(0,context['ymax']+1,20)); ax.grid(axis='y',alpha=.15)\n        for j,s in enumerate(series):\n            pos=x+(j-(len(series)-1)/2)*w; ax.bar(pos,a[:,j],w,color=colors[j],label=s)\n            for p,v in zip(pos,a[:,j]): ax.text(p,v+2,f'{v:g}',ha='center',fontsize=10,weight='bold')\n        for i,row in enumerate(a):\n            for j,ref,offset in [(2,0,16),(2,1,8)]:\n                y=max(row[ref],row[j])+offset; p=x[i]+(ref-1)*w; q=x[i]+(j-1)*w\n                ax.plot([p,p,q,q],[y-2,y,y,y-2],color=theme['muted'],lw=.8,ls='--'); ax.text((p+q)/2,y+1,f'−{round((1-row[j]/row[ref])*100)}% vs '+context['short_series'][ref],ha='center',fontsize=8)\n        ax.legend(loc='upper center',bbox_to_anchor=(.5,-.12),ncol=3,frameon=False,fontsize=9)\n    elif kind=='stacked':\n        assert np.all(np.abs(a.sum(axis=1)-100)<=2)\n        z=a/a.sum(axis=1)[:,None]*100; bottom=np.zeros(len(groups)); ax.set_ylim(0,100); ax.set_xlim(-.5,len(groups)-.5); ax.set_xticks(x,groups); ax.set_yticks(np.arange(0,101,20)); ax.yaxis.set_major_formatter(PercentFormatter(100)); ax.grid(axis='y',alpha=.15)\n        for j,s in enumerate(series):\n            ax.bar(x,z[:,j],context['bar_width'],bottom=bottom,color=colors[j],edgecolor='white',linewidth=.7)\n            for i,g in enumerate(groups):\n                r=next(r for r in data if r['group']==g and r['series']==s)\n                if r['provenance']=='reported' and a[i,j]>=context['label_min']:\n                    ax.text(x[i],bottom[i]+z[i,j]/2,f'{a[i,j]:g}%',ha='center',va='center',color=theme['label_colors'][j],fontsize=11,weight='bold')\n            bottom+=z[:,j]\n        order=[i for col in range(context['legend_cols']) for i in range(col,len(series),context['legend_cols'])]\n        fig.legend([Patch(facecolor=colors[i]) for i in order],[series[i] for i in order],loc='upper left',bbox_to_anchor=(.05,.83),ncol=context['legend_cols'],frameon=False,fontsize=9)\n    elif kind=='ribbon':\n        assert np.allclose(a.sum(axis=1),100) and len(groups)==2\n        w=context['bar_width']; left,right=0,1; t=np.linspace(0,1,301); f=t*t*(3-2*t); xx=left+w/2+(right-left-w)*t\n        low=np.c_[np.zeros(2),np.cumsum(a,axis=1)[:,:-1]]; high=np.cumsum(a,axis=1)\n        for j,s in enumerate(series):\n            lo=low[0,j]+(low[1,j]-low[0,j])*f; hi=high[0,j]+(high[1,j]-high[0,j])*f\n            ax.fill_between(xx,lo,hi,color=colors[j],alpha=theme['ribbon_alpha'],linewidth=0)\n            for i,p in enumerate([left,right]):\n                ax.add_patch(Rectangle((p-w/2,low[i,j]),w,a[i,j],facecolor=colors[j],edgecolor='white',linewidth=.7)); ax.text(p,low[i,j]+a[i,j]/2,f'{a[i,j]:g}',ha='center',va='center',fontsize=12,color=theme['label_colors'][j])\n            ax.text(right+w/2+.025,low[1,j]+a[1,j]/2,s,va='center',fontsize=10)\n        ax.set_xlim(-.15,1.75); ax.set_ylim(0,100); ax.set_xticks([0,1],groups,fontweight='bold'); ax.set_yticks([]); ax.spines['bottom'].set_visible(False)\n    else: raise ValueError(kind)\n    fig.text(.055,.035,context['note'],fontsize=9,color=theme['muted'],va='bottom',wrap=True)\n    return fig\n\n\ndef main():\n    p=argparse.ArgumentParser(); base=Path(__file__).resolve().parent\n    p.add_argument('--data',type=Path,default=base/'data.csv'); p.add_argument('--config',type=Path,default=base/'config.json'); p.add_argument('--theme',choices=['source','neutral'],default='source'); p.add_argument('--output',type=Path,required=True); p.add_argument('--dpi',type=int,default=200); args=p.parse_args()\n    cfg=json.loads(args.config.read_text()); data=list(csv.DictReader(args.data.open())); fig=render(data,cfg['THEME'][args.theme],cfg['CONTEXT']); args.output.parent.mkdir(parents=True,exist_ok=True); fig.savefig(args.output,dpi=args.dpi); plt.close(fig)\n\nif __name__=='__main__': main()\n",
+      "data_csv": "group,series,value,unit,period,denominator,provenance,error_pp,source_ref\nChatGPT,Earned media,30,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nChatGPT,Social,6,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nChatGPT,Search engine,2,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nChatGPT,Retailer / DTC,16,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nChatGPT,Marketplace,3,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nChatGPT,Digital services,2,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nChatGPT,Educational / .org,23,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nChatGPT,Other,19,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle AI,Earned media,24,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle AI,Social,29,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle AI,Search engine,25,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle AI,Retailer / DTC,6,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle AI,Marketplace,2,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nGoogle AI,Digital services,1,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nGoogle AI,Educational / .org,3,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nGoogle AI,Other,9,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle Gemini,Earned media,46,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle Gemini,Social,7,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle Gemini,Search engine,0,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nGoogle Gemini,Retailer / DTC,13,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle Gemini,Marketplace,2,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nGoogle Gemini,Digital services,8,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nGoogle Gemini,Educational / .org,4,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nGoogle Gemini,Other,19,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nClaude,Earned media,58,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nClaude,Social,4,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nClaude,Search engine,6,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nClaude,Retailer / DTC,4,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nClaude,Marketplace,2,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,digitized_estimate,1,Figure 2 — grocery citations by source type\nClaude,Digital services,6,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nClaude,Educational / .org,7,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\nClaude,Other,14,percent of citations per assistant,2026; exact collection dates not disclosed,All source occurrences in what-to-buy and where-to-buy grocery prompts per assistant,reported,,Figure 2 — grocery citations by source type\n",
+      "config": {
+        "THEME": {
+          "source": {
+            "colors": [
+              "#ff676a",
+              "#cf0000",
+              "#960200",
+              "#d2d0f8",
+              "#9c8ee9",
+              "#5941cc",
+              "#b5a2c7",
+              "#d0d0ce"
+            ],
+            "label_colors": [
+              "white",
+              "white",
+              "white",
+              "#111",
+              "#111",
+              "white",
+              "#111",
+              "#111"
+            ],
+            "ink": "#13251f",
+            "muted": "#666666",
+            "ribbon_alpha": 0.36
+          },
+          "neutral": {
+            "colors": [
+              "#364f6b",
+              "#6789a5",
+              "#8ba8bf",
+              "#b4c9d9",
+              "#d4e1ea",
+              "#816fa4",
+              "#a9a0b7",
+              "#dddddd"
+            ],
+            "label_colors": [
+              "white",
+              "white",
+              "#111",
+              "#111",
+              "#111",
+              "white",
+              "#111",
+              "#111"
+            ],
+            "ink": "#13251f",
+            "muted": "#666666",
+            "ribbon_alpha": 0.36
+          }
+        },
+        "CONTEXT": {
+          "kind": "stacked",
+          "groups": [
+            "ChatGPT",
+            "Google AI",
+            "Google Gemini",
+            "Claude"
+          ],
+          "series": [
+            "Earned media",
+            "Social",
+            "Search engine",
+            "Retailer / DTC",
+            "Marketplace",
+            "Digital services",
+            "Educational / .org",
+            "Other"
+          ],
+          "title": "Grocery AI citations draw on different source mixes",
+          "subtitle": "Share of citations by source type, %",
+          "note": "Source: Profound / Bain. Unlabelled segments estimated from thumbnail (±1 pp); geometry normalized to 100%. Labels show reported values only.",
+          "figsize": [
+            12,
+            7
+          ],
+          "margins": {
+            "left": 0.065,
+            "right": 0.98,
+            "top": 0.73,
+            "bottom": 0.14
+          },
+          "bar_width": 0.8,
+          "label_min": 6,
+          "legend_cols": 4
+        }
+      },
+      "command": "python chart.py --theme source --output source.png --dpi 200"
+    }
+  },
+  "source_title": "AI Is the New Search. Here’s How Retailers Win the Answer",
+  "validation_status": "unverified",
+  "fidelity_score": 4.43,
+  "diff_notes": "원본 정적 썸네일의 4개 플랫폼과 8개 색상, 0–100% 축, 표시된 라벨을 유지. 12개 미표시 구간은 약 ±1%p 판독치이므로 값 항목 감점. 정규화로 인한 도형 차이, 원본 6열 범례와 글꼴·비율 차이. hover 미구현."
+}

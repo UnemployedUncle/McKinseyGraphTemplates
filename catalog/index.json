@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 85,
+    "bronze": 88,
     "silver": 0,
     "gold": 0
   },
@@ -1194,6 +1194,48 @@
       "key_message": "Agentic AI 투자회수기간과 완전한 효과 도달 기간은 다른 지표이므로 구축·램프업·손익 회수의 세 기준을 분리해야 한다.",
       "historical_agent_status": "verified",
       "historical_agent_score": 4.71,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261126_bain_grocery_citation_mix_fig2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-26/bain_grocery_citation_mix_fig2",
+      "contract": "render-v1",
+      "payload_sha256": "1d38d1b71dd01639e262397dbfddfc8eeb4118723f4174288143ba385db17702",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/ai-is-the-new-search-heres-how-retailers-win-the-answer/",
+      "figure_ref": "Figure 2 — grocery citations by source type",
+      "key_message": "AI 검색 최적화에는 플랫폼별 인용 출처 구성을 구분한 콘텐츠 전략이 필요하다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": 4.43,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261126_bcg_ims_tco_scale_ex4",
+      "tier": "bronze",
+      "path": "bronze/2026-11-26/bcg_ims_tco_scale_ex4",
+      "contract": "render-v1",
+      "payload_sha256": "b97357f1ebcc0b2cb1618a850a9fc06febb5562e120eed1cc2acf41bdba18829",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/telco-core-network-as-a-service",
+      "figure_ref": "Exhibit 4 — indexed annualized five-year IMS TCO",
+      "key_message": "공유형 관리서비스의 상대적 비용 우위는 가입자 규모가 작을수록 크므로 자체 구축과 서비스 구매 판단에 규모를 반영해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.71,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261126_mckinsey_banking_ai_preference_ex3",
+      "tier": "bronze",
+      "path": "bronze/2026-11-26/mckinsey_banking_ai_preference_ex3",
+      "contract": "render-v1",
+      "payload_sha256": "196d7187f8d14a66df4af9b85dc6093dae6cdeacd4d412e0bded5bbc11c2c4c1",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+      "figure_ref": "PDF zero-based page 8, Exhibit 3 — preferences for AI vs human assistance",
+      "key_message": "기본 금융 질문과 투자 조언의 AI 선호도 차이를 반영해 사람의 개입 수준을 업무별로 설계해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
       "training_eligible": false
     }
   ]

@@ -1,0 +1,121 @@
+{
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/telco-core-network-as-a-service",
+  "published_date": "2026-11-25",
+  "collected_date": "2026-11-26",
+  "figure_ref": "Exhibit 4 — indexed annualized five-year IMS TCO",
+  "chart_key": "bcg_ims_tco_scale_ex4",
+  "source_image_url": "https://web-assets.bcg.com/dims4/default/39516a6/2147483647/strip/true/crop/3600x2005%2B0%2B0/resize/499x278%21/format/webp/quality/80/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2Fd1%2F11%2F9a3e29b8495081af26a2ee26a676%2Felevate-telco-cloud-platforms-with-core-network-as-a-service-ex04.png",
+  "split_group": "https://www.bcg.com/publications/2026/telco-core-network-as-a-service",
+  "business_context": "구축 대 구매 의사결정과 규모별 단위비용 비교",
+  "key_message": "공유형 관리서비스의 상대적 비용 우위는 가입자 규모가 작을수록 크므로 자체 구축과 서비스 구매 판단에 규모를 반영해야 한다.",
+  "chart_type": "grouped",
+  "insight_type": "scale economics",
+  "encoding": "가로축 가입자 규모, 세로축 공통 비용 지수, 모델별 세 막대. 데이터에서 계산한 절감률을 점선 괄호로 표시, 중립·짙은 녹색·연두색으로 모델 분리. 범례 아래 배치.",
+  "data_spec": {
+    "unit": "index, traditional IMS at 1m = 100",
+    "period": "2026 case analysis; five-year annualized TCO",
+    "denominator": "Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m",
+    "fields": [
+      "group",
+      "series",
+      "value",
+      "unit",
+      "period",
+      "denominator",
+      "provenance",
+      "error_pp",
+      "source_ref"
+    ],
+    "value_provenance": "reported or digitized_estimate; no synthetic observations",
+    "derived_annotations": {
+      "provenance": "derived",
+      "formula": "100 * (1 - IMSaaS_index / comparator_index), rounded to whole percent",
+      "baseline_index": 100
+    }
+  },
+  "data_recipe": "동일 서비스·품질 범위의 5년 구축비와 운영비를 연간화하고 가입자수로 나눈다. 기준 모델의 비용을 100으로 지수화한다. 각 규모별 비교모델 대비 절감률을 1−관리형 비용/비교비용으로 계산한다.",
+  "message_conditions": "실제 통화 비용과 세부 모델 가정, 표본 수, 조사 시점 미공개. 원본 주석의 2m traditional 대비 −71% 등은 반올림이며 동일 서비스 수준·지역 규제·보안 요구 조건에 따라 우위가 달라질 수 있다.",
+  "design_moves": "가로축 가입자 규모, 세로축 공통 비용 지수, 모델별 세 막대. 데이터에서 계산한 절감률을 점선 괄호로 표시, 중립·짙은 녹색·연두색으로 모델 분리. 범례 아래 배치.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Render the specified chart with its published or explicitly estimated inputs, and preserve units, comparison order and provenance.",
+    "response": {
+      "code": "import argparse,csv,json\nfrom pathlib import Path\nimport numpy as np\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.patches import Rectangle,Patch\nfrom matplotlib.ticker import PercentFormatter\n\n\ndef render(data, theme, context):\n    groups=context['groups']; series=context['series']; colors=theme['colors']\n    lookup={(r['group'],r['series']):float(r['value']) for r in data}\n    assert len(lookup)==len(data)==len(groups)*len(series)\n    a=np.array([[lookup[g,s] for s in series] for g in groups]); assert np.isfinite(a).all() and (a>=0).all()\n    fig,ax=plt.subplots(figsize=context['figsize']); fig.patch.set_facecolor('white')\n    fig.subplots_adjust(**context['margins']); fig.text(.055,.945,context['title'],fontsize=18,weight='bold',color=theme['ink'],va='top')\n    fig.text(.055,.88,context['subtitle'],fontsize=11,weight='medium',color=theme['ink'],va='top')\n    kind=context['kind']; x=np.arange(len(groups)); ax.spines[['top','right','left']].set_visible(False)\n    ax.tick_params(axis='both',length=0,labelsize=10); ax.set_axisbelow(True)\n    if kind=='grouped':\n        w=context['bar_width']; ax.set_ylim(0,context['ymax']); ax.set_xticks(x,groups); ax.set_yticks(np.arange(0,context['ymax']+1,20)); ax.grid(axis='y',alpha=.15)\n        for j,s in enumerate(series):\n            pos=x+(j-(len(series)-1)/2)*w; ax.bar(pos,a[:,j],w,color=colors[j],label=s)\n            for p,v in zip(pos,a[:,j]): ax.text(p,v+2,f'{v:g}',ha='center',fontsize=10,weight='bold')\n        for i,row in enumerate(a):\n            for j,ref,offset in [(2,0,16),(2,1,8)]:\n                y=max(row[ref],row[j])+offset; p=x[i]+(ref-1)*w; q=x[i]+(j-1)*w\n                ax.plot([p,p,q,q],[y-2,y,y,y-2],color=theme['muted'],lw=.8,ls='--'); ax.text((p+q)/2,y+1,f'−{round((1-row[j]/row[ref])*100)}% vs '+context['short_series'][ref],ha='center',fontsize=8)\n        ax.legend(loc='upper center',bbox_to_anchor=(.5,-.12),ncol=3,frameon=False,fontsize=9)\n    elif kind=='stacked':\n        assert np.all(np.abs(a.sum(axis=1)-100)<=2)\n        z=a/a.sum(axis=1)[:,None]*100; bottom=np.zeros(len(groups)); ax.set_ylim(0,100); ax.set_xlim(-.5,len(groups)-.5); ax.set_xticks(x,groups); ax.set_yticks(np.arange(0,101,20)); ax.yaxis.set_major_formatter(PercentFormatter(100)); ax.grid(axis='y',alpha=.15)\n        for j,s in enumerate(series):\n            ax.bar(x,z[:,j],context['bar_width'],bottom=bottom,color=colors[j],edgecolor='white',linewidth=.7)\n            for i,g in enumerate(groups):\n                r=next(r for r in data if r['group']==g and r['series']==s)\n                if r['provenance']=='reported' and a[i,j]>=context['label_min']:\n                    ax.text(x[i],bottom[i]+z[i,j]/2,f'{a[i,j]:g}%',ha='center',va='center',color=theme['label_colors'][j],fontsize=11,weight='bold')\n            bottom+=z[:,j]\n        fig.legend([Patch(facecolor=c) for c in colors],series,loc='upper left',bbox_to_anchor=(.05,.83),ncol=context['legend_cols'],frameon=False,fontsize=9)\n    elif kind=='ribbon':\n        assert np.allclose(a.sum(axis=1),100) and len(groups)==2\n        w=context['bar_width']; left,right=0,1; t=np.linspace(0,1,301); f=t*t*(3-2*t); xx=left+w/2+(right-left-w)*t\n        low=np.c_[np.zeros(2),np.cumsum(a,axis=1)[:,:-1]]; high=np.cumsum(a,axis=1)\n        for j,s in enumerate(series):\n            lo=low[0,j]+(low[1,j]-low[0,j])*f; hi=high[0,j]+(high[1,j]-high[0,j])*f\n            ax.fill_between(xx,lo,hi,color=colors[j],alpha=theme['ribbon_alpha'],linewidth=0)\n            for i,p in enumerate([left,right]):\n                ax.add_patch(Rectangle((p-w/2,low[i,j]),w,a[i,j],facecolor=colors[j],edgecolor='white',linewidth=.7)); ax.text(p,low[i,j]+a[i,j]/2,f'{a[i,j]:g}',ha='center',va='center',fontsize=12,color=theme['label_colors'][j])\n            ax.text(right+w/2+.025,low[1,j]+a[1,j]/2,s,va='center',fontsize=10)\n        ax.set_xlim(-.15,1.75); ax.set_ylim(0,100); ax.set_xticks([0,1],groups,fontweight='bold'); ax.set_yticks([]); ax.spines['bottom'].set_visible(False)\n    else: raise ValueError(kind)\n    fig.text(.055,.035,context['note'],fontsize=9,color=theme['muted'],va='bottom',wrap=True)\n    return fig\n\n\ndef main():\n    p=argparse.ArgumentParser(); base=Path(__file__).resolve().parent\n    p.add_argument('--data',type=Path,default=base/'data.csv'); p.add_argument('--config',type=Path,default=base/'config.json'); p.add_argument('--theme',choices=['source','neutral'],default='source'); p.add_argument('--output',type=Path,required=True); p.add_argument('--dpi',type=int,default=200); args=p.parse_args()\n    cfg=json.loads(args.config.read_text()); data=list(csv.DictReader(args.data.open())); fig=render(data,cfg['THEME'][args.theme],cfg['CONTEXT']); args.output.parent.mkdir(parents=True,exist_ok=True); fig.savefig(args.output,dpi=args.dpi); plt.close(fig)\n\nif __name__=='__main__': main()\n",
+      "data_csv": "group,series,value,unit,period,denominator,provenance,error_pp,source_ref\n1 million subscribers,Traditional IMS,100,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n1 million subscribers,Operator-deployed cloud-native IMS,40,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n1 million subscribers,IMSaaS,20,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n2 million subscribers,Traditional IMS,70,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n2 million subscribers,Operator-deployed cloud-native IMS,30,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n2 million subscribers,IMSaaS,20,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n5 million subscribers,Traditional IMS,45,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n5 million subscribers,Operator-deployed cloud-native IMS,20,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n5 million subscribers,IMSaaS,18,\"index, traditional IMS at 1m = 100\",2026 case analysis; five-year annualized TCO,\"Annualized five-year IMS total cost per subscriber, normalized to traditional IMS at 1m\",reported,,Exhibit 4 — indexed annualized five-year IMS TCO\n",
+      "config": {
+        "THEME": {
+          "source": {
+            "colors": [
+              "#ddd9cf",
+              "#092b1a",
+              "#a0fa79"
+            ],
+            "label_colors": [
+              "#111",
+              "white",
+              "#111"
+            ],
+            "ink": "#13251f",
+            "muted": "#666666",
+            "ribbon_alpha": 0.36
+          },
+          "neutral": {
+            "colors": [
+              "#d0d5dc",
+              "#355b78",
+              "#83b9b4"
+            ],
+            "label_colors": [
+              "#111",
+              "white",
+              "#111"
+            ],
+            "ink": "#13251f",
+            "muted": "#666666",
+            "ribbon_alpha": 0.36
+          }
+        },
+        "CONTEXT": {
+          "kind": "grouped",
+          "groups": [
+            "1 million subscribers",
+            "2 million subscribers",
+            "5 million subscribers"
+          ],
+          "series": [
+            "Traditional IMS",
+            "Operator-deployed cloud-native IMS",
+            "IMSaaS"
+          ],
+          "title": "Managed IMS reduces five-year TCO, especially at smaller scale",
+          "subtitle": "Indexed annualized five-year IMS TCO per subscriber",
+          "note": "Source: BCG analysis using Orange Wholesale and ng-voice inputs. Traditional IMS at 1m subscribers = 100. Relative savings from displayed indices.",
+          "figsize": [
+            12,
+            6.7
+          ],
+          "margins": {
+            "left": 0.075,
+            "right": 0.98,
+            "top": 0.79,
+            "bottom": 0.24
+          },
+          "bar_width": 0.24,
+          "ymax": 120,
+          "short_series": [
+            "traditional",
+            "cloud-native",
+            "managed"
+          ]
+        }
+      },
+      "command": "python chart.py --theme source --output source.png --dpi 200"
+    }
+  },
+  "source_title": "Elevate Telco Cloud Platforms with Core Network as a Service",
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "diff_notes": "원본 직접 이미지에서 9개 지수값, 순서, 0–120 축과 색·절감률 괄호를 확인. 절감률은 표시 지수로 재계산. 원본 서체·제목·부제 위치·여백 차이, 원본 오른쪽 Subscribers 축 라벨 생략."
+}

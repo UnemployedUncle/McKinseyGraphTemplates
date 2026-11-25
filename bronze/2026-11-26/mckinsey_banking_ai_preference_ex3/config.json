@@ -1,0 +1,60 @@
+{
+  "THEME": {
+    "source": {
+      "colors": [
+        "#00adef",
+        "#a0a0a0",
+        "#0b206f"
+      ],
+      "label_colors": [
+        "#111",
+        "#111",
+        "white"
+      ],
+      "ink": "#13251f",
+      "muted": "#666666",
+      "ribbon_alpha": 0.36
+    },
+    "neutral": {
+      "colors": [
+        "#449fa2",
+        "#b0b4b9",
+        "#34475e"
+      ],
+      "label_colors": [
+        "#111",
+        "#111",
+        "white"
+      ],
+      "ink": "#13251f",
+      "muted": "#666666",
+      "ribbon_alpha": 0.36
+    }
+  },
+  "CONTEXT": {
+    "kind": "ribbon",
+    "groups": [
+      "Basic financial\nquestions",
+      "Investment\nadvice"
+    ],
+    "series": [
+      "Prefer AI assistance",
+      "Open to both",
+      "Prefer human assistance"
+    ],
+    "title": "Human advice matters more for investment decisions",
+    "subtitle": "Consumer preference by financial task, % of respondents",
+    "note": "Source: McKinsey Global Banking Annual Review Consumer Survey, June 2026; ~46,000 consumers in 13 countries. Ribbons compare marginal shares, not individual flows.",
+    "figsize": [
+      11,
+      7
+    ],
+    "margins": {
+      "left": 0.21,
+      "right": 0.96,
+      "top": 0.76,
+      "bottom": 0.18
+    },
+    "bar_width": 0.22
+  }
+}

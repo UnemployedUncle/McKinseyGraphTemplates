@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261126_mckinsey_banking_ai_preference_ex3",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-25T18:19:59.597463+00:00",
+  "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+  "figure_ref": "PDF zero-based page 8, Exhibit 3 — preferences for AI vs human assistance",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "c9770b1ca386d3af54acfa7b198dba3deb1a66806b2c48b8cd855de67974a2d4",
+    "chart.py": "fc61dfeefb28e497687500e9f2ed3f9a195fec396a38f26c69d294a3be333353",
+    "data.csv": "12c487ec5d61f32b0afb35afb91ec3a9d4247e471bce942154e3023a727d90f5",
+    "config.json": "3fe13c05d2d94737869e088d94dc31d921b25320827d51e121ee9196cef3779b",
+    "record.json": "eb5f485282795221c54b84387961b4ee6c6cb874825d20b3d6c4967b5094cd76",
+    "validation.json": "f6398f86a4c962a2c5f70ff50be8b831675463002eaeee0cf17a896ae0a65887",
+    "requirements.txt": "f2474e79247a1ad965a2b8a20ef8ce4fa6a01b2dc86b7cc43095145ad9d28b94"
+  },
+  "payload_sha256": "196d7187f8d14a66df4af9b85dc6093dae6cdeacd4d412e0bded5bbc11c2c4c1"
+}

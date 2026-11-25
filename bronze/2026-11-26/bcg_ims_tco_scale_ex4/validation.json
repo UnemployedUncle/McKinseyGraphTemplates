@@ -1,0 +1,55 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "scores": {
+    "chart_type": 5,
+    "values_order": 5,
+    "axes": 5,
+    "colors_emphasis": 5,
+    "labels_annotations": 5,
+    "title_legend": 4,
+    "aspect_margins": 4
+  },
+  "score_reasons": {
+    "chart_type": "원본과 같은 차트 유형 유지",
+    "values_order": "원본 공개값 및 순서 일치",
+    "axes": "원본 축의 범위 및 의미 유지",
+    "colors_emphasis": "원본 팔레트 근사",
+    "labels_annotations": "표시된 수치와 직접 라벨 또는 괄호 유지; 리본 라벨 위치 차이",
+    "title_legend": "제목 재작성·글꼴/범례 차이",
+    "aspect_margins": "원본 비율과 여백 근사"
+  },
+  "original_visual_inspected": true,
+  "render_passed": true,
+  "data_checks_passed": true,
+  "reuse_test_passed": true,
+  "human_review": "pending",
+  "iterations": 2,
+  "commands": [
+    "python chart.py --theme source --output source.png --dpi 200",
+    "python chart.py --theme neutral --output neutral.png --dpi 200",
+    "python -W ignore::ResourceWarning -m unittest -v test_today"
+  ],
+  "versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5"
+  },
+  "checks": [
+    "reported and digitized provenance",
+    "units and denominator metadata",
+    "stack totals within rounding tolerance or grouped index arithmetic",
+    "same structure modified input render",
+    "PNG format and 200 dpi",
+    "ingest idempotence/revision/tamper fixture"
+  ],
+  "test_count": 6,
+  "test_scope": "local new charts and extracted current medallion functions; full repository CI not run locally",
+  "diff_notes": "원본 직접 이미지에서 9개 지수값, 순서, 0–120 축과 색·절감률 괄호를 확인. 절감률은 표시 지수로 재계산. 원본 서체·제목·부제 위치·여백 차이, 원본 오른쪽 Subscribers 축 라벨 생략.",
+  "original_comparison_passed": true,
+  "image_output": "artifacts outside immutable bundle",
+  "iteration_notes": [
+    "initial rendering",
+    "axis/plot-area adjustment"
+  ]
+}

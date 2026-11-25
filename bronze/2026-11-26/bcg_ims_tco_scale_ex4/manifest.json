@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261126_bcg_ims_tco_scale_ex4",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-25T18:19:59.590581+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/telco-core-network-as-a-service",
+  "figure_ref": "Exhibit 4 — indexed annualized five-year IMS TCO",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "card.md": "05d8cf20d423491781b034830c4b1d050e2e0b165364417ee7f2b5c773d7d116",
+    "chart.py": "fc61dfeefb28e497687500e9f2ed3f9a195fec396a38f26c69d294a3be333353",
+    "data.csv": "8a61f33c5d5b04b956df36950e7c85efb8b1827f1b7b33f2a14805ec934914b4",
+    "config.json": "3a4a1c9dd65b09ab651246fe495066146cf6e5d3501f0915e3c5062b42896585",
+    "record.json": "be2c17ccbb57519ea966bb62a15261e9af431e5c739b377e33845f513010f8e8",
+    "validation.json": "88e2b2326c9db75fc5d8f4bd37913542a9e679cc35f607e161f76de8c7af2739",
+    "requirements.txt": "f2474e79247a1ad965a2b8a20ef8ce4fa6a01b2dc86b7cc43095145ad9d28b94"
+  },
+  "payload_sha256": "b97357f1ebcc0b2cb1618a850a9fc06febb5562e120eed1cc2acf41bdba18829"
+}

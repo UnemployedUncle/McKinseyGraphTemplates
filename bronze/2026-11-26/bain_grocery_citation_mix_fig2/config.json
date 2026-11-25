@@ -1,0 +1,89 @@
+{
+  "THEME": {
+    "source": {
+      "colors": [
+        "#ff676a",
+        "#cf0000",
+        "#960200",
+        "#d2d0f8",
+        "#9c8ee9",
+        "#5941cc",
+        "#b5a2c7",
+        "#d0d0ce"
+      ],
+      "label_colors": [
+        "white",
+        "white",
+        "white",
+        "#111",
+        "#111",
+        "white",
+        "#111",
+        "#111"
+      ],
+      "ink": "#13251f",
+      "muted": "#666666",
+      "ribbon_alpha": 0.36
+    },
+    "neutral": {
+      "colors": [
+        "#364f6b",
+        "#6789a5",
+        "#8ba8bf",
+        "#b4c9d9",
+        "#d4e1ea",
+        "#816fa4",
+        "#a9a0b7",
+        "#dddddd"
+      ],
+      "label_colors": [
+        "white",
+        "white",
+        "#111",
+        "#111",
+        "#111",
+        "white",
+        "#111",
+        "#111"
+      ],
+      "ink": "#13251f",
+      "muted": "#666666",
+      "ribbon_alpha": 0.36
+    }
+  },
+  "CONTEXT": {
+    "kind": "stacked",
+    "groups": [
+      "ChatGPT",
+      "Google AI",
+      "Google Gemini",
+      "Claude"
+    ],
+    "series": [
+      "Earned media",
+      "Social",
+      "Search engine",
+      "Retailer / DTC",
+      "Marketplace",
+      "Digital services",
+      "Educational / .org",
+      "Other"
+    ],
+    "title": "Grocery AI citations draw on different source mixes",
+    "subtitle": "Share of citations by source type, %",
+    "note": "Source: Profound / Bain. Unlabelled segments estimated from thumbnail (±1 pp); geometry normalized to 100%. Labels show reported values only.",
+    "figsize": [
+      12,
+      7
+    ],
+    "margins": {
+      "left": 0.065,
+      "right": 0.98,
+      "top": 0.73,
+      "bottom": 0.14
+    },
+    "bar_width": 0.8,
+    "label_min": 6,
+    "legend_cols": 4
+  }
+}
