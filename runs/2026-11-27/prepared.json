@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-27",
+  "started_at": "2026-11-27T03:11:27+09:00",
+  "local_validated_at": "2026-11-27T03:16:32+09:00",
+  "remote_verified_at": "2026-11-27T03:18:01+09:00",
+  "prepared_complete": true,
+  "delivered": false,
+  "goal": 3,
+  "completed": 3,
+  "counts": {
+    "bronze": 91,
+    "silver": 0,
+    "gold": 0
+  },
+  "original_verified_total": 24,
+  "original_verified_new": 1,
+  "bronze_commit": "7be09e67362fa96d8192e34108ea42eb84591373",
+  "previous_head": "fc116ec497fddab08bcebee0505e76a3f8be942a",
+  "templates": [
+    {
+      "firm": "Bain",
+      "path": "bronze/2026-11-27/bain_luxury_market_history_snap",
+      "payload_sha256": "38974c70426d1de6b31013dcaa394d55f2d19e2c63be4d6efebe8b5f81e4e650",
+      "source_url": "https://www.bain.com/insights/luxury-holds-its-ground-in-2026-with-new-opportunities-ahead-snap-chart/",
+      "published_date": "2026-11-18",
+      "figure_ref": "Snap chart — global personal luxury goods market 2005–2026E",
+      "validation_status": "unverified",
+      "fidelity_score": 4.29
+    },
+    {
+      "firm": "BCG",
+      "path": "bronze/2026-11-27/bcg_ai_growth_outperformers_ex1",
+      "payload_sha256": "de5770831802346cc5268f88fe2bf9f648527c4202272c477f3e5dfffb02c793",
+      "source_url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+      "published_date": "2026-11-25",
+      "figure_ref": "Exhibit 1",
+      "validation_status": "verified",
+      "fidelity_score": 4.71
+    },
+    {
+      "firm": "McKinsey",
+      "path": "bronze/2026-11-27/mckinsey_banking_ai_country_ex2",
+      "payload_sha256": "f219bca50f226e2e2729fdf6471769adbc9c945cfdd9afa220fcd3371721f2be",
+      "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+      "published_date": "2026-11-17",
+      "figure_ref": "PDF zero-based page 7, Exhibit 2 — consumer awareness and use of gen AI",
+      "validation_status": "unverified",
+      "fidelity_score": 4.29
+    }
+  ],
+  "validation": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "local_tests_passed": 6,
+    "local_tests_total": 6,
+    "local_png_count": 6,
+    "dpi": 200,
+    "visual_inspection": true,
+    "manifest_payloads_verified": 3,
+    "remote_files_byte_identical": 24,
+    "remote_catalog_rows": 91,
+    "remote_catalog_jsonl_match": true,
+    "medallion_ingest_catalog": "Executed exact 8 relevant functions from current remote script in isolated local repository; function text SHA256 matched remote; script-generated new rows merged into prior 88 unchanged entries. Full repository local validation unavailable because container network could not resolve GitHub; connected GitHub reads and writes succeeded.",
+    "full_repo_ci_local": false,
+    "actions": {
+      "run_id": 45874717532,
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions/runs/45874717532"
+    }
+  },
+  "package": {
+    "filename": "Consulting_Graph_Template_2026-11-27_PREPARED.zip",
+    "sha256": "e827ff6c7cb4e8b7077686b3b13a7eda762d34658417959bd51a11f369c88184",
+    "file_count": 32,
+    "bytes": 908919,
+    "persistent_copy": "user library",
+    "persistent_copy_confirmed": true
+  },
+  "human_review": "pending",
+  "training_eligible": false,
+  "notes": "Bain and McKinsey below fidelity threshold after three rendering rounds; BCG verified. No promotion, training or duplicate research. Delivery must retrieve this record/package and recheck CI only."
+}
