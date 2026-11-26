@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 88,
+    "bronze": 91,
     "silver": 0,
     "gold": 0
   },
@@ -1236,6 +1236,48 @@
       "key_message": "기본 금융 질문과 투자 조언의 AI 선호도 차이를 반영해 사람의 개입 수준을 업무별로 설계해야 한다.",
       "historical_agent_status": "verified",
       "historical_agent_score": 4.57,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261127_bain_luxury_market_history_snap",
+      "tier": "bronze",
+      "path": "bronze/2026-11-27/bain_luxury_market_history_snap",
+      "contract": "render-v1",
+      "payload_sha256": "38974c70426d1de6b31013dcaa394d55f2d19e2c63be4d6efebe8b5f81e4e650",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/luxury-holds-its-ground-in-2026-with-new-opportunities-ahead-snap-chart/",
+      "figure_ref": "Snap chart — global personal luxury goods market 2005–2026E",
+      "key_message": "시장 성장의 장기 경로와 최근 정체를 구분해 성장 전략을 수립해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": 4.29,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261127_bcg_ai_growth_outperformers_ex1",
+      "tier": "bronze",
+      "path": "bronze/2026-11-27/bcg_ai_growth_outperformers_ex1",
+      "contract": "render-v1",
+      "payload_sha256": "de5770831802346cc5268f88fe2bf9f648527c4202272c477f3e5dfffb02c793",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+      "figure_ref": "Exhibit 1",
+      "key_message": "AI를 비용 절감뿐 아니라 성장 전략과 연결하되 공시 연관성을 인과 효과로 해석하지 말아야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.71,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261127_mckinsey_banking_ai_country_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-27/mckinsey_banking_ai_country_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "f219bca50f226e2e2729fdf6471769adbc9c945cfdd9afa220fcd3371721f2be",
+      "human_review": "pending",
+      "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+      "figure_ref": "PDF zero-based page 7, Exhibit 2 — consumer awareness and use of gen AI",
+      "key_message": "AI 인지도와 일반 사용, 금융 사용을 분리하여 국가별 전환 과제를 진단해야 한다.",
+      "historical_agent_status": "unverified",
+      "historical_agent_score": 4.29,
       "training_eligible": false
     }
   ]

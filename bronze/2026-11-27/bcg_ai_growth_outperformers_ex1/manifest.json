@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261127_bcg_ai_growth_outperformers_ex1",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-26T18:16:32.489322+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+  "figure_ref": "Exhibit 1",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "682246f3c2e28b44e42a4b61e913ab9c8aaa4745c3ecee4900b423e6c456380c",
+    "record.json": "a9c03bc932df13b341e88ebfca6c7e919d29660d698e4d6f92170d4dfea5eea3",
+    "requirements.txt": "2885a5c04e67a1d857c29932f47574d4d127d5f093a51dab1f3c2cccf7e7fde4",
+    "validation.json": "73110f5a599a37b9cec191f65c05a7573582d88bb094dfd06ceb8304228d95ac",
+    "card.md": "3f339009e898bcaba8316d42bfd00f7d7c17e1895a82561aadb70fc698948baa",
+    "config.json": "452d95b31ab8e2aea2561fec8e16cb60ac25d558ff820dc141de87b587339324",
+    "data.csv": "cc3be43e8be771b053402bd95c03aa7daf6b7cc121fa0bdb19beaf2ffc3e5510"
+  },
+  "payload_sha256": "de5770831802346cc5268f88fe2bf9f648527c4202272c477f3e5dfffb02c793"
+}

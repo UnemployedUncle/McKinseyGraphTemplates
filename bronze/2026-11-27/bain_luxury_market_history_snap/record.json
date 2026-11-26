@@ -1,0 +1,52 @@
+{
+  "source_url": "https://www.bain.com/insights/luxury-holds-its-ground-in-2026-with-new-opportunities-ahead-snap-chart/",
+  "published_date": "2026-11-18",
+  "collected_date": "2026-11-27",
+  "figure_ref": "Snap chart — global personal luxury goods market 2005–2026E",
+  "chart_key": "luxury_market_history_2005_2026",
+  "source_title": "Luxury Holds Its Ground in 2026, with New Opportunities Ahead",
+  "business_context": "시장 규모의 장기 추세와 성장 국면 진단",
+  "key_message": "시장 성장의 장기 경로와 최근 정체를 구분해 성장 전략을 수립해야 한다.",
+  "chart_type": "annotated_column_history",
+  "encoding": "연도 x, 연간 매출 y, 막대 길이, 회색 국면과 적색 마지막 전망, 국면 시작 주석과 일부 공개값 레이블; y축 눈금 생략, 0 기준선.",
+  "data_spec": {
+    "unit": "EUR billion",
+    "period": "2005–2026E",
+    "denominator": "글로벌 개인 명품 시장 연간 매출; 현행 환율 기준, 물가조정 여부 미공개",
+    "source": "Bain & Company luxury study; 조사 시점/세부 추정법 미공개",
+    "fields": [
+      "year",
+      "value",
+      "provenance",
+      "error_bound",
+      "status",
+      "phase_color",
+      "phase_label",
+      "show_year",
+      "top_px",
+      "unit"
+    ],
+    "provenance": "per value in CSV"
+  },
+  "data_recipe": [
+    "동일 범위의 연도별 시장규모를 확보한다.",
+    "공개 레이블과 추정값을 분리하고 환율 기준을 확인한다.",
+    "연도 정렬 후 전망 연도와 국면을 지정한다.",
+    "성장률은 원문 환율 기준을 유지한다."
+  ],
+  "message_conditions": "같은 시장 경계·통화·기간을 사용해야 한다. 명목 환율 변동 및 반올림에 의해 성장률이 달라질 수 있다. 고정환율 3%는 시장 규모 바에서 역산하지 않는다.",
+  "design_moves": "연도 x, 연간 매출 y, 막대 길이, 회색 국면과 적색 마지막 전망, 국면 시작 주석과 일부 공개값 레이블; y축 눈금 생략, 0 기준선.",
+  "validation_status": "unverified",
+  "fidelity_score": 4.29,
+  "diff_notes": "비표시 14개 막대는 썸네일 높이 판독 추정, hover 미구현, KPI/국면 위치 및 글꼴 근사.",
+  "split_group": "bain_luxury-holds-its-ground-in-2026-with-new-opportunities-ahead-snap-chart",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Recreate the chart structure using the public/estimated data and two themes, preserving provenance.",
+    "response": "Use the exact sibling chart.py, data.csv, config.json and requirements.txt. Install requirements, then python chart.py --theme source --output source.png --dpi 200; change theme to neutral for neutral output. Data and config are immutable inputs in this bundle."
+  },
+  "firm": "Bain",
+  "insight_type": "longitudinal_market_growth",
+  "publication_date_precision": "day"
+}

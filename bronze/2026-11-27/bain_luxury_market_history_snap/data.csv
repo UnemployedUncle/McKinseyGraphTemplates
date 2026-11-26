@@ -1,0 +1,25 @@
+year,value,provenance,error_bound,status,phase_color,phase_label,show_year,top_px,unit
+2005,139,reported,0,historical,light,Democratization,1,496,EUR billion
+2006,150,digitized_estimate,3,historical,light,,0,486,EUR billion
+2007,161,digitized_estimate,3,historical,light,,1,476,EUR billion
+2008,159,reported,0,historical,dark,Crisis,1,478,EUR billion
+2009,147,digitized_estimate,3,historical,dark,,1,489,EUR billion
+2010,167,reported,0,historical,light,"Chinese
+acceleration",1,471,EUR billion
+2011,186,digitized_estimate,3,historical,light,,0,453,EUR billion
+2012,206,digitized_estimate,3,historical,light,,0,435,EUR billion
+2013,213,digitized_estimate,3,historical,light,,0,429,EUR billion
+2014,219,digitized_estimate,3,historical,light,,1,423,EUR billion
+2015,245,reported,0,historical,dark,Reboot,1,400,EUR billion
+2016,244,digitized_estimate,3,historical,dark,,1,400,EUR billion
+2017,255,reported,0,historical,light,New normal,1,390,EUR billion
+2018,263,digitized_estimate,3,historical,light,,0,383,EUR billion
+2019,284,digitized_estimate,3,historical,light,,1,364,EUR billion
+2020,223,reported,0,historical,dark,"Covid crisis
+and rebound",1,420,EUR billion
+2021,293,digitized_estimate,3,historical,dark,,0,356,EUR billion
+2022,354,digitized_estimate,3,historical,dark,,1,300,EUR billion
+2023,369,reported,0,historical,light,Elevation,1,286,EUR billion
+2024,364,digitized_estimate,3,historical,light,,0,291,EUR billion
+2025,358,digitized_estimate,3,historical,light,,1,296,EUR billion
+2026,367,reported,0,estimate,forecast,Rewiring,1,288,EUR billion

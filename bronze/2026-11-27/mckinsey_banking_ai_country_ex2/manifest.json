@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261127_mckinsey_banking_ai_country_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-26T18:16:32.493997+00:00",
+  "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+  "figure_ref": "PDF zero-based page 7, Exhibit 2 — consumer awareness and use of gen AI",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "cd832b6f3e4d20dfb82602ac02463ac864589dfd8fcfd5da65a425e600942f6b",
+    "record.json": "53e85d10160e8518904dfb50ad38e9a1d6e1f4088b448060373a54d1503c87a4",
+    "requirements.txt": "2885a5c04e67a1d857c29932f47574d4d127d5f093a51dab1f3c2cccf7e7fde4",
+    "validation.json": "07c13ff4bc019429cb1c1caa01fbf635a23107998ab8e0e670af5be167831984",
+    "card.md": "c1d5de94d31575baed256f6d1a2e28aaf980827bc6802b3f2d6767b3bcc06ef9",
+    "config.json": "71e7e980b49e49c773c73f1f84ef3a3f4cfe567d1f52326613e9f02a8b7aaacf",
+    "data.csv": "2a34ece9afd2e5f885ba921b42cced565f095375ff88eb40ee0a52eb600f93e6"
+  },
+  "payload_sha256": "f219bca50f226e2e2729fdf6471769adbc9c945cfdd9afa220fcd3371721f2be"
+}

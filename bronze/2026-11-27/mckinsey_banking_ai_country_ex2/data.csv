@@ -1,0 +1,15 @@
+category,banking,any_use,aware,banking_provenance,any_use_provenance,aware_provenance,error_bound_pp,sample_n,unit,banking_x,any_use_x,aware_x
+Global average,23,58,92,reported,reported,reported,0,46000,percent,,,
+India,53,81,95,digitized_estimate,digitized_estimate,digitized_estimate,2,2500,percent,657,778,840
+Brazil,35,72,96,digitized_estimate,digitized_estimate,digitized_estimate,2,2700,percent,580,740,845
+Mexico,35,70,95,digitized_estimate,digitized_estimate,digitized_estimate,2,2900,percent,578,733,838
+Spain,26,62,95,digitized_estimate,digitized_estimate,digitized_estimate,2,3300,percent,538,696,839
+UK,24,57,95,digitized_estimate,digitized_estimate,digitized_estimate,2,3700,percent,532,676,838
+Australia,23,57,95,digitized_estimate,digitized_estimate,digitized_estimate,2,3600,percent,527,675,838
+US,20,55,92,digitized_estimate,digitized_estimate,digitized_estimate,2,4000,percent,513,667,828
+Italy,20,54,93,digitized_estimate,digitized_estimate,digitized_estimate,2,4000,percent,511,662,831
+Canada,18,53,92,digitized_estimate,digitized_estimate,digitized_estimate,2,4000,percent,505,657,829
+Netherlands,19,55,91,digitized_estimate,digitized_estimate,digitized_estimate,2,3900,percent,506,664,824
+Portugal,16,67,95,digitized_estimate,digitized_estimate,digitized_estimate,2,3200,percent,495,718,841
+France,15,48,88,digitized_estimate,digitized_estimate,digitized_estimate,2,4500,percent,492,634,810
+Germany,13,50,87,digitized_estimate,digitized_estimate,digitized_estimate,2,4400,percent,483,642,807

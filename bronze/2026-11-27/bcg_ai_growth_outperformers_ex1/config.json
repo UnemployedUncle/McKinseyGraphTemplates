@@ -1,0 +1,54 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "ink": "#171717",
+      "muted": "#606060",
+      "grid": "#d4d4d4",
+      "band": "#eeeeee",
+      "title_size": 18,
+      "tick_size": 10,
+      "colors": [
+        "#bfb2a0",
+        "#20b759"
+      ]
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "ink": "#171717",
+      "muted": "#606060",
+      "grid": "#d4d4d4",
+      "band": "#eeeeee",
+      "title_size": 18,
+      "tick_size": 10,
+      "colors": [
+        "#a4aab2",
+        "#236a86"
+      ]
+    }
+  },
+  "CONTEXT": {
+    "figsize": [
+      12,
+      6.8
+    ],
+    "margins": {
+      "left": 0.08,
+      "right": 0.97,
+      "bottom": 0.14,
+      "top": 0.8
+    },
+    "group_spacing": 2.5,
+    "bar_width": 0.62,
+    "legend_loc": "upper left",
+    "legend_anchor": [
+      0.04,
+      0.82
+    ],
+    "legend_title": "2023–2025 revenue growth vs. industry",
+    "subtitle": "Share of companies mentioning AI in relation to growth (%)",
+    "footnote": "Source: S&P Capital IQ, company disclosures and BCG analysis, Nov 25 2026. Selected public companies; association, not causal effect.",
+    "kind": "grouped",
+    "title": "AI features more often in strong growers’ plans"
+  }
+}

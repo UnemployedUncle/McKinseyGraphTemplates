@@ -1,0 +1,5 @@
+period,series,value,provenance,unit,sample_n,period_start,period_end
+Before GenAI (2017–2022),Underperformed,3.5,reported,percent,,2017,2022
+Before GenAI (2017–2022),Outperformed,5.5,reported,percent,,2017,2022
+After GenAI (2023–2025),Underperformed,5.7,reported,percent,,2023,2025
+After GenAI (2023–2025),Outperformed,15.5,reported,percent,,2023,2025

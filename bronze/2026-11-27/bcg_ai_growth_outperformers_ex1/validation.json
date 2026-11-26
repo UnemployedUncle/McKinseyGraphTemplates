@@ -1,0 +1,38 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "original_visual_confirmed": true,
+  "original_evidence": "Official BCG Exhibit 1 image",
+  "score_items": {
+    "type": 5,
+    "values_order": 5,
+    "axis": 5,
+    "colors_emphasis": 5,
+    "labels_annotations": 5,
+    "title_legend": 4,
+    "aspect_spacing": 4
+  },
+  "score_rationale": "Structure, axis and source color family reproduced. All four labels exact; title rewritten, legend and margins approximate.",
+  "iterations": 1,
+  "iteration_changes": [
+    "Initial source and neutral render"
+  ],
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "commands": [
+    "python chart.py --theme source --output source.png --dpi 200",
+    "python chart.py --theme neutral --output neutral.png --dpi 200"
+  ],
+  "render_passed": true,
+  "visual_inspection": "Source and neutral montage inspected after each applicable iteration",
+  "data_checks_passed": true,
+  "reuse_test_passed": true,
+  "human_review": "pending",
+  "original_comparison_passed": true,
+  "remaining_differences": "원본 그림에서 공개값 4개 확인. 제목 재작성, 글꼴·범례 박스·축 여백 근사.",
+  "local_tests": "6/6 scoped tests passed; full repository CI not run locally"
+}

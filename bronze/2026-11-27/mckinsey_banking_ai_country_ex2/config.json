@@ -1,0 +1,59 @@
+{
+  "THEME": {
+    "source": {
+      "background": "#ffffff",
+      "ink": "#171717",
+      "muted": "#606060",
+      "grid": "#aaaaaa",
+      "band": "#eeeeee",
+      "title_size": 18,
+      "tick_size": 10,
+      "colors": [
+        "#00a8e6",
+        "#284dfb",
+        "#102477"
+      ]
+    },
+    "neutral": {
+      "background": "#ffffff",
+      "ink": "#171717",
+      "muted": "#606060",
+      "grid": "#b9bec3",
+      "band": "#eeeeee",
+      "title_size": 18,
+      "tick_size": 10,
+      "colors": [
+        "#1b9b9a",
+        "#5b83a4",
+        "#303c56"
+      ]
+    }
+  },
+  "CONTEXT": {
+    "figsize": [
+      9,
+      8.5
+    ],
+    "margins": {
+      "left": 0.23,
+      "right": 0.94,
+      "bottom": 0.12,
+      "top": 0.79
+    },
+    "average_label": "Global average",
+    "columns": [
+      "banking",
+      "any_use",
+      "aware"
+    ],
+    "series_labels": [
+      "Banking use",
+      "Any use",
+      "Awareness"
+    ],
+    "subtitle": "Gen AI awareness and use, by country (% of respondents), 2026",
+    "footnote": "Source: McKinsey Global Banking Annual Review Consumer Survey, June 2026 (13 countries, ~46,000). Country points estimated ±2 pp; global average reported.",
+    "kind": "profiles",
+    "title": "Banking AI use trails awareness across markets"
+  }
+}

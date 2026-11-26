@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261127_bain_luxury_market_history_snap",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-26T18:16:32.483469+00:00",
+  "source_url": "https://www.bain.com/insights/luxury-holds-its-ground-in-2026-with-new-opportunities-ahead-snap-chart/",
+  "figure_ref": "Snap chart — global personal luxury goods market 2005–2026E",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "682246f3c2e28b44e42a4b61e913ab9c8aaa4745c3ecee4900b423e6c456380c",
+    "record.json": "8661d776ad14c47f00d85beb21367a1f271260d33f7e5ff51522a88fb48fbe1b",
+    "requirements.txt": "2885a5c04e67a1d857c29932f47574d4d127d5f093a51dab1f3c2cccf7e7fde4",
+    "validation.json": "b90b35c49bd896664688f5baeadc6eed3c8db3788fef87525cb37ea6f0bf01cc",
+    "card.md": "c166c55cb6a19a3c8975073d451ae8f79719db839686cc9ac36c12a70de6d461",
+    "config.json": "0e8fdbeecdd529f55b280287234bfa35e20cc3612a944a4351a7125800ac04dd",
+    "data.csv": "802116af300f6bb7d685579c44e263eb72eba65d0ad09a943cce16fc1bc5d379"
+  },
+  "payload_sha256": "38974c70426d1de6b31013dcaa394d55f2d19e2c63be4d6efebe8b5f81e4e650"
+}

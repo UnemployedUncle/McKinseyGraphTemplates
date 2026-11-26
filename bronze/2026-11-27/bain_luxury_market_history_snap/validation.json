@@ -1,0 +1,40 @@
+{
+  "validation_status": "unverified",
+  "fidelity_score": 4.29,
+  "original_visual_confirmed": true,
+  "original_evidence": "Official Bain linked Flourish desktop thumbnail 30871188",
+  "score_items": {
+    "type": 5,
+    "values_order": 3,
+    "axis": 5,
+    "colors_emphasis": 5,
+    "labels_annotations": 4,
+    "title_legend": 4,
+    "aspect_spacing": 4
+  },
+  "score_rationale": "Structure, axis and source color family reproduced. Unlabelled source geometry read approximately; source labels, title and spacing only approximate.",
+  "iterations": 3,
+  "iteration_changes": [
+    "Initial source and neutral render",
+    "Adjust geometry and figure ratio",
+    "Adjust spacing, grid or tick sizes; estimates remain estimates"
+  ],
+  "runtime": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "commands": [
+    "python chart.py --theme source --output source.png --dpi 200",
+    "python chart.py --theme neutral --output neutral.png --dpi 200"
+  ],
+  "render_passed": true,
+  "visual_inspection": "Source and neutral montage inspected after each applicable iteration",
+  "data_checks_passed": true,
+  "reuse_test_passed": true,
+  "human_review": "pending",
+  "original_comparison_passed": false,
+  "remaining_differences": "비표시 14개 막대는 썸네일 높이 판독 추정, hover 미구현, KPI/국면 위치 및 글꼴 근사.",
+  "local_tests": "6/6 scoped tests passed; full repository CI not run locally"
+}

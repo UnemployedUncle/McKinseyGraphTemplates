@@ -1,0 +1,56 @@
+{
+  "source_url": "https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/global%20banking%20annual%20review%202026%20part%202/global-banking-annual-review-2026-the-ai-disruption-dividend.pdf",
+  "published_date": "2026-11-17",
+  "collected_date": "2026-11-27",
+  "figure_ref": "PDF zero-based page 7, Exhibit 2 — consumer awareness and use of gen AI",
+  "chart_key": "banking_ai_country_ex2",
+  "source_title": "The AI disruption dividend",
+  "business_context": "국가별 AI 채택 단계 비교",
+  "key_message": "AI 인지도와 일반 사용, 금융 사용을 분리하여 국가별 전환 과제를 진단해야 한다.",
+  "chart_type": "connected_dot_profile",
+  "encoding": "국가 y, 응답 비율 x, 세 개 색의 점열/연결선, 평균 별도 패널, 교대 회색 행과 0–100 격자, 평균만 공개 레이블.",
+  "data_spec": {
+    "unit": "percent of respondents",
+    "period": "June 2026",
+    "denominator": "13개국 약 46,000명 소비자; 국가별 표본은 반올림 공개; 각 비율은 해당 응답자 기준",
+    "source": "McKinsey Global Banking Annual Review Consumer Survey 2026; 국가별 가중치 미공개",
+    "fields": [
+      "category",
+      "banking",
+      "any_use",
+      "aware",
+      "banking_provenance",
+      "any_use_provenance",
+      "aware_provenance",
+      "error_bound_pp",
+      "sample_n",
+      "unit",
+      "banking_x",
+      "any_use_x",
+      "aware_x"
+    ],
+    "provenance": "per value in CSV"
+  },
+  "data_recipe": [
+    "국가별 동일 문항의 응답 비율을 확보한다.",
+    "인지/일반 사용/금융 사용을 분리하고 동일 분모인지 확인한다.",
+    "금융 사용 기준 원본 순서를 보존한다. 근사값의 소폭 순서 역전은 반올림 오차로 표시한다. 평균은 별도 행.",
+    "동일 0–100 축에 세 점열을 연결하되 국가 간 흐름이 아님을 표시한다."
+  ],
+  "message_conditions": "국가별 표본 및 가중치가 비교 가능해야 한다. 각 점열은 범주 간 연결이 아니라 순위 비교이며 개인별 전환율·인과효과가 아니다.",
+  "design_moves": "국가 y, 응답 비율 x, 세 개 색의 점열/연결선, 평균 별도 패널, 교대 회색 행과 0–100 격자, 평균만 공개 레이블.",
+  "validation_status": "unverified",
+  "fidelity_score": 4.29,
+  "diff_notes": "평균 3개 공개값, 국가별 39개는 PDF 스크린샷 좌표 근사(±2%p); 선 및 패널 여백/글꼴 근사.",
+  "split_group": "mckinsey_global-banking-annual-review",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Recreate the chart structure using the public/estimated data and two themes, preserving provenance.",
+    "response": "Use the exact sibling chart.py, data.csv, config.json and requirements.txt. Install requirements, then python chart.py --theme source --output source.png --dpi 200; change theme to neutral for neutral output. Data and config are immutable inputs in this bundle."
+  },
+  "firm": "McKinsey",
+  "insight_type": "adoption_profile",
+  "publication_date_precision": "parent report day; PDF month",
+  "parent_source_url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/global-banking-annual-review"
+}
