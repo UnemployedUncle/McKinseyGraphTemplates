@@ -1,0 +1,46 @@
+{
+  "THEME": {
+    "source": {
+      "colors": [
+        "#064c27",
+        "#00848a",
+        "#24b867"
+      ],
+      "background": "#ffffff",
+      "text": "#202522",
+      "axis": "#b8b8b8"
+    },
+    "neutral": {
+      "colors": [
+        "#334e68",
+        "#718096",
+        "#a0aec0"
+      ],
+      "background": "#ffffff",
+      "text": "#202522",
+      "axis": "#b8b8b8"
+    }
+  },
+  "CONTEXT": {
+    "kind": "range_bar",
+    "title": "Technology offers the largest modeled manufacturing upside",
+    "subtitle": "Traditional hubs: range of simulated 2025 MVA ($ billion)",
+    "note": "Source: BCG Manufacturing Competitiveness Advisor Tool. One factor varies at a time; 2025 MVA is redistributed. Displayed tariff range differs by $1bn due to rounding.",
+    "figsize": [
+      10,
+      6.2
+    ],
+    "margins": {
+      "left": 0.13,
+      "right": 0.96,
+      "top": 0.78,
+      "bottom": 0.25
+    },
+    "bar_width": 0.66,
+    "baseline": 6102,
+    "ylim": [
+      3000,
+      7200
+    ]
+  }
+}

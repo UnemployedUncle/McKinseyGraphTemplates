@@ -1,0 +1,4 @@
+order,category,low_label,low,high_label,high,reported_delta,unit,provenance,period
+1,Technology,Current productivity,4337,Radical productivity,6595,2258,USD billion (2025),reported,2025 model base
+2,Tariffs,No tariffs,3836,High tariffs,5327,1492,USD billion (2025),reported,2025 model base
+3,Energy,Divergence,4278,Convergence,4395,117,USD billion (2025),reported,2025 model base

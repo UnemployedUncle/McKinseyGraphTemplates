@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261128_bcg_manufacturing_scenario_range_ex2",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-27T18:19:19.203417+00:00",
+  "source_url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+  "figure_ref": "Exhibit 2",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "0fd2b955ff6a18c97abf6609faa23d1ad24f9ba65b93528d748ca0227294ad86",
+    "record.json": "ae0141b1eee5f9b1197ea6fa90b5e7bdaf115bf81d658a583fce8d28a3dfc1d2",
+    "card.md": "3554a201ff7d290b372c9ff649aa8126d537a91ec942a518a027450b2a34f229",
+    "config.json": "a1c072703d8067d1c96bea143085717cd2a2a1058a2cdf04a180d12d5a475e84",
+    "data.csv": "bd4cc7b1e27b17175b85a1bde7170f66a4a77f0508670d99120e82e2985ac0e3",
+    "validation.json": "e8fc70d866fffd174e2052d7de24c155825fa7d3503198ffd6fcaa3ad4e02bc2",
+    "requirements.txt": "c7985209d4590704ead1797f7f9375d1dae9c9780e60392386f2344ae4279fff"
+  },
+  "payload_sha256": "9014f1cbbfc93811b93db048d3428d40c6840c02cd283da1c6b2cff2fe2efc1a"
+}

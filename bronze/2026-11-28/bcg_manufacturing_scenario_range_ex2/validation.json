@@ -1,0 +1,34 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "score_items": {
+    "type": 5,
+    "values_order": 5,
+    "axes": 5,
+    "color_emphasis": 5,
+    "labels_annotations": 4,
+    "title_legend": 4,
+    "proportions_margins": 4
+  },
+  "score_basis": "원본의 범위·기준선·색과 공개값 유지. 하단 범위 박스, 끝값 문구·위치 및 여백·폰트 근사; 관세 표시값 산술 차이 1bn.",
+  "original_visual_checked": true,
+  "render_passed": true,
+  "semantic_checks_passed": true,
+  "reuse_test_passed": true,
+  "rounds": 1,
+  "commands": [
+    "python chart.py --theme source --output source.png --dpi 200",
+    "python chart.py --theme neutral --output neutral.png --dpi 200"
+  ],
+  "versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3"
+  },
+  "tests": "6/6 isolated local tests passed (data, provenance, PNG, reuse, immutable revision and tamper)",
+  "visual_inspection": "Both actual generated themes viewed in contact sheet; official original chart visually inspected.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "validated_at": "2026-11-28T03:19:19.201646+09:00",
+  "diff_notes": "원본의 범위·기준선·색과 공개값 유지. 하단 범위 박스, 끝값 문구·위치 및 여백·폰트 근사; 관세 표시값 산술 차이 1bn."
+}

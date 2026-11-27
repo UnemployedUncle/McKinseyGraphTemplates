@@ -1,0 +1,101 @@
+{
+  "firm": "BCG",
+  "source_url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+  "published_date": "2026-11-23",
+  "collected_date": "2026-11-28",
+  "source_title": "How Technology, Geopolitics, and Energy Could Redraw the Global Manufacturing Map",
+  "figure_ref": "Exhibit 2",
+  "chart_key": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing#Exhibit 2",
+  "split_group": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+  "data_observation_period": "2025 MVA base; scenario assumptions 2025–2026",
+  "business_context": "BCG는 기존 제조 부가가치의 지역 간 재배치를 기술, 무역, 에너지 조건별로 모형화했다. 기술 범위는 4,337~6,595십억 달러로 관세와 에너지 범위보다 크다. 이는 생산성 투자가 경쟁력 회복에 중요할 수 있다는 시나리오 결과다.",
+  "key_message": "다른 조건을 고정한 모형에서 기술 시나리오만 기존 제조 허브의 부가가치를 2025년 기준 이상으로 높일 수 있다.",
+  "chart_type": "range_bar",
+  "encoding": "x=기술/관세/에너지; y=2025 USD bn; 막대 시작=하한, 끝=상한; 색=요인; 점선=6102 기준; 범위 레이블 하단; y축 절단 3000",
+  "data_spec": {
+    "fields": [
+      "order",
+      "category",
+      "low_label",
+      "low",
+      "high_label",
+      "high",
+      "reported_delta",
+      "unit",
+      "provenance",
+      "period"
+    ],
+    "period": "2025 MVA base; scenario assumptions 2025–2026",
+    "source": "BCG Manufacturing Competitiveness Advisor Tool; BCG Institute analysis",
+    "limitations": "기존 2025년 글로벌 MVA를 고정한 즉시 재배치 시뮬레이션이며 시점이나 성장률의 예측이 아니다. 54개국·47개 산업, 1,000명 제조 임원 설문에 기반한 모형. 관세의 공개 차이는 1492, 표시된 끝값 차이는 1491로 1bn 반올림 불일치가 있어 공개값 보존. 범위는 신뢰구간이 아니다."
+  },
+  "data_recipe": [
+    "같은 기준연도·가격 기준으로 기준값을 정한다.",
+    "한 번에 하나의 변수를 변화시켜 하한과 상한을 수집한다.",
+    "high-low를 계산하고 공개 차이와 반올림 오차를 확인한다.",
+    "구간을 부동 막대로 그리고 기준선을 추가한다."
+  ],
+  "message_conditions": "기존 2025년 글로벌 MVA를 고정한 즉시 재배치 시뮬레이션이며 시점이나 성장률의 예측이 아니다. 54개국·47개 산업, 1,000명 제조 임원 설문에 기반한 모형. 관세의 공개 차이는 1492, 표시된 끝값 차이는 1491로 1bn 반올림 불일치가 있어 공개값 보존. 범위는 신뢰구간이 아니다.",
+  "design_moves": "x=기술/관세/에너지; y=2025 USD bn; 막대 시작=하한, 끝=상한; 색=요인; 점선=6102 기준; 범위 레이블 하단; y축 절단 3000",
+  "reuse": "Agent ROI 민감도, 생산비·공급망 시나리오별 가치 범위 비교",
+  "validation_status": "verified",
+  "fidelity_score": 4.57,
+  "original_visual_checked": true,
+  "diff_notes": "원본의 범위·기준선·색과 공개값 유지. 하단 범위 박스, 끝값 문구·위치 및 여백·폰트 근사; 관세 표시값 산술 차이 1bn.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Render a reusable range_bar chart from the published data with source and neutral themes.",
+    "response": {
+      "code": "import argparse\nimport json\nfrom pathlib import Path\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import FuncFormatter\n\nBASE = Path(__file__).resolve().parent\nCFG = json.loads((BASE / 'config.json').read_text())\nTHEME, CONTEXT = CFG['THEME'], CFG['CONTEXT']\n\ndef render(data, theme, context):\n    if isinstance(theme, str):\n        theme = THEME[theme]\n    fig, ax = plt.subplots(figsize=context['figsize'])\n    fig.subplots_adjust(**context['margins'])\n    fig.patch.set_facecolor(theme['background'])\n    ax.set_facecolor(theme['background'])\n    if context['kind'] == 'ranked_bar':\n        d = data.sort_values('order')\n        y = range(len(d))\n        ax.barh(y, d.value, height=context['bar_width'], color=theme['colors'][0])\n        ax.set_yticks(list(y), d.category, fontsize=11)\n        ax.invert_yaxis()\n        ax.set_xlim(0, max(d.value)*1.13)\n        for i,v in enumerate(d.value):\n            ax.text(v+max(d.value)*.007, i, f'{v:g}%', va='center', fontsize=11)\n        ax.set_xticks([])\n        ax.spines['left'].set_visible(True)\n        ax.spines['left'].set_color(theme['axis'])\n    else:\n        d = data.sort_values('order').reset_index(drop=True)\n        if (d.high < d.low).any():\n            raise ValueError('high below low')\n        x = range(len(d))\n        w=context['bar_width']\n        ax.bar(x, d.high-d.low, bottom=d.low, width=w, color=theme['colors'][:len(d)])\n        span = max(d.high)-min(d.low)\n        ax.axhline(context['baseline'], color=theme['axis'], ls='--', lw=.8)\n        ax.text(len(d)-.52, context['baseline']+span*.035, f\"2025 baseline = {context['baseline']:,}\", ha='right', fontsize=10)\n        for i,r in d.iterrows():\n            ax.text(i,r.high+span*.035,f'{r.high_label}: {r.high:,.0f}',ha='center',va='bottom',fontsize=10)\n            ax.text(i,r.low-span*.035,f'{r.low_label}: {r.low:,.0f}',ha='center',va='top',fontsize=10)\n            ax.text(i,-.18,f'{r.reported_delta:,.0f}',transform=ax.get_xaxis_transform(),ha='center',va='center',color='white',fontsize=11,fontweight='bold',bbox={'boxstyle':'round,pad=.25','facecolor':theme['colors'][i],'edgecolor':'none'})\n        ax.set_xticks(list(x),d.category,fontsize=11)\n        ax.set_ylim(*context['ylim'])\n        ax.yaxis.set_major_formatter(FuncFormatter(lambda v,p:f'{v:,.0f}'))\n        ax.text(-.02,-.18,'Range ($bn)',transform=ax.transAxes,ha='right',va='center',fontsize=10)\n        ax.spines['left'].set_visible(True)\n        ax.spines['left'].set_color(theme['axis'])\n    for s in ['top','right','bottom']:\n        ax.spines[s].set_visible(False)\n    ax.tick_params(length=0,colors=theme['text'])\n    fig.text(.04,.94,context['title'],fontsize=17,fontweight='bold',color=theme['text'],va='top')\n    fig.text(.04,.865,context['subtitle'],fontsize=11,color=theme['text'],va='top')\n    fig.text(.04,.045,context['note'],fontsize=8,color=theme['text'],va='bottom',wrap=True)\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser()\n    p.add_argument('--data',type=Path,default=BASE/'data.csv')\n    p.add_argument('--config',type=Path,default=BASE/'config.json')\n    p.add_argument('--theme',choices=['source','neutral'],default='source')\n    p.add_argument('--output',type=Path,required=True)\n    p.add_argument('--dpi',type=int,default=200)\n    a=p.parse_args(); cfg=json.loads(a.config.read_text())\n    fig=render(pd.read_csv(a.data),cfg['THEME'][a.theme],cfg['CONTEXT'])\n    a.output.parent.mkdir(parents=True,exist_ok=True)\n    fig.savefig(a.output,dpi=a.dpi); plt.close(fig)\nif __name__=='__main__': main()\n",
+      "input_csv": "order,category,low_label,low,high_label,high,reported_delta,unit,provenance,period\n1,Technology,Current productivity,4337,Radical productivity,6595,2258,USD billion (2025),reported,2025 model base\n2,Tariffs,No tariffs,3836,High tariffs,5327,1492,USD billion (2025),reported,2025 model base\n3,Energy,Divergence,4278,Convergence,4395,117,USD billion (2025),reported,2025 model base\n",
+      "configuration": {
+        "THEME": {
+          "source": {
+            "colors": [
+              "#064c27",
+              "#00848a",
+              "#24b867"
+            ],
+            "background": "#ffffff",
+            "text": "#202522",
+            "axis": "#b8b8b8"
+          },
+          "neutral": {
+            "colors": [
+              "#334e68",
+              "#718096",
+              "#a0aec0"
+            ],
+            "background": "#ffffff",
+            "text": "#202522",
+            "axis": "#b8b8b8"
+          }
+        },
+        "CONTEXT": {
+          "kind": "range_bar",
+          "title": "Technology offers the largest modeled manufacturing upside",
+          "subtitle": "Traditional hubs: range of simulated 2025 MVA ($ billion)",
+          "note": "Source: BCG Manufacturing Competitiveness Advisor Tool. One factor varies at a time; 2025 MVA is redistributed. Displayed tariff range differs by $1bn due to rounding.",
+          "figsize": [
+            10,
+            6.2
+          ],
+          "margins": {
+            "left": 0.13,
+            "right": 0.96,
+            "top": 0.78,
+            "bottom": 0.25
+          },
+          "bar_width": 0.66,
+          "baseline": 6102,
+          "ylim": [
+            3000,
+            7200
+          ]
+        }
+      },
+      "command": "python chart.py --theme source --output source.png --dpi 200"
+    }
+  }
+}

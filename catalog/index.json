@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "counts": {
-    "bronze": 91,
+    "bronze": 93,
     "silver": 0,
     "gold": 0
   },
@@ -1278,6 +1278,34 @@
       "key_message": "AI 인지도와 일반 사용, 금융 사용을 분리하여 국가별 전환 과제를 진단해야 한다.",
       "historical_agent_status": "unverified",
       "historical_agent_score": 4.29,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261128_bain_healthcare_fragmentation_fig5",
+      "tier": "bronze",
+      "path": "bronze/2026-11-28/bain_healthcare_fragmentation_fig5",
+      "contract": "render-v1",
+      "payload_sha256": "0d067d68b3670126725f905d2c4e310067ec18e3b90110843adde20adb92343d",
+      "human_review": "pending",
+      "source_url": "https://www.bain.com/insights/in-us-healthcare-consumer-loyalty-is-up-for-grabs-us-front-line-of-healthcare-2026/",
+      "figure_ref": "Figure 5",
+      "key_message": "환자 경험 개선은 개별 접점의 디지털화뿐 아니라 분절된 진료 경로를 연결하는 데 집중해야 한다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.71,
+      "training_eligible": false
+    },
+    {
+      "template_id": "20261128_bcg_manufacturing_scenario_range_ex2",
+      "tier": "bronze",
+      "path": "bronze/2026-11-28/bcg_manufacturing_scenario_range_ex2",
+      "contract": "render-v1",
+      "payload_sha256": "9014f1cbbfc93811b93db048d3428d40c6840c02cd283da1c6b2cff2fe2efc1a",
+      "human_review": "pending",
+      "source_url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+      "figure_ref": "Exhibit 2",
+      "key_message": "다른 조건을 고정한 모형에서 기술 시나리오만 기존 제조 허브의 부가가치를 2025년 기준 이상으로 높일 수 있다.",
+      "historical_agent_status": "verified",
+      "historical_agent_score": 4.57,
       "training_eligible": false
     }
   ]

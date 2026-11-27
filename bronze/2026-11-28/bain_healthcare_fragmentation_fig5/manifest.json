@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "20261128_bain_healthcare_fragmentation_fig5",
+  "tier": "bronze",
+  "contract": "render-v1",
+  "ingested_at": "2026-11-27T18:19:19.197829+00:00",
+  "source_url": "https://www.bain.com/insights/in-us-healthcare-consumer-loyalty-is-up-for-grabs-us-front-line-of-healthcare-2026/",
+  "figure_ref": "Figure 5",
+  "human_review": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "parent": null,
+  "files": {
+    "chart.py": "0fd2b955ff6a18c97abf6609faa23d1ad24f9ba65b93528d748ca0227294ad86",
+    "record.json": "bfeb36fb6cecd3bca9fa514d6f66a6fa96e947fd0363b86fca2a7527a36529da",
+    "card.md": "a6ebf9b0b7ff95da8dd4f5f1157f74ec3a1c114abbe88f58d005a15b7fa53861",
+    "config.json": "02774fbdb3353c8a2b312f59e5be8d5aa7f5cf2a4a54d672f79900a4aafc809a",
+    "data.csv": "6e6a2bffe4e3e517492f58301fc3ddf28065bbbfcfb694ef83198c37c427c043",
+    "validation.json": "59d3f9c0cd64f6907059162bc754fe1eb5359b0b4467e72a663514d488e0eaa1",
+    "requirements.txt": "c7985209d4590704ead1797f7f9375d1dae9c9780e60392386f2344ae4279fff"
+  },
+  "payload_sha256": "0d067d68b3670126725f905d2c4e310067ec18e3b90110843adde20adb92343d"
+}

@@ -1,0 +1,91 @@
+{
+  "firm": "Bain",
+  "source_url": "https://www.bain.com/insights/in-us-healthcare-consumer-loyalty-is-up-for-grabs-us-front-line-of-healthcare-2026/",
+  "published_date": "2026-11-16",
+  "collected_date": "2026-11-28",
+  "source_title": "In US Healthcare, Consumer Loyalty Is Up for Grabs",
+  "figure_ref": "Figure 5",
+  "chart_key": "https://www.bain.com/insights/in-us-healthcare-consumer-loyalty-is-up-for-grabs-us-front-line-of-healthcare-2026/#Figure 5",
+  "split_group": "https://www.bain.com/insights/in-us-healthcare-consumer-loyalty-is-up-for-grabs-us-front-line-of-healthcare-2026/",
+  "data_observation_period": "June 2026",
+  "business_context": "미국 소비자의 의료 경험은 디지털 서비스가 개선되더라도 단절된 진료 흐름에 영향을 받는다. 복수 의료진 방문과 여러 장소 방문을 경험한다는 응답은 각각 47%, 46%였다. 서비스 연속성과 기록 공유가 별도 개선 과제임을 시사한다.",
+  "key_message": "환자 경험 개선은 개별 접점의 디지털화뿐 아니라 분절된 진료 경로를 연결하는 데 집중해야 한다.",
+  "chart_type": "ranked_bar",
+  "encoding": "x=동의율(0부터); y=문항; 가로막대 길이=응답비율; 모두 적색; 내림차순; 막대 끝 직접 레이블; 범례 불필요",
+  "data_spec": {
+    "fields": [
+      "order",
+      "category",
+      "value",
+      "unit",
+      "provenance",
+      "period",
+      "denominator"
+    ],
+    "period": "June 2026",
+    "source": "Bain US Front Line of Healthcare, June 2026, n=500",
+    "limitations": "복수 문항에 동의할 수 있어 합산하지 않는다. 응답은 자기보고이고 500명 표본의 세부 가중치 및 신뢰구간은 미공개다. 47%와 46%의 차이가 통계적으로 유의하다고 할 수 없다."
+  },
+  "data_recipe": [
+    "같은 설문 분모와 조사기간을 정의한다.",
+    "항목별 동의 응답자 비중을 계산한다.",
+    "내림차순을 지정하고 CSV order를 유지한다.",
+    "가로 막대 길이와 직접 레이블을 비교한다."
+  ],
+  "message_conditions": "복수 문항에 동의할 수 있어 합산하지 않는다. 응답은 자기보고이고 500명 표본의 세부 가중치 및 신뢰구간은 미공개다. 47%와 46%의 차이가 통계적으로 유의하다고 할 수 없다.",
+  "design_moves": "x=동의율(0부터); y=문항; 가로막대 길이=응답비율; 모두 적색; 내림차순; 막대 끝 직접 레이블; 범례 불필요",
+  "reuse": "업무 분절, 시스템 전환, 고객 불편 설문에서 우선순위 진단",
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "original_visual_checked": true,
+  "diff_notes": "원본의 정적 막대·값·순서·색을 유지. 제목·글꼴·여백은 재작성/근사, 인터랙티브 hover 미구현.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "training_pair": {
+    "instruction": "Render a reusable ranked_bar chart from the published data with source and neutral themes.",
+    "response": {
+      "code": "import argparse\nimport json\nfrom pathlib import Path\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import FuncFormatter\n\nBASE = Path(__file__).resolve().parent\nCFG = json.loads((BASE / 'config.json').read_text())\nTHEME, CONTEXT = CFG['THEME'], CFG['CONTEXT']\n\ndef render(data, theme, context):\n    if isinstance(theme, str):\n        theme = THEME[theme]\n    fig, ax = plt.subplots(figsize=context['figsize'])\n    fig.subplots_adjust(**context['margins'])\n    fig.patch.set_facecolor(theme['background'])\n    ax.set_facecolor(theme['background'])\n    if context['kind'] == 'ranked_bar':\n        d = data.sort_values('order')\n        y = range(len(d))\n        ax.barh(y, d.value, height=context['bar_width'], color=theme['colors'][0])\n        ax.set_yticks(list(y), d.category, fontsize=11)\n        ax.invert_yaxis()\n        ax.set_xlim(0, max(d.value)*1.13)\n        for i,v in enumerate(d.value):\n            ax.text(v+max(d.value)*.007, i, f'{v:g}%', va='center', fontsize=11)\n        ax.set_xticks([])\n        ax.spines['left'].set_visible(True)\n        ax.spines['left'].set_color(theme['axis'])\n    else:\n        d = data.sort_values('order').reset_index(drop=True)\n        if (d.high < d.low).any():\n            raise ValueError('high below low')\n        x = range(len(d))\n        w=context['bar_width']\n        ax.bar(x, d.high-d.low, bottom=d.low, width=w, color=theme['colors'][:len(d)])\n        span = max(d.high)-min(d.low)\n        ax.axhline(context['baseline'], color=theme['axis'], ls='--', lw=.8)\n        ax.text(len(d)-.52, context['baseline']+span*.035, f\"2025 baseline = {context['baseline']:,}\", ha='right', fontsize=10)\n        for i,r in d.iterrows():\n            ax.text(i,r.high+span*.035,f'{r.high_label}: {r.high:,.0f}',ha='center',va='bottom',fontsize=10)\n            ax.text(i,r.low-span*.035,f'{r.low_label}: {r.low:,.0f}',ha='center',va='top',fontsize=10)\n            ax.text(i,-.18,f'{r.reported_delta:,.0f}',transform=ax.get_xaxis_transform(),ha='center',va='center',color='white',fontsize=11,fontweight='bold',bbox={'boxstyle':'round,pad=.25','facecolor':theme['colors'][i],'edgecolor':'none'})\n        ax.set_xticks(list(x),d.category,fontsize=11)\n        ax.set_ylim(*context['ylim'])\n        ax.yaxis.set_major_formatter(FuncFormatter(lambda v,p:f'{v:,.0f}'))\n        ax.text(-.02,-.18,'Range ($bn)',transform=ax.transAxes,ha='right',va='center',fontsize=10)\n        ax.spines['left'].set_visible(True)\n        ax.spines['left'].set_color(theme['axis'])\n    for s in ['top','right','bottom']:\n        ax.spines[s].set_visible(False)\n    ax.tick_params(length=0,colors=theme['text'])\n    fig.text(.04,.94,context['title'],fontsize=17,fontweight='bold',color=theme['text'],va='top')\n    fig.text(.04,.865,context['subtitle'],fontsize=11,color=theme['text'],va='top')\n    fig.text(.04,.045,context['note'],fontsize=8,color=theme['text'],va='bottom',wrap=True)\n    return fig\n\ndef main():\n    p=argparse.ArgumentParser()\n    p.add_argument('--data',type=Path,default=BASE/'data.csv')\n    p.add_argument('--config',type=Path,default=BASE/'config.json')\n    p.add_argument('--theme',choices=['source','neutral'],default='source')\n    p.add_argument('--output',type=Path,required=True)\n    p.add_argument('--dpi',type=int,default=200)\n    a=p.parse_args(); cfg=json.loads(a.config.read_text())\n    fig=render(pd.read_csv(a.data),cfg['THEME'][a.theme],cfg['CONTEXT'])\n    a.output.parent.mkdir(parents=True,exist_ok=True)\n    fig.savefig(a.output,dpi=a.dpi); plt.close(fig)\nif __name__=='__main__': main()\n",
+      "input_csv": "order,category,value,unit,provenance,period,denominator\n1,\"Multiple doctors needed for\ndiagnosis or treatment\",47,percent,reported,2026-06,500 consumers\n2,\"Multiple locations for\none health need\",46,percent,reported,2026-06,500 consumers\n3,\"Inconsistent advice\nacross providers\",34,percent,reported,2026-06,500 consumers\n4,No complete health record,25,percent,reported,2026-06,500 consumers\n",
+      "configuration": {
+        "THEME": {
+          "source": {
+            "colors": [
+              "#cc0000"
+            ],
+            "background": "#ffffff",
+            "text": "#202522",
+            "axis": "#b8b8b8"
+          },
+          "neutral": {
+            "colors": [
+              "#334e68",
+              "#718096",
+              "#a0aec0"
+            ],
+            "background": "#ffffff",
+            "text": "#202522",
+            "axis": "#b8b8b8"
+          }
+        },
+        "CONTEXT": {
+          "kind": "ranked_bar",
+          "title": "Fragmented care is common across the patient journey",
+          "subtitle": "Share of surveyed consumers agreeing, %",
+          "note": "Source: Bain US Front Line of Healthcare, June 2026 (n=500). Separate statements; not mutually exclusive.",
+          "figsize": [
+            10,
+            4.6
+          ],
+          "margins": {
+            "left": 0.29,
+            "right": 0.96,
+            "top": 0.78,
+            "bottom": 0.14
+          },
+          "bar_width": 0.8
+        }
+      },
+      "command": "python chart.py --theme source --output source.png --dpi 200"
+    }
+  }
+}

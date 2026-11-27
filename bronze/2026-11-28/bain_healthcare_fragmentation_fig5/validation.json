@@ -1,0 +1,34 @@
+{
+  "validation_status": "verified",
+  "fidelity_score": 4.71,
+  "score_items": {
+    "type": 5,
+    "values_order": 5,
+    "axes": 5,
+    "color_emphasis": 5,
+    "labels_annotations": 5,
+    "title_legend": 4,
+    "proportions_margins": 4
+  },
+  "score_basis": "원본의 정적 막대·값·순서·색을 유지. 제목·글꼴·여백은 재작성/근사, 인터랙티브 hover 미구현.",
+  "original_visual_checked": true,
+  "render_passed": true,
+  "semantic_checks_passed": true,
+  "reuse_test_passed": true,
+  "rounds": 1,
+  "commands": [
+    "python chart.py --theme source --output source.png --dpi 200",
+    "python chart.py --theme neutral --output neutral.png --dpi 200"
+  ],
+  "versions": {
+    "python": "3.13.5",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3"
+  },
+  "tests": "6/6 isolated local tests passed (data, provenance, PNG, reuse, immutable revision and tamper)",
+  "visual_inspection": "Both actual generated themes viewed in contact sheet; official original chart visually inspected.",
+  "human_review": "pending",
+  "training_eligible": false,
+  "validated_at": "2026-11-28T03:19:19.196024+09:00",
+  "diff_notes": "원본의 정적 막대·값·순서·색을 유지. 제목·글꼴·여백은 재작성/근사, 인터랙티브 hover 미구현."
+}

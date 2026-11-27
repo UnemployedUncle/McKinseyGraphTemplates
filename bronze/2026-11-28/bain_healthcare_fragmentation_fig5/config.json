@@ -1,0 +1,39 @@
+{
+  "THEME": {
+    "source": {
+      "colors": [
+        "#cc0000"
+      ],
+      "background": "#ffffff",
+      "text": "#202522",
+      "axis": "#b8b8b8"
+    },
+    "neutral": {
+      "colors": [
+        "#334e68",
+        "#718096",
+        "#a0aec0"
+      ],
+      "background": "#ffffff",
+      "text": "#202522",
+      "axis": "#b8b8b8"
+    }
+  },
+  "CONTEXT": {
+    "kind": "ranked_bar",
+    "title": "Fragmented care is common across the patient journey",
+    "subtitle": "Share of surveyed consumers agreeing, %",
+    "note": "Source: Bain US Front Line of Healthcare, June 2026 (n=500). Separate statements; not mutually exclusive.",
+    "figsize": [
+      10,
+      4.6
+    ],
+    "margins": {
+      "left": 0.29,
+      "right": 0.96,
+      "top": 0.78,
+      "bottom": 0.14
+    },
+    "bar_width": 0.8
+  }
+}
