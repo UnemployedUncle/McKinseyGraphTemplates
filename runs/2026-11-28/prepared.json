@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-28",
+  "started_at": "2026-11-28T03:15:35+09:00",
+  "local_validated_at": "2026-11-28T03:19:19.201646+09:00",
+  "remote_verified_at": "2026-11-28T03:20:19+09:00",
+  "prepared_complete": false,
+  "delivery_ready": true,
+  "delivered": false,
+  "goal": 3,
+  "completed": 2,
+  "counts": {
+    "bronze": 93,
+    "silver": 0,
+    "gold": 0
+  },
+  "original_verified_total": 26,
+  "original_verified_new": 2,
+  "bronze_commit": "1a4ff22a3c22111a574fe50533f0e1fd148cf884",
+  "previous_head": "33f9a492487911d87f407b8c65fb6da36bfd2d5b",
+  "templates": [
+    {
+      "firm": "Bain",
+      "path": "bronze/2026-11-28/bain_healthcare_fragmentation_fig5",
+      "payload_sha256": "0d067d68b3670126725f905d2c4e310067ec18e3b90110843adde20adb92343d",
+      "source_url": "https://www.bain.com/insights/in-us-healthcare-consumer-loyalty-is-up-for-grabs-us-front-line-of-healthcare-2026/",
+      "published_date": "2026-11-16",
+      "figure_ref": "Figure 5",
+      "validation_status": "verified",
+      "fidelity_score": 4.71
+    },
+    {
+      "firm": "BCG",
+      "path": "bronze/2026-11-28/bcg_manufacturing_scenario_range_ex2",
+      "payload_sha256": "9014f1cbbfc93811b93db048d3428d40c6840c02cd283da1c6b2cff2fe2efc1a",
+      "source_url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+      "published_date": "2026-11-23",
+      "figure_ref": "Exhibit 2",
+      "validation_status": "verified",
+      "fidelity_score": 4.57
+    }
+  ],
+  "excluded": [
+    {
+      "firm": "McKinsey",
+      "reason": "최근 7일 및 30일 후보 중 기존 그림 중복 또는 원본 도형(SVGZ 등) 직접 확인 불가로 적격 신규 정량 차트를 확보하지 못함. 수치나 그림을 임의 작성하지 않음."
+    }
+  ],
+  "validation": {
+    "local_tests_passed": 6,
+    "local_tests_total": 6,
+    "local_png_count": 4,
+    "dpi": 200,
+    "visual_inspection": true,
+    "manifest_files_verified": 14,
+    "manifest_payloads_verified": 2,
+    "remote_files_byte_identical": 16,
+    "remote_catalog_rows": 93,
+    "remote_catalog_jsonl_match": true,
+    "medallion_ingest_catalog": "Executed the relevant functions transcribed from current repository script in an isolated local root; merged script-generated new rows into existing 91 unchanged entries. Full repository local validation unavailable due to container network DNS restriction.",
+    "full_repo_ci_local": false,
+    "actions": {
+      "status": "unconfirmed",
+      "conclusion": null,
+      "url": "https://github.com/UnemployedUncle/McKinseyGraphTemplates/actions",
+      "notes": "Commit workflow query returned no PR-triggered runs; push CI status not confirmed."
+    }
+  },
+  "package": {
+    "filename": "Consulting_Graph_Template_2026-11-28_PREPARED.zip",
+    "sha256": "ac2c30b4a210087022fdaded7b22d4bd6278e626a5eba7711d1111454f0baec6",
+    "file_count": 23,
+    "bytes": 647768,
+    "persistent_copy": "user library /consulting-graph-template",
+    "persistent_copy_confirmed": true
+  },
+  "human_review": "pending",
+  "training_eligible": false,
+  "notes": "2 verified local templates available for delivery, target incomplete. No new research or commits during delivery. No promotion or training."
+}
